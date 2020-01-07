@@ -1,0 +1,164 @@
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.5em;
+            font-weight: 300;
+            text-align: justify;
+        }
+
+        b {
+            font-weight: 400;
+        }
+
+        footer {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #b05145;
+        }
+
+        h3 {
+            color: #bf766d;
+            font-weight: 300;
+        }
+
+        a, a:hover {
+            color: #b05145;
+        }
+
+        .container {
+            max-width: 1200px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .titlebar {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            overflow: auto;
+            white-space: normal;
+        }
+
+        @media (max-width: 1200px) {
+            .titlebar {
+                text-align: center;
+            }
+        }
+
+        .titlebar-img {
+            width: 180px;
+            height: 180px;
+            /*float: left;*/
+        }
+
+        .titlebar-text {
+            max-width: 66.66666667%;
+            float: left;
+            white-space: normal;
+        }
+
+        .title-col {
+            text-align: center;
+            display: inline;
+        }
+
+        .title {
+            font-size: 3em;
+        }
+
+        .subtitle {
+            font-size: 2em;
+        }
+
+        .infoline {
+            width: 100%;
+        }
+
+        .infoline-heading {
+            width: 130px;
+            text-align: right;
+            display: inline-block;
+        }
+
+        .infoline-text {
+            width: 50%;
+            text-align: left;
+            display: inline-block;
+            vertical-align: text-top;
+        }
+
+        .grade-table {
+            width: 100%;
+        }
+
+        .grade-table-header {
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+
+        .grade-table-bottom {
+            border-top-width: 1px;
+            border-top-style: solid;
+        }
+
+        .rules-table{
+            width: 100%;
+        }
+
+        .rules-table-header {
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+        .rules-table-bottom {
+            color: rgba(0, 0, 0, 0);
+            background: rgba(0, 0, 0, 0);
+
+            border-top-width: 1px;
+            border-top-style: solid;
+	}
+
+        .textbook {
+            display: block;
+            height: 95px;
+            margin-bottom: 10px;
+        }
+
+        .textbook-img-container {
+            display: inline-block;
+            float: left;
+            margin-right: 10px;
+        }
+
+            .textbook-img-container img {
+                height: 95px;
+                width: 70px;
+                border-radius: 2px;
+            }
+
+        .textbook-info-item {
+            display: block;
+        }
+
+        .vcenter {
+            display: inline-block;
+            vertical-align: middle;
+            float: none;
+        }
+
+        #logo {
+            width: 90%;
+            height: auto;
+        }
+
+        .ul {
+            list-style: none;
+            padding-left: 1.2em;
+        }
+
+        table.rules-table td {
+	    vertical-align: top;
+	    padding-bottom: 5px;
+	    padding-top: 5px;
+        }
