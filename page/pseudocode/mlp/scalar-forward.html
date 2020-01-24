@@ -1,48 +1,16 @@
-\Preamble{xhtml,mathml}
-\Configure{VERSION}{}
-\Configure{DOCTYPE}{\HCode{<!DOCTYPE html>\Hnewline}}
-\Configure{HTML}{\HCode{<html>\Hnewline}}{\HCode{\Hnewline</html>}}
-\Configure{@HEAD}{}
-\Configure{@HEAD}{\HCode{<meta charset="UTF-8" />\Hnewline}}
-\Configure{@HEAD}{\HCode{<meta name="generator" content="TeX4ht
-(http://www.cse.ohio-state.edu/\string~gurari/TeX4ht/)" />\Hnewline}}
-\Configure{@HEAD}{\HCode{<link
-         rel="stylesheet" type="text/css"
-         href="\expandafter\csname aa:CssFile\endcsname" />\Hnewline}}
-\Configure{@HEAD}{\HCode{<script type="text/javascript"\Hnewline
-src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"\Hnewline
-></script>\Hnewline}}
-\Configure{@HEAD}{\HCode{<style type="text/css">\Hnewline
-  .MathJax_MathML {text-indent: 0;}\Hnewline
-</style>\Hnewline}}
-\begin{document}
-\EndPreamble
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax TeX Test Page</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://example.com/mathjax/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+</head>
 <body>
-         
-         \textbf{Forward Pass}
-
-         Input: $D$ dimensional vector $\mathbf{x} = [x_j, j=1..D]$
-
-         Set:
-
-         $\quad $ $D_0=0,$ is the width of the $0^\text{th}$ (input) layer
-
-         $\quad $ $y_j^{(0)}=x_j,$ $j=1..D$
-
-         $\quad $ $y_0^{(k=1..N)}=x_0=1$
-
-         For layer $k = 1..N$ 
-
-         $\quad $ For $j=1..D_k$
-
-         $\qquad$ $z_j^{(k)}=\sum_{i=0}^{N_k}w_{i,j}^{(k)}y_i^{(k-1)}$
-
-         $\qquad$ $y_j^{(k)}=f_k(z_j^{(k)})$
-
-         Output:
-
-         $\quad $ $Y=y_j^{(N)},$ $j=1..D_N$
-
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 </body>
 </html>
