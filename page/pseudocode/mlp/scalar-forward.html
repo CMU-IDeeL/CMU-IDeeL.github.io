@@ -1,14 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>MathJax TeX Test Page</title>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
-</head>
+\Preamble{xhtml,mathml}
+\Configure{VERSION}{}
+\Configure{DOCTYPE}{\HCode{<!DOCTYPE html>\Hnewline}}
+\Configure{HTML}{\HCode{<html>\Hnewline}}{\HCode{\Hnewline</html>}}
+\Configure{@HEAD}{}
+\Configure{@HEAD}{\HCode{<meta charset="UTF-8" />\Hnewline}}
+\Configure{@HEAD}{\HCode{<meta name="generator" content="TeX4ht
+(http://www.cse.ohio-state.edu/\string~gurari/TeX4ht/)" />\Hnewline}}
+\Configure{@HEAD}{\HCode{<link
+         rel="stylesheet" type="text/css"
+         href="\expandafter\csname aa:CssFile\endcsname" />\Hnewline}}
+\Configure{@HEAD}{\HCode{<script type="text/javascript"\Hnewline
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"\Hnewline
+></script>\Hnewline}}
+\Configure{@HEAD}{\HCode{<style type="text/css">\Hnewline
+  .MathJax_MathML {text-indent: 0;}\Hnewline
+</style>\Hnewline}}
+\begin{document}
+\EndPreamble
+
 <body>
-When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+Input: $D$ dimensional vector $\mathbf{x} = [x_j, j=1..D]$
 </body>
 </html>
