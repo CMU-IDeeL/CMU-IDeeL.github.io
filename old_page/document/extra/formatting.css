@@ -1,0 +1,96 @@
+.figure {color:black; 
+	 background-color:white;
+         font-family: calibri !important; !font-weight:bold; 
+	 text-align: center;
+         font-size: 21px;
+	 border: 0px;
+}
+.box {color:black; 
+	 background-color:#FCF3CF;
+         font-family: calibri !important; !font-weight:bold; 
+	 text-align: left;
+         font-size: 21px;
+         line-height: 21px;
+	 border: 0px solid green;
+}
+.box h4 {
+        color: #BF0000;
+        font-size: 27px;
+        text-align: left;
+        font-family: Garamond !important;
+        margin-top: 15px
+    }
+body {
+    color: #000000;
+    font-size: 24px;
+    text-align: left;
+    font-family: Garamond !important;
+}
+
+a {
+    color:"#A80000"
+}
+
+h1 {
+    color: #A80000;
+    font-size: 60px;
+    text-align: center;
+    font-family: Garamond !important;
+}
+
+h2 {
+    color: #A80000;
+    font-size: 40px;
+    text-align: left;
+    font-family: Garamond !important;
+    margin-top: 50px
+}
+
+h3 {
+    color: #0000FF;
+    font-size: 30px;
+    text-align: left;
+    font-family: Garamond !important;
+}
+
+h4 {
+    color: #BF0000;
+    font-size: 27px;
+    text-align: left;
+    font-family: Garamond !important;
+}
+
+h5 {
+    color: #000000;
+    font-size: 24px;
+    text-align: left;
+    font-family: Garamond !important;
+}
+
+table {
+    color: #000000;
+    font-size: 24px;
+    text-align: left;
+    font-family: Garamond !important;
+    border-collapse: separate;
+    border-spacing: 50px 0;
+}
+th {
+    text-align: left;
+}
+
+.collapsibleList li > input + * {
+ display: none;
+}
+ 
+.collapsibleList li > input:checked + * {
+ display: block;
+}
+
+.collapsibleList li > input {
+ display: none;
+}
+
+.collapsibleList label {
+ cursor: pointer;
+}
