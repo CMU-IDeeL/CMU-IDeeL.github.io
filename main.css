@@ -28,6 +28,21 @@
             color: #b05145;
         }
 
+        .fall, .fall:hover {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #b05145;
+            color: white;
+            padding: 7px;
+        }
+
+        .fall:visited {
+            color: white;
+        }
+
         .container {
             max-width: 1200px;
             padding-left: 25px;
