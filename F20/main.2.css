@@ -18,7 +18,12 @@ b {
 
 .header {
     position: fixed;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 0;
     left: 0;
@@ -30,9 +35,16 @@ b {
 
 .menu-wrapper {
     float: left;
-    flex-grow: 4;
+    -webkit-box-flex: 4;
+        -ms-flex-positive: 4;
+            flex-grow: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .header-item {
@@ -42,9 +54,13 @@ b {
     cursor: pointer;
     padding: 5px;
     width: 10%;
-    min-width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     height: 100%;
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 
 .header-item:hover {
@@ -58,7 +74,9 @@ b {
 	padding: 5px;
     padding-left: 20px;
 	text-align: right;
-    flex-grow: 4;
+    -webkit-box-flex: 4;
+        -ms-flex-positive: 4;
+            flex-grow: 4;
 }
 
 .mobile-header {
@@ -129,8 +147,6 @@ b {
         background-color: #A54B4B;
 
         -webkit-transition: left 0.06s ease-in-out;
-        -moz-transition: left 0.06s ease-in-out;
-        -ms-transition: left 0.06s ease-in-out;
         -o-transition: left 0.06s ease-in-out;
         transition: left 0.06s ease-in-out;
     }
@@ -159,8 +175,6 @@ b {
         background-color: rgba(255, 255, 255, 0);
 
         -webkit-transition: background-color 0.1s ease-in-out;
-        -moz-transition: background-color 0.1s ease-in-out;
-        -ms-transition: background-color 0.1s ease-in-out;
         -o-transition: background-color 0.1s ease-in-out;
         transition: background-color 0.1s ease-in-out;
     }
@@ -357,3 +371,4 @@ vertical-align: top;
 padding-bottom: 5px;
 padding-top: 5px;
 }
+
