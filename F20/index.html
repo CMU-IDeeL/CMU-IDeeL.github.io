@@ -12,38 +12,41 @@
     <script src="script.js"></script>
 
     <!-- bust caches by incrementing version of main -->
-    <link href="main.1.css" rel="stylesheet" type="text/css">
+    <link href="main.2.css" rel="stylesheet" type="text/css">
 </head>
-
 
 <body>
     <div class="header">
-        <span class="header-item" onclick="toSection('#title')">
-            About
+        <span class="menu-wrapper" style="width: 80%">
+            <span class="header-item" onclick="toSection('#title')">
+                About
+            </span><span class="header-item" onclick="toSection('#oh')">
+                OH
+            </span>
+            <span class="header-item" onclick="toSection('#course-work')">
+                Course Work
+            </span>
+            <span class="header-item" onclick="toSection('#lectures')">
+                Lectures
+            </span>
+            <span class="header-item" onclick="toSection('#recitations')">
+                Recitations
+            </span>
+            <span class="header-item" onclick="toSection('#homework')">
+                Homework
+            </span>
+            <span class="header-item" onclick="toSection('#project')">
+                Project
+            </span>
+            <span class="header-item" onclick="toSection('#docs-tools')">
+                Docs &amp; Tools
+            </span>
         </span>
-        <span class="header-item" onclick="toSection('#oh')">
-            OH
-        </span>
-        <span class="header-item" onclick="toSection('#course-work')">
-            Course Work
-        </span>
-        <span class="header-item" onclick="toSection('#lectures')">
-            Lectures
-        </span>
-        <span class="header-item" onclick="toSection('#recitations')">
-            Recitations
-        </span>
-        <span class="header-item" onclick="toSection('#homework')">
-            Homework
-        </span>
-        <span class="header-item" onclick="toSection('#project')">
-            Project
-        </span>
-        <span class="header-item" onclick="toSection('#docs-tools')">
-            Docs &amp; Tools
+        <span class="version-menu">
+            <span class="current-icon">F20</span>
+            <a class="version-icon" href="../index.html">S20</a>
         </span>
     </div>
-
     <div class="mobile-header">
         <!--<i class="menu-button fas fa-bars"></i>-->
         <span id="menu-button" onclick="showMenu()">Menu</span>
@@ -51,7 +54,7 @@
     <div class="menu-backdrop" onclick="hideMenu()"></div>
     <div class="mobile-menu">
         <div class="menu-exit m-header-item" onclick="hideMenu()">
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times" aria-hidden="true"></i>
         </div>
         <div class="m-header-item" onclick="mobileToSection('#title')">
             About
@@ -77,6 +80,10 @@
         <div class="m-header-item" onclick="mobileToSection('#docs-tools')">
             Docs &amp; Tools
         </div>
+        <div class="m-version-menu">
+            <span class="current-icon">F20</span>
+            <a class="version-icon" href="../index.html">S20</a>
+        </div>
     </div>
 
     <div class="container titlebar">
@@ -94,7 +101,7 @@
       <div class="row">
           <h2> Bulletin and Active Deadlines </h2>
           <div class="table-responsive">
-          <table  class="table table-striped table-bordered">
+          <table class="table table-striped table-bordered">
               <thead>
               <tr>
                   <th>Assignment</th>
@@ -104,26 +111,25 @@
               </tr>
               </thead>
               <tbody>
-          <tr>
-              <td><a href="#homework">Homework 0</a></td>
-              <td>TBD</td>
-              <td>Numpy and AWS</td>
-              <td>
-                  <a href="">Writeup (*.pdf)</a>
-              </td>
-          </tr>
+                  <tr>
+                      <td><a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPyyQzmID534-R1CnGJs0Ls-">Final Project Playlist</a></td> <!--Assignment-->
+                      <td></td> <!--Deadline-->
+                      <td>Please enjoy the final project videos from our students</td> <!--Description-->
+                      <td> <a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPyyQzmID534-R1CnGJs0Ls-">Youtube Playlist</a> <!--Links-->
+                      </td>
+                  </tr>
               </tbody>
           </table>
           </div>
           <h3>The Course</h3>
           <p>
-              &ldquo;Deep Learning&rdquo; systems, typified by deep neural networks, are increasingly taking over all AI tasks, ranging from language understanding, and speech and image recognition, to machine translation, planning, and even game playing and autonomous driving. As a result, expertise in deep learning is fast changing from an esoteric desirable to a mandatory prerequisite in many advanced academic settings, and a large advantage in the industrial job market.
+              “Deep Learning” systems, typified by deep neural networks, are increasingly taking over all AI tasks, ranging from language understanding, and speech and image recognition, to machine translation, planning, and even game playing and autonomous driving. As a result, expertise in deep learning is fast changing from an esoteric desirable to a mandatory prerequisite in many advanced academic settings, and a large advantage in the industrial job market.
           </p>
           <p> In this course we will learn about the basics of deep neural networks, and their applications to various AI tasks. By the end of the course, it is expected that students will have significant familiarity with the subject, and be able to apply Deep Learning to a variety of tasks. They will also be positioned to understand much of the current literature on the topic and extend their knowledge through further study.</p>
           <p>If you are only interested in the lectures, you can watch them on the YouTube channel listed below.
-          <h3>Course description from student point of view</h3>
+          </p><h3>Course description from student point of view</h3>
           <p>The course is well rounded in terms of concepts. It helps us understand the fundamentals of Deep Learning. The course starts off gradually with MLPs and it progresses into the more complicated concepts such as attention and sequence-to-sequence models. We get a complete hands on with PyTorch which is very important to implement Deep Learning models. As a student, you will learn the tools required for building Deep Learning models. The homeworks usually have 2 components which is Autolab and Kaggle. The Kaggle components allow us to explore multiple architectures and understand how to fine-tune and continuously improve models. The task for all the homeworks were similar and it was interesting to learn how the same task can be solved using multiple Deep Learning approaches. Overall, at the end of this course you will be confident enough to build and tune Deep Learning models.</p>
-  <p><a href="document/extra/TAs.html"> Acknowledgments</a></p>
+  <p><a href="http://deeplearning.cs.cmu.edu/F20/document/extra/TAs.html"> Acknowledgments</a></p>
 
           <h3>Your Supporters</h3>
           <p><b style="color:#A80000;">Instructor:</b></p>
@@ -132,7 +138,7 @@
           </ul>
           <p>
               <b style="color:#A80000;">TAs:</b>
-          <ul>
+          </p><ul>
               <li><b>Tony Qin</b>: tcq@andrew.cmu.edu</li>
               <li><b>Mansi Anand</b>: mansia@andrew.cmu.edu</li>
               <li><b>Anxiang Zhang</b>: anxiangz@andrew.cmu.edu</li>
@@ -151,7 +157,7 @@
           </ul>
           <h3>Pittsburgh Schedule (Eastern Time)</h3>
           <p><b style="color:#A80000;">Lecture:</b> Monday and Wednesday, 9:00 a.m. - 10:20 a.m. </p>
-          <p><b style="color:#A80000;">Zoom Link:</b> <a href=https://cmu.zoom.us/j/4037467921>Meeting Link </a>, Meeting ID: 403 746 7921</p>
+          <p><b style="color:#A80000;">Zoom Link:</b> <a href="https://cmu.zoom.us/j/4037467921">Meeting Link </a>, Meeting ID: 403 746 7921</p>
           <p><b style="color:#A80000;">Recitation:</b> Friday, 9.00am-10.20am BH A51 </p>
           <b id="oh" style="color:#A80000;">Office hours: </b>
 
@@ -234,7 +240,7 @@
           </tr>
       </tbody>
     </table>
-    <div>
+      </div>
 
           <h3>Kigali Schedule (Central Africa Time)</h3>
           <p><b style="color:#A80000;">Lecture:</b> Monday and Wednesday, 3:00 p.m. – 4:20 p.m. @ CMR C421</p>
@@ -256,16 +262,15 @@
           </ol>
           <h3>Units</h3>
           <p>11-785 is a graduate course worth 12 units. 11-485 is an undergraduate course worth 9 units.</p>
-      </div>
   </div>
   <div id="course-work" class="container">
       <div class="row">
           <h2>Course Work</h2>
           <h3>Grading</h3>
           <p>Grading will be based on weekly quizzes (24%), homeworks (51%) and a course  project (25%).
-          <div class="table-responsive">
+          </p><div class="table-responsive">
               <table class="rules-table">
-                  <tr class="rules-table-header">
+                  <tbody><tr class="rules-table-header">
                       <td></td>
                       <td></td>
                       <td><b>Policy</b></td>
@@ -277,9 +282,9 @@
                           There will be weekly quizzes.
                           <ul>
                               <li> There are 14 quizzes in all. We will retain your best 12 scores.
-                              <li> Quizzes will generally (but not always) be released on Friday and due 48 hours later.
-                              <li> Quizzes are scored by the number of correct answers.
-                              <li>
+                              </li><li> Quizzes will generally (but not always) be released on Friday and due 48 hours later.
+                              </li><li> Quizzes are scored by the number of correct answers.
+                              </li><li>
                                   <b>Quizzes will be worth 24% of your overall score.</b>
                               </li>
                           </ul>
@@ -288,17 +293,17 @@
                   <tr> <td><b>Assignments</b></td> <td></td><td>There will be five assignments in all. Assignments will include <i>autolab</i> components, where you must complete designated tasks, and a <i>kaggle</i> component where you compete with your colleagues.
                       <ul>
                           <li> Autolab components are scored according to the number of correctly completed parts.
-                          <li> We will post performance cutoffs for A, B, C, D and F for Kaggle competitions. These will translate to scores of 100, 80, 60, 40 and 0 respectively. Scores will be interpolated linearly between these cutoffs.
-                          <li> Assignments will have a &ldquo;preliminary submission deadline&rdquo;, an &ldquo;on-time submission deadline&rdquo; and a &ldquo;late-submission deadline.&rdquo;
+                          </li><li> We will post performance cutoffs for A, B, C, D and F for Kaggle competitions. These will translate to scores of 100, 80, 60, 40 and 0 respectively. Scores will be interpolated linearly between these cutoffs.
+                          </li><li> Assignments will have a “preliminary submission deadline”, an “on-time submission deadline” and a “late-submission deadline.”
                               <ul>
                                   <li> <b>Early submission deadline:</b> You are required to make at least one submission to Kaggle by this deadline. People who miss this deadline will automatically lose 10% of subsequent marks they may get on the homework. This is intended to encourage students to begin working on their assignments early.
-                                  <li> <b>On-time deadline:</b> People who submit by this deadline are eligible for up to five bonus points. These points will be computed by interpolation between the A cutoff and the highest performance obtained for the HW. The highest performance will get 105.
-                                  <li> <b>Late deadline:</b> People who submit after the on-time deadline can still submit until the late deadline. There is a 10% penalty applied to your final score, for submitting late.
-                                  <li> <b>Slack days:</b> Everyone gets up to 7 slack days, which they can distribute across all their homeworks.  Once you use up your slack days you will fall into the late-submission category by default. Slack days are accumulated over <i>all</i> parts of <i>all</i> homeworks, except HW0, to which no slack applies.
-                                  <li> <b>Kaggle scoring:</b> We will use <i>max(max(on-time score), max(slack-day score), .0.9*max(late-submission score))</i> as your final score for the HW. If this happens to be a slack-days submission, slack days corresponding to the selected submission will be counted.
-                              </ul>
-                          <li> <b>Assignments carry 51% of your total score</b>. HW0 is worth 1%, while each of the subsequent four are worth 12.5%.
-                      </ul></td></tr>
+                                  </li><li> <b>On-time deadline:</b> People who submit by this deadline are eligible for up to five bonus points. These points will be computed by interpolation between the A cutoff and the highest performance obtained for the HW. The highest performance will get 105.
+                                  </li><li> <b>Late deadline:</b> People who submit after the on-time deadline can still submit until the late deadline. There is a 10% penalty applied to your final score, for submitting late.
+                                  </li><li> <b>Slack days:</b> Everyone gets up to 7 slack days, which they can distribute across all their homeworks.  Once you use up your slack days you will fall into the late-submission category by default. Slack days are accumulated over <i>all</i> parts of <i>all</i> homeworks, except HW0, to which no slack applies.
+                                  </li><li> <b>Kaggle scoring:</b> We will use <i>max(max(on-time score), max(slack-day score), .0.9*max(late-submission score))</i> as your final score for the HW. If this happens to be a slack-days submission, slack days corresponding to the selected submission will be counted.
+                              </li></ul>
+                          </li><li> <b>Assignments carry 51% of your total score</b>. HW0 is worth 1%, while each of the subsequent four are worth 12.5%.
+                      </li></ul></td></tr>
                   <tr><td><b>Project</b></td><td></td><td>All students are required to do a course project. <b>The project is worth 25% of your grade</b></td></tr>
                   <tr> <td><b>Final grade</b></td><td></td> <td>The end-of-term grade is curved. Your overall grade will depend on your performance relative to your classmates.</td></tr>
                   <tr> <td><b>Pass/Fail</b></td><td></td> <td>Students registered for pass/fail must complete all quizzes, HWs and the project. A grade equivalent to B- is required to pass the course.</td></tr>
@@ -309,20 +314,20 @@
                       <td></td>
                       <td><b>End Policy</b></td>
                   </tr>
-              </table>
+              </tbody></table>
           </div>
 
           <h3>Piazza: Discussion Board</h3>
-          <p>Piazza is what we use for discussions. You should be automatically signed up if you're enrolled at the start of the semester. If not, please sign up. Also, please follow the <a href="etiquette.html">Piazza Etiquette</a> when you use the piazza.</p>
+          <p>Piazza is what we use for discussions. You should be automatically signed up if you're enrolled at the start of the semester. If not, please sign up. Also, please follow the <a href="http://deeplearning.cs.cmu.edu/F20/etiquette.html">Piazza Etiquette</a> when you use the piazza.</p>
 
           <h3>AutoLab: Software Engineering</h3>
           <p>AutoLab is what we use to test your understand of low-level concepts, such as engineering your own libraries, implementing important algorithms, and developing optimization methods from scratch.</p>
 
           <h3>Kaggle: Data Science</h3>
-          <p><a href="https://kaggle.com">Kaggle</a> is where we test your understanding and ability to extend neural network architectures discussed in lecture. Similar to how AutoLab shows scores, Kaggle also shows scores, so don't feel intimidated -- we're here to help. We work on hot AI topics, like speech recognition, face recognition, and neural machine translation.</p>
+          <p><a href="https://kaggle.com/">Kaggle</a> is where we test your understanding and ability to extend neural network architectures discussed in lecture. Similar to how AutoLab shows scores, Kaggle also shows scores, so don't feel intimidated -- we're here to help. We work on hot AI topics, like speech recognition, face recognition, and neural machine translation.</p>
 
           <h3>YouTube: Lecture and Reciation Recordings</h3>
-          <p><a href="https://www.YouTube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA?view_as=subscriber">YouTube</a> is where all lecture and recitation recordings will be uploaded. Links to individual lectures and recitations will also be posted below as they are uploaded. Videos marked &ldquo;Old&ldquo; are not current, so please be aware of the video title.</p>
+          <p><a href="https://www.youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA?view_as=subscriber">YouTube</a> is where all lecture and recitation recordings will be uploaded. Links to individual lectures and recitations will also be posted below as they are uploaded. Videos marked “Old“ are not current, so please be aware of the video title.</p>
           <p> CMU students can also access the videos <a href="https://mediaservices.cmu.edu/media/t/1_8eaf2eny">Live from Media Services</a> or <a href="https://mediaservices.cmu.edu/channel/Introduction+to+Deep+Learning_Spring+2020/148590631">Recorded from Media Services.</a></p>
 
           <h3>Books and Other Resources</h3>
@@ -353,7 +358,7 @@
                       <th>Topics</th>
                       <th>Lecture Slides and Video</th>
                       <th>Additional Readings (if any)</th>
-                      <th>Homework & Assignments</th>
+                      <th>Homework &amp; Assignments</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -406,8 +411,8 @@
                       </ul></td>
                       <td>
                       </td> <!--Lecture Slides-->
-                      <td> <a href="document/readings/Hornik_Stinchcombe_White.pdf">Hornik <i>et al.</i> (1989)</a><br>
-         <a href="document/readings/Shannon49.pdf">Shannon (1949)</a><!--Readings-->
+                      <td> <a href="http://deeplearning.cs.cmu.edu/F20/document/readings/Hornik_Stinchcombe_White.pdf">Hornik <i>et al.</i> (1989)</a><br>
+         <a href="http://deeplearning.cs.cmu.edu/F20/document/readings/Shannon49.pdf">Shannon (1949)</a><!--Readings-->
                       </td>
                       <td> <!--HWX URL--> </td> <!--Quizzes & Assignments-->
                   </tr>
@@ -422,7 +427,7 @@
                       </ul></td>
                       <td>
                       </td>
-                      <td>  <a href="document/readings/c1992artificialneural.pdf">Widrow and Lehr (1992)</a><br>
+                      <td>  <a href="http://deeplearning.cs.cmu.edu/F20/document/readings/c1992artificialneural.pdf">Widrow and Lehr (1992)</a><br>
          <a href="http://www.cs.columbia.edu/~mcollins/courses/6998-2012/notes/perc.converge.pdf">Convergence of perceptron algorithm</a><!--Readings-->
           </td> <!--Readings-->
                       <td> <!--HWX URL--> </td> <!--Quizzes & Assignments-->
@@ -437,7 +442,7 @@
                       <td>
           </td> <!--Lecture Slides-->
                       <td> <a href="http://axon.cs.byu.edu/Dan/678/papers/Recurrent/Werbos.pdf">Werbos (1990)</a><br>
-        <a href="http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf">Rumelhart, Hinton and Williams (1986)<a></td> <!--Readings-->
+        <a href="http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf">Rumelhart, Hinton and Williams (1986)</a><a></a></td> <!--Readings-->
                       <td> <!--HWX URL--> </td> <!--Quizzes & Assignments-->
       </tr>
                   <tr>
@@ -478,8 +483,8 @@
                           <li>RMSProp, Adagrad, Momentum</li>
                       </ul></td>
                       <td>
-                      <td> <a href="https://www.sciencedirect.com/science/article/abs/pii/0041555364901375">Momentum, Polyak (1964)</a><br>
-            <a href="http://www.mathnet.ru/php/archive.phtml?wshow=paper&jrnid=dan&paperid=46009&option_lang=eng">Nestorov (1983)</a>
+                      </td><td> <a href="https://www.sciencedirect.com/science/article/abs/pii/0041555364901375">Momentum, Polyak (1964)</a><br>
+            <a href="http://www.mathnet.ru/php/archive.phtml?wshow=paper&amp;jrnid=dan&amp;paperid=46009&amp;option_lang=eng">Nestorov (1983)</a>
           </td> <!--Readings-->
                       <td> <!--HWX URL--> </td> <!--Quizzes & Assignments-->
                   </tr>
@@ -498,7 +503,7 @@
                           </ul>
                       </ul></td>
                       <td>
-                      <td>    <a href="http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf">ADAGRAD, Duchi, Hazan and Singer (2011)</a><br>
+                      </td><td>    <a href="http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf">ADAGRAD, Duchi, Hazan and Singer (2011)</a><br>
             <a href="https://arxiv.org/abs/1412.6980">Adam: A method for stochastic optimization, Kingma and Ba (2014)</a><br>
           </td> <!--Readings-->
                       <td> <!--HWX URL--> </td> <!--Quizzes & Assignments-->
@@ -525,8 +530,8 @@
                           <li>Cascade Correlation Filters (Scott Fahlman and Dean Alderucci)</li>
                       </ul></td>
                       <td> </td>
-          </td> <!--Lecture Slides-->
-                      <td> <a href="https://papers.nips.cc/paper/207-the-cascade-correlation-learning-architecture.pdf">Falhman and Lebiere (1990) </td> <!--Readings-->
+           <!--Lecture Slides-->
+                      <td> <a href="https://papers.nips.cc/paper/207-the-cascade-correlation-learning-architecture.pdf">Falhman and Lebiere (1990) </a></td> <!--Readings-->
                       <td> <!--HWX URL--> </td> <!--Quizzes & Assignments-->
                   </tr>
                   <tr>
@@ -538,7 +543,7 @@
                           <li>Mathematical details of CNNs</li>
                       </ul></td>
                       <td>
-                      <td> <!--*.pdf--> </td> <!--Readings-->
+                      </td><td> <!--*.pdf--> </td> <!--Readings-->
           <td>
                       </td> <!--Quizzes & Assignments-->
                   </tr>
@@ -577,7 +582,7 @@
                       </ul></td>
                       <td>
                       </td> <!--Lecture Slides-->
-                      <td> <a href="document/readings/Bidirectional Recurrent Neural Networks.pdf"> Bidirectional Recurrent Neural Networks </a> </td> <!--Readings-->
+                      <td> <a href="http://deeplearning.cs.cmu.edu/F20/document/readings/Bidirectional%20Recurrent%20Neural%20Networks.pdf"> Bidirectional Recurrent Neural Networks </a> </td> <!--Readings-->
                       <td> <!--HWX URL--> </td> <!--Quizzes & Assignments-->
                   </tr>
                   <tr>
@@ -591,7 +596,7 @@
                       <td>
          <!-- <br> <a href="https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+Lecture+13/1_x9rp3088/148590631"> Video (url)</a> -->
                       </td> <!--Lecture Slides-->
-                      <td> <a href="document/readings/LSTM.pdf"> LSTM </a> </td> <!--Readings-->
+                      <td> <a href="http://deeplearning.cs.cmu.edu/F20/document/readings/LSTM.pdf"> LSTM </a> </td> <!--Readings-->
                       <td> <!--HWX URL--> </td> <!--Quizzes & Assignments-->
                   </tr>
                   <tr>
@@ -602,7 +607,7 @@
                           <li>Sequence prediction</li>
                       </ul></td>
                       <td> </td><!--Lecture Slides-->
-                      <td> <a href="document/slides/How to compute a derivative.pdf"> How to compute a derivative (*.pdf)</a><!--*.pdf--> </td> <!--Readings-->
+                      <td> <a href="http://deeplearning.cs.cmu.edu/F20/document/slides/How%20to%20compute%20a%20derivative.pdf"> How to compute a derivative (*.pdf)</a><!--*.pdf--> </td> <!--Readings-->
                       <td> <!--HWX URL--> </td> <!--Quizzes & Assignments-->
                   </tr>
                   <tr>
@@ -627,7 +632,7 @@
                           <li>Transformers and self attention</li>
                       </ul></td>
                       <td>
-                      <td></td> <!--Readings-->
+                      </td><td></td> <!--Readings-->
                       <td>
                       </td> <!--Quizzes & Assignments-->
                   </tr>
@@ -695,7 +700,7 @@
                       <td>November 25</td> <!--Date-->
                       <td><ul> <!--Topic List-->
                           <li>Thanksgiving, no class
-                      </ul></td>
+                      </li></ul></td>
                       <td> <!--*.pdf--> </td> <!--Readings-->
                       <td> <!--HWX URL--> </td> <!--Quizzes & Assignments-->
                   </tr>
@@ -743,7 +748,7 @@
                           <li>Generative Adversarial Networks (GANs) Part 1</li>
                       </ul></td>
                       <td>
-                      <td> <!--*.pdf--> </td> <!--Readings-->
+                      </td><td> <!--*.pdf--> </td> <!--Readings-->
                       <td> <!--HWX URL--> </td> <!--Quizzes & Assignments-->
                   </tr>
                   <tr>
@@ -764,7 +769,7 @@
                           <li>Reinforcement Learning 1</li>
                       </ul></td>
                       <td>
-                      <td> <!--*.pdf--> </td> <!--Readings-->
+                      </td><td> <!--*.pdf--> </td> <!--Readings-->
                       <td> <!--HWX URL--> </td> <!--Quizzes & Assignments-->
                   </tr>
                   <tr>
@@ -870,7 +875,7 @@
                     <td><br>
                         </td> <!--Notebook-->
                     <td></td> <!--Videos-->
-                </td> <!--Videos-->
+                 <!--Videos-->
                     <td></td> <!-- Instructor-->
                 </tr>
                 <tr>
@@ -979,7 +984,7 @@
 
             <h2 id="homework"> Homework Schedule </h2>
             <div class="table-responsive">
-            <table  class="table table-striped table-bordered">
+            <table class="table table-striped table-bordered">
                 <thead>
                 <tr>
                     <th>Number</th>
@@ -1134,7 +1139,7 @@
 
           <h2 id="project"> Course Project Timeline</h2>
             <div class="table-responsive">
-            <table  class="table table-striped table-bordered">
+            <table class="table table-striped table-bordered">
             <thead>
             <tr>
                 <th>Assignment</th>
@@ -1155,7 +1160,7 @@
 			 <tr>
                 <td>Project Proposal</td> <!--Assignment-->
                 <td></td> <!--Deadline-->
-                <td><a href="document/project/Project_Proposal_Guidelines.pdf">Project Description Guidelines</a></td> <!--Description-->
+                <td><a href="http://deeplearning.cs.cmu.edu/F20/document/project/Project_Proposal_Guidelines.pdf">Project Description Guidelines</a></td> <!--Description-->
                 <td>
                 </td>
             </tr>
@@ -1172,7 +1177,7 @@
                 <td>Final Project Video</td> <!--Assignment-->
                 <td></td> <!--Deadline-->
                 <td>This is the final video for the course project</td> <!--Description-->
-                <td> <a href="videoinstr.html">Video Instruction</a><!--Links-->
+                <td> <a href="http://deeplearning.cs.cmu.edu/F20/videoinstr.html">Video Instruction</a><!--Links-->
                 </td>
             </tr>
 			<tr>
@@ -1248,43 +1253,74 @@
         <h2>Documentation and Tools</h2>
         <h3>Textbooks</h3>
         <div class="textbook">
-            <div class="textbook-img-container"><img src="./image/Goodfellow.jpg" alt="Deep Learning" /></div>
+            <div class="textbook-img-container"><img src="image/Goodfellow.jpg" alt="Deep Learning"></div>
             <div class="textbook-info">
-                <span class="textbook-info-item"><a href="document/reading/book1.zip"><b>Deep Learning</b></a></span>
+                <span class="textbook-info-item">
+                    <a href="http://deeplearning.cs.cmu.edu/F20/document/reading/book1.zip"><b>
+                        Deep Learning
+                    </b></a>
+                </span>
                 <span class="textbook-info-item">By Ian Goodfellow, Yoshua Bengio, Aaron Courville</span>
                 <span class="textbook-info-item"><i>Online book, 2017</i></span>
             </div>
         </div>
         <div class="textbook">
-            <div class="textbook-img-container"><img src="./image/Nielsen.png" alt="Neural Networks and Deep Learning" /></div>
+            <div class="textbook-img-container"><img src="image/Nielsen.jpg" alt="Neural Networks and Deep Learning"></div>
             <div class="textbook-info">
-                <span class="textbook-info-item"><a href="http://neuralnetworksanddeeplearning.com/"><b>Neural Networks and Deep Learning</b></a></span>
+                <span class="textbook-info-item">
+                    <a href="http://neuralnetworksanddeeplearning.com/"><b>
+                        Neural Networks and Deep Learning
+                    </b></a>
+                </span>
                 <span class="textbook-info-item">By Michael Nielsen</span>
                 <span class="textbook-info-item"><i>Online book, 2016</i></span>
             </div>
         </div>
         <div class="textbook">
-            <div class="textbook-img-container"><img src="./image/Brownlee.png" alt="Deep Learning with Python"/></div>
+            <div class="textbook-img-container"><img src="image/Brownlee.png" alt="Deep Learning with Python"></div>
             <div class="textbook-info">
-                <span class="textbook-info-item"><a href="https://machinelearningmastery.com/deep-learning-with-python/"><b>Deep Learning with Python</b></a></span>
+                <span class="textbook-info-item">
+                    <a href="https://machinelearningmastery.com/deep-learning-with-python/"><b>
+                        Deep Learning with Python
+                    </b></a>
+                </span>
                 <span class="textbook-info-item">By J. Brownlee</span>
                 <span class="textbook-info-item"><i></i></span>
             </div>
         </div>
         <div class="textbook">
-            <div class="textbook-img-container"><img src="./image/Lewis.jpg" alt="Deep Learning Step by Step with Python"/></div>
+            <div class="textbook-img-container"><img src="image/Lewis.jpg" alt="Deep Learning Step by Step with Python"></div>
             <div class="textbook-info">
-                <span class="textbook-info-item"><a href="https://www.amazon.com/Deep-Learning-Step-Python-Introduction/dp/1535410264"><b>Deep Learning Step by Step with Python: A Very Gentle Introduction to Deep Neural Networks for Practical Data Science</b></a></span>
+                <span class="textbook-info-item">
+                    <a href="https://www.amazon.com/Deep-Learning-Step-Python-Introduction/dp/1535410264"><b>
+                        Deep Learning Step by Step with Python: A Very Gentle Introduction to Deep Neural Networks for Practical Data Science
+                    </b></a>
+                </span>
                 <span class="textbook-info-item">By N. D. Lewis</span>
                 <span class="textbook-info-item"><i></i></span>
             </div>
         </div>
+
         <div class="textbook">
-            <div class="textbook-img-container"><img src="./image/Rumelhart.jpg" alt="Parallel Distributed Processing"/></div>
+            <div class="textbook-img-container"><img src="image/Rumelhart1.jpg" alt="Parallel Distributed Processing"></div>
             <div class="textbook-info">
-                <span class="textbook-info-item"><a href="https://mitpress.mit.edu/books/parallel-distributed-processing"><b>Parallel Distributed Processing</b></a></span>
+                <span class="textbook-info-item">
+                    <a href="https://mitpress.mit.edu/books/parallel-distributed-processing-volume-1"><b>
+                        Parallel Distributed Processing, Volume 1
+                    </b></a>
+                </span>
                 <span class="textbook-info-item">By Rumelhart and McClelland</span>
-                <span class="textbook-info-item"><i>Out of print, 1986</i></span>
+            </div>
+        </div>
+
+        <div class="textbook">
+            <div class="textbook-img-container"><img src="image/Rumelhart2.jpg" alt="Parallel Distributed Processing"></div>
+            <div class="textbook-info">
+                <span class="textbook-info-item"><a href="https://mitpress.mit.edu/books/parallel-distributed-processing-volume-2"><b>
+                        Parallel Distributed Processing, Volume 2
+                    </b></a>
+                </span>
+                <span class="textbook-info-item">By Rumelhart and McClelland</span>
             </div>
         </div>
     </div>
@@ -1293,5 +1329,6 @@
     <div class="row">
     </div>
 </div>
-</body>
-</html>
+
+
+</div></body></html>
