@@ -47,6 +47,7 @@
             <a class="version-icon" href="../index.html">S20</a>
         </span>
     </div>
+
     <div class="mobile-header">
         <!--<i class="menu-button fas fa-bars"></i>-->
         <span id="menu-button" onclick="showMenu()">Menu</span>
@@ -96,173 +97,176 @@
             </div>
         </div>
     </div>
+
     <div class=" container">
+        <div class="row">
+            <h2> Bulletin and Active Deadlines </h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Assignment</th>
+                        <th>Deadline</th>
+                        <th>Description</th>
+                        <th>Links</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPyyQzmID534-R1CnGJs0Ls-">Final Project Playlist</a></td> <!--Assignment-->
+                            <td></td> <!--Deadline-->
+                            <td>Please enjoy the final project videos from our students</td> <!--Description-->
+                            <td> <a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPyyQzmID534-R1CnGJs0Ls-">Youtube Playlist</a> <!--Links-->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-      <div class="row">
-          <h2> Bulletin and Active Deadlines </h2>
-          <div class="table-responsive">
-          <table class="table table-striped table-bordered">
-              <thead>
-              <tr>
-                  <th>Assignment</th>
-                  <th>Deadline</th>
-                  <th>Description</th>
-                  <th>Links</th>
-              </tr>
-              </thead>
-              <tbody>
+            <h3>The Course</h3>
+            <p>
+                “Deep Learning” systems, typified by deep neural networks, are increasingly taking over all AI tasks, ranging from language understanding, and speech and image recognition, to machine translation, planning, and even game playing and autonomous driving. As a result, expertise in deep learning is fast changing from an esoteric desirable to a mandatory prerequisite in many advanced academic settings, and a large advantage in the industrial job market.
+            </p>
+            <p> In this course we will learn about the basics of deep neural networks, and their applications to various AI tasks. By the end of the course, it is expected that students will have significant familiarity with the subject, and be able to apply Deep Learning to a variety of tasks. They will also be positioned to understand much of the current literature on the topic and extend their knowledge through further study.</p>
+            <p>If you are only interested in the lectures, you can watch them on the YouTube channel listed below.
+            </p><h3>Course description from student point of view</h3>
+            <p>The course is well rounded in terms of concepts. It helps us understand the fundamentals of Deep Learning. The course starts off gradually with MLPs and it progresses into the more complicated concepts such as attention and sequence-to-sequence models. We get a complete hands on with PyTorch which is very important to implement Deep Learning models. As a student, you will learn the tools required for building Deep Learning models. The homeworks usually have 2 components which is Autolab and Kaggle. The Kaggle components allow us to explore multiple architectures and understand how to fine-tune and continuously improve models. The task for all the homeworks were similar and it was interesting to learn how the same task can be solved using multiple Deep Learning approaches. Overall, at the end of this course you will be confident enough to build and tune Deep Learning models.</p>
+            <p><a href="http://deeplearning.cs.cmu.edu/F20/document/extra/TAs.html"> Acknowledgments</a></p>
+
+            <h3>Your Supporters</h3>
+            <p><b style="color:#A80000;">Instructor:</b></p>
+            <ul style="margin-top:-10px;">
+                <li><b>Bhiksha Raj</b> : bhiksha@cs.cmu.edu</li>
+            </ul>
+            <p>
+                <b style="color:#A80000;">TAs:</b>
+            </p><ul>
+                <li><b>Tony Qin</b>: tcq@andrew.cmu.edu</li>
+                <li><b>Mansi Anand</b>: mansia@andrew.cmu.edu</li>
+                <li><b>Anxiang Zhang</b>: anxiangz@andrew.cmu.edu</li>
+                <li><b>Antioch Sanders</b>: asanders@andrew.cmu.edu</li>
+                <li><b>Nicole Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
+                <li><b>Akshat Gupta</b>: akshatgu@andrew.cmu.edu</li>
+                <li><b>Jiachen Lian</b>: jlian2@andrew.cmu.edu</li>
+                <li><b>Bharat Gaind</b>: bgaind@andrew.cmu.edu</li>
+                <li><b>Mehak Goyal</b>: mehakg@andrew.cmu.edu</li>
+                <li><b>Sean Pereira</b>: sapereir@andrew.cmu.edu</li>
+                <li><b>Reshmi Ghosh</b>: reshmig@andrew.cmu.edu</li>
+                <li><b>Kushal Saharan</b>: ksaharan@andrew.cmu.edu</li>
+                <li><b>David Park</b>: jinyun1@andrew.cmu.edu</li>
+                <li><b>(Silicon Valley) Yizhuo Zhang</b>: yizhuoz@andrew.cmu.edu</li>
+                <li><b>(Kigali) Abrham Gebresellasie</b>: agebrese@andrew.cmu.edu</li>
+            </ul>
+            <h3>Pittsburgh Schedule (Eastern Time)</h3>
+            <p><b style="color:#A80000;">Lecture:</b> Monday and Wednesday, 9:00 a.m. - 10:20 a.m. </p>
+            <p><b style="color:#A80000;">Zoom Link:</b> <a href="https://cmu.zoom.us/j/4037467921">Meeting Link </a>, Meeting ID: 403 746 7921</p>
+            <p><b style="color:#A80000;">Recitation:</b> Friday, 9.00am-10.20am BH A51 </p>
+            <b id="oh" style="color:#A80000;">Office hours: </b>
+
+            <!--<table style="height: 123px; width: 540.333px;" border="0">-->
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                <tbody>
                   <tr>
-                      <td><a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPyyQzmID534-R1CnGJs0Ls-">Final Project Playlist</a></td> <!--Assignment-->
-                      <td></td> <!--Deadline-->
-                      <td>Please enjoy the final project videos from our students</td> <!--Description-->
-                      <td> <a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPyyQzmID534-R1CnGJs0Ls-">Youtube Playlist</a> <!--Links-->
-                      </td>
+                    <td style="width: 100px; text-align: center;"><strong>Day</strong></td>
+                    <td style="width: 136px; text-align: center;"><strong>Time</strong></td>
+                    <td style="width: 110px; text-align: center;"><strong>Location</strong></td>
+                    <td style="width: 173.333px; text-align: center;"><strong>TA</strong></td>
                   </tr>
-              </tbody>
-          </table>
-          </div>
-          <h3>The Course</h3>
-          <p>
-              “Deep Learning” systems, typified by deep neural networks, are increasingly taking over all AI tasks, ranging from language understanding, and speech and image recognition, to machine translation, planning, and even game playing and autonomous driving. As a result, expertise in deep learning is fast changing from an esoteric desirable to a mandatory prerequisite in many advanced academic settings, and a large advantage in the industrial job market.
-          </p>
-          <p> In this course we will learn about the basics of deep neural networks, and their applications to various AI tasks. By the end of the course, it is expected that students will have significant familiarity with the subject, and be able to apply Deep Learning to a variety of tasks. They will also be positioned to understand much of the current literature on the topic and extend their knowledge through further study.</p>
-          <p>If you are only interested in the lectures, you can watch them on the YouTube channel listed below.
-          </p><h3>Course description from student point of view</h3>
-          <p>The course is well rounded in terms of concepts. It helps us understand the fundamentals of Deep Learning. The course starts off gradually with MLPs and it progresses into the more complicated concepts such as attention and sequence-to-sequence models. We get a complete hands on with PyTorch which is very important to implement Deep Learning models. As a student, you will learn the tools required for building Deep Learning models. The homeworks usually have 2 components which is Autolab and Kaggle. The Kaggle components allow us to explore multiple architectures and understand how to fine-tune and continuously improve models. The task for all the homeworks were similar and it was interesting to learn how the same task can be solved using multiple Deep Learning approaches. Overall, at the end of this course you will be confident enough to build and tune Deep Learning models.</p>
-  <p><a href="http://deeplearning.cs.cmu.edu/F20/document/extra/TAs.html"> Acknowledgments</a></p>
+                  <tr>
+                    <td style="width: 100px;" rowspan="2">Monday</td>
+                    <td style="width: 136px;">TBD</td>
+                    <td style="width: 110px;">TBD</td>
+                    <td style="width: 173.333px;">TBD</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 136px;">TBD</td>
+                    <td style="width: 110px;">TBD</td>
+                    <td style="width: 173.333px;">TBD</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 100px;" rowspan="2">Tuesday</td>
+                    <td style="width: 136px;">TBD</td>
+                    <td style="width: 110px;">TBD</td>
+                    <td style="width: 173.333px;">TBD</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 136px;">TBD</td>
+                    <td style="width: 110px;">TBD</td>
+                    <td style="width: 173.333px;">TBD</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 100px;" rowspan="2">Wednesday</td>
+                    <td style="width: 136px;">TBD</td>
+                    <td style="width: 110px;">TBD</td>
+                    <td style="width: 173.333px;">TBD</td>
+                  </tr>
+                  <tr>
+                      <td style="width: 136px;">TBD</td>
+                      <td style="width: 110px;">TBD</td>
+                      <td style="width: 173.333px;">TBD</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 100px;" rowspan="2">Thursday</td>
+                        <td style="width: 136px;">TBD</td>
+                        <td style="width: 110px;">TBD</td>
+                        <td style="width: 173.333px;">TBD</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 136px;">TBD</td>
+                        <td style="width: 110px;">TBD</td>
+                        <td style="width: 173.333px;">TBD</td>
+                    </tr>
+                  <tr>
+                    <td style="width: 100px;" rowspan="2">Friday</td>
+                    <td style="width: 136px;">TBD</td>
+                    <td style="width: 110px;">TBD</td>
+                    <td style="width: 173.333px;">TBD</td>
+                  </tr>
+                  <tr>
+                      <td style="width: 136px;">TBD</td>
+                      <td style="width: 110px;">TBD</td>
+                      <td style="width: 173.333px;">TBD</td>
+                  </tr>
+                  <tr>
+                      <td style="width: 100px;">Saturday</td>
+                      <td style="width: 136px;">TBD</td>
+                      <td style="width: 110px;">TBD</td>
+                      <td style="width: 173.333px;">TBD</td>
+                  </tr>
+                  <tr>
+                      <td style="width: 100px;">Sunday</td>
+                      <td style="width: 136px;">TBD</td>
+                      <td style="width: 110px;">TBD</td>
+                      <td style="width: 173.333px;">TBD</td>
+                  </tr>
+                </tbody>
+                </table>
+            </div>
 
-          <h3>Your Supporters</h3>
-          <p><b style="color:#A80000;">Instructor:</b></p>
-          <ul style="margin-top:-10px;">
-              <li><b>Bhiksha Raj</b> : bhiksha@cs.cmu.edu</li>
-          </ul>
-          <p>
-              <b style="color:#A80000;">TAs:</b>
-          </p><ul>
-              <li><b>Tony Qin</b>: tcq@andrew.cmu.edu</li>
-              <li><b>Mansi Anand</b>: mansia@andrew.cmu.edu</li>
-              <li><b>Anxiang Zhang</b>: anxiangz@andrew.cmu.edu</li>
-              <li><b>Antioch Sanders</b>: asanders@andrew.cmu.edu</li>
-              <li><b>Nicole Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
-              <li><b>Akshat Gupta</b>: akshatgu@andrew.cmu.edu</li>
-              <li><b>Jiachen Lian</b>: jlian2@andrew.cmu.edu</li>
-              <li><b>Bharat Gaind</b>: bgaind@andrew.cmu.edu</li>
-              <li><b>Mehak Goyal</b>: mehakg@andrew.cmu.edu</li>
-              <li><b>Sean Pereira</b>: sapereir@andrew.cmu.edu</li>
-              <li><b>Reshmi Ghosh</b>: reshmig@andrew.cmu.edu</li>
-              <li><b>Kushal Saharan</b>: ksaharan@andrew.cmu.edu</li>
-              <li><b>David Park</b>: jinyun1@andrew.cmu.edu</li>
-              <li><b>(Silicon Valley) Yizhuo Zhang</b>: yizhuoz@andrew.cmu.edu</li>
-              <li><b>(Kigali) Abrham Gebresellasie</b>: agebrese@andrew.cmu.edu</li>
-          </ul>
-          <h3>Pittsburgh Schedule (Eastern Time)</h3>
-          <p><b style="color:#A80000;">Lecture:</b> Monday and Wednesday, 9:00 a.m. - 10:20 a.m. </p>
-          <p><b style="color:#A80000;">Zoom Link:</b> <a href="https://cmu.zoom.us/j/4037467921">Meeting Link </a>, Meeting ID: 403 746 7921</p>
-          <p><b style="color:#A80000;">Recitation:</b> Friday, 9.00am-10.20am BH A51 </p>
-          <b id="oh" style="color:#A80000;">Office hours: </b>
+            <h3>Kigali Schedule (Central Africa Time)</h3>
+            <p><b style="color:#A80000;">Lecture:</b> Monday and Wednesday, 3:00 p.m. – 4:20 p.m. @ CMR C421</p>
+            <b style="color:#A80000;">Office hours: </b>
+            <ul>
+                <li><b>TBD</b>: Monday – Sunday, 12 a.m. - 12 a.m. @ Rm TBD</li>
+            </ul>
 
-          <!--<table style="height: 123px; width: 540.333px;" border="0">-->
-      <div class="table-responsive">
-      <table class="table table-striped table-bordered">
-      <tbody>
-        <tr>
-          <td style="width: 100px; text-align: center;"><strong>Day</strong></td>
-          <td style="width: 136px; text-align: center;"><strong>Time</strong></td>
-          <td style="width: 110px; text-align: center;"><strong>Location</strong></td>
-          <td style="width: 173.333px; text-align: center;"><strong>TA</strong></td>
-        </tr>
-        <tr>
-          <td style="width: 100px;" rowspan="2">Monday</td>
-          <td style="width: 136px;">TBD</td>
-          <td style="width: 110px;">TBD</td>
-          <td style="width: 173.333px;">TBD</td>
-        </tr>
-        <tr>
-          <td style="width: 136px;">TBD</td>
-          <td style="width: 110px;">TBD</td>
-          <td style="width: 173.333px;">TBD</td>
-        </tr>
-        <tr>
-          <td style="width: 100px;" rowspan="2">Tuesday</td>
-          <td style="width: 136px;">TBD</td>
-          <td style="width: 110px;">TBD</td>
-          <td style="width: 173.333px;">TBD</td>
-        </tr>
-        <tr>
-          <td style="width: 136px;">TBD</td>
-          <td style="width: 110px;">TBD</td>
-          <td style="width: 173.333px;">TBD</td>
-        </tr>
-        <tr>
-          <td style="width: 100px;" rowspan="2">Wednesday</td>
-          <td style="width: 136px;">TBD</td>
-          <td style="width: 110px;">TBD</td>
-          <td style="width: 173.333px;">TBD</td>
-        </tr>
-        <tr>
-            <td style="width: 136px;">TBD</td>
-            <td style="width: 110px;">TBD</td>
-            <td style="width: 173.333px;">TBD</td>
-        </tr>
-        <tr>
-          <td style="width: 100px;" rowspan="2">Thursday</td>
-              <td style="width: 136px;">TBD</td>
-              <td style="width: 110px;">TBD</td>
-              <td style="width: 173.333px;">TBD</td>
-          </tr>
-          <tr>
-              <td style="width: 136px;">TBD</td>
-              <td style="width: 110px;">TBD</td>
-              <td style="width: 173.333px;">TBD</td>
-          </tr>
-        <tr>
-          <td style="width: 100px;" rowspan="2">Friday</td>
-          <td style="width: 136px;">TBD</td>
-          <td style="width: 110px;">TBD</td>
-          <td style="width: 173.333px;">TBD</td>
-        </tr>
-        <tr>
-            <td style="width: 136px;">TBD</td>
-            <td style="width: 110px;">TBD</td>
-            <td style="width: 173.333px;">TBD</td>
-        </tr>
-        <tr>
-          <td style="width: 100px;">Saturday</td>
-          <td style="width: 136px;">TBD</td>
-          <td style="width: 110px;">TBD</td>
-          <td style="width: 173.333px;">TBD</td>
-          </tr>
-          <tr>
-              <td style="width: 100px;">Sunday</td>
-              <td style="width: 136px;">TBD</td>
-              <td style="width: 110px;">TBD</td>
-              <td style="width: 173.333px;">TBD</td>
-          </tr>
-      </tbody>
-    </table>
+            <h3>Silicon Valley Schedule (Pacific Time)</h3>
+            <b style="color:#A80000;">Office hours: </b>
+            <ul>
+                <li><b>Yizhuo Zhang</b>: Monday – Sunday, 12 a.m. - 12 a.m. @ Rm TBD</li>
+            </ul>
+
+            <h3>Prerequisites</h3>
+            <ol>
+                <li>We will be using one of several toolkits (the primary toolkit for recitations/instruction is PyTorch). The toolkits are largely programmed in Python. You will need to be able to program in at least one of these languages. Alternately, you will be responsible for finding and learning a toolkit that requires programming in a language you are comfortable with, </li>
+                <li>You will need familiarity with basic calculus (differentiation, chain rule), linear algebra and basic probability. </li>
+            </ol>
+            <h3>Units</h3>
+            <p>11-785 and 11-685 are a graduate courses worth 12 units. 11-485 is an undergraduate course worth 9 units.</p>
       </div>
+</div>
 
-          <h3>Kigali Schedule (Central Africa Time)</h3>
-          <p><b style="color:#A80000;">Lecture:</b> Monday and Wednesday, 3:00 p.m. – 4:20 p.m. @ CMR C421</p>
-          <b style="color:#A80000;">Office hours: </b>
-          <ul>
-              <li><b>TBD</b>: Monday – Sunday, 12 a.m. - 12 a.m. @ Rm TBD</li>
-          </ul>
-
-          <h3>Silicon Valley Schedule (Pacific Time)</h3>
-          <b style="color:#A80000;">Office hours: </b>
-          <ul>
-              <li><b>Yizhuo Zhang</b>: Monday – Sunday, 12 a.m. - 12 a.m. @ Rm TBD</li>
-          </ul>
-
-          <h3>Prerequisites</h3>
-          <ol>
-              <li>We will be using one of several toolkits (the primary toolkit for recitations/instruction is PyTorch). The toolkits are largely programmed in Python. You will need to be able to program in at least one of these languages. Alternately, you will be responsible for finding and learning a toolkit that requires programming in a language you are comfortable with, </li>
-              <li>You will need familiarity with basic calculus (differentiation, chain rule), linear algebra and basic probability. </li>
-          </ol>
-          <h3>Units</h3>
-          <p>11-785 is a graduate course worth 12 units. 11-485 is an undergraduate course worth 9 units.</p>
-  </div>
   <div id="course-work" class="container">
       <div class="row">
           <h2>Course Work</h2>
@@ -271,13 +275,12 @@
           </p><div class="table-responsive">
               <table class="rules-table">
                   <tbody><tr class="rules-table-header">
-                      <td></td>
-                      <td></td>
-                      <td><b>Policy</b></td>
+                      <td colspan="3" style="text-align: center;"><b>Policy</b></td>
                   </tr>
+                  <tr class="m-policy-header"><td colspan="3"><b>Quizzes</b></td></tr>
                   <tr>
-                      <td><b>Quizzes</b></td>
-                      <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                      <td class="policy-header"><b>Quizzes</b></td>
+                      <td class="policy-spacer">&nbsp;&nbsp;&nbsp;&nbsp;</td>
                       <td>
                           There will be weekly quizzes.
                           <ul>
@@ -290,7 +293,10 @@
                           </ul>
                       </td>
                   </tr>
-                  <tr> <td><b>Assignments</b></td> <td></td><td>There will be five assignments in all. Assignments will include <i>autolab</i> components, where you must complete designated tasks, and a <i>kaggle</i> component where you compete with your colleagues.
+
+                  <tr class="m-policy-header"><td colspan="3"><b>Assignments</b></td></tr>
+                  <tr> <td class="policy-header"><b>Assignments</b></td>
+                      <td class="policy-spacer"></td><td>There will be five assignments in all. Assignments will include <i>autolab</i> components, where you must complete designated tasks, and a <i>kaggle</i> component where you compete with your colleagues.
                       <ul>
                           <li> Autolab components are scored according to the number of correctly completed parts.
                           </li><li> We will post performance cutoffs for A, B, C, D and F for Kaggle competitions. These will translate to scores of 100, 80, 60, 40 and 0 respectively. Scores will be interpolated linearly between these cutoffs.
@@ -304,10 +310,19 @@
                               </li></ul>
                           </li><li> <b>Assignments carry 51% of your total score</b>. HW0 is worth 1%, while each of the subsequent four are worth 12.5%.
                       </li></ul></td></tr>
-                  <tr><td><b>Project</b></td><td></td><td>All students are required to do a course project. <b>The project is worth 25% of your grade</b></td></tr>
-                  <tr> <td><b>Final grade</b></td><td></td> <td>The end-of-term grade is curved. Your overall grade will depend on your performance relative to your classmates.</td></tr>
-                  <tr> <td><b>Pass/Fail</b></td><td></td> <td>Students registered for pass/fail must complete all quizzes, HWs and the project. A grade equivalent to B- is required to pass the course.</td></tr>
-                  <tr> <td><b>Auditing</b></td><td></td> <td>Auditors are not required to complete the course project, but must complete all quizzes and homeworks. We encourage doing a course project regardless.</td></tr>
+
+                  <tr class="m-policy-header"><td colspan="3"><b>Project</b></td></tr>
+                  <tr><td class="policy-header"><b>Project</b></td><td class="policy-spacer"></td><td>All students are required to do a course project. <b>The project is worth 25% of your grade</b></td></tr>
+
+                  <tr class="m-policy-header"><td colspan="3"><b>Final grade</b></td></tr>
+                  <tr> <td class="policy-header"><b>Final grade</b></td><td class="policy-spacer"></td> <td>The end-of-term grade is curved. Your overall grade will depend on your performance relative to your classmates.</td></tr>
+
+                  <tr class="m-policy-header"><td colspan="3"><b>Pass/Fail</b></td></tr>
+                  <tr> <td class="policy-header"><b>Pass/Fail</b></td><td class="policy-spacer"></td> <td>Students registered for pass/fail must complete all quizzes, HWs and the project. A grade equivalent to B- is required to pass the course.</td></tr>
+
+                  <tr class="m-policy-header"><td colspan="3"><b>Auditing</b></td></tr>
+                  <tr> <td class="policy-header"><b>Auditing</b></td><td class="policy-spacer"></td>
+                      <td>Auditors are not required to complete the course project, but must complete all quizzes and homeworks. We encourage doing a course project regardless.</td></tr>
 
                   <tr class="rules-table-bottom">
                       <td></td>
@@ -1239,9 +1254,8 @@
                     </td>
                 </tr>
                 </tbody>
-            </table> -->
+            </table>
         </div>
-    </div>
 </div>
 <div class="container">
     <div class="row">
