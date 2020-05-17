@@ -208,6 +208,22 @@ b {
     }
 }
 
+.m-policy-header {
+    display: none
+}
+
+@media (max-width: 600px) {
+    .m-policy-header {
+        display: unset
+    }
+    .policy-header {
+        display: none;
+    }
+    .policy-spacer {
+        display: none;
+    }
+}
+
 @media (max-width: 400px) {
     .mobile-menu {
         width: 100%;
