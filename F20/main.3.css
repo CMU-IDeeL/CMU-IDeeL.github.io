@@ -245,6 +245,14 @@ b {
     }
 }
 
+@media (max-height: 530px) {
+    .m-header-item {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 6.5vh;
+    }
+}
+
 footer {
     margin-top: 60px;
     margin-bottom: 30px;
