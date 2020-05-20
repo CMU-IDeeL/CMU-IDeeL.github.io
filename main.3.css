@@ -73,7 +73,6 @@ b {
 
 
 .version-icon {
-    background-color: #b96765;
     color: white;
     border-radius: 3px;
     padding-left: 2px;
@@ -85,12 +84,13 @@ b {
     color: white;
 }
 .version-icon:hover {
+    color: white;
     text-decoration: none;
 }
 
 .current-icon {
     cursor: auto;
-    background-color: #00000000;
+    background-color: #b96765;
     border-radius: 3px;
     padding-left: 2px;
     padding-right: 2px;
