@@ -2,35 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   <!--  <meta http-equiv="refresh" content="5"> -->
     <title>11-785 Deep Learning</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic' rel='stylesheet' type='text/css'>
 
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <!-- display nicely on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"</meta>
+    <!-- bootstrap 3 -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic' rel='stylesheet' type='text/css'>
+    <!-- font awesome icons (for mobile menu) -->
+    <script src="https://kit.fontawesome.com/fc8bcf2df2.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- custom code -->
+    <script src="script.js"></script>
+
+    <!-- bust caches by incrementing version of main -->
+    <link href="main.3.css" rel="stylesheet" type="text/css">
 </head>
-<span class="fall">
-    <a class="fall" href="../index.html">
-      For the fall 2020 website, go here
-    </a>
-</span>
+
+<body>
+
 <div class="container titlebar">
+    <div class="header">
+        <span class="menu-wrapper" style="width: 80%">
+            <span class="header-item" onclick="toSection('#title')">
+                About
+            </span><span class="header-item" onclick="toSection('#oh')">
+                OH
+            </span>
+            <span class="header-item" onclick="toSection('#course-work')">
+                Course Work
+            </span>
+            <span class="header-item" onclick="toSection('#lectures')">
+                Lectures
+            </span>
+            <span class="header-item" onclick="toSection('#recitations')">
+                Recitations
+            </span>
+            <span class="header-item" onclick="toSection('#homework')">
+                Homework
+            </span>
+            <span class="header-item" onclick="toSection('#project')">
+                Project
+            </span>
+            <span class="header-item" onclick="toSection('#docs-tools')">
+                Docs &amp; Tools
+            </span>
+        </span>
+        <span class="version-menu">
+            <a class="version-icon" href="../index.html">F20</a>
+            <span class="current-icon">S20</span>
+        </span>
+    </div>
+
+    <div class="mobile-header">
+        <!--<i class="menu-button fas fa-bars"></i>-->
+        <span id="menu-button" onclick="showMenu()">Menu</span>
+    </div>
+    <div class="menu-backdrop" onclick="hideMenu()"></div>
+    <div class="mobile-menu">
+        <div class="menu-exit m-header-item" onclick="hideMenu()">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#title')">
+            About
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#oh')">
+            OH
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#course-work')">
+            Course Work
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#lectures')">
+            Lectures
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#recitations')">
+            Recitations
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#homework')">
+            Homework
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#project')">
+            Project
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#docs-tools')">
+            Docs &amp; Tools
+        </div>
+        <div class="m-version-menu">
+            <a class="version-icon" href="..//index.html">F20</a>
+            <span class="current-icon">S20</span>
+        </div>
+    </div>
+
     <div class="row">
         <!--div class="titlebar-img title-col vcenter">
            <img id="logo" src="./img/brain.png">
            </div-->
         <div class="title-col vcenter" style="color:#A80000;font-weight:bold;text-align:center;width:100%">
-            <div class="title"><b>11-785</b> Introduction to Deep Learning</div>
+            <div id="title"><b>11-785</b> Introduction to Deep Learning</div>
             <div class="subtitle"><i>Spring 2020</i></div>
         </div>
     </div>
 </div>
-
-<body>
 <div class=" container">
 
     <div class="row">
         <h2> Bulletin and Active Deadlines </h2>
+
+        <div class="table-responsive">
         <table  class="table table-striped table-bordered">
             <thead>
             <tr>
@@ -89,6 +169,7 @@
 
             </tbody>
         </table>
+        </div>
 
         <p style="margin-top:75px;">
             &ldquo;Deep Learning&rdquo; systems, typified by deep neural networks, are increasingly taking over all AI tasks, ranging from language understanding, and speech and image recognition, to machine translation, planning, and even game playing and autonomous driving. As a result, expertise in deep learning is fast changing from an esoteric desirable to a mandatory prerequisite in many advanced academic settings, and a large advantage in the industrial job market.
@@ -131,9 +212,9 @@
         <p><b style="color:#A80000;">Lecture:</b> Monday and Wednesday, 9:00 a.m. - 10:20 a.m. </p>
         <p><b style="color:#A80000;">Zoom Link:</b> <a href=https://cmu.zoom.us/j/4037467921>Meeting Link </a>, Meeting ID: 403 746 7921</p>
         <p><b style="color:#A80000;">Recitation:</b> Friday, 9.00am-10.20am BH A51 </p>
-        <b style="color:#A80000;">Office hours: </b>
+        <b id="oh" style="color:#A80000;">Office hours: </b>
 
-        <!--<table style="height: 123px; width: 540.333px;" border="0">-->
+      <div class="table-responsive">
 	  <table class="table table-striped table-bordered">
 	  <tbody>
 	    <tr>
@@ -246,6 +327,7 @@
         </tr>
 	  </tbody>
 	</table>
+    </div>
 
         <h3>Kigali Schedule (Central Africa Time)</h3>
         <p><b style="color:#A80000;">Lecture:</b> Monday and Wednesday, 3:00 p.m. – 4:20 p.m. @ CMR C421</p>
@@ -272,12 +354,14 @@
         <p>11-785 is a graduate course worth 12 units. 11-485 is an undergraduate course worth 9 units.</p>
     </div>
 </div>
-<div class="container">
+<div id="course-work" class="container">
     <div class="row">
         <h2>Course Work</h2>
         <h3>Grading</h3>
         <p>Grading will be based on weekly quizzes (24%), homeworks (51%) and a course  project (25%).
         <div>
+
+            <div class="table-responsive">
             <table class="rules-table">
                 <tr class="rules-table-header">
                     <td></td>
@@ -324,6 +408,7 @@
                     <td><b>End Policy</b></td>
                 </tr>
             </table>
+            </div>
         </div>
 
         <h3>Piazza: Discussion Board</h3>
@@ -355,10 +440,12 @@
         </div>
     </div>
 </div>
-<div class="container">
+<div id="lectures" class="container">
     <div class="row">
         <h2>Tentative Schedule of Lectures</h2>
         <div class="">
+
+            <div class="table-responsive">
             <table class="table table-striped table-bordered">
                 <thead>
                 <tr>
@@ -847,7 +934,10 @@
                 </tr>
                 </tbody>
             </table>
-            <h2>Tentative Schedule of Recitations</h2>
+            </div>
+            <h2 id="recitations">Tentative Schedule of Recitations</h2>
+
+            <div class="table-responsive">
             <table class="table table-striped table-bordered">
                 <thead>
                 <tr>
@@ -1020,8 +1110,11 @@
                 </tr>
                 </tbody>
             </table>
+            </div>
 
             <h2 id="homework"> Homework Schedule </h2>
+
+            <div class="table-responsive">
             <table  class="table table-striped table-bordered">
                 <thead>
                 <tr>
@@ -1180,9 +1273,12 @@
                 </tr>
                 </tbody>
             </table>
+            </div>
 
 
           <h2 id="project"> Course Project Timeline</h2>
+
+            <div class="table-responsive">
             <table  class="table table-striped table-bordered">
             <thead>
             <tr>
@@ -1240,55 +1336,8 @@
             </tr>
             </tbody>
         </table>
+        </div>
 	<p>Grade Breakdown: 10% - Proposal; 15% - Midterm Report; 30% - Project Video and follow-up; 45% - Project Report.</p>
-
-             <!-- <font color=red>Poster session: Tuesday May 5th and Wednesday May 6th 8:00 pm, Location (both days):  GHC 7107 Atrium.</font>  -->
-
-            <!-- <h2> Simplified Practice Assignments </h2>
-            <table  class="table table-striped table-bordered">
-                <thead>
-                <tr>
-                    <th>Summer Practice</th>
-                    <th>Deadline</th>
-                    <th>Description</th>
-                    <th>Links</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr> -->
-                    <!-- <td> Homework 1</td>
-                    <td>NA</td>
-                    <td>Multilayer Perceptrons</td>
-                    <td>
-                        <a href="document/homework/summer-homework1.tar.gz"> Materials (*.tar.gz) </a><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td> Homework 2</td>
-                    <td>NA</td>
-                    <td>Basic Image Recognition</td>
-                    <td>
-                        <a href="document/homework/summer-homework2.tar.gz"> Materials (*.tar.gz) </a><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td> Homework 3</td>
-                    <td>NA</td>
-                    <td>Basic Sequence Recognition</td>
-                    <td>
-                        <a href="document/homework/summer-homework3.tar.gz"> Materials (*.tar.gz) </a><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td> Homework 4</td>
-                    <td>NA</td>
-                    <td>Basic Neural Language Translation</td>
-                    <td>
-                        <a href="document/homework/summer-homework4.tar.gz"> Materials (*.tar.gz) </a><br>
-                    </td>
-                </tr>
-                </tbody>
-            </table> -->
         </div>
     </div>
 </div>
@@ -1297,7 +1346,7 @@
         <!-- <h3><a href="slides/ProjectIdeas.pptx">Some ideas for projects</a></h3> -->
     </div>
 </div>
-<div class="container">
+<div id="docs-tools" class="container">
     <div class="row">
         <h2>Documentation and Tools</h2>
         <h3>Textbooks</h3>
@@ -1310,7 +1359,7 @@
             </div>
         </div>
         <div class="textbook">
-            <div class="textbook-img-container"><img src="./image/Nielsen.png" alt="Neural Networks and Deep Learning" /></div>
+            <div class="textbook-img-container"><img src="./image/Nielsen.jpg" alt="Neural Networks and Deep Learning" /></div>
             <div class="textbook-info">
                 <span class="textbook-info-item"><a href="http://neuralnetworksanddeeplearning.com/"><b>Neural Networks and Deep Learning</b></a></span>
                 <span class="textbook-info-item">By Michael Nielsen</span>
@@ -1334,9 +1383,13 @@
             </div>
         </div>
         <div class="textbook">
-            <div class="textbook-img-container"><img src="./image/Rumelhart.jpg" alt="Parallel Distributed Processing"/></div>
+            <div class="textbook-img-container"><img src="./image/Rumelhart1.jpg" alt="Parallel Distributed Processing"/></div>
             <div class="textbook-info">
-                <span class="textbook-info-item"><a href="https://mitpress.mit.edu/books/parallel-distributed-processing"><b>Parallel Distributed Processing</b></a></span>
+                <span class="textbook-info-item">
+                    <a href="https://mitpress.mit.edu/books/parallel-distributed-processing-volume-1"><b>Parallel Distributed Processing Vol. 1</b></a>
+                    <br />
+                    <a href="https://mitpress.mit.edu/books/parallel-distributed-processing-volume-2"><b>Parallel Distributed Processing Vol. 2</b></a>
+                </span>
                 <span class="textbook-info-item">By Rumelhart and McClelland</span>
                 <span class="textbook-info-item"><i>Out of print, 1986</i></span>
             </div>
