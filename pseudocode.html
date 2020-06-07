@@ -21,6 +21,10 @@
     <link href="main.3.css" rel="stylesheet" type="text/css">
 </head>
 
+    <!-- To create a new pseudocode listing, copy one of the card elements
+         for the lecture it is part of. Then, increment all mentions of "lecXCollapseY"
+         in the new card appropriately. Use emgithub to generate an embed script. Test
+         that the accordion still works as expected. -->
 <body>
     <div class="container titlebar">
         <div class="row">
@@ -34,57 +38,435 @@
     </div>
 
 
-    <div class=" container">
+    <div class="container">
         <h2>Pseudocode</h2>
-        <div class="accordion" id="accordionExample">
-        <div class="card">
-            <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      Lecture 4: Backprop Part 1
-                    </button>
-                </h2>
-            </div>
+        <br>
+        <div class="accordion" id="lectureAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#outerCollapseOne" aria-expanded="false" aria-controls="outerCollapseOne">
+                          Lecture 4: Backprop Part 1
+                        </button>
+                    </h2>
+                </div>
 
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                    I am pseudocode :)
+                <div id="outerCollapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#lectureAccordion">
+                    <div class="card-body">
+
+
+                        <div class="accordion" id="lec4Accordion">
+                            <div class="card">
+                                <div class="card-header" id="lec4headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec4CollapseOne" aria-expanded="false" aria-controls="lec4CollapseOne">
+                                          Forward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec4CollapseOne" class="collapse" aria-labelledby="lec4headingOne" data-parent="#lec4Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_forward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="lec4headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec4CollapseTwo" aria-expanded="false" aria-controls="lec4CollapseTwo">
+                                          Backward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec4CollapseTwo" class="collapse" aria-labelledby="lec4headingTwo" data-parent="#lec4Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_backward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Lecture 5: Backprop Part 2
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                    I am pseudocode :)
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#outerCollapseTwo" aria-expanded="false" aria-controls="outerCollapseTwo">
+                            Lecture 5: Backprop Part 2
+                        </button>
+                    </h2>
+                </div>
+                <div id="outerCollapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#lectureAccordion">
+                    <div class="card-body">
+
+                        <div class="accordion" id="lec5Accordion">
+                            <div class="card">
+                                <div class="card-header" id="lec5headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec5CollapseOne" aria-expanded="false" aria-controls="lec5CollapseOne">
+                                          Forward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec5CollapseOne" class="collapse" aria-labelledby="lec5headingOne" data-parent="#lec5Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_forward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Lecture 6: Optimization Part 1
-                    </button>
-                </h2>
-            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#outerCollapseThree" aria-expanded="false" aria-controls="outerCollapseThree">
+                            Lecture 6: Optimization Part 1
+                        </button>
+                    </h2>
+                </div>
 
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                    I am pseudocode :)
+                <div id="outerCollapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#lectureAccordion">
+                    <div class="card-body">
+                        <div class="accordion" id="lec6Accordion">
+                            <div class="card">
+                                <div class="card-header" id="lec6headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec6CollapseOne" aria-expanded="false" aria-controls="lec6CollapseOne">
+                                          Forward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec6CollapseOne" class="collapse" aria-labelledby="lec6headingOne" data-parent="#lec6Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_forward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#outerCollapseFour" aria-expanded="false" aria-controls="outerCollapseFour">
+                            Lecture 7: Optimization Part 2
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="outerCollapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#lectureAccordion">
+                    <div class="card-body">
+                        <div class="accordion" id="lec7Accordion">
+                            <div class="card">
+                                <div class="card-header" id="lec7headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec7CollapseOne" aria-expanded="false" aria-controls="lec7CollapseOne">
+                                          Forward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec7CollapseOne" class="collapse" aria-labelledby="lec7headingOne" data-parent="#lec7Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_forward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#outerCollapseFive" aria-expanded="false" aria-controls="outerCollapseFive">
+                            Lecture 8: Optimizers
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="outerCollapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#lectureAccordion">
+                    <div class="card-body">
+                        <div class="accordion" id="lec8Accordion">
+                            <div class="card">
+                                <div class="card-header" id="lec8headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec8CollapseOne" aria-expanded="false" aria-controls="lec8CollapseOne">
+                                          Forward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec8CollapseOne" class="collapse" aria-labelledby="lec8headingOne" data-parent="#lec8Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_forward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#outerCollapseSix" aria-expanded="false" aria-controls="outerCollapseSix">
+                            Lecture 9: CNNs Part 1
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="outerCollapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#lectureAccordion">
+                    <div class="card-body">
+                        <div class="accordion" id="lec9Accordion">
+                            <div class="card">
+                                <div class="card-header" id="lec9headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec9CollapseOne" aria-expanded="false" aria-controls="lec9CollapseOne">
+                                          Forward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec9CollapseOne" class="collapse" aria-labelledby="lec9headingOne" data-parent="#lec9Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_forward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingSeven">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#outerCollapseSeven" aria-expanded="false" aria-controls="outerCollapseSeven">
+                            Lecture 10: CNNs Part 2
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="outerCollapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#lectureAccordion">
+                    <div class="card-body">
+                        <div class="accordion" id="lec10Accordion">
+                            <div class="card">
+                                <div class="card-header" id="lec10headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec10CollapseOne" aria-expanded="false" aria-controls="lec10CollapseOne">
+                                          Forward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec10CollapseOne" class="collapse" aria-labelledby="lec10headingOne" data-parent="#lec10Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_forward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingEight">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#outerCollapseEight" aria-expanded="false" aria-controls="outerCollapseEight">
+                            Lecture 11: CNNs Part 3
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="outerCollapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#lectureAccordion">
+                    <div class="card-body">
+                        <div class="accordion" id="lec11Accordion">
+                            <div class="card">
+                                <div class="card-header" id="lec11headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec11CollapseOne" aria-expanded="false" aria-controls="lec11CollapseOne">
+                                          Forward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec11CollapseOne" class="collapse" aria-labelledby="lec11headingOne" data-parent="#lec11Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_forward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingNine">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#outerCollapseNine" aria-expanded="false" aria-controls="outerCollapseNine">
+                            Lecture 12: RNNs Part 1
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="outerCollapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#lectureAccordion">
+                    <div class="card-body">
+                        <div class="accordion" id="lec12Accordion">
+                            <div class="card">
+                                <div class="card-header" id="lec12headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec12CollapseOne" aria-expanded="false" aria-controls="lec12CollapseOne">
+                                          Forward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec12CollapseOne" class="collapse" aria-labelledby="lec12headingOne" data-parent="#lec12Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_forward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingTen">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#outerCollapseTen" aria-expanded="false" aria-controls="outerCollapseTen">
+                            Lecture 13: RNNs Part 2
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="outerCollapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#lectureAccordion">
+                    <div class="card-body">
+                        <div class="accordion" id="lec13Accordion">
+                            <div class="card">
+                                <div class="card-header" id="lec13headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec13CollapseOne" aria-expanded="false" aria-controls="lec13CollapseOne">
+                                          Forward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec13CollapseOne" class="collapse" aria-labelledby="lec13headingOne" data-parent="#lec13Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_forward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingEleven">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#outerCollapseEleven" aria-expanded="false" aria-controls="outerCollapseEleven">
+                            Lecture 15: RNNs Part 4
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="outerCollapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#lectureAccordion">
+                    <div class="card-body">
+                        <div class="accordion" id="lec15Accordion">
+                            <div class="card">
+                                <div class="card-header" id="lec15headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec15CollapseOne" aria-expanded="false" aria-controls="lec15CollapseOne">
+                                          Forward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec15CollapseOne" class="collapse" aria-labelledby="lec15headingOne" data-parent="#lec15Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_forward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingTwelve">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#outerCollapseTwelve" aria-expanded="false" aria-controls="outerCollapseTwelve">
+                            Lecture 16: Attention
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="outerCollapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#lectureAccordion">
+                    <div class="card-body">
+                        <div class="accordion" id="lec16Accordion">
+                            <div class="card">
+                                <div class="card-header" id="lec16headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                data-target="#lec16CollapseOne" aria-expanded="false" aria-controls="lec16CollapseOne">
+                                          Forward Pass
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="lec16CollapseOne" class="collapse" aria-labelledby="lec16headingOne" data-parent="#lec16Accordion">
+                                    <div class="card-body">
+                                        <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2FCMU-IDeeL%2Fpseudocode%2Fblob%2Fmaster%2Fbackprop%2Flec4_forward_pass.plaintext&style=github&showLineNumbers=on&showFileMeta=on"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
         </div>
     </div>
 </body>
