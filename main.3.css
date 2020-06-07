@@ -8,6 +8,10 @@ b {
     font-weight: 400;
 }
 
+code {
+    font-size: 65%;
+}
+
 .header {
     position: fixed;
     -webkit-box-orient: horizontal;
