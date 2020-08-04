@@ -27,7 +27,7 @@ function PopThisUp() {
   var popup = document.getElementById("myPopup");
   if (flag == 0){
     var iframe = document.createElement('iframe');
-    iframe.allow = "microphone"
+    //iframe.allow = "microphone"
     iframe.width = "300"
     iframe.height = "430"
     iframe.src = "https://console.dialogflow.com/api-client/demo/embedded/11785-Fall2020"
