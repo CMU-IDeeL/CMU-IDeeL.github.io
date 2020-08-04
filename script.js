@@ -22,17 +22,7 @@ function mobileToSection(target) {
     toSection(target);
 }
 
-var flag = 0
-function PopThisUp() {
-  var popup = document.getElementById("myPopup");
-  if (flag == 0){
-    var iframe = document.createElement('iframe');
-    //iframe.allow = "microphone"
-    iframe.width = "300"
-    iframe.height = "430"
-    iframe.src = "https://console.dialogflow.com/api-client/demo/embedded/11785-Fall2020"
-    popup.appendChild(iframe) 
-    flag = 1
-  }
-  popup.classList.toggle("show");
+function showChat() {
+  var chatBox = document.getElementById("chatBox");
+  chatBox.classList.toggle("show");
 }

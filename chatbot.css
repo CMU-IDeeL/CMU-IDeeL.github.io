@@ -1,16 +1,20 @@
 /* Popup container */
 #chatBox{
     position: fixed;
-    right: 150px;
-    bottom: 30px;
+    right: 20px;
+    bottom: 130px;
 }
 
 
 .mybutton {
-    width: 100px; 
-    margin-left: 100px;
     display: block;
-    background-color: #A80000;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    background-color: #a80000ad;
     color: rgb(238, 230, 230);
     border: none;
   }
@@ -21,22 +25,18 @@
     display: inline-block;
     cursor: pointer;
   }
-  
+
   /* The actual popup (appears on top) */
-  .popup .popuptext {
+  #chatBox.popup {
     visibility: hidden;
-    width: 100px;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 8px 0;
-    position: absolute;
     z-index: 1;
-    bottom: 125%;
-    left: 50%;
     margin-left: -80px;
   }
-  
+
   /* Popup arrow */
   .popup .popuptext::after {
     content: "";
@@ -48,20 +48,20 @@
     border-style: solid;
     border-color: #555 transparent transparent transparent;
   }
-  
+
   /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup .show {
+  #chatBox.show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s
   }
-  
+
   /* Add animation (fade in the popup) */
   @-webkit-keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
   }
-  
+
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
