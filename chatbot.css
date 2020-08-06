@@ -14,11 +14,21 @@
     border-radius: 100%;
     width: 70px;
     height: 70px;
+    font-size: 3em;
     background-color: #a80000ad;
     color: rgb(238, 230, 230);
     border: none;
   }
 
+@media (max-width: 600px) {
+  .mybutton {
+    width: calc(12vw);
+    height: calc(12vw);
+    font-size: 7.5vw;
+    right: 7px;
+    bottom: 7px;
+  }
+}
 
 .popup {
     position: relative;
