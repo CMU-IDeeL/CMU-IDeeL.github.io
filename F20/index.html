@@ -45,10 +45,7 @@
                 Recitations
             </span>
             <span class="header-item" onclick="toSection('#homework')">
-                Homework
-            </span>
-            <span class="header-item" onclick="toSection('#project')">
-                Project
+                Assignments
             </span>
             <span class="header-item" onclick="toSection('#docs-tools')">
                 Docs &amp; Tools
@@ -84,10 +81,7 @@
             Recitations
         </div>
         <div class="m-header-item" onclick="mobileToSection('#homework')">
-            Homework
-        </div>
-        <div class="m-header-item" onclick="mobileToSection('#project')">
-            Project
+            Assignments
         </div>
         <div class="m-header-item" onclick="mobileToSection('#docs-tools')">
             Docs &amp; Tools
@@ -1114,339 +1108,240 @@
             </table>
             </div>
 
-<!--
-            <style>
-                #deadlines td {
-                    vertical-align: middle;
-                    text-align: center
-                }
-            </style>
-            <table id="deadlines" class="table table-striped table-bordered" style="vertical-align: middle">
+
+
+			<style>
+				#deadlines td {
+					vertical-align: middle;
+					text-align: center
+				}
+			</style>
+            <h2 id="homework"> Assignments</h2>
+            <div class="table-responsive">
+                <table id="deadlines" class="table table-bordered" style="vertical-align: middle">
                 <thead>
-                <tr>
-                    <th>HWP1</th>
-                    <th>HWP2</th>
-                    <th>HW Bonus</th>
+                  <tr>
+                    <th>Date</th>
+                    <th>P1 HWs</th>
+                    <th>P2 HWs</th>
+                    <th>Bonus HWs</th>
                     <th>Project</th>
                     <th>Quizzes</th>
-                </tr>
+                  </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td rowspan=2></td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Project</td>
-                    <td>Quiz 0</td>
-                </tr>
-                <tr>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Project</td>
-                    <td>Quiz 1</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Project</td>
-                    <td>Quiz 2</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Project</td>
-                    <td>Quiz 3</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Project</td>
-                    <td>Quiz 4</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Project</td>
-                    <td>Quiz 5</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td rowspan=9>Project</td>
-                    <td>Quiz 6</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Quiz 7</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Quiz 8</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Quiz 9</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Quiz 10</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Quiz 11</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Quiz 12</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Quiz 13</td>
-                </tr>
-                <tr>
-                    <td>HW1 P1</td>
-                    <td>HW1 P2</td>
-                    <td>HW1 Bonus</td>
-                    <td>Quiz 14</td>
-                </tr>
-                </table>
-                -->
-
-
-
-            <h2 id="homework"> Homework Schedule </h2>
-            <div class="table-responsive">
-            <table class="table table-striped table-bordered">
-                <thead>
-                <tr>
-                    <th>Number</th>
-                    <th>Part</th>
-                    <th>Topics</th>
-                    <th>Release Date</th>
-                    <th>Early-submission Deadline</th>
-                    <th>On-time Deadline</th>
-                    <th>Links </th>
-                </tr>
-                </thead>
-                <tbody>
-
-                <tr>
-                    <td>HW0</td> <!--Number-->
-                    <td></td> <!--Part-->
-                    <td> <a style="cursor: pointer" onclick="toSection('#recitations')">See recitation 0s</a></td> <!--Topics-->
-                    <td></td> <!--Release Date-->
-                    <td><!--Month Day--></td> <!--Early-submission Deadline-->
-                    <td>August 31</td> <!--On-time Deadline-->
-                    <td> <!--Links-->
-                        <a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments/hw0p1">0p1 Autolab</a></br>
-                        <a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments/hw0">0p2 Autolab</a></br>
-                        <!--<a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments/hw0">AutoLab</a>-->
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>HW1</td> <!--Number-->
-                    <td>P1</td> <!--Part-->
-                    <td>MLP pytorch</td> <!--Topics-->
-                    <td>September 6</td> <!--Release Date-->
-                    <td></td> <!--Early-submission Deadline-->
-                    <td></td> <!--On-time Deadline-->
-                    <td>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td></td> <!--Number-->
-                    <td>P1-bonus</td> <!--Part-->
-                    <td>Dropout and Adam</td> <!--Topics-->
-                    <td>September 6</td> <!--Release Date-->
-                    <td></td> <!--Early-submission Deadline-->
-                    <td></td> <!--On-time Deadline-->
+                  <tr>
+                    <td>Summer</td>
+                    <td><a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments/hw0p1">HW0p1 out</a><br>(see&nbsp;recitation&nbsp;0s)</td>
+                    <td><a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments/hw0">HW0p2 out</a><br>(see&nbsp;recitation&nbsp;0s)</td>
+                    <td rowspan="3"></td>
+                    <td rowspan="14"></td>
+                    <td><a href="https://canvas.cmu.edu/courses/16837/quizzes/39818">Quiz 0 out</a></td>
+                  </tr>
+                  <tr>
+                    <td>Mon. August 31</td>
+                    <td>HW0p1 due</td>
+                    <td>HW0p2 due</td>
                     <td></td>
-                </tr>
-                <tr>
-                    <td></td> <!--Number-->
-                    <td>P2</td> <!--Part-->
-                    <td>MLP, phoneme recognition</td> <!--Topics-->
-                    <td></td> <!--Release Date-->
-                    <td></td> <!--Early-submission Deadline-->
-                    <td></td> <!--On-time Deadline-->
+                  </tr>
+                  <tr>
+                    <td rowspan="1">Fri. September 4</td>
+                    <td rowspan="1"></td>
+                    <td rowspan="1"></td>
+                    <td>Quiz 1 out</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Sun. September 6</td>
+                    <td rowspan="2">HW1p1 out</td>
+                    <td rowspan="2">HW1p2 out</td>
+                    <td rowspan="2">HW1 Bonus out</td>
+                    <td>Quiz 1 due</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="">Quiz 1 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. September 11</td>
+                    <td rowspan="6"></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="6"></td>
+                    <td>Quiz 2 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. September 13</td>
+                    <td>Quiz 2 due</td>
+                  </tr>
+                  <tr>
+                    <td>Wed. September 16</td>
+                    <td>HW1p2 early deadline</td>
                     <td></td>
-                </tr>
-
-                <tr>
-                    <td>HW2</td> <!--Number-->
-                    <td>P1</td> <!--Part-->
-                    <td>CNN as scanning MLP, backprop</td> <!--Topics-->
-                    <td></td> <!--Release Date-->
-                    <td></td> <!--Early-submission Deadline-->
-                    <td></td> <!--On-time Deadline-->
+                  </tr>
+                  <tr>
+                    <td>Fri. September 18</td>
+                    <td rowspan="3"></td>
+                    <td>Quiz 3 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. September 20</td>
+                    <td>Quiz 3 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. September 25</td>
+                    <td>Quiz 4 out</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Sun. September 27</td>
+                    <td>HW1p1 due</td>
+                    <td>HW1p2 on-time deadline</td>
+                    <td>HW1 Bonus due</td>
+                    <td>Quiz 4 due</td>
+                  </tr>
+                  <tr>
+                    <td>HW2p1 out</td>
+                    <td>HW2p2 out</td>
+                    <td>HW2 Bonus out</td>
                     <td></td>
-                </tr>
-
-                <tr>
-                    <td></td> <!--Number-->
-                    <td>P1-bonus</td> <!--Part-->
-                    <td>Conv2D and Pooling</td> <!--Topics-->
-                    <td></td> <!--Release Date-->
-                    <td></td> <!--Early-submission Deadline-->
-                    <td></td> <!--On-time Deadline-->
+                  </tr>
+                  <tr>
+                    <td>Fri. October 2</td>
+                    <td rowspan="6"></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="6"></td>
+                    <td>Quiz 5 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. October 4</td>
+                    <td>Team formations due</td>
+                    <td>Quiz 5 due</td>
+                  </tr>
+                  <tr>
+                    <td>Wed. October 7</td>
+                    <td>HW2p2 early deadline</td>
+                    <td rowspan="12"></td>
                     <td></td>
-                </tr>
-
-                <tr>
-                    <td></td> <!--Number-->
-                    <td>P2</td> <!--Part-->
-                    <td>Face Recognition: Classification and Verification</td> <!--Topics-->
-                    <td></td> <!--Release Date-->
-                    <td></td> <!--Early-submission Deadline-->
-                    <td></td> <!--On-time Deadline-->
+                  </tr>
+                  <tr>
+                    <td>Fri. October 9</td>
+                    <td rowspan="3"></td>
+                    <td>Quiz 6 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. October 11</td>
+                    <td>Quiz 6 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. October 16</td>
+                    <td>Quiz 7 out</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Sun. October 18</td>
+                    <td>HW2p1 due</td>
+                    <td>HW2p2 on-time deadline</td>
+                    <td>HW2 Bonus due</td>
+                    <td>Quiz 7 due</td>
+                  </tr>
+                  <tr>
+                    <td>HW3p1 out</td>
+                    <td>HW3p2 out</td>
+                    <td>HW3 Bonus out</td>
                     <td></td>
-                </tr>
-
-                <tr>
-                    <td>HW3</td> <!--Number-->
-                    <td>P1</td> <!--Part-->
-                    <td>RNN: forward, backward, CTC beam search</td> <!--Topics-->
-                    <td></td> <!--Release Date-->
-                    <td></td> <!--Early-submission Deadline-->
-                    <td></td> <!--On-time Deadline-->
+                  </tr>
+                  <tr>
+                    <td>Fri. October 23</td>
+                    <td rowspan="3"></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="3"></td>
+                    <td>Quiz 8 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. October 25</td>
+                    <td>Quiz 8 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. October 30</td>
+                    <td>HW3p2 early deadline</td>
+                    <td>Quiz 9 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. November 1</td>
+                    <td>HW4p1 out</td>
+                    <td>HW4p2 out</td>
+                    <td>HW4 Bonus out</td>
+                    <td>Quiz 9 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. November 6</td>
                     <td></td>
-                </tr>
-
-                <tr>
-                    <td></td> <!--Number-->
-                    <td>P1-bonus</td> <!--Part-->
-                    <td>CTC Loss and RNN BPTT</td> <!--Topics-->
-                    <td></td> <!--Release Date-->
-                    <td></td> <!--Early-submission Deadline-->
-                    <td></td> <!--On-time Deadline-->
                     <td></td>
-                </tr>
-
-                <tr>
-                    <td></td> <!--Number-->
-                    <td>P2</td> <!--Part-->
-                    <td>Connectionist Temporal Classification</td> <!--Topics-->
-                    <td></td> <!--Release Date-->
-                    <td></td> <!--Early-submission Deadline-->
-                    <td></td> <!--On-time Deadline-->
-                    <td>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>HW4</td> <!--Number-->
-                    <td>P1</td> <!--Part-->
-                    <td>Word-Level Neural Language Models</td> <!--Topics-->
-                    <td></td> <!--Release Date-->
-                    <td></td> <!--Early-submission Deadline-->
-                    <td></td> <!--On-time Deadline-->
                     <td></td>
-                </tr>
-
-                <tr>
-                    <td></td> <!--Number-->
-                    <td>P1-bonus</td> <!--Part-->
-                    <td>TBD</td> <!--Topics-->
-                    <td></td> <!--Release Date-->
-                    <td></td> <!--Early-submission Deadline-->
-                    <td></td> <!--On-time Deadline-->
+                    <td>Quiz 10 out</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Sun. November 8</td>
+                    <td rowspan="2">HW3p1 due</td>
+                    <td rowspan="2">HW3p2 on-time deadline</td>
+                    <td rowspan="2">HW3 Bonus due</td>
+                    <td>Quiz 10 due</td>
+                  </tr>
+                  <tr>
+                    <td>Midterm report due</td>
                     <td></td>
-                </tr>
-
-                <tr>
-                    <td></td> <!--Number-->
-                    <td>P2</td> <!--Part-->
-                    <td>Attention Mechanisms and Memory Networks</td> <!--Topics-->
-                    <td></td> <!--Release Date-->
-                    <td></td> <!--Early-submission Deadline-->
-                    <td></td> <!--On-time Deadline-->
+                  </tr>
+                  <tr>
+                    <td>Fri. November 13</td>
+                    <td rowspan="6"></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="6"></td>
+                    <td rowspan="9"></td>
+                    <td>Quiz 11 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. November 15</td>
+                    <td>Quiz 11 due</td>
+                  </tr>
+                  <tr>
+                    <td>Wed. November 18</td>
+                    <td>HW4p2 early deadline</td>
                     <td></td>
-                </tr>
+                  </tr>
+                  <tr>
+                    <td>Fri. November 20</td>
+                    <td rowspan="3"></td>
+                    <td>Quiz 12 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. November 22</td>
+                    <td>Quiz 12 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. November 27</td>
+                    <td>Quiz 13 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. November 29</td>
+                    <td>HW4p1 due</td>
+                    <td>HW4p2 on-time deadline</td>
+                    <td>HW4 Bonus due</td>
+                    <td>Quiz 13 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. December 4</td>
+                    <td rowspan="3"></td>
+                    <td rowspan="3"></td>
+                    <td rowspan="3"></td>
+                    <td>Quiz 14 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. December 6</td>
+                    <td>Quiz 14 due</td>
+                  </tr>
+                  <tr>
+                    <td>Wed. December 9</td>
+                    <td>Project due</td>
+                    <td></td>
+                  </tr>
                 </tbody>
-            </table>
-            </div>
-
-
-          <h2 id="project"> Course Project Timeline</h2>
-            <div class="table-responsive">
-            <table class="table table-striped table-bordered">
-            <thead>
-            <tr>
-                <th>Assignment</th>
-                <th>Deadline</th>
-                <th>Description</th>
-                <th>Links</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Past Projects</td> <!--Assignment-->
-                <td></td> <!--Deadline-->
-                <td> Here is a playlist of S20 projects </td>
-                <td><a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPyyQzmID534-R1CnGJs0Ls-">Project Playlist</a></td>
-            </tr>
-            <tr>
-                <td>Team Formation</td> <!--Assignment-->
-                <td></td> <!--Deadline-->
-                <td> Teams will be formed in groups of four each <br>
-					*If you do not have a team after this point, you will be grouped randomly
-				</td>
-				<td></td>
-            </tr>
-			 <tr>
-                <td>Project Proposal</td> <!--Assignment-->
-                <td></td> <!--Deadline-->
-                <td><a href="document/project/Project Proposal Guidelines.pdf">Project Description Guidelines</a></td> <!--Description-->
-                <td>
-                </td>
-            </tr>
-			 <tr>
-                <td>Midterm Report</td> <!--Assignment-->
-                <td></td> <!--Deadline-->
-
-<td> <a href="https://www.overleaf.com/6348355873chbbypfsvswb">This report template</a> is provided for you to detail your initial experiments</td> <!--Description-->
-                <td> <!--Links-->
-
-                </td>
-            </tr>
-		    <tr>
-                <td>Final Project Video</td> <!--Assignment-->
-                <td></td> <!--Deadline-->
-                <td>This is the final video for the course project</td> <!--Description-->
-                <td> <a href="videoinstr.html">Video Instructions</a><!--Links-->
-                </td>
-            </tr>
-			<tr>
-                <td>Final Project Report</td> <!--Assignment-->
-                <td></td> <!--Deadline-->
-                <td>This should be the final document for the course project</td> <!--Description-->
-                <td> <!--Links-->
-                </td>
-            </tr>
-            </tbody>
-        </table>
-        </div>
+                </table>
 
 
     </div>
