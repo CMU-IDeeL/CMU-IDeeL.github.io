@@ -30,31 +30,57 @@
                 <div id="title" style="font-size:2em">
                     <b>11-785</b> Introduction to Deep Learning
                 </div>
+                <h2>Project Ideas</h2>
             </div>
         </div>
     </div>
 
+    <template id="mytemplate">
+        <div>
+            <h3 class="title">Test Project</h3>
+            <ul>
+                <li><b>Abstract:</b> <span class="abs">Do anything you want, in a DEEP fashion, so that you will LEARN</span></li>
+                <li><b>Available:</b> <span class="avail">Yes!</span></li>
+                <li><b>Contact:</b> <span class="contact">Akshat</span></li>
+            </ul>
+        <div>
+    </template>
 
     <div class="container">
-        <h2>Project Ideas</h2>
         <br>
-        <script type='text/javascript'>    
+        <div id="ideas">
+        </div>
+
+        <script type='text/javascript'>
             var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1sbyMINQHPsJctjAtMW0lCfLrcpMqoGMOJj6AN-sNQrc/pubhtml';
-          
+
             function init() {
-              Tabletop.init( { key: https://docs.google.com/spreadsheets/d/1ES1YOWYfr7XbXl9aHWI2-77yRglYEfK_PNrsC5HkBnI/edit?usp=sharing,
+              Tabletop.init( { key: "https://docs.google.com/spreadsheets/d/1ES1YOWYfr7XbXl9aHWI2-77yRglYEfK_PNrsC5HkBnI/edit?usp=sharing",
                                callback: showInfo,
-                               simpleSheet: true } )
+                               simpleSheet: true } );
             }
-          
+
             function showInfo(data, tabletop) {
-              alert('Successfully processed!')
               console.log(data);
+              for (i in data) {
+                // select
+                var t = document.querySelector('#mytemplate');
+
+                // set
+                t.content.querySelector('.title').textContent = data[i]['Project-Title'];
+                t.content.querySelector('.abs').textContent = data[i]['Abstract'];
+                t.content.querySelector('.avail').textContent= data[i]['Available'];
+                t.content.querySelector('.contact').textContent= data[i]['Contact'];
+
+                // add to document DOM
+                var clone = document.importNode(t.content, true); // where true means deep copy
+                document.querySelector("#ideas").appendChild(clone);
+              }
             }
-          
+
             window.addEventListener('DOMContentLoaded', init)
           </script>
-          
+
     </div>
 
 </body>
