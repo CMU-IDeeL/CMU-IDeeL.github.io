@@ -16,6 +16,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic' rel='stylesheet' type='text/css'>
     <!-- font awesome icons (for mobile menu) -->
     <script src="https://kit.fontawesome.com/fc8bcf2df2.js" crossorigin="anonymous"></script>
+    <!-- for publishing data from google sheets-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
 
     <!-- bust caches by incrementing version of main -->
     <link href="main.3.css" rel="stylesheet" type="text/css">
@@ -36,6 +38,23 @@
     <div class="container">
         <h2>Project Ideas</h2>
         <br>
+        <script type='text/javascript'>    
+            var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1sbyMINQHPsJctjAtMW0lCfLrcpMqoGMOJj6AN-sNQrc/pubhtml';
+          
+            function init() {
+              Tabletop.init( { key: https://docs.google.com/spreadsheets/d/1ES1YOWYfr7XbXl9aHWI2-77yRglYEfK_PNrsC5HkBnI/edit?usp=sharing,
+                               callback: showInfo,
+                               simpleSheet: true } )
+            }
+          
+            function showInfo(data, tabletop) {
+              alert('Successfully processed!')
+              console.log(data);
+            }
+          
+            window.addEventListener('DOMContentLoaded', init)
+          </script>
+          
     </div>
 
 </body>
