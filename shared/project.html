@@ -39,6 +39,7 @@
         <div>
             <h3 class="title">Test Project</h3>
             <ul>
+                <li><b>Keywords:</b> <span class="key">Deep Learning</span></li>
                 <li><b>Abstract:</b> <span class="abs">Do anything you want, in a DEEP fashion, so that you will LEARN</span></li>
                 <li><b>Available:</b> <span class="avail">Yes!</span></li>
                 <li><b>Contact:</b> <span class="contact">Akshat</span></li>
@@ -70,6 +71,7 @@
 
                 // set
                 t.content.querySelector('.title').textContent = data[i]['Project-Title'];
+                t.content.querySelector('.key').textContent = data[i]['Keywords'];
                 t.content.querySelector('.abs').textContent = data[i]['Abstract'];
                 t.content.querySelector('.avail').textContent= data[i]['Available'];
                 t.content.querySelector('.contact').textContent= data[i]['Contact'];
