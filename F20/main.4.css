@@ -213,6 +213,7 @@ code {
 }
 .zoom:hover {
     text-decoration: none;
+    color: white;
 }
 .zoom:visited {
     color: white
