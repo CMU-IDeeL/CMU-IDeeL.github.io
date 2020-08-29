@@ -203,6 +203,20 @@ code {
     }
 }
 
+.zoom {
+    background-color: #a48d8d;
+    border-radius: 9px;
+    font-size: .7em;
+    padding: 3px;
+    margin-left:15px;
+}
+.zoom:hover {
+    text-decoration: none;
+}
+.zoom:visited {
+    color: white
+}
+
 .m-policy-header {
     display: none
 }
