@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11-785 Deep Learning</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+
+    <!-- display nicely on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"</meta>
+    <!-- bootstrap 3 -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic' rel='stylesheet' type='text/css'>
+    <!-- font awesome icons (for mobile menu) -->
+    <script src="https://kit.fontawesome.com/fc8bcf2df2.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <!-- custom code -->
+    <script src="script.js"></script>
+    <!--Chat Bot-->
+    <link rel="stylesheet" type="text/css" href="chatbot.css">
+
+
+    <!-- bust caches by incrementing version of main -->
+    <link href="main.3.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="header">
+        <span class="menu-wrapper">
+            <span class="header-item" onclick="toSection('#title')">
+                About
+            </span><span class="header-item" onclick="toSection('#oh')">
+                OH
+            </span>
+            <span class="header-item" onclick="toSection('#course-work')">
+                Course Work
+            </span>
+            <span class="header-item" onclick="toSection('#lectures')">
+                Lectures
+            </span>
+            <span class="header-item" onclick="toSection('#recitations')">
+                Recitations
+            </span>
+            <span class="header-item" onclick="toSection('#homework')">
+                Assignments
+            </span>
+            <span class="header-item" onclick="toSection('#docs-tools')">
+                Docs &amp; Tools
+            </span>
+        </span>
+        <span class="version-menu">
+            <span class="current-icon">F20</span>
+            <a class="version-icon" href="../S20/index.html">S20</a>
+        </span>
+    </div>
+
+    <div class="mobile-header">
+        <span id="menu-button" onclick="showMenu()">Menu</span>
+    </div>
+    <div class="menu-backdrop" onclick="hideMenu()"></div>
+    <div class="mobile-menu">
+        <div class="menu-exit m-header-item" onclick="hideMenu()">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#title')">
+            About
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#oh')">
+            OH
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#course-work')">
+            Course Work
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#lectures')">
+            Lectures
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#recitations')">
+            Recitations
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#homework')">
+            Assignments
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#docs-tools')">
+            Docs &amp; Tools
+        </div>
+        <div class="m-version-menu">
+            <span class="current-icon">F20</span>
+            <a class="version-icon" href="../S20/index.html">S20</a>
+        </div>
+    </div>
+
+    <div class="container titlebar">
+        <div class="row">
+            <div class="title-col vcenter" style="color:#A80000;font-weight:bold;text-align:center;width:100%">
+                <div id="title">
+                    <b>11-785</b> Introduction to Deep Learning
+                </div>
+                <div class="subtitle"><i>Fall 2020</i></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Chat Bot-->
+    <div class="popup" id="chatBox";>
+        <iframe width="300px" height="430px" src="https://console.dialogflow.com/api-client/demo/embedded/680fbdfc-8c63-42a3-9b7b-5a50809a5ac4"></iframe>
+    </div>
+    <button class="mybutton" onclick="showChat()"><i class="fa fa-comments" aria-hidden="true"></i><br></button>
+
+    <div class=" container">
+        <div class="row">
+            <h2> Bulletin and Active Deadlines </h2>
+            <h3>Registered or waitlisted? <a href="https://piazza.com/cmu/fall2020/11785"><b>Click here for Piazza.</b></a> Code: perceptron</h3>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Assignment</th>
+                        <th>Deadline</th>
+                        <th>Description</th>
+                        <th>Links</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Recitation 0A</td> <!--Assignment-->
+                            <td>Augut 31</td> <!--Deadline-->
+                            <td>Fundamentals of Python</td> <!--Description-->
+                            <td>
+                                <a href="document/recitation/Rec_0A_Fundamentals_of_Python.zip">Notebook (*.zip) </a></br>
+                                <a href="https://www.youtube.com/watch?v=XeV7IkZqfT8">YouTube (url)</a></br> <!--Videos-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Recitation 0B</td> <!--Assignment-->
+                            <td>August 31</td> <!--Deadline-->
+                            <td>Fundamentals of NumPy</td> <!--Description-->
+                            <td>
+                                <a href="document/recitation/Rec_0B_Fundamentals_of_Numpy.zip">Notebook (*.zip) </a></br>
+                                <a href="https://www.youtube.com/watch?v=vOHy9DvrkNA">YouTube (url)</a></br> <!--Videos-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Recitation 0C</td> <!--Assignment-->
+                            <td>August 31</td> <!--Deadline-->
+                            <td>Fundamentals of PyTorch</td> <!--Description-->
+                            <td>
+                                <a href="document/recitation/Rec_0C_Fundamentals_of_Pytorch.zip">Notebook (*.zip) </a></br>
+                                <a href="https://www.youtube.com/watch?v=2qsnW4ruiBY">YouTube (url)</a></br> <!--Videos-->
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Recitation 0D</td> <!--Assignment-->
+                            <td>August 31</td> <!--Deadline-->
+                            <td>Fundamentals of AWS</td> <!--Description-->
+                            <td>
+                                <!-- <a href="document/recitation/recitation0a.tar.gz">Notebook (*.tar.gz) </a></br>
+                                <a href="">YouTube (url)</a></br> --> <!--Videos-->
+                                <a href="https://docs.google.com/document/d/1OMN-7mxn5XfG4Z09E7ENMqHYb1ClZfbf3ZqgxnUq-yQ/edit">Document (url)</a></br>
+                                <a href="https://www.youtube.com/watch?v=Yn-w3sfJil4">YouTube (url)</a></br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Recitation 0E</td> <!--Assignment-->
+                            <td>August 31</td> <!--Deadline-->
+                            <td>Fundamentals of Google Colab</td> <!--Description-->
+                            <td>
+                                <!-- <a href="document/recitation/recitation0a.tar.gz">Notebook (*.tar.gz) </a></br> -->
+                                <a href="https://docs.google.com/document/d/1Kw20oFoEi4bD_QLpng5gF674gcRXMT5WB3GuMSZILZ4/edit">Document (url)</a></br>
+                                <a href="https://www.youtube.com/watch?v=Y-1vNSJI7ZY">YouTube (url)</a></br> <!--Videos-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Recitation 0F</td> <!--Assignment-->
+                            <td>August 31</td> <!--Deadline-->
+                            <td>Debugging</td> <!--Description-->
+                            <td>
+                                <a href="document/recitation/Rec_0F_Debugging_1.zip">Notebook (*.zip) </a></br>
+                                <a href="https://www.youtube.com/watch?v=I0q9eL7n_74">YouTube (url)</a></br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Recitation 0G</td> <!--Assignment-->
+                            <td>August 31</td> <!--Deadline-->
+                            <td>Remote Notebooks</td> <!--Description-->
+                            <td>
+                                <a href="document/recitation/Rec_0G_Remote_Notebooks.zip">Notebook (*.zip) </a></br>
+                                <a href="document/recitation/Recitation_0G.pdf">Document (*.pdf) </a></br>
+                                <a href="https://www.youtube.com/watch?v=7XppOWUsdMc">YouTube (url)</a> <!-- Video -->
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>HW0</td> <!--Assignment-->
+                            <td>August 31</td> <!--Deadline-->
+                            <td>Fundamentals Homework</td> <!--Description-->
+                            <td>
+                                <!--<a href="document/homework/hw0_handout.tar.gz">Notebook (*.tar.gz) </a></br>
+                                <a href="">AutoLab</a>-->
+                                <!--<a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments/hw0">AutoLab</a>-->
+                                <a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments/hw0p1">0p1&nbsp;Autolab</a>,&nbsp;<a href="document/homework/hw0p1.txt">handout</a></br>
+                                <a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments/hw0">0p2&nbsp;Autolab</a>,&nbsp;<a href="document/homework/hw0p2.tar">handout</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Quiz 0</td> <!--Assignment-->
+                            <td>September 6</td> <!--Deadline-->
+                            <td>Fundamentals Quiz</td> <!--Description-->
+                            <td>
+                                <!--<a href="document/homework/hw0_handout.tar.gz">Notebook (*.tar.gz) </a></br>
+                                <a href="">AutoLab</a>-->
+                                <a href="https://canvas.cmu.edu/courses/16837/quizzes/39818">Quiz</a>
+                                <!--<a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments/hw0">AutoLab</a>-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Information Forms</td> <!--Assignment-->
+                            <td>ASAP!</td> <!--Deadline-->
+                            <td>Forms about study groups and other important logistics</td> <!--Description-->
+                            <td>
+                                <!--<a href="document/homework/hw0_handout.tar.gz">Notebook (*.tar.gz) </a></br>
+                                <a href="">AutoLab</a>-->
+                                <a href="https://forms.gle/9AwfjsA2VQWiXqL3A">Form 1</a><br>
+                                <a href="https://forms.gle/8UyAedFmwvQJVkkr5">Form 2</a>
+                                <!--<a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments/hw0">AutoLab</a>-->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>The Course</h3>
+            <p>
+                “Deep Learning” systems, typified by deep neural networks, are increasingly taking over all AI tasks, ranging from language understanding, and speech and image recognition, to machine translation, planning, and even game playing and autonomous driving. As a result, expertise in deep learning is fast changing from an esoteric desirable to a mandatory prerequisite in many advanced academic settings, and a large advantage in the industrial job market.
+            </p>
+            <p> In this course we will learn about the basics of deep neural networks, and their applications to various AI tasks. By the end of the course, it is expected that students will have significant familiarity with the subject, and be able to apply Deep Learning to a variety of tasks. They will also be positioned to understand much of the current literature on the topic and extend their knowledge through further study.</p>
+            <p>If you are only interested in the lectures, you can watch them on the <a href="https://www.youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA">YouTube channel</a>.
+            </p><h3>Course description from student point of view</h3>
+            <p>The course is well rounded in terms of concepts. It helps us understand the fundamentals of Deep Learning. The course starts off gradually with MLPs and it progresses into the more complicated concepts such as attention and sequence-to-sequence models. We get a complete hands on with PyTorch which is very important to implement Deep Learning models. As a student, you will learn the tools required for building Deep Learning models. The homeworks usually have 2 components which is Autolab and Kaggle. The Kaggle components allow us to explore multiple architectures and understand how to fine-tune and continuously improve models. The task for all the homeworks were similar and it was interesting to learn how the same task can be solved using multiple Deep Learning approaches. Overall, at the end of this course you will be confident enough to build and tune Deep Learning models.</p>
+
+            <h3>Prerequisites</h3>
+            <ol>
+                <li>We will be using Numpy and PyTorch in this class, so you will need to be able to program in python3.</li>
+                <li>You will need familiarity with basic calculus (differentiation, chain rule), linear algebra and basic probability. </li>
+            </ol>
+            <h3>Units</h3>
+            <p>Courses 11-785, 18-786, and 11-685 are equivalent 12-unit graduate courses, and have a final project.
+               Course 11-485 is the undergraduate version worth 9 units, the only difference being that there is no final project.
+            </p>
+
+            <p><a href="../shared/TAs.html"> Acknowledgments</a></p>
+
+            <h3>Your Supporters</h3>
+            <p><b style="color:#A80000;">Instructors:</b></p>
+            <ul style="margin-top:-10px;">
+                <li><b>Bhiksha Raj</b> : bhiksha@cs.cmu.edu</li>
+                <li><b>Kemal Oflazer</b> : ko@andrew.cmu.edu</li>
+            </ul>
+            <p>
+                <b style="color:#A80000;">TAs:</b>
+            </p><ul>
+                <li><b>Akshat Gupta</b>: akshatgu@andrew.cmu.edu</li>
+                <li><b>Antioch Sanders</b>: asanders@andrew.cmu.edu</li>
+                <li><b>Anxiang Zhang</b>: anxiangz@andrew.cmu.edu</li>
+                <li><b>Bharat Gaind</b>: bgaind@andrew.cmu.edu</li>
+                <li><b>David Park</b>: jinyun1@andrew.cmu.edu</li>
+                <li><b>Faris Alotibi</b>: falotibi@andrew.cmu.edu</li>
+		<li><b>Jacob Lee</b>: sglee@andrew.cmu.edu</li>
+                <li><b>Jiachen Lian</b>: jlian2@andrew.cmu.edu</li>
+                <li><b>Kushal Saharan</b>: ksaharan@andrew.cmu.edu</li>
+                <li><b>Mansi Anand</b>: mansia@andrew.cmu.edu</li>
+                <li><b>Miao Wang</b>: miaow@andrew.cmu.edu</li>
+                <li><b>Nicole Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
+                <li><b>Reshmi Ghosh</b>: reshmig@andrew.cmu.edu</li>
+                <li><b>Sean Pereira</b>: sapereir@andrew.cmu.edu</li>
+                <li><b>Tony Qin</b>: tcq@andrew.cmu.edu</li>
+                <li><b>(Kigali) Abrham Gebresellasie</b>: agebrese@andrew.cmu.edu</li>
+                <li><b>(Silicon Valley) Jingwei Zhang</b>: jzhang5@andrew.cmu.edu</li>
+                <li><b>(Silicon Valley) Joseph Konan</b>: jkonan@andrew.cmu.edu</li>
+                <li><b>(Silicon Valley) Yizhuo Zhang</b>: yizhuoz@andrew.cmu.edu</li>
+            </ul>
+            <h3>Pittsburgh Schedule (Eastern Time)</h3>
+            <p><b style="color:#A80000;">Lecture:</b> Monday and Wednesday, 8:00 a.m. - 9:20 a.m. </p>
+            <p><b style="color:#A80000;">Zoom Link:</b> <a href="https://cmu.zoom.us/j/4037467921">Meeting Link </a>, Meeting ID: 403 746 7921</p>
+            <p><b style="color:#A80000;">Recitation:</b> Friday, 8.00am-9.20am BH A51 </p>
+            <b id="oh" style="color:#A80000;">Office hours: </b><br><br>
+
+            <p>We will be using <a href="https://cmu.ohqueue.com/#/student">OHQueue</a> and the lecture Zoom link to manage office hours. The tentative schedule is as follow:</p>
+            <!--<table style="height: 123px; width: 540.333px;" border="0">-->
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                <tbody>
+                  <tr>
+                    <td style="width: 100px; text-align: center;"><strong>Day</strong></td>
+                    <td style="width: 136px; text-align: center;"><strong>Time</strong></td>
+                    <td style="width: 173.333px; text-align: center;"><strong>TA</strong></td>
+                  </tr>
+                  <tr>
+                      <td style="width: 100px;" rowspan="2">Sunday</td>
+                      <td style="width: 136px;">3:00 - 4:00 pm</td>
+                      <td style="width: 110px;">Anxiang, Kushal</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 136px;">6:00 - 7:00 pm</td>
+                    <td style="width: 110px;">Jingwei, Miao</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 100px;" rowspan="2">Monday</td>
+                    <td style="width: 136px;">11:00 - 12:00 pm</td>
+                    <td style="width: 110px;">Antioch, Reshmi</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 136px;">7:00 - 8:00 pm</td>
+                    <td style="width: 110px;">Bharat, Yizhuo</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 100px;" rowspan="3">Tuesday</td>
+                    <td style="width: 136px;">3:00 - 4:00 pm</td>
+                    <td style="width: 110px;">Reshmi, Kushal</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 136px;">6:00 - 6:00 pm</td>
+                    <td style="width: 110px;">Akshat, Anti</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 136px;">7:00 - 8:00 pm</td>
+                    <td style="width: 110px;">Akshat, Miya</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 100px;" rowspan="2">Wednesday</td>
+                    <td style="width: 136px;">10:00 - 11:00 am</td>
+                    <td style="width: 110px;">Jiachen, Tony</td>
+                  </tr>
+                  <tr>
+                      <td style="width: 136px;">4:00 - 5:00 pm</td>
+                      <td style="width: 110px;">David, Faris</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 100px;" rowspan="2">Thursday</td>
+                        <td style="width: 136px;">3:00 - 4:00 pm</td>
+                        <td style="width: 110px;">Miao, Sean, Tony</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 136px;">6:00 - 7:00 pm</td>
+                        <td style="width: 110px;">Anxiang, Miya</td>
+                    </tr>
+                  <tr>
+                    <td style="width: 100px;" rowspan="2">Friday</td>
+                    <td style="width: 136px;">3:00 - 4:00 pm</td>
+                    <td style="width: 110px;">Sean, Mansi, Jacob</td>
+                  </tr>
+                  <tr>
+                      <td style="width: 136px;">4:00 - 5:00 pm</td>
+                      <td style="width: 110px;">Mansi, Jacob</td>
+                  </tr>
+                  <tr>
+                      <td style="width: 100px;" rowspan="3">Saturday</td>
+                      <td style="width: 136px;">11:00 - 12:00 pm</td>
+                      <td style="width: 110px;">Jiachen, Yizhuo</td>
+                  </tr>
+                  <tr>
+                      <td style="width: 136px;">3:00 - 4:00 pm</td>
+                      <td style="width: 110px;">David, Faris</td>
+                  </tr>
+                  <tr>
+                      <td style="width: 136px;">6:00 - 7:00 pm</td>
+                      <td style="width: 110px;">Jingwei, Bharat</td>
+                  </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <h3>Kigali Schedule (Central Africa Time)</h3>
+            <p><b style="color:#A80000;">Lecture:</b> Monday and Wednesday, 3:00 p.m. – 4:20 p.m. @ CMR C421</p>
+            <b style="color:#A80000;">Office hours: </b>
+            <ul>
+                <li><b>Abrham Gebresellasie</b>: Monday – Sunday, 12 a.m. - 12 a.m. @ Rm TBD</li>
+            </ul>
+
+            <h3>Silicon Valley Schedule (Pacific Time)</h3>
+            <b style="color:#A80000;">Office hours: </b>
+            <ul>
+                <li><b>Yizhuo Zhang</b>: Monday – Sunday, 12 a.m. - 12 a.m. @ Rm TBD</li>
+            </ul>
+
+      </div>
+</div>
+
+  <div id="course-work" class="container">
+      <div class="row">
+          <h2>Course Work</h2>
+          </p><div class="table-responsive" style="border: none">
+              <table class="rules-table">
+                  <tbody><tr class="rules-table-header">
+                      <td colspan="3" style="text-align: center;"><b>Policy</b></td>
+                  </tr>
+
+                  <tr class="m-policy-header"><td colspan="3"><b>Breakdown</b></td></tr>
+                  <tr>
+                      <td class="policy-header"><b>Quizzes</b></td>
+                      <td class="policy-spacer">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                      <td>
+                          Grading will be based on weekly quizzes (24%), homeworks (51%) and a course  project (25%).
+                      </td>
+                  </tr>
+
+                  <tr class="m-policy-header"><td colspan="3"><b>Quizzes</b></td></tr>
+                  <tr>
+                      <td class="policy-header"><b>Quizzes</b></td>
+                      <td class="policy-spacer">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                      <td>
+                          There will be weekly quizzes.
+                          <ul>
+                              <li> Quiz 0 is mandatory; we will retain your best 12 out of the remaining 14 quizzes.
+                              </li><li> Quizzes will generally (but not always) be released on Friday and due 48 hours later.
+                              </li><li> Quizzes are scored by the number of correct answers.
+                              </li><li>
+                                  <b>Quizzes will be worth 24% of your overall score.</b>
+                              </li>
+                          </ul>
+                      </td>
+                  </tr>
+
+                  <tr class="m-policy-header"><td colspan="3"><b>Assignments</b></td></tr>
+                  <tr> <td class="policy-header"><b>Assignments</b></td>
+                      <td class="policy-spacer"></td><td>There will be five assignments in all. Assignments will include <i>autolab</i> components, where you must complete designated tasks, and a <i>kaggle</i> component where you compete with your colleagues.
+                      <ul>
+                          <li> Autolab components are scored according to the number of correctly completed parts.
+                          </li><li> We will post performance cutoffs for <b>A (100%), B (80%), C (60%), D (40%) and F (0%)</b> for Kaggle competitions. Scores will be interpolated linearly between these cutoffs.
+                          </li><li> Assignments will have a “preliminary submission deadline”, an “on-time submission deadline” and a “late-submission deadline.”
+                              <ul>
+                                  <li> <b>Early submission deadline:</b> You are required to make at least one submission to Kaggle by this deadline. People who miss this deadline will automatically lose 10% of subsequent marks they may get on the homework. This is intended to encourage students to begin working on their assignments early.
+                                  </li><li> <b>On-time deadline:</b> People who submit by this deadline are eligible for up to five bonus points. These points will be computed by interpolation between the A cutoff and the highest performance obtained for the HW. The highest performance will get 105.
+                                  </li><li> <b>Late deadline:</b> People who submit after the on-time deadline can still submit until the late deadline. There is a 10% penalty applied to your final score, for submitting late.
+                                  </li><li> <b>Slack days:</b> Everyone gets up to 7 slack days, which they can distribute across all their homeworks.  Once you use up your slack days you will fall into the late-submission category by default. Slack days are accumulated over <i>all</i> parts of <i>all</i> homeworks, except HW0, to which no slack applies.
+                                  </li><li> <b>Kaggle scoring:</b> We will use <i>max(max(on-time score), max(slack-day score), .0.9*max(late-submission score))</i> as your final score for the HW. If this happens to be a slack-days submission, slack days corresponding to the selected submission will be counted.
+                              </li></ul>
+                          </li><li> <b>Assignments carry 51% of your total score</b>. HW0 is worth 1%, while each of the subsequent four are worth 12.5%.
+                      </li></ul></td></tr>
+
+                  <tr class="m-policy-header"><td colspan="3"><b>Project</b></td></tr>
+                  <tr><td class="policy-header"><b>Project</b></td><td class="policy-spacer"></td><td>All students taking a graduate version of the course are required to do a course project. <b>The project is worth 25% of your grade</b>. These points are distributed as follows: 10% - Proposal; 15% - Midterm Report; 20% - Project Video; 15% - Project Video Follow-up; 40% - Paper peer review.
+                      </td></tr>
+
+                  <tr class="m-policy-header"><td colspan="3"><b>Final grade</b></td></tr>
+                  <tr> <td class="policy-header"><b>Final grade</b></td><td class="policy-spacer"></td> <td>The end-of-term grade is curved. Your overall grade will depend on your performance relative to your classmates.</td></tr>
+
+                  <tr class="m-policy-header"><td colspan="3"><b>Pass/Fail</b></td></tr>
+                  <tr> <td class="policy-header"><b>Pass/Fail</b></td><td class="policy-spacer"></td> <td>Students registered for pass/fail must complete all quizzes, HWs and if they are in the graduate course, the project. A grade equivalent to B- is required to pass the course.</td></tr>
+
+                  <tr class="m-policy-header"><td colspan="3"><b>Auditing</b></td></tr>
+                  <tr> <td class="policy-header"><b>Auditing</b></td><td class="policy-spacer"></td>
+                      <td>Auditors are not required to complete the course project, but must complete all quizzes and homeworks. We encourage doing a course project regardless.</td></tr>
+
+                  <tr class="rules-table-bottom">
+                      <td></td>
+                      <td></td>
+                      <td><b>End Policy</b></td>
+                  </tr>
+              </tbody></table>
+          </div>
+
+          <h3>Study groups</h3>
+          <p>This semester we will be implementing study groups. It is highly recommended that you join a study group; see the forms on the bulletin.</p>
+
+          <h3>Piazza: Discussion Board</h3>
+          <p>Piazza is what we use for discussions. You should be automatically signed up if you're enrolled at the start of the semester. If not, please sign up. Also, please follow the <a href="etiquette.html">Piazza Etiquette</a> when you use the piazza.</p>
+
+          <h3>AutoLab: Software Engineering</h3>
+          <p><a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments">AutoLab</a> is what we use to test your understand of low-level concepts, such as engineering your own libraries, implementing important algorithms, and developing optimization methods from scratch.</p>
+
+          <h3>Kaggle: Data Science</h3>
+          <p><a href="https://kaggle.com/">Kaggle</a> is where we test your understanding and ability to extend neural network architectures discussed in lecture. Similar to how AutoLab shows scores, Kaggle also shows scores, so don't feel intimidated -- we're here to help. We work on hot AI topics, like speech recognition, face recognition, and neural machine translation.</p>
+
+          <h3>Media Services/YouTube: Lecture and Reciation Recordings</h3>
+          <p> CMU students should also access the videos <a href="https://mediaservices.cmu.edu/media/t/1_8eaf2eny">Live from Media Services</a> or <a href="https://mediaservices.cmu.edu/channel/Introduction+to+Deep+Learning_Spring+2020/148590631">Recorded from Media Services</a> in order to get attendance credit. Links to individual videos will be posted as they are uploaded.</p>
+          <p><a href="https://www.youtube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA?view_as=subscriber">YouTube</a> is where non-CMU folks can view all lecture and recitation recordings. Videos marked “Old“ are not current, so please be aware of the video title.</p>
+
+          <h3>Books and Other Resources</h3>
+          <p>The course will not follow a specific book, but will draw from a number of sources. We list relevant books at the end of this page. We will also put up links to relevant reading material for each class. Students are expected to familiarize themselves with the material before the class. The readings will sometimes be arcane and difficult to understand; if so, do not worry, we will present simpler explanations in class.</p>
+
+          <p>You can also find a nice catalog of models that are current in the literature <a href="http://www.datasciencecentral.com/profiles/blogs/concise-visual-summary-of-deep-learning-architectures">here</a>. We expect that you will be in a position to interpret, if not fully understand many of the architectures on the wiki and the catalog by the end of the course.</p>
+
+          <h3>Academic Integrity</h3>
+          <div>
+              You are expected to comply with the <a href="http://www.cmu.edu/policies/documents/Cheating.html">University Policy on Academic Integrity and Plagiarism</a>.
+              <ul>
+                  <li>You are allowed to talk with and work with other students on homework assignments.</li>
+                  <li>You can share ideas but not code. You should submit your own code.</li>
+              </ul>
+              Your course instructor reserves the right to determine an appropriate penalty based on the violation of academic dishonesty that occurs. Violations of the university policy can result in severe penalties including failing this course and possible expulsion from Carnegie Mellon University. If you have any questions about this policy and any work you are doing in the course, please feel free to contact your instructor for help.
+          </div>
+      </div>
+  </div>
+  <div id="lectures" class="container">
+      <div class="row">
+          <h2>Tentative Schedule of Lectures</h2>
+          <div class="table-responsive">
+              <table class="table table-striped table-bordered">
+                  <thead>
+                  <tr>
+                      <th>Lecture</th>
+                      <th>Date</th>
+                      <th>Topics</th>
+                      <th>Slides and Video</th>
+                      <th>Additional Materials</th>
+                      <th>Quiz</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>0</td> <!--Lecture Number-->
+                      <td>-</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Course Logistics</li>
+                          <li>Learning Objectives</li>
+                          <li>Grading</li>
+                          <li>Deadlines</li>
+                      </ul></td>
+                      <td><a href="document/slides/lec0.logistics.pdf">Slides</a><br>
+                          <a href="https://www.youtube.com/watch?v=jsA0W4NmvK8">Video (url)</a><br>
+
+                      </td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                      <td rowspan=1 style="vertical-align: middle"><a href="https://canvas.cmu.edu/courses/16837/quizzes/39818">Quiz&nbsp;0</a></td> <!--Quiz-->
+                  </tr>
+                  <tr>
+                      <td>1</td> <!--Lecture Number-->
+                      <td>Monday<br> August&nbsp;31</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Learning Objectives</li>
+                          <li>History and cognitive basis of neural computation</li>
+                          <li>Connectionist Machines</li>
+                          <li>McCullough and Pitt model</li>
+                          <li>Hebb’s learning rule</li>
+                          <li>Rosenblatt’s perceptron</li>
+                          <li>Multilayer Perceptrons</li>
+                      </ul></td>
+                      <td>
+                      </td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;1</a></td> <!--Quiz-->
+                  </tr>
+                  <tr>
+                      <td>2</td> <!--Lecture Number-->
+                      <td>Wednesday<br> September&nbsp;2</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>The neural net as a universal approximator</li>
+                      </ul></td>
+                      <td>
+                      </td> <!--Lecture Slides-->
+                      <td> <a href="document/readings/Hornik_Stinchcombe_White.pdf">Hornik <i>et al.</i> (1989)</a><br>
+                           <a href="document/readings/Shannon49.pdf">Shannon (1949)</a><br>
+                           <a href="https://www.bradyneal.com/bias-variance-tradeoff-textbooks-update"a>On the Bias-Variance Tradeoff</a>
+         <!--Readings-->
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>—</td> <!--Lecture Number-->
+                      <td>Monday<br> September&nbsp;7</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Labor Day, no class</li>
+                      </ul></td>
+                      <td> <!--*.ppt--> </td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;2</a></td> <!--Quiz-->
+                  </tr>
+                  <tr>
+                      <td>3</td> <!--Lecture Number-->
+                      <td>Wednesday<br> September&nbsp;9</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Training a neural network</li>
+                          <li>Perceptron learning rule</li>
+                          <li>Empirical Risk Minimization</li>
+                          <li>Optimization by gradient descent</li>
+                      </ul></td>
+                      <td>
+                      </td>
+                      <td>  <a href="document/readings/c1992artificialneural.pdf">Widrow and Lehr (1992)</a><br>
+         <a href="http://www.cs.columbia.edu/~mcollins/courses/6998-2012/notes/perc.converge.pdf">Convergence of perceptron algorithm</a><!--Readings-->
+          </td> <!--Readings-->
+                  </tr>
+                  <tr>
+                      <td>4</td> <!--Lecture Number-->
+                      <td>Monday<br> September&nbsp;14</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Back propagation</li>
+                          <li>Calculus of back propogation</li>
+                      </ul></td>
+                      <td>
+          </td> <!--Lecture Slides-->
+                      <td> <a href="http://axon.cs.byu.edu/Dan/678/papers/Recurrent/Werbos.pdf">Werbos (1990)</a><br>
+                           <a href="http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf">Rumelhart, Hinton and Williams (1986)</a><a></a></td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;3</a></td> <!--Quiz-->
+                 </tr>
+                  <tr>
+                      <td>5</td> <!--Lecture Number-->
+                      <td>Wednesday<br> September&nbsp;16</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Convergence issues in back propagation</li>
+                          <li> Second order methods</li>
+                          <li> Momentum and Nestorov</li>
+                      </ul></td>
+                      <td> <!--Lecture Slides--> </td>
+                      <td> <a href="https://ieeexplore.ieee.org/document/31314">Backprop fails to separate, where perceptrons succeed, Brady et al. (1989)</a> </td> <!--Readings-->
+                  </tr>
+                  <tr>
+                      <td>6</td> <!--Lecture Number-->
+                      <td>Monday<br> September&nbsp;21</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Convergence in neural networks</li>
+                          <li>Rates of convergence</li>
+                          <li>Loss surfaces</li>
+                          <li>Learning rates, and optimization methods</li>
+                          <li>RMSProp, Adagrad, Momentum</li>
+                      </ul></td>
+                      <td>
+                      </td>
+                      <td> <a href="https://www.sciencedirect.com/science/article/abs/pii/0041555364901375">Momentum, Polyak (1964)</a><br>
+                           <a href="http://www.mathnet.ru/php/archive.phtml?wshow=paper&amp;jrnid=dan&amp;paperid=46009&amp;option_lang=eng">Nestorov (1983)</a>
+                      </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;4</a></td> <!--Quiz-->
+                  </tr>
+                  <tr>
+                      <td>7</td> <!--Lecture Number-->
+                      <td>Wednesday<br> September&nbsp;23</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Stochastic gradient descent</li>
+                          <li>Acceleration</li>
+                          <li>Overfitting and regularization</li>
+                          <li>Tricks of the trade:</li>
+                          <ul>
+                              <li>Choosing a divergence (loss) function</li>
+                              <li>Batch normalization</li>
+                              <li>Dropout</li>
+                          </ul>
+                      </ul></td>
+                      <td>
+                      </td><td>    <a href="http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf">ADAGRAD, Duchi, Hazan and Singer (2011)</a><br>
+            <a href="https://arxiv.org/abs/1412.6980">Adam: A method for stochastic optimization, Kingma and Ba (2014)</a><br>
+          </td> <!--Readings-->
+                  </tr>
+                  <tr>
+                      <td>8</td> <!--Lecture Number-->
+                      <td>Monday<br> September&nbsp;28</td> <!--Date-->
+                      <td><ul> <!--Topic List/-->
+                          <li>Convolutional Neural Networks (CNNs)</li>
+                          <li>Weights as templates</li>
+                          <li>Translation invariance</li>
+                          <li>Training with shared parameters</li>
+                          <li>Arriving at the convlutional model</li>
+                      </ul></td>
+                      <td>
+                      </td> <!--Lecture Slides-->
+                      <td> </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;5</a></td> <!--Quiz-->
+                  </tr>
+                  <tr>
+                      <td>9</td> <!--Lecture Number-->
+                      <td>Wednesday<br> September&nbsp;30</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Models of vision</li>
+                          <li>Neocognitron</li>
+                          <li>Mathematical details of CNNs</li>
+                      </ul></td>
+                      <td></td>
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                  </tr>
+                  <tr>
+                      <td>10</td> <!--Lecture Number-->
+                      <td>Monday<br> October&nbsp;5</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Backpropagation in CNNs</li>
+                          <li>Variations in the basic model</li>
+                          <li>Some history of the Imagenet</li>
+                      </ul></td>
+                      <td>
+                      </td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;6</a></td> <!--Quiz-->
+                  </tr>
+                  <tr>
+                      <td>11*</td> <!--Lecture Number-->
+                      <td>Wednesday<br> October&nbsp;7</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Guest lecturers Scott Fahlman and Dean Alderucci</li>
+                          <li>Cascade Correlation Filters</li>
+                      </ul></td>
+                      <td> </td> <!--Lecture Slides-->
+                      <td> <a href="https://papers.nips.cc/paper/207-the-cascade-correlation-learning-architecture.pdf">Falhman and Lebiere (1990) </a></td> <!--Readings-->
+                  </tr>
+                  <tr>
+                      <td>11</td> <!--Lecture Number-->
+                      <td>Monday<br> October&nbsp;12</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Recurrent Neural Networks (RNNs)</li>
+                          <li>Modeling series</li>
+                          <li>Back propogation through time</li>
+                          <li>Bidirectional RNNs</li>
+                      </ul></td>
+                      <td>
+                      </td> <!--Lecture Slides-->
+                      <td> <a href="document/readings/Bidirectional%20Recurrent%20Neural%20Networks.pdf"> Bidirectional Recurrent Neural Networks </a> </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;7</a></td> <!--Quiz-->
+                  </tr>
+                  <tr>
+                      <td>12</td> <!--Lecture Number-->
+                      <td>Wednesday<br> October&nbsp;14</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Stability</li>
+                          <li>Exploding/vanishing gradients</li>
+                          <li>Long Short-Term Memory Units (LSTMs) and variants</li>
+                      </ul></td>
+                      <td>
+         <!-- <br> <a href="https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+Lecture+13/1_x9rp3088/148590631"> Video (url)</a> -->
+                      </td> <!--Lecture Slides-->
+                      <td> <a href="document/readings/LSTM.pdf"> LSTM </a> </td> <!--Readings-->
+                  </tr>
+                  <tr>
+                      <td>13</td> <!--Lecture Number-->
+                      <td>Monday<br> October&nbsp;19</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Loss functions for recurrent networks</li>
+                          <li>Sequence prediction</li>
+                      </ul></td>
+                      <td> </td><!--Lecture Slides-->
+                      <td> See recitation 2 on computing derivatives <!--*.pdf--> </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;8</a></td> <!--Quiz-->
+                  </tr>
+                  <tr>
+                      <td>14</td> <!--Lecture Number-->
+                      <td>Wednesday<br> October&nbsp;21</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Sequence To Sequence Methods</li>
+                          <li>Connectionist Temporal Classification (CTC)</li>
+                      </ul></td>
+                      <td> </td><!--Lecture Slides-->
+                       <td> <a href="https://www.cs.toronto.edu/~graves/icml_2006.pdf">Labelling Unsegmented
+                          Sequence Data with Recurrent Neural Networks</a><!--*.pdf--> </td> <!--Readings-->
+                  </tr>
+
+                  <tr>
+                      <td>15</td> <!--Lecture Number-->
+                      <td>Monday<br> October&nbsp;26</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Sequence-to-sequence models </li>
+                          <li>Models examples from speech and language </li>
+                          <li>Attention</li>
+                      </ul></td>
+                      <td></td> <!--Lectures Slides-->
+                      <td></td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;9</a></td> <!--Quiz-->
+                  </tr>
+
+                  <tr>
+                      <td>16</td> <!--Lecture Number-->
+                      <td>Wednesday<br> October&nbsp;28</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Representations and Autoencoders</li>
+                      </ul></td>
+                      <td></td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                  </tr>
+
+                  <tr>
+                      <td>17</td> <!--Lecture Number-->
+                      <td>Monday<br> November&nbsp;2</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Variational Autoencoders Part 1  </li>
+                          <!--<li> </li> -->
+                      </ul></td>
+                      <td> </td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;10</a></td> <!--Quiz-->
+                  </tr>
+
+                  <tr>
+                      <td>18</td> <!--Lecture Number-->
+                      <td>Wednesday<br> November&nbsp;4</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Variational Autoencoders Part 2</li>
+                          <!-- <li>Deep Boltzman Machines</li> -->
+                      </ul></td>
+                      <td></td> <!--()Lecture Slides-->
+                      <td><a href="https://arxiv.org/abs/1606.05908">Tutorial on VAEs (Doersch)</a><br>
+                          <a href="https://arxiv.org/abs/1312.6114">Autoencoding variational Bayes (Kingma)</a></td> <!--Readings-->
+                  </tr>
+
+                  <tr>
+                      <td>19</td> <!--Lecture Number-->
+                      <td>Monday<br> November&nbsp;9</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Generative Adversarial Networks (GANs) Part 1</li>
+                      </ul></td>
+                      <td>
+                      </td><td> <!--*.pdf--> </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;11</a></td> <!--Quiz-->
+                  </tr>
+
+                  <tr>
+                      <td>20</td> <!--Lecture Number-->
+                      <td>Wednesday<br> November&nbsp;11</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Generative Adversarial Networks (GANs) Part 2</li>
+                      </ul></td>
+                      <td></td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                  </tr>
+
+                  <tr>
+                      <td>21*</td> <!--Lecture Number-->
+                      <td>Monday<br> November&nbsp;16</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Guest Lecture</li>
+                      </ul></td>
+                      <td></td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;12</a></td> <!--Quiz-->
+                  </tr>
+
+                  <tr>
+                      <td>21</td> <!--Lecture Number-->
+                      <td>Wednesday<br> November&nbsp;18</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Hopfield Networks</li>
+                      </ul></td>
+                      <td> </td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                  </tr>
+
+                  <tr>
+                      <td>22</td> <!--Lecture Number-->
+                      <td>Monday<br> November&nbsp;23</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Hopfield Networks</li>
+                          <li>Boltzmann Machines</li>
+                      </ul></td>
+                      <td> </td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;13</a></td> <!--Quiz-->
+                  </tr>
+
+                  <tr>
+                      <td>-</td> <!--Lecture Number-->
+                      <td>Wednesday<br> November&nbsp;25</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Thanksgiving, no class
+                      </li></ul></td>
+                      <td> <!--*.pdf--> </td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                   </tr>
+
+                  <tr>
+                      <td>23</td> <!--Lecture Number-->
+                      <td>Monday<br> November&nbsp;30</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Reinforcement Learning 1</li>
+                      </ul></td>
+                      <td></td>
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle"><a href="javascript:void(0)">Quiz&nbsp;14</a></td> <!--Quiz-->
+                  </tr>
+
+                  <tr>
+                      <td>24</td> <!--Lecture Number-->
+                      <td>Wednesday<br> December&nbsp;2</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Reinforcement Learning 2</li>
+                      </ul></td>
+                      <td> <!--*.ppt--> </td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                  </tr>
+
+                  <tr>
+                      <td>25</td> <!--Lecture Number-->
+                      <td>Monday<br> December&nbsp;7</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Reinforcement Learning 3</li>
+                      </ul></td>
+                      <td> <!--*.ppt--> </td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                      <td rowspan=2 style="vertical-align: middle; text-align: center; font-size: 1.5em">😄</td> <!--Quiz-->
+                  </tr>
+
+                  <tr>
+                      <td>26</td> <!--Lecture Number-->
+                      <td>Wednesday<br> December&nbsp;9</td> <!--Date-->
+                      <td><ul> <!--Topic List-->
+                          <li>Project Day / Buffer / Overflow</li>
+                      </ul></td>
+                      <td>   </td> <!--Lecture Slides-->
+                      <td> <!--*.pdf--> </td> <!--Readings-->
+                  </tr>
+                  </tbody>
+              </table>
+              </div>
+              <h2 id="recitations">Tentative Schedule of Recitations</h2>
+              <div class="table-responsive">
+              <table class="table table-striped table-bordered">
+                  <thead>
+                  <tr>
+                      <th>Recitation</th>
+                      <th>Date</th>
+                      <th>Topics</th>
+                      <th>Materials</th>
+                      <th>Videos</th>
+                      <th>Instructor </th>
+                  </tr>
+                  </thead>
+                  <tbody>
+
+                  <tr>
+                      <td>0A</td> <!--Recitation Number-->
+                      <td><b>Due</b> Aug. 31</td> <!--Date-->
+                      <td>Fundamentals of Python</td> <!--Topics-->
+                      <td>
+                          <a href="document/recitation/Rec_0A_Fundamentals_of_Python.zip">Notebook (*.zip) </a> <!--Notebook-->
+                      </td>
+                      <td>
+                          <a href="https://www.youtube.com/watch?v=XeV7IkZqfT8">YouTube (url)</a> <!--Videos-->
+                      </td>
+                      <td>Mansi</td> <!-- Instructor-->
+                  </tr>
+                  <tr>
+                      <td>0B</td> <!--Recitation Number-->
+                      <td><b>Due</b> Aug. 31</td> <!--Date-->
+                      <td>Fundamentals of NumPy</td> <!--Topics-->
+                      <td>
+                          <a href="document/recitation/Rec_0B_Fundamentals_of_Numpy.zip">Notebook (*.zip) </a><!--Notebook-->
+                      </td>
+                      <td><a href="https://www.youtube.com/watch?v=vOHy9DvrkNA">YouTube (url)</a></td> <!--Videos-->
+                      <td>Reshmi</td> <!-- Instructor-->
+                  </tr>
+                  <tr>
+                      <td>0C</td> <!--Recitation Number-->
+                      <td><b>Due</b> Aug. 31</td> <!--Date-->
+                      <td>Fundamentals of PyTorch</td> <!--Topics-->
+                      <td>
+                          <a href="document/recitation/Rec_0C_Fundamentals_of_Pytorch.zip">Notebook (*.zip) </a> <!--Notebook-->
+                      </td>
+                      <td><a href="https://www.youtube.com/watch?v=2qsnW4ruiBY">YouTube (url)</a></td> <!--Videos-->
+                      <td>Kushal</td> <!-- Instructor-->
+                  </tr>
+                  <tr>
+                      <td>0D</td> <!--Recitation Number-->
+                      <td><b>Due</b> Aug. 31</td> <!--Date-->
+                      <td>Fundamentals of AWS</td> <!--Topics-->
+                      <td>
+                          <!--<a href="document/recitation/recitation0a.tar.gz">Notebook (*.tar.gz) </a>--> <!--Notebook-->
+                          <a href="https://docs.google.com/document/d/1OMN-7mxn5XfG4Z09E7ENMqHYb1ClZfbf3ZqgxnUq-yQ/edit">Document (url)</a></br>
+                      </td>
+                      <td>
+                          <a href="https://www.youtube.com/watch?v=Yn-w3sfJil4">YouTube (url)</a>
+                      </td> <!--Videos-->
+                      <td>Faris and Miya</td> <!-- Instructor-->
+                  </tr>
+                  <tr>
+                      <td>0E</td> <!--Recitation Number-->
+                      <td><b>Due</b> Aug. 31</td> <!--Date-->
+                      <td>Fundamentals of Google Colab</td> <!--Topics-->
+                      <td>
+                          <!--<a href="document/recitation/recitation0a.tar.gz">Notebook (*.tar.gz) </a>--> <!--Notebook-->
+                          <a href="https://docs.google.com/document/d/1Kw20oFoEi4bD_QLpng5gF674gcRXMT5WB3GuMSZILZ4/edit">Document (url)</a></br>
+                      </td>
+                      <td>
+                          <a href="https://www.youtube.com/watch?v=Y-1vNSJI7ZY">YouTube (url)</a>
+                      </td> <!--Videos-->
+                      <td>Mansi</td> <!-- Instructor-->
+                  </tr>
+                  <tr>
+                      <td>0F</td> <!--Recitation Number-->
+                      <td><b>Due</b> Aug. 31</td> <!--Date-->
+                      <td>Debugging</td> <!--Topics-->
+                      <td>
+                          <a href="document/recitation/Rec_0F_Debugging_1.zip">Notebook (*.zip) </a><!--Notebook-->
+                      </td>
+                      <td>
+                          <a href="https://www.youtube.com/watch?v=I0q9eL7n_74">YouTube (url)</a>
+                      </td> <!--Videos-->
+                      <td>Akshat</td> <!-- Instructor-->
+                  </tr>
+                  <tr>
+                      <td>0G</td> <!--Recitation Number-->
+                      <td><b>Due</b> Aug. 31</td> <!--Date-->
+                      <td>Remote Notebooks</td> <!--Topics-->
+                      <td>
+                          <a href="document/recitation/Rec_0G_Remote_Notebooks.zip">Notebook (*.zip) </a><br>
+                          <a href="document/recitation/Recitation_0G.pdf">Document (*.pdf) </a>
+                      </td>
+                      <td>
+                          <a href="https://www.youtube.com/watch?v=7XppOWUsdMc">YouTube (url)</a>
+                      </td> <!--Videos-->
+                      <td>Anxiang</td> <!-- Instructor-->
+                  </tr>
+                  <tr>
+                      <td>1</td> <!--Recitation Number-->
+                      <td>August 31</td> <!--Date-->
+                      <td>Your First Deep Learning Code</td> <!--Topics-->
+                      <td></td> <!--Notebook-->
+                      <td></td> <!--Videos-->
+                      <td></td> <!-- Instructor-->
+                  </tr>
+                  <tr>
+                      <td>2</td> <!--Recitation Number-->
+                      <td>September 11</td> <!--Date-->
+                      <td>How to compute a derivative</td> <!--Topics-->
+                      <td></td> <!--Notebook>-->
+                    <td></td> <!--Videos-->
+                    <td></td> <!-- Instructor-->
+                </tr>
+                <tr>
+                    <td>3</td> <!--Recitation Number-->
+                    <td>September 18</td> <!--Date-->
+                    <td>Optimizing the network</td> <!--Topics-->
+                    <td><br>
+                        </td> <!--Notebook-->
+                    <td></td> <!--Videos-->
+                 <!--Videos-->
+                    <td></td> <!-- Instructor-->
+                </tr>
+                <tr>
+                    <td>4</td> <!--Recitation Number-->
+                    <td>September 25</td> <!--Date-->
+                    <td>Tensorboard, TSNE, Visualizing network parameters and outputs at every layer</td> <!--Topics-->
+                    <td><br>
+                    </td> <!--Notebook-->
+                    <td></td> <!--Videos-->
+                    <td></td> <!-- Instructor-->
+                </tr>
+                <tr>
+                    <td>5</td> <!--Recitation Number-->
+                    <td>October 2</td> <!--Date-->
+                    <td>CNN: Basics</td> <!--Topics-->
+                    <td></td> <!--Notebook-->
+                    <td></td> <!--Videos-->
+                    <td></td> <!-- Instructor-->
+                </tr>
+                <tr>
+                    <td>6</td> <!--Recitation Number-->
+                    <td>October 9</td> <!--Date-->
+                    <td>CNN: Losses, transfer learning</td> <!--Topics-->
+                    <td><br>
+                        </td> <!--Notebook-->
+                    <td></td> <!--Videos-->
+                    <td></td> <!-- Instructor-->
+                </tr>
+                <tr>
+                    <td>7</td> <!--Recitation Number-->
+                    <td>October 30</td> <!--Date-->
+                    <td>RNN: Basics</td> <!--Topics-->
+                    <td><br>
+                        </td> <!--Notebook-->
+                    <td></td> <!--Videos-->
+                    <td></td> <!-- Instructor-->
+                </tr>
+                <tr>
+                    <td>8</td> <!--Recitation Number-->
+                    <td>November 6</td> <!--Date-->
+                    <td>CTC</td> <!--Topics-->
+                    <td><br>
+                        </td> <!--Notebook-->
+                    <td><br>
+			</td> <!--Videos-->
+                    <td></td> <!-- Instructor-->
+                </tr>
+                <tr>
+                    <td>9</td> <!--Recitation Number-->
+                    <td>November 13</td> <!--Date-->
+                    <td>Attention</td> <!--Topics-->
+                    <td><br>
+                        </td>
+                    <td><br>
+                    </td> <!--Videos-->
+                    <td></td> <!-- Instructor-->
+                </tr>
+                <tr>
+                    <td>10</td> <!--Recitation Number-->
+                    <td>November 20</td> <!--Date-->
+                    <td>Listen Attend Spell</td> <!--Topics-->
+                    <td><br>
+                        </td> <!--Notebook-->
+                    <td><br>
+                        <br></td> <!--Videos-->
+                    <td></td> <!-- Instructor-->
+                </tr>
+                <tr>
+                    <td>11</td> <!--Recitation Number-->
+                    <td>December 4</td> <!--Date-->
+                    <td>Hopfield nets / Boltzmann machines </td> <!--Topics-->
+                    <td><br>
+                        </td> <!--Notebook-->
+                    <td></td> <!--Videos-->
+                    <td></td> <!-- Instructor-->
+                </tr>
+
+                <tr>
+                    <td>12</td> <!--Recitation Number-->
+                    <td>December 11</td> <!--Date-->
+                    <td>VAEs</td> <!--Topics-->
+                    <td></td> <!--Notebook-->
+                    <td></td> <!--Videos-->
+                    <td></td> <!-- Instructor-->
+                </tr>
+                <tr>
+                    <td>13</td> <!--Recitation Number-->
+                    <td>TBD</td> <!--Date-->
+                    <td>Generative Adversarial Networks (GANs)</td> <!--Topics-->
+                    <td></td> <!--Notebook-->
+                    <td></td> <!--Videos-->
+                    <td></td> <!-- Instructor-->
+                </tr>
+                <tr>
+                    <td>14</td> <!--Recitation Number-->
+                    <td>TBD</td> <!--Date-->
+                    <td>Reinforcement Learning</td> <!--Topics-->
+                    <td></td> <!--Notebook-->
+                    <td></td> <!--Videos-->
+                    <td></td> <!-- Instructor-->
+
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+
+
+			<style>
+				#deadlines td {
+					vertical-align: middle;
+					text-align: center;
+				}
+                #deadlines {
+                }
+                #deadlines .due {
+                    background-color: #e0e0e0;
+                    border-bottom: solid 1px #999;
+                }
+			</style>
+            <h2 id="homework"> Assignments</h2>
+            <div class="table-responsive">
+                <table id="deadlines" class="table table-bordered" style="vertical-align: middle">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>P1 HWs</th>
+                    <th>P2 HWs</th>
+                    <th>Bonus HWs</th>
+                    <th>Project (<a href="../shared/project.html">Project ideas</a>)</th>
+                    <th>Quizzes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Summer</td>
+                    <td>HW0p1 out
+                        <br><a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments/hw0p1">Autolab</a>,&nbsp;<a href="document/homework/hw0p1.txt">handout</a>
+                        <br>(see&nbsp;recitation&nbsp;0s)</td>
+                    <td>HW0p2 out
+                        <br><a href="https://autolab.andrew.cmu.edu/courses/11485-f20/assessments/hw0">Autolab</a>,&nbsp;<a href="document/homework/hw0p2.tar">handout</a>
+                        <br>(see&nbsp;recitation&nbsp;0s)</td>
+                    <td rowspan="3"></td>
+                    <td rowspan="14"></td>
+                    <td><a href="https://canvas.cmu.edu/courses/16837/quizzes/39818">Quiz 0 out</a></td>
+                  </tr>
+                  <tr>
+                    <td>Mon. Aug. 31</td>
+                    <td class="due">HW0p1 due</td>
+                    <td class="due">HW0p2 due</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="1">Fri. Sept. 4</td>
+                    <td rowspan="1"></td>
+                    <td rowspan="1"></td>
+                    <td>Quiz 1 out</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Sun. Sept. 6</td>
+                    <td rowspan="2">HW1p1 out</td>
+                    <td rowspan="2">HW1p2 out</td>
+                    <td rowspan="2">HW1 Bonus out</td>
+                    <td class="due">Quiz 0 due</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="" class="due">Quiz 1 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Sept. 11</td>
+                    <td rowspan="6"></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="6"></td>
+                    <td>Quiz 2 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. Sept. 13</td>
+                    <td class="due">Quiz 2 due</td>
+                  </tr>
+                  <tr>
+                    <td>Wed. Sept. 16</td>
+                    <td class="due">HW1p2 early deadline</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Sept. 18</td>
+                    <td rowspan="3"></td>
+                    <td>Quiz 3 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. Sept. 20</td>
+                    <td class="due">Quiz 3 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Sept. 25</td>
+                    <td>Quiz 4 out</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Sun. Sept. 27</td>
+                    <td class="due">HW1p1 due</td>
+                    <td class="due">HW1p2 on-time deadline</td>
+                    <td class="due">HW1 Bonus due</td>
+                    <td rowspan="2" class="due">Quiz 4 due</td>
+                  </tr>
+                  <tr>
+                    <td>HW2p1 out</td>
+                    <td>HW2p2 out</td>
+                    <td>HW2 Bonus out</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Oct. 2</td>
+                    <td rowspan="6"></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="6"></td>
+                    <td>Quiz 5 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. Oct. 4</td>
+                    <td class="due">Team formations due<br>(or be randomly grouped)</td>
+                    <td class="due">Quiz 5 due</td>
+                  </tr>
+                  <tr>
+                    <td>Wed. Oct. 7</td>
+                    <td class="due">HW2p2 early deadline</td>
+                    <td rowspan="2"></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Oct. 9</td>
+                    <td rowspan="3"></td>
+                    <td>Quiz 6 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. Oct. 11</td>
+                    <td class="due">
+                        Project proposals due
+                    </td>
+                    <td class="due">Quiz 6 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Oct. 16</td>
+                    <td rowspan="8"></td>
+                    <td>Quiz 7 out</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Sun. Oct. 18</td>
+                    <td class="due">HW2p1 due</td>
+                    <td class="due">HW2p2 on-time deadline</td>
+                    <td class="due">HW2 Bonus due</td>
+                    <td rowspan="2" class="due">Quiz 7 due</td>
+                  </tr>
+                  <tr>
+                    <td>HW3p1 out</td>
+                    <td>HW3p2 out</td>
+                    <td>HW3 Bonus out</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Oct. 23</td>
+                    <td rowspan="3"></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="3"></td>
+                    <td>Quiz 8 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. Oct. 25</td>
+                    <td class="due">Quiz 8 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Oct. 30</td>
+                    <td class="due">HW3p2 early deadline</td>
+                    <td>Quiz 9 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. Nov. 1</td>
+                    <td>HW4p1 out</td>
+                    <td>HW4p2 out</td>
+                    <td>HW4 Bonus out</td>
+                    <td class="due">Quiz 9 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Nov. 6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Quiz 10 out</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="1">Sun. Nov. 8</td>
+                    <td rowspan="1" class="due">HW3p1 due</td>
+                    <td rowspan="1" class="due">HW3p2 on-time deadline</td>
+                    <td rowspan="1" class="due">HW3 Bonus due</td>
+                    <td class="due">Midterm report due</td>
+                    <td rowspan="1" class="due">Quiz 10 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Nov. 13</td>
+                    <td rowspan="6"></td>
+                    <td rowspan="2"></td>
+                    <td rowspan="6"></td>
+                    <td rowspan="5"></td>
+                    <td>Quiz 11 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. Nov. 15</td>
+                    <td class="due">Quiz 11 due</td>
+                  </tr>
+                  <tr>
+                    <td>Wed. Nov. 18</td>
+                    <td class="due">HW4p2 early deadline</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Nov. 20</td>
+                    <td rowspan="3"></td>
+                    <td>Quiz 12 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. Nov. 22</td>
+                    <td class="due">Quiz 12 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Nov. 27</td>
+                    <td class="due">Preliminary final report due</td>
+                    <td>Quiz 13 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. Nov. 29</td>
+                    <td class="due">HW4p1 due</td>
+                    <td class="due">HW4p2 on-time deadline</td>
+                    <td class="due">HW4 Bonus due</td>
+                    <td rowspan="1"></td>
+                    <td class="due">Quiz 13 due</td>
+                  </tr>
+                  <tr>
+                    <td>Fri. Dec. 4</td>
+                    <td rowspan="6"></td>
+                    <td rowspan="6"></td>
+                    <td rowspan="6"></td>
+                    <td>Start project uploads</td>
+                    <td>Quiz 14 out</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. Dec. 6</td>
+                    <td></td>
+                    <td class="due">Quiz 14 due</td>
+                  </tr>
+                  <tr>
+                    <td>Wed. Dec. 9</td>
+                    <td class="due">Project uploads due</td>
+                    <td rowspan="4"></td>
+                  </tr>
+                  <tr>
+                    <td>Thu. Dec. 10</td>
+                    <td>Start peer reviews</td>
+                  </tr>
+                  <tr>
+                    <td>Sat. Dec. 12</td>
+                    <td class="due">Peer reviews due</td>
+                  </tr>
+                  <tr>
+                    <td>Sun. Dec. 13</td>
+                    <td class="due">Final report due</td>
+                  </tr>
+                </tbody>
+                </table>
+
+
+    </div>
+</div>
+<div id="docs-tools" class="container">
+    <div class="row">
+        <h2>Documentation and Tools</h2>
+        <h3>Textbooks</h3>
+        <p>This is a selection of optional textbooks you may find useful</p>
+        <div class="textbook">
+            <div class="textbook-img-container"><img src="image/Goodfellow.jpg" alt="Deep Learning"></div>
+            <div class="textbook-info">
+                <span class="textbook-info-item">
+                    <a href="https://www.deeplearningbook.org/"><b>
+                        Deep Learning
+                    </b></a>
+                </span>
+                <span class="textbook-info-item">By Ian Goodfellow, Yoshua Bengio, Aaron Courville</span>
+                <span class="textbook-info-item"><i>Online book, 2017</i></span>
+            </div>
+        </div>
+        <div class="textbook">
+            <div class="textbook-img-container"><img src="image/Nielsen.jpg" alt="Neural Networks and Deep Learning"></div>
+            <div class="textbook-info">
+                <span class="textbook-info-item">
+                    <a href="http://neuralnetworksanddeeplearning.com/"><b>
+                        Neural Networks and Deep Learning
+                    </b></a>
+                </span>
+                <span class="textbook-info-item">By Michael Nielsen</span>
+                <span class="textbook-info-item"><i>Online book, 2016</i></span>
+            </div>
+        </div>
+        <div class="textbook">
+            <div class="textbook-img-container"><img src="image/Lewis.jpg" alt="Deep Learning Step by Step with Python"></div>
+            <div class="textbook-info">
+                <span class="textbook-info-item">
+                    <a href="https://www.amazon.com/Deep-Learning-Step-Python-Introduction/dp/1535410264"><b>
+                        Deep Learning Step by Step with Python: A Very Gentle Introduction to Deep Neural Networks for Practical Data Science
+                    </b></a>
+                </span>
+                <span class="textbook-info-item">By N. D. Lewis</span>
+                <span class="textbook-info-item"><i></i></span>
+            </div>
+        </div>
+
+        <div class="textbook">
+            <div class="textbook-img-container"><img src="image/Rumelhart1.jpg" alt="Parallel Distributed Processing"></div>
+            <div class="textbook-info">
+                <span class="textbook-info-item">
+                    <a href="https://mitpress.mit.edu/books/parallel-distributed-processing-volume-1"><b>
+                        Parallel Distributed Processing, Volume 1
+                    </b></a>
+                </span>
+                <span class="textbook-info-item">By Rumelhart and McClelland</span>
+            </div>
+        </div>
+
+        <div class="textbook">
+            <div class="textbook-img-container"><img src="image/Rumelhart2.jpg" alt="Parallel Distributed Processing"></div>
+            <div class="textbook-info">
+                <span class="textbook-info-item"><a href="https://mitpress.mit.edu/books/parallel-distributed-processing-volume-2"><b>
+                        Parallel Distributed Processing, Volume 2
+                    </b></a>
+                </span>
+                <span class="textbook-info-item">By Rumelhart and McClelland</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class=" container">
+    <div class="row">
+    </div>
+</div>
+
+
+</div></body></html>
