@@ -205,11 +205,11 @@ code {
 
 .zoom {
     color: white;
-    background-color: #a48d8d;
+    background-color:#847777;
     border-radius: 9px;
     font-size: .7em;
-    padding: 3px;
-    margin-left:15px;
+    padding: 5px;
+    padding: 2px 7px 2px 7px;
 }
 .zoom:hover {
     text-decoration: none;
