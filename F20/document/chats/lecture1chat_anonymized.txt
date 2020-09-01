@@ -1,0 +1,244 @@
+00:29:28	Anon. Scalar:	yep
+00:29:30	Anon. PaddedSequence:	yes
+00:29:31	Anon. Convolution:	yes
+00:29:33	Anon. Hyperplane:	yes
+00:30:03	Anon. Matrix:	yes
+00:32:49	Anon. Loss Function:	I don't see the button to "raise my hand"
+00:33:01	Anon. print(‘Hello world!’):	Click on participants
+00:33:03	Anon. Fourier Transform:	In the Reactions
+00:33:21	Tony Qin (TA):	It’s the ‘raise hand’ one you see when you click on participants
+00:33:26	Anon. Loss Function:	Gotcha
+00:33:29	Reshmi Ghosh (TA):	Raised hand feature is in the participators window
+00:33:47	Anon. Kirchhoff:	Q: The form 11-785 Group Forms is no longer accepting responses. Will we still be automatically assigned a group?
+00:33:54	Anon. Eigenvector:	Hi I have filled the form for study groups but I haven't received any communication regarding how to form one.. 
+00:34:06	Reshmi Ghosh (TA):	You will be notified about groups shortly
+00:34:26	Reshmi Ghosh (TA):	@nikita email Sean P., the TA. He is responsible for student groups
+00:34:35	Anon. Kirchhoff:	Thanks
+00:35:03	Anon. Eigenvector:	Thanks
+00:35:09	Anon. Jacobian:	will the poll answers carry points?
+00:35:20	Reshmi Ghosh (TA):	yes
+00:35:22	Anon. Voltage-gate:	The link for poll is on the website?
+00:35:30	Reshmi Ghosh (TA):	Nope, the poll will be on zoom
+00:35:34	Reshmi Ghosh (TA):	Stay AWAKE!! :D
+00:36:23	Anon. Max Pool:	will the polls be graded for completion or correctness?
+00:38:01	Anon. Instance:	I thought this course has no partication score? How many percentage of scores the polls will carry?
+00:39:01	Anon. Instance:	cool, thanks
+00:39:36	Miao Wang (TA):	They will be used for attendance tracking and help you find out how you performed during the class.
+00:39:59	Anon. Momentum:	Will we be notified about polls in advance? Due to time difference, I may not be able to attend every lecture and have to watch the recordings instead. Thanks!
+00:40:36	Reshmi Ghosh (TA):	If you are in class only then you respond to polls. They appear anywhere doing the lecture time
+00:41:19	N Miya Sylvester (TA):	We are able to see whether you have watched lecture videos, and in the case that you cannot attend in person we will be checking to see if you have reviewed the lecture recordings online.
+00:41:27	Reshmi Ghosh (TA):	If you cannot attend lectures, and instead choose to watch recording, we track how many lectures you watch, and the length of your watching  time
+00:43:26	Anon. Backprop:	When do we need to watch the recordings? Do we need to watch it on the same day as the lecture so attendance could be counted?
+00:43:40	N Miya Sylvester (TA):	No you can watch it at your convenience.
+00:43:51	N Miya Sylvester (TA):	Weekly quizzes are based on weekly lectures
+00:44:01	Anon. Backprop:	Thanks
+00:45:14	Anon. Args:	will quiz zero be based on this weeks lectures or the topics of HW 0
+00:45:26	Reshmi Ghosh (TA):	HW0
+00:45:45	Reshmi Ghosh (TA):	It’s basic Python and AWS
+00:46:16	Anon. Optimizer:	What is the zoom link for today’s TA office hour?
+00:46:54	Reshmi Ghosh (TA):	Should be updated shortly.
+00:47:08	Anon. ResNet34:	IBM
+00:47:08	Anon. Center Loss:	CMU
+00:47:09	Anon. Kirchhoff:	Google
+00:47:09	Anon. Whyami:	cmu
+00:47:10	Anon. Quadratic:	Wein Hall
+00:47:11	Anon. print(‘Hello world!’):	ibm?
+00:47:11	Anon. Sum-Product:	IBM
+00:47:11	Anon. Sequence:	ibm
+00:47:12	Anon. Sanger’s Rule:	ibm
+00:47:13	Anon. Sparse Matrix:	cmu
+00:47:15	Anon. Eigenvector:	ibm
+00:47:16	Anon. Momentum:	IBM
+00:47:16	Anon. Kernel Trick:	IBM
+00:47:16	Anon. PaddedSequence:	Google Deep Mind?
+00:47:16	Anon. Gradient Flow:	google
+00:47:17	Anon. Thalamus:	cmu
+00:47:18	Anon. Loss Function:	Google
+00:47:21	Anon. Convolution:	google
+00:47:22	Anon. Inception:	CMU?
+00:47:23	Anon. Dot Product:	deepmind?
+00:47:23	Anon. Sodium Ion:	cmu
+00:47:25	Anon. RNN:	CMU
+00:47:25	Anon. Jacobian:	cmu
+00:47:34	Anon. Multivariate Gaussian:	IBM
+00:47:42	Anon. Train:	cmu
+00:47:52	Anon. Matrix:	IBM
+00:47:53	Anon. Backprop:	cmu
+00:47:58	Anon. Gabor transforms:	cmu
+00:49:05	Anon. Autoencoder:	is it possible for you to publish the script online?
+00:49:14	N Miya Sylvester (TA):	The office hour zoom should be the same as the lecture zoom link
+00:50:06	N Miya Sylvester (TA):	Oh wait, it seems we changed that.  We’ll let you know what the zoom office hour link is on Piazza
+00:51:52	Miao Wang (TA):	yeah, we will update the OH zoom link on piazza and website shortly
+00:52:07	Anon. Center Loss:	looool
+00:52:14	Anon. Instance:	.....
+00:53:21	Anon. Baseline:	?
+00:55:12	Anon. K-Fold:	Socrates?
+00:55:19	Anon. Attractor:	1
+00:55:20	Anon. Eigenvector:	Plato?
+00:55:21	Anon. Thalamus:	1
+00:55:22	Anon. hello_world.py:	yes
+00:55:22	Anon. ResNet34:	+1
+00:55:22	Anon. Loss Function:	1
+00:55:23	Anon. Deep Dream:	yeah
+00:55:23	Anon. EC2:	1
+00:55:24	Anon. Hessian:	+1
+00:55:24	Anon. Convolution:	Yep seen before
+00:55:24	Anon. Eigenvector:	me
+00:55:24	Anon. Neurotransmitter:	+1
+00:55:24	Anon. YOLOv2:	+1
+00:55:24	Anon. PaddedSequence:	1
+00:55:24	Anon. Lipid Bilayer:	+1
+00:55:24	Anon. print(‘Hello world!’):	yes
+00:55:25	Anon. Inception:	1+
+00:55:25	Anon. Bidirectional:	+!
+00:55:27	Anon. Autoencoder:	+1
+00:55:27	Anon. Bidirectional:	+!
+00:55:28	Anon. Sum-Product:	+1
+00:55:28	Anon. RCNN:	+1
+00:55:31	Anon. Loss Function:	Seen it in my art history class
+00:55:31	Anon. Matrix:	+1
+00:55:31	Anon. Args:	+1
+00:55:31	Anon. Multivariate Gaussian:	+1
+00:55:31	Anon. Dot Product:	yes
+00:55:32	Anon. Alpha:	+1
+00:55:33	Anon. ALBERT:	+1
+00:55:33	Anon. Recall Capacity:	yes
+00:55:33	Anon. Kalman Filter:	1
+00:55:34	Anon. is_leaf:	+1
+00:55:35	Anon. Scalar:	+1
+00:55:36	Anon. Train:	yes
+00:55:49	N Miya Sylvester (TA):	There’s a yes/no button as well as the raise hand
+00:57:02	Anon. Fourier Transform:	you are muted
+01:02:35	Anon. ResNet34:	I can see the entire screen
+01:02:36	Anon. RNN:	yes
+01:02:41	Anon. ALBERT:	yes
+01:02:47	Anon. Node of Ranvier:	Professor's voice sometimes became very blurry. I wonder if professor could use a better microphone in later courses? Thanks a lot!
+01:03:04	Anon. Baseline:	I suggest a blue snowball
+01:03:09	Anon. Drop Connection:	I second
+01:03:12	Anon. Args:	I third
+01:03:17	Anon. Autoencoder:	i fourth
+01:03:32	Anon. Lipid Bilayer:	i fifth
+01:03:38	Anon. Connectionist:	I sixth
+01:04:04	Anon. Deep Learner:	I seventh
+01:04:10	Anon. Sum-Product:	I eighth
+01:04:19	N Miya Sylvester (TA):	We’ll suggest it to him for you all after class
+01:04:50	Anon. Lipid Bilayer:	i second
+01:05:40	Anon. vim:	+1
+01:05:41	Rita Singh (Prof):	Ok, folks, we have a choice we can try a much better mic now or fix it properly for the next lecture, I think with 200+ listeners the audio isn't what is was when we tested it out with a few people 
+01:08:49	Anon. Oja’s Rule:	dont think it’s bad enough to warrant stopping
+01:09:07	Anon. Refractory Period:	^
+01:09:17	Anon. ResNet18:	^
+01:09:35	Anon. Axon:	Will the online videos have subtitles?
+01:09:44	Anon. Instance:	....
+01:09:57	Anon. Instance:	lmao
+01:10:09	Tony Qin (TA):	There should be a transcript
+01:10:10	N Miya Sylvester (TA):	No I don’t believe so, we would need automatic transcription
+01:10:53	Reshmi Ghosh (TA):	Media tech has a transcript. So when the recorded video is uploaded, you can go check the parts you had trouble with
+01:10:58	Anon. Axon:	It's not so bad now.. just in case some parts need to be reviewed after.
+01:11:10	Reshmi Ghosh (TA):	ANSWER everyone!!!
+01:11:11	Miao Wang (TA):	poll is up, tic toc, folks!
+01:11:17	Anon. Faster-RCNN:	Tik tok?
+01:11:32	Reshmi Ghosh (TA):	No that is a different avenue XD
+01:11:38	Anon. Baseline:	So, did we agree this was based on completion (though I do know the answer)
+01:11:38	Anon. Args:	courses on tik tok when?
+01:11:56	Anon. RBM:	I forgot to submit
+01:11:57	Anon. Matrix:	some chats are so many and disturbing
+01:12:30	Anon. Test:	^ Agreed
+01:12:37	Anon. Sum:	Well actually I have to read Professor’s lip to figure out what he is saying…
+01:12:49	Anon. RBM:	Can we get informed by closing the poll?
+01:12:59	Anon. Sum-Product:	Modified Harvard
+01:13:00	Anon. AlphaGo:	X86-64
+01:13:01	Anon. Attractor:	x86
+01:13:03	Anon. Dropout:	x86/64
+01:13:04	Anon. Undirected Edge:	X86?
+01:13:06	Anon. Asynchronous Update:	Von Neumann
+01:13:07	Anon. Center Loss:	Havard sth?
+01:13:08	Anon. YOLOv4:	RISC
+01:13:08	Anon. Adam:	von newmann
+01:13:15	Anon. Eigenvector:	von neumann
+01:13:15	Anon. batch_first:	Von neumann
+01:13:16	Anon. Thalamus:	Von newmann
+01:13:17	Anon. Center Loss:	Looooool
+01:13:19	Anon. RCNN:	Von neumann
+01:13:22	Anon. Matrix:	on neumann
+01:13:23	Anon. AlphaGo:	von neumann
+01:13:29	Tony Qin (TA):	Von Neumann/Princeton Machine
+01:13:34	Anon. Train:	von neumann
+01:13:34	Anon. ALBERT:	von neumann
+01:13:36	Anon. Recall Capacity:	Von Neumann
+01:13:37	Anon. Hessian:	Von neumann
+01:13:38	Anon. PaddedSequence:	von neumann
+01:13:42	Anon. hello_world.py:	von neumann
+01:13:42	Anon. Decoder:	von neumann
+01:13:45	Anon. Python:	von neumann
+01:13:49	Anon. Dot Product:	von neumann
+01:13:49	Anon. Lipid Bilayer:	von neumann
+01:13:49	Anon. Node of Ranvier:	von neumann
+01:13:51	Anon. Multivariate Gaussian:	Von Neumann
+01:13:53	Anon. Neurotransmitter:	Vom Neumann
+01:14:05	Anon. XOR Gate:	Von Neumann
+01:14:08	Anon. Derivative:	Von Neumann
+01:14:09	Anon. Momentum:	Von Neumann
+01:14:17	Anon. Args:	no one's mentioned it but I think it might be Von Neumann
+01:15:49	Anon. Jacobian:	cannot hear the audio
+01:16:18	Anon. GAN:	I think it is fine for others? I can hear it right now
+01:16:23	Reshmi Ghosh (TA):	Check connection? I am able to
+01:16:28	Anon. Args:	i can hear
+01:16:29	Anon. Jacobian:	ok
+01:19:14	Anon. Autoencoder:	lol
+01:19:17	Anon. Transformer:	loool
+01:19:18	Anon. K-Fold:	lol
+01:19:20	Anon. Center Loss:	LOL!
+01:19:32	Anon. Args:	fat brains rise up
+01:19:35	Anon. Recall Capacity:	Fat is helpful it seems :P
+01:20:01	Anon. Center Loss:	Revenge of the fatheads
+01:20:01	Anon. vim:	Fat head broys
+01:27:19	Anon. Sum-Product:	You can’t decrease weights
+01:27:23	Anon. GAN:	The weights only increase
+01:27:24	Anon. Convolution:	when they gets too close?
+01:28:20	Reshmi Ghosh (TA):	Answer now
+01:28:23	Miao Wang (TA):	POLL is up :)
+01:29:01	Anon. Validate:	(writes a neural network to predict when the polls are
+01:30:20	Anon. Backprop:	I may forget to use an Andrew email to sign in Zoom, but I did register. Does that affect my attendance?
+01:31:57	Anon. Loss Function:	Is η a constant?
+01:32:14	Tony Qin (TA):	Yes. It’s the learning rate
+01:32:24	Anon. ResNet34:	I don't think the learning rate has to be constant in practice?
+01:32:28	Anon. Perceptron:	learning rates are not necessarily constant
+01:33:03	Tony Qin (TA):	Correct. The learning rate can be changed over time
+01:33:15	Anon. EC2:	you can use dynamic learning rate
+01:33:29	Anon. vim:	[Poggers]
+01:34:05	N Miya Sylvester (TA):	Xiaoqing - Your name is recorded for attendance when you enter the zoom meeting
+01:35:44	Reshmi Ghosh (TA):	Poll time!
+01:38:12	Anon. Loss Function:	What is the motivation for adding a bias term?
+01:38:48	Anon. ALBERT:	I think we need timer for quiz.
+01:38:59	Anon. Dot Product:	so that the decision boundary doesn't have to cross the origin
+01:39:06	Anon. Instance:	bias describes how easily a neroun will fire 
+01:39:47	Miao Wang (TA):	we planned 30 seconds for the polls, it worked well in the test run.
+01:41:06	N Miya Sylvester (TA):	Weights decide how fast activation functions are triggered, and the bias is used to delay triggering — it depends on what’s best for your data
+01:41:29	Anon. K-Fold:	Will the chat be saved so that people watching the video on media tech can see any questions and answers? (or you could compile the questions into a Piazza Post for the lesson)
+01:42:01	Anon. EC2:	agree, will the answer of questions be posted later?
+01:42:53	Anon. Momentum:	Can we have a countdown for the poll?
+01:43:19	Anon. Scheduler:	how do we interpret the poll result? in the previous question the 6 was highlighted red, but the solution was 7?
+01:43:40	Tony Qin (TA):	Let me find out, Haofan. We may just post something on Piazza
+01:43:57	Anon. Sum:	Professor mentioned it was 7
+01:44:01	Anon. Soma:	Red is majority vote
+01:44:41	Miao Wang (TA):	Yes, maybe we could also give a concrete timing for polls
+01:44:59	Anon. Node of Ranvier:	can someone give a brief explain for why the answer is 7?
+01:45:09	Anon. Scheduler:	would also be helpful if either 1) poll shows correct result 2) professor/TA verbally says answer after every poll
+01:45:10	Anon. Asynchronous Update:	Same question here
+01:45:20	Anon. GAN:	6 for each side 1 for combining the results
+01:45:23	Anon. Baseline:	You need one extra neuron as the output neuron
+01:45:30	Anon. Keras:	6 for each edge of the hexagon and 1 to AND the 6 inequalities
+01:45:40	Anon. Node of Ranvier:	cool, thanks
+01:45:41	Anon. EC2:	6 neurons for boundary, 1 neuron for voting
+01:45:44	Anon. Hessian:	I believe the professor says 6for each point and 1 for output
+01:45:49	Reshmi Ghosh (TA):	Hexagon so 6 sides and then there is one final neuron required for the output
+01:46:00	Anon. Asynchronous Update:	Thank you
+01:46:30	Reshmi Ghosh (TA):	POLL PEOPLE!
+01:46:34	Miao Wang (TA):	POLL is up guys
+01:47:03	Anon. Train:	can we have a timer for poll?
+01:47:43	Miao Wang (TA):	Yeah, we do have a timer for poll
+01:48:18	Anon. Instance:	I also think we need a timer for the poll such that we could see how much time left. For now, I tend to randomly select an answer in case I will miss it
+01:48:38	Anon. Kirchhoff:	+1
+01:48:41	Anon. Train:	+1
+01:48:45	Anon. Autoencoder:	+1
