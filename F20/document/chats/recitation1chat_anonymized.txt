@@ -1,0 +1,260 @@
+07:58:14 From Jacob Lee (TA):	good luck today friends
+07:58:23 From Jacob Lee (TA):	👌🏻👌🏻👌🏻👌🏻
+08:00:03 From Anon. Cable Theory:	Could the host go to Zoom settings and mute participants upon joining?
+08:00:18 From Jacob Lee (TA):	remember to record!
+08:01:10 From Anon. Array:	view present
+08:01:19 From Anon. Array:	no
+08:01:27 From Anon. Sequence:	Not currently sharing
+08:06:37 From Anon. YOLOv3:	Where can we find the recitation slides?
+08:06:56 From Anon. Decoder:	If perceptrons are single layer neural nets, then how is multi layered perceptron different from neural nets?
+08:07:08 From jinhyun1@andrew.cmu.edu (TA):	@Ran They’ll be up right after this recitation ends
+08:07:10 From Anon. Deep Dream:	perceptron is a type of neural net
+08:07:12 From Anon. Deep Dream:	I think
+08:07:23 From jinhyun1@andrew.cmu.edu (TA):	Yes
+08:07:42 From Anon. is_available():	Are these slides on the course website?
+08:07:49 From jinhyun1@andrew.cmu.edu (TA):	So Neural Network is an umbrella term that includes MLPs (which are just fully connected layers like these), CNNs, RNNs, etc.
+08:07:50 From Jacob Lee (TA):	they will be
+08:08:09 From jinhyun1@andrew.cmu.edu (TA):	@Yueqing Sorry they are not up yet
+08:08:19 From Anon. LTI:	I guess the word “perceptron” usually refers to one neuron with input, weight, and activation
+08:08:30 From jinhyun1@andrew.cmu.edu (TA):	That’s right
+08:08:32 From Anon. is_available():	Okay, thanks:)
+08:09:10 From Anon. Decoder:	thanks!
+08:09:53 From Anon. Kaggle:	Is Lr learning rate?
+08:09:58 From jinhyun1@andrew.cmu.edu (TA):	Yes
+08:09:59 From Anon. Fast-RCNN:	yes
+08:10:02 From Anon. is_available():	yes
+08:10:02 From Anon. Python:	yeah
+08:10:09 From Anon. Kaggle:	Thank you!
+08:10:58 From Jacob Lee (TA):	👏🏻👏🏻👏🏻
+08:11:57 From Anon. Gradient Flow:	How would running multiple test cases stop us from getting stuck in a local minima?
+08:12:29 From Jacob Lee (TA):	@bajram the gradient space will be slightly different each time, so there'll be different minima/maxima
+08:12:33 From Anon. Array:	If you initialize your position in many locations you have a great chance of finding global minimum
+08:13:40 From Anon. Gradient Flow:	Ok thanks
+08:15:42 From Anon. Eta:	thinking over overhead, are operations using the gpu faster for smaller matrices too?
+08:15:49 From Anon. Uniform Distribution:	can you initialize the tensor directly within the gpu memory in order to remove the moving time?
+08:16:31 From Anon. ReduceLROnPlateau:	can we create tensors on GPU by default?
+08:16:41 From Anon. ReduceLROnPlateau:	my bad, asked same question
+08:16:44 From Jacob Lee (TA):	@uma i think it depends, but it's generally the same; transferring between cpu and gpu is a big time bottleneck however
+08:17:06 From Anon. Uniform Distribution:	Okay thank you!
+08:17:09 From Anon. Acitvation Function:	Can we individually select variables from the code to run on gpu while some of them may not be on gpu
+08:17:09 From Reshmi Ghosh (TA):	Yes you can, but you need to move the data to numpy to generate results
+08:17:11 From Jacob Lee (TA):	:)
+08:17:13 From Anon. Eta:	@Jacob Lee thank you!
+08:17:22 From Reshmi Ghosh (TA):	And save them locally
+08:17:58 From Anon. Graph:	is there a disadvantage to always moving every tensor we make to gpu?
+08:18:25 From Anon. Deep Dream:	what's the difference between a.cuda() and a.to("cuda")
+08:19:04 From Jacob Lee (TA):	^ i think theyre the same, but google verify that
+08:19:19 From Antioch Sanders (TA):	@Lawrence Chen you may have more limited memory on the GPU
+08:19:25 From Reshmi Ghosh (TA):	“Cuda” is the string variable denoting the device name
+08:20:25 From Anon. Deep Dream:	ok so apparently using the to method is faster and pytorch recommends it. the cuda method is for backward compatibility with older versions of pytorch im pretty sure
+08:20:44 From Jacob Lee (TA):	^ Thanks:)
+08:20:45 From Anon. Validate:	Thanks Joseph!
+08:20:52 From Anon. ReduceLROnPlateau:	thank you
+08:21:04 From Anon. Fast RCNN:	How do we print that out?
+08:21:15 From Anon. Fast RCNN:	The GPU usage
+08:21:18 From Anon. Fast RCNN:	Thanks!
+08:21:27 From Anon. CMU:	How to check whether the memory is increasing or not
+08:21:53 From Jacob Lee (TA):	^ it depends on what platform you're on; if youre on aws you can use various bash commands
+08:22:08 From Tony Qin (TA):	nvidia-smi
+08:22:29 From Reshmi Ghosh (TA):	If you are on google colab
+08:22:30 From Jacob Lee (TA):	in colab/Jupyter notebooks theres some cuda command thats convenient, but i forget what it was
+08:22:32 From Jacob Lee (TA):	oh
+08:22:39 From Reshmi Ghosh (TA):	A bar on right top header shows memory usage
+08:22:45 From Anon. Voltage-gate:	I think it’s torch.cuda.memory_allocated()
+08:22:50 From Anon. Voltage-gate:	If you want to do it programmatically
+08:23:04 From Reshmi Ghosh (TA):	I think Edward is right
+08:23:12 From Anon. Fast RCNN:	Thanks all! Appreciate it!
+08:23:47 From Anon. CMU:	Thank you
+08:24:13 From Anon. ReduceLROnPlateau:	should we include error numbers on piazza to find it easier for other students to find same error?
+08:24:44 From Jacob Lee (TA):	sure wouldn't hurt
+08:25:17 From Reshmi Ghosh (TA):	@matias as long as you are posting on the right FAQ thread, sure!
+08:25:20 From Reshmi Ghosh (TA):	:_)
+08:25:33 From Anon. AlphaGo:	Would you recommend doing all computation on CPU initially for one learning iteration, then when no errors show up go to GPU?
+08:25:44 From Jacob Lee (TA):	^yes
+08:25:57 From Anon. VC Dimension:	Are these slides available online somewhere?
+08:26:04 From Jacob Lee (TA):	and while developing on cpu, do it locally; aws time is expensive and colab restricts how much time you use gpu for
+08:26:33 From Reshmi Ghosh (TA):	I would say depends?  If the data is large, it might take a long time on cpu
+08:26:34 From Jacob Lee (TA):	^ we'll upload later, sorry for the delay
+08:26:45 From Anon. Fast RCNN:	Is it possible to finish our homework just using colabs as opposed to using amazon aws instances? Just curious
+08:26:53 From Reshmi Ghosh (TA):	Use AWS
+08:27:06 From Reshmi Ghosh (TA):	Colab doesn’t have free GPU’s any more
+08:27:13 From Jacob Lee (TA):	o rly:(
+08:27:17 From Anon. Fast RCNN:	Oh nooo
+08:27:19 From Reshmi Ghosh (TA):	Although Colab Pro is cheaper in some ways
+08:27:26 From Anon. Python:	wait what?
+08:27:34 From Reshmi Ghosh (TA):	You pay 10$ monthly to access Colab pro
+08:27:36 From Anon. Python:	seriously?
+08:27:44 From Anon. Fast RCNN:	I thought colab had free GPUs but less storage
+08:27:45 From Anon. Deep Dream:	el big oof
+08:27:50 From Reshmi Ghosh (TA):	But CMU doesn’t provide credits for Colab!
+08:28:05 From Reshmi Ghosh (TA):	@Qiyun that changed this May:-(
+08:28:23 From Anon. MXNet:	can we just train the model locally
+08:28:26 From Reshmi Ghosh (TA):	It does provide free GPUs with a ram size of 12 GB
+08:28:28 From Anon. Cerebellum:	Wait colab does
+08:28:35 From Anon. Alpha:	How would we apply the credit given by CMU for AWS?
+08:28:43 From Reshmi Ghosh (TA):	Beyond that you have to access Colab pro
+08:28:44 From Jacob Lee (TA):	@yi shen it will take many centuries for late rhomeworks
+08:28:49 From Anon. Bias:	Should we have to do all the assignments on aws or we can do those on the local machine with GPU?
+08:28:56 From Antioch Sanders (TA):	training locally is a good idea for testing
+08:29:00 From Reshmi Ghosh (TA):	You can use local machine
+08:29:08 From Anon. Bias:	Thank you
+08:29:17 From Anon. MXNet:	@Jacob Lee, will RTX 3080 faster than AWS T4?
+08:29:22 From Anon. Sequence:	Note on local computer training:watch how much of your memory is being used, it can be really easy to consume all of the memory on your computer before any training starts. (potentially freezing your computer)
+08:29:25 From Tony Qin (TA):	Zequn, it’s pretty simple. There’s a place to redeem credits. Just search it
+08:29:27 From Reshmi Ghosh (TA):	We will give you AWS credits before every hw
+08:29:38 From Reshmi Ghosh (TA):	Given that you have completed hw0p1
+08:29:40 From Reshmi Ghosh (TA):	:_-)
+08:29:48 From Tony Qin (TA):	Yes, 3080 is faster than T4. In fact, 2080ti is faster. I think even 2080 is faster
+08:29:52 From Anon. LTI:	Haha go get a 3080 @Yi Shen
+08:29:55 From Anon. Alpha:	Got it, thank you!
+08:30:00 From Tony Qin (TA):	Get the 3090
+08:30:01 From Anon. Fast RCNN:	Thanks @Reshimi !
+08:30:15 From Anon. Eta:	for our hw assignments, generally, how much faster is it to use gpu vs. training locally?
+08:30:23 From Anon. Fast RCNN:	Sry I meant Reshmi
+08:30:29 From Reshmi Ghosh (TA):	Lol isssokay
+08:30:32 From Anon. MXNet:	@ Tony I want to buy 3090. but I am poor hahaha
+08:30:42 From Anon. is_available():	lol
+08:30:52 From Jacob Lee (TA):	@uma big difference, sometimes like 21 hours for one epoch locally, 15 minutes on gpu
+08:30:56 From Reshmi Ghosh (TA):	@Uma a lot faster!
+08:31:14 From Reshmi Ghosh (TA):	I have heard of incidents more than 21 hours @Jacob
+08:31:16 From Reshmi Ghosh (TA):	:P
+08:31:41 From Anon. Eta:	oh woah … thanks for the replies @jacob @reshmi
+08:31:41 From Tony Qin (TA):	Some of your training will take >5 hours on GPU. Can’t imagine what it would be on CPU
+08:31:53 From Anon. RBM:	hey how much difference would there be if I trained on my local machine gpu rather than on aws?
+08:32:04 From Tony Qin (TA):	Ananyananda what’s your gpu?
+08:32:05 From Anon. Voltage-gate:	Would we do data augmentation in dataset or is there some way to do it in dataloader?
+08:32:09 From Reshmi Ghosh (TA):	Oh yes, hw4 will take really long! Also depending on your model architecture hw2 may also take long
+08:32:44 From Jacob Lee (TA):	@edward do it in dataset; dataloader has to process on the fly before feeding into model, dataset would be preprocessing so time is frontloaded
+08:32:56 From Anon. RBM:	1080 Ti nvidia
+08:32:58 From Reshmi Ghosh (TA):	Dataloader is generally used to load data and establish the getitem method to easy index
+08:33:02 From Reshmi Ghosh (TA):	Do it in dataset
+08:34:07 From Tony Qin (TA):	1080ti should be fine. It will be faster than T4. Only downside is it will have less vram than T4, which has 16GB.
+08:34:24 From Anon. Decoder:	why does efficiency decrease if we have too many workers?
+08:34:26 From Anon. Cerebellum:	doesn't windows have an issue with num_workers?
+08:34:30 From Anon. Matrix:	how about my intel uhd graphics 620 /s
+08:34:54 From Anon. RBM:	by vram you mean system ram?
+08:34:54 From Tony Qin (TA):	Yes, windows has an issue with num_workers. Don’t use windows. I tried for a long time to get it to work, but couldn’t. Just get arch lol
+08:34:58 From Anon. Gradient Flow:	what is num_workers doing?
+08:35:01 From Anon. Deep Dream:	what about in wsl
+08:35:07 From Tony Qin (TA):	vram is the memory on the gpu
+08:35:13 From Jacob Lee (TA):	@joseph i wouldn't run serious code in wsl, not really meant for it
+08:35:24 From Anon. Fast RCNN:	num_workers  is for parallel I believe, if set to 1 then its sequential @Bajram
+08:35:32 From Anon. Bidirectional:	when you say windows has a problem with num_workers, does this apply if we do everything in aws?
+08:35:33 From Anon. Gradient Flow:	Oh right
+08:35:39 From Tony Qin (TA):	num_workers is the number of processes that load data into the GPU, which greatly affects speed of training
+08:35:56 From Tony Qin (TA):	You can use AWS on windows no problem since the computation is done on the AWS machine
+08:35:56 From Jacob Lee (TA):	@zong no, aws would be whatever OS you have on your AMI
+08:35:56 From Anon. RBM:	Oh Okay thanks @ Tony Qin
+08:36:08 From Anon. MXNet:	@ Tony Even 1080 Ti is faster than T4? So can I simply  understand it like if we have 1080+ GPU on our local machine, then we don't need to use AWS anymore? I have connection issues with AWS right now, so wanna bug a new GPU and do my HW on my local machine
+08:36:53 From Jacob Lee (TA):	^ keep in mind memory is important for model quality; allows you to store larger models and larger batch sizes
+08:37:10 From Jacob Lee (TA):	larger batch sizes -> better, smoother training because gradient is smoother
+08:37:16 From Tony Qin (TA):	Yi Shen, kind of. Speed is one thing, but also pay attention to vram. I would’t suggest working with any less than 10GB vram. In terms of ram, I would suggest 32GB. If your system is better than that, then your local machine will be fine, probably faster than g4dn.xlarge
+08:37:40 From Anon. MXNet:	@Tony, thank you so much!
+08:38:29 From Anon. RBM:	I guess I'll stick with aws don't have so much vram but do we need so much vram from hw1 itself?
+08:39:19 From Tony Qin (TA):	Ananyananda, for hw1 you don’t need much vram. For hw2 and beyond, you will
+08:39:26 From Tony Qin (TA):	I’ll bring back the GPU thread, post questions there
+08:39:34 From Anon. RBM:	Cool Thanks!
+08:41:24 From Anon. Graph:	what’s the purpose of super().__init__()?
+08:41:41 From Jacob Lee (TA):	^ runs the init method of the parent class
+08:41:50 From Anon. Graph:	Why do we need to do that?
+08:41:57 From Anon. is_available():	inheritance
+08:42:19 From Anon. MXNet:	you may check what is python inheritance
+08:42:24 From Anon. LTI:	otherwise you may not be able to call functions from nn.Modules
+08:43:23 From Jacob Lee (TA):	Btw, this recitation is directly useful for hw1p1 and hw1p2. Hw1p1 you'll be implementing some of this information:)
+08:43:35 From Jacob Lee (TA):	hw1p2 you'll be applying this info to train a model on a large dataset
+08:44:36 From Anon. Baseline:	Do you have to train -> eval -> train again?
+08:44:52 From Jacob Lee (TA):	if youre training again afterwards then yes
+08:46:45 From Anon. DBN:	| || || |_
+08:46:53 From Anon. Voltage-gate:	How would we run softmax on eval then?
+08:46:56 From Anon. LTI:	In the example we’re repeatedly putting data from CPU to GPU in every epoch, can we do it beforehand and only access them in training process?
+08:46:58 From Anon. Voltage-gate:	Or can we directly just use NLL loss?
+08:47:03 From Jacob Lee (TA):	l o s s
+08:47:17 From Jacob Lee (TA):	^Edward li there's not really a reason to for hw1p2; you might as well just use xeloss
+08:47:18 From Anon. Fast RCNN:	The TA was saying that CrossEntropyLoss includes softmax and what function again? Thanks!
+08:47:21 From Tony Qin (TA):	When putting data from CPU to GPU, do it in the training loop
+08:47:38 From Jacob Lee (TA):	the writeup for hw1p1 will talk about what cross entropy loss is composed of in torch
+08:47:51 From Anon. LTI:	@Tony any reasons for that? Really curious
+08:48:00 From Jacob Lee (TA):	otherwise go to the torch documentation for cross entropy loss, they have an explanation but it's a little shallow
+08:48:03 From Anon. Uniform Distribution:	So this means that we don't need to apply the cross entropy activation function to the hidden layer before the output layer and directly go ahead with cross-entropy?
+08:48:05 From Antioch Sanders (TA):	@Qiyun Chen logsoftmax and nllloss
+08:48:20 From Anon. Fast RCNN:	Thanks! @Jacob @Antioch
+08:48:25 From Anon. Uniform Distribution:	sorry, softmax*
+08:48:48 From Tony Qin (TA):	Daniel, if you do it in the data loader, it will cause issues when num_workers>1. Trying to put data into the GPU with multiple workers at the same time causes issues I think
+08:48:58 From Jacob Lee (TA):	@sai that's correct
+08:49:28 From Anon. LTI:	Gotcha. Thanks Tony
+08:49:30 From Anon. Uniform Distribution:	Thanks @Jacob
+08:49:38 From Anon. MXNet:	may I ask what content quiz 1 will cover?
+08:49:49 From Jacob Lee (TA):	^ lec 1 and lec 2
+08:49:58 From Anon. MXNet:	cool, thx
+08:50:07 From Anon. Array:	do we get 3 chances for all quizes
+08:50:10 From Jacob Lee (TA):	yes
+08:51:27 From Anon. Deep Dream:	is it possible to give the optimizer only some of the model's parameters, and if so how
+08:51:39 From Anon. PyTorch:	would it make sense to have learning rate be (number of training samples)^-1
+08:52:07 From Jacob Lee (TA):	model.parameters() returns a dict, which i suppose you could manually filter through. key is name of param, value is the params
+08:52:17 From Jacob Lee (TA):	otherwise you should set requires_grad to false for that param
+08:52:26 From Tony Qin (TA):	Learning rate is usually set to 1e-3 or 1e-4, gradually decreasing over time. If learning rate was (number of training samples)^-1, the model might train too slowly
+08:52:32 From Anon. LTI:	@Joseph maybe you can write your own optimizer by inheritance
+08:52:47 From Anon. Acitvation Function:	Please explain zeroing gradient after optimizer
+08:53:16 From Anon. ReduceLROnPlateau:	can you explain train() vs eval() again, and something about turning train() OFF and ON
+08:53:46 From Anon. Validate:	you want to clear the gradients after backprop so the next time you start accumulating the gradients again the gradients from last time don't carry over
+08:53:48 From Jacob Lee (TA):	train() and eval() both manipulate a Boolean "is_train". when "is_train == True", the model is in train mode
+08:54:08 From Jacob Lee (TA):	^satoru is correct; you'll be implementing this in hw1p1 too
+08:54:16 From Anon. ReduceLROnPlateau:	thank you
+08:54:23 From Antioch Sanders (TA):	certain layers behave differently depending on is_train
+08:54:27 From Anon. Voltage-gate:	Is there any case where we don’t want to zero gradients?
+08:54:50 From Anon. Deep Dream:	@Daniel selecting a subset of the model's parameters seems like it'd be part of a specific model class rather than an optimizer to me, but perhaps im misinformed
+08:55:24 From Anon. Mask-RCNN:	So essentially loss.backward computes the gradient while optimizer.step tunes the parameter using the gradient?
+08:55:30 From Anon. LTI:	@ Joseph you’re gonna pass parameters to optimizers anyway so I guess it doesn’t matter
+08:55:48 From Anon. Boltzmann:	In which part do we initialize the parameters?
+08:55:48 From Anon. LTI:	And the update process should be handled by optimizer, logically
+08:55:53 From Jacob Lee (TA):	i'd still recommend just selecting params
+08:56:10 From Jacob Lee (TA):	params are generally initialized when you create the module object
+08:56:27 From Jacob Lee (TA):	@yiwei exactly right
+08:56:35 From Anon. Cable Theory:	That would be batch SGD
+08:57:33 From Anon. Fast-RCNN:	Not yet
+08:57:34 From Anon. Cable Theory:	nopw
+08:57:35 From Anon. Depolarization:	no
+08:57:36 From Jacob Lee (TA):	we'll cover it briefly in hw1p1
+08:57:37 From Anon. Uniform Distribution:	Nope
+08:57:39 From Jacob Lee (TA):	writeup
+08:58:02 From Anon. Alpha:	Do we need to build the Dataset and train model in the loop every time we train DL model? Or there is some higher level API/function (like sickilearn) we can use at later stage?
+08:58:39 From Jacob Lee (TA):	^it depends; libraries like torchvision often have higher level apis. i think this year youre allowed to use those
+08:58:55 From Jacob Lee (TA):	(for hw2p2)
+08:59:05 From Jacob Lee (TA):	im pretty sure for hw1p2 youre required to write your own dataloader/dataset
+08:59:14 From Anon. Mask-RCNN:	So I guess in this case NN.linear probably has some options for different initialization schemes?
+08:59:17 From Anon. Alpha:	ok, thanks!!
+08:59:58 From Jacob Lee (TA):	@yiwei as far as i know, options aren't really built in... in the past id create the object, then modify the params manually with some np or torch function
+08:59:59 From Anon. MXNet:	@Tony you just mentioned that you suggest training the model with 32G VRAM. But I just found that even the most latest GPU has like only 20G? Have I misunderstood anything?
+09:00:08 From Jacob Lee (TA):	i think by default they do kaiming init? not sure...
+09:00:21 From Tony Qin (TA):	Yi, 10GB vram, 32GB normal ram. Post further questions on GPU FAQ
+09:00:39 From Anon. MXNet:	Oh, I got it. hahaha
+09:01:00 From Anon. Validate:	@Yiwei I think some of the NN modules have options for those, but you can always init parameters for any module manually
+09:01:33 From Anon. Mask-RCNN:	Thanks
+09:01:36 From Jacob Lee (TA):	https://pytorch.org/docs/stable/nn.init.html
+09:02:51 From Anon. ReduceLROnPlateau:	if model.train() turns "is_train == True", then what part of the code sets "is_train == False"?
+09:02:58 From Jacob Lee (TA):	model.eval()
+09:03:22 From Anon. PyTorch:	how do we save and load trained models?
+09:03:32 From Anon. ReduceLROnPlateau:	then could we put model.train() outside the for epoch for loop?
+09:03:44 From Jacob Lee (TA):	saving/loading modles is for convenience/backup; you don't have to but youll definitely want to
+09:03:55 From Jacob Lee (TA):	@matias yes
+09:04:07 From Anon. ReduceLROnPlateau:	@Jacob thank you
+09:04:11 From Jacob Lee (TA):	saving/loading models i'd google; theres specific methods for it
+09:04:19 From Anon. is_available():	I wondered what the output of the model.eval() is? Can we customize it?
+09:04:30 From Jacob Lee (TA):	theres no output, its an in-place operation
+09:06:13 From Anon. Mask-RCNN:	If the is_train variable is set to be false, then the parameters of the model could not be changed?
+09:06:34 From Jacob Lee (TA):	not unless you change them manually yourself
+09:06:39 From Anon. MXNet:	when we are expected to have access to the recording of this recitation. Will the FAQ part be recorded as well?
+09:07:02 From Jacob Lee (TA):	yes
+09:08:06 From Anon. Sequence:	I have a question about using a package for the homework assignments where should I post that on Piazza?
+09:08:31 From Jacob Lee (TA):	my advice:make sure to have fun
+09:08:55 From Anon. Dot Product:	spot instances?
+09:09:01 From Anon. Bidirectional:	no it was saving
+09:09:02 From Anon. Bidirectional:	ur model
+09:09:33 From Anon. ReduceLROnPlateau:	save the model and the weights?
+09:10:11 From Anon. Fast-RCNN:	Can you also post some info on why and how to use spot instances?
+09:11:02 From Anon. Uniform Distribution:	Can you make a piazza post on good practices in training? Thanks
+09:11:10 From Jacob Lee (TA):	👏🏻👏🏻👏🏻
+09:11:11 From Anon. Fast RCNN:	Thank you so much!
+09:11:14 From Anon. Fast-RCNN:	Thank you!
+09:11:14 From Anon. Autolab:	Thank you!
+09:11:21 From Anon. ReduceLROnPlateau:	thank you TAs
