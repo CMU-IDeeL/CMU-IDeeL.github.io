@@ -1,0 +1,132 @@
+00:22:42	Anon. CasCor:	We will update the bias with the weights right?
+00:22:54	Anon. CrossEntropyLoss:	Yes
+00:24:37	jinhyun1@andrew.cmu.edu (TA):	yup
+00:24:46	Anon. Kernel:	yes
+00:30:44	Anon. Sum-Product:	What do you mean by a divergence function?
+00:31:02	Anon. is_leaf:	why should divergence be positive if not 0?
+00:31:09	Anon. VC Dimension:	is this to be distinguished from the divergence in 3d calculus
+00:31:16	Anon. Attractor:	Positive and negative sum to 0?
+00:31:17	Anon. Kernel Trick:	Why use divergence rather than magnitude of the difference, or squared difference, for example, to measure error?
+00:31:34	jinhyun1@andrew.cmu.edu (TA):	@yiwei it’s a functino that measures the difference between your neural network function and the true function
+00:31:49	Anon. Variance:	g(x) is the expected output?
+00:31:53	Mansi Anand (TA):	@Yiwei, divergence is the measure of expansion from truth.
+00:32:22	Anon. Dendritic Spine:	I think you can use squared difference as divergence function
+00:32:23	jinhyun1@andrew.cmu.edu (TA):	@David divergence can be all of those things - it’s just a general expression that you can fill in with your wanted loss function
+00:32:34	jinhyun1@andrew.cmu.edu (TA):	@vaidehi no, g is Ground truth
+00:32:51	Anon. Sum-Product:	So it does not refer to the divergence operator in vector calculus?
+00:32:58	jinhyun1@andrew.cmu.edu (TA):	@aditya generally, we minimize loss to be 0
+00:32:58	Anon. VC Dimension:	^
+00:33:02	jinhyun1@andrew.cmu.edu (TA):	@ran what do you mean?
+00:33:05	jinhyun1@andrew.cmu.edu (TA):	@yiwei yes, they are different
+00:33:12	Anon. Kernel Trick:	Ah, ok. Thanks
+00:33:14	Anon. Sum-Product:	Thank you
+00:34:24	Anon. is_leaf:	thank you
+00:34:29	Anon. Center Loss:	Are there rule of thumb how many samples we need to have?
+00:34:56	jinhyun1@andrew.cmu.edu (TA):	@Rui the “samples” in the real world will be a dataset
+00:35:10	Anon. Center Loss:	right, I mean how many data points?
+00:35:20	jinhyun1@andrew.cmu.edu (TA):	And there are guidelines on how large of a dataset you need for training some model to some test accuracy, etc but no, there generally isn’t a rule of thumb
+00:35:28	jinhyun1@andrew.cmu.edu (TA):	okay that was contradictory
+00:35:28	Mansi Anand (TA):	as many as you can is the desire. but depends how many can you get in real world.
+00:35:37	Anon. Kernel:	@Rui, pretty much as much as you can. They more you have, the more you can approximate the function
+00:35:53	Anon. Kernel:	the better you can approximate*
+00:35:53	jinhyun1@andrew.cmu.edu (TA):	in theory, there are guidelines, but making a dataset usually is constrained by other factors like time
+00:36:00	Anon. ResNet50:	Integral of divergence is just difference in the area under the curves for g(x) and f(x) right?
+00:36:16	jinhyun1@andrew.cmu.edu (TA):	Not exactly
+00:36:31	jinhyun1@andrew.cmu.edu (TA):	Divergence is a measure of the difference between the two functions
+00:36:31	Anon. EC2:	why do we take average of divergence?
+00:36:45	jinhyun1@andrew.cmu.edu (TA):	not necessairly the actual difference (because that would be both negative and positive at different points)
+00:36:47	Anon. Thalamus:	@Sai I guess it also involves abs(f(x)-g(x))
+00:37:04	jinhyun1@andrew.cmu.edu (TA):	Along with a lot of other functions too
+00:37:24	Anon. Callback:	Taking average is the most typical manner to consider all data points.
+00:37:25	jinhyun1@andrew.cmu.edu (TA):	@Jui We would like to take the integral, but we have a finite dataset, so we just take the average divergence over the dataset
+00:37:43	Anon. ResNet50:	Yeah so that  essentially is an absolute difference in area under the curves right? @Daniel
+00:37:47	Mansi Anand (TA):	@jui because we have to measure the area or get an estimate how much divergence do we have
+00:38:12	Anon. Softmax:	Is there a lower bound on the number of samples needed?
+00:38:54	Anon. Thalamus:	@Posholi depends on your target function
+00:39:02	Anon. Kaiming:	======================='
+00:39:11	Anon. Args:	@Posholi that is a learnability problem. They call it PAC learning. We might see it later on this class
+00:39:15	jinhyun1@andrew.cmu.edu (TA):	https://towardsdatascience.com/calculating-sample-size-using-vc-dimensions-a-machine-learning-way-748abbe1b1e4
+00:39:23	Anon. Alpha:	@POsholi in Probably approximate learning you can determine the lower bound
+00:39:30	jinhyun1@andrew.cmu.edu (TA):	a quick introduciton for # of samples if you want
+00:39:32	Anon. Softmax:	Ok. Thank you!
+00:39:53	Anon. Kernel Trick:	So we assume an architecture capable of learning a function. Any tips on finding actually finding such an architecture? Or will that come later
+00:40:51	Mansi Anand (TA):	guessed it right, will come later.
+00:41:15	Anon. Callback:	@David https://arxiv.org/abs/1901.00434
+00:41:31	Anon. Callback:	You can refer to "capacity of NN"
+00:43:51	Anon. YOLOv5:	There is a new research topic called “Neural Architecture Search”, which is one lab in CMU. Could check it out. It’s cutting-edge research topic.
+00:47:38	Anon. batch_first:	same as x vector
+00:47:42	Anon. Thalamus:	same as x
+00:48:40	Anon. Hodgkin-Huxley:	-x
+00:48:41	Anon. Caffe:	-x
+00:49:04	Anon. Kaiming:	-x
+00:49:11	Anon. Asynchronous Update:	Opposite of x
+00:49:12	Anon. Ion pump:	-x
+00:49:28	Anon. Leakage:	-x
+00:52:28	Anon. Ion pump:	x
+00:55:52	Mansi Anand (TA):	5 secs
+00:56:04	Anon. hello_world.py:	when a vector x is misclassified, why we are updating w using x + w instead of w + 0.5x or w + 2x, is that jsut a rule of thumb?
+00:56:06	Anon. Callback:	Here is the proof for the lemma:http://www.cs.columbia.edu/~mcollins/courses/6998-2012/notes/perc.converge.pdf
+00:56:06	Anon. Hodgkin-Huxley:	Should we worry about normalization of W?
+00:56:26	Anon. Kernel:	Poll was so quick:-(
+00:56:37	Anon. Args:	Btw does the poll has any weight towards our final grades?
+00:56:45	Mansi Anand (TA):	No
+00:57:32	Anon. Kaiming:	no
+00:57:35	Anon. Attractor:	no
+00:57:36	Anon. Hodgkin-Huxley:	no
+00:57:45	Anon. Node of Ranvier:	Why don’t we just collect all the x and -x and use the average of those as the weight?
+00:59:21	Anon. ResNet50:	No
+00:59:22	Anon. print(‘Hello world!’):	no
+00:59:24	Anon. Dendritic Spine:	No
+00:59:25	Anon. Asynchronous Update:	NO
+00:59:26	Anon. Deep Dream:	no
+00:59:26	Anon. PDF:	no
+00:59:28	Anon. Hodgkin-Huxley:	no
+00:59:28	Anon. RNN:	no
+00:59:28	Anon. Kaiming:	no
+00:59:30	Anon. pdb.set_trace():	@Feng-Guang I feel like you could probably come up with a case where that doesn't work. Like if you had 50 positive classes and 1 negative class, the average would probably be pretty far off
+00:59:33	Anon. Voltage-gate:	no
+00:59:35	Anon. Leakage:	no
+00:59:47	Anon. Center Loss:	@feng, the perceptron algo may converge faster than using all data points
+01:00:55	Anon. LTI:	What are "the lowest units"?
+01:01:00	jinhyun1@andrew.cmu.edu (TA):	You can ccome up with a scenario where that doesn’t yield the right separation. For instance, 50 positive points grouped together, with 1 positive point far off, average would be heavily weighted towards the 50
+01:01:18	jinhyun1@andrew.cmu.edu (TA):	Lowest units I think just refers to the lowest level perceptron nodes
+01:01:22	jinhyun1@andrew.cmu.edu (TA):	@hongyuan
+01:01:33	Anon. Node of Ranvier:	Yeah I got it
+01:01:58	Anon. Convolution:	How do we determine how many neurons we need in the hidden layer, if we do not know the truth function?
+01:02:33	jinhyun1@andrew.cmu.edu (TA):	in the real world, you just try different sizes
+01:02:47	Mansi Anand (TA):	that is a network design choice.
+01:03:21	Anon. Sparse Matrix:	How would we know how many decision boundaries we would need in general?
+01:05:06	jinhyun1@andrew.cmu.edu (TA):	You generally don't
+01:05:27	Anon. Callback:	Same. You need to try
+01:05:59	Anon. Linear Layer:	Relabeling is exp(number of instances), right?
+01:06:28	Anon. Asynchronous Update:	2^n
+01:12:21	Anon. Markov Chain:	no
+01:12:22	Anon. Ion pump:	no
+01:12:22	Anon. Asynchronous Update:	no
+01:12:31	Anon. Ion pump:	nope
+01:12:35	Anon. Leakage:	no
+01:12:54	Anon. Undirected Edge:	How do you determine if classes are separable in practice without visualizing the points?
+01:12:57	Anon. Kernel:	right
+01:17:02	Anon. Dendritic Spine:	Can we use the absolute of w * x as the distance
+01:18:09	Anon. CasCor:	Thats not easily differentiable I believe
+01:18:38	Anon. Thalamus:	That is what quadratic loss does iirc
+01:18:55	Anon. Asynchronous Update:	1
+01:18:58	Anon. Attractor:	1
+01:21:07	Anon. Kirchhoff:	Previously we added the vector of the misclassified training poing to the weight vector to get a better boundary. That gave us a "direction" for optimising the boundary, so why do we need this current approach? is this when the classes are not linearly separable?
+01:22:55	jinhyun1@andrew.cmu.edu (TA):	We will see soon, but we want a new solution because the other one was exponential w.r.t samples
+01:22:59	Anon. Sum-Product:	What is the horizontal axis here?
+01:23:10	jinhyun1@andrew.cmu.edu (TA):	just x
+01:23:12	Mansi Anand (TA):	in reality you would not have an exact idea that where do I need to wiggle and how much do I need to. Also, there might be many points in different directions like that.
+01:23:20	Anon. Max Pool:	the input data, assuming its 1-dimensional
+01:23:29	Anon. Callback:	@Jean I think you'd better train a classification model to check that
+01:24:28	Anon. Callback:	@Ke W * X is already angular distance if both W and X are normalized or it does not matter.
+01:32:44	Anon. LTI:	What is P(X) here?
+01:33:02	Anon. Autograd:	probability of seeing X
+01:33:21	Anon. LTI:	Makes sense. Thanks Mitchell
+01:33:28	Anon. Autograd:	:-
+01:35:12	Anon. Hodgkin-Huxley:	Does empirical estimate converge to expected when N -> infty?
+01:35:22	Anon. Hodgkin-Huxley:	This seems believable if sampled from P(X)
+01:35:31	Anon. Sum-Product:	So essentially the empirical risk is the “discretized” divergence (on sample points)?
+01:35:46	Anon. Tanh:	basically
+01:36:15	Anon. Tanh:	btn ur expected out and ur actual one
+01:37:02	Mansi Anand (TA):	@Yiwei yes
