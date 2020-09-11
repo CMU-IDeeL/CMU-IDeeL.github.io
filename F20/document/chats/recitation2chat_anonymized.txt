@@ -1,0 +1,77 @@
+08:10:19	  Anon. Baseline:	I have never heard of it but do NNs ever get trained with a non-derivative based optimization technique like the genetic algorithm?
+08:10:55	  Anti (TA):	I'm not sure that's very prevalent, but there is certainly work done in such areas
+08:11:14	  Anon. Baseline:	Thank you sorry!
+08:11:59	  Anon. CTC:	Any recommended papers on what Jacob just mentioned?
+08:12:10	  Anon. CTC:	@critical importance of loss functions
+08:12:18	  Anon. CTC:	cool
+08:16:18	  Anti (TA):	@Dennis an example of a gradient-free way of training a network https://arxiv.org/abs/2005.05955
+08:16:44	  Anon. Recall Capacity:	Why we pass logit instead of predicted labels to the loss function?
+08:17:14	  Anon. Phoneme:	Crossentropy need probability @Yiwei
+08:17:48	  Anon. Sanger’s Rule:	softmax—>nll_loss
+08:18:45	  Anon. Recall Capacity:	What do you mean by validation here?
+08:18:51	  Anon. Baseline:	@Anti Thank you very much!
+08:19:25	  Anon. Recall Capacity:	@Daniel Mo Thank you
+08:19:44	  Anti (TA):	Validation accuracy is the accuracy on data that we haven't trained the network on.
+08:36:57	  Anon. Transpose:	can you explain what is taking derivative wrt an operation?
+08:51:53	  Anon. Connectionist:	Do we need to implement broadcasting in other functions like mul and matmul?
+08:54:53	  Anon. Phoneme:	Function Div should be scalar operation right?
+08:55:28	  Anon. Phoneme:	gotcha, thanks
+08:55:40	  Anon. Hinton:	Can you use numpy methods in our my torch functions?
+08:56:02	  Anon. PackedSequence:	^im confused about this as well
+08:56:11	  Jacob Lee (TA):	^ It depends is the answer
+08:56:20	  Jacob Lee (TA):	If you want to add to the comp graph, you shouldn't; you should use the operations you defined
+08:56:36	  Jacob Lee (TA):	But when defining the operations, you can use numpy all you want
+08:57:12	  Anon. PackedSequence:	ohhh ok that makes sense
+09:01:28	  Anon. Phoneme:	when going backward thru Add, Sub, Mul, and Div, we assume they are all element-wise ops, so the partial derivatives would be similar to scalar derivatives?
+09:02:11	  Jacob Lee (TA):	Oh in that sense yeah
+09:02:28	  Jacob Lee (TA):	But once broadcasting is added it's a little more complicated
+09:02:55	  Anon. Phoneme:	Thanks! Kind of see the purpose of unbroadcast here:)
+09:06:33	  Anon. Weight:	dl/dc*dc/da
+09:08:20	  Anon. Weight:	dot products will give a scalar result
+09:08:48	  Anon. Membrane:	yeah, so why we will use dot product for matmul?
+09:08:58	  Anon. Membrane:	that really confuses me
+09:08:59	  Jacob Lee (TA):	You don't necessarily need to use dot product specifically
+09:09:10	  Jacob Lee (TA):	Remember dot product is a special case of matrix multiplication
+09:09:24	  Anon. Membrane:	Anti just said we cannot use * product for matmul backward
+09:09:28	  Anon. Membrane:	then what we should use
+09:09:33	  Jacob Lee (TA):	that's elementwise multiplication
+09:09:54	  Anon. Recall Capacity:	What does “out” refer to?
+09:10:13	  Anon. Membrane:	yeah, we cannot use elementwise multiplication for matmul's backward right?
+09:10:27	  Jacob Lee (TA):	yeah it wouldn't necessarily be defined
+09:10:32	  Jacob Lee (TA):	elementwise requires same shape matrix
+09:11:22	  Anon. Membrane:	then what kind of multiplication we should use (if we cannot use elementwise) for matmul's backward then.
+09:11:33	  Anon. Weight:	Can you tell why the shape of the gradient is the shape of the corresponding transpose?
+09:11:39	  Jacob Lee (TA):	I can't give you the answer necessarily directly
+09:11:40	  Anon. Boolean:	what does the note *except in pytorch, hw1p1 mean?
+09:12:11	  Jacob Lee (TA):	On why the gradient is transposed, it's because of convention
+09:12:44	  Jacob Lee (TA):	derivative is row vector, gradient is column vector
+09:13:16	  Anon. Membrane:	"I can't give you the answer necessarily directly", any resource I can refer now be fore your update for the malmul part
+09:13:19	  Anon. Weight:	Ohh, okay thanks!
+09:13:26	  Jacob Lee (TA):	the slides once ir elease them
+09:13:31	  Jacob Lee (TA):	with the updates
+09:13:44	  Anon. Membrane:	ok
+09:14:06	  Jacob Lee (TA):	also in the recitation slides we uploaded a few days ago
+09:14:20	  Anon. Phoneme:	for w it should be X^T
+09:14:21	  Jacob Lee (TA):	in the links I provided, there's some info about it
+09:14:39	  Anon. Membrane:	you mean the slide of last recitation?
+09:15:11	  Jacob Lee (TA):	yea
+09:15:21	  Jacob Lee (TA):	no
+09:15:28	  Jacob Lee (TA):	as in we uploaded the slides of this recitation early
+09:17:47	  Anon. Recall Capacity:	So Pytorch does not differentiate between row and column vectors?
+09:17:56	  Jacob Lee (TA):	it does
+09:18:19	  Jacob Lee (TA):	broadcasting makes operations neater
+09:18:23	  Jacob Lee (TA):	but they are different in torch
+09:18:39	  Anon. Recall Capacity:	Thanks
+09:19:36	  Jacob Lee (TA):	we'll discuss scanning MLPs in more depth in the CNN lectures
+09:19:39	  Jacob Lee (TA):	Convolutional Nets
+09:21:09	  Anon. Connectionist:	In the previous example, if x’s dimension were K*M, would we do the unbroadcasting in calculating the gradient w.r.t. b1?
+09:21:23	  Jacob Lee (TA):	Yea
+09:23:48	  Anon. Python:	on slide 8 whats the difference between loss and lossfunc in the partial derivatives
+09:24:06	  Jacob Lee (TA):	the loss function is a function, the loss is a value
+09:24:23	  Jacob Lee (TA):	same difference as f(x) and y
+09:25:42	  Anon. Python:	would dLoss/dLossfunc always be just a bunch of ones?
+09:26:25	  Jacob Lee (TA):	I'm not sure actually; I'll ask Anti after this q
+09:26:41	  Anon. Python:	thanks
+09:33:59	  Anon. Args:	are those two parts of hw independent..?
+09:34:11	  Anon. Args:	Ty!
+09:34:39	  Anon. Neuron:	just to be clear, there will not be a quiz this week?
