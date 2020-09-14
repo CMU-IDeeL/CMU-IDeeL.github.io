@@ -1,245 +1,245 @@
 19:58:54	  Reshmi Ghosh (TA):	Mute when you join, please!:D
-20:01:19	  Anon. Node of Ranvier:	Any chance that we can have video disabled by default? Just to protect people’s privacy 😆
+20:01:19	  Anon. Reinforcement:	Any chance that we can have video disabled by default? Just to protect people’s privacy 😆
 20:01:43	  Jacob Lee (TA):	https://docs.google.com/forms/d/e/1FAIpQLSfwUVnapDbqRmff_dcyxi8SyYeSYtJU6gRtsbMFzWWNycs0qQ/viewform
-20:01:59	  Anon. Mac:	will this be recorded?
-20:02:01	  Anon. L2 Norm:	I guess u can choose to close video before entering the room
+20:01:59	  Anon. Photoreceptor:	will this be recorded?
+20:02:01	  Anon. Psilocybin:	I guess u can choose to close video before entering the room
 20:02:28	  Reshmi Ghosh (TA):	Yes it willl be recorded
-20:02:39	  Anon. Node of Ranvier:	yeah I found that, thanks!
+20:02:39	  Anon. Reinforcement:	yeah I found that, thanks!
 20:03:29	  Reshmi Ghosh (TA):	Please fill in the form, it is anonymous, we just want to get a sense of how you are doing in hw1
-20:07:52	  Anon. EC2:	Will these bootcamps be a regular thing?
+20:07:52	  Anon. Markov Chain:	Will these bootcamps be a regular thing?
 20:07:59	  Reshmi Ghosh (TA):	Nope!
 20:08:23	  Reshmi Ghosh (TA):	this homework onwards you should get a hang of p1
 20:08:49	  Reshmi Ghosh (TA):	Well hopefully:P
-20:09:36	  Anon. Sum-Product:	Hello - Will this bootcamp be recorded?
+20:09:36	  Anon. Hessian:	Hello - Will this bootcamp be recorded?
 20:09:44	  jinhyun1@andrew.cmu.edu (TA):	yup
-20:09:49	  Anon. Sum-Product:	thx
-20:09:49	  Anon. Gh0stR1d3r:	Yea I think so
+20:09:49	  Anon. Hessian:	thx
+20:09:49	  Anon. Shufflenet:	Yea I think so
 20:10:22	  Reshmi Ghosh (TA):	Yes it will be!
 20:12:54	  Jacob Lee (TA):	https://www.cs.cmu.edu/~112/notes/notes-oop-part1.html
 20:13:36	  Reshmi Ghosh (TA):	We will collect all links and post on Piazza for future reference
-20:14:02	  Anon. GAN:	Will the recording be available ?
-20:14:11	  Anon. Tensor:	yes
-20:15:40	  Anon. Tensor:	Are the tensor and node the same thing?
-20:17:12	  Anon. Lipid Bilayer:	what does "store the node on the output tensor" mean? Tensor is just like nd array correct? how do you store an object to tensor?
-20:17:24	  Anon. Tensor:	Ty Jacob, but i’m still curious about what the node object refers to?
-20:17:24	  Anon. Tanh:	So in Function.apply() —> backward_function = BackwardFunction(cls) is basically the node object created?
-20:17:34	  Anon. Tanh:	And cls is the operation?
+20:14:02	  Anon. Fast-RCNN:	Will the recording be available ?
+20:14:11	  Anon. Gentoo:	yes
+20:15:40	  Anon. Gentoo:	Are the tensor and node the same thing?
+20:17:12	  Anon. Oja’s Rule:	what does "store the node on the output tensor" mean? Tensor is just like nd array correct? how do you store an object to tensor?
+20:17:24	  Anon. Gentoo:	Ty Jacob, but i’m still curious about what the node object refers to?
+20:17:24	  Anon. PyTorch:	So in Function.apply() —> backward_function = BackwardFunction(cls) is basically the node object created?
+20:17:34	  Anon. PyTorch:	And cls is the operation?
 20:18:31	  Tony Qin (TA):	Zexi, a Tensor is not like nd array. It holds more information than that. Check out its definition in tensor.py
-20:19:17	  Anon. Hebbian:	How to define the constant grad_fn?
+20:19:17	  Anon. All-or-nothing:	How to define the constant grad_fn?
 20:19:28	  jinhyun1@andrew.cmu.edu (TA):	What do you mean by constant grad_fn?
 20:19:29	  Tony Qin (TA):	Yueqing, you could think of node as BackwardFunction or AccumulateGrad… Not exactly true but could be helpful
-20:20:10	  Anon. Tensor:	Thank you!
-20:20:27	  Anon. Hebbian:	Constant node, sorry
-20:21:27	  Anon. DFS:	@Di it would be None
-20:21:29	  Anon. DFS:	as default
-20:21:58	  Anon. Gentoo:	Yeah, I would like to know the order
-20:22:03	  Anon. Hebbian:	Thanks!
+20:20:10	  Anon. Gentoo:	Thank you!
+20:20:27	  Anon. All-or-nothing:	Constant node, sorry
+20:21:27	  Jinhyung David Park (TA):	@Di it would be None
+20:21:29	  Jinhyung David Park (TA):	as default
+20:21:58	  Anon. Linear Algebra:	Yeah, I would like to know the order
+20:22:03	  Anon. All-or-nothing:	Thanks!
 20:24:13	  Anti (TA):	Can you review what apply will return?
-20:24:47	  Anon. Whoami:	Can you explain .apply in detail?
-20:24:49	  Anon. LeNet:	the *args in Function.apply will be Tensor objects, right?
-20:25:17	  Anon. Gentoo:	No, reshape() will pass a tuple in *args
+20:24:47	  Anon. Dropout:	Can you explain .apply in detail?
+20:24:49	  Anon. Gaussian:	the *args in Function.apply will be Tensor objects, right?
+20:25:17	  Anon. Linear Algebra:	No, reshape() will pass a tuple in *args
 20:25:17	  Anxiang Zhang (TA):	not really, sometimes there are other arguments
-20:26:07	  Anon. Eta:	In function .apply() do we have to create an object for accumulate grad type of node as well?
-20:26:35	  Anon. Dot Product:	In autograd_engine.backward(), will grad_fn always be one of a BackwardFunction object or AccumlateGrad object? So is every element in grad_fn.next_functions one of those objects?
-20:26:45	  Anon. Fast RCNN:	can u plz explain contextManager as well?
+20:26:07	  Anon. Thalamus:	In function .apply() do we have to create an object for accumulate grad type of node as well?
+20:26:35	  Anon. Saltatory:	In autograd_engine.backward(), will grad_fn always be one of a BackwardFunction object or AccumlateGrad object? So is every element in grad_fn.next_functions one of those objects?
+20:26:45	  Anon. pdb.set_trace():	can u plz explain contextManager as well?
 20:26:59	  Tony Qin (TA):	Jeff, it could be any of the 3 types of nodes
-20:27:30	  Anon. Dot Product:	@Tony right so one of those 2 objects + None?
-20:27:40	  Anon. DFS:	Yup
-20:28:16	  Anon. DFS:	@Debdas ContextManager you can basically think of it as storage. When you do forward of a function, you will need to save some stuff for to compute the backward
+20:27:30	  Anon. Saltatory:	@Tony right so one of those 2 objects + None?
+20:27:40	  Jinhyung David Park (TA):	Yup
+20:28:16	  Jinhyung David Park (TA):	@Debdas ContextManager you can basically think of it as storage. When you do forward of a function, you will need to save some stuff for to compute the backward
 20:28:38	  Tony Qin (TA):	Baishali, you will most likely run into the case where creating an AccumulateGrad node would be appropriate
-20:28:39	  Anon. DFS:	@Debdas basically, it’s a usb stick we give you for hte forward so you can save stuff in it, and we give you the same usb stick when you do backward
-20:29:17	  Anon. Eta:	We are storing valid parent nodes in next_functions. However context manager stores all the *arg in the forward function of each operation. how do we prevent context manager from storing all parent nodes?
-20:30:15	  Anon. DFS:	Context Manager stores whatever you want to store in it - not necessarily all the *arg.
-20:31:28	  Anon. Kalman Filter:	W/r/t Context Manager, why/when do we need to take the first element of a “list” (e.g., in Log) when pulling it in backward()? Why is a list, not the tensor, recovered?
-20:31:35	  Anon. Eta:	We are finding the valid parents and storing then in next_function after the forward call to operation class.
-20:31:51	  Anon. Dot Product:	So in the write up if the node is a BackwardFunction object, it says pass gradients only if requires_grad==True, but how do you access .requires_grad? I guess my question is how do you access a tensor in BackwardFunction obj?
-20:33:21	  Anon. Dot Product:	Thank you!
-20:34:11	  Anon. D33p_M1nd:	Is it possible to draw a diagram and illustrate which functions/classes go where? I'm having a hard time understanding it at a high level what goes where
-20:34:46	  Anon. Momentum:	+1
-20:35:02	  Anon. Gh0stR1d3r:	+1
-20:35:14	  Anon. Whoami:	+1
-20:35:16	  Anon. Trajectory:	+1
-20:35:22	  Anon. DistilBERT:	+1
-20:35:28	  Anon. Gentoo:	+1
-20:35:58	  Anon. Kalman Filter:	I think the file structure does a good job of this. I know it took me awhile to get it though
-20:36:50	  Anon. Fast RCNN:	yes, that video is grt
-20:37:04	  Anon. ResNet101:	I had a question if we have some way to test our functions by being given a tree already and the expected output to debug, would this be the sandbox.py?
-20:37:24	  Anon. Tensor:	Is this the link?
-20:37:25	  Anon. Gentoo:	Why Autograd Step 1 says that "without storing" "It then passes (without storing) its gradient to the graph traversal method"
-20:37:25	  Anon. Tensor:	https://www.youtube.com/watch?v=MswxJw-8PvE
-20:38:10	  Anon. DFS:	@matias sandbox gives you a layout for doing so
-20:38:19	  Anon. ResNet101:	thank you
-20:38:55	  Anon. Gentoo:	If I store the gradient, would that be a problem?
-20:39:23	  Anon. Gentoo:	Got it, thank you
-20:40:46	  Anon. Trajectory:	so shapes must be equivalent?
-20:40:59	  Anon. Kalman Filter:	With respect to the SGD step, we do “NOT” add this to the comp graph. However, we’ve previously overloaded some required operators with the assumption that these operations would be added. Would you recommend numpy in this case? It’s currently imported. OR do these directions mean that the SGD step is not added, but the internal operations are in the graph?
-20:42:19	  Anon. Kalman Filter:	thank you
-20:44:20	  Anon. Tensor:	Could you please make the font larger? I can barely read it……
-20:44:57	  Anon. Test:	we only need to add broadcasting in add func, for linear autograd. Right?
-20:45:05	  Anon. Tensor:	Thank you so much
+20:28:39	  Jinhyung David Park (TA):	@Debdas basically, it’s a usb stick we give you for hte forward so you can save stuff in it, and we give you the same usb stick when you do backward
+20:29:17	  Anon. Thalamus:	We are storing valid parent nodes in next_functions. However context manager stores all the *arg in the forward function of each operation. how do we prevent context manager from storing all parent nodes?
+20:30:15	  Jinhyung David Park (TA):	Context Manager stores whatever you want to store in it - not necessarily all the *arg.
+20:31:28	  Anon. Operationtimedout:	W/r/t Context Manager, why/when do we need to take the first element of a “list” (e.g., in Log) when pulling it in backward()? Why is a list, not the tensor, recovered?
+20:31:35	  Anon. Thalamus:	We are finding the valid parents and storing then in next_function after the forward call to operation class.
+20:31:51	  Anon. Saltatory:	So in the write up if the node is a BackwardFunction object, it says pass gradients only if requires_grad==True, but how do you access .requires_grad? I guess my question is how do you access a tensor in BackwardFunction obj?
+20:33:21	  Anon. Saltatory:	Thank you!
+20:34:11	  Anon. Perceptron:	Is it possible to draw a diagram and illustrate which functions/classes go where? I'm having a hard time understanding it at a high level what goes where
+20:34:46	  Anon. Activation:	+1
+20:35:02	  Anon. Shufflenet:	+1
+20:35:14	  Anon. Dropout:	+1
+20:35:16	  Anon. Giant Squid Neuron:	+1
+20:35:22	  Anon. Kaggle:	+1
+20:35:28	  Anon. Linear Algebra:	+1
+20:35:58	  Anon. Operationtimedout:	I think the file structure does a good job of this. I know it took me awhile to get it though
+20:36:50	  Anon. pdb.set_trace():	yes, that video is grt
+20:37:04	  Anon. Array:	I had a question if we have some way to test our functions by being given a tree already and the expected output to debug, would this be the sandbox.py?
+20:37:24	  Anon. Gentoo:	Is this the link?
+20:37:25	  Anon. Linear Algebra:	Why Autograd Step 1 says that "without storing" "It then passes (without storing) its gradient to the graph traversal method"
+20:37:25	  Anon. Gentoo:	https://www.youtube.com/watch?v=MswxJw-8PvE
+20:38:10	  Jinhyung David Park (TA):	@matias sandbox gives you a layout for doing so
+20:38:19	  Anon. Array:	thank you
+20:38:55	  Anon. Linear Algebra:	If I store the gradient, would that be a problem?
+20:39:23	  Anon. Linear Algebra:	Got it, thank you
+20:40:46	  Anon. Giant Squid Neuron:	so shapes must be equivalent?
+20:40:59	  Anon. Operationtimedout:	With respect to the SGD step, we do “NOT” add this to the comp graph. However, we’ve previously overloaded some required operators with the assumption that these operations would be added. Would you recommend numpy in this case? It’s currently imported. OR do these directions mean that the SGD step is not added, but the internal operations are in the graph?
+20:42:19	  Anon. Operationtimedout:	thank you
+20:44:20	  Anon. Gentoo:	Could you please make the font larger? I can barely read it……
+20:44:57	  Anon. ReduceLROnPlateau:	we only need to add broadcasting in add func, for linear autograd. Right?
+20:45:05	  Anon. Gentoo:	Thank you so much
 20:45:45	  Jacob Lee (TA):	for the linear question yeah, pretty much only need broadcasting for add
-20:45:52	  Anon. D33p_M1nd:	what's ctx?
+20:45:52	  Anon. Perceptron:	what's ctx?
 20:45:58	  Jacob Lee (TA):	ContextManager object
-20:45:59	  Anon. Tensor:	context
-20:46:02	  Anon. Loss Function:	context
-20:46:08	  Anon. D33p_M1nd:	thanks all
-20:46:24	  Anon. Jacobian:	Will we talk about BatchNorm in this bootcamp?
+20:45:59	  Anon. Gentoo:	context
+20:46:02	  Anon. GRU:	context
+20:46:08	  Anon. Perceptron:	thanks all
+20:46:24	  Anon. Recall Capacity:	Will we talk about BatchNorm in this bootcamp?
 20:46:46	  Jacob Lee (TA):	^ Yeah we'll try to
-20:46:54	  Anon. Perceptron:	Can you please talk sth about derivative rules of element-wise matrix multiplication/division?
+20:46:54	  Anon. Seq2Seq:	Can you please talk sth about derivative rules of element-wise matrix multiplication/division?
 20:47:10	  Jacob Lee (TA):	^ Recitation 2 has some discussion of that
 20:47:18	  Jacob Lee (TA):	The hints that are very big imo
 20:47:22	  Jacob Lee (TA):	the hints there*
-20:49:18	  Anon. Jacobian:	The "is_parameter" attribute of Tensor is actually important for deciding "require_grad" and "is_leaf", do we need to consider it when comstrcting the computing graph?
+20:49:18	  Anon. Recall Capacity:	The "is_parameter" attribute of Tensor is actually important for deciding "require_grad" and "is_leaf", do we need to consider it when comstrcting the computing graph?
 20:50:07	  Jacob Lee (TA):	^ You need to set it during forward, but you probably won't need to check it yourself
 20:50:12	  Jacob Lee (TA):	like check it to do anything
-20:50:21	  Anon. Softmax:	There is a situation when using auto_grad.apply() in backward function, it outputs a list of tensors. How to deal with this situation?
-20:50:46	  Anon. ReduceLROnPlateau:	Isnt this too idealistic? what if our network wants to add more than 2 terms? or is this a toy example?
-20:51:09	  Anon. Trajectory:	will the auto grader be able to tell us if our operations are correct before we implement the rest
-20:52:31	  Anon. DFS:	@xinyue every function that we’ll use will only output a single result, so no. I believe any multi-output function can be deconstructe dinto multiple single-output functions
-20:52:38	  Anon. DFS:	we did not implement this because it adds another layer of complexity
-20:52:55	  Anon. DFS:	@Rohan If you want to do a + b + c, this is just (a+b) + c, a sequence of double additions
-20:53:04	  Anon. DFS:	So you don’t need to implement multiple additions explicitly.
-20:53:16	  Anon. DFS:	Later functions may take in more than 2 terms and some inputs may not even be tensors
-20:53:36	  Anon. Node of Ranvier:	for linear layer we do need matmul right? Somebody might ask this before but just wanna confirm it quickly
-20:53:48	  Anon. DFS:	@nicky I believe so
-20:53:58	  Anon. DFS:	@daniel yes
-20:54:10	  Anon. Node of Ranvier:	Thanks!
-20:55:15	  Anon. Residual:	Do we only need unbroadcasting for addition, or also other matrix operations?
-20:55:42	  Anon. Residual:	Thanks!
-20:56:11	  Anon. Kalman Filter:	could you explain the structure of the param object?
-20:56:30	  Anon. Kalman Filter:	what does self.params hold?
-20:56:40	  Anon. Kalman Filter:	SGD
-20:56:47	  Anon. Kalman Filter:	and optimizer
-20:56:52	  Anon. Eta:	In backward function of operation classes, we are finding the gradient of both inputs a and b. If any one of then has require_grad=False, we will not be computing its gradient. How do we handle that in the operation backward function?
-20:57:10	  Anon. Fast RCNN:	how to test question 2 & 3? sandbox does not test this..
-20:57:56	  Anon. DFS:	@baishali you can just pretend that they have it True and deal with it in Function.apply
-20:58:02	  Anon. DFS:	*kind of
-20:58:11	  Anon. DFS:	as in you can deal with it later during the backward pass
-20:58:24	  Anon. Jacobian:	A quick conceputual question:in the backward, the gradient of each sample in the same batch is actually accumulated for SGD, right?
-20:58:27	  Anon. Gh0stR1d3r:	Will we also have the chatbox contents when the recorded video gets uploaded for us? Thx!
+20:50:21	  Anon. Loss Function:	There is a situation when using auto_grad.apply() in backward function, it outputs a list of tensors. How to deal with this situation?
+20:50:46	  Anon. Retinal Ganglion:	Isnt this too idealistic? what if our network wants to add more than 2 terms? or is this a toy example?
+20:51:09	  Anon. Giant Squid Neuron:	will the auto grader be able to tell us if our operations are correct before we implement the rest
+20:52:31	  Jinhyung David Park (TA):	@xinyue every function that we’ll use will only output a single result, so no. I believe any multi-output function can be deconstructe dinto multiple single-output functions
+20:52:38	  Jinhyung David Park (TA):	we did not implement this because it adds another layer of complexity
+20:52:55	  Jinhyung David Park (TA):	@Rohan If you want to do a + b + c, this is just (a+b) + c, a sequence of double additions
+20:53:04	  Jinhyung David Park (TA):	So you don’t need to implement multiple additions explicitly.
+20:53:16	  Jinhyung David Park (TA):	Later functions may take in more than 2 terms and some inputs may not even be tensors
+20:53:36	  Anon. Reinforcement:	for linear layer we do need matmul right? Somebody might ask this before but just wanna confirm it quickly
+20:53:48	  Jinhyung David Park (TA):	@nicky I believe so
+20:53:58	  Jinhyung David Park (TA):	@daniel yes
+20:54:10	  Anon. Reinforcement:	Thanks!
+20:55:15	  Anon. YOLOv2:	Do we only need unbroadcasting for addition, or also other matrix operations?
+20:55:42	  Anon. YOLOv2:	Thanks!
+20:56:11	  Anon. Operationtimedout:	could you explain the structure of the param object?
+20:56:30	  Anon. Operationtimedout:	what does self.params hold?
+20:56:40	  Anon. Operationtimedout:	SGD
+20:56:47	  Anon. Operationtimedout:	and optimizer
+20:56:52	  Anon. Thalamus:	In backward function of operation classes, we are finding the gradient of both inputs a and b. If any one of then has require_grad=False, we will not be computing its gradient. How do we handle that in the operation backward function?
+20:57:10	  Anon. pdb.set_trace():	how to test question 2 & 3? sandbox does not test this..
+20:57:56	  Jinhyung David Park (TA):	@baishali you can just pretend that they have it True and deal with it in Function.apply
+20:58:02	  Jinhyung David Park (TA):	*kind of
+20:58:11	  Jinhyung David Park (TA):	as in you can deal with it later during the backward pass
+20:58:24	  Anon. Recall Capacity:	A quick conceputual question:in the backward, the gradient of each sample in the same batch is actually accumulated for SGD, right?
+20:58:27	  Anon. Shufflenet:	Will we also have the chatbox contents when the recorded video gets uploaded for us? Thx!
 20:58:35	  Tony Qin (TA):	Baishali, if requires_grad=False then it will be a constant (None). Deal with it in backward somehow
-20:58:35	  Anon. DFS:	@qiyun sure
-20:58:36	  Anon. Loss Function:	yes we will share the chat
-20:58:45	  Anon. DFS:	@zhihao yes
-20:58:49	  Anon. DFS:	@average over batch
-20:59:46	  Anon. Node of Ranvier:	Do we need backprop for batchnorm and activations
-21:00:10	  Anon. Node of Ranvier:	gotcha.
-21:00:14	  Anon. Jacobian:	@Jinhyung, Sorry, where have we done the average part? Like for the bias, I think when I passed the test case, I did not do the average part.
-21:00:51	  Anon. Tensor:	Could you plz explain what the gamma and beta mean?
-21:01:26	  Anon. DFS:	@zhihao Actually… I don thtin kyou need to explicitly worry about that for this homework
-21:01:28	  Anon. DFS:	maybe only for batchnorm
-21:01:46	  Anon. Tensor:	Okay , thank you.
+20:58:35	  Jinhyung David Park (TA):	@qiyun sure
+20:58:36	  Anon. GRU:	yes we will share the chat
+20:58:45	  Jinhyung David Park (TA):	@zhihao yes
+20:58:49	  Jinhyung David Park (TA):	@average over batch
+20:59:46	  Anon. Reinforcement:	Do we need backprop for batchnorm and activations
+21:00:10	  Anon. Reinforcement:	gotcha.
+21:00:14	  Anon. Recall Capacity:	@Jinhyung, Sorry, where have we done the average part? Like for the bias, I think when I passed the test case, I did not do the average part.
+21:00:51	  Anon. Gentoo:	Could you plz explain what the gamma and beta mean?
+21:01:26	  Jinhyung David Park (TA):	@zhihao Actually… I don thtin kyou need to explicitly worry about that for this homework
+21:01:28	  Jinhyung David Park (TA):	maybe only for batchnorm
+21:01:46	  Anon. Gentoo:	Okay , thank you.
 21:02:55	  Tony Qin (TA):	Gamma and beta are just learnable parameters. It will be updated during backprop
-21:03:29	  Anon. Dot Product:	for p2 on the leaderboard, is “TA Submission” the only TA submission?  im just curious and also want to know where I am with the progress of this assignment.
-21:03:31	  Anon. Jacobian:	@Jinhyung, ok. Just very curious where was the average part executed.
+21:03:29	  Anon. Saltatory:	for p2 on the leaderboard, is “TA Submission” the only TA submission?  im just curious and also want to know where I am with the progress of this assignment.
+21:03:31	  Anon. Recall Capacity:	@Jinhyung, ok. Just very curious where was the average part executed.
 21:04:22	  Tony Qin (TA):	Jeff, some other TAs have submitted as well… Tentative cutoffs will be announced on Wednesday. Shoot for at least 70
-21:05:14	  Anon. Dot Product:	@tony thank you! Also I think the writeup isn’t updated on the website or autolab. I’m looking at it right now and it’s different from jacob’s
-21:05:40	  Anon. Convolution:	What is the ideal practice on choosing batch_size?
-21:05:43	  Anon. Gh0stR1d3r:	Did the code part get updated at any chance? Do we need to redownload that part as well?
-21:06:06	  Anon. DFS:	@shriti you can test a bunch of batchsizes
-21:06:14	  Anon. DFS:	start at a number, multiply in exponents of 2
-21:06:22	  Anon. Gh0stR1d3r:	gotcha!
-21:06:29	  Anon. DFS:	run one or two epochs and see which has highest result and go with it
+21:05:14	  Anon. Saltatory:	@tony thank you! Also I think the writeup isn’t updated on the website or autolab. I’m looking at it right now and it’s different from jacob’s
+21:05:40	  Anon. CNN:	What is the ideal practice on choosing batch_size?
+21:05:43	  Anon. Shufflenet:	Did the code part get updated at any chance? Do we need to redownload that part as well?
+21:06:06	  Jinhyung David Park (TA):	@shriti you can test a bunch of batchsizes
+21:06:14	  Jinhyung David Park (TA):	start at a number, multiply in exponents of 2
+21:06:22	  Anon. Shufflenet:	gotcha!
+21:06:29	  Jinhyung David Park (TA):	run one or two epochs and see which has highest result and go with it
 21:06:31	  Tony Qin (TA):	Shriti, increase batch size as long as training time per epoch decreases. Take advantage of the many cores on a GPU
-21:06:57	  Anon. Convolution:	Ok t
+21:06:57	  Anon. CNN:	Ok t
 21:07:01	  Tony Qin (TA):	Nvm
-21:07:03	  Anon. Convolution:	Thanks!
-21:08:41	  Anon. Lipid Bilayer:	I'm a little lost in terms of what to submit for the 9/16 deadline. We're testing MNIST but on Kaggle we are asked to do speech classification... What are we submitting for the 9/16 deadline?
-21:09:16	  Anon. DFS:	9/16 deadline is for hw1p2
+21:07:03	  Anon. CNN:	Thanks!
+21:08:41	  Anon. Oja’s Rule:	I'm a little lost in terms of what to submit for the 9/16 deadline. We're testing MNIST but on Kaggle we are asked to do speech classification... What are we submitting for the 9/16 deadline?
+21:09:16	  Jinhyung David Park (TA):	9/16 deadline is for hw1p2
 21:09:23	  Reshmi Ghosh (TA):	Early deadline!
-21:09:34	  Anon. DFS:	you can double check the writeup for it
-21:09:47	  Anon. Bias:	What can we use for p2? Only the ones that we implement in p1?
-21:09:55	  Anon. Gh0stR1d3r:	How specific is gpu gonna be used for hw1p2 if we’re suggested to run locally first?
+21:09:34	  Jinhyung David Park (TA):	you can double check the writeup for it
+21:09:47	  Anon. ReLU:	What can we use for p2? Only the ones that we implement in p1?
+21:09:55	  Anon. Shufflenet:	How specific is gpu gonna be used for hw1p2 if we’re suggested to run locally first?
 21:09:55	  Reshmi Ghosh (TA):	anything
 21:09:59	  Reshmi Ghosh (TA):	You have to experiment
-21:10:00	  Anon. Gh0stR1d3r:	*amazon aws
-21:10:01	  Anon. DFS:	you should use the actual pytorch
+21:10:00	  Anon. Shufflenet:	*amazon aws
+21:10:01	  Jinhyung David Park (TA):	you should use the actual pytorch
 21:10:05	  Reshmi Ghosh (TA):	With models
-21:10:17	  Anon. DFS:	actually you can totally do p2 with p1
-21:10:22	  Anon. DFS:	but it’ll be 100x slower
+21:10:17	  Jinhyung David Park (TA):	actually you can totally do p2 with p1
+21:10:22	  Jinhyung David Park (TA):	but it’ll be 100x slower
 21:10:27	  Reshmi Ghosh (TA):	XD
-21:10:48	  Anon. Lipid Bilayer:	https://piazza.com/class/k9lk3ucwopisb?cid=200 The piazza post says to complete problem 1 and submit
-21:11:07	  Anon. DFS:	oh
-21:11:22	  Anon. DFS:	uhh thats like a recommendation for how much of hw1p1 you should get done
-21:11:25	  Anon. Tensor:	Can we just submit something like “print(“Hello World”)” before the early ddl? I may not have enough time to finish the base line work……:p
-21:11:26	  Anon. DFS:	and that is 9/15
+21:10:48	  Anon. Oja’s Rule:	https://piazza.com/class/k9lk3ucwopisb?cid=200 The piazza post says to complete problem 1 and submit
+21:11:07	  Jinhyung David Park (TA):	oh
+21:11:22	  Jinhyung David Park (TA):	uhh thats like a recommendation for how much of hw1p1 you should get done
+21:11:25	  Anon. Gentoo:	Can we just submit something like “print(“Hello World”)” before the early ddl? I may not have enough time to finish the base line work……:p
+21:11:26	  Jinhyung David Park (TA):	and that is 9/15
 21:11:34	  Reshmi Ghosh (TA):	That is recommended schedule btw
 21:11:49	  Tony Qin (TA):	Yueqing, the hw1p2 early submission must be in the correct format at least.
 21:11:49	  Reshmi Ghosh (TA):	Which we highly recommend:P
-21:11:50	  Anon. DFS:	@yueqing you have to submit an actual prediction file
-21:12:00	  Anon. Gh0stR1d3r:	Is there a submission limit for the Kaggle competition in Total..?
-21:12:05	  Anon. DFS:	nope only daily
-21:12:08	  Anon. Tensor:	Okay gotcha
-21:12:25	  Anon. Lipid Bilayer:	thx
+21:11:50	  Jinhyung David Park (TA):	@yueqing you have to submit an actual prediction file
+21:12:00	  Anon. Shufflenet:	Is there a submission limit for the Kaggle competition in Total..?
+21:12:05	  Jinhyung David Park (TA):	nope only daily
+21:12:08	  Anon. Gentoo:	Okay gotcha
+21:12:25	  Anon. Oja’s Rule:	thx
 21:12:59	  Reshmi Ghosh (TA):	Submit the submission.csv file if needed by 9/16
-21:13:00	  Anon. Gh0stR1d3r:	Just following up with previous qn as well, what is the difference from using amazon aws on hw1p2 v.s. running locally since TA suggested doing locally first?
+21:13:00	  Anon. Shufflenet:	Just following up with previous qn as well, what is the difference from using amazon aws on hw1p2 v.s. running locally since TA suggested doing locally first?
 21:13:07	  Reshmi Ghosh (TA):	But you need your names up on kaggle
 21:13:21	  Tony Qin (TA):	Running locally will be magnitudes slower if you don’t a GPU with cuda
-21:13:24	  Anon. DFS:	locally just to see if your code has any bugs
-21:13:28	  Anon. DFS:	^what tony said
-21:14:00	  Anon. Gh0stR1d3r:	Icic, but running locally will take forever ish…? So if training looks alright and running, then we can transfer to running on was?
-21:14:04	  Anon. Gh0stR1d3r:	*on aws
-21:14:12	  Anon. DFS:	yup
-21:14:19	  Anon. Gh0stR1d3r:	Thanks! That’s super clear then
+21:13:24	  Jinhyung David Park (TA):	locally just to see if your code has any bugs
+21:13:28	  Jinhyung David Park (TA):	^what tony said
+21:14:00	  Anon. Shufflenet:	Icic, but running locally will take forever ish…? So if training looks alright and running, then we can transfer to running on was?
+21:14:04	  Anon. Shufflenet:	*on aws
+21:14:12	  Jinhyung David Park (TA):	yup
+21:14:19	  Anon. Shufflenet:	Thanks! That’s super clear then
 21:14:26	  Reshmi Ghosh (TA):	I will make a reminder post about hw1p2 early deadline
-21:14:29	  Anon. Test:	we have to submit on kaggle or autolab?
+21:14:29	  Anon. ReduceLROnPlateau:	we have to submit on kaggle or autolab?
 21:14:33	  Tony Qin (TA):	You may run into additional bugs on AWS, but most of the debugging should be done if it’s working locally
-21:14:38	  Anon. Test:	for hw1p2
+21:14:38	  Anon. ReduceLROnPlateau:	for hw1p2
 21:14:40	  Tony Qin (TA):	Hw1p2 is on kaggle
 21:14:41	  Reshmi Ghosh (TA):	Hw1p2 submission file should be on kaggle
-21:14:43	  Anon. DFS:	if you are ok with git, I think a good pipeline is to develop locally on a repository and directly git clone to colab and run it
-21:14:53	  Anon. Convolution:	Anybody has an experience using Google Cloud Platform?
-21:15:10	  Anon. DFS:	TA Jiachen does
-21:15:15	  Anon. Jacobian:	What's HW1 Bonus?
-21:15:16	  Anon. Gh0stR1d3r:	Oh yea is there a limit on the times you can submit on kaggle competition? Either for early ddl or the final deadline?
-21:15:17	  Anon. DFS:	maybe you can go to his OH
-21:15:25	  Anon. DFS:	@zhihao to be released after hw1p1 is done
-21:15:32	  Anon. DFS:	@qiyun only a daily limit of 10
-21:15:34	  Anon. DFS:	no overall limit
+21:14:43	  Jinhyung David Park (TA):	if you are ok with git, I think a good pipeline is to develop locally on a repository and directly git clone to colab and run it
+21:14:53	  Anon. CNN:	Anybody has an experience using Google Cloud Platform?
+21:15:10	  Jinhyung David Park (TA):	TA Jiachen does
+21:15:15	  Anon. Recall Capacity:	What's HW1 Bonus?
+21:15:16	  Anon. Shufflenet:	Oh yea is there a limit on the times you can submit on kaggle competition? Either for early ddl or the final deadline?
+21:15:17	  Jinhyung David Park (TA):	maybe you can go to his OH
+21:15:25	  Jinhyung David Park (TA):	@zhihao to be released after hw1p1 is done
+21:15:32	  Jinhyung David Park (TA):	@qiyun only a daily limit of 10
+21:15:34	  Jinhyung David Park (TA):	no overall limit
 21:15:34	  Reshmi Ghosh (TA):	Yep per day - 10 submissions
-21:15:43	  Anon. ResNet101:	have the coupons already been shared?
-21:15:49	  Anon. DFS:	will be rewleased soon
+21:15:43	  Anon. Array:	have the coupons already been shared?
+21:15:49	  Jinhyung David Park (TA):	will be rewleased soon
 21:15:50	  Reshmi Ghosh (TA):	Will be shared soon
 21:15:55	  Reshmi Ghosh (TA):	We are working on it:)
 21:16:07	  Reshmi Ghosh (TA):	Expect it in 1-2 days
-21:16:08	  Anon. ResNet101:	thank you
-21:16:13	  Anon. Gh0stR1d3r:	Thank you @Jinhyung!
-21:16:14	  Anon. Drop Connection:	How long did p1 and p2 take for you guys (TAs)
-21:16:18	  Anon. Kalman Filter:	Request:please upload to youtube the lectures on the same day
-21:16:30	  Anon. Trajectory:	this was very helpful thank you!
+21:16:08	  Anon. Array:	thank you
+21:16:13	  Anon. Shufflenet:	Thank you @Jinhyung!
+21:16:14	  Anon. Weight Decay:	How long did p1 and p2 take for you guys (TAs)
+21:16:18	  Anon. Operationtimedout:	Request:please upload to youtube the lectures on the same day
+21:16:30	  Anon. Giant Squid Neuron:	this was very helpful thank you!
 21:17:14	  Tony Qin (TA):	P1 - different homework from last semester
 21:17:19	  Reshmi Ghosh (TA):	P1 is completely new.
 21:17:25	  Tony Qin (TA):	P2 - long time
-21:17:27	  Anon. DFS:	p1 depends on your background
+21:17:27	  Jinhyung David Park (TA):	p1 depends on your background
 21:17:31	  Reshmi Ghosh (TA):	Can’t benchmark our time
 21:17:34	  Reshmi Ghosh (TA):	As David said
-21:17:37	  Anon. DFS:	i think the ballpark we’re saying is 8 - 20?
-21:17:43	  Anon. LeNet:	would it be possible to share some augmentations to improve accuracy for p2? I have only done augmentations with image data
+21:17:37	  Jinhyung David Park (TA):	i think the ballpark we’re saying is 8 - 20?
+21:17:43	  Anon. Gaussian:	would it be possible to share some augmentations to improve accuracy for p2? I have only done augmentations with image data
 21:17:44	  Reshmi Ghosh (TA):	Also on the YouTube request. That’s actually on Bhiksha
-21:17:48	  Anon. Gh0stR1d3r:	How long are the training expected to run for hw1p2?
-21:18:00	  Anon. DFS:	@dhruv sure we can post a link
+21:17:48	  Anon. Shufflenet:	How long are the training expected to run for hw1p2?
+21:18:00	  Jinhyung David Park (TA):	@dhruv sure we can post a link
 21:18:01	  Reshmi Ghosh (TA):	Depends on your model and what you experiment
-21:18:03	  Anon. DFS:	you can do fine without aug though
-21:18:07	  Anon. Linear Programming:	Same question
-21:18:12	  Anon. Gaussian:	where is the sample submission for hw1p2?
+21:18:03	  Jinhyung David Park (TA):	you can do fine without aug though
+21:18:07	  Anon. CUDAError:	Same question
+21:18:12	  Anon. comicstrip:	where is the sample submission for hw1p2?
 21:18:14	  Tony Qin (TA):	@Qiyun, if you’re running g4dn.xlarge maybe give yourself 5 hours
-21:18:15	  Anon. Linear Programming:	How long does it take using the suggested model
-21:18:23	  Anon. Linear Programming:	1024 - BatchNorm(20) - Linear
+21:18:15	  Anon. CUDAError:	How long does it take using the suggested model
+21:18:23	  Anon. CUDAError:	1024 - BatchNorm(20) - Linear
 21:18:24	  Reshmi Ghosh (TA):	In the kaggle download
 21:18:27	  Reshmi Ghosh (TA):	Please download
-21:18:28	  Anon. Gh0stR1d3r:	@Tony thank u!
-21:18:36	  Anon. DFS:	@hfei not very long
+21:18:28	  Anon. Shufflenet:	@Tony thank u!
+21:18:36	  Jinhyung David Park (TA):	@hfei not very long
 21:18:43	  Tony Qin (TA):	@hfei that is not the suggested model. Just starter. You will not do well with that model
-21:18:46	  Anon. Loss Function:	@Alvin, sample submission will be on the kaggle site
-21:18:48	  Anon. DFS:	probably like.. 1 min for epoch?
-21:20:16	  Anon. Quadratic:	What's a ballpark figure for expected accuracy for p2?
+21:18:46	  Anon. GRU:	@Alvin, sample submission will be on the kaggle site
+21:18:48	  Jinhyung David Park (TA):	probably like.. 1 min for epoch?
+21:20:16	  Anon. Fast RCNN:	What's a ballpark figure for expected accuracy for p2?
 21:20:39	  Tony Qin (TA):	~70 +- 5
-21:20:51	  Anon. Quadratic:	Thanks!
-21:22:25	  Anon. Test:	thanks guys!!
-21:22:31	  Anon. LeNet:	thanks guys!
-21:22:35	  Anon. print(‘Hello world!’):	Thank you!
-21:22:35	  Anon. Residual:	Thanks!
-21:22:37	  Anon. Jacobian:	3q
-21:22:41	  Anon. ResNet101:	thank you
-21:22:49	  Anon. DistilBERT:	Thanks!
-21:23:01	  Anon. Bias:	thanks
+21:20:51	  Anon. Fast RCNN:	Thanks!
+21:22:25	  Anon. ReduceLROnPlateau:	thanks guys!!
+21:22:31	  Anon. Gaussian:	thanks guys!
+21:22:35	  Anon. MiniMax:	Thank you!
+21:22:35	  Anon. YOLOv2:	Thanks!
+21:22:37	  Anon. Recall Capacity:	3q
+21:22:41	  Anon. Array:	thank you
+21:22:49	  Anon. Kaggle:	Thanks!
+21:23:01	  Anon. ReLU:	thanks
