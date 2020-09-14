@@ -1,0 +1,96 @@
+00:14:26	Reshmi Ghosh (TA):	Mute yourselves when you join!
+00:18:53	Anon. Threshold:	Best local linear approimation
+00:19:13	Anon. Hodgkin-Huxley:	gradient of function
+00:19:13	Anon. Variance:	The change in x with respect to the change in y
+00:19:14	Anon. Sample:	Rate of change of a function
+00:19:16	Anon. Sigmoid:	slope of a function
+00:19:18	Anon. ICA:	Rate of change of a variable with respect to another
+00:19:28	Anon. YOLOv2:	the change of a function dependent on change of inputs
+00:19:36	Anon. DFS:	a s.t. delta y = a * delta x
+00:23:15	Anon. Variance:	Alpha will be a vector
+00:23:17	Anon. Algorithm:	derivative would be a vector
+00:23:47	Anon. Voltage-gate:	gradient
+00:23:47	Anon. Algorithm:	derivative in all directions of the input
+00:23:57	Anon. Variance:	You need one output
+00:24:03	Anon. Voltage-gate:	column vector
+00:24:05	Anon. Variance:	So you need to do a dot product
+00:24:20	Anon. LR:	column vector
+00:24:52	Anon. YOLOv3:	is f a vector in this question?
+00:25:01	Anon. YOLOv2:	derivative is a vector with each component for each input. derivative is transpose of f(x) if vector
+00:25:21	Jinhyung David Park (TA):	@Nicky just a scalar
+00:25:24	Anon. Supervised:	Nx1
+00:25:29	Anon. Markov Chain:	n*1
+00:25:51	Anon. YOLOv3:	the derivative must be a row vector
+00:26:11	Anon. Whyami:	1x N
+00:26:14	Anon. Supervised:	1*N
+00:26:16	Anon. LR:	1XN
+00:29:07	Anon. Layer:	alpha1*delx1
+00:30:04	Anon. YOLOv3:	just to be clear, if f is not a scalar and is instead a vector, then the shape of alpha would no longer be a 1xn correct?
+00:31:07	Anon. YOLOv3:	for example if f was 2x1 alpha would be 2xn
+00:33:29	Anxiang Zhang (TA):	7 seconds
+00:34:37	Anon. Autograd:	I wasn't able to see the pole. Why was that ?
+00:34:46	Reshmi Ghosh (TA):	That is weird
+00:35:20	Reshmi Ghosh (TA):	We will share the questions later on, but if this problem persists let us know.
+00:35:40	Anon. Autograd:	Ok thank you, I will.
+00:36:25	Anon. Algorithm:	no inflection point
+00:39:45	Anon. Weight:	0
+00:39:47	Anon. Markov Chain:	0
+00:40:41	Anon. Layer:	constant value
+00:40:42	Anon. Giant Squid Neuron:	0
+00:44:14	Anon. Indifferentiable:	tangent hyperplane to the function?
+00:44:40	Anon. Giant Squid Neuron:	Tangent vector
+00:44:45	Anon. Autograd:	The direction of fastest increase
+00:44:47	Anon. Max Pool:	direction increase faster
+00:44:48	Anon. Markov Chain:	the direction to which you should travel along that can increase the value of y most quickly
+00:47:15	Anon. Layer:	0
+00:47:15	Anon. Supervised:	0
+00:47:15	Anon. Unsupervised:	0
+00:47:16	Anon. Algorithm:	0
+00:47:17	Anon. Voltage-gate:	0
+00:47:17	Anon. Notagrad:	0
+00:47:30	Anon. Residual:	90
+00:47:30	Anon. Algorithm:	90
+00:47:31	Anon. Loss Function:	90
+00:47:32	Anon. Supervised:	90
+00:47:33	Anon. Weight:	180
+00:47:34	Anon. Unsupervised:	180
+00:47:38	Anon. Giant Squid Neuron:	180
+00:47:39	Anon. Loss Function:	180
+00:47:41	Anon. Residual:	180
+00:49:02	Anon. Giant Squid Neuron:	Same direction
+00:49:09	Anon. Weight:	Same as the delta vector
+00:53:56	Reshmi Ghosh (TA):	Poll folks
+00:54:11	Anon. Autograd:	I can't see it please
+00:54:22	Reshmi Ghosh (TA):	Damn
+00:54:27	Anxiang Zhang (TA):	5 seconds
+00:54:35	Reshmi Ghosh (TA):	I will get back to you after the lecture @Dereje
+00:54:49	Anon. Sample:	Try updating your zoom?
+00:54:51	Anon. Transformer:	since we’re waiting, I think the slides posted online are not the same as what are being shown
+00:55:03	Reshmi Ghosh (TA):	Yes they do get changed
+00:55:26	Reshmi Ghosh (TA):	We modify things until the last minute:) because who doesn’t?
+00:55:35	Anon. Dropout:	This is Last part of slides for Lec 3
+00:56:08	Reshmi Ghosh (TA):	BY THE WAY, When Bhiksha says I won’t explain it but will use it ~ potential quiz question. You should refer these slides back. Although no guarantee that it will appear in Quiz 3 (as I haven’t seen the questions myself ):P
+00:57:57	Anon. Voltage-gate:	-
+00:57:58	Anon. Spiking NN:	negative
+00:57:58	Anon. Markov Chain:	neg
+00:57:58	Anon. Unsupervised:	-ve
+00:58:00	Anon. Weight:	negative
+00:58:01	Anon. Supervised:	neg
+00:58:10	Anon. Spiking NN:	right
+00:58:43	Anon. Weight:	+
+00:58:45	Anon. Supervised:	+
+00:58:55	Anon. Giant Squid Neuron:	-<
+00:58:58	Anon. Weight:	left
+00:58:59	Anon. Supervised:	left
+00:59:02	Anon. LTI:	left
+00:59:04	Anon. Leakage:	left
+01:00:29	Anon. Voltage-gate:	xk - step*deltax
+01:03:14	Anon. Dropout:	large
+01:03:23	Anon. Giant Squid Neuron:	big
+01:03:25	Anon. Markov Chain:	big
+01:03:41	Anon. LR:	small
+01:03:43	Anon. Leakage:	mall
+01:03:43	Anon. Voltage-gate:	small
+01:03:53	Anon. LR:	overshhot
+01:11:14	Anon. YOLOv2:	step
+01:38:21	Anxiang Zhang (TA):	5 seconds
