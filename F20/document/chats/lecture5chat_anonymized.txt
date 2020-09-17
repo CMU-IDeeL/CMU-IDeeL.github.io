@@ -1,0 +1,39 @@
+00:43:19	Anon. Nonlinear Transform:	Direction of maximum decrease
+00:44:35	Reshmi Ghosh (TA):	Kids, you can post answers here, or unmute yourself and answer! We highly encourage answering questions:)
+00:44:49	Anon. CTC:	K th layer
+00:44:51	Anon. Kernel:	Are cross entropy loss and negative log-likelihood loss the same concept? Looks like they are the same thing according to the H1 writeup.
+00:45:02	Anon. Deep Dream:	from neuron  I to neuron j
+00:45:06	Anon. Matrix:	previous node I to current node j
+00:45:07	Anon. Spiking NN:	weight going from i to j at kth layer
+00:45:09	Anon. BERT:	Weight at layer k between the ith and jth node
+00:46:30	Anon. Alpha:	is it the weight from ith node in kth layer to jth node in (k+1)th layer?
+00:46:33	Anon. CTC:	Here T refers to the number of training examples?
+00:47:18	Anon. Loss Surface:	delta y = alpha delta x
+00:47:38	Anon. Matrix:	Row vector
+00:50:02	Anon. Dropout (for NNs):	f'(g(x)) + g'(x)
+00:53:52	Anon. Neurotransmitter:	total derivative
+00:58:42	Anon. CTC:	Here we assume that the coefficient for each edge is 1?
+00:59:52	Reshmi Ghosh (TA):	POLL
+00:59:58	Anon. Vector:	Sorry is delta x and d x mean the same thing?
+01:00:03	Anon. Vector:	*do
+01:00:11	Anxiang Zhang (TA):	10 seconds
+01:00:29	Anon. Seq2Seq:	can i think of an influence diagram as a weighted diagram where all the weights are 1?
+01:03:59	Anon. grad_fn:	Why is the y in the top right labeled as being in the first layer?
+01:04:39	Reshmi Ghosh (TA):	Sorry I did not see the diagram
+01:04:42	Reshmi Ghosh (TA):	Was it y1?
+01:05:12	Reshmi Ghosh (TA):	Could you specify the slide number? I can check or ask Bhiksha
+01:05:19	Anon. grad_fn:	The subscript was 2 and the superscript was 1 and it was in the top right on slide 107
+01:05:42	Anon. grad_fn:	Thanks!
+01:06:16	Reshmi Ghosh (TA):	Damn the slide numbers are different. Getting back to you @ Dennis
+01:06:31	Anon. grad_fn:	Take your time sorry!
+01:10:01	Anon. grad_fn:	I can post on piazza after class
+01:10:25	Reshmi Ghosh (TA):	Haha helps. Because I am randomly looking through the slide deck posted on course webpage. Sorry! Will get back to you
+01:11:53	Anon. grad_fn:	Definitely sorry for the confusion!  Thanks (:
+01:24:14	Anon. grad_fn:	This is without activation functions correct?
+01:24:24	Anon. Curse of Dimensionality:	This does not take into account activation functions, correct?
+01:25:18	Anon. grad_fn:	yes
+01:39:32	Anon. Vector:	The function would not be increasing
+01:41:39	Anon. Boltzmann:	0
+01:43:16	Reshmi Ghosh (TA):	Poll folks
+01:43:25	Anon. Curse of Dimensionality:	yea
+01:47:33	Anon. Scheduler:	So what is exactly used to update the parameters in the network?
