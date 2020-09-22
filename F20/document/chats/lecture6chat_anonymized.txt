@@ -1,0 +1,107 @@
+00:36:42	Anon. Voltage-gate:	Yes
+00:37:02	Anon. Electrochemical gradient:	Today’s slide has not been posted right?
+00:37:22	Reshmi Ghosh (TA):	Nope
+00:37:37	Reshmi Ghosh (TA):	We’ll do it after the lecture!
+00:37:59	Anon. Electrochemical gradient:	Thanks!
+00:43:51	Anon. CasCor:	it’s only a sampling?
+00:44:05	Anon. Deep Blue:	the threshold matters?
+00:44:06	Anon. comicstrip:	might not be linearly seeperable
+00:44:08	Anon. Linus:	this could be skewed by unfair distribution of points
+00:44:13	Anon. Imagenet:	it’ll only reduce the average error length
+00:44:15	Anon. Capacitance:	Some might be further away?
+00:44:20	Anon. Imagenet:	not the classification error
+00:44:38	Anon. CUDAError:	more points on one side could skew the boundary
+00:44:46	Anon. Capacitance:	It will move in that direction
+00:44:47	Anon. ICA:	It will flatten/tend towards the majoriity
+00:44:48	Anon. comicstrip:	will be pulled to the right
+00:44:51	Anon. Gradient:	you will miss many points
+00:46:13	Anon. CMU:	Yes
+00:46:15	Anon. Soma:	yes
+00:46:15	Anon. Decoder:	yes
+00:46:35	Anon. Capacitance:	no
+00:46:36	Anon. batch_first:	yes
+00:46:42	Anon. D33p_M1nd:	yes
+00:46:43	Anon. Gradient:	no
+00:46:53	Anon. Transformer:	yes
+00:47:08	Anon. batch_first:	yes
+00:47:08	Anon. Array:	yes
+00:47:09	Anon. Kalman Filter:	yes
+00:47:10	Anon. Electrochemical gradient:	yes
+00:47:16	Anon. Phoneme:	yes
+00:47:31	Anon. D33p_M1nd:	it will fail
+00:48:21	Anon. comicstrip:	can we ignore correctly labled samples in backprop?
+00:48:40	Anon. comicstrip:	like we do in perceptron
+00:48:44	Anon. Uniform Distribution:	good
+00:48:45	Anon. D33p_M1nd:	good
+00:48:45	Anon. Capacitance:	Good
+00:48:47	Anon. Phoneme:	bad
+00:48:48	Anon. Andy:	good
+00:48:48	Anon. Decoder:	good
+00:48:50	Anon. Electrochemical gradient:	Good behavior
+00:48:52	Anon. Eta:	Bad? Doesn’t this make perceptron more vulnerable to outliers?
+00:48:52	Anon. batch_first:	bad
+00:48:56	Anon. CUDAError:	good
+00:48:57	Anon. Kernel Trick:	bad
+00:49:13	Anon. Electrochemical gradient:	Help tolerate noise
+00:51:20	Reshmi Ghosh (TA):	Poll folks
+00:51:58	Anon. comicstrip:	so would backprop be better for probabilistic data and perceptron better for deterministic data?
+00:53:43	Anon. YOLOv6:	what's the question? lost that part
+00:55:24	Anon. LeNet:	Why the weights would go to infinity?
+00:59:14	Anon. Potassium Ion:	non global minima + saddle points
+01:01:08	Anon. ICA:	How large is large for these networks?
+01:01:20	Anon. ICA:	Approximately
+01:02:10	Anon. Derivative:	is there any particular reason why there’s a huge time skip between your selection of papers
+01:03:00	Anon. D33p_M1nd:	Isn't the loss surface dependent upon the training data..?  if yes how does network size increase number of saddle points..etc?
+01:03:28	Anon. Deep Blue:	Thanks to Nvidia:P
+01:03:32	Reshmi Ghosh (TA):	lol
+01:09:34	Anon. Deep Blue:	Do we say a network has "converged" when the loss function is minimized or in terms of minimized classification error?
+01:09:35	Anon. EC2:	How can we know the optimal x* beforehand?
+01:11:16	Anon. ICA:	Based on the sign of a
+01:11:23	Anon. ICA:	+
+01:11:24	Anon. Phoneme:	+\
+01:11:26	Anon. Phoneme:	+
+01:11:27	Anon. Electrochemical gradient:	>0
+01:12:31	Anon. Indifferentiable:	@Tarang For convex loss function, that is correct. Actually most loss objectives are non-convex.
+01:12:36	Anon. Andy:	Not really
+01:19:43	Anon. Cerebellum:	second derivative?
+01:19:50	Anon. Phoneme:	second derivative inverse
+01:19:51	Anon. LeNet:	Inverse Hessian
+01:20:16	Reshmi Ghosh (TA):	@Mitch and @Anantananda do you have questions?
+01:20:32	Reshmi Ghosh (TA):	@ananyananda** sorry
+01:21:31	Anon. Derivative:	depends
+01:21:44	Anon. Derivative:	it may jitter or even diverge if it’s entirely too big
+01:21:55	Anon. LeNet:	No
+01:22:03	Anon. Derivative:	for this function, 2(w-w*)
+01:22:17	Anon. Potassium Ion:	So just to confirm, is the optimal step size normally the value of the inverse Hessian?
+01:22:36	Anon. LeNet:	Only in this quadratic case
+01:23:55	Anon. Linus:	but wouldn't that only be the optimum for a quadratic approximation and not the actual function?
+01:27:06	Anon. C++:	a11 and a22 should not be squared, right?
+01:27:11	Anon. ICA:	^
+01:27:19	Anon. Capacitance:	^
+01:27:22	Anon. Potassium Ion:	^
+01:31:15	Anon. Synapse:	Steep
+01:31:16	Anon. Cerebellum:	the steeper direction?
+01:33:16	Anon. Deep Blue:	In practice if we use a step thats proportional to the derivative in that dimension(as we learnt in the previous few classes), it will ensure that we dont need to maintain separate steps per dimension right?
+01:34:15	Anon. Potassium Ion:	So there is an optimal step size based on the derivative of each dimension, which makes it that the overall optimal step size (lr) is the one that falls between n_opt & 2n_opt across all dimensions?
+01:34:48	Anon. Indifferentiable:	It will be covered soon
+01:35:06	Anon. Linus:	layer wise learning rate?
+01:35:41	Anon. XOR Gate:	Is this the reason why some algorithms require normalization?
+01:36:45	Anon. LeNet:	Adapted step size
+01:36:52	Anon. Synapse:	Gradually decrease lr
+01:36:58	Anon. Curse of Dimensionality:	Something similar to simulated annealing
+01:39:09	Reshmi Ghosh (TA):	Poll up folks
+01:39:22	Anon. Scheduler:	what does the second one mean?
+01:39:24	Anon. Electrochemical gradient:	What is always a bad thing?
+01:48:21	Anon. Refractory Period:	What’s the alpha here
+01:49:02	Anon. XOR Gate:	I think it’s a hyper-param
+01:49:10	Anon. EC2:	does it mean rprop can not jump out of local minimum?
+01:50:49	Anon. Axon:	why is it called Rprop?
+01:51:07	Reshmi Ghosh (TA):	Resilient propagation
+01:52:26	Anon. LeNet:	What do we mean by dimension-independent learning rates?
+01:53:57	Anon. Phoneme:	0
+01:56:39	Anon. Eta:	how do you choose beta?
+01:57:58	Anon. Linus:	^ and does that even have to be decayed over time
+02:01:24	Anon. LeNet:	What do we mean by dimension-independent learning rates?
+02:01:54	Reshmi Ghosh (TA):	@anurag and @asish if we don’t get back to you now
+02:01:58	Reshmi Ghosh (TA):	Get back on Piazza
+02:02:11	Reshmi Ghosh (TA):	@yiwei I will post your question too

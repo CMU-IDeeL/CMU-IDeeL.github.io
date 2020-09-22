@@ -1,0 +1,113 @@
+00:28:07	Anon. Git:	Does Adam use GD or SGD in any way?
+00:28:38	Anon. Normal Distribution:	is the handout posted?
+00:29:42	Anxiang Zhang (TA):	Will post after recitation
+00:30:07	Anon. Array:	is there any reason not to do all three in parrell and use the one with the best results?
+00:31:12	Anon. Windows:	if you did all three in parallel, wouldn’t the bottleneck still  be batch GD so this  would be equivalent to batch GD?
+00:31:29	Anxiang Zhang (TA):	@Nicky Nocerino:GD is computational intensive and SGD is fast.
+00:31:43	Anxiang Zhang (TA):	Also, SGD could achieve better overall convergence rate
+00:32:00	Anon. Array:	got it, thanks
+00:33:11	Anon. Array:	would it make any sense to start with SGD or mini batch and increase batch size over time to make convergence easier?
+00:33:56	Anxiang Zhang (TA):	Haven’t experimented it or seem related papers but it’s a nice try -P
+00:34:37	Anxiang Zhang (TA):	The motivation of Batch-GD is parallel computing. SGD is not parallelizable.
+00:40:26	Anon. Git:	Isn’t Newtons method more computationally expensive though?
+00:40:34	Anxiang Zhang (TA):	true
+00:40:40	Anon. Git:	Thanks
+00:40:55	Anon. Boolean:	Are second-order methods generally less popular than the first-order ones?
+00:41:33	Anxiang Zhang (TA):	To the best of my knowledge, yes
+00:41:42	Reshmi Ghosh (TA):	I think so too
+00:42:42	Anxiang Zhang (TA):	second-order method is mostly used for research topic. like exploring how to approximate hessian in  a faster way.
+00:43:38	Anon. Boolean:	Is it because it is usually inefficient to compute the Hessian?
+00:46:07	Anxiang Zhang (TA):	Yes.
+00:46:34	Anon. Array:	are newtons method and RMSprop mutually exlusive?
+00:49:15	Anon. Dropout (for NNs):	that’s really cool
+00:57:23	Reshmi Ghosh (TA):	That’s your cue for p2 folks:P
+01:00:11	Anon. Array:	is there a optimal way to initialize, or just randomly
+01:00:39	Anxiang Zhang (TA):	no optimal method in deep learning world
+01:00:44	Anxiang Zhang (TA):	-.-
+01:01:02	Reshmi Ghosh (TA):	XD
+01:01:25	Anon. Array:	is there a more optimal way then I guess, if constant is bad, what are better ways
+01:02:04	Anon. Boolean:	Kaiming initialization is one of them I believe
+01:02:47	Anon. Array:	thanks
+01:04:32	Anon. Array:	im a little consfuesd why similar distribution across layers increases efficiency
+01:04:57	Anon. Residual:	in what case would you want to use kaiming over Xavier or vice versa?
+01:05:27	Anon. Windows:	why doesn’t the  xavier version’s error decrease at all?
+01:05:34	Anon. Windows:	for the bottom picture
+01:06:38	Anon. ResNet50:	https://pytorch.org/docs/stable/nn.init.html <- there is something like Kushal said, but it might have to be smudged to work well
+01:08:29	Anon. NLLLoss:	you can’t have negative distributions
+01:08:45	Anon. ResNet50:	We don't want the values to explode either. (Ex face underflow or numeric overflow issues)
+01:10:05	Anon. Boolean:	But isn’t it the case that vanishing gradient should be handled by normalization or a better activation function?
+01:11:33	Kushal Saharan (TA):	@Alvin Xavier doesn’t decrease only for a very deep neural net as its analysis doesn’t consider activation functions and is therefore poorer for deeper networks
+01:12:08	Kushal Saharan (TA):	Also you might want to stick with Kaiming for almost all cases
+01:13:45	Anon. Array:	are there down sides to having too low learning rate other than being slow?
+01:14:09	Anon. LR:	you might not reach the minima
+01:14:15	Kushal Saharan (TA):	@Yiwei Vanishing gradient descent is handled using multiple techniques and having a great initialisation helps in that process. Therefore you’d still want to use things like Batchnorm to alleviate vanishing/exploding gradient issues
+01:14:39	Anon. Boolean:	Thanks
+01:14:46	Anon. Array:	@ryan, might not reach it in a given time, or might not reach it ever?
+01:15:16	Anon. LR:	ever, if it’s too small you could get stuck near a local minima
+01:15:23	Kushal Saharan (TA):	It may reach a minima sure
+01:15:55	Anon. Git:	Is dropout layers considered regularization?  And if so are they allowed in our NN?
+01:16:05	Kushal Saharan (TA):	But you will not be able to explore the parameter space
+01:16:24	Kushal Saharan (TA):	Yes dropout is considered regularization
+01:16:30	Reshmi Ghosh (TA):	Yes! Dropouts are allowed. But you need to be careful in what setting (depth) you use them
+01:16:32	Kushal Saharan (TA):	They are allowed in your NN
+01:16:49	Reshmi Ghosh (TA):	Especially how you use parameter ‘p’ value
+01:17:36	Anon. Git:	Thank you!
+01:19:12	Reshmi Ghosh (TA):	The dropout documentation In pytorch is very nice
+01:19:35	Reshmi Ghosh (TA):	You can google to know more about  how to implement it correctly
+01:19:47	Anon. Action Potential:	Does dropout add to the computational graph? If so, how?
+01:20:16	Anon. Git:	I think it would remove from the computational graph if anything.
+01:20:42	Anon. Git:	But maybe not
+01:21:27	Kushal Saharan (TA):	What do you mean by ‘add to computational graph’ ?
+01:22:09	Kushal Saharan (TA):	There is no parameters to learn in dropout
+01:22:28	Anon. Boolean:	Does the problem of vanishing gradient count as a type of overfitting?
+01:22:31	Kushal Saharan (TA):	Consider this to be a layer that switches neurons on and off during the training stage
+01:22:57	Anon. Action Potential:	Is the operation of dropout added to the graph and the effects of it considered when backprop?
+01:23:00	Reshmi Ghosh (TA):	Dropout simply ignores some neurons depending on your p value
+01:23:19	Kushal Saharan (TA):	Yes it is considered during backprop
+01:23:40	Anon. DBN:	Will the slides be posted on website?
+01:23:46	Reshmi Ghosh (TA):	yes
+01:24:27	Kushal Saharan (TA):	Vanishing gradient can occurs even without overfitting
+01:24:50	Jacob Lee (TA):	Go team!!!!!!
+01:25:15	Reshmi Ghosh (TA):	Woohoo Jacob!:P
+01:25:24	Jacob Lee (TA):	👏🏻👏🏻👏🏻 Yeah!!!!
+01:26:34	Anon. Boolean:	Also for dropout, is it equivalent as randomly setting some entries in the parameter matrices for each layer to be zero during training?
+01:27:02	Reshmi Ghosh (TA):	What are some of these entries?
+01:28:01	Reshmi Ghosh (TA):	Entire outputs of neurons are either set to 0 or not randomly based on ‘p’ you set during training
+01:28:24	Kushal Saharan (TA):	During evaluation, in order to incorporate this effect you scale all outputs appropriately
+01:28:39	Anon. Sodium Ion:	So which order should we use again? Is either fine?
+01:28:47	Anon. Sodium Ion:	Sry didn’t catch the last part
+01:28:47	Kushal Saharan (TA):	There is another way to handle dropout but this Is one of the ways
+01:29:11	Anon. Adam:	I think relu after bn
+01:29:17	Anon. Sodium Ion:	Cool thx
+01:29:18	Anon. Boolean:	Thank you
+01:29:37	Anon. is_available():	Are we allowed to use dropout in hw1p2?
+01:29:42	Reshmi Ghosh (TA):	Read more because if you interchange BN and dropout, you may run into an issue:P
+01:29:46	Kushal Saharan (TA):	yes
+01:29:47	Reshmi Ghosh (TA):	Yes @shentong
+01:29:52	Anon. is_available():	Thank you.
+01:29:57	Jacob Lee (TA):	the order of ReLU and BN depends on the problem space
+01:30:03	Kushal Saharan (TA):	Also you will find different papers doing different things as far as order of ReLU and BN is concerned
+01:30:08	Reshmi Ghosh (TA):	yes
+01:30:40	Reshmi Ghosh (TA):	I think we all have done that @anxiang
+01:30:42	Reshmi Ghosh (TA):	:P
+01:31:01	Anon. ResNet50:	How would normalization be used when using word embedders in NLP tasks? After the embedding layer? Or is this advice (of normalizing input data) more applicable to other types of tasks.
+01:31:38	Jacob Lee (TA):	hw3 and hw4 will be a lot of this:)
+01:32:10	Reshmi Ghosh (TA):	Hint:we are talking about 1st linear layer
+01:32:13	Anon. ResNet34:	Part of feature engineering?
+01:32:18	Anon. Windows:	just removes input data?
+01:32:56	Anon. Array:	so some features are noise?
+01:33:21	Jacob Lee (TA):	^ ya, in the same way that a few dead pixels doesn't make an image interpretable
+01:33:24	Jacob Lee (TA):	uninterpretable*
+01:34:08	Anon. Boolean:	Does momentum count as a learning rate scheduler?
+01:34:17	Reshmi Ghosh (TA):	That’s the clue people, you may experiment with cosineannealingLR if you would like
+01:34:39	Kushal Saharan (TA):	Umm, momentum is part of the optimization algorithm and not really learning rate scheduler
+01:35:54	Reshmi Ghosh (TA):	Momentum is a different concept, it will be covered in class, but something good to know about for p2
+01:36:01	Anon. Boolean:	But if you use an adaptive learning method is it still helpful to introduce a learning rate scheduler?
+01:36:55	Jacob Lee (TA):	yes
+01:39:29	Anon. Boolean:	Is it the case that the learning rate scheduler is responsible for initialize the learning rate at the beginning of every epoch while adaptive optimization like momentum adjust the learning rate using past data points during each epoch?
+01:40:35	Jacob Lee (TA):	👏🏻👏🏻👏🏻👏🏻👏🏻🍾🎉👍🏻👌🏻
+01:40:46	Anon. Array:	👏🏻👏🏻
+01:41:44	Reshmi Ghosh (TA):	Thank you Jacob for your undivided support
+01:41:59	Jacob Lee (TA):	😎
+01:42:16	Anon. Boolean:	Thank you
+01:43:17	Anon. ResNet50:	👏🏻
