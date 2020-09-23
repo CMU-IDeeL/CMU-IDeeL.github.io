@@ -51,7 +51,12 @@
         <h4>Here is a list of project resources.</h4>
         <br>
         <h3>Last Semester's Projects</h3>
-        <h4><a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPyyQzmID534-R1CnGJs0Ls-">All Projects Youtube Playlist</a></h4>
+        <h4>All Projects</h4>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPyyQzmID534-R1CnGJs0Ls-">Youtube Playlist</a>
+            </li>
+        </ul>
         <h4>Top 25 Projects</h4>
         <ul>
             <li><a href="https://youtu.be/wilLwo8ES5g">HowDareU</a></li>
@@ -80,9 +85,9 @@
             <li><a href="https://youtu.be/CezK-SCXwsg">ShallowLearning</a></li>
             <li><a href="https://youtu.be/OgfpWw3aB18">IDLI</a></li>
         </ul>
-        <br>
         <h3>TA Ideas</h3>
-        <div id="ideas">
+        <div id="ideas" style="margin-bottom: 60px;">
+            Loading...
         </div>
 
         <script type='text/javascript'>
@@ -95,7 +100,8 @@
             }
 
             function showInfo(data, tabletop) {
-              console.log(data);
+
+              document.querySelector("#ideas").innerHTML = "";
               for (i in data) {
                 // select
                 var t = document.querySelector('#mytemplate');
