@@ -1,0 +1,78 @@
+00:19:56	Reshmi Ghosh (TA):	Post your brilliant questions here folks!:)
+00:22:36	Anon. Retinal Ganglion:	:(
+00:23:49	Reshmi Ghosh (TA):	Don’t worry this was just for fun
+00:24:13	Reshmi Ghosh (TA):	But I would pay more attention to hidden slides for the upcoming quiz, that’s your hint
+00:28:29	Anon. Gh0stR1d3r:	Did we start on slide 18?
+00:28:39	Anon. Hessian:	Hi, I got a Failed to submit pool error
+00:28:39	Reshmi Ghosh (TA):	There were hidden slides
+00:29:35	Reshmi Ghosh (TA):	@pinxu:It might be the case that you answered right when the poll closed
+00:29:44	Reshmi Ghosh (TA):	If this repeats let us know
+00:30:27	Anon. Gh0stR1d3r:	Hmm hopefully finding the number of slides isn’t too hard; I’ve been there since 8
+00:30:46	Anon. Sanger’s Rule:	Sorry I am confused with the last option:Don't we in practice run a batch through the network, and then compute and propagate the loss of that batch?
+00:31:41	Anon. Decoder:	How do you make sure that the effect of the adjustment at one training point is local?
+00:39:37	Anon. Depolarization:	Is it random without replacement?
+00:39:47	Anon. Instance:	can't we divide the data into small groups?
+00:40:20	bgaind@andrew.cmu.edu (TA):	@Jon:Yes. In a single epoch, each instance is used only once in SGD.
+00:40:29	Anon. Depolarization:	I see that now on the slide, thanks
+00:40:35	Reshmi Ghosh (TA):	Yeo without replacement
+00:40:45	Anon. Retinal Ganglion:	When you pushing the left part downward, why the right part goes upward? I thought the right part would remain the same
+00:41:03	bgaind@andrew.cmu.edu (TA):	@Vidhi:We do that in Batch Gradient descent, which is different from Gradient Descent (all examples) and SGD (one example).
+00:42:21	bgaind@andrew.cmu.edu (TA):	@Daniel:I think that is just for illustration and not to taken too literally. The idea is to compare the relative effect on the handkerchief in case of using a single example vs all examples.
+00:42:32	Anon. Mask-RCNN:	adv divergence over training set
+00:42:41	Anon. Dropout (for NNs):	sum of divergence over the the whole set
+00:44:28	Anon. Decoder:	average
+00:46:10	Anon. Decoder:	Average of blue arrows
+00:46:12	Anon. Dropout (for NNs):	average of all the blue arrows
+00:49:01	Anon. Boltzmann:	Doesn’t that also depend on the function?
+00:50:36	bgaind@andrew.cmu.edu (TA):	Can you tell what you mean by "that"?
+00:51:04	Anon. ResNet18:	add a tolerance?
+00:51:20	Anon. Deep Blue:	plateau on error
+00:52:03	Reshmi Ghosh (TA):	@Anurag:What were you referring to when you said “that”? Sorry we missed it
+00:54:10	Anon. Fast-RCNN:	Will applying Nesterov accelerated gradient make SGD harder to converge?
+00:54:40	Anon. YOLO:	C
+00:54:47	Anon. Git:	c
+00:55:34	Anon. Residual:	eta less than 1?
+00:58:57	Anon. Activation Function:	how could loss be infinite?
+01:00:58	Anon. Egg Salad:	1/n
+01:01:14	Anon. Linear Algebra:	harmonic
+01:01:17	Anon. DFS:	1 + 1/2 + 1/3 + … vs 1 + 1/4 + 1/9 + ...
+01:05:32	Anon. Decoder:	Why would SGD arrive at poorer minima?
+01:06:06	bgaind@andrew.cmu.edu (TA):	Because the ideal (the most accurate) update would have been to use all the examples.
+01:06:09	Anon. Instance:	what do you mean by online version?
+01:06:48	bgaind@andrew.cmu.edu (TA):	Instead you just chose one out of thousands of training examples, because you were worried about speed. So, the minima might suffer.
+01:07:10	Anon. Gh0stR1d3r:	@vidhi I think it means you update as you go?
+01:08:23	Anon. Transformer:	Var (xi) /N
+01:10:36	Anon. Decoder:	So even with sufficient number of epochs SGD would perform poorer than batch updates?
+01:13:21	Anon. Baseline:	no
+01:13:30	Anon. Git:	no
+01:13:53	Anon. Supervised:	\
+01:15:21	Anon. Mask-RCNN:	get more samples
+01:17:57	Anon. Retinal Ganglion:	mini batch:)
+01:21:07	Anon. Egg Salad:	Factor of b instead of n
+01:24:09	Anon. Decoder:	What happens in the long run?
+01:24:51	Anon. Decoder:	Would SGD loss gradually drops to the same level as the other two updates?
+01:25:11	Anon. Spiking NN:	Is there a way to determine b
+01:28:37	Reshmi Ghosh (TA):	Poll folks
+01:30:03	Anon. Hessian:	Hi, I met a Failed to submit poll, error 5003
+01:30:14	Reshmi Ghosh (TA):	Oh dear lord
+01:30:24	Reshmi Ghosh (TA):	I will see what is the issue after the lecture
+01:30:32	Reshmi Ghosh (TA):	Thank you for letting us know
+01:30:35	Anon. Hessian:	Thank you!
+01:30:49	bgaind@andrew.cmu.edu (TA):	Maybe you submitted it right when we closed it.
+01:31:03	Reshmi Ghosh (TA):	Ya. I really think that is the issue
+01:31:16	Reshmi Ghosh (TA):	We usually keep polls open for ~50-60 seconds
+01:31:33	Anon. Hessian:	I submit quit early though
+01:31:38	Reshmi Ghosh (TA):	Oh!
+01:31:39	Anon. Actor-Critic:	I encountered the same issue.
+01:32:15	Anon. Sanger’s Rule:	it might be a random server issue for zoom 5003 error? https://fixingport.com/fix-zoom-error-code-5003
+01:32:16	Reshmi Ghosh (TA):	@haoxuanz we will look into it
+01:32:25	Anon. Actor-Critic:	Thanks！
+01:35:14	Anon. ASGD:	no
+01:35:16	Anon. Egg Salad:	no but the second has larger variance
+01:35:23	Anon. Dropout (for NNs):	no
+01:35:47	Anon. Baseline:	no
+01:46:46	Anon. Egg Salad:	Why is adadelta so good
+01:47:04	Anon. ResNet18:	^
+01:47:51	bgaind@andrew.cmu.edu (TA):	Please ask all remaining questions on Piazza
+01:47:53	Reshmi Ghosh (TA):	I am gonna post this question on Piazza, as we have already exceeded 9:20.
+01:48:40	Reshmi Ghosh (TA):	Yep go ahead and post, I have started the thread already.
