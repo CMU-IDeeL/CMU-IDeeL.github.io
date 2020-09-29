@@ -1,0 +1,48 @@
+00:13:06	Anon. EC2:	yash nishant
+00:13:25	Anon. EC2:	sorry about that:p
+00:15:51	Reshmi Ghosh (TA):	Oh no! Caught!!
+00:21:46	Anon. Cable Theory:	yes
+00:21:49	Anon. ReLU:	yes
+00:22:14	Anon. Layer:	y
+00:22:16	Anon. ReLU:	yi?
+00:24:47	Anon. Sparse Coding:	No
+00:28:35	Reshmi Ghosh (TA):	10 seconds
+00:33:21	Anon. Tensor:	Why do we need to shift the mean back away from zero?
+00:39:10	Reshmi Ghosh (TA):	10 seconds
+00:50:51	Anon. Sequence:	yes
+00:53:28	Anon. Sequence:	3?
+00:53:49	Anon. Sequence:	direct/through mean/through variance
+00:57:09	Anon. PaddedSequence:	1
+00:58:04	Anon. TensorFlow:	only to eliminate ??. Didn't catch that
+00:58:10	Anon. TensorFlow:	For epsilon*
+00:58:17	Anon. ASGD:	underflow
+00:58:27	Anon. TensorFlow:	Thanks Pranav
+00:59:03	Reshmi Ghosh (TA):	10 seconds
+01:00:16	Anon. Sequence:	1
+01:00:23	Anon. PaddedSequence:	1/b
+01:02:59	Anon. PaddedSequence:	2
+01:04:34	Anon. Sequence:	2zi * 1/b
+01:05:24	Anon. Sequence:	B times it
+01:05:59	Anon. Args:	0
+01:10:05	Anon. Cable Theory:	0
+01:10:09	Anon. Kernel:	0
+01:12:12	Anon. AlphaGo:	So this will cause gradient vanish right?
+01:12:58	Reshmi Ghosh (TA):	What is “this”?
+01:13:15	Anon. AlphaGo:	If the variation in the mini batch is very small
+01:14:27	Reshmi Ghosh (TA):	10 seconds
+01:21:12	Anon. ASGD:	Is there a difference in performance if we do batch norm->activation vs activation->batch norm?
+01:21:35	Anon. Git:	Yes,
+01:22:20	Reshmi Ghosh (TA):	Batchnorm appears after activation
+01:22:26	Anon. Git:	Original paper used batch-norm->activation but a later study found the latter results in better performance
+01:22:41	Reshmi Ghosh (TA):	^
+01:22:45	Anon. ASGD:	Thanks!
+01:31:25	Anon. Nonlinear Transform:	So deeper models tend to be smoother, and wider models tend to be not as smooth?
+01:32:25	Anon. YOLOv5:	^ does it mean deeper models will not easily overfit? But I guess in reality it’s the opposite right?
+01:32:40	Anon. Nonlinear Transform:	Yea I also want to clarify that ^
+01:33:07	Anon. Git:	Remember we are talking about a deep model and a shallow layer with the same number of parameters
+01:33:32	Anon. YOLOv5:	! Yeah that make sense
+01:33:34	Anon. YOLOv5:	Thanks!
+01:33:37	Anon. Nonlinear Transform:	Cool!
+01:33:51	Anon. Nonlinear Transform:	Why is that the deeper model tends to be smoother?
+01:34:01	Anon. NLLLoss:	what are the topics for the extra lecture?
+01:34:01	Anon. Nonlinear Transform:	Compared to say a wider layer
