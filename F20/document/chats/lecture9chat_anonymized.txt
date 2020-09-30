@@ -1,0 +1,46 @@
+08:01:12	 Anon. Autolab:	yes
+08:01:13	 Anon. Scheduler:	yes
+08:02:15	 Anon. Activation:	no
+08:02:16	 Anon. Autolab:	no
+08:07:17	 Anon. Visual Cortex:	train and run the network on smaller windows
+08:08:32	 Anon. Python:	another network
+08:11:36	 Anon. YOLOv7:	Using scanning, would the number of slices we are breaking a stream into be a hyperparameter to tune?
+08:12:32	 Anon. Python:	2d scan
+08:12:45	 Mansi Anand (TA):	Yeah it would depend on the filter (window) size.
+08:14:18	 Anon. Weight Decay:	they're all the same
+08:14:24	 Anon. Python:	some pieces are identicl
+08:14:24	 Anon. Scottie:	identical
+08:18:24	 Mansi Anand (TA):	10 more seconds
+08:18:40	 Anon. Autolab:	what do we mean by "strictly the same"?
+08:18:54	 Anon. Weight Init:	Could u explain the rotating part again?
+08:19:06	 Anon. Autolab:	ah ok
+08:20:08	 Anon. ReLU:	No
+08:20:33	 Anon. Linear Programming:	what's the purpose of rotation again?
+08:20:49	 Anon. Soma:	its just to make not confused with time
+08:21:20	 Anon. Soma:	All the nodes are happening at the same time a layer
+08:21:31	 Anon. Weight Init:	Gotcha thx!
+08:28:03	 Anon. Scottie:	Here w_s represents the weight on the repeated edges?
+08:29:06	 Mansi Anand (TA):	yes
+08:30:24	 Anon. Python:	so the group of frames in an image would represent the equivalent of a batch?
+08:31:30	 Anon. Scottie:	I assume that they would be fed to the network at the same time, so probably not batches
+08:32:48	 Anon. Python:	yes
+08:36:29	 Anon. GAN:	how do you interpret the result Fromsoftmax again?
+08:37:17	 Anon. Soma:	soft max will give you a probability likelihood that can be thresholded
+08:37:31	 Anon. Soma:	its our boolean OR
+08:38:00	 Anon. GAN:	yes... I think
+08:38:17	 Anon. Soma:	my soft max is wrong I was thinking of sigmoid
+08:39:49	 Anon. Scottie:	No
+08:40:00	 Anon. Soma:	online it says that softmax is like argmax
+08:40:49	 Mansi Anand (TA):	imagine it like a one hot vector
+08:41:42	 Anon. Scottie:	What is L?
+08:41:47	 Anon. Soma:	layers
+08:46:29	 Anon. GAN:	I have a follow-up question on softmax:since the same network is run over the entire input (e.g. image), it should detect the presence of a pattern (e.g. flower) in and only in parts of the input where the pattern is present. But the final loss function is only going to check if the network detected the presence of a pattern SOMEWHERE in the input, it doesn't check if the network detected the presence in the right parts of the input, because you reduce the results Fromthe MLP with (soft)max. Is this a problem at all?
+08:47:10	 Anon. Scottie:	How would you store the map for each neuron?
+08:49:06	 Anon. Scheduler:	you do not care where the flower is detected, just if there is one anywhere in the image
+08:49:07	 Mansi Anand (TA):	@Satoru the problem we are trying to find is whether we have a flower or not somewhere. if you would try to fix the flower position then it would not be breakable into pieces and can be matched as a whole
+09:03:17	 Anon. Scottie:	So all edges of the same color share the same weight?
+09:08:07	 Mansi Anand (TA):	1 color represents 1 scan here
+09:09:29	 Mansi Anand (TA):	colors indicate shared parameters. ignore the earlier comment
+09:16:24	 Mansi Anand (TA):	10 more secs
+09:21:07	 Anon. Python:	they will not be different
+09:21:20	 Anon. ReLU:	the same
