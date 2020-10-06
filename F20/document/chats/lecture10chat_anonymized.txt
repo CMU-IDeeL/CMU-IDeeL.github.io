@@ -1,0 +1,43 @@
+00:16:11	Anon. Capacitance:	yes
+00:17:14	Anon. VC Dimension:	Object detection
+00:17:29	Anon. Transformer:	spatial invariance
+00:19:10	Anon. Kalman Filter:	distribution
+00:20:22	Anon. ResNet50:	shared parameters
+00:20:24	Anon. pdb.set_trace():	It shared weights
+00:22:59	Anon. pdb.set_trace():	Is this similar to the idea of YOLO object detection architecture
+00:24:17	Anti (TA):	YOLO is a CNN, if that is what you are asking
+00:25:07	Anon. pdb.set_trace():	I am wondering about the architecture of the YOLO CNN
+00:25:12	Anon. Transformer:	Are all SSDs CNN based?
+00:27:01	Mansi Anand (TA):	YOLO CNNs are much more deeper networks. The idea behind is CNN itself. https://medium.com/@ODSC/overview-of-the-yolo-object-detection-algorithm-7b52a745d3e0#:~:text=YOLO%20is%20a%20clever%20convolutional,and%20probabilities%20for%20each%20region.
+00:27:19	Anon. pdb.set_trace():	Thank you!
+00:27:38	Mansi Anand (TA):	@Sai what exactly are you referring to SSDs here?
+00:27:58	Anon. Transformer:	Single shot detector networks
+00:28:04	Anti (TA):	the vast majority of those used in practice are cnns
+00:28:39	Anon. Transformer:	Cool,thanks!
+00:29:07	Mansi Anand (TA):	Similar to YOLO, again it is CNN based deeper architecture. https://arxiv.org/pdf/1512.02325.pdf
+00:32:35	Anon. RCNN:	the subnets share the parameters
+00:40:46	Anon. pdb.set_trace():	Thats with a stride of 1 right?
+00:48:29	Anti (TA):	I missed the specifics of that example; if we are moving one pixel at a time (regardless of image patch size), the stride is 1
+00:50:26	Anon. PCA:	Cable News Network hmmm
+00:52:32	Anon. Matrix:	the video of these experiments are on youtube, for anyone interested
+00:54:45	Anon. Transformer:	No
+01:04:56	Mansi Anand (TA):	10 more secs
+01:06:23	Anon. pdb.set_trace():	No
+01:06:25	Anon. is_available():	no
+01:06:55	Anon. is_available():	what about the Pokemon neuron? pretty sure that's a thing
+01:07:10	Anon. SGD:	I think it is the same funda
+01:12:55	Anon. Sum-Product:	distributed scanning
+01:17:25	Anon. VC Dimension:	Why all of the s cells in the first layer focus on the same region?
+01:18:12	Anon. SVM:	fires together => wires together
+01:18:13	Anon. Dot Product:	I don’t see a pattern of sharing parameters in this structure, am I understanding correctly?
+01:19:48	Anon. SVM:	it wouldn’t learn?
+01:23:46	Mansi Anand (TA):	10 more secs
+01:24:12	Anon. Validate:	does this mean that each object has its own C-cell?
+01:25:21	Anon. SVM:	infer from context what it should be
+01:33:37	Anon. VC Dimension:	How does the model manage to learn anything without supervision?
+01:34:29	Anon. grad_fn:	Not a TA, but I was thinking about that too. I think these outputs could be inputs to another part of the brain.
+01:35:52	Anon. grad_fn:	That other part may be a decision layer.
+01:36:18	Anon. SVM:	So the more the eyes see something, the better it recognizes it?
+01:36:21	Anon. Dot Product:	Does Fukushima consider the process from visual neurons connecting to brain cells? We conveniently added a decision layer to make the model learnable, but in actual human brain it doesn’t work this way right?
+01:38:27	Anon. Dot Product:	Ok
+01:38:33	Anon. VC Dimension:	Thank you
