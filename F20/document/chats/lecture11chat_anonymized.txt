@@ -1,0 +1,158 @@
+00:16:23	Reshmi Ghosh (TA):	Side note:Just a reminder if anyone hasn’t done the hw2p2 sample submission on Kaggle yet, please do it soon as the early deadline is tonight 11:59pm
+00:22:08	Anon. Softmax:	So the “stride” refers to the step size of shifting the filter/mask?
+00:22:21	Reshmi Ghosh (TA):	yes
+00:23:00	Anon. Softmax:	And the value of stride directly determines the shape of convolved features?
+00:23:02	Reshmi Ghosh (TA):	By the way just a quick terminology it is also called as kernel
+00:23:27	Anon. Actor-Critic:	What is kernel?
+00:23:38	Reshmi Ghosh (TA):	The filter itself
+00:23:38	Anon. MiniMax:	The filter
+00:23:44	Anon. Actor-Critic:	Thx!
+00:23:51	Reshmi Ghosh (TA):	Yiwei yes, the stride impacts output size
+00:24:30	Reshmi Ghosh (TA):	There is an output size formula that should be covered / has been covered. The output size is based on the width/heigh of the image, the padding size, and the stride
+00:24:34	Anon. YOLOv2:	seems I have mic issues today. I wanted to find out the advantages of striding at a width of 2+. Besides reducing the number of neurons per layer as we increase in depth, is there any other advantage?
+00:24:44	Reshmi Ghosh (TA):	I will ask it for yoy
+00:24:48	Reshmi Ghosh (TA):	Don’t worry
+00:24:54	Anon. YOLOv2:	Thank you Reshmi
+00:25:07	Reshmi Ghosh (TA):	But an high level overview, it depends on the task
+00:25:14	Reshmi Ghosh (TA):	The stride is an hyperparameter
+00:25:49	Anon. Softmax:	@Reshmi Thank you. What is the padding size?
+00:27:16	Anon. YOLOv2:	Got it.
+00:27:22	Reshmi Ghosh (TA):	Padding is included when the filter needs to move by a stride > 1 and the input dimensions are limited, because of which the filter will move beyond the input size
+00:27:23	Anon. Neurotransmitter:	why the index start from 1 instead of 0?
+00:27:51	Anon. Connectionist:	just convention, you can think it as 0
+00:28:02	Reshmi Ghosh (TA):	Yes Eason is right
+00:28:05	Anon. Neurotransmitter:	thanks
+00:28:38	Anon. GRU:	so each layer will only output 1 map?
+00:28:56	Reshmi Ghosh (TA):	Depends on channels
+00:29:04	Reshmi Ghosh (TA):	Input channels**
+00:29:31	Reshmi Ghosh (TA):	And also the kernel channels
+00:29:43	Reshmi Ghosh (TA):	Did you understand the concept of channels?
+00:30:08	Reshmi Ghosh (TA):	Folks this is the output formula I was talking about
+00:32:56	Anon. Connectionist:	what happens if N-M /S is not an integer
+00:33:06	Anon. D33p_M1nd:	you force it to be
+00:33:24	Anon. D33p_M1nd:	ignore the remainder
+00:33:37	Anon. Connectionist:	so 2.5 -> 2, 1.5 -> 1 right?
+00:33:42	Anon. D33p_M1nd:	yes
+00:33:46	Anon. Connectionist:	cool
+00:35:41	Anon. YOLOv5:	Why are we using odd filter size ? I have only seen 3, 5, ...
+00:36:47	Reshmi Ghosh (TA):	It can be anything actually
+00:37:02	Anon. Softmax:	Would we lose some of the inputs if the stride is > 1 and the filter is forced to stay within edges in some cases?
+00:37:21	Anon. Actor-Critic:	Where is padding used again? Here we’re doing pooling means we want to make the size of the matrix smaller right? Why’d we want to pad things?
+00:37:35	Reshmi Ghosh (TA):	It depends on the task, if you use a stride greater than 1 for small images, then yes, but for large sized images no
+00:37:44	Anon. YOLOv2:	padding could
+00:37:48	Reshmi Ghosh (TA):	Think of some pixels in an image which do not have any information
+00:37:54	Reshmi Ghosh (TA):	They are just noise
+00:37:56	Reshmi Ghosh (TA):	Can be ignored
+00:38:15	Reshmi Ghosh (TA):	Pooling is a separate layer
+00:38:41	Reshmi Ghosh (TA):	In the convolution layer you do padding @Qiyun
+00:39:04	Anon. Actor-Critic:	Icic thx!
+00:39:52	Anon. Softmax:	By downsampling do we mean the  # of convolved features < # of inputs?
+00:39:54	Anon. VC Dimension:	why is this ceiling?
+00:40:02	Anon. Variance:	avg
+00:40:05	Anon. GRU:	min?
+00:40:08	Anon. Weight Decay:	mean
+00:40:37	Reshmi Ghosh (TA):	Number of convolved features (output size) can anyways be smaller than input
+00:40:57	Reshmi Ghosh (TA):	Max pooling is further reducing these “parameters”
+00:41:03	Anon. Connectionist:	what is the puprpose of doing pooling? Just for saving computation?
+00:41:29	Reshmi Ghosh (TA):	Yep reducing complexity
+00:41:32	Anon. Softmax:	So we usually use zero padding to make the number of convolved features = number of inputs and then do the pooling to reduce dimension?
+00:41:54	Reshmi Ghosh (TA):	Uhh no
+00:42:08	Reshmi Ghosh (TA):	Suppose you have a input of size 6X6
+00:42:20	Reshmi Ghosh (TA):	And filter size of 2x2
+00:42:44	Reshmi Ghosh (TA):	And you are moving the filter with stride = 3
+00:42:49	Reshmi Ghosh (TA):	What will happen?
+00:42:51	Anon. Pooling:	doesn't pooling lead to loss of information, or there is a hyperparameter that controls how much downsampling the pooling layer does?
+00:42:56	Anon. YOLOv2:	nice!
+00:43:32	Anon. GRU:	so when we do this we are basically making a filter that does max pooling?
+00:43:55	Anon. GRU:	if we don't use explicit down layers
+00:44:12	Reshmi Ghosh (TA):	Pooling is a separate layer
+00:44:16	Anon. Softmax:	Is pooling layer just an alias for downsampling layer?
+00:44:21	Reshmi Ghosh (TA):	That is added after convD layer
+00:44:42	Reshmi Ghosh (TA):	Ya pooling is a downsampling technique
+00:46:58	Reshmi Ghosh (TA):	Please raise hands
+00:50:23	Anon. GRU:	Relu
+00:50:23	Anon. YOLOv2:	That's like scaling right?
+00:50:25	Anon. Fourier Transform:	full mlp?
+00:50:26	Anon. Scheduler:	linear
+00:51:08	Anon. Softmax:	Dense linear layer?
+00:52:27	Reshmi Ghosh (TA):	10 seconds
+00:52:45	Anon. Softmax:	Does the context in HW1P2 count as a kind of distributed scanning?
+00:52:56	Reshmi Ghosh (TA):	You mean hw2p2?
+00:54:12	Anon. Softmax:	No, I mean the frames you added to both sides for HW1P2
+00:54:34	Reshmi Ghosh (TA):	no
+00:54:38	Reshmi Ghosh (TA):	Context was different
+00:55:03	Reshmi Ghosh (TA):	Distributed scanning related more to how you share parameters
+00:55:15	Anon. Connectionist:	is it possible that the depth of filter is not 3?
+00:55:28	Anon. Softmax:	I see
+00:55:32	Anon. Dendrite:	why do we need K_1 filters?
+00:55:46	Reshmi Ghosh (TA):	Number of filters is dependent on task
+00:55:54	Reshmi Ghosh (TA):	It can be 1, 2, 4, 5 anything
+00:56:56	Anon. Dendrite:	I think in the past we just had a single filter which weights were all 1 that scanned the input rather than K_1 right.
+00:57:36	Reshmi Ghosh (TA):	That would be just an example
+00:58:53	Anon. Actor-Critic:	One filter filters the whole image right?
+00:59:36	Reshmi Ghosh (TA):	One filter “convolves “/ scans around the entire image yes.
+00:59:38	Anon. Softmax:	Do we have something equivalent to a pooling layer in distributed scanning MLP?
+01:00:32	Reshmi Ghosh (TA):	But inputs also have channels remember (RGB channel = 3 channels?))
+01:00:39	Anon. MiniMax:	So is the number of channels the number of outputs of that particular layer?
+01:00:41	Anon. Dendrite:	ooh I get it now thanks
+01:00:42	Reshmi Ghosh (TA):	It is okay to be confused about all these
+01:00:45	Reshmi Ghosh (TA):	Keep asking questions
+01:00:57	Reshmi Ghosh (TA):	I will try my best to answer and also poke bhiksha
+01:01:23	Reshmi Ghosh (TA):	@vaidehi, number of filter channels == number of output channe;s
+01:01:34	Anon. MiniMax:	Cool, thanks!
+01:03:20	Anon. Visual Cortex:	Slightly unrelated - are we supposed to put an activation after a convolution?
+01:03:38	Anon. Connectionist:	yes
+01:03:41	Reshmi Ghosh (TA):	yes
+01:03:47	Anon. Visual Cortex:	thanks
+01:04:37	Anon. Softmax:	So the model should look like Convolution -> Activation -> Max Pooling?
+01:04:57	Reshmi Ghosh (TA):	Pooling is a choice
+01:05:04	Reshmi Ghosh (TA):	You may or may not implement
+01:05:13	Anon. Softmax:	Thank you
+01:05:25	Anon. Visual Cortex:	300
+01:05:31	Anon. Visual Cortex:	oops
+01:06:19	Anon. Softmax:	3?
+01:07:34	Anon. Softmax:	But isn’t it the case that we can also write the filter in this “cubic” shape?
+01:08:22	Anon. Connectionist:	cannot understand we need at least 3
+01:08:31	Anon. Connectionist:	the filter is a cube right?
+01:08:35	Anon. D33p_M1nd:	to keep same number of points
+01:09:16	Reshmi Ghosh (TA):	Eason, each filter is 2d because image is 2d
+01:09:27	Reshmi Ghosh (TA):	Stacked over each other, it is a cube
+01:09:31	Reshmi Ghosh (TA):	Does it make sense?
+01:10:40	Anon. Actor-Critic:	I think the confusion originated from the slides where it says filter size LxLx3
+01:11:24	Anon. Softmax:	So even though each filter takes input from all of the R,G,B channels it only produces a single output?
+01:11:41	Reshmi Ghosh (TA):	noooo
+01:12:37	Anon. Epoch:	So there’s one LxL filter for each of RGB channels, so LxLx3?
+01:12:55	Reshmi Ghosh (TA):	Just think of in this example
+01:13:03	Reshmi Ghosh (TA):	RGB is three channel in input
+01:13:14	Reshmi Ghosh (TA):	And each filter 2D is scanning each channel
+01:14:02	Reshmi Ghosh (TA):	But number of filter channels can be greater than 3 as well
+01:14:05	Reshmi Ghosh (TA):	This is an example
+01:15:58	Reshmi Ghosh (TA):	https://towardsdatascience.com/a-beginners-guide-to-convolutional-neural-networks-cnns-14649dbddce8
+01:17:07	Anon. Actor-Critic:	Just to clarify, I believe in this example, one filter has size 100 x 100 x 3 (where 3 is the depth), one filter is scanning the whole pictures, and the *output* of one filter is 2d, and we can do downsampling afterwards, etc.
+01:17:31	Anon. Dendrite:	i don't see a poll?
+01:17:39	Reshmi Ghosh (TA):	10 seconds
+01:17:52	Anon. Dendrite:	hmmm
+01:18:00	Reshmi Ghosh (TA):	sorry
+01:18:08	Reshmi Ghosh (TA):	Bhiksha has questions on one note
+01:18:11	Anon. Dendrite:	I think the poll didn't appear for me
+01:18:22	Reshmi Ghosh (TA):	But rn If I tell him to pull out the questions
+01:18:35	Reshmi Ghosh (TA):	He might get more frustrated
+01:18:42	Anon. GRU:	th poll also did not appear for me
+01:18:47	Reshmi Ghosh (TA):	We will share the poll questions later on
+01:18:56	Anon. Dendrite:	Like the zoom poll not the questions
+01:19:04	Anon. YOLOv2:	thanks Reshmi.
+01:19:49	Reshmi Ghosh (TA):	I know
+01:19:54	Reshmi Ghosh (TA):	Zoom is weird
+01:20:03	Reshmi Ghosh (TA):	But we also show questions in the background
+01:20:10	Anon. Dendrite:	what should I do for attendance
+01:20:14	Reshmi Ghosh (TA):	Which is One note:P
+01:20:21	Anon. Dropout:	just to be clear, does pooling cause a loss of information?
+01:20:21	Reshmi Ghosh (TA):	You have answered one of the polls right?
+01:20:32	Anon. Dendrite:	right, the first one
+01:20:34	Anon. Leakage:	pad
+01:20:35	Anon. Pooling:	pad
+01:21:27	Anon. Leakage:	oh ok
+01:21:30	Anon. GRU:	can we use the same filter multiple times to downscale later? or would there be no point
+01:21:48	Anon. Pooling:	16
+01:38:34	Reshmi Ghosh (TA):	10 seconds
+01:39:29	Anon. Actor-Critic:	Thank you!
