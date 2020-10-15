@@ -1,0 +1,16 @@
+00:27:31	Jacob Lee (TA):	get ready for a poll!
+00:46:16	Anon. Matrix:	conv
+00:46:33	Anon. Dot Product:	Is the flip of the filter due to the parallel to the  traditional convolution operation?
+00:51:57	Anon. Derivative:	Does the (x-x' y-y') generalization hold for stride greater than 1?
+00:56:09	Jacob Lee (TA):	30s
+00:57:40	Anon. print(‘Hello world!’):	I did not see the poll
+00:57:59	Jacob Lee (TA):	Hm try leaving and rejoining
+00:58:26	Anon. print(‘Hello world!’):	okay
+01:01:46	Anon. CasCor:	Sorry I missed this part, but why did we mention padding in the forward pass just now?
+01:02:21	Anon. Boltzmann:	So that the output can maintain the same shape
+01:03:23	Anon. CasCor:	Thanks Mitch!
+01:11:43	Jacob Lee (TA):	Get ready
+01:13:15	Jacob Lee (TA):	:'(
+01:19:21	Anon. MLP:	there will be overlap
+01:19:31	Jacob Lee (TA):	👏🏻👏🏻
+01:22:03	Jacob Lee (TA):	👏🏻👏🏻👏🏻
