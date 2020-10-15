@@ -1,0 +1,42 @@
+00:12:43	Anon. PyTorch:	:-)
+00:12:51	Reshmi Ghosh (TA):	Good one!
+00:32:53	Bhiksha (Prof):	I disagree.  We do learn to pretend we know everything!
+00:34:34	Bhiksha (Prof):	Why you need pools -- if you recall the double pentagon problem -- if you had only 10 neurons in the first layer, you would almost never learn the pattern. So you need many more neurons so that, quite randomly, some 10 of them will learn the 10 required double-pentagon boundaries
+00:37:14	Anon. PyTorch:	One of the resources to play around with decision boundaries is tensorflow playground. You can create your DNN just through a web interface and see the decision boundary learnt, its fun(Personal Opinion)!
+00:39:41	Bhiksha (Prof):	The double spiral is a fun little problem and I recommend to everyone that they actually to learn it.
+00:40:41	Bhiksha (Prof):	It is small enough that you can run hundreds of complete experiments an hour on your laptop and inspect what you learned.
+00:40:52	Anon. Quadratic:	What does the grey region represent?
+00:41:30	Bhiksha (Prof):	There you are.
+00:50:33	Bhiksha (Prof):	if this is unclear, please ask
+00:50:44	Anon. Git:	yes
+00:54:32	Bhiksha (Prof):	wonder how an LSTM would work here
+00:58:14	Anon. Deep Learner:	How would you guarantee the newly added neurons are learning in the right direction? How would you distinguish between a useful progress from a useless one?
+00:59:46	Bhiksha (Prof):	you choose the neuron that correlates well with the residual error, so it can predict it, which would maximize its ability to correct for it -- in expectation.
+01:00:02	Bhiksha (Prof):	(Keep in mind that "in expectation" doesn't mean "always")
+01:01:48	Anon. Kalman Filter:	Does this also follow the current training modality..like train-validate and train again? Because the correlation with residual error is based upon training data and might overfit?
+01:02:33	Anon. Kalman Filter:	^so incase the evaluation error is not in correlation with the training error we revert back
+01:03:04	Bhiksha (Prof):	Your structure is always minimal, so the number of parameters remains small
+01:03:15	Bhiksha (Prof):	this minimizes the likelihood of overfit
+01:03:27	Bhiksha (Prof):	it can happen anyway, which is why you use pools and select from the pool
+01:04:48	Anon. Tensor:	Why doesn’t the network forget how to identify E and T if it hasn’t seen them in training for a while?
+01:05:04	Anon. Git:	the frozen weights?
+01:05:27	Anon. Tensor:	makes sense, thanks
+01:05:31	Bhiksha (Prof):	final finetuning after building the structure
+01:15:07	Bhiksha (Prof):	Please ask your questions.  We have some time
+01:15:10	Anon. Deep Learner:	Professor, how would this idea of cascading correlation apply or relate to or different from the field of explainable AI? Or in the field of transfer learning?
+01:16:49	Bhiksha (Prof):	waiting for him to complete, to ask
+01:17:14	Bhiksha (Prof):	ALso, this is a hugely open research area with lots of potentially high-impact papers possible.
+01:25:35	Anon. Deep Learner:	Cool, thank you!
+01:26:54	Bhiksha (Prof):	👍
+01:27:18	Anon. Git:	Thank you!
+01:27:30	Anon. All-or-nothing:	Thank you!
+01:27:47	Anon. Noise:	Thank you!
+01:27:48	Anon. Kernel:	Thank you!
+01:27:50	Anon. Sample:	Thank you!
+01:27:57	Anon. Thalamus:	Thank you!
+01:28:06	Anon. Decoder:	Thank you Professor!
+01:28:06	Anon. Whereami:	Thank you
+01:28:28	Anon. PackedSequence:	Thanks!
+01:28:31	Anon. NLLLoss:	Thank you!
+01:28:48	Anon. Fourier Transform:	Thank you
+01:28:50	Anon. Synapse:	Thank you!:-)
