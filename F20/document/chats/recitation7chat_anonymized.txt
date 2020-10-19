@@ -1,0 +1,12 @@
+00:32:56	Anon. Autolab:	yes
+00:33:12	Anon. Autolab:	I am sorry I got lost at the blanks, what is the purpose of the blank and how are we supposed to interpret it?
+00:34:16	Tony Qin (TA):	Take the word “beef”. We need to be able to separate the two ‘e’ or else they will be collapsed into a single ‘e’
+00:36:39	Anon. Autolab:	So the output becomes a blank-delimited?
+00:37:02	Tony Qin (TA):	The network must output a blank symbol in between repeated characters in the case of words like ‘beef’
+00:41:45	Anon. Autolab:	Is the main example for using CTC networks and having to need to handle for multiple x inputs corresponding to a single output an ASR system?
+00:43:18	Sean Pereira (TA):	CTC is primarily used to get hold of the most probable sequence for a sequence of inputs.
+00:44:04	Sean Pereira (TA):	Your input sequence could have been an image
+00:46:00	Anon. Autolab:	So does that mean CTC would also apply to a Neural Language Model that outputs a sequence of the next word/char given an input word/char?
+00:47:07	Sean Pereira (TA):	Yes but this only applies to alignment for sequence classification tasks
+01:10:01	Tony Qin (TA):	Ravneet, the problem is that in CTC, the number of outputs could be less than the number of inputs
+01:11:17	Tony Qin (TA):	We could have 100 time steps of Mel spectrograms. But we want out output to be B IY F IY, which is of length 4
