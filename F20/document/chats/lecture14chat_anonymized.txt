@@ -1,0 +1,96 @@
+00:10:23	Anon. Spiking NN:	😂
+00:10:46	Reshmi Ghosh (TA):	We need more than 1:20 to do justice to the class:P
+00:12:49	Reshmi Ghosh (TA):	Please lower your hands after you raise them
+00:12:54	Reshmi Ghosh (TA):	It shall pain:P
+00:14:40	Anon. Spiking NN:	reminds me of this:https://en.wikipedia.org/wiki/La_plume_de_ma_tante_(phrase)
+00:15:04	Reshmi Ghosh (TA):	haha
+00:15:52	Anon. Spiking NN:	bruh if u didn’t know when the bhudda was born this looks completely legit
+00:16:09	Anon. Indifferentiable:	^
+00:16:21	Reshmi Ghosh (TA):	Bruh, you gotta not believe anything AI generates:P
+00:21:20	Reshmi Ghosh (TA):	Post questions and respond on chat
+00:21:41	Anon. Directed Edge:	wait was the left figure fully connected  or no
+00:21:48	Anon. Directed Edge:	Ok it’s fully connected
+00:21:54	Reshmi Ghosh (TA):	Yes they are:))
+00:22:06	Anon. Spiking NN:	8am the morning after a homework was due is my guess as to attendance 🤔
+00:23:17	Anon. Eta:	recurrent
+00:23:22	Anon. Indifferentiable:	RNN
+00:23:29	Anon. Axon:	convolution
+00:23:37	Anon. YOLOv5:	Could a 1-d TDNN work?
+00:23:39	Anon. Spiking NN:	memory unit
+00:23:40	Anon. Directed Edge:	cnn
+00:23:40	Anon. VC Dimension:	CNN
+00:26:37	Anon. Indifferentiable:	lots of memory
+00:30:29	Reshmi Ghosh (TA):	10 seconds
+00:32:31	Anon. YOLOv5:	is this similar to transitioning between markov states?
+00:33:39	Anti (TA):	In markov states, an input does not affect the output for the rest of time
+00:35:56	Reshmi Ghosh (TA):	@nikhil what was your question?
+00:36:02	Reshmi Ghosh (TA):	I saw you had raised your hand
+00:36:50	Anon. YOLOv5:	Is there ever a point where we want outputs too far from current tilmestep to stop influencing our current output? To refer back to the example about stock prices, wouldn’t we not want thanksgiving to influence our prediction long after november?
+00:37:51	Akshat Gupta (TA):	Ideally we want the network to learn how far to refer to
+00:38:15	Reshmi Ghosh (TA):	Yep ^^
+00:38:38	Anti (TA):	@nikhil you may actually be right for for the first example, since we only look at the last output, an didn't yet have memory
+00:39:09	Reshmi Ghosh (TA):	Imagine a sentence, how do you want to train your model, so that it can predict the next word that comes after a part of the sentence
+00:42:59	Anon. Regularization:	Are these blocks identical to eachother?
+00:43:48	Reshmi Ghosh (TA):	10 seconds
+00:45:08	Anon. Center Loss:	What is the pros of the introduction of memory units?
+00:45:19	Anon. hello_world.py:	Hi, I failed to submit the poll due to system error?
+00:45:53	Reshmi Ghosh (TA):	Did you not see the poll?
+00:45:59	Reshmi Ghosh (TA):	It could be a zoom issue
+00:46:22	Anon. Loss Surface:	No I did not see poll as well
+00:46:32	Anon. hello_world.py:	I press the submit button, but it did not submit. And when times up there is a fail report
+00:46:35	Anti (TA):	@Feng-Guang Su this slide is about that question
+00:47:03	Reshmi Ghosh (TA):	Can you leave and join @junwei? If not it is okay. I am noting names, no worries there
+00:47:36	Reshmi Ghosh (TA):	@pinxu that is weird
+00:49:00	Anon. RCNN:	What is the motivation behind creating a separate hidden state of the network instead of directly recursing on the output?
+00:51:00	Anon. RCNN:	Thank you
+00:51:20	Anon. Boolean:	Is there a connection between RNNs and HMMs?
+00:51:54	Anon. Regularization:	the block diagrams definitely looks similar
+00:52:03	Anon. Regularization:	but the blocks here are NNs
+00:52:14	Anon. YOLOv5:	I think the difference is that the Markov property isn’t guaranteed
+00:52:41	Anon. Spiking NN:	there’s no markov property at all imo
+00:53:47	Anon. Cable Theory:	is the first hidden state learned or fixed before training?
+00:54:07	Anon. Regularization:	I think he said fixed
+00:54:18	Akshat Gupta (TA):	It is learnt
+00:54:27	Anon. Regularization:	we know the initial state, the weights of influence can be learned
+00:55:42	Anon. Gabor transforms:	what would h-2 be for the timestep 1 in that prior example?
+00:56:30	Akshat Gupta (TA):	We have to start with an initialized hidden state t = -2
+00:57:04	Akshat Gupta (TA):	Along with a hidden state at t = -1
+00:58:02	Anon. RCNN:	So essentially we have two recurrences:one along the time axis and one independent of time?
+00:59:25	Reshmi Ghosh (TA):	When we talk about recurrence we are talking about time. The layers of the network still exist.
+01:01:45	Anon. Matrix:	what does the subscript i represent?
+01:02:29	Anon. Encoder:	+1
+01:02:35	Anon. RCNN:	Which term represents the self-loop/recurrent weights?
+01:03:07	Akshat Gupta (TA):	Reusing h(t-1) for h(t) represents recurrence
+01:03:22	Reshmi Ghosh (TA):	h_i (t-1) is being used to feed into the next step
+01:03:56	Anon. RCNN:	What does t represent?
+01:03:57	Anon. Encoder:	it does
+01:03:59	Anon. Matrix:	yes , makes sense
+01:04:00	Anon. Encoder:	thank you
+01:04:19	Reshmi Ghosh (TA):	T is the time
+01:04:28	Reshmi Ghosh (TA):	Time step**
+01:04:46	Akshat Gupta (TA):	or t is index to sequence for an input sequence of length T
+01:04:58	Reshmi Ghosh (TA):	^^
+01:05:03	Anon. RCNN:	But why would there be a change in time step if you are moving across different layers?
+01:05:27	Reshmi Ghosh (TA):	You have layers and you have sequences,
+01:06:10	Reshmi Ghosh (TA):	Like I said earlier when we talk about recurrence, we are referring to the sequence or time dimension
+01:07:23	Reshmi Ghosh (TA):	@yiwei the blocks you see of different colors? That is the layer, but columns of those blocks are through each time
+01:07:28	Reshmi Ghosh (TA):	Does that make sense?
+01:08:14	Anon. Indifferentiable:	Are state-space models updating with backprop all the way back? Or stopping at the previous state unit? Is that what is meant by true recurrence?
+01:08:37	Anon. RCNN:	Yes but when we talk about self-loops (output of one block being fed into the same block) there shouldn’t be a change in time step right?
+01:09:47	Akshat Gupta (TA):	@Kinori, All the way back
+01:10:33	Anon. Indifferentiable:	Thanks
+01:10:48	Anon. YOLOv5:	is the hidden unit not changing with training? im confused cause he said shared parameters
+01:12:14	Anti (TA):	It changes. But each green block has the same parameters (weights)
+01:13:10	Reshmi Ghosh (TA):	@yiwei
+01:13:16	Reshmi Ghosh (TA):	Aah I got where you are confusing the concepts. So when Bhiksha showed a single column with loop, it was just representative. But indeed that figure should be unrolled wet time
+01:13:27	Reshmi Ghosh (TA):	wrt**
+01:14:18	Anon. RCNN:	@Reshmi I see. Thank you
+01:19:58	Anon. YOLOv5:	Is there a limit to how many time steps can be allocated when implementing this? Because otherwise it seems like you could recurse almost infinitely when computing backprop
+01:21:34	Akshat Gupta (TA):	There is no limit..which is a problem with RNN’s. Good spot
+01:24:23	Anon. YOLOv5:	So once the derivatives wrt. Div are computed in time step T, they dont need to be computed agian for the previous time steps?
+01:24:30	Reshmi Ghosh (TA):	I know a lot of people had apprehensions about raising hands, should I ask Bhiksha to repeat some concept?
+01:24:43	Anon. Indifferentiable:	Is the divergence only found at the end of the generated sequence? Or is it done at every output?
+01:27:51	Anon. Gabor transforms:	I can see it
+01:28:05	Anon. Center Loss:	Why don’t we directly propagate Z instead of h? Any motivation?
+01:30:11	Anon. Center Loss:	Oh true
+01:30:27	Anon. Center Loss:	Yes
