@@ -1,0 +1,57 @@
+08:00:35	 Anon. Asynchronous Update:	were the slides posted to piazza
+08:00:41	 bgaind@andrew.cmu.edu (TA):	Posting them now
+08:00:51	 Anon. ICA:	Vanishing and Exploding Gradients
+08:00:55	 Anon. Train:	Vanishing gradients
+08:00:55	 Anon. Gh0stR1d3r:	Back propagation through time
+08:00:56	 Anon. Refractory Period:	exploding grad
+08:01:28	 Anon. Refractory Period:	because of its memory
+08:02:41	 bgaind@andrew.cmu.edu (TA):	The slides for today and last class are on Piazza
+08:02:47	 Anon. Asynchronous Update:	thanks!
+08:03:57	 Anon. Neuron:	vanishing gradients
+08:05:29	 Anon. is_leaf:	parameters
+08:08:29	 Anon. Imagenet:	Use ReLU?
+08:08:57	 Anon. CUDAError:	can we use skip connections between layers
+08:11:15	 Anon. is_leaf:	so this is equivalent to all weights = 1, but cant activations still shrink values?
+08:11:48	 Anon. DistilBERT:	I think we are assuming activation = Identity mat
+08:12:25	 Anon. is_leaf:	thanks
+08:12:32	 Anon. Imagenet:	Is this supposed to be a motivation for LSTM?
+08:13:03	 bgaind@andrew.cmu.edu (TA):	Kind of, yes. LSTMS try to solve the vanishing gradients problem.
+08:22:55	 Anon. Refractory Period:	how does the carousel decide what constitute a useful pattern to store?
+08:23:09	 Anon. Refractory Period:	in the input
+08:26:35	 Anon. Refractory Period:	Nevermind**
+08:30:30	 Anon. Derivative:	Is the peephole connection kind  of like the skip layers?
+08:31:01	 Anon. Imagenet:	Yes
+08:31:55	 Anon. ICA:	What was the intuition for coming up with LSTMs? Like how convolutional networks came from studies on the visual cortex of the brain, how did the first LSTM come up?
+08:33:48	 Anon. SVM:	So the difference between  Carousel and “Peephole” is whether using C or not?
+08:34:05	 Anon. Derivative:	Thank you
+08:34:48	 Anon. Supervised:	so in these diagrams, “number of layers” = 1 right? How does the picture change with more layers?
+08:40:18	 Anon. Git:	should be a multi -choice
+08:40:25	 Anon. Markov Chain:	couldn't only choose 1:-/
+08:40:29	 Anon. Markov Chain:	could*
+08:40:32	 Anon. Attractor:	I think so
+08:41:05	 Anon. Activation Function:	cannot submit due to zoom issue...
+08:41:27	 bgaind@andrew.cmu.edu (TA):	Don't worry. Its fine.
+08:45:52	 Anon. Refractory Period:	are we limited to only sigmoid functions for the forget gates or can we use other activation functions?
+08:48:22	 Anon. Seq2Seq:	quiz question spotted xD
+08:49:04	 Anon. Leakage:	autograd?
+08:49:06	 Anon. Git:	autograd
+08:49:07	 Anon. Tensor:	autograd
+08:49:09	 Anon. Derivative:	autograd
+08:49:10	 Anon. C++:	^
+08:49:41	 Anon. is_leaf:	we can define forward backward for cell
+08:50:13	 Anon. is_leaf:	should be faster than using autograd
+09:17:00	 Anon. Imagenet:	Could you explain again what we mean by time synchrony?
+09:34:43	 Anon. is_leaf:	why must they be one hots instead of just a number for example?
+09:35:53	 Anxiang Zhang (TA):	That would be problem.
+09:36:20	 Anxiang Zhang (TA):	if you have {h:1, e:2, l:3}
+09:36:34	 Anxiang Zhang (TA):	You are assuming e is more important than h
+09:41:27	 Anon. Adam:	for interpretability?
+09:55:40	 Anon. Derivative:	niceeee
+09:55:54	 Anon. CTC:	Why do we randomly draw words here instead of picking the next word with the highest probability?
+09:56:04	 Anon. Mask-RCNN:	thanks!
+09:56:22	 Anon. Derivative:	Thank you!
+09:56:36	 Anon. Git:	thanks!
+10:02:09	 Anon. CasCor:	Thank you Professor!
+10:02:21	 Anon. Directed Edge:	Thanks
+10:02:33	 Anxiang Zhang (TA):	Thanks for understanding
+10:02:43	 Anon. Matrix:	Thanks
