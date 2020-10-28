@@ -1,0 +1,75 @@
+00:22:43	Reshmi Ghosh (TA):	Please lower your hands when you are done. Pretty please !:P
+00:28:56	Anon. Batchnorm:	Hi Detective!
+00:29:06	Anon. Batchnorm:	Ignore this sorry
+00:29:10	Reshmi Ghosh (TA):	Huehuehue
+00:29:17	Reshmi Ghosh (TA):	Shoot:P
+00:29:40	Reshmi Ghosh (TA):	Sorry that was for a private message
+00:37:47	Anon. 70mV:	Why would it be the entire input rather than the input up to some point?
+00:38:16	Anon. Kaggle:	maybe in the case where its bidirectional im thinking
+00:41:32	Anon. Gabor transforms:	if at each point we receive all input sequence, what makes the outputs change?
+00:41:48	Anon. Mac:	a or an
+00:42:11	Anon. Markov Chain:	So is this bidirectional?
+00:42:40	Anon. Sequence:	not necessarily
+00:42:50	Anon. Gabor transforms:	I guess the inputs of outputs change
+00:42:58	Anon. Fast RCNN:	I think the inputs are fed into the network as a sequence and each timestep has an output. To get the most probable sequence you have to wait till the end
+00:43:14	Anon. Andy:	double letters?
+00:45:25	Reshmi Ghosh (TA):	There’s an inherent dependence of outputs generated from previous inputs. Imagine a sentence, you are trying to come up with the 4th word, it would be dependent on the what words came before that
+00:46:22	Anon. Gabor transforms:	that makes a lot of sense, thank you
+00:46:52	Anon. Mac:	so instead of the future directly influencing the output, we just interpret the result afterwards based on the entire input sequence?
+00:48:46	Reshmi Ghosh (TA):	If you see the diagram on the slide which was just shown we have a probability of what may come out for each time step, Does that make sense?
+00:49:30	Anon. Kaggle:	so if i'm understanding correctly for each time step t each node we'll calculate p(x) of all possible symbols then get the highest p(x) and combine with each time step until X n-1? I'm abit confused bcz based on us having our input sequentially how will u get the symbols of vocabulary of the words or symbols u haven't encountered yet in ur time step?
+00:49:42	Anon. Directed Edge:	Hmm what is the input for x0 for example? Is it the whole sequence still?
+00:49:43	Reshmi Ghosh (TA):	It is okay if you don’t; we have to get it right otherwise beam/greedy search won’t make any sense
+00:53:22	Anon. Mac:	so what we DON’T want is to just output the highest probability label sequentially at each time, because that’s like repeated hitting the keyboard suggestion on an iPhone and generating nonsense
+00:54:32	Anon. Loss Function:	when calculating prob distribution of a position, can we see the hidden states or prob distributions of subsequent positions?
+00:56:37	Anon. Mac:	I thought the probability distribution of a position is just the output of the network at that time step
+00:57:19	Reshmi Ghosh (TA):	@sammy et al.:we have a prob dist as output at each time when we are feeding the net an input. Imagine this you are trying to predict “I am a dog”, at each point  when you feed an input there will be a prob dist of  ‘am’ ‘a’ ‘dog’ or something else; and then you do a search on the distributions generated at all points
+00:57:26	Reshmi Ghosh (TA):	Does that make sense?
+00:57:35	Anon. Directed Edge:	Thank you
+00:58:54	Anon. Kaggle:	yeah it's making sense now
+01:03:16	Anon. 70mV:	So essentially we want Is the most probable path under the joint distributions rather than a naive greedy search?
+01:06:06	Anon. Kaggle:	would it make sense to add transition probabilities to this to make it output a good sequence?
+01:06:26	Reshmi Ghosh (TA):	What do you mean by transition prob?
+01:07:37	Anon. Kaggle:	like in an markov chain where u'd have odds of going from 'I' to "went' and from 'I' to 'is' would have less odds of happening
+01:07:55	Anon. Kaggle:	so for each transition btn words there is usually a P(X) that is associated with it
+01:08:39	Anon. Kaggle:	so if ur model say ' I went is market' and ' I went to the market' the second one would be more likely to be right
+01:09:43	Anon. Mac:	but for “I have a..” vs “I have an…” , is “a” or “an” more likely
+01:13:41	Reshmi Ghosh (TA):	We are already using prob distribution to find out the final sequence through the search process; I m not sure how you associate the transitional prob to each distribution for each output at a particular time; I am not asking this to Bhiksha rn as we are already behind; but feel free to post on Piazza
+01:14:10	Anon. Kaggle:	alright, thx
+01:21:32	Anon. Residual:	Train the model on all possible alignments?
+01:21:38	Anon. Algorithm:	train over average of all possible alignments?
+01:22:59	Anon. Algorithm:	do we need to know the order, or can we expand to an un ordered sequence?
+01:28:06	Anon. Mac:	just the last occurrence of each continuous segment?
+01:30:34	Reshmi Ghosh (TA):	@Jeff I lost it
+01:30:41	Reshmi Ghosh (TA):	Might post on Piazza?
+01:31:09	Anon. Directed Edge:	^ I think he was just answering an question the prof was asking
+01:31:19	Anon. Mac:	@ Reshmi I was just answering a question professor posed, thanks
+01:31:22	Reshmi Ghosh (TA):	lol
+01:31:31	Reshmi Ghosh (TA):	Yay poll is coming!
+01:31:51	Reshmi Ghosh (TA):	damn
+01:31:54	Anon. Mac:	rip poll
+01:31:55	Reshmi Ghosh (TA):	My hopes were high
+01:31:56	Anon. ASGD:	lol
+01:31:57	Anon. Directed Edge:	lol
+01:32:00	Anon. Gaussian:	ahhh
+01:32:02	Anon. Quadratic:	xD
+01:32:07	Anon. Algorithm:	lol
+01:32:09	Reshmi Ghosh (TA):	I had it ready since the last 30 mins
+01:32:10	Reshmi Ghosh (TA):	:((
+01:39:22	Anon. Mac:	because each output is independent
+01:39:38	Anon. Mac:	so we can multiply them right
+01:40:18	Reshmi Ghosh (TA):	Eh multiply what:O?
+01:40:33	Anon. Mac:	the probabilities at each node
+01:42:19	Anon. Mac:	it’s ok Im ok now lol
+01:43:07	Reshmi Ghosh (TA):	XD
+01:44:22	Reshmi Ghosh (TA):	If you are not okay; feel free to ask again
+01:45:28	Reshmi Ghosh (TA):	Strong hands everyone has got; keeping it raised for soo long:O
+01:46:32	Reshmi Ghosh (TA):	LOL; I am not even gonna ask to lower hands now
+01:54:28	Anon. hello_world.py:	rip poll
+01:54:29	Reshmi Ghosh (TA):	There is a poll again; and now I am gonna try!
+01:54:59	Reshmi Ghosh (TA):	My heart is breaking
+01:55:10	Anon. Directed Edge:	Lol is poll appearing today
+01:55:34	Reshmi Ghosh (TA):	I am gonna try one last time
+01:55:39	Reshmi Ghosh (TA):	After bhiksha finishes
+01:57:41	Anon. Kirchhoff:	I have another class, can I leave please?
+01:57:47	Reshmi Ghosh (TA):	sure

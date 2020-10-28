@@ -1,0 +1,28 @@
+17:07:28	  Mansi Anand (TA):	Just a comment, here you may be seeing 2 biases in RNN unit but in lecture there will be only 1 bias
+17:08:15	  Mansi Anand (TA):	This is because we wanted to make the myTorch in alignment with PyTorch, which implements it via 2 biases
+17:15:32	  Anon. Quadratic:	Does these add to the comp graph?
+17:16:17	  Mansi Anand (TA):	The cat/slice?
+17:16:40	  Anon. IDeeList:	What should the returned value of cat.backward() be? Is it a list of grad_seq? or should we explicitly return the gradient of each input tensor?
+17:16:42	  Anon. Hodgkin-Huxley:	for cat operation, can you please elaborate on how the output of backward operation's output should look like?
+17:18:29	  Mansi Anand (TA):	For cat backward, all you need to think is that you are receiving the grad_output and now you need to recover the initial tensors. You would be returning this list back.
+17:19:21	  Mansi Anand (TA):	Hint:Think if you would want to save something in the forward to recover the tensors from grad_output in the backward
+17:20:36	  Mansi Anand (TA):	Hint 2:You can make your code concise with certain numpy functions directly
+17:27:24	  Mansi Anand (TA):	So any communication in PyTorch RNN Cell happens over via packed sequences
+17:28:06	  Mansi Anand (TA):	I would also recommend reading the Pytorch documentation
+17:28:54	  Mansi Anand (TA):	https://stackoverflow.com/questions/51030782/why-do-we-pack-the-sequences-in-pytorch
+17:32:34	  Mansi Anand (TA):	If you want to learn RNN and would want to run this rnn_unit as a full trainable rnn, you can write a layer_iterator just like time_iterator. We can give you toy data and you can train the RNN to get some AUC.
+17:33:14	  Mansi Anand (TA):	Layer_iterator is just going to be time_iterators at every layer.
+17:38:18	  Anon. Weight Decay:	Will we be having OH today?
+17:39:22	  Mansi Anand (TA):	there would not be any OH today. Please post your doubts on piazza or attend the OH tomorrow.
+17:41:25	  Mansi Anand (TA):	https://towardsdatascience.com/forward-and-backpropagation-in-grus-derived-deep-learning-5764f374f3f5
+17:41:44	  Mansi Anand (TA):	A good article on GRU. Its backward is quite interesting.
+17:42:37	  Mansi Anand (TA):	The 16 equations of backward was done by autograd. So you guys are saved a big time!
+17:42:48	  Anon. Eta:	Thank you ksaharan. Very helpful walking through.
+17:45:10	  Jacob Lee (TA):	👏🏻👏🏻👏🏻👏🏻👏🏻
+17:46:25	  Anon. Saltatory:	I doubt this but is that 'latin1' encoding important?
+17:46:56	  Mansi Anand (TA):	where is it?
+17:47:03	  Anon. Saltatory:	For the np.load
+17:47:42	  Mansi Anand (TA):	why don't you try without the encoding and check what output you get?
+17:47:53	  Anon. Saltatory:	LOL ok
+17:48:37	  Anon. Mask-RCNN:	We are going to be using unaligned labels in this contest, which means the correlation between the features and labels is not given explicitly and your model will have to figure this out by itself- can you emphasize on this statement
+17:52:18	  Mansi Anand (TA):	You will have to create a phoneme_map
