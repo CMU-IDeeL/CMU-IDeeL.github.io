@@ -1,0 +1,35 @@
+00:12:38	Anon. Ubuntu:	reshmi can you post the slides?
+00:13:05	Reshmi Ghosh (TA):	Antioch had updated the website last night itself
+00:13:08	Reshmi Ghosh (TA):	Lemme double check
+00:13:44	Anon. Ubuntu:	nvm
+00:15:33	Reshmi Ghosh (TA):	http://deeplearning.cs.cmu.edu/F20/document/slides/lec15.recurrent.pdf
+00:18:27	Anon. Eta:	Time syn
+00:20:22	Anon. ASR:	define div to be the sum of negative log probs
+00:27:33	Anon. LSTM:	yes
+00:28:02	Anon. LSTM:	if this is every possible path shouldn't it sum to one?
+00:28:25	Anon. LSTM:	ah, got it
+00:28:30	Reshmi Ghosh (TA):	Prob of
+00:28:31	Reshmi Ghosh (TA):	nvm
+00:28:32	Reshmi Ghosh (TA):	:P
+00:28:55	Reshmi Ghosh (TA):	Good that you got it:))
+00:30:45	Reshmi Ghosh (TA):	We will def do polls today! so close to it:”)
+00:31:42	Anon. LSTM:	will this be the average of the whole sequnence or the average of each output (each time step)?
+00:41:59	Reshmi Ghosh (TA):	10 seconds
+00:42:08	Anon. Ubuntu:	too much reading
+00:42:25	Anon. Bidirectional:	wasn't able to finish reading:(
+00:42:34	Anon. Loss Surface:	ditto
+00:42:38	Anon. Thalamus:	+1
+00:42:40	Anon. Delta:	Couldn't submit...:(
+00:42:46	Anon. MXNet:	+1
+00:42:46	Anon. Saltatory:	yes too much reading I had to guess
+00:42:51	Anon. Softmax:	+1..
+00:42:54	Reshmi Ghosh (TA):	Will make a note to Bhiksha to separate poll questions
+00:43:03	Reshmi Ghosh (TA):	:(
+00:43:05	Anon. Decoder:	does it auto-submit when time ends?
+00:43:06	Reshmi Ghosh (TA):	SORRY
+00:43:08	Anon. YOLOv5:	Or increase time?
+00:43:16	Anon. Directed Edge:	Only clicking submit..counts  as a submission?
+00:43:38	Anon. Directed Edge:	^or is it auto submit?
+00:43:41	Reshmi Ghosh (TA):	It won’t count towards the grade
+00:43:58	Reshmi Ghosh (TA):	But nope auto submit
+00:44:06	Reshmi Ghosh (TA):	No auto-submit***
