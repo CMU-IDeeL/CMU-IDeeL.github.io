@@ -38,5 +38,11 @@ We got a decent amount done, but didn't finish or verify... see the pseudocode r
 - If you continue with the table calendar, it takes a while to make if you do it from scratch; you can make an outline of the table with www.tablesgenerator.com (or just edit the current one)
 
 
+## Misc
+
+- We probably don't need to link quizzes with the lectures, just in the calendar table / bulletin. Not sure it's worth the effort.
+- The grand vision for the bulletin is that if there's something due soon, you can go to the bulletin and it links to everything relevant about that assignment... piazza posts, kaggles, autolab, canvas assignment, etc. 
+- The assignments table should mirror all of these links ^
+- Not sure if the chatbot is worth the real estate...
 
 Or do your own thing :)
