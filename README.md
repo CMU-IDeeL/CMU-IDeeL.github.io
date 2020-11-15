@@ -1,6 +1,6 @@
 # Info to know
 
-A brain dump about the website... feel free to disreguard if you choose a different direction...
+A brain dump about the website... feel free to disregard if you choose a different direction...
 
 
 ## Transitioning between semesters
