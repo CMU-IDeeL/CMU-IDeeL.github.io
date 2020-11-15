@@ -27,7 +27,7 @@ A brain dump about the website... feel free to disregard if you choose a differe
 ## Pseudocode Page
 
 http://deeplearning.cs.cmu.edu/F20/pseudocode.html
-We got a decent amount done, but didn't finsih or verify... see the pseudocode repository for more. Once this gets finished, it would be a good idea for the slides to have code listing numbers, so that this is maintanable.
+We got a decent amount done, but didn't finish or verify... see the pseudocode repository for more. Once this gets finished, it would be a good idea for the slides to have code listing numbers, so that this is maintanable. Also, note that this stuff is from S20 lectures. We have a spreadsheet with info about which slides the codes came from.
 
 
 ## Technologies
