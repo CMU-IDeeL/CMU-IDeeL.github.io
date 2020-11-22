@@ -43,6 +43,6 @@ We got a decent amount done, but didn't finish or verify... see the pseudocode r
 - We probably don't need to link quizzes in lectures table, just in the calendar table / bulletin. Not sure it's worth the effort.
 - The grand vision for the bulletin is that if there's something due soon, you can go to the bulletin and it links to everything relevant about that assignment... piazza posts, kaggles, autolab, canvas assignment, etc. 
 - The assignments table should mirror all of these links ^
-- Not sure if the chatbot is worth the real estate...
+- If you continue with the chatbot, Akshat has information about it
 
 Or do your own thing :)
