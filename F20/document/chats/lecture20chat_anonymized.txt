@@ -1,0 +1,23 @@
+08:37:34	  Anon. Recall Capacity:	Monotonic means order synchronous?
+08:38:36	  Anon. Recall Capacity:	thanks
+08:42:33	  Bhiksha (Prof):	All of you, pay attention here.  This is relevant to HW4P2:-)
+08:43:22	  Reshmi Ghosh (TA):	^^
+08:53:02	  Anon. Uniform Distribution:	Concerning building phoneme lexicons, I'm curious to know what techniques have proven most effective in augmenting the CMU pronouncing dictionary/alternatives. Particularly in cases where a word is not found the dictionary.
+08:53:33	  Bhiksha (Prof):	Many pronunciation-guessing tools have been developed.
+08:53:50	  Bhiksha (Prof):	Using decision trees, HMMs and even neural networks
+08:54:28	  Anon. Uniform Distribution:	Interesting. Thank you Prof. Bhiksha.
+09:06:19	  Anon. Recall Capacity:	lol
+09:07:02	  Bhiksha (Prof):	the ideal effort-to-award ratio:-)
+09:09:44	  Bhiksha (Prof):	This was a *great* overview.
+09:10:43	  Reshmi Ghosh (TA):	I love how Bhiksha is having fun in the chat today:P
+09:13:05	  Bhiksha (Prof):	@students -- *highly* recommend testing ESPnet out.  It is a terrific platform, and work on it has high publication potential.
+09:24:09	  Anon. Supervised:	lol
+09:24:27	  Bhiksha (Prof):	tensorboard!!!
+09:24:45	  Anon. Recall Capacity:	multiple monitors + tensorboard
+09:30:06	  Kushal Saharan (TA):	Thanks Professor!
+09:30:13	  Anon. Supervised:	Thank you!!
+09:30:49	  Anon. Encoder:	Thank you! ありがとうございます！
+09:30:53	  Anon. Asynchronous Update:	Thank you Professor!
+09:31:17	  Anon. Kalman Filter:	thank you!
+09:31:19	  Anon. NLLLoss:	ありがとうございます！
+09:31:20	  Anon. Deep Dream:	Thank you!
