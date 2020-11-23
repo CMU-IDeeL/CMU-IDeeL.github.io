@@ -1,0 +1,16 @@
+07:58:19	  Anon. Batchnorm:	yes
+08:14:59	  Anon. Synapse:	no
+08:41:27	  Anon. Bias:	Why was the integral thrown out again?
+08:42:54	  Anon. Bias:	Thank you!
+08:45:30	  Bhiksha (Prof):	yep
+08:46:10	  Bhiksha (Prof):	algebraic equation
+08:53:04	  Anon. RBM:	How do you conduct architecture search for the generator and discriminator?
+08:55:21	  Anon. Connectionist:	for ur loss wht else can u do to know how ur generator is doing ? because for instance with deep fakes u can eyeball the results of the generator and u’d see how good ur generator is but in the case of using gans for a different kind of data(not image) what can u do to determine how good it’s modeling ur distribution
+08:55:31	  Anon. Connectionist:	*for generator
+08:56:48	  Akshat Gupta (TA):	Ben will touch on this in GAN evaluation
+09:12:55	  Bhiksha (Prof):	very nice question.
+09:22:15	  Anon. RBM:	is the discriminator just a classifier or can we get any contextual information that can improve the generator?
+09:24:09	  Akshat Gupta (TA):	Its a binary classifier
+09:30:03	  Anon. Tux:	are multiple generators ever utilized/useful?
+09:31:39	  Anon. Tux:	thank you very much!
+09:31:47	  Anon. Synapse:	THank you!

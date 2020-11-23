@@ -1,0 +1,26 @@
+08:25:07	 Anon. Synapse:	So in the case of PCA the dimension of z should be strictly less than the dimension of x?
+08:26:44	 Anon. Train:	Why should the data be centered in this case ?
+08:28:33	 ksaharan@andrew.cmu.edu (TA):	What case are you referring to?
+08:28:43	 Anon. Train:	PCA
+08:29:56	 ksaharan@andrew.cmu.edu (TA):	So that we only capture the variance and are not affected by the mean
+08:30:28	 Anon. Train:	Thank you
+08:52:15	 Anon. Synapse:	Usually how do we choose the non-linear activation so that the model has enough expressive power?
+08:52:31	 Anon. Oja’s Rule:	^^
+08:52:47	 ksaharan@andrew.cmu.edu (TA):	We’ll see that soon in the context of DL
+08:53:43	 ksaharan@andrew.cmu.edu (TA):	That’s what VAE is all about
+09:00:59	 Anon. Synapse:	What is the encoder component in this case of NLGM?
+09:02:56	 ksaharan@andrew.cmu.edu (TA):	There is no explicit encoder as you do in AE or VAE
+09:06:11	 ksaharan@andrew.cmu.edu (TA):	But if your non-linear activation is nice enough to work with, you can call p(z|x) as the encoder (if you can construct that in a closed form or otherwise)
+09:07:43	 Anon. Train:	i think p(z|x) can be a neural network. It takes x as input and gives you z. So encoder is just a NN model
+09:08:37	 ksaharan@andrew.cmu.edu (TA):	Thats a good guess. It takes you in the realms of VAE, away from conventional NLGM
+09:14:28	 Anon. Synapse:	Why we can make the assumption that p(z|x) approximately follows a Gaussian distribution?
+09:15:03	 Anon. Train:	because world is a boring place
+09:15:16	 Anon. Train:	I might be wrong though lol
+09:15:28	 ksaharan@andrew.cmu.edu (TA):	Well you can assume whatever you want to be honest but you need to be cognizant of the fact that it should be something that looks similar to the real p(z|x)
+09:15:57	 ksaharan@andrew.cmu.edu (TA):	If it doesn’t, then you are doing something random. Your encoder has no relationship with your decoder
+09:16:16	 ksaharan@andrew.cmu.edu (TA):	Not sure how useful that is going to be fo anything at all
+09:18:04	 Anon. MiniMax:	standard normalization
+09:20:47	 Anon. Kernel:	so  that was assuming our  covariance is  a diagonal matrix and the covariance terms are 0?
+09:26:22	 ksaharan@andrew.cmu.edu (TA):	Yeah that’s the standard assumption
+09:30:44	 ksaharan@andrew.cmu.edu (TA):	Most of the math that you’ll see and implementations that you’ll find work with this standard assumption
+09:45:52	 ksaharan@andrew.cmu.edu (TA):	For people who find this interesting may want to check out something called Variational Inference
