@@ -1,0 +1,27 @@
+08:07:55	 Anon. YOLOv6:	0.9?
+08:11:24	 Kushal Saharan (TA):	Don’t forget to lower your hands once the question/poll is done
+08:11:51	 Kushal Saharan (TA):	Unless you are sleeping, of course:D
+08:17:51	 Kushal Saharan (TA):	People with their hands raised, if you have a question post here
+08:23:56	 Anon. Linear Layer:	sigmoid
+08:23:56	 Anon. Trajectory:	the logistic
+08:24:30	 Anon. Trajectory:	aposteri probability means conditional probability here?
+08:57:21	 Anon. YOLOv6:	So the posterior prob. is able to be modeled as logistic if and only if the representation is linearly separable?
+08:59:00	 Kushal Saharan (TA):	You can choose any model to learn posterior prob
+08:59:12	 Kushal Saharan (TA):	How well it does depends on the true distribution
+09:11:21	 Kushal Saharan (TA):	@Jeff Li, sorry I missed your question earlier. Aposteriori prob is conditional in the sense that we condition on the observed data. But I would be careful about using the term condiontla probability in a specific context because many time it refers to the distribution of the features given a class, whereas aposteriori is probability of class given features
+09:11:56	 Anon. Trajectory:	thank you
+09:14:52	 Anon. Trajectory:	orthonormal projection vibes
+09:26:42	 Anon. Perceptron:	what is the advantage of using an autoencoder if it provides the same or similar results as PCA/non-linear variants of PCA?
+09:27:05	 Kushal Saharan (TA):	Its a lot more flexible than those models
+09:27:46	 Kushal Saharan (TA):	Remember you can make your encoder-decoder arbitrarily complex by using a complex NN
+09:29:30	 Anon. YOLOv6:	So essentially the decoder takes input from the data of the manifold and we can generate data by sampling that principal manifold?
+09:30:40	 Kushal Saharan (TA):	yup. The decoder takes input from this manifold space and produces an output in the original space
+09:31:05	 Kushal Saharan (TA):	How you sample in the manifold space and what kind of output you get on the original space is a separate question
+09:32:51	 Anon. YOLOv6:	Is there a reason why we do not name the output of encoders as “embeddings”?
+09:33:24	 Kushal Saharan (TA):	You can call it embeddings/latent space/manifold/or whatever you want
+09:33:45	 Anon. YOLOv6:	Thank you
+09:33:47	 Kushal Saharan (TA):	Actually AE are helpful for finding a good embedding for your data
+09:37:17	 Anon. Connectionist:	ye
+09:37:18	 Anon. Connectionist:	yes
+09:38:26	 Anon. Mean Pool:	sor
+09:38:33	 Anon. Mean Pool:	cery
