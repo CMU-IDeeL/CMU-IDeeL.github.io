@@ -1,0 +1,32 @@
+07:54:58	  Bhiksha (Prof):	I can hear you can you hear me?
+07:55:15	  Anon. Whereami:	I can hear you chris
+07:55:18	  Anon. Whereami:	and bhiksha
+07:55:51	  Anon. Whereami:	Chris can you hear me
+07:56:00	  Anon. Whereami:	sign out and sign back in
+07:56:44	  Anon. Regularization:	ok everything is in sync now!
+08:06:45	  Anon. Mac:	0.36 paper 0.32 rock 0.32 scissors?
+08:06:46	  Bhiksha (Prof):	Anyone?
+08:06:46	  Anon. Supervised:	More papers
+08:07:03	  Anon. Photoreceptor:	always paper
+08:07:32	  Bhiksha (Prof):	Nicky's right
+08:07:49	  Anon. Mac:	oh rip my game theory, mixed nash equilibrium
+08:08:47	  Anon. Photoreceptor:	there isn't one
+08:08:55	  Bhiksha (Prof):	or there is one.
+08:12:35	  Bhiksha (Prof):	same as the rock paper scissors scenario
+08:16:30	  Anon. Supervised:	yes
+08:16:35	  Anon. Weight Decay:	yeah
+08:40:20	  Bhiksha (Prof):	but they also spiral to saddle points?
+08:45:35	  Bhiksha (Prof):	how to techniques like ADAM or momentum get affected?
+09:12:16	  Bhiksha (Prof):	the lipschitz of 1 is in the middle
+09:12:25	  Bhiksha (Prof):	the outer ends are within the lipschitz
+09:23:27	  Anon. Spiking NN:	So it seems that Spectral Normalized GAN tries to bound all the weights smaller than 1 but WGAN GP tries to make all the weights closed to 1. Which is better?
+09:25:52	  Bhiksha (Prof):	SNGAN is keeping the singular values of the weight matrix below 1.
+09:26:02	  Bhiksha (Prof):	simply constraining the weights wont don't it
+09:27:54	  Anon. Spiking NN:	It does make sense. Thank you.
+09:33:37	  Anon. Regularization:	Thanks!
+09:33:45	  Anon. Supervised:	Thank you
+09:33:46	  Anon. YOLOv3:	Thanks!
+09:33:46	  Anon. Calcium Ion:	thanks
+09:33:46	  Anon. Variance:	Thank you!
+09:33:52	  Anon. Spiking NN:	Thank you!
+09:33:54	  Anon. Regularization:	seems c(X,Y) is the cost of moving x to y
