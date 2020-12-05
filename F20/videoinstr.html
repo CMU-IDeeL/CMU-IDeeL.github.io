@@ -9,7 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic' rel='stylesheet' type='text/css'>
-    <link href="main.3.css" rel="stylesheet" type="text/css">
+    <link href="main.4.css" rel="stylesheet" type="text/css">
 </head>
 <div class="container titlebar">
     <div class="row">
@@ -29,50 +29,48 @@
     <div class="row">
         <h2> Project Video Instructions</h2>
 
-        <ol>
-            <li>Total video length: 3 - 5 minutes</li>
-            <li>The video must be slides with voice over.</li>
-            <li>Free softwares available for screen casting. </li>
-            <ol>
-                <li>Screen-o-matic: https://screencast-o-matic.com/screen-recorder</li>
-                <li>Camtasia(free trial): https://www.techsmith.com/video-editor.html</li>
-                <li>Others are also available</li>
-            </ol>
-            <li>Video must start with a slide of the title of the project, group name and names of the group members. </li>
-            <li>Videos must contain enough information to be understood by someone not familiar with your work.</li>
-        </ol>
+        <p>As we inch closer to the project submission timeline, we wanted to release a set of instructions to create a good presentation video. Please be mindful that these instructions only serve to be a guideline of what you aim to achieve. We do not mandate following the order or time breakdown perfectly, as long as you address all the high-level components. We have also linked the set of Top 25 video presentations from S'20 on the course website which can be <a href="http://deeplearning.cs.cmu.edu/shared/gallery.html" target="_blank" rel="noopener noreferrer">found here.</a></p>
+<div></div>
+<div><h3>Instructions:</h3> Please try to adhere to the time limit, but also make sure you speak clearly and coherently so that your audience learns from your presentation. Total video length: 3 - 5 minutes (please try and not exceed the 5-minute limit, that said a few seconds here and there doesn't matter)</div>
+<ol>
+<li>The video can be slides with voice over but you can also get creative. There is no rule on who has to speak, it is left to your team's discretion.</li>
+<li>Use a screen - recording (screen-casting) tool. Most MacBooks and Windows laptops are equipped with an inbuilt one. </li>
+<li>The video must start with a slide of the title of the project, team-name, and names of group members.</li>
+<li>The video should be fluid enough so that you are able to convince an audience without any familiarity about your project topic, why your project topic is worth attempting, the goals you have accomplished, the methods deployed, the results achieved, and how were they similar/different to existing results, and why is it so!</li>
+</ol>
+<div><h3>Suggestive timeline of the video:</h3>
+<h3>1. Description of the problem(20 - 50 seconds):</h3></div>
+<ul>
+<li>Describe the problem at hand - What are you trying to solve, and why?</li>
+<li>Additionally, mention the significance of the problem - What do you think is the practical impact of your work?</li>
+<li>The novelty of the problem - Has the problem been solved before? If so, how are your results different from the current approach.</li>
+</ul>
+<h3>2. Task (&lt;= 30 seconds):</h3>
+<ul>
+<li>Mention whether your work is a re-implementation of a paper, application of an existing approach on a new dataset, or a novel approach.</li>
+<li>Talk about the dataset used, size of the datasets how some examples from the dataset in slides when possible in a tabulated fashion. A summary description of the dataset is very well appreciated. Also briefly mention any assumptions and any data transformations that were required.</li>
+</ul>
+<h3>3. Approach or Methods(1 minute - 2 minutes):</h3>
+<ul>
+<li>Briefly describe the overall approach.</li>
+<li>Possibly include a flow-chart or diagram of your pipeline and/or architecture. Describe in detail the novel and/or the most significant components of your methods. Use diagrams wherever possible to make the presentation more comprehensible.</li>
+</ul>
+<h3>4. Results and Discussion (&lt;= 1 minute):</h3>
+<ul>
+<li>Describe your evaluation metrics and talk about the performance achieved.</li>
+<li>Report the best, interesting and unexpected results i.e no need to show the results for all your experiments. But don’t forget to emphasize on your takeaways after assessing these results - Why did you get those results? Why did it work better/worse than other approaches? Possibly include diagrams comparing your work and others' work. It is always good to answer the WHY for your results achieved and not just HOW?</li>
+</ul>
+<h3>5. Conclusions (&lt;30 seconds): </h3>
+<ul>
+<li>Briefly describe your conclusions from the observed results. Does your conclusion have a real-world impact?</li>
+</ul>
 
-        <h3>Contents:</h3>
-        <h3>1. Description of the problem (20 - 50 seconds)</h3>
-        <ol>
-            <li>Description of the problem</li>
-            <li>Significance of the problem</li>
-            <li>Has the problem been solved before?If so, how good was the solution.</li>
-        </ol>
+<strong>A general note: please resist the urge to describe everything in great detail to avoid going over the time limit</strong>
+<br />
+<br />
 
-        <h3>2. Task (&lt;= 30 seconds)</h3>
-        <ol>
-            <li>Mention whether your work is re-implementation of a paper, application of an existing approach on a new dataset or a novel approach</li>
-            <li>Dataset used, size of the dataset;show some examples from dataset in slides when possible</li>
-        </ol>
 
-        <h3>3. Approach (1 minute - 2 minutes)</h3>
-         <ol>
-            <li>Start with a brief description of the overall approach; Possibly include a diagram of your pipeline and/or architecture</li>
-            <li>Describe the novel or most significant parts of your approach in greater detail; Use diagrams whenever possible: e.g. how your data is transformed, gradient flow in your model,...            </li>
-        </ol>
 
-        <h3>4. Results and Discussion (&lt;= 1 minute)</h3>
-        <ol>
-            <li>Describe how performance was evaluated</li>
-            <li>Report the best, interesting and unexpected results i.e no need to show the results for all your experiments</li>
-            <li>Why did you get those results? Why did it work better/worse than other approaches?Possibly include diagrams comparing your work and others work.
-            </li>
-        </ol>
-
-        <h3>5. Conclusions (&lt;30 seconds)</h3>
-
-        <p>General note:Resist the urge to describe everything in great detail to avoid going over the time limit</p>
     </div>
 </div>
 
