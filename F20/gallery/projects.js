@@ -29,10 +29,10 @@ projects = [
         "video": "https://youtu.be/CFnUe56Ka-A",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Reinforcement learning has been widely used for artificial intelligence in playing games and proven having the ability to defeat human players in many cases. Quantum Tic-Tac-Toe (QTTT) game adds the idea of superposition to the classic Tic-Tac-Toe, which implies a huge piece arrangement space up to 10^8. The projects implements 2 reinforcement learnining algorithms: temporal difference learning and AlphaZero. Both cases policies are learnt through self-play. Initial experiment result shows that AlphaZero can achieve a professioncy equivalent to the medium level AI provided by the Qttt game on the google app store.",
-        "pic": "PreliminaryReport.pdf.png"
+        "pic": "Erwin.png"
     },
     {
-        "title": "Project-Team# 5 - Game Theory For Adversarial Attacks And Defenses",
+        "title": "Game Theory For Adversarial Attacks And Defenses",
         "team": "Team IDL.dll",
         "video": "https://youtu.be/MeBxlQ-n6e4",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
@@ -56,12 +56,12 @@ projects = [
         "pic": ".png"
     },
     {
-        "title": "Project-Team# 8 - Game Theoretic Approaches to Adversarial Attacks and Defenses",
-        "team": "",
+        "title": "Game Theoretic Approaches to Adversarial Attacks and Defenses",
+        "team": "Epsilon",
         "video": "https://www.youtube.com/watch?v=yQOE1eCtCTo",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Deep neural networks are vulnerable to attacks called adversarial attacks in which, data sample that are imperceptibly different from a natural data samples are input to a neural network such that it forces the network to predict a class different from the original class that the samples belong to. The idea is to approach adversarial attacks and defenses through a game-theoretic perspective, thus coming up with robust defenses for the model under consideration. In our approach, we tried to implement models with good classification accuracy and subject them to two of the most popular attacks Fast Gradient Sign method (FGSM) and Projected Gradient Descent (PGD).Ideally, the attacks should be assumed to be belonging to the class of White box attacks, because the defense assumes the worst case scenario. The game between the attacker and defender is modeled as a multi-move game with zero-sum reward where the defender has the last move advantage. In accordance with this, we defend against the \u201cattack\u201d after we get the image from the attacker. In our pipeline we combine image cut-out and in-painting on adversarial generated images with the aim of reducing the effect of adversarial perturbation on the classification accuracy.",
-        "pic": ".png"
+        "pic": "Epsilon.jpg"
     },
     {
         "title": "Long-term Joint Trajectory and Action Prediction with Intention Recognition",
@@ -96,20 +96,20 @@ projects = [
         "pic": "BestHotpotPittsburgh.png"
     },
     {
-        "title": "Project-Team# 13- Tackle Multimodal QA with Multi-Stage Information Fusion",
-        "team": "Team Name:\u00a0 Sunday Dues",
+        "title": "Tackle Multimodal QA with Multi-Stage Information Fusion",
+        "team": "Sunday Dues",
         "video": "https://www.youtube.com/watch?v=wsoCuHaYNCs",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Visual Question Answering (VQA) has wide applications in real life and is one of the benchmarks for artificial intelligence systems. In this paper, we propose a new solution to a related task, MemexQA, in which photos from personal albums as well as photo metadata are given to answer a multiple-choice question about the information presented in the albums such as locations, dates, events and people. Specifically, we tackle this task by improving the information fusion process of a baseline LSTM model by introducing a multi-stage fusion method for features of different modalities.",
-        "pic": "Team Name:\u00a0 Sunday Dues.png"
+        "pic": "Sunday Dues.jpg"
     },
     {
         "title": "A Walk to Remember: Trajectory Prediction using Recurrent Networks \ud83d\udeb6\u200d\u2642\ufe0f",
-        "team": "Team Name:\u00a0Team Rocket\u00a0",
+        "team": "Team Rocket",
         "video": "https://youtu.be/_HqzPlvgugs",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Trajectory prediction is an important problem that has applications in autonomous driving, safety monitoring, object tracking, robotic planning, and so on. Current state-of-the-art methods focus on either single or multiple trajectory prediction using generative models (such as Generative Adversarial Networks), as well as discriminative models. In this project we outline several methods that achieve competitive results, highlight the key contributions of their approaches, and justify our choice of adopting a discriminative approach. Starting with the Social-LSTM model as our baseline, we propose several possible extensions to improve the quality and length of predicted trajectories.",
-        "pic": "Team Name:\u00a0Team Rocket\u00a0.png"
+        "pic": "Team Rocket.png"
     },
     {
         "title": "Triple Defense Against Adversarial Attacks",
@@ -165,7 +165,7 @@ projects = [
         "video": "https://youtu.be/uHPqJcPMQDw",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "The accuracy of pedestrian detection can ensure safety in autonomous driving. While deep learning for pedestrian detection in RGB images has achieved good performance in supervised deep learning, the learned model tempts to overfit a specific dataset. Another problem is that RGB cameras can be influenced by lightning or camera range, making the model hard to be applied in realistic scenes. Thermal images have the advantages that they are invariant with lighting and have a larger detection range. However, training a new deep model requires a large dataset, and collecting many annotated data is expensive and time-consuming. To reduce this bottleneck, we utilize semi-supervised transfer learning, including active-learning and self-training, to train on a dataset with a limited number of labels, to reduce the labeling cost. The semi-supervised learning algorithm usually has lower performance than supervised training on a large dataset. We creatively use the ensemble-learning technique in semi-supervised learning to ensemble the knowledge learned from different methods to improve the performance of semi-supervised learning.",
-        "pic": "Endless Deep.png"
+        "pic": "Endless Deep.jpg"
     },
     {
         "title": "Optimization of ESPnet Feature Extraction",
@@ -197,7 +197,7 @@ projects = [
         "video": "https://youtu.be/b16xOLpG_p0",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Poetry is a written art form that adapts standard language rules to create a richer piece of text. There are many different styles of poetry that adhere to different rules or structures, for example Haiku. Deep learning is the state of the art tool for automatic text generation. Current state of the art like GPT-2, uses a transformer architecture and is capable of generating text with arbitrary length and context. Rhyming is a unique feature of poetry that we thought would be a new and challenging generation task for a GPT-2 model. We have trained the GPT-2 model on a limerick corpus of 90,000 from oedilf.com. We developed several automatic evaluation metrics such as rhyming coherence, subject co-reference and nonsense evaluation. We also developed a website where we asked people if they could distinguish Human limericks from our training set vs. novel generated limericks from our model. Preliminary results show that we were able to fool the human 76 times or ~17% of the responses. Based on the rhyming structure of limericks (AABBA) we have named and will refer to our model as AiBBA.",
-        "pic": "Youshen.png"
+        "pic": "Youshen.jpg"
     },
     {
         "title": "Anchor-free Object Detection using Multi-Level Feature Pyramids",
@@ -208,12 +208,12 @@ projects = [
         "pic": "Peaky BlindersProject Video Link:.png"
     },
     {
-        "title": "Project-Team# 28 - Meta-Learning in Manipulation",
-        "team": "Team Name:\u00a0 Team Grasp",
+        "title": "Meta-Learning in Manipulation",
+        "team": "Team Grasp",
         "video": "https://youtu.be/cp1g_qhH-Go",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Reinforcement learning (RL) is a powerful learning technique that enables agents to learn useful\u00a0policies by interacting directly with the environment.\u00a0 While this training approach doesn\u2019t require labeled data, it is plagued with convergence issues and is highly sample inefficient. The learned policies are often very specific to the task at hand and are not generalizable to similar task spaces. Metal-ReinforcementLearning is a one strategy that can mitigate these issues, enabling robots to acquire new skills much more quickly. Often described as \u201clearning how to learn\u201d, it allows agents to leverage prior experience much more effectively.\u00a0 Recently published papers in Meta learning show impressive speed and sample efficiency improvements over traditional methods of relearning the task for slight variations in the task objectives.\u00a0 A concern with these meta-learning methods was that their success was only achieved on relatively small modifications to the initial task.\u00a0 Another Concern in RL is reproducibility and lack of standardization of the metrics and approaches, which can lead to wide variations in reported vs observed performances. To alleviate that, benchmarking frameworks have been proposed that establish a common ground for a fair comparison between approaches. In this work, we aim to utilize the task variety proposed by Meta-World and compare PPO, a vanilla policy gradient algorithm, vs their meta-learning counterparts\u00a0 (MAML\u00a0 and\u00a0 Reptile). \u00a0 The\u00a0 objective\u00a0 is\u00a0 to\u00a0 verify\u00a0 the\u00a0 magnitude of success of meta-learning algorithms over the vanilla variants, and test them on a variety of complicated tasks to test their limits in responding to the size of task variations. We also introduce a new technique - Multi-headed Reptile,which addresses some of the shortcomings of both these meta learning techniques. Additionally, we propose a method to speed up the training process to compensate for the general lack of vectorizability of some parts of reinforcement learning algorithms.",
-        "pic": "Team Name:\u00a0 Team Grasp.png"
+        "pic": "Team Grasp.png"
     },
     {
         "title": "Semantic Segmentation for Urban-Scene Images",
@@ -297,11 +297,11 @@ projects = [
     },
     {
         "title": "Age estimation from speech using Deep Learning techniques",
-        "team": "",
+        "team": "The A-Team",
         "video": "https://youtu.be/QQGIqRbcq3s",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Estimating age can be used in many applications including profiling, caller agent pairing or in dialogue systems. Most of the research on this topic has been estimating these features using several estimation techniques. In this research, we used deep learning techniques on three datasets (TIMIT, SRE corpus and Fisher corpus) to predict the speaker\u2019s age and height. We used a 2 layer unidirectional LSTM model fed to a single feed forward neural network. The overall MAE loss results on the testing data are 5.85 years for males and 6.25 years for females.",
-        "pic": ".png"
+        "pic": "The A-Team.png"
     },
     {
         "title": "Optimization of ESPnet Feature Extraction",
@@ -337,11 +337,11 @@ projects = [
     },
     {
         "title": "Using Differentiable WFSTs in ESPnet",
-        "team": "Team Name:\u00a0 Local MinimumProject Video Link:",
+        "team": ":\u00a0 Local Minimum",
         "video": "https://www.youtube.com/watch?v=v8J1bY3B_W4",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Using Differentiable WFSTs in ESPnetProject Abstract:Weighted Finite State Transducers (WFSTs) are a commonly used tool to encode probabilistic models. Previously, WFSTs are often trained using rules such as weight determinization,weight minimization and weight pushing algorithms [4], which do not employ learning algorithms. Differentiable WFSTs are a recent development, and there has not been extensive investigation into the possible applications of training with WFSTs for various Automatic Speech Recognition (ASR) tasks. This development turns WFSTs into a possible anotherway of encoding information, in addition to normal tensors [2]. We wish to investigate different ways to train WFSTs for ASR, by using a variety of designs and different objective functions. By comparing the baseline and current results from differentiable WFST models,we have an intermediate conclusion that we can aim for character error rates (CER) in the range of around 1.0 through 7.0.Andrew IDs:shivins, nmongkol, araut, daniel sniderPeer Rating Form:",
-        "pic": "Team Name:\u00a0 Local MinimumProject Video Link:.png"
+        "pic": "Local Minimum.png"
     },
     {
         "title": "Chinese Poetry Generator",
@@ -357,7 +357,7 @@ projects = [
         "video": "https://youtu.be/WIr3QHQWmVs",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Spatiotemporal action recognition deals with locating and classifying actions invideos. Motivated by the latest state-of-the-art real-time object detector YouOnly Watch Once (YOWO), we aim to modify its structure to increase actiondetection precision and reduce computational time. Specifically, we propose toreuse two-dimensional feature extractors and perform sparse scanning in videos.Besides, we propose to integrate information on the key frame into the three-dimensional structure that extracts spatiotemporal features as well as modifying theloss function to account for number of classes in videos. We consider two moderate-sized datasets to apply our modification of YOWO - the popular Joint-annotatedHuman Motion Data Base (J-HMDB-21) and a private dataset of restaurant videofootage provided by a Carnegie Mellon University-based startup, Agot.AI. Thelatter involves fast-moving actions with small objects as well as unbalanced dataclasses, making the task of action localization more challenging.",
-        "pic": "YOWOv2.png"
+        "pic": "YOWOv2.jpeg"
     },
     {
         "title": "Single image super-resolution with deep neural networks",
