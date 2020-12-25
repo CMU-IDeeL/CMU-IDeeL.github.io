@@ -211,7 +211,7 @@ projects = [
         "title": "Meta-Learning in Manipulation",
         "team": "Team Grasp",
         "video": "https://youtu.be/cp1g_qhH-Go",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1K_surkWundLtXzsFKgQorjbpayfzid0x/view?usp=sharing",
         "summary": "Reinforcement learning (RL) is a powerful learning technique that enables agents to learn useful\u00a0policies by interacting directly with the environment.\u00a0 While this training approach doesn\u2019t require labeled data, it is plagued with convergence issues and is highly sample inefficient. The learned policies are often very specific to the task at hand and are not generalizable to similar task spaces. Metal-ReinforcementLearning is a one strategy that can mitigate these issues, enabling robots to acquire new skills much more quickly. Often described as \u201clearning how to learn\u201d, it allows agents to leverage prior experience much more effectively.\u00a0 Recently published papers in Meta learning show impressive speed and sample efficiency improvements over traditional methods of relearning the task for slight variations in the task objectives.\u00a0 A concern with these meta-learning methods was that their success was only achieved on relatively small modifications to the initial task.\u00a0 Another Concern in RL is reproducibility and lack of standardization of the metrics and approaches, which can lead to wide variations in reported vs observed performances. To alleviate that, benchmarking frameworks have been proposed that establish a common ground for a fair comparison between approaches. In this work, we aim to utilize the task variety proposed by Meta-World and compare PPO, a vanilla policy gradient algorithm, vs their meta-learning counterparts\u00a0 (MAML\u00a0 and\u00a0 Reptile). \u00a0 The\u00a0 objective\u00a0 is\u00a0 to\u00a0 verify\u00a0 the\u00a0 magnitude of success of meta-learning algorithms over the vanilla variants, and test them on a variety of complicated tasks to test their limits in responding to the size of task variations. We also introduce a new technique - Multi-headed Reptile,which addresses some of the shortcomings of both these meta learning techniques. Additionally, we propose a method to speed up the training process to compensate for the general lack of vectorizability of some parts of reinforcement learning algorithms.",
         "pic": "Team Grasp.png"
     },
@@ -219,7 +219,7 @@ projects = [
         "title": "Semantic Segmentation for Urban-Scene Images",
         "team": "DL Sailor Moon",
         "video": "https://youtu.be/701ZJbv6TwI",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1hSaDJ_vvPy047mdopIi8bHY9_iKP4SNQ/view?usp=sharing",
         "summary": "Urban-scene Image segmentation is an important and trending topic in computer vision with wide use cases like autonomous driving [1]. Starting with the break-through work of Long et al. [2] that introduces Fully Convolutional Networks (FCNs), the development of novel architectures and practical uses of neural net-works in semantic segmentation has been expedited in the recent 5 years. Aside from seeking solutions in general model design for information shrinkage due to pooling [], urban-scene image itself has intrinsic features like positional patterns[3]. Our project seeks an advanced and integrated solution that specifically targets urban-scene image semantic segmentation among the most novel approaches in the current field. We re-implemented the cutting edge model DeepLabv3+[cite] withResNet-101[cite] backbone. Based upon DeepLabv3+, we incorporated Height-Driven Attention Net [3] to account the vertical pixel information distribution in urban-scene image tasks. To boost up model efficiency and performance, we further explored the Atrous Spatial Pooling(ASP) layer in DeepLabv3+ and infused a computational-efficient variation called \"Waterfall\" Atrous Spatial Pooling(WASP)[4] architecture in our model. We found that our two-step integrated model im-proves the mean Intersection-Over-Union(mIoU) score gradually from the baseline model. In addition, we demonstrated the improvement of model efficiency with help of WASP in term of computational times and parameter reduction.",
         "pic": "DL Sailor Moon.png"
     },
@@ -227,7 +227,7 @@ projects = [
         "title": "COVID-GAN - Augmenting COVID-19 Diagnostic Data using Hybrid VAE-GANs",
         "team": "The Cerebral Catz\u00a0",
         "video": "https://youtu.be/gERzi7Wd2Y4",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1uUsnXxLM5Zupq_BiS8UsJT0hFNNZVqwb/view?usp=sharing",
         "summary": "COVID-19 had become the new norm since the pandemic. While the number of cases are rising on a daily basis, there is a steady need to keep up rising number of cases and automate the diagnosis of COVID-19, offloading some of the work off the front-line workers. It is a known fact that medical image data suffers from skewness due to the limited availability of positive COVID-19 patient data. Deep learning models rely heavily on the uniformity of the data to produce a good result and hence often overfit on highly skewed data. Increasing the number of training samples has been shown to provide better classification accuracy and more generalizability. Due to strict protocols for medical data collection, it is not feasible to collect additional data for training. In a scenario like this, the best approach is to perform data augmentation on the available training samples to reduce class imbalance and generate more samples. Many approaches to data augmentation have been proposed, from basic image transformations to using a Generative network to create new images. In this work, we apply a combination of Variational Autoencoders and Generative Adversarial Networks to augment the COVID-19 data on which a CNN-based classifier is trained to achieve a better performance.",
         "pic": "The Cerebral Catz\u00a0.png"
     },
@@ -235,7 +235,7 @@ projects = [
         "title": "Adversarial attacks defenses via Modeled random noises",
         "team": "AT Field",
         "video": "https://www.youtube.com/watch?v=Ysx2nYwx4Ok",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/18YPO-9RbmHbkr9WPP5-fTvYMN2NZ5f62/view?usp=sharing",
         "summary": "Neural networks are known to be vulnerable to adversarial examples: natural\u00a0inputs with carefully constructed perturbations may render them to classify input\u00a0incorrectly. In this project, we conduct experiments to illustrate such phenomenon.\u00a0We also extend Randomized Smoothing defense by using targeted Gaussian Noise\u00a0preferring the direction of first-order gradients of the network.",
         "pic": "AT Field.png"
     },
@@ -243,15 +243,15 @@ projects = [
         "title": "Bitcoin Price Prediction using Sentiment and Historical Price",
         "team": "Team 32",
         "video": "https://youtu.be/Nr_kUkE_L-o",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1dHwC6PTIGO7WQnhj0zU33TMvH0JjeqdJ/view?usp=sharing",
         "summary": "Bitcoin is one of the first digital currencies that were first introduced around 2008. The decentralized currency gained huge popularity in the past decade and it is now trading around USD 10000 per coin. Speculations around its future upside potential have attracted a large number of individual and institutional investors despite the price volatility. Therefore, price prediction for bitcoin has become a relevant but challenging task. In this project, we will be utilizing sentiment analysis and historical price data to maximize the accuracy of price prediction of bitcoin.",
         "pic": "Team 32.png"
     },
     {
-        "title": "Unsupervised Anomaly Detection",
+        "title": "Unsupervised Anomaly Detection in Electrocardiograph Time Series Data Using Variational Recurrent Autoencoders with Attention, and Transformer",
         "team": "Transformed Attention",
         "video": "https://youtu.be/ivJgVVaALY0",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/11nSlSR0FvvUTLL-3yZV-9Zc8FYJuTD_I/view?usp=sharing",
         "summary": "Time series data a long existed in various fields in our daily life. It is hard to extract the pattern of the data by human effort. Since computer intelligence is expected to perform more sensitive than human beings, deep learning algorithms, especially data pattern detection have been applied to detect anomaly patterns from complex systems, such as heartbeat signals. However, a significant amount of approaches based on supervised machine learning models that require (big) labelled data-set. In this project, we are expected to detect the pattern of heartbeat with an optimized Auto-Encoder model. Our contributions can be divided as three steps. Firstly, we established two baseline models (MLP and LSTM auto-encoder) on MNIST dataset. The result shows good sensitivity to distinguish from different data. Secondly, we add attention mechanisms to LSTM decoder to improve theperformance. Finally, we use multi-head attentional transformer model instead ofLSTM auto-encoder to explore the possibilities of replacement. We can see a very clear loss threshold between the normal and abnormal data.",
         "pic": "Transformed Attention.png"
     },
@@ -259,7 +259,7 @@ projects = [
         "title": "End to End Question Answering",
         "team": "TBD - Team 34",
         "video": "https://youtu.be/mBTJcJhdrjs",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1iJ9dMX5EhonCMc4kynetvsZZXKPYEfpy/view?usp=sharing",
         "summary": "Question answering is a popular research topic in natural language processing, and a widely used application in real world scenarios nowadays. In this paper we propose a method based on BERT, which is a recurrent neural network composed of an encoder-decoder architecture, along with multihead self-attention mechanism, which is known as the \"Transformer\".Several modifications will be added to the initial proposal in order to improve the question answering performance on the SQuAD dataset. All implementations are based on PyTorch.",
         "pic": "TBD - Team 34.png"
     },
@@ -267,7 +267,7 @@ projects = [
         "title": "Traffic Accident Detection via Deep Learning",
         "team": "Giants",
         "video": "https://youtu.be/h_APr7vmYtY",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1b0fXX1A_tffv6tBgI_dwkuilbN4Vv4RT/view?usp=sharing",
         "summary": "Detecting anomalous events such as traffic accidents in natural driving scenes is a challenge for advanced driver assistance systems. However, the majority of previous studies focus on fixed cameras with static backgrounds, which is unsuitable for egocentric traffic videos. In this project, we propose to apply supervised video anomaly detection algorithms for traffic accident detection in egocentric dashcam videos. Specifically, we evaluate different convolutional architectures using frame-level metrics, and we design a two-stream architecture for video-level detection, which utilizes a convolutional recurrent network (CRNN) for RGB frames and a ResNet-based model for stacked dense optical flow maps. Our models are trained on a recent public dataset with temporal annotations. Experiments show that our approach achieves promising results and outperforms corresponding benchmarks.",
         "pic": "Giants.png"
     },
@@ -275,7 +275,7 @@ projects = [
         "title": "Network Intrusion Detection Using GANs",
         "team": "SANIN",
         "video": "https://www.youtube.com/watch?v=sIF1Gkbm_z0",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1pEY6uuSgSvBam6NZC99t2oASUYeIbKV0/view?usp=sharing",
         "summary": "With the ubiquitous use of the internet over the past decade, cyber attacks have been on the rise. Billions of dollars are lost every year due to cyber attacks, especially on computer networks. To anticipate these attacks, intrusion detection methods have been employed on computer networks. These network intrusion methods detect anomalies on network traffic data so that timely action can be taken against impending attacks. This report introduces the baseline GAN architechture implemented to train a Network Intrusion Detection System to perform anomaly detection on labelled network traffic data.",
         "pic": "SANIN.png"
     },
@@ -283,7 +283,7 @@ projects = [
         "title": "Accelerating Faster R-CNN",
         "team": "LightningProject Video Link:",
         "video": "https://youtu.be/qIwhZE9auj4",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/13Ha-ppMZvZojzneP58-xoHn4SrJB0RLb/view?usp=sharing",
         "summary": "Faster R-CNN is a state-of-the-art object detection model that is widely used in many important areas such as autonomous driving. The main contribution in our project is to further accelerate the faster R-CNN model so it can be deployed on limited-GPU devices. Our experiments include replacing the model's backbone with different light-weighted networks, tuning RPN layer and feature cropping with RoI alignment. With MobileNet as our backbone model, our accelerated version of faster R-CNN can significantly reduce the training time with acceptable tradeoff in accuracy. Andrew IDs:pengqilu, hxzhuPeer Rating Form:",
         "pic": "LightningProject Video Link:.png"
     },
@@ -291,7 +291,7 @@ projects = [
         "title": "To Approximate or Not to Approximate: Backpropagation in Spiking Neural Networks",
         "team": "Spiking Neural Networks (SNNs) and Backpropagation Algorithms",
         "video": "https://youtu.be/fYjbIy30_ts",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1dzjU5-4CXw4yMfOVeWTAIc0VdAAKk1i-/view?usp=sharing",
         "summary": "Spiking neural networks (SNNs) are a class of neural networks that use event-times, the times at which spikes occur, to encode and process information. Traditional artificial neural networks (ANNs) differ from SNNs in that they use event-rates, the number of spikes within a given time window, to encode and process information. One main advantage of SNNs over ANNs is their lower energy use, this is due to the fact SNNs require less memory storage than ANNs. Because SNNs encode information using binary spike trains, modeled using dirac-delta functions, the derivatives for individual neurons do not always exist making error backpropagation impossible. To handle this problem, researchers have created SNN backpropagation algorithms that either 1) roughly approximate or 2) calculate exactly the derivative of the output at each neuron at an event-time. In our final report, we will present a complete comparison between an approximate and exact SNN backpropagation algorithm, known as SpikeProp and EventProp, respectively.",
         "pic": "Spiking Neural Networks (SNNs) and Backpropagation Algorithms.png"
     },
@@ -299,15 +299,15 @@ projects = [
         "title": "Age estimation from speech using Deep Learning techniques",
         "team": "The A-Team",
         "video": "https://youtu.be/QQGIqRbcq3s",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1pElgnaneBDUvN0OPirpk7AuRAMn4FN0p/view?usp=sharing",
         "summary": "Estimating age can be used in many applications including profiling, caller agent pairing or in dialogue systems. Most of the research on this topic has been estimating these features using several estimation techniques. In this research, we used deep learning techniques on three datasets (TIMIT, SRE corpus and Fisher corpus) to predict the speaker\u2019s age and height. We used a 2 layer unidirectional LSTM model fed to a single feed forward neural network. The overall MAE loss results on the testing data are 5.85 years for males and 6.25 years for females.",
         "pic": "The A-Team.png"
     },
     {
-        "title": "Image Captioning",
+        "title": "Meme Caption Captioning",
         "team": "Bhiksha's Batches",
         "video": "https://www.youtube.com/watch?v=eqv8-rXfj3Y",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/17EbwHkVdB1VSrR63NdxS_UfRU7Z-KC-t/view?usp=sharing",
         "summary": "An internet meme is a type of visual media consumed and spread on the Internet. Memes consist most commonly of image macros with accompanying textual captions, and are usually created for comedic effect and with the intent of being shared and spread. In this report, we explore deep learning methods of novel meme generation and report our present progress.",
         "pic": "Bhiksha's Batches.png"
     },
@@ -315,7 +315,7 @@ projects = [
         "title": "Pedestrian Activity Recognition",
         "team": "",
         "video": "https://www.youtube.com/watch?v=kwNURPNgvws&feature=youtu.be&ab_channel=ShamsulhaqBasir",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1gMjQZYP3iczlLdVy91514M8kOzBi54Uq/view?usp=sharing",
         "summary": "Activity recognition entails the broad set of problems that require a model to recognize what action is being performed by the object in consideration. This should be achieved by the wealth of information received by sensors such as LIDAR, monocular camera, stereo camera etc. The problem of activity recognition is particularly hard because of the amount of spatio-temporal features the model needs to learn to accurately classify the activity. In this project, we aim to study the problem of activity recognition in the domain of pedestrian activity classification which is an important problem to realize self-driving car technology. Further, this project will explore end-to-end architectures to classify actions from videos which requires the model to infer from different parts of the video spatially and temporally across frames while maintaining knowledge of the state of the object. The baseline model chosen is YOWO (You Only Watch Once) which performs well in detecting and localizing actions using RGB data and our project explores the modifications necessary to make it work for pedestrian activity recognition in the context of localizing multiple actions at the same frame and handling occlusions.",
         "pic": ".png"
     },
@@ -323,7 +323,7 @@ projects = [
         "title": "Multimodal Memex Question Answering",
         "team": "CUDA out of memory",
         "video": "https://www.youtube.com/watch?v=MCUvsVxN6ww",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1LMf2iiaiU3IhthKNwSkpI2pAf3_ggDJ9/view?usp=sharing",
         "summary": "With the development of photography technology, one may create several personal albums accumulating thousands of photos and many hours of videos to capture important events in their life. While that is a blessing in this new age of technology, it can lead to a problem of disorganization and information overload. Previous work attempts to resolve this problem with an automated way of processing and organizing photos, by proposing a new Visual Question Answering task named MemexQA. MemexQA works by taking the input of the user, the input being a question and a series of pictures, and responds with an answer to that question and a separate series of photos to justify the answer. A natural way to recall the past are by questions and photographs, and MemexQA eloquently combines the two to organize and label photographs, whether it be for the user to recall the past or to organize photographs into separate albums. Our objective for our project is to follow up on the Visual Question Answering task by proposing a new neural network architecture that attains a higher performance on the MemexQA dataset.",
         "pic": "CUDA out of memory.png"
     },
@@ -331,7 +331,7 @@ projects = [
         "title": "Algorithmic Music Composition: GAN based Melody Generation",
         "team": "GucciGan",
         "video": "https://youtu.be/ayBD-cFhemI",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1EHqWbwnE-7F-t4ol6PcTVx_rqV8znPQD/view?usp=sharing",
         "summary": "Algorithmic music composition is a challenging problem at the intersection of music and deep learning, with a wide range of research areas. While there have been multiple proposed methods for music generation via deep learning, generating convincing musical segments remains a difficult task. In this work we are interested in generating melodies using a GAN architecture. We examine existing methods, and also attempt to identify evaluation metrics for a useful \u201cobjective\u201d and subjective evaluation, which is a challenge when it comes to GAN results.",
         "pic": "GucciGan.png"
     },
@@ -339,7 +339,7 @@ projects = [
         "title": "Using Differentiable WFSTs in ESPnet",
         "team": "Local Minimum",
         "video": "https://www.youtube.com/watch?v=v8J1bY3B_W4",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1jwRCKy98aZ748up7wd8u7gxw-5quc33d/view?usp=sharing",
         "summary": "Weighted Finite State Transducers (WFSTs) are a commonly used tool to encode probabilistic models. Previously, WFSTs are often trained using rules such as weight determinization,weight minimization and weight pushing algorithms [4], which do not employ learning algorithms. Differentiable WFSTs are a recent development, and there has not been extensive investigation into the possible applications of training with WFSTs for various Automatic Speech Recognition (ASR) tasks. This development turns WFSTs into a possible anotherway of encoding information, in addition to normal tensors [2]. We wish to investigate different ways to train WFSTs for ASR, by using a variety of designs and different objective functions. By comparing the baseline and current results from differentiable WFST models,we have an intermediate conclusion that we can aim for character error rates (CER) in the range of around 1.0 through 7.0.Andrew IDs:shivins, nmongkol, araut, daniel sniderPeer Rating Form:",
         "pic": "Local Minimum.png"
     },
@@ -347,7 +347,7 @@ projects = [
         "title": "Chinese Poetry Generator",
         "team": "Chinese Poetry Generator",
         "video": "https://youtu.be/Nahib1vfODU",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/18WZ2v-0bxRZh1BKZaTwguidSPc9zb7jX/view?usp=sharing",
         "summary": "Classic Chinese poems are very different from English poems, in a way that Chinese poems have many particular characteristics in its language structure, ranging from form, sound to meaning, thus is regarded as an ideal testing task for text generation. In this project, we explored a way to generate Chinese poetry by using the Transformer-XL model. We could use our model to generate well-structured 7-character Jueju-style poems according to user input of specific words or first sentences in Chinese, which is a crucial genre of Chinese poetry. Rather than implementation from scratch, our project made some adjustments and improvements on the existing model of Transformer XL in Chinese language generation, and achieved a reasonably good result, comparing to the best Chinese poetry generator \"aichpoem\" on market. Our website will be online soon for the entire class to evaluate our work.",
         "pic": "Chinese Poetry Generator.png"
     },
@@ -355,7 +355,7 @@ projects = [
         "title": "Spatiotemporal Action Recognition in Videos",
         "team": "YOWOv2",
         "video": "https://youtu.be/WIr3QHQWmVs",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1pMBOuZckdUN8PAMh9BYI0x3JVcomQQ-N/view?usp=sharing",
         "summary": "Spatiotemporal action recognition deals with locating and classifying actions invideos. Motivated by the latest state-of-the-art real-time object detector YouOnly Watch Once (YOWO), we aim to modify its structure to increase actiondetection precision and reduce computational time. Specifically, we propose toreuse two-dimensional feature extractors and perform sparse scanning in videos.Besides, we propose to integrate information on the key frame into the three-dimensional structure that extracts spatiotemporal features as well as modifying theloss function to account for number of classes in videos. We consider two moderate-sized datasets to apply our modification of YOWO - the popular Joint-annotatedHuman Motion Data Base (J-HMDB-21) and a private dataset of restaurant videofootage provided by a Carnegie Mellon University-based startup, Agot.AI. Thelatter involves fast-moving actions with small objects as well as unbalanced dataclasses, making the task of action localization more challenging.",
         "pic": "YOWOv2.jpeg"
     },
@@ -363,7 +363,7 @@ projects = [
         "title": "Single image super-resolution with deep neural networks",
         "team": "#49",
         "video": "https://youtu.be/eZOoY-v2HxI",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "report": "https://drive.google.com/file/d/1HILMS_gOhb_O7JfwDC78vbqXoskz9Hon/view?usp=sharing",
         "summary": "For this project, we aim to solve the problem of single image super-resolution (SISR) with deep learning. Specifically, the first stage of the project is to establish baseline models by the re-implementation of CNN architecture. For the second stage, the project will research and implement novel methods and network architectures with the aim to improve the baseline model performance.",
         "pic": "#49.png"
     }
