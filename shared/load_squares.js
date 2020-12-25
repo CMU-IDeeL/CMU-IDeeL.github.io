@@ -23,5 +23,10 @@ for (var i in projects) {
 
     // add to document DOM
     var clone = document.importNode(t.content, true); // where true means deep copy
+    if (project['top5'] === true) {
+        console.log("top 5")
+        clone.querySelector(".project").classList.add("top-project");
+    }
+
     document.querySelector("#projs").appendChild(clone);
 }

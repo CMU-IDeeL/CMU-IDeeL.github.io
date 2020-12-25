@@ -1,5 +1,50 @@
 projects = [
     {
+        "top5": true,
+        "title": "Meta-Learning in Manipulation",
+        "team": "Team Grasp",
+        "video": "https://youtu.be/cp1g_qhH-Go",
+        "report": "https://drive.google.com/file/d/1K_surkWundLtXzsFKgQorjbpayfzid0x/view?usp=sharing",
+        "summary": "Reinforcement learning (RL) is a powerful learning technique that enables agents to learn useful\u00a0policies by interacting directly with the environment.\u00a0 While this training approach doesn\u2019t require labeled data, it is plagued with convergence issues and is highly sample inefficient. The learned policies are often very specific to the task at hand and are not generalizable to similar task spaces. Metal-ReinforcementLearning is a one strategy that can mitigate these issues, enabling robots to acquire new skills much more quickly. Often described as \u201clearning how to learn\u201d, it allows agents to leverage prior experience much more effectively.\u00a0 Recently published papers in Meta learning show impressive speed and sample efficiency improvements over traditional methods of relearning the task for slight variations in the task objectives.\u00a0 A concern with these meta-learning methods was that their success was only achieved on relatively small modifications to the initial task.\u00a0 Another Concern in RL is reproducibility and lack of standardization of the metrics and approaches, which can lead to wide variations in reported vs observed performances. To alleviate that, benchmarking frameworks have been proposed that establish a common ground for a fair comparison between approaches. In this work, we aim to utilize the task variety proposed by Meta-World and compare PPO, a vanilla policy gradient algorithm, vs their meta-learning counterparts\u00a0 (MAML\u00a0 and\u00a0 Reptile). \u00a0 The\u00a0 objective\u00a0 is\u00a0 to\u00a0 verify\u00a0 the\u00a0 magnitude of success of meta-learning algorithms over the vanilla variants, and test them on a variety of complicated tasks to test their limits in responding to the size of task variations. We also introduce a new technique - Multi-headed Reptile,which addresses some of the shortcomings of both these meta learning techniques. Additionally, we propose a method to speed up the training process to compensate for the general lack of vectorizability of some parts of reinforcement learning algorithms.",
+        "pic": "Team Grasp.png"
+    },
+    {
+        "top5": true,
+        "title": "Multi-SAP Adversarial Defense for Deep Neural Networks",
+        "team": "Enthu-Cutlets",
+        "video": "https://youtu.be/GOS71WOBSN8",
+        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "summary": "Deep learning models have gained immense popularity for machine learning tasks such as image classification and natural language processing due to their high expressibility. However, they are vulnerable to adversarial samples - perturbed samples that are imperceptible to a human, but can cause the deep learning model to give incorrect predictions with a high confidence. This limitation has been a major deterrent in the deployment of deep learning algorithms in production, specifically in security critical systems. In this project, we followed a game theoretic approach to implement a novel defense strategy, that combines multiple Stochastic Activation Pruning with adversarial training. Our defense accuracy outperforms that of PGD adversarial training, which is known to be the one of the best defenses against several L∞ attacks, by about 6-7%. We are hopeful that our defense strategy can withstand strong attacks leading to more robust deep neural network models.",
+        "pic": "Enthu-Cutlets.png"
+    },
+    {
+        "top5": true,
+        "title": "Game Theory For Adversarial Attacks And Defenses",
+        "team": "Team IDL.dll",
+        "video": "https://youtu.be/MeBxlQ-n6e4",
+        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "summary": "Adversarial attacks can generate adversarial inputs by applying small but intentionally worst-case perturbations to samples from the data set, which leads to even state-of-the-art deep neural networks outputting an incorrect answer with high confidence. Hence, some adversarial defense techniques are developed to improve the security and robustness of the models and avoid them being attacked. Gradually, a game-like competition between attackers and defenders formed, in which both players would attempt to play their best strategies against each other while maximizing their own payoffs. To solve the game, each player would choose an optimal strategy against the opponent based on the prediction of the opponent\u2019s strategy choice. In this work, we are on the defensive side to apply game-theoretic approaches on adversarial training the models. We generate adversarial training samples by assuming attackers would do a fast gradient sign method (FGSM) white-box attack. Using both the raw data set and generated data set to train the models, we reduce the test data set error while the models being attacked on the CIFAR-10 data set. Our experimental results indicate that the adversarial training method can effectively improve the robustness of deep-learning neural networks. Our proposed method aims to use diverse networks to simulate the mixed strategy thus to reduce the success rate of attack",
+        "pic": "Team IDL.dll.png"
+    },
+    {
+        "top5": true,
+        "title": "Multi-modal Image Cartoonization",
+        "team": "Sailor Moon",
+        "video": "https://youtu.be/irD-Unhc-Ms",
+        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "summary": "In this project, we study the problem of multi-modal image cartoonization. Current image cartoonization methods are single modal models, which restrict the scalability to multi-modal. We proposed a model based on StarGAN and StyleGAN to solve this challenging problem. For the midterm checkpoint, we implemented 3 baseline models to learn the problem and limitation of current models and show our initial experiments of them. Code available at: https://github.com/Hhhhhhhhhhao/image-cartoonization",
+        "pic": "Sailor Moon.png"
+    },
+    {
+        "top5": true,
+        "title": "A Walk to Remember: Trajectory Prediction using Recurrent Networks \ud83d\udeb6\u200d\u2642\ufe0f",
+        "team": "Team Rocket",
+        "video": "https://youtu.be/_HqzPlvgugs",
+        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
+        "summary": "Trajectory prediction is an important problem that has applications in autonomous driving, safety monitoring, object tracking, robotic planning, and so on. Current state-of-the-art methods focus on either single or multiple trajectory prediction using generative models (such as Generative Adversarial Networks), as well as discriminative models. In this project we outline several methods that achieve competitive results, highlight the key contributions of their approaches, and justify our choice of adopting a discriminative approach. Starting with the Social-LSTM model as our baseline, we propose several possible extensions to improve the quality and length of predicted trajectories.",
+        "pic": "Team Rocket.png"
+    },
+    {
         "title": "Adversarial Defense Using Generative Adversarial Networks",
         "team": "StarsAlign",
         "video": "https://www.youtube.com/watch?v=EhtTznS63cE",
@@ -30,14 +75,6 @@ projects = [
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Reinforcement learning has been widely used for artificial intelligence in playing games and proven having the ability to defeat human players in many cases. Quantum Tic-Tac-Toe (QTTT) game adds the idea of superposition to the classic Tic-Tac-Toe, which implies a huge piece arrangement space up to 10^8. The projects implements 2 reinforcement learnining algorithms: temporal difference learning and AlphaZero. Both cases policies are learnt through self-play. Initial experiment result shows that AlphaZero can achieve a professioncy equivalent to the medium level AI provided by the Qttt game on the google app store.",
         "pic": "Erwin.png"
-    },
-    {
-        "title": "Game Theory For Adversarial Attacks And Defenses",
-        "team": "Team IDL.dll",
-        "video": "https://youtu.be/MeBxlQ-n6e4",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Adversarial attacks can generate adversarial inputs by applying small but intentionally worst-case perturbations to samples from the data set, which leads to even state-of-the-art deep neural networks outputting an incorrect answer with high confidence. Hence, some adversarial defense techniques are developed to improve the security and robustness of the models and avoid them being attacked. Gradually, a game-like competition between attackers and defenders formed, in which both players would attempt to play their best strategies against each other while maximizing their own payoffs. To solve the game, each player would choose an optimal strategy against the opponent based on the prediction of the opponent\u2019s strategy choice. In this work, we are on the defensive side to apply game-theoretic approaches on adversarial training the models. We generate adversarial training samples by assuming attackers would do a fast gradient sign method (FGSM) white-box attack. Using both the raw data set and generated data set to train the models, we reduce the test data set error while the models being attacked on the CIFAR-10 data set. Our experimental results indicate that the adversarial training method can effectively improve the robustness of deep-learning neural networks. Our proposed method aims to use diverse networks to simulate the mixed strategy thus to reduce the success rate of attack",
-        "pic": "Team IDL.dll.png"
     },
     {
         "title": "Deep Contextualized Term Weighting for Ad-Hoc Document Retrieval",
@@ -72,14 +109,6 @@ projects = [
         "pic": "Precognition.png"
     },
     {
-        "title": "Multi-modal Image Cartoonization",
-        "team": "Sailor Moon",
-        "video": "https://youtu.be/irD-Unhc-Ms",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "In this project, we study the problem of multi-modal image cartoonization. Current image cartoonization methods are single modal models, which restrict the scalability to multi-modal. We proposed a model based on StarGAN and StyleGAN to solve this challenging problem. For the midterm checkpoint, we implemented 3 baseline models to learn the problem and limitation of current models and show our initial experiments of them. Code available at: https://github.com/Hhhhhhhhhhao/image-cartoonization",
-        "pic": "Sailor Moon.png"
-    },
-    {
         "title": "Ensemble-based adversarial defense",
         "team": "MIIS Big Four",
         "video": "https://www.youtube.com/watch?v=DbSUzBIDKtY",
@@ -102,14 +131,6 @@ projects = [
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Visual Question Answering (VQA) has wide applications in real life and is one of the benchmarks for artificial intelligence systems. In this paper, we propose a new solution to a related task, MemexQA, in which photos from personal albums as well as photo metadata are given to answer a multiple-choice question about the information presented in the albums such as locations, dates, events and people. Specifically, we tackle this task by improving the information fusion process of a baseline LSTM model by introducing a multi-stage fusion method for features of different modalities.",
         "pic": "Sunday Dues.jpg"
-    },
-    {
-        "title": "A Walk to Remember: Trajectory Prediction using Recurrent Networks \ud83d\udeb6\u200d\u2642\ufe0f",
-        "team": "Team Rocket",
-        "video": "https://youtu.be/_HqzPlvgugs",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Trajectory prediction is an important problem that has applications in autonomous driving, safety monitoring, object tracking, robotic planning, and so on. Current state-of-the-art methods focus on either single or multiple trajectory prediction using generative models (such as Generative Adversarial Networks), as well as discriminative models. In this project we outline several methods that achieve competitive results, highlight the key contributions of their approaches, and justify our choice of adopting a discriminative approach. Starting with the Social-LSTM model as our baseline, we propose several possible extensions to improve the quality and length of predicted trajectories.",
-        "pic": "Team Rocket.png"
     },
     {
         "title": "Triple Defense Against Adversarial Attacks",
@@ -184,14 +205,6 @@ projects = [
         "pic": "Mariana Trench\u00a0.png"
     },
     {
-        "title": "Multi-SAP Adversarial Defense for Deep Neural Networks",
-        "team": "Enthu-Cutlets",
-        "video": "https://youtu.be/GOS71WOBSN8",
-        "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Deep learning models have gained immense popularity for machine learning tasks such as image classification and natural language processing due to their high expressibility. However, they are vulnerable to adversarial samples - perturbed samples that are imperceptible to a human, but can cause the deep learning model to give incorrect predictions with a high confidence. This limitation has been a major deterrent in the deployment of deep learning algorithms in production, specifically in security critical systems. In this project, we followed a game theoretic approach to implement a novel defense strategy, that combines multiple Stochastic Activation Pruning with adversarial training. Our defense accuracy outperforms that of PGD adversarial training, which is known to be the one of the best defenses against several L∞ attacks, by about 6-7%. We are hopeful that our defense strategy can withstand strong attacks leading to more robust deep neural network models.",
-        "pic": "Enthu-Cutlets.png"
-    },
-    {
         "title": "A GPT2 based Limerick Generator",
         "team": "Youshen",
         "video": "https://youtu.be/b16xOLpG_p0",
@@ -206,14 +219,6 @@ projects = [
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Object detection is breaking into a wide range of industries, with use cases rang- ing from personal security to automated vehicle safety. While object detection techniques have improved massively over the past decade, most state of the art detectors rely on pre-defined anchor boxes and 2-stage region proposal networks. In this project, we try to implement an anchor-free, region proposal-free detector which makes use of multi-level feature pyramid network for greater localization and classification accuracy. For the mid-term report, we have implemented an anchor-based FPN network as a baseline which is able to achieve an mAP value of 0.75. We are now working towards improving this performance using multi-level FPNs for the final submission.Andrew IDs:dvashish, bmullick, shayeres, zhenweilPeer Rating Form:",
         "pic": "Peaky BlindersProject Video Link:.png"
-    },
-    {
-        "title": "Meta-Learning in Manipulation",
-        "team": "Team Grasp",
-        "video": "https://youtu.be/cp1g_qhH-Go",
-        "report": "https://drive.google.com/file/d/1K_surkWundLtXzsFKgQorjbpayfzid0x/view?usp=sharing",
-        "summary": "Reinforcement learning (RL) is a powerful learning technique that enables agents to learn useful\u00a0policies by interacting directly with the environment.\u00a0 While this training approach doesn\u2019t require labeled data, it is plagued with convergence issues and is highly sample inefficient. The learned policies are often very specific to the task at hand and are not generalizable to similar task spaces. Metal-ReinforcementLearning is a one strategy that can mitigate these issues, enabling robots to acquire new skills much more quickly. Often described as \u201clearning how to learn\u201d, it allows agents to leverage prior experience much more effectively.\u00a0 Recently published papers in Meta learning show impressive speed and sample efficiency improvements over traditional methods of relearning the task for slight variations in the task objectives.\u00a0 A concern with these meta-learning methods was that their success was only achieved on relatively small modifications to the initial task.\u00a0 Another Concern in RL is reproducibility and lack of standardization of the metrics and approaches, which can lead to wide variations in reported vs observed performances. To alleviate that, benchmarking frameworks have been proposed that establish a common ground for a fair comparison between approaches. In this work, we aim to utilize the task variety proposed by Meta-World and compare PPO, a vanilla policy gradient algorithm, vs their meta-learning counterparts\u00a0 (MAML\u00a0 and\u00a0 Reptile). \u00a0 The\u00a0 objective\u00a0 is\u00a0 to\u00a0 verify\u00a0 the\u00a0 magnitude of success of meta-learning algorithms over the vanilla variants, and test them on a variety of complicated tasks to test their limits in responding to the size of task variations. We also introduce a new technique - Multi-headed Reptile,which addresses some of the shortcomings of both these meta learning techniques. Additionally, we propose a method to speed up the training process to compensate for the general lack of vectorizability of some parts of reinforcement learning algorithms.",
-        "pic": "Team Grasp.png"
     },
     {
         "title": "Semantic Segmentation for Urban-Scene Images",

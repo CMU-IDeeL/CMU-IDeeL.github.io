@@ -22,6 +22,25 @@
     box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.75);
 }
 
+.top-project:before {
+    content: "Top 5";
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    font-size: .8rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    top: 0;
+    color: white;
+    background-color: #A80000;
+}
+
+.top-project {
+    border-color: #A80000;
+    border-width: 1px;
+    border-style: solid;
+}
+
 .teaser {
     // border-radius: 8px 8px 0 0;
     height: 100%;
@@ -29,6 +48,7 @@
     left: 50%;
     top: 0;
     -webkit-transform: translateX(-50%);
+    z-index: -1;
 }
 .project-title {
     padding: 8px;
