@@ -82,7 +82,7 @@ projects = [
         "video": "https://youtu.be/IdrXnbTFs9M",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Bag-of-words representation with term-frequency based term weighting has been used for a long time in modern search engines. Although it is powerful in modeling document-query term interaction, its power is restricted by shallow frequency-based term weighting scheme. Recently, there has been some successful researches conducted using BERT to estimate term weights in a contextualized fashion. In our project, we propose to experiment models that can improve upon those original researches.",
-        "pic": "thinkingface\ud83e\udd14.png"
+        "pic": "thinkingface.png"
     },
     {
         "title": "Quantum Tic Tac Toe",
@@ -113,8 +113,8 @@ projects = [
         "team": "MIIS Big Four",
         "video": "https://www.youtube.com/watch?v=DbSUzBIDKtY",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Exploring the ensemble-based defense methods to defend adversarial attacks",
-        "pic": "MIIS Big Four.png"
+        "summary": "Exploring the ensemble-based defense methods to defend adversarial attacks.",
+        "pic": "MIIS Big Four.jpg"
     },
     {
         "title": "Study on Layer-wise Divergence Control Mechanism against Adversarial Attacks",
@@ -138,7 +138,7 @@ projects = [
         "video": "https://youtu.be/ZtKidQgfvQk",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "The recent development in the adversarial attacks can be maliciously used to cause a perfectly performing Deep Learning model to make incorrect predictions. This is particularly harmful in models where a misclassification becomes a matter of life and death. To address this problem, we are proposing a Triple Defense System, by creating an Ensemble Model of ShuffleNet models, where we are adding randomness at all the three levels of training, model selection and inference. This will lead to a Robust architecture against any type of adversarial attacks. To check the performance of our Triple Defense System, we have attacked the model with both Fast Gradient Method and Projected Gradient Descent attacks( L2 and Linf norm) with different adversarial noises. Our experiments are based on varying different parameters like noise, number of models at both training and inference stage and finding the best hyperparameters to provide defense against strong malicious attacks. ",
-        "pic": "\u00a0Up!Its8AM.png"
+        "pic": "Up!Its8AM.png"
     },
     {
         "title": "Real Time Road Scenes Semantic Segmentation",
@@ -202,7 +202,7 @@ projects = [
         "video": "https://youtu.be/j5TbS0NmN1M",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "We proposed two approaches to perform antibiotic molecule discovery and classification: 1. Simple Graph Neural Network: Applying graph neural network on atom/bond level features. 2. Fingerprint Vector Model: Applying conventional neural network on molecular level features (molecular fingerprint). We prepared a dataset of 2335 molecules with labels, and extracted atom/bond/molecular features from the dataset. Baseline models are built for both approaches. While graph neural network model is still in training, Multi-layer perceptron model applied to molecular fingerprints is able to achieve a 85.8% testing accuracy. However, we discovered that the dataset is unbalanced, with 95% of samples in one label. Since the data is collected by biochemistry experiments, the amount of data is limited. We decide to use data augmentation techniques such as SMOTE (Synthetic Minority Oversampling Technique) and ensembling in our future work. In the rest of semester, our goal is to improve current situation of limited number of data and enhance performance of current models.",
-        "pic": "Mariana Trench\u00a0.png"
+        "pic": "Mariana Trench.png"
     },
     {
         "title": "A GPT2 based Limerick Generator",
@@ -218,7 +218,7 @@ projects = [
         "video": "https://youtu.be/2-GGyW59CLw",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Object detection is breaking into a wide range of industries, with use cases rang- ing from personal security to automated vehicle safety. While object detection techniques have improved massively over the past decade, most state of the art detectors rely on pre-defined anchor boxes and 2-stage region proposal networks. In this project, we try to implement an anchor-free, region proposal-free detector which makes use of multi-level feature pyramid network for greater localization and classification accuracy. For the mid-term report, we have implemented an anchor-based FPN network as a baseline which is able to achieve an mAP value of 0.75. We are now working towards improving this performance using multi-level FPNs for the final submission.Andrew IDs:dvashish, bmullick, shayeres, zhenweilPeer Rating Form:",
-        "pic": "Peaky BlindersProject Video Link:.png"
+        "pic": "Peaky Blinders.png"
     },
     {
         "title": "Semantic Segmentation for Urban-Scene Images",
@@ -234,7 +234,7 @@ projects = [
         "video": "https://youtu.be/gERzi7Wd2Y4",
         "report": "https://drive.google.com/file/d/1uUsnXxLM5Zupq_BiS8UsJT0hFNNZVqwb/view?usp=sharing",
         "summary": "COVID-19 had become the new norm since the pandemic. While the number of cases are rising on a daily basis, there is a steady need to keep up rising number of cases and automate the diagnosis of COVID-19, offloading some of the work off the front-line workers. It is a known fact that medical image data suffers from skewness due to the limited availability of positive COVID-19 patient data. Deep learning models rely heavily on the uniformity of the data to produce a good result and hence often overfit on highly skewed data. Increasing the number of training samples has been shown to provide better classification accuracy and more generalizability. Due to strict protocols for medical data collection, it is not feasible to collect additional data for training. In a scenario like this, the best approach is to perform data augmentation on the available training samples to reduce class imbalance and generate more samples. Many approaches to data augmentation have been proposed, from basic image transformations to using a Generative network to create new images. In this work, we apply a combination of Variational Autoencoders and Generative Adversarial Networks to augment the COVID-19 data on which a CNN-based classifier is trained to achieve a better performance.",
-        "pic": "The Cerebral Catz\u00a0.png"
+        "pic": "The Cerebral Catz.png"
     },
     {
         "title": "Adversarial attacks defenses via Modeled random noises",
@@ -286,11 +286,11 @@ projects = [
     },
     {
         "title": "Accelerating Faster R-CNN",
-        "team": "LightningProject Video Link:",
+        "team": "Lightning",
         "video": "https://youtu.be/qIwhZE9auj4",
         "report": "https://drive.google.com/file/d/13Ha-ppMZvZojzneP58-xoHn4SrJB0RLb/view?usp=sharing",
         "summary": "Faster R-CNN is a state-of-the-art object detection model that is widely used in many important areas such as autonomous driving. The main contribution in our project is to further accelerate the faster R-CNN model so it can be deployed on limited-GPU devices. Our experiments include replacing the model's backbone with different light-weighted networks, tuning RPN layer and feature cropping with RoI alignment. With MobileNet as our backbone model, our accelerated version of faster R-CNN can significantly reduce the training time with acceptable tradeoff in accuracy. Andrew IDs:pengqilu, hxzhuPeer Rating Form:",
-        "pic": "LightningProject Video Link:.png"
+        "pic": "Lightning.png"
     },
     {
         "title": "To Approximate or Not to Approximate: Backpropagation in Spiking Neural Networks",
