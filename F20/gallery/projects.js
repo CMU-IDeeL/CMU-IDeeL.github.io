@@ -24,9 +24,9 @@ projects = [
         "pic": "chanzysb.png"
     },
     {
-        "title": "Erwin Schr\u00f6dinger\u2019s Neuron",
-        "team": "PreliminaryReport.pdf",
-        "video": "https://youtu.be/CFnUe56Ka-A",
+        "title": "AlphaQuatum: Mastering the game of Quatum Tic Tac Toe without human knowledge",
+        "team": "Erwin Schr\u00f6dinger\u2019s Neuron",
+        "video": "https://youtu.be/VLC6ztza2k8",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Reinforcement learning has been widely used for artificial intelligence in playing games and proven having the ability to defeat human players in many cases. Quantum Tic-Tac-Toe (QTTT) game adds the idea of superposition to the classic Tic-Tac-Toe, which implies a huge piece arrangement space up to 10^8. The projects implements 2 reinforcement learnining algorithms: temporal difference learning and AlphaZero. Both cases policies are learnt through self-play. Initial experiment result shows that AlphaZero can achieve a professioncy equivalent to the medium level AI provided by the Qttt game on the google app store.",
         "pic": "Erwin.png"
@@ -36,7 +36,7 @@ projects = [
         "team": "Team IDL.dll",
         "video": "https://youtu.be/MeBxlQ-n6e4",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Project Abstract: Adversarial attacks can generate adversarial inputs by applying small but intentionally worst-case perturbations to samples from the data set, which leads to even state-of-the-art deep neural networks outputting an incorrect answer with high confidence. Hence, some adversarial defense techniques are developed to improve the security and robustness of the models and avoid them being attacked. Gradually, a game-like competition between attackers and defenders formed, in which both players would attempt to play their best strategies against each other while maximizing their own payoffs. To solve the game, each player would choose an optimal strategy against the opponent based on the prediction of the opponent\u2019s strategy choice. In this work, we are on the defensive side to apply game-theoretic approaches on adversarial training the models. We generate adversarial training samples by assuming attackers would do a fast gradient sign method (FGSM) white-box attack. Using both the raw data set and generated data set to train the models, we reduce the test data set error while the models being attacked on the CIFAR-10 data set. Our experimental results indicate that the adversarial training method can effectively improve the robustness of deep-learning neural networks. Our proposed method aims to use diverse networks to simulate the mixed strategy thus to reduce the success rate of attack",
+        "summary": "Adversarial attacks can generate adversarial inputs by applying small but intentionally worst-case perturbations to samples from the data set, which leads to even state-of-the-art deep neural networks outputting an incorrect answer with high confidence. Hence, some adversarial defense techniques are developed to improve the security and robustness of the models and avoid them being attacked. Gradually, a game-like competition between attackers and defenders formed, in which both players would attempt to play their best strategies against each other while maximizing their own payoffs. To solve the game, each player would choose an optimal strategy against the opponent based on the prediction of the opponent\u2019s strategy choice. In this work, we are on the defensive side to apply game-theoretic approaches on adversarial training the models. We generate adversarial training samples by assuming attackers would do a fast gradient sign method (FGSM) white-box attack. Using both the raw data set and generated data set to train the models, we reduce the test data set error while the models being attacked on the CIFAR-10 data set. Our experimental results indicate that the adversarial training method can effectively improve the robustness of deep-learning neural networks. Our proposed method aims to use diverse networks to simulate the mixed strategy thus to reduce the success rate of attack",
         "pic": "Team IDL.dll.png"
     },
     {
@@ -44,16 +44,16 @@ projects = [
         "team": "thinkingface\ud83e\udd14",
         "video": "https://youtu.be/IdrXnbTFs9M",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Project Abstract: Bag-of-words representation with term-frequency based term weighting has been used for a long time in modern search engines. Although it is powerful in modeling document-query term interaction, its power is restricted by shallow frequency-based term weighting scheme. Recently, there has been some successful researches conducted using BERT to estimate term weights in a contextualized fashion. In our project, we propose to experiment models that can improve upon those original researches.",
+        "summary": "Bag-of-words representation with term-frequency based term weighting has been used for a long time in modern search engines. Although it is powerful in modeling document-query term interaction, its power is restricted by shallow frequency-based term weighting scheme. Recently, there has been some successful researches conducted using BERT to estimate term weights in a contextualized fashion. In our project, we propose to experiment models that can improve upon those original researches.",
         "pic": "thinkingface\ud83e\udd14.png"
     },
     {
-        "title": "Tic Tac Toe",
-        "team": "",
+        "title": "Quantum Tic Tac Toe",
+        "team": "Tic Tac Toe",
         "video": "https://youtu.be/WXiUDKCsXa0",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Peer Rating Form:\u00a0https://forms.gle/Lde2f1KjaZ6ZKyrS9\u00a0",
-        "pic": ".png"
+        "summary": "Leverage deep learning techniques to solve different version of Tic Tac Toe (normal, and different version of quantumness) and compare their performance. Research how different types of learnings perform in different complexities of games)",
+        "pic": "Tic Tac Toe.png"
     },
     {
         "title": "Game Theoretic Approaches to Adversarial Attacks and Defenses",
@@ -73,11 +73,11 @@ projects = [
     },
     {
         "title": "Multi-modal Image Cartoonization",
-        "team": "Sailor MoonProject Video Link:",
+        "team": "Sailor Moon",
         "video": "https://youtu.be/irD-Unhc-Ms",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Multi-modal Image CartoonizationProject Abstract:In this project, we study the problem of multi-modal image cartoonization. Current image cartoonization methods are single modal models, which restrict the scalability to multi-modal. We proposed a model based on StarGAN and StyleGAN to solve this challenging problem. For the midterm checkpoint, we implemented 3 baseline models to learn the problem and limitation of current models and show our initial experiments of them. Code available at: https://github.com/Hhhhhhhhhhao/image-cartoonizationAndrew IDs:haoc3, zhiyuan2, shunyaozPeer Rating Form:",
-        "pic": "Sailor MoonProject Video Link:.png"
+        "summary": "In this project, we study the problem of multi-modal image cartoonization. Current image cartoonization methods are single modal models, which restrict the scalability to multi-modal. We proposed a model based on StarGAN and StyleGAN to solve this challenging problem. For the midterm checkpoint, we implemented 3 baseline models to learn the problem and limitation of current models and show our initial experiments of them. Code available at: https://github.com/Hhhhhhhhhhao/image-cartoonization",
+        "pic": "Sailor Moon.png"
     },
     {
         "title": "Ensemble-based adversarial defense",
@@ -145,11 +145,11 @@ projects = [
     },
     {
         "title": "Whole-Document Embedding and Classification for the Clinical Domain",
-        "team": "ICD Light\u00a0",
+        "team": "ICD Light",
         "video": "https://youtu.be/e6VYVbTY6wk",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Using novel pre-training of Transformer encoders, this project tackles whole-document embedding for the clinical domain. Additionally, we propose a fine-tuning process on electronic healthcare records for transformer models and a novel medical coding benchmark task. We release our best-performing encoder model and suggest future investigation with regard to the natural language tasks in this domain.",
-        "pic": "ICD Light\u00a0.png"
+        "pic": "ICD Light.png"
     },
     {
         "title": "Stereo Analysis using Low Texture Thermal Data",
@@ -170,10 +170,10 @@ projects = [
     {
         "title": "Optimization of ESPnet Feature Extraction",
         "team": "Gold Miner",
-        "video": "https://www.youtube.com/watch?v=MCUvsVxN6ww",
+        "video": "https://youtu.be/7SPblpgVtr8",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Project Abstract: Automatic speech recognition (ASR) studies converting spoken words into text by machine. It has been a field of research since the late 1950s, and researchers have developed a mature speech recognition pipeline consists of feature extraction, acoustic modeling, lexicon, and language modeling. Our project will focus on feature extraction, which converts the waveform speech signal to a set of feature vectors via different types of transformation. The current speech feature configuration (log mel filterbank) was fixed for more than 20 years and the old standards may not be optimal in the deep learning era. Therefore, our team will explore novel ways of feature extraction to improve the performance of speech recognition.",
-        "pic": "Gold Miner.png"
+        "summary": "Automatic speech recognition (ASR) studies converting spoken words into text by machine. It has been a field of research since the late 1950s, and researchers have developed a mature speech recognition pipeline consists of feature extraction, acoustic modeling, lexicon, and language modeling. Our project will focus on feature extraction, which converts the waveform speech signal to a set of feature vectors via different types of transformation. The current speech feature configuration (log mel filterbank) was fixed for more than 20 years and the old standards may not be optimal in the deep learning era. Therefore, our team will explore novel ways of feature extraction to improve the performance of speech recognition.",
+        "pic": "Gold Miner.jpg"
     },
     {
         "title": "Deep Learning Approaches to Antibiotic Classification",
@@ -188,7 +188,7 @@ projects = [
         "team": "Enthu-Cutlets",
         "video": "https://youtu.be/GOS71WOBSN8",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Note to reviewers:\u00a0 You may stop watching at exactly 300 seconds, and review based only on the first 300 secs.",
+        "summary": "Deep learning models have gained immense popularity for machine learning tasks such as image classification and natural language processing due to their high expressibility. However, they are vulnerable to adversarial samples - perturbed samples that are imperceptible to a human, but can cause the deep learning model to give incorrect predictions with a high confidence. This limitation has been a major deterrent in the deployment of deep learning algorithms in production, specifically in security critical systems. In this project, we followed a game theoretic approach to implement a novel defense strategy, that combines multiple Stochastic Activation Pruning with adversarial training. Our defense accuracy outperforms that of PGD adversarial training, which is known to be the one of the best defenses against several L∞ attacks, by about 6-7%. We are hopeful that our defense strategy can withstand strong attacks leading to more robust deep neural network models.",
         "pic": "Enthu-Cutlets.png"
     },
     {
@@ -201,10 +201,10 @@ projects = [
     },
     {
         "title": "Anchor-free Object Detection using Multi-Level Feature Pyramids",
-        "team": "Peaky BlindersProject Video Link:",
+        "team": "Peaky Blinders",
         "video": "https://youtu.be/2-GGyW59CLw",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Anchor-free Object Detection using Multi-Level Feature PyramidsProject Abstract:Object detection is breaking into a wide range of industries, with use cases rang- ing from personal security to automated vehicle safety. While object detection techniques have improved massively over the past decade, most state of the art detectors rely on pre-defined anchor boxes and 2-stage region proposal networks. In this project, we try to implement an anchor-free, region proposal-free detector which makes use of multi-level feature pyramid network for greater localization and classification accuracy. For the mid-term report, we have implemented an anchor-based FPN network as a baseline which is able to achieve an mAP value of 0.75. We are now working towards improving this performance using multi-level FPNs for the final submission.Andrew IDs:dvashish, bmullick, shayeres, zhenweilPeer Rating Form:",
+        "summary": "Object detection is breaking into a wide range of industries, with use cases rang- ing from personal security to automated vehicle safety. While object detection techniques have improved massively over the past decade, most state of the art detectors rely on pre-defined anchor boxes and 2-stage region proposal networks. In this project, we try to implement an anchor-free, region proposal-free detector which makes use of multi-level feature pyramid network for greater localization and classification accuracy. For the mid-term report, we have implemented an anchor-based FPN network as a baseline which is able to achieve an mAP value of 0.75. We are now working towards improving this performance using multi-level FPNs for the final submission.Andrew IDs:dvashish, bmullick, shayeres, zhenweilPeer Rating Form:",
         "pic": "Peaky BlindersProject Video Link:.png"
     },
     {
@@ -284,7 +284,7 @@ projects = [
         "team": "LightningProject Video Link:",
         "video": "https://youtu.be/qIwhZE9auj4",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Accelerating Faster R-CNNProject Abstract:Faster R-CNN is a state-of-the-art object detection model that is widely used in many important areas such as autonomous driving. The main contribution in our project is to further accelerate the faster R-CNN model so it can be deployed on limited-GPU devices. Our experiments include replacing the model's backbone with different light-weighted networks, tuning RPN layer and feature cropping with RoI alignment. With MobileNet as our backbone model, our accelerated version of faster R-CNN can significantly reduce the training time with acceptable tradeoff in accuracy. Andrew IDs:pengqilu, hxzhuPeer Rating Form:",
+        "summary": "Faster R-CNN is a state-of-the-art object detection model that is widely used in many important areas such as autonomous driving. The main contribution in our project is to further accelerate the faster R-CNN model so it can be deployed on limited-GPU devices. Our experiments include replacing the model's backbone with different light-weighted networks, tuning RPN layer and feature cropping with RoI alignment. With MobileNet as our backbone model, our accelerated version of faster R-CNN can significantly reduce the training time with acceptable tradeoff in accuracy. Andrew IDs:pengqilu, hxzhuPeer Rating Form:",
         "pic": "LightningProject Video Link:.png"
     },
     {
@@ -304,11 +304,11 @@ projects = [
         "pic": "The A-Team.png"
     },
     {
-        "title": "Optimization of ESPnet Feature Extraction",
+        "title": "Image Captioning",
         "team": "Bhiksha's Batches",
-        "video": "https://www.youtube.com/watch?v=MCUvsVxN6ww",
+        "video": "https://www.youtube.com/watch?v=eqv8-rXfj3Y",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Project Abstract: An internet meme is a type of visual media consumed and spread on the Internet. Memes consist most commonly of image macros with accompanying textual captions, and are usually created for comedic effect and with the intent of being shared and spread. In this report, we explore deep learning methods of novel meme generation and report our present progress.",
+        "summary": "An internet meme is a type of visual media consumed and spread on the Internet. Memes consist most commonly of image macros with accompanying textual captions, and are usually created for comedic effect and with the intent of being shared and spread. In this report, we explore deep learning methods of novel meme generation and report our present progress.",
         "pic": "Bhiksha's Batches.png"
     },
     {
@@ -324,7 +324,7 @@ projects = [
         "team": "CUDA out of memory",
         "video": "https://www.youtube.com/watch?v=MCUvsVxN6ww",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Project Abstract: With the development of photography technology, one may create several personal albums accumulating thousands of photos and many hours of videos to capture important events in their life. While that is a blessing in this new age of technology, it can lead to a problem of disorganization and information overload. Previous work attempts to resolve this problem with an automated way of processing and organizing photos, by proposing a new Visual Question Answering task named MemexQA. MemexQA works by taking the input of the user, the input being a question and a series of pictures, and responds with an answer to that question and a separate series of photos to justify the answer. A natural way to recall the past are by questions and photographs, and MemexQA eloquently combines the two to organize and label photographs, whether it be for the user to recall the past or to organize photographs into separate albums. Our objective for our project is to follow up on the Visual Question Answering task by proposing a new neural network architecture that attains a higher performance on the MemexQA dataset.",
+        "summary": "With the development of photography technology, one may create several personal albums accumulating thousands of photos and many hours of videos to capture important events in their life. While that is a blessing in this new age of technology, it can lead to a problem of disorganization and information overload. Previous work attempts to resolve this problem with an automated way of processing and organizing photos, by proposing a new Visual Question Answering task named MemexQA. MemexQA works by taking the input of the user, the input being a question and a series of pictures, and responds with an answer to that question and a separate series of photos to justify the answer. A natural way to recall the past are by questions and photographs, and MemexQA eloquently combines the two to organize and label photographs, whether it be for the user to recall the past or to organize photographs into separate albums. Our objective for our project is to follow up on the Visual Question Answering task by proposing a new neural network architecture that attains a higher performance on the MemexQA dataset.",
         "pic": "CUDA out of memory.png"
     },
     {
@@ -337,19 +337,19 @@ projects = [
     },
     {
         "title": "Using Differentiable WFSTs in ESPnet",
-        "team": ":\u00a0 Local Minimum",
+        "team": "Local Minimum",
         "video": "https://www.youtube.com/watch?v=v8J1bY3B_W4",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
-        "summary": "Using Differentiable WFSTs in ESPnetProject Abstract:Weighted Finite State Transducers (WFSTs) are a commonly used tool to encode probabilistic models. Previously, WFSTs are often trained using rules such as weight determinization,weight minimization and weight pushing algorithms [4], which do not employ learning algorithms. Differentiable WFSTs are a recent development, and there has not been extensive investigation into the possible applications of training with WFSTs for various Automatic Speech Recognition (ASR) tasks. This development turns WFSTs into a possible anotherway of encoding information, in addition to normal tensors [2]. We wish to investigate different ways to train WFSTs for ASR, by using a variety of designs and different objective functions. By comparing the baseline and current results from differentiable WFST models,we have an intermediate conclusion that we can aim for character error rates (CER) in the range of around 1.0 through 7.0.Andrew IDs:shivins, nmongkol, araut, daniel sniderPeer Rating Form:",
+        "summary": "Weighted Finite State Transducers (WFSTs) are a commonly used tool to encode probabilistic models. Previously, WFSTs are often trained using rules such as weight determinization,weight minimization and weight pushing algorithms [4], which do not employ learning algorithms. Differentiable WFSTs are a recent development, and there has not been extensive investigation into the possible applications of training with WFSTs for various Automatic Speech Recognition (ASR) tasks. This development turns WFSTs into a possible anotherway of encoding information, in addition to normal tensors [2]. We wish to investigate different ways to train WFSTs for ASR, by using a variety of designs and different objective functions. By comparing the baseline and current results from differentiable WFST models,we have an intermediate conclusion that we can aim for character error rates (CER) in the range of around 1.0 through 7.0.Andrew IDs:shivins, nmongkol, araut, daniel sniderPeer Rating Form:",
         "pic": "Local Minimum.png"
     },
     {
         "title": "Chinese Poetry Generator",
-        "team": "Project Title: Chinese Poetry Generator",
+        "team": "Chinese Poetry Generator",
         "video": "https://youtu.be/Nahib1vfODU",
         "report": "https://drive.google.com/drive/u/0/folders/1niylfxG1H2fopSVgfc5WLuxcoMGgJm6v",
         "summary": "Classic Chinese poems are very different from English poems, in a way that Chinese poems have many particular characteristics in its language structure, ranging from form, sound to meaning, thus is regarded as an ideal testing task for text generation. In this project, we explored a way to generate Chinese poetry by using the Transformer-XL model. We could use our model to generate well-structured 7-character Jueju-style poems according to user input of specific words or first sentences in Chinese, which is a crucial genre of Chinese poetry. Rather than implementation from scratch, our project made some adjustments and improvements on the existing model of Transformer XL in Chinese language generation, and achieved a reasonably good result, comparing to the best Chinese poetry generator \"aichpoem\" on market. Our website will be online soon for the entire class to evaluate our work.",
-        "pic": "Project Title: Chinese Poetry Generator.png"
+        "pic": "Chinese Poetry Generator.png"
     },
     {
         "title": "Spatiotemporal Action Recognition in Videos",
