@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>11-785 Deep Learning</title>
-    <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="../../shared/favicon.ico" type="image/vnd.microsoft.icon">
 
     <!-- display nicely on phones -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"</meta>
@@ -24,8 +24,9 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
 
     <!-- bust caches by incrementing version of main -->
-    <link href="main.3.css" rel="stylesheet" type="text/css">
-    <script src="./script.js"></script>
+    <link href="../../main.3.css" rel="stylesheet" type="text/css">
+
+    <link href="../../project.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -35,58 +36,66 @@
                 <div id="title" style="font-size:2em">
                     <b>11-785</b> Introduction to Deep Learning
                 </div>
-                <h2>Project Ideas</h2>
+                <h2>Fall 2020 Project Gallery</h2>
             </div>
         </div>
     </div>
 
-    <template id="mytemplate">
-        <div>
-            <h4 class="title">Test Project</h4>
-            <ul>
-                <li><b>Keywords:</b> <span class="key">Deep Learning</span></li>
-                <li><b>Abstract:</b> <span class="abs">Do anything you want, in a DEEP fashion, so that you will LEARN</span></li>
-                <li><b>Available:</b> <span class="avail">Yes!</span></li>
-                <li><b>Contact:</b> <span class="contact">Akshat</span></li>
-            </ul>
-        <div>
+    <template id="project-square">
+        <div class="col-sm-3 project-spacer">
+            <div class="project" data-toggle="modal" data-target="#exampleModal">
+                <img src="" class="teaser">
+
+                <div class="project-title">Title</div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="" class="modal-image">
+                <div class="summary">
+                    <b class="team">Team Name</b><b> - </b><span class="authors">Authors List</span><br><br>
+                    <p class="summary-text">Summary</p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a role="button" href="" class="report btn btn-secondary" target="_blank">
+                    Report <i style="font-size: 0.7em" class="fas fa-external-link-alt" aria-hidden="true"></i>
+                </a>
+                <a role="button" href="" class="video btn btn-secondary" target="_blank">
+                    Video <i style="font-size: 0.7em" class="fas fa-external-link-alt" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
     </template>
 
 
-
     <div class="container">
-        <h4>Here is a list of project resources.</h4>
-        <br>
-        <h3>Fall 20</h3>
-        <ul>
-            <li>
-                <a href="./projects/F20/gallery.html">Top 25 Gallery</a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPzcVQIc7eh0kOaOLhtWksJo">Playlist of All Projects</a>
-            </li>
-        </ul>
-        <h3>Spring 20</h3>
-        <ul>
-            <li>
-                <a href="./projects/S20/gallery.html">Top 25 Gallery</a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPyyQzmID534-R1CnGJs0Ls-">Playlist of All Projects</a>
-            </li>
-        </ul>
-        <h3>TA/PhD/Mentor Ideas</h3>
-        <div id="ideas" style="margin-bottom: 60px;">
-            Loading...
+        <div class="row" id="projs">
         </div>
-
-
-        <script src="projects.js"></script>
-        <script src="load_squares.js"></script>
-        <script src="load_suggestions.js"></script>
-
+        <br>
+        <br>
+        <h4>All Projects</h4>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPzcVQIc7eh0kOaOLhtWksJo">Youtube Playlist</a>
+            </li>
+        </ul>
+        <br>
+        <br>
+        <br>
     </div>
-
+        <script src="./projects.js"></script>
+        <script src="../../load_squares.js"></script>
 </body>
-
 </html>
