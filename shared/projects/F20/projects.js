@@ -318,11 +318,11 @@ projects = [
     },
     {
         "title": "Pedestrian Activity Recognition",
-        "team": "",
+        "team": "ZebraNet",
         "video": "https://www.youtube.com/watch?v=kwNURPNgvws&feature=youtu.be&ab_channel=ShamsulhaqBasir",
         "report": "https://drive.google.com/file/d/1gMjQZYP3iczlLdVy91514M8kOzBi54Uq/view?usp=sharing",
         "summary": "Activity recognition entails the broad set of problems that require a model to recognize what action is being performed by the object in consideration. This should be achieved by the wealth of information received by sensors such as LIDAR, monocular camera, stereo camera etc. The problem of activity recognition is particularly hard because of the amount of spatio-temporal features the model needs to learn to accurately classify the activity. In this project, we aim to study the problem of activity recognition in the domain of pedestrian activity classification which is an important problem to realize self-driving car technology. Further, this project will explore end-to-end architectures to classify actions from videos which requires the model to infer from different parts of the video spatially and temporally across frames while maintaining knowledge of the state of the object. The baseline model chosen is YOWO (You Only Watch Once) which performs well in detecting and localizing actions using RGB data and our project explores the modifications necessary to make it work for pedestrian activity recognition in the context of localizing multiple actions at the same frame and handling occlusions.",
-        "pic": ".png"
+        "pic": "ZebraNet.png"
     },
     {
         "title": "Multimodal Memex Question Answering",
@@ -350,11 +350,11 @@ projects = [
     },
     {
         "title": "Chinese Poetry Generator",
-        "team": "Chinese Poetry Generator",
+        "team": "Master Sun and His Friends",
         "video": "https://youtu.be/Nahib1vfODU",
         "report": "https://drive.google.com/file/d/18WZ2v-0bxRZh1BKZaTwguidSPc9zb7jX/view?usp=sharing",
         "summary": "Classic Chinese poems are very different from English poems, in a way that Chinese poems have many particular characteristics in its language structure, ranging from form, sound to meaning, thus is regarded as an ideal testing task for text generation. In this project, we explored a way to generate Chinese poetry by using the Transformer-XL model. We could use our model to generate well-structured 7-character Jueju-style poems according to user input of specific words or first sentences in Chinese, which is a crucial genre of Chinese poetry. Rather than implementation from scratch, our project made some adjustments and improvements on the existing model of Transformer XL in Chinese language generation, and achieved a reasonably good result, comparing to the best Chinese poetry generator \"aichpoem\" on market. Our website will be online soon for the entire class to evaluate our work.",
-        "pic": "Chinese Poetry Generator.png"
+        "pic": "Master Sun and His Friends.png"
     },
     {
         "title": "Spatiotemporal Action Recognition in Videos",
