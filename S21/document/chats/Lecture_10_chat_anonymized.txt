@@ -1,0 +1,59 @@
+08:22:35	 Anon. Odin:	yup
+08:22:36	 Anon. Beacon:	ya
+08:22:36	 Anon. Vision:	yes
+08:22:38	 Anon. Wilkins:	yes
+08:22:40	 Anon. Odin:	dog
+08:22:40	 Anon. IronWoman:	yes
+08:22:41	 Anon. S. Highland:	dog
+08:22:45	 Anon. Beacon:	panda
+08:38:43	 Anon. Smithfield:	Isn’t that c cell plane like an activation?
+08:40:33	 Anon. Bellefonte:	isn’t C cell analogous to a maxpool operation?
+08:45:07	 Anon. Vision:	it close
+08:55:00	 Anon. Spiderman:	why do we take a max pool?
+08:55:35	 Anon. Spiderman:	thanks!
+08:59:40	 Anon. Jarvis:	Max pool represents the most strongest feature in the scanning region in essence the reason is that the features tend to encode the spatial presence of some pattern
+09:01:31	 Anon. Fury:	Each filter learns different features?
+09:01:50	 Anon. Jarvis:	Yes
+09:06:00	 Anon. Ellsworth:	3
+09:07:38	 Anon. Groot:	size of input /filter size ？
+09:08:06	 Anon. Mantis:	N-M?
+09:10:39	 Anon. Mantis:	yeah
+09:13:30	 Anon. Beechwood:	Is there some kind of relationship b/w max pooling kernel size and preceding convolution kernel size?
+09:14:20	 Anon. Capt. America:	no sound?
+09:14:28	 Anon. Ivy:	I can hear
+09:14:30	 Anon. Atom:	I can hear
+09:16:00	 Anon. Ellsworth:	probably someone joined and had their mic on
+09:16:28	 Anon. Jarvis:	@sdfsd the max pooling kernel cannot exceed the H,W of the feature map it works on
+09:17:13	 Anon. Beechwood:	Ok. I was thinking more along the lines of some kind of optimum value....
+09:17:23	 Anon. Bartlett:	why does a stride 1 not downsample? the output size will be smaller when max pooling on this slide still
+09:19:19	 Anon. Jarvis:	Downsampling can happen —> with stride=1
+09:19:58	 Anon. S.Craig:	I think he said it had to be more >to stride 1
+09:20:14	 Anon. S.Craig:	@gjghj
+09:21:41	 Anon. Smithfield:	When the kernel size is big and stride=1, would it still be downsampling?
+09:22:22	 Anon. Spiderman:	Can CNN’s perform regression as well?
+09:24:00	 Anon. Bellefonte:	but we do see issues in CNN where this kind of jitter or noise can throw off the predictions right?
+09:24:35	 Anon. S. Highland:	What is K1, why it can be 2
+09:24:54	 Anon. Fury:	Adversarial attacks?
+09:25:09	 Anon. Jarvis:	Yes CNN’s perform classification and regression, consider object detection bounding box regression for example
+09:25:10	 Anon. Spiderman:	K1 is basically equal to the number of neurons.Each neuron will produce its own map
+09:25:19	 Anon. S. Highland:	thx
+09:25:48	 Anon. Jarvis:	@sdfsdf jitter/noise in proportion can help the CNN generalize better
+09:26:48	 Anon. Superman:	Does a filter share weight for images of different color channels?
+09:27:54	 Anon. Superman:	thx!
+09:28:16	 Anon. Jarvis:	@gjghj when CNN is applied to a feature map, then the o/p feature map is dependent on ((n_h+2p-f)/s)+1,((n_w+2p-f)/s)+1 , where p—> padding, f—> kernel size, n_w,n_h-> H,W of I/p feature map
+09:28:55	 Anon. Bellefonte:	yes i agree. And I believe data augmentation is a way to add jitter and help the model generalize right? is my understanding correct?
+09:28:57	 Anon. Jarvis:	@werwe a color channel shares weights, so R,G,B channels individually share weights
+09:29:11	 Anon. Jarvis:	@ghjghj that’s correct
+09:34:07	 Anon. Spiderman:	Is it advantageous to have a stride of 1? basically lower stride
+09:37:45	 Anon. Jarvis:	@sdfb that’s really dependent on the input, do you want to find fine grained features and how so, how are the local features in that image, if they are consistent and there are no big intensity/texture gradient leaps, you can stride higher, depends on the application scenario
+09:37:51	 Anon. Bartlett:	can professor see the hand raises?
+09:38:39	 Anon. Jarvis:	Yes
+09:39:21	 Anon. Bartlett:	@hjkhjk thanks
+09:44:58	 Anon. Fury:	Why do we have MLP at the output of the convolution? Is it because we can’t have classification from CNN?
+09:45:50	 Anon. Fury:	Thanks
+09:46:22	 Anon. N.Craig:	Does max pooling eliminate the need for batch norm? Or can they be used together?
+09:48:04	 Anon. Jarvis:	Max pooling is across H,W . So no it doesn’t eliminate batchnorm. Your input is (batch size,channel,height,width) —> your batch norm happens over the 1st dimension
+09:48:53	 Anon. Jarvis:	Max pooling happens over height and width of the vector, based on pooling window size
+09:49:55	 Anon. N.Craig:	Gotcha, thank you!
+09:52:00	 Anon. Fifth:	Do we do zero-padding before max-pooling?
+09:52:30	 Anon. Northumberland:	Before convolution zero padding is done.
