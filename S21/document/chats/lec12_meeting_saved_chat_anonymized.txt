@@ -1,0 +1,53 @@
+19:04:07	  Anon. SpyKid2:	yes
+19:04:11	  Anon. Spiderman:	just to make sure, the x'/y' loop is just the inner product of the kernel and the segment unrolled right?
+19:04:11	  Anon. Ellsworth:	yup
+19:04:17	  Anon. Ivy:	yes
+19:08:04	  Anon. Beechwood:	yes
+19:08:07	  Anon. Shady:	yes
+19:10:25	  Anon. Shady:	So with this method we do not need to flip the weights?
+19:12:36	  Anon. Spiderman:	yes
+19:12:38	  Anon. SpyKid2:	yes
+19:13:05	  Anon. Wightman:	@Prakarsh yes, there are 2 ways to compute the derivative. A flip and nonflip version
+19:16:23	  Anon. SpyKid2:	In backward pass we calculate dy right?
+19:16:59	  Anon. Wightman:	Professor answering now
+19:20:40	  Anon. Ellsworth:	do we assume all numbers are distinct?
+19:26:02	  Anon. Mantis:	Where should the dy be?
+19:26:06	  Anon. Mantis:	In the last slide
+19:26:11	  Anon. Ivy:	in the +=
+19:26:18	  Anon. Mantis:	Oh ok thanks
+19:30:29	  Anon. Ivy:	y
+19:30:29	  Anon. Ellsworth:	yes
+19:30:30	  Anon. Beechwood:	yes
+19:30:30	  Anon. Spiderman:	yup
+19:31:20	  Anon. Beechwood:	Why would we want that?
+19:34:20	  Anon. Beechwood:	yes
+19:34:23	  Anon. Friendship:	Why can’t we just set the stride to be one?
+19:34:59	  Anon. Spiderman:	why don't we get the output and linearly interpolate that to upsample? or is that making too many assumptions about the behavior of the output
+19:35:58	  Anon. Loki:	Can we reset width=1 to the 2nd layer?
+19:38:33	  Anon. Bellefield:	Is it possible that during learning, the filters that are learned are linear interpolation filters (plotting the weights is triangular in shape) so we might as well just stick to zero-stuffing?
+19:41:35	  Anon. Ivy:	yes
+19:41:40	  Anon. Beacon:	Still not sure why can’t set stride to one in the first layer? So that can have 27 bars in the next layer, and won’t need to fill in zeros instead
+19:41:41	  Anon. BlackPanther:	yes
+19:42:27	  Anon. Beacon:	I see, thanks!
+19:51:26	  Anon. Ellsworth:	are we adding in the overlaps?
+19:56:19	  Anon. Ellsworth:	no?
+19:56:20	  Anon. Beechwood:	Yes?
+19:56:25	  Anon. IronWoman:	no
+19:56:27	  Anon. Firestorm:	no
+19:56:31	  Anon. IronWoman:	yes
+20:01:58	  Anon. IronWoman:	does it work with different scale too?
+20:02:53	  Anon. Phillips:	Are you rotating the filter or the image for the transformations?
+20:03:10	  Anon. Ellsworth:	why is it more beneficial to produce more maps by transforming the filters instead of having separate networks for each transform?
+20:03:52	  Anon. Ellsworth:	I guess?
+20:04:14	  Anon. Thor:	sorry, what's a bounding box?
+20:05:09	  Anon. Nebula:	A bounding box is the indicator around the object to be detected in the image, the flower in this case @Hoi Yan Gladys Lau
+20:05:10	  Anon. Beechwood:	How do we train a network for different resolution or lighting condition? Will a network which is trained on high resolution images work on low resolution images?
+20:05:34	  Anon. Friendship:	So during inference time, we also need to do those transformations right?
+20:07:15	  Anon. Wightman:	I didn't hear if Professor answered you @Sean, but yes you would need to use the same transformations during inference.
+20:17:17	  Anon. Vision:	Down sampling makes sense to me for it helps build a pipeline from low-level features to more semantic features bottom-up. But how to describe the role of up sampling in such a manner?
+20:20:27	  Anon. Falcon:	As many as you need? So typically more than two
+20:22:30	  Anon. Vision:	Yes?
+20:22:54	  Anon. Vision:	That makes sense. Thanks!
+20:28:26	  Anon. Ivy:	thank you!
+20:28:29	  Anon. Spiderman:	thank you!
+20:28:35	  Anon. Ellsworth:	Thank you professor
