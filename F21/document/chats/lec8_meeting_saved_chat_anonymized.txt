@@ -1,0 +1,98 @@
+18:49:14	  Anon. Murdoch:	Hi
+18:49:18	  Anon. Phillips:	hello professor:D
+18:49:24	  Anon. Shady:	Hello!
+18:49:29	  Anon. Wightman:	hi professor
+18:49:33	  Anon. Bigelow:	Hi!
+18:49:36	  Anon. Forbes:	hi
+18:49:37	  Anon. SilverSurfer:	Hi professor!
+18:51:28	  Anon. Forbes:	Professor, I think there are some background noises
+18:53:03	  Anon. Fury:	Sorry, those are ambient noises that I don’t think the prof. can help
+18:53:19	  Anon. Fury:	Will let him know for the next lecture
+18:53:50	  Anon. SilverSurfer:	Someone’s mic is on
+18:55:24	  Anon. Thor:	it might be a local minima
+18:55:26	  Anon. S. Aiken:	No, because it could be a local minimum and not a global
+18:55:28	  Anon. Northumberland:	No, could be a local minima
+18:55:41	  Anon. Bartlett:	no
+18:55:45	  Anon. BlackWidow:	We minimize relative to a loss which isn’t necessarily classification error
+18:55:46	  Anon. SilverSurfer:	No, empirical risk should be equal to true risk
+18:55:54	  Anon. SilverSurfer:	for generalization
+18:56:54	  Anon. Green Lantern:	Doesn't that also depend on the complexity of the model?
+18:57:27	  Anon. Wilkins:	divergence
+18:58:53	  Anon. Rocket:	left
+18:59:18	  Anon. Wilkins:	yes
+18:59:22	  Anon. Bartlett:	yes
+19:02:04	  Anon. Phillips:	yes
+19:03:24	  Anon. Wightman:	yes
+19:03:39	  Anon. Rocket:	no
+19:03:41	  Anon. Grandview:	no
+19:03:47	  Anon. WonderWoman:	no
+19:03:49	  Anon. BlackWidow:	Not really
+19:04:07	  Anon. Schenley:	Outliers are not accounted for in backprop.
+19:04:19	  Anon. Wilkins:	But isn’t that an outlier?
+19:05:28	  Anon. Wilkins:	ok
+19:06:46	  Anon. WonderWoman:	a feature
+19:06:46	  Anon. Schenley:	Depending on the task
+19:06:47	  Anon. BlackWidow:	Theres positives
+19:06:48	  Anon. Hobart:	we don't want to account for noise right
+19:15:44	  Anon. Aquaman:	How do we decide which direction to move in if we detect we have ended up in a saddle?
+19:18:40	  Anon. Heimdall:	You could add noise to escape from saddle
+19:18:48	  Anon. Phillips:	^^ The professor mentioned that the Hessian might be useful when we are in a saddle point
+19:19:15	  Anon. SilverSurfer:	do we add a regularizer to escape the saddle points?
+19:19:57	  Anon. BlackWidow:	If a point is a saddle point there should be at least one direction (an eigenvector of the Hessian) in which the function is decreasing
+19:20:31	  Anon. SilverSurfer:	In ridge regression, we add regularizer to make it a convex function. I am not sure if that holds here
+19:20:34	  Anon. S. Highland:	you can adjust the step size
+19:27:01	  Anon. Phillips:	takes too long to reach min
+19:28:06	  Anon. Schenley:	Many steps
+19:30:03	  Anon. Phillips:	yes
+19:30:23	  Anon. BlackWidow:	three
+19:30:23	  Anon. Wilkins:	3
+19:30:23	  Anon. Bellefield:	3
+19:30:58	  Anon. BlackWidow:	exact
+19:30:58	  Anon. BlackPanther:	Exact
+19:30:59	  Anon. Bartlett:	exact
+19:31:00	  Anon. Northumberland:	exact
+19:31:05	  Anon. GreenArrow:	exact
+19:31:09	  Anon. BlackWidow:	yes
+19:33:21	  Anon. Liberty:	Second derivative
+19:33:38	  Anon. Wightman:	second derivate
+19:33:42	  Anon. Wilkins:	Inverse of second derivative
+19:35:36	  Anon. Wilkins:	Takes too long
+19:35:37	  Anon. BlackWidow:	Itt takes a few steps
+19:35:52	  Anon. BlackWidow:	yes
+19:36:07	  Anon. S. Highland:	it will oscillate
+19:36:30	  Anon. Firestorm:	yes
+19:36:33	  Anon. Phillips:	stay in the same height
+19:36:36	  Anon. Wilkins:	It won’t converge?
+19:36:37	  Anon. BlackWidow:	It’ll jump back and forth at the same height
+19:38:26	  Anon. Wilkins:	yes
+19:38:28	  Anon. Phillips:	yes
+19:43:23	  Anon. Phillips:	yes
+19:46:41	  Anon. Murdoch:	so we can compute each minimum separately and combine them together?
+19:47:01	  Anon. Forward:	Same doubt
+19:48:40	  Anon. Phillips:	overshoot in one direction
+19:48:51	  Anon. Liberty:	Yes
+19:48:52	  Anon. Ivy:	Yes in vertical
+19:48:52	  Anon. Fifth:	yes
+19:48:55	  Anon. Drax:	yes
+19:48:56	  Anon. S. Highland:	yes
+19:48:56	  Anon. Jarvis:	yes
+19:48:58	  Anon. WonderWoman:	yes
+19:49:03	  Anon. Murray:	yes
+19:49:53	  Anon. Ivy:	0.7
+19:49:56	  Anon. Wilkins:	0.7
+19:49:56	  Anon. S. Highland:	0.7
+19:52:58	  Anon. Wilkins:	no
+19:53:00	  Anon. Forward:	no
+19:53:02	  Anon. WonderWoman:	no
+19:53:03	  Anon. S. Highland:	no
+19:53:27	  Anon. Wanda:	no
+19:53:29	  Anon. GreenArrow:	no
+19:53:31	  Anon. S. Highland:	no
+19:56:01	  Anon. Murdoch:	something like Simulated annealing?
+19:58:14	  Anon. Wilkins:	Doesn’t learning rate depends on the point at which we are starting to descent? If it starts near to global minimum and we start with large learning rate, it might shoot and diverge
+20:03:05	  Anon. Phillips:	what happens if we overshoot and reach another bowl?
+20:10:01	  Anon. Murdoch:	what if we start from a local minima and we want to get out of it?
+20:10:25	  Anon. Murdoch:	start inside local minima
+20:24:19	  Anon. Murdoch:	what if we start from inside of local minima and we want to get out of it using momentum because momentum computes average of previous steps
+20:37:39	  Anon. Morewood:	Thank you!
+20:37:48	  Anon. Phillips:	It was great professor:D
