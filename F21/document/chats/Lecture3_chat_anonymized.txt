@@ -1,0 +1,71 @@
+08:19:52	 Anon. Schenley:	The links for hw1 writeup on the webpage seem down for me. Is it actually down or is my browser just messing up right now?
+08:20:09	 Anon. S. Highland:	Do we get explanations for quiz answers?
+08:20:12	 Anon. Tech:	We’ll check that and let you know. Sorry about that
+08:20:15	 Anon. Wightman:	The link in piazza still works
+08:21:19	 Anon. Tech:	@rtyr, Yes, correct answers and short explanations will be released. If you have more doubts about it, you can post them on Piazza or come to OH.
+08:29:56	 Anon. Star-Lord:	If there is a random function (RNG), can an MLP model that too?
+08:30:52	 Anon. Gamora:	someone has a beeping sound in the background, could they mute that?
+08:31:19	 Anon. Superman:	should that threshold be 4 indtead of -4?
+08:31:48	 Anon. Capt. America:	I have same doubt here
+08:32:05	 Anon. Star-Lord:	^Same.
+08:33:09	 Anon. Friendship:	I think there's a mute all option for the host
+08:33:54	 Anon. Drax:	@sdfsd I think the random function is a worst case to model for any MLP, but it can.
+08:34:12	 Anon. Star-Lord:	Gotcha, thanks.
+08:34:49	 Anon. Hobart:	integration
+08:35:49	 Anon. SpyKid1:	is div() the abstract value of f(x) - g(x)?
+08:37:05	 Anon. Spiderman:	^I think you meant absolute value? Then looks like it.
+08:37:14	 Anon. Tech:	@werwe Not literally, but yes. It is the extent of similarity between two functions
+08:37:33	 Anon. Tech:	dissimilarity*
+08:37:50	 Anon. SpyKid1:	Got it, thanks!
+08:39:16	 Anon. Myrtle:	Do those samples need to satisfy Nyquist Sampling Theorem?
+08:40:53	 Anon. Bartlett:	I don't think the target function will necessarily have a frequency for Nyquist to come in
+08:40:56	 Anon. Fury:	I don't think it's necessary to sample that way
+08:41:32	 Anon. Drax:	We don’t have to reconstruct the function exactly so nyquist sampling should not be reqd is what i am thinking
+08:41:36	 Anon. Friendship:	Is it being sampled because we don't know every value of g(x)? In other words, is this supposed to be analogous to how the training set cannot represent the entire true set?
+08:44:14	 Anon. Friendship:	No
+08:45:06	 Anon. Penn:	What informs the weights and biases you start with or they can be chosen randomly?
+08:45:07	 Anon. Friendship:	I see, thank you!
+08:45:52	 Anon. Fury:	you can start randomly then with backprop you adjust ur weights
+08:45:53	 Anon. Murdoch:	Weights and the biases are initialized using certain initialization functions
+08:46:01	 Anon. Tech:	@asasd They can be random or they can be sampled out of a particular distribution. Depends upon the problem!
+08:46:27	 Anon. Murdoch:	You will get to explore this in hw1p1
+08:49:21	 Anon. GreenArrow:	Why do we want to make it pass the origin?
+08:50:02	 Anon. Wilkins:	X is orthogonal to W
+08:50:47	 Anon. Penn:	I think it’s the formula @uikuik. sum(WiXi + constant) is a hyperplane. If constant = 0 then it passes through origin
+08:50:58	 Anon. Wilkins:	Cosine of the angle between them
+08:51:40	 Anon. Friendship:	negative
+08:51:42	 Anon. Myrtle:	negative
+08:51:43	 Anon. Liberty:	neg
+09:02:18	 Anon. Drax:	No
+09:02:20	 Anon. Bartlett:	No
+09:02:20	 Anon. IronMan:	no
+09:02:22	 Anon. Phillips:	no
+09:02:26	 Anon. Centre:	no
+09:02:39	 Anon. Centre:	Redefine data
+09:02:41	 Anon. Wilkins:	relabel
+09:05:24	 Anon. Vision:	exponential
+09:05:27	 Anon. Penn:	Combinatorial
+09:05:28	 Anon. Schenley:	exponential?
+09:05:31	 Anon. Centre:	exponential
+09:05:34	 Anon. BlackWidow:	exp
+09:05:37	 Anon. Bellefield:	exponential
+09:14:10	 Anon. Smithfield:	still one but less error
+09:15:20	 Anon. Grandview:	do we assume that the slope of the curve remains the same?
+09:16:19	 Anon. Tech:	For the problem in the slides, yes
+09:25:19	 Anon. Drax:	How do we get P(X)
+09:26:06	 Anon. Friendship:	yes
+09:26:49	 Anon. Tech:	@wqeqw P(x) will be the distribution function of x (training data)
+09:27:41	 Anon. Drax:	@vaidehi but we only have g(x) right? The function which we have to approximate.
+09:31:21	 Anon. Drax:	I think it was added to reach to the empirical divergence
+09:32:01	 Anon. Tech:	g(x) is the function we are approximating over input space X
+09:34:00	 Anon. Drax:	yeah, thanks vaidehi! Also, is the difference between true and empirical risk known as variance?
+09:44:39	 Anon. P.J. McArdle:	@Bhiksha:You can open the hamburger menu on the top right and turn off ink to shape. Should prevent the annoying shapes from appearing.
+09:49:09	 Anon. Nebula:	this particular method only works if the data is linearly separable right?
+09:49:31	 Anon. Drax:	@cxxcv yes
+09:49:33	 Anon. Tech:	Yes!
+09:50:55	 Anon. Drax:	Is Bhiksha holding any office hours?
+09:52:24	 Anon. Tech:	No, he is not! But you can ask your doubts on Piazza and he can answer:) Or come to the Office hours!
+09:52:43	 Anon. Drax:	Sure, thanks @vaidehi
+09:55:15	 Anon. Batman:	thank you
+09:55:15	 Anon. Beechwood:	thank you professor!
+09:55:16	 Anon. P.J. McArdle:	Thanks!
