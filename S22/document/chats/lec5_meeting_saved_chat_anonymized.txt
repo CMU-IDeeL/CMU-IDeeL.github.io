@@ -1,0 +1,32 @@
+08:28:15	 Anon. Nebula:	yes
+08:28:18	 Anon. Fury:	Was clear
+08:31:46	 Anon. P.J. McArdle:	this is first order approximation, right professor?
+08:35:06	 Sai (TA):	Yes @sdf
+08:37:49	 Anon. P.J. McArdle:	clear
+08:50:17	 Anon. Mantis:	should all activation functions on the same layer necessarily be the same?
+08:52:21	 Sai (TA):	Its not a hard and fast rule @Min
+08:52:52	 Anon. Hawkeye:	Are neighboring layers fully connected with each other?
+08:53:13	 Anon. S. Highland:	This is a feed forward network so yes!
+08:53:14	 Sai (TA):	Yes, they are fully connected in this case.
+08:53:28	 Anon. Hawkeye:	Thanks!
+08:55:09	 Anon. Firestorm:	We calculate loss at the end but in this case, we have only 1 instance, so we are calculating derivative of divergence, am I right?
+08:55:36	 Anon. P.J. McArdle:	I think so
+08:56:10	 Anon. P.J. McArdle:	Prof said we are taking example of a "single" input-output
+08:57:31	 Sai (TA):	@fghf, calculation of derivative of divergence will be done for each instance, its not concerned with us having just a single instance. If you revisit the formula, it  is wrt y_i
+08:57:36	 Anon. Butler:	I believe in every case we are looking for the derivative of the divergence wrt some parameter, so having only 1 instance shouldn't change anything
+08:57:49	 Sai (TA):	Correct @werw
+08:58:23	 Anon. Firestorm:	Makes sense, thank you
+09:03:23	 Anon. Aquaman:	all good
+09:07:22	 Anon. S. Highland:	How do we decide the order of the terms inside the summation?
+09:25:58	 Anon. Butler:	How does our approach in computing the derivatives change for networks where the layers are connected among themselves? For example the ones from Quiz 1
+09:34:55	 Anon. Butler:	oh makes sense! I thought maybe weird stuff would happen if paths would weirdly branch at some point
+09:37:52	 Anon. Butler:	z2
+09:37:53	 Anon. Spiderman:	z2
+09:37:54	 Anon. Nebula:	2
+09:38:05	 Anon. Beacon:	no
+09:38:12	 Anon. Spiderman:	0
+09:39:52	 Anon. Aquaman:	what if the small change in z_i makes that particular z_i the maximum?
+09:39:59	 Anon. Aquaman:	wouldn't y change slightly?
+09:44:45	 Anon. Butler:	Thank you professor!
+09:44:45	 Anon. N.Craig:	thanks!
+09:44:48	 Anon. Odin:	Thanks!
