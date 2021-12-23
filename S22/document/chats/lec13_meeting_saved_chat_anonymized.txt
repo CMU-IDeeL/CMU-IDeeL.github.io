@@ -1,0 +1,25 @@
+17:57:20	  Anon. Bartlett:	Was it entirely randomly generated or fill-in-the-blank?
+17:59:46	  Anon. Ellsworth:	It is an example of randomly generated:)
+18:04:56	  Anon. Fifth:	TDNN
+18:09:48	  Anon. Superman:	Here why can’t we only consider the thanksgiving days over past few years instead of taking the entire time in between?
+18:11:26	  Anon. Ellsworth:	We can do that but usually we have limited data to have a time sequence with 1 year time-steps so we want to use all the time in btw in consideration
+18:26:13	  Anon. IronMan:	I don’t understand why we need an explicit memory unit if its a function of the most recent output and memory. Doesn’t the feedback loop input the most recent output (which is further a function of output from previous time)?
+18:27:55	  Anon. Superman:	If the gradients are not able to flow backwards, does it mean jordan network or elman network suffers from exploding gradients?
+18:33:43	  Anon. Green Lantern:	yup
+18:34:34	  Anon. Odin:	So this is finite state machine?
+18:47:04	  Anon. Beacon:	why is tanh effective for fk()  ?
+18:47:16	  Anon. Beacon:	okay
+18:47:41	  Anon. Green Lantern:	why is applying nonlinearities to state nodes helpful? we did them with outputs to capture nonlinear decision boundaries but in hidden states aren't we just trying to propagate memory?
+19:00:25	  Anon. Beacon:	do the series of vector change in shape before the scalar function
+19:00:36	  Anon. Beacon:	?
+19:00:56	  Anon. IronMan:	So we don’t backpropagate the divergence at each timestamp?
+19:06:02	  Anon. Green Lantern:	yea
+19:06:04	  Anon. Murray:	yes
+19:12:30	  Anon. Rocket:	yes
+19:30:30	  Anon. IronWoman:	Yes
+19:35:22	  Anon. Spiderman:	yes
+19:36:42	  Anon. Ivy:	Why do we need to compute the gradient over X_t? X_t is the data, right?
+19:38:43	  Anon. Ivy:	Yes! thanks
+19:40:51	  Anon. Aquaman:	Could you chunk your input data and use BRNN?
+19:42:24	  Anon. Spiderman:	thank you!
+19:42:36	  Anon. Green Lantern:	thank you professor!
