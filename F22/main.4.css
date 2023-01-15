@@ -380,6 +380,18 @@ a, a:hover {
     margin-bottom: 10px;
 }
 
+.ta-img-container {
+    display: block;
+    margin-right: 10px;
+}
+
+    .ta-img-container img {
+        height: 500px;
+        width: 800px;
+        border-radius: 2px;
+    }
+
+
 .textbook-img-container {
     display: inline-block;
     float: left;
