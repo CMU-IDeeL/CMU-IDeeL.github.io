@@ -1,0 +1,54 @@
+17:47:07	  Anon. Fury:	yes
+18:08:32	  Anon. P.J. McArdle:	Is the previous hidden state not a sufficient representation of the previous state's output?
+18:09:09	  Anon. P.J. McArdle:	Yeah, got it
+18:12:52	  Anon. IronWoman:	How do multiple hidden states help the network compute the output?
+18:13:11	  Anon. Spiderman:	why do we draw from the distribution instead of just selecting the one with the highest probability?
+18:14:23	  Anon. Vision:	With strong dependence on the previous predicted output, if one of the output is wrong, will the subsequent output be incorrect?
+18:19:39	  Anon. Fury:	o3 is also dependent on o1, right?
+18:23:46	  Anon. Smithfield:	Why is the model getting nose with the highest probability in the first place?
+18:23:49	  Anon. Shady:	yes
+18:28:42	  Anon. Hobart:	Is the performance of random sampling from empirical experience or is it mathematically proven?
+18:31:07	  Anon. Loki:	Does adding more hidden layers have any correlation with the greedy algorithm's performance or how it compares to random selection?
+18:31:12	  Anon. Hobart:	Why not just feed the entire distribution as a vector into the network instead?
+18:32:06	  Anon. Forbes:	can't we take in only few with high prob?
+18:32:11	  Anon. IronWoman:	run out of memory
+18:32:16	  Anon. SpyKid1:	what if we decrease the number of forks as we move on?
+18:33:16	  Anon. Hobart:	So something like beam search?
+18:34:07	  Anon. Grandview:	I think this is beam search?
+18:37:54	  Anon. Beacon:	If a k-th path terminates (i.e. saw <EOS>), are we keeping a new path in the beam?
+18:40:04	  Anon. Hobart:	Wouldn’t this encourage the network to terminate as early as possible?
+18:40:10	  Anon. Smithfield:	Which path do we choose then?
+18:41:52	  Anon. Beacon:	@manish a path with the highest prob
+18:42:57	  Anon. Smithfield:	That makes sense, but multiple branches would make a sensible sentence and those could also be right
+18:43:47	  Anon. Shady:	is it possible not to have a <eos> produced by the network? like an infinite loop?
+18:46:51	  Anon. Smithfield:	How do we incorporate heuristics in the model?
+18:46:52	  Anon. Superman:	How is the next sequence computed after eos? Is the hidden state at eos fed to the next input? Or only the new input is considered?
+18:47:20	  Anon. Beacon:	@iffanice it’s possible if infinite loop is what you want. The network, however, will likely produce certain characters (e.g. “.”) repetitively indefinitely.
+18:48:04	  Anon. Shady:	alright
+18:50:18	  Anon. Beacon:	@urvil In my understanding, a final hidden state from the encoder will be fed into the decoder along with the <SOS> input to mark the start.
+18:52:47	  Anon. Smithfield:	yes
+18:52:48	  Anon. Forbes:	yes
+18:52:52	  Anon. Vision:	yes
+18:53:01	  Anon. P.J. McArdle:	Is this called teacher forcing?
+18:53:13	  Anon. Beacon:	i think so
+19:02:47	  Anon. SpyKid1:	yes
+19:02:48	  Anon. Vision:	yes
+19:02:48	  Anon. Beacon:	yes
+19:02:51	  Anon. S.Craig:	yes
+19:02:51	  Anon. Superman:	Are the weights learnable?
+19:02:51	  Anon. Wightman:	yes
+19:02:54	  Anon. Atom:	Are they duplicate with hidden statue?
+19:02:59	  Anon. Atom:	*states
+19:03:00	  Anon. Loki:	how are the weights selected?
+19:05:02	  Anon. SpyKid1:	why did we need the previous decoder state again?
+19:05:07	  Anon. Smithfield:	Can you repeat it again?
+19:06:03	  Anon. SpyKid1:	ohh makes sense
+19:06:05	  Anon. P.J. McArdle:	the decoder state is basically the hidden state of the decoder RNN, right?
+19:06:28	  Anon. Smithfield:	yes
+19:07:04	  Anon. Hobart:	By this logic, we could also take all decoder state in front of it right?
+19:08:38	  Anon. Forbes:	considering h4 has better information than h1, summing them would diluting the info from h4?
+19:09:11	  Anon. Spiderman:	we're still talking about training phase here right?
+19:24:07	  Anon. IronWoman:	Can you train different target output of words? Let’s say I was trying to translate “My name is Austin”. In Spanish, it can be translated to “Me llamo Austin” and “Mi nombre es Austin”. How does the model learn both translations?
+19:25:33	  Anon. Beacon:	You usually have gold labels when training. If an input has two gold labels, we have two pairs of training points.
+19:38:21	  Anon. SpyKid1:	thank you professor!
+19:38:24	  Anon. Loki:	thank you!
