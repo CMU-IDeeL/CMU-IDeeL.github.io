@@ -1,0 +1,213 @@
+22:19:08	  Anon. Batman:	test
+22:23:34	  Anon. Fifth:	Linear + constant term
+22:23:55	  Anon. S. Highland:	the coefficient adds up to 1
+22:23:59	  Anon. Phillips:	Sum to 1
+22:24:00	  Anon. SpyKid2:	Linear combination. + constant term
+22:25:04	  Anon. Atom:	Linear
+22:25:07	  Anon. Fifth:	hyperplane
+22:25:08	  Anon. Murray:	line
+22:25:12	  Anon. IronMan:	linear boundary
+22:28:03	  Jinhyung David Park (TA):	30 seconds left!
+22:29:54	  Anon. Wasp:	But can't you just fold the constant in to make an affine function into a linear combination?
+22:30:14	  Anon. Bartlett:	Would it be correct to say all linear functions are affine functions?
+22:30:41	  Anon. Fifth:	@sdfs yes I think it is
+22:31:07	  Anon. Spiderman:	many layers
+22:31:10	  Anon. Ellsworth:	2+ layers
+22:31:10	  Anon. Fury:	More than one layer
+22:31:11	  Anon. SpyKid2:	No of layers
+22:31:11	  Anon. Murray:	a lot of layers
+22:31:12	  Anon. Mantis:	Many hidden layers
+22:31:12	  Anon. Jarvis:	more number of layers
+22:31:12	  Anon. Beechwood:	Many hidden layers
+22:31:13	  Anon. Star-Lord:	many layers
+22:31:14	  Anon. N.Craig:	More than one hidden layer
+22:31:16	  Anon. Odin:	longest path is long
+22:31:17	  Anon. Heimdall:	more than3？
+22:31:18	  Anon. Thor:	>=2 hidden
+22:31:18	  Anon. BlackWidow:	multiple layers
+22:31:19	  Anon. SpyKid2:	2
+22:31:20	  Anon. Loki:	More than 1
+22:31:20	  Anon. Murray:	152
+22:31:21	  Anon. Falcon:	> 5
+22:31:25	  Anon. Frew:	2
+22:33:15	  Anon. Hawkeye:	2
+22:33:16	  Anon. Strange:	2
+22:33:17	  Anon. Capt. America:	2
+22:33:17	  Anon. Flash:	2
+22:33:18	  Anon. Jarvis:	2
+22:33:18	  Anon. Loki:	2
+22:33:19	  Anon. Heimdall:	2
+22:33:19	  Anon. S. Highland:	2
+22:33:19	  Anon. Thor:	2
+22:33:20	  Anon. SpyKid2:	2
+22:33:20	  Anon. Odin:	2
+22:33:20	  Anon. Beechwood:	2
+22:33:21	  Anon. IronWoman:	2
+22:33:21	  Anon. WonderWoman:	2
+22:33:21	  Anon. Aquaman:	2
+22:33:21	  Anon. Myrtle:	2
+22:33:22	  Anon. Morewood:	2
+22:33:24	  Anon. Penn:	2
+22:33:24	  Anon. Forward:	2
+22:33:24	  Anon. Wilkins:	2
+22:33:24	  Anon. Baum:	2
+22:33:25	  Anon. P.J. McArdle:	2
+22:33:25	  Anon. Butler:	2
+22:33:26	  Anon. Groot:	2
+22:33:26	  Anon. Grandview:	2
+22:33:27	  Anon. Phillips:	2
+22:33:27	  Anon. Nebula:	2
+22:33:27	  Anon. N.Craig:	2
+22:33:28	  Anon. S. Aiken:	2
+22:33:29	  Anon. Star-Lord:	2
+22:33:30	  Anon. Darlington:	2
+22:33:30	  Anon. Friendship:	2
+22:33:32	  Anon. BlackPanther:	2
+22:33:33	  Anon. Beacon:	2
+22:33:34	  Anon. Smithfield:	2
+22:33:37	  Anon. Fury:	2
+22:33:39	  Anon. Hawkeye:	4
+22:33:40	  Anon. Strange:	4
+22:33:41	  Anon. Capt. America:	4
+22:33:42	  Anon. Walnut:	4
+22:33:42	  Anon. Jarvis:	4
+22:33:42	  Anon. Aquaman:	4
+22:33:42	  Anon. Tech:	4
+22:33:43	  Anon. Nebula:	4
+22:33:43	  Anon. Phillips:	4
+22:33:43	  Anon. Myrtle:	4
+22:33:43	  Anon. SpyKid2:	4
+22:33:43	  Anon. Rocket:	4
+22:33:43	  Anon. Beechwood:	4
+22:33:44	  Anon. Forward:	4
+22:33:44	  Anon. BlackPanther:	4
+22:33:45	  Anon. Firestorm:	4
+22:33:45	  Anon. Star-Lord:	4
+22:33:45	  Anon. N.Craig:	4
+22:33:46	  Anon. Wanda:	4
+22:33:46	  Anon. Hobart:	4
+22:33:46	  Anon. WonderWoman:	4
+22:33:46	  Anon. Heimdall:	dense net？
+22:33:47	  Anon. Wilkins:	4
+22:33:53	  Anon. GreenArrow:	what if the graph contains a cycle? what can we say about the depth?
+22:34:02	  Anon. Tech:	same depth?
+22:34:04	  Anon. Gamora:	Are there NNs that aren't DAGs
+22:34:42	  Anon. Murray:	recurrent neural network?
+22:35:34	  Jinhyung David Park (TA):	When we talk about depth, we don't usually consider the time dimension (same network repeated over time) as part of the depth
+22:35:58	  Jinhyung David Park (TA):	the definition of depth is not well-defined for networks with cycles
+22:36:08	  Anon. GreenArrow:	ok thanks
+22:40:23	  Anon. Bartlett:	Wasn't the last gate an OR gate since the threshold was 1?
+22:40:42	  Anon. Capt. America:	Yes
+22:40:50	  Anon. Bellefield:	l
+22:40:51	  Anon. Mantis:	L
+22:40:51	  Anon. Forward:	l
+22:40:52	  Anon. Nebula:	L
+22:40:52	  Anon. Murdoch:	L
+22:40:53	  Anon. Penn:	L
+22:40:54	  Anon. Wanda:	L
+22:40:55	  Anon. P.J. McArdle:	L
+22:40:56	  Anon. SpyKid2:	l
+22:40:56	  Anon. Wilkins:	L
+22:41:06	  Anon. Jarvis:	L-1
+22:41:07	  Anon. Tech:	L-1
+22:41:16	  Anon. Beechwood:	What does -1 mean?
+22:41:23	  Anon. SpyKid2:	weight
+22:41:28	  Anon. Nebula:	the weight is -1
+22:41:55	  Anon. Nebula:	all 0
+22:41:56	  Anon. Jarvis:	all are 0
+22:42:12	  Anon. Fifth:	The first L are all 0, and the last ones are all 1
+22:42:35	  Anon. Strange:	-N
+22:42:38	  Anon. S. Highland:	L - N + 1
+22:42:40	  Anon. Batman:	L-N
+22:46:10	  Anon. Nebula:	O(n)?
+22:46:12	  Anon. Batman:	related to the num of squares
+22:46:32	  Anon. WonderWoman:	How is the complexity of Boolean function defined?
+22:46:40	  Anon. SpyKid2:	me
+22:48:09	  Anon. Shady:	would this make your neural network have exponentially many nodes for some boolean functions?
+22:49:12	  Jinhyung David Park (TA):	Yes
+22:50:21	  Anon. S. Highland:	2^n
+22:50:22	  Anon. Murray:	2^n
+22:50:22	  Anon. Nebula:	2^n
+22:50:26	  Anon. Beechwood:	2^n+1
+22:50:37	  Anon. Green Lantern:	I am
+22:55:17	  Anon. Nebula:	checkerboard
+22:55:19	  Anon. Ellsworth:	checkers
+22:55:21	  Anon. SpyKid2:	checkered
+22:55:24	  Anon. Phillips:	checkered
+22:55:58	  Anon. Falcon:	8
+22:55:58	  Anon. IronMan:	8
+22:55:58	  Anon. Aquaman:	9
+22:55:58	  Anon. Capt. America:	8
+22:55:59	  Anon. Bartlett:	8
+22:55:59	  Anon. Fifth:	8
+22:56:00	  Anon. P.J. McArdle:	8
+22:56:00	  Anon. Phillips:	8
+22:56:00	  Anon. Nebula:	8
+22:56:01	  Anon. Flash:	8
+22:56:02	  Anon. Strange:	9
+22:56:02	  Anon. Heimdall:	8
+22:56:03	  Anon. Wightman:	8
+22:56:03	  Anon. Drax:	8
+22:56:07	  Anon. SpyKid2:	8
+22:56:10	  Anon. Firestorm:	8 in hidden layer
+22:56:11	  Anon. Forbes:	8
+22:56:13	  Anon. Bigelow:	8
+22:56:19	  Anon. Wilkins:	8
+22:56:21	  Anon. Vision:	8
+22:56:24	  Anon. Atom:	9
+22:56:26	  Anon. Atom:	8
+22:56:27	  Anon. Gamora:	7?
+22:56:51	  Anon. Superman:	8
+22:57:04	  Anon. Heimdall:	32
+22:57:05	  Anon. Fifth:	32
+22:57:06	  Anon. P.J. McArdle:	32
+22:57:07	  Anon. SpyKid2:	32
+22:57:08	  Anon. Bellefonte:	32
+22:57:14	  Anon. Friendship:	32
+22:57:16	  Anon. Firestorm:	32
+22:57:18	  Anon. Thor:	32
+22:58:23	  Jinhyung David Park (TA):	30 seconds left!
+22:59:23	  Anon. Green Lantern:	XOR
+23:06:54	  Anon. Strange:	What if the # of neural are greater than what is needed?
+23:07:20	  Anon. Northumberland:	What is the optimal depth size? Or we can increase the depth as much as we can and thereby reduce the number of neurons?
+23:07:38	  Jinhyung David Park (TA):	@sdfsd, what do you mean?
+23:07:57	  Anon. SpyKid2:	What are the cons in having maximum depth?
+23:08:13	  Anon. Spiderman:	I think if it's too deep you get some gradient issues right? During backprop?
+23:08:22	  Anon. S.Craig:	is it always good to choose more depth than more width?
+23:08:37	  Jinhyung David Park (TA):	@dgfg in practice, it's a lot of hyperparameter tuning, still an active area of research. There is some evidence to show that increasing depth and width together is better than just one or the other
+23:08:43	  Anon. SpyKid2:	Less no of neutrons = less computation
+23:09:02	  Jinhyung David Park (TA):	@dfgd not always, it's a balancing act between the two
+23:09:50	  Jinhyung David Park (TA):	@sdfsdf vanishing gradients is indeed a problem as you will see later on in the course, but residual connections have been a very good solution to this issue
+23:10:03	  Jinhyung David Park (TA):	Along with batchnormalization
+23:10:09	  Jinhyung David Park (TA):	(you will see later)
+23:12:15	  Anon. Ellsworth:	star
+23:12:16	  Anon. Fifth:	The star around the pentagon
+23:12:16	  Anon. Ivy:	The star
+23:12:16	  Anon. IronMan:	star
+23:12:17	  Anon. Schenley:	star
+23:13:09	  Jinhyung David Park (TA):	30 seconds left!
+23:15:59	  Anon. Fifth:	Do we require all shapes we break it up into to be convex?
+23:21:13	  Anon. Odin:	@dfgd Like the star shape is obtained if we set the threshold to be 4, so not necessarily?
+23:22:04	  Jinhyung David Park (TA):	Yes, the shapes need not be convex.
+23:22:29	  Anon. Strange:	Why’s the value is N/2?
+23:23:11	  Anon. SpyKid2:	What do the axes represent?
+23:25:22	  Anon. Murray:	I think the axes represents input features
+23:25:34	  Anon. IronMan:	For each circle we need infinite neurons right?
+23:25:45	  Jinhyung David Park (TA):	yes
+23:25:47	  Anon. Northumberland:	How do we establish a network for a  single circular boundary?
+23:26:51	  Anon. IronMan:	Put almost infinite neurons and take the and of the output
+23:27:44	  Anon. Shady:	you can approximate a circle as a 100 sided polygon, 1000 sided polygon, etc. and do the same thing as the pentagon net
+23:28:08	  Anon. Odin:	or just don't use an affine perceptron?
+23:28:24	  Anon. IronMan:	Activation layer will help
+23:28:33	  Anon. IronMan:	Non linear activation*
+23:28:44	  Anon. Northumberland:	What type of activation would we need?
+23:29:14	  Anon. IronMan:	Put x1^2 and x2^2 features and you will need only one neuron to produce a circle
+23:30:25	  Anon. Northumberland:	Equation of a circle.. I see
+23:35:52	  Anon. SilverSurfer:	So the first layer must capture all the information necessary to solve the problem?
+23:36:43	  Anon. Grandview:	I think every layer matters
+23:42:50	  Anon. Centre:	cant select multiple
+23:42:51	  Anon. Liberty:	"Mark all" but you can only choice one.
+23:44:22	  Anon. Friendship:	Thank you
+23:46:07	  Anon. Jarvis:	its still linear
+23:49:13	  Anon. Heimdall:	leaky relu？
+23:50:04	  Anon. Falcon:	C*(A*x+B)+D is equivalent to (C*A)*x + (C*B+D)
