@@ -1,0 +1,26 @@
+19:01:31	  Anon. Mantis:	What is the aim of pooling? To avoid jitter or to shrink the size of feature map.
+19:02:24	  Anon. IronMan:	shinks the size. for the case of downsalmpling
+19:02:39	  Anon. Atom:	practically, shrink the size could greatly reduce computational time
+19:02:51	  Anon. Shady:	If we had infinite computational resources, can we skip pooling to extract as much information from the input?
+19:18:51	  Anon. Bellefonte:	What are planes?
+19:19:50	  Anon. Atom:	those yellow recs
+19:19:57	  Anon. Gamora:	Why are we indexing [1…m, D_l-1]?
+19:20:55	  Anon. Atom:	Dl-1 is the total number of neorons
+19:21:19	  Anon. Atom:	of the previous layer
+19:26:23	  Anon. Bellefonte:	yes
+19:26:25	  Anon. Star-Lord:	yes
+19:33:07	  Anon. Mantis:	How are we arriving at the yellow boxed eq?
+19:42:08	  Anon. Myrtle:	what if stride is larger than 1?
+19:43:08	  Anon. Mantis:	basically convolve right?
+19:43:39	  Anon. IronMan:	Yes
+19:43:48	  Anon. P.J. McArdle:	the filter will still be flipped. and convolve accordingly
+19:44:23	  Anon. SpyKid1:	flip means transpose, right?
+19:45:45	  Anon. Bellefonte:	We are flipping so that we get the derivates?
+19:49:25	  Anon. Friendship:	yes
+19:49:26	  Anon. Shady:	yes
+19:49:27	  Anon. Murdoch:	yup
+19:49:29	  Anon. N.Craig:	yes
+19:57:06	  Anon. Shady:	Why is the contribution of value at(1,0) (used once) same as value at(2,1) (used twice)?
+19:57:20	  Anon. Shady:	Green matric
+20:01:12	  Anon. SilverSurfer:	Just noticing a pattern here:is it safe to say if a layer does z = L(y) where L is a linear operator, then dDiv/dy = L*(dDiv/dz) where L* is the adjoint operator?
+20:25:18	  Anon. Star-Lord:	thank you professor
