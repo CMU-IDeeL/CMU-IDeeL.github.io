@@ -1,0 +1,54 @@
+18:49:34	  Anon. IronMan:	Sorry when is the first deadline of our project?
+18:55:28	  Anon. Penn:	is it possible to make people muted by default upon joining?
+19:01:20	  Anon. Liberty:	is stochastic?
+19:01:33	  Anon. Flash:	I didn’t understand why doing with a batch was not a good option.
+19:02:40	  Anon. Friendship:	we cant hear you professor
+19:02:49	  Anon. BlackPanther:	I can
+19:02:50	  Anon. P.J. McArdle:	it's ok here
+19:02:51	  Anon. Bigelow:	I can hear you
+19:02:52	  Anon. Forbes:	I can
+19:02:52	  Anon. Smithfield:	yes
+19:02:53	  Anon. Beacon:	I can
+19:02:55	  Anon. S. Highland:	I can
+19:02:55	  Anon. Friendship:	Or is it just me?
+19:02:56	  Anon. Shady:	I can
+19:03:21	  Anon. BlackPanther:	Ohh batch doesn't mean mini-batch right?
+19:03:25	  Anon. BlackPanther:	Batch is whole thing
+19:03:28	  Anon. BlackPanther:	this is just one?
+19:03:55	  Anon. Liberty:	but for small number of data?
+19:04:24	  Anon. Liberty:	isn't better than to use batch?
+19:04:53	  Anon. IronWoman:	Cant we initially do for few points and then for remaining do a batch ？
+19:09:31	  Anon. Rocket:	do we have any standard or common approach for distributing training data?
+19:10:47	  Anon. Liberty:	minibatch is better or stochastic?
+19:11:18	  Anon. Myrtle:	we pass with batches when we make shuffle true right? is that the same?
+19:11:32	  Anon. Flash:	We can pass with individual samples as well
+19:11:53	  Anon. Flash:	And that’s the same
+19:13:14	  Anon. S.Craig:	same
+19:13:25	  Anon. Beacon:	no
+19:13:26	  Anon. Batman:	no
+19:13:28	  Anon. S. Highland:	No
+19:13:31	  Anon. IronWoman:	no
+19:15:08	  Anon. Rocket:	how can we understand this kind of situation in data?
+19:21:07	  Anon. Beacon:	infinite
+19:21:15	  Anon. Atom:	infinite
+19:23:11	  Anon. Beacon:	First is so that we can “get anywhere”, second is so that we can “stay somewhere”. Is this correct?
+19:23:38	  Anon. Odin:	1
+19:24:09	  Anon. Baum:	Why does the learning rate must be squared?
+19:24:29	  Anon. Flash:	That is the convergence criteria
+19:25:18	  Anon. Hawkeye:	Cauchy sequence
+19:25:28	  Anon. Beacon:	1/x
+19:25:37	  Anon. Jarvis:	1/n
+19:30:29	  Anon. Tech:	I thought global optimum is not guaranteed?
+19:34:59	  Anon. S.Craig:	pull sum out
+19:42:53	  Anon. S.Craig:	Also we would want more uniform distributions?
+19:43:17	  Anon. S.Craig:	Not just number of samples?
+19:44:23	  Anon. Butler:	mini-batch?
+19:47:41	  Anon. Atom:	expected divergence
+19:47:49	  Anon. Jarvis:	expected divergence
+19:54:58	  Anon. BlackPanther:	is the learning rate schedule lenient? As in, as long as it decreases and fits criteria, it should be good? Or is there some optimal setup that works significantly better but takes a while to find it?
+19:55:16	  Anon. Wilkins:	Didn't get the poll this time
+20:02:58	  Anon. Hobart:	First
+20:03:03	  Anon. Butler:	left
+20:03:09	  Anon. Jarvis:	1st
+20:22:57	  Anon. Groot:	thank you professor!
+20:22:58	  Anon. P.J. McArdle:	thank you professor!

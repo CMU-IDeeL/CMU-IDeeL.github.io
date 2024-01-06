@@ -1,0 +1,26 @@
+08:23:52	 Anon. S. Aiken:	that's a ripple adder, wow.
+08:28:14	 Anon. Centre:	Will the rnn be any better than cnn in any case when we are doing ripple adder?
+08:34:33	 Anon. Forward:	yea
+08:37:36	 Anon. Flash:	it's clear
+08:37:41	 Anon. Walnut:	yes
+08:45:09	 Anon. Centre:	Even if the input is bounded? Does bibo not hold here?
+08:46:15	 Anon. IronWoman:	What is h0(t)?
+08:46:25	 Anon. Forward:	w > 1?
+08:46:38	 Anon. Murdoch:	w > 1 or w < -1
+08:49:50	 Anon. Flash:	are these all reals?
+08:52:20	 Anon. Bartlett:	yes
+08:56:40	 Anon. Forward:	yes
+08:56:47	 Anon. Spiderman:	yes
+08:59:08	 Anon. Atom:	b
+09:15:05	 Anon. Forward:	yes
+09:15:07	 Anon. Walnut:	yep
+09:16:48	 Anon. Walnut:	yes
+09:18:59	 Anon. Flash:	1
+09:19:00	 Anon. Ellsworth:	1
+09:39:44	 Anon. Forward:	yes
+09:39:45	 Anon. S. Aiken:	yes
+09:39:47	 Anon. Walnut:	yes
+09:39:52	 Anon. Beacon:	Yes
+09:40:43	 Anon. Ellsworth:	Yes, but how does it train the network if we don’t have weights?
+09:41:13	 Anon. Ellsworth:	Gates?
+09:44:49	 Anon. Heimdall:	So the memory that the RNN finally remember is the one corresponding to the largest eigenvalue of the weight matrix, right?
