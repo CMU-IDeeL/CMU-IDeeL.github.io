@@ -1,0 +1,605 @@
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* general settings */
+html {
+     overflow-y: scroll;
+     background: url(../images/linen_texture.png);
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    background: fixed url(../images/transparent_gradient.png) repeat-x;
+    text-shadow: none;
+}
+
+/* Body layout for small screens */
+@media only screen and (max-width: 999px) {
+  
+  body {
+    /* background: #F7EFDF; */
+    padding: 20px;
+  }
+  
+}
+
+/** Use box layout only on large resolutions */
+@media only screen and (min-width: 999px) {
+  #wrapperbox {
+    background: #FEF1F1;
+    z-index: 1; /* prevent shadows falling behind containers with backgrounds */
+    margin: 0 auto;
+    padding: 40px;
+    min-height: 480px;
+    max-width: 880px;
+    margin-top: 20px;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 2px;
+  }
+}
+
+
+.staffpic {
+    float: left;
+    margin: 5px;
+    width: 350px;
+}
+
+.staffpic img {
+    float: left;
+    border: 1px solid #c0c0c0;
+    margin-right: 10px;
+    padding: 5px;
+    height: 200px;
+    width: 140px;
+}
+
+
+p { margin-bottom: 25px; }
+p.intro { font-size: 18px; }
+
+/* links */
+a:link, a:visited {
+    color: #990000;
+    text-decoration: none;
+    outline: 0;
+}
+a:hover, a:focus, a:active {
+    background-color: #fc8;
+}
+
+a[disabled] {
+    pointer-events: none;
+    opacity: 0.75;
+    color: #000;
+}
+
+p.schedule-link {
+    text-align: left;
+}
+
+p.schedule-link a {
+    font-size: 24pt;
+    vertical-align: middle;
+    text-decoration: underline;
+    color: #1170aa;
+    font-weight: bold;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+/*    font-family: 'MerriweatherBold', Serif; */
+    font-family: Helvetica, Arial, Serif;
+}
+h1 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 50px;
+    letter-spacing: -0.9px;
+    color: #304860;
+    margin-left: -2px;
+}
+h2 {
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+h3 {
+    color: #000;
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* Lists */
+ul, ol {
+	padding-left: 20px;
+}
+ul { list-style: disc; }
+ol { list-style: decimal; }
+
+dl { margin-bottom: 25px; }
+dt {
+    font-weight: bold;
+    color: #046416;
+}
+dd {
+    padding-left: 20px;
+}
+
+blockquote {
+	margin: 25px 0;
+ 	padding-left: 40px;
+	padding-right: 30px;
+	background: url(../images/quote.png) no-repeat 3px 0;
+	font-weight: normal;
+}
+input, select {
+    vertical-align: middle;
+}
+
+strong, b {
+    font-weight: bold;
+}
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+mark {
+    background-color: #FDD2B3;
+}
+
+/* Clearing and Alignment Classes */
+.align-left {
+    float: left;
+}
+.align-right {
+    float: right;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.ie7 .clearfix { zoom: 1; } /* IE7 */
+
+/* ------------------------------------------------------
+    STRUCTURE
+--------------------------------------------------------- */
+.content-wrap {
+    width: 100%;
+}
+
+.content-wrap .whole {
+    width: 100%;
+}
+.content-wrap .primary {
+    float: left;
+    width: 60%;
+}
+.content-wrap .primary ul {
+    margin-left: 20px;
+}
+.content-wrap .primary p.intro {
+    /* margin: 15px 0 10px 0; */
+    margin: 15px 0 25px 0;
+}
+.content-wrap .aside {
+    float: right;
+    width: 32%;
+}
+.content-wrap .aside ul {
+    margin-left: 5px;
+}
+.content-wrap aside h2 {
+    margin: 12.5px 0 12.5px 0;
+}
+
+.content-wrap aside ul.link-list {
+    font-size: 16px;
+    margin: 0 0 25px 0;
+    padding: 0;
+    list-style: none;
+    background: url(../images/section-sep.png) repeat-x left top;
+}
+.content-wrap aside ul.link-list li {
+    background: url(../images/section-sep.png) repeat-x left bottom;
+    padding-left: 10px;
+}
+.content-wrap aside ul.link-list li a {
+    display: block;
+    color: #3B3B3B;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+}
+.content-wrap aside ul.link-list li a:hover,
+.content-wrap aside ul.link-list li a:focus,
+.content-wrap aside ul.link-list li a:active {
+    color: #285935;
+}
+.content-wrap aside .testimonials {
+    margin: 0 0 25px 0;
+}
+.content-wrap aside .testimonials blockquote {
+    font-style: italic;
+    font-size: 16px;
+    padding-left: 27px;
+    background: url(../images/quote-open.png) no-repeat left 5px;
+    margin: 12.5px 0;
+}
+.content-wrap aside .testimonials blockquote p {
+    margin-bottom: 0;
+}
+.content-wrap aside .testimonials blockquote cite {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+th {
+  font-weight: bold;
+  margin: 10px;
+  padding: 3px 10px 3px 10px;
+  background-color: #7a1600;
+  color: #eee;
+}
+
+table td {
+  padding: 3px;
+  font-size: 11pt;
+}
+
+.reci-schedule tr:nth-child(odd) {
+  border-bottom: 1px solid #000;
+}
+
+th:last-child,
+td:last-child {
+    text-align: right;
+    padding-left: 20px;
+}
+
+
+#footer {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+/* HEADER GROUP */
+#header {
+   z-index: 999;
+   font-family: Helvetica, sans-serif;
+   font-weight: bold;
+   width: 100%;
+   display: block;
+   text-shadow: none;
+   padding-bottom: 0px;
+}
+
+@media only screen and (min-width: 999px) {
+
+  #header {
+    position: sticky;
+    top: 0;
+    background: #FEF1F1;
+  }
+
+}
+
+#header #title {
+  color: #990000;
+  font-size: 32px;
+  line-height: 1em;
+}
+
+#header #subtitle {
+  color:#444F;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 18px;
+  margin: 5px 0 5px 0;
+}
+
+
+#nwrapper { }
+
+/* Main Navigation */
+#nwrapper #nav { }
+
+#nav label, #hamburger { display: none; }
+
+#menu {
+    font: bold 16px/25px  Helvetica, Arial, Sans-serif;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid #666;
+    display: table;
+    width: 100%;
+}
+#menu li {
+    display: table-cell;
+    text-align: left;
+    
+}
+#menu a:link,
+#menu a:visited {
+    background: #eee;
+    padding: 5px 10px 4px 10px;
+    border: 1px solid #666;
+    border-radius: 10px 10px 0 0;
+    border-style: solid solid none solid;
+    color: #000;
+    margin-right: 0;
+    text-shadow: none;
+}
+#menu a:hover {
+    background-color: #FAB7B7;
+    color: #900;
+}
+
+#menu a.active {
+  background: #FEF1F1;
+  padding-bottom: 5px;
+  pointer-events: none;
+}
+
+#nwrapper #nav a img {
+  height: 14px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+#nwrapper #nav li a.external {
+  background: transparent;
+  border: none;
+  padding: 5px;
+}
+
+#nwrapper #nav li:last-child {
+  text-align: right;
+  width: 100%;
+}
+
+/* NavBar on mobile / small screens */
+@media only screen and (max-width: 880px) {
+  
+  #menu li {
+    display: block;
+  }
+  
+  #nwrapper #nav li:last-child {
+    text-align: left;
+    width: 100%;
+  }
+  
+  #menu a:link, #menu a:visited {
+    display: block;
+    background: #FEF1F1;
+    padding: 0 0 0 10px;
+    border: 1px solid #666;
+    border-radius: 0;
+    color: #444;
+  }
+  
+  #menu a.active {
+
+  }
+  
+  
+  #menu {
+    display: none;
+    margin: 0;
+  }
+  
+  #nwrapper #nav label {
+    display: block; 
+    color: white;
+    background: #FAB7B7;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 3px;
+    text-align: center;
+    user-select: none;
+  }
+  
+  #hamburger {
+    display: none;
+  }
+  
+  #hamburger:checked ~ #menu {
+    display: block;
+  }
+  
+  #nwrapper #nav li a.external {
+    background: #FEF1F1;
+    border: 1px solid #666;
+    padding: 0 0 0 10px;
+  }
+}
+
+
+/* MAIN LINE */
+section#home {
+    width: 940px;
+    background: none;
+}
+section#home h1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* footer stuff */----------------------------------------------------
+#footer p {
+    font-family: Georgia, Serif;
+    font-size: .65em;
+    padding: 0 10px;
+    margin-bottom: 0;
+    clear: both;
+    color: #f00;
+}
+#footer .footer-content {
+    position: relative;
+    width: 900px;
+    top: -90px;
+}
+#footer ul.footer-menu {
+    float: left;
+    margin: 20px 0 5px -3px;
+    padding: 0;
+    list-style: none;
+}
+
+.tools-box {
+  max-width: 250px;
+}
+
+.external-tool {
+  display: inline-block;
+  border: 1px solid #000;
+  width: 200px;
+  font-size: 10pt;
+  text-align: center;
+  margin: 5px;
+}
+
+.external-tool a {
+  font-size: 14pt;
+  display: block;
+  background: #E6DECE;
+}
+
+.external-tool a img {
+  height: 16px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.calendar {
+  border:solid 1px #777;
+  width: 800px;
+  height: 600px;
+  max-width: 100%;
+}
+
+/* ------------------- Daniel's new schedule ------------------------ */
+
+div.schedule-week {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+div.schedule-week h3 {
+    color: #990000;
+    margin-top: 0;
+}
+
+div.schedule-week table {
+    width: 100%;
+}
+
+div.schedule-week table tr {
+  border-top: 1px solid #aaa;
+}
+
+div.schedule-week table tr first {
+  border-top: none;
+}
+
+div.schedule-week table tr.same-date {
+  border-top: none;
+}
+
+div.schedule-week table tr td:first-child {
+  width: 120px;
+}
+
+div.schedule-week table tr td:last-child {
+  width: 200px;
+}
+
+.past-week .deadline {
+  color: #999;
+  font-weight: bold;
+}
+
+.current-week .deadline, .future-week .deadline {
+  font-weight: bold;
+}
+
+.past-week .exam {
+  color: #999;
+  font-weight: bold;
+}
+
+.current-week .exam, .future-week .exam {
+  color: #F00;
+  font-weight: bold;
+}
+
+.past-week .break {
+  color: #999;
+  font-weight: bold;
+}
+
+.current-week .break, .future-week .break{
+  color: #393;
+  font-weight: bold;
+}
+
+.past-week {
+
+}
+
+.past-week h3 {
+  text-decoration: line-through;
+}
+
+.current-week {
+  border: 4px solid #990000;
+  border-radius: 8px;
+  background: #FDE4E4;
+}
+
+.future-week {
+  opacity: 0.6;
+}
+
+/* Schedule on small screens */
+@media only screen and (max-width: 999px) {
+  div.schedule-week table tr td {
+    font-size: 10pt;
+  }
+  
+  div.schedule-week table tr td:nth-child(2) {
+    min-width: 50%
+  }
+}
+
+div.footnote {
+  padding-left: 10px;
+  font-size: 9pt;
+  line-height: 1em;
+}
