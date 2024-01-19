@@ -20,7 +20,7 @@ body {
     text-shadow: none;
 }
 
-/* Body layout for small screens */
+/* body layout for small screens */
 @media only screen and (max-width: 999px) {
   
   body {
@@ -30,17 +30,16 @@ body {
   
 }
 
-/** Use box layout only on large resolutions */
+/** use box layout only on large resolutions */
 @media only screen and (min-width: 999px) {
   #wrapperbox {
-    background: #FEF1F1;
-    z-index: 1; /* prevent shadows falling behind containers with backgrounds */
+    background: #d9f7c6;  /* #FEF1F1 */
+    z-index: 1;             /* prevent shadows falling behind containers with backgrounds */
     margin: 0 auto;
     padding: 40px;
     min-height: 480px;
     max-width: 880px;
     margin-top: 20px;
-
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     border-radius: 2px;
   }
