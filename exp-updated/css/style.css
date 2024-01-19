@@ -33,7 +33,7 @@ body {
 /** use box layout only on large resolutions */
 @media only screen and (min-width: 999px) {
   #wrapperbox {
-    background: #d9f7c6;  /* #FEF1F1 */
+    background: #FEF1F1;
     z-index: 1;             /* prevent shadows falling behind containers with backgrounds */
     margin: 0 auto;
     padding: 40px;
