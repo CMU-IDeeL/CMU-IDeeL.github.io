@@ -1,120 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    
+<html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <title>11-785: Introduction to Deep Learning, Spring 2024</title>
+        <title>11-785</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
     <body>
-        <div id="wrapperbox">
-
-        <!-- navigation & header -->
-        <header id="header">
-            <div id="title">11-785: Introduction to Deep Learning</div>
-            <div id="subtitle">Spring 2024</div>
-
-            <div id="nwrapper">
-                <div id="nav">
-                    <label for="hamburger">&#9776;</label>
-                    <input type="checkbox" id="hamburger" autocomplete="off" />
-                    <ul id="menu">
-                        <li><a href="index.html">Home</a></li>
-                        <!-- <li><a href="schedule.html">Schedule</a></li> -->
-                        <!-- <li><a href="about451.html">About</a></li> -->
-                        <!-- <li><a href="policies.html">Policies</a></li> -->
-                        <!-- <li><a href="FAQ.html">FAQ</a></li> -->
-                        <li>
-                            <a href="http://jonathansliu.com/" rel="noreferrer nofollow" target="_blank" class="external"><img src="icon/ohq.png" />OHQ</a>
-                            <a href="https://piazza.com/class/lqpg4lr5tqrmy" rel="noreferrer nofollow" target="_blank" class="external"><img src="icon/piazza.png" />Piazza</a>
-                            <a href="https://www.gradescope.com/courses/689113" rel="noreferrer nofollow" target="_blank" class="external"><img src="icon/gradescope.png" />Gradescope</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <!-- end navigation & header -->
-
-
-        <div class="content-wrap">
-            <div class="whole">
-                <h2>Staff</h2>
-                
-                <ul>
-                    <li><strong>Instructors</strong>: Bhiksha Raj (bhiksha), Rita Singh (rsingh) </li>
-                    <li><strong>TAs</strong>:
-                        <ul>
-                            <!-- listing all TA names and contact info for S24 -->
-                            <li><b>Harini Subramanyan</b>: harinisu@andrew.cmu.edu</li>
-                            <li><b>Sarthak Bisht</b>: sbisht@andrew.cmu.edu</li>
-                            <li><b>Rucha Kulkarni</b>: rmkulkar@andrew.cmu.edu</li>
-                            <li><b>Vishhvak Srinivasan</b>: vishhvas@andrew.cmu.edu</li>
-                            <li><b>Harshith Kumar</b>: harunkum@andrew.cmu.edu</li>
-                            <li><b>Pavitra Kadiyala</b>: pkadiyal@andrew.cmu.edu</li>
-                            <li><b>Yu-Cheng "Samuel" Lin</b>: ylin6@andrew.cmu.edu</li>
-                            <li><b>Jeel Shah</b>: jdshah@andrew.cmu.edu</li>
-                            <li><b>Quentin Auster</b>: qja@andrew.cmu.edu</li>
-                            <li><b>Ishan Mamadapur</b>: imamadap@andrew.cmu.edu</li>
-                            <li><b>Chetan Chilkunda</b>: cchilkun@andrew.cmu.edu</li>
-                            <li><b>Kateryna Shapovalenko</b>: kshapova@andrew.cmu.edu</li>
-                            <li><b>Syed Hannan</b>: shannan@andrew.cmu.edu</li>
-                            <li><b>Shreya Kale</b>: shreyaak@andrew.cmu.edu</li>
-                            <li><b>Heena Chandak</b>: hchandak@andrew.cmu.edu</li>
-                            <li><b>Harshit Mehrotra</b>: hmehrotr@andrew.cmu.edu</li>
-                            <li><b>Aarya Makwana</b>: amakwana@andrew.cmu.edu</li>
-                            <li><b>Liangze "Josh" Li</b>: liangzel@andrew.cmu.edu</li>
-                            <li><b>Alexander Moker</b>: amoker@andrew.cmu.edu</li>
-                            <li><b>Gabrial Ashungafac</b>: gzenchaa@andrew.cmu.edu</li>
-                            <li><b>Denis Musinguzic</b>: dmusingu@andrew.cmu.edu</li>
-                            <li><b>Dareen Alharthi</b>: dalharth@andrew.cmu.edu</li>
-                            <li><b>Yuzhou Wang</b>: yuzhouwa@andrew.cmu.edu</li>
-                            <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
-                            <li><b>R Raghav</b>: rraghavr@andrew.cmu.edu</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h2>Class Hours</h2>
-                <p><strong>Lectures</strong>: Tuesday and Thursday at 12:30PM to 01:50PM, Doherty Hall 2315</p>
-
-                <h3>Recitations (Friday)</h3>
-                <table class="reci-schedule">
-                    <tr><th>Sec</th><th>Type</th><th>Location</th><th>Time</th><th>Staff</th></tr>
-                    <tr><td>A</td><td>P</td><td>BH A36</td><td>10:00-10:50 am</td><td>Efe and Hoai-An</td></tr>
-                    <tr><td>B</td><td>R</td><td>BH A53</td><td>10:00-10:50 am</td><td>Will and Lauren</td></tr>
-
-                    <tr><td>C</td><td>R</td><td>BH A53</td><td>11:00-11:50 am</td><td>Will and Lauren</td></tr>
-                    <tr><td>D</td><td>P</td><td>DH 1112</td><td>11:00-11:50 am</td><td>Efe and Summit</td></tr>
-
-                    <tr><td>E</td><td>R</td><td>MM 103</td><td>12:00-12:50 pm</td><td>David T and Jonathan</td></tr>
-                    <tr><td>F</td><td>P</td><td>BH A53</td><td>12:00-12:50 pm</td><td>Abby and Yoseph</td></tr>
-
-                    <tr><td>G</td><td>R</td><td>HH B131</td><td>1:00-1:50 pm</td><td>Sophie and Daniel</td></tr>
-                    <tr><td>H</td><td>P</td><td>POS 152</td><td>1:00-1:50 pm</td><td>Claire and Nick</td></tr>
-                </table>
-            
-                <p>This semester we are offering two different styles of recitation. You are welcome to switch between the two at any point.  Please contact your section TAs if you want to switch.  We are always happy to accomodate.</p>
-            
-                <p><b>Review-heavy sessions (B, C, E, G)</b>.  Review-heavy (R) recitations will spend additional time reviewing definitions and key ideas from the lectures before diving into the problems.  Note that review-heavy sessions are not guaranteed to be able to cover all of the recitation problems due to the extra time spent on review.  It is therefore your responsibility, if you attend a review-heavy session, to look over the remaining problems and ensure you understand the solutions in your own time after your recitation.</p>
-            
-                <p><b>Problem-heavy sessions (A, D, F, H)</b>  Problem-heavy (P) recitations will dive straight into the problems and run at a faster pace. If you attend a problem-heavy recitation, review will be minimal, so you are expected to have already reviewed the lecture notes and have a reasonable understanding of the week's lecture content before you arrive.</p> 
-            
-
-                <h3>Office Hours</h3>
-                <p>The office hour schedule can be found on the course calendar below. Although most time slots are regular every week, they may occasionally change and be rescheduled, so <strong>always</strong> double check the calendar before deciding to go!</p>
-                <br>
-                <hr>
-
-                <h2>Course Calendar</h2>
-                <p>You may need to be logged into your Andrew (CMU) Google account to be able to view the calendar.</p>
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=c_25646a70b2415eae634e44cec5741e650fe59fa885d53978b1dfceaac01139d9%40group.calendar.google.com&amp;color=%237CB342&amp;color=%23009688&amp;mode=WEEK&amp;showNav=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=1" 
-                    class="calendar" frameborder="0" scrolling="no"></iframe>
-
-            </div>
-        </div>
-        <footer id="footer"></footer>
-
-    </body>
+        <h1>11-785 Introduction to Deep Learning</h1>
+        
+        <p>This landing page links to the individual websites for various instances of this course.</p>
+        
+        <blockquote>
+            <p><a href="../exp-updated/S24">Spring 2024</a> Taught by Bhiksha Raj Ramakrishnan</p>
+        </blockquote>
+        
+          <hr>
+          <address><a href="mailto:temporary@cs.cmu.edu">Hippo Parameter</a></address>
+          Last Modified: Thu Nov 21 15:58:06 2019
+        
+          
+        
+        </body>
 </html>
