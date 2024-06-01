@@ -1,0 +1,140 @@
+18:40:49	  Anon. Northumberland:	yep
+18:44:19	  Anon. Murdoch:	yes
+18:44:36	  Anon. Bartlett:	nope
+18:44:43	  Anon. Morewood:	every thing is ok prof
+18:44:54	  Anon. Flash:	Everything is clear Prof
+18:46:56	  Anon. SpyKid2:	Iran
+18:47:07	  Anon. SpyKid2:	No
+18:48:51	  Anon. Flash:	Unsupervised learning; like clustering etc.
+18:49:55	  Anon. SpyKid2:	what's the difference between validation set and test set?
+18:50:06	  Anon. Friendship:	Will we be training a network where we go from lower dimension to multiple dimension. Like from latent variable
+18:50:12	  Anon. SpyKid2:	thanks
+18:52:37	  Anon. Ellsworth:	Change in function output w.r.t. small change in input
+18:52:39	  Anon. Drax:	'rate of change of'
+18:52:41	  Anon. WonderWoman:	rate of change
+18:52:44	  Anon. N.Craig:	rate of change of a function
+18:52:45	  Anon. S. Highland:	change in one variable with respect to another
+18:52:51	  Anon. Bellefonte:	Rate of change in variable wrt to another variable
+18:52:51	  Anon. Morewood:	is a steep
+18:53:03	  Anon. Ellsworth:	Limit as a small perturbation goes to zero
+18:53:18	  Anon. Bellefonte:	Lim as a change in variable tends to infinity ?
+18:53:20	  Anon. Morewood:	is the rate of growth which can gather from limit
+18:53:57	  Anon. Morewood:	df\dw
+18:56:00	  Anon. Tech:	activation functions?
+18:58:11	  Anon. Ellsworth:	scalar
+18:58:12	  Anon. Morewood:	vector
+18:58:20	  Anon. Ellsworth:	vector
+18:58:21	  Anon. Drax:	vector
+18:58:22	  Anon. Penn:	vector
+18:58:22	  Anon. SpyKid2:	vector
+18:58:26	  Anon. Penn:	D
+18:58:27	  Anon. SpyKid2:	D
+18:58:29	  Anon. Vision:	D
+18:58:44	  Anon. Drax:	row vector
+18:58:45	  Anon. Ellsworth:	Alpha is a row vector of dimension d
+18:58:46	  Anon. Loki:	1xD?
+18:58:47	  Anon. WonderWoman:	row vector
+18:58:49	  Anon. SpyKid2:	1*D
+18:58:52	  Anon. Murdoch:	row vector
+18:58:54	  Anon. Morewood:	vector
+18:58:55	  Anon. P.J. McArdle:	Row vector
+18:59:06	  Anon. Atom:	row vector 1xd
+19:00:42	  Anon. Ellsworth:	The vector of all partial derivatives
+19:00:52	  Anon. Batman:	partial deriatives
+19:01:49	  Anon. Morewood:	sis a derivation of a vector
+19:03:08	  Anon. Ellsworth:	Direction in which function is increasing most
+19:03:09	  Anon. Loki:	direction of steepest increase?
+19:03:20	  Anon. Murdoch:	Steepest direction of increase
+19:03:21	  Anon. SpyKid2:	Steepest change
+19:03:22	  Anon. Batman:	direction of greatest change
+19:05:06	  Anon. S.Craig:	yes
+19:05:08	  Anon. Murdoch:	yes
+19:05:09	  Anon. Friendship:	yes
+19:05:11	  Anon. SpyKid2:	yes
+19:05:17	  Anon. Atom:	yes
+19:05:57	  Anon. Morewood:	how can we escape from local minima here
+19:05:57	  Anon. Friendship:	opposite
+19:06:00	  Anon. SpyKid2:	minus gradient
+19:06:01	  Anon. P.J. McArdle:	opposite
+19:14:47	  Anon. Ellsworth:	Parabola ish
+19:16:14	  Anon. IronMan:	This is the same quiz as before?
+19:19:12	  Anon. Morewood:	momentum?
+19:20:50	  Anon. SpyKid2:	what if we step out of minima
+19:22:08	  Anon. Morewood:	whats happen when the step is high
+19:22:48	  Anon. Tech:	gets to minima faster but might never reach the "valley" if that makes sense
+19:23:12	  Anon. Morewood:	whats for lower step
+19:23:25	  Anon. Friendship:	Takes more time to get to the minimum
+19:23:44	  Anon. Friendship:	Training time will increase
+19:23:47	  Anon. Grandview:	May get stuck in local minima
+19:23:49	  Anon. Morewood:	is there a fformula to find the step?
+19:23:59	  Anon. Flash:	It will take finer steps towards the local minima but it will take more time to reach there.
+19:25:38	  Anon. S.Craig:	How to check if we converged at local minima or global minima?
+19:25:46	  Anon. Morewood:	sis the step is changeable?
+19:25:58	  Anon. Murdoch:	The loss function is minimized
+19:26:01	  Anon. Phillips:	maybe we can re-initialize and try different starting points?
+19:26:05	  Anon. Tech:	yes
+19:26:10	  Anon. Tech:	random initialization can help with that
+19:26:26	  Anon. Atom:	we can also use momentum
+19:27:23	  Anon. Morewood:	or other optimization like the adam,msprop,,,,,,
+19:28:13	  Anon. Morewood:	prof,whats the cost function here?
+19:28:19	  Anon. Morewood:	sis MSE?
+19:30:06	  Anon. GreenArrow:	Bhiksha will introduce what cost function we will use here very soon
+19:30:12	  Anon. GreenArrow:	it would be KL I believe
+19:32:36	  Anon. Thor:	cross entropy loss for classification?
+19:33:49	  Anon. Morewood:	where we can use thedm
+19:34:06	  Anon. GreenArrow:	"cross entropy loss for classification?" Yes?
+19:37:45	  Anon. SpyKid2:	can we say hidden layer is a single function that has multiple input and multiple output?
+19:38:07	  Anon. Morewood:	how can hwlp us this function
+19:38:09	  Anon. Tech:	I've seen it that way with the activation function included
+19:38:43	  Anon. Morewood:	yeah, usually it is used in the last layer of network
+19:38:56	  Anon. Loki:	so for vector activations does the whole layer act as one unit that takes in a vector and produces a vector?
+19:39:12	  Anon. GreenArrow:	"can we say hidden layer is a single function that has multiple input and multiple output?" why you think it is a single function?
+19:39:46	  Anon. Atom:	we can use softmax activation in the last layer for multi class classification
+19:40:03	  Anon. GreenArrow:	yes
+19:40:10	  Anon. SpyKid2:	can we say hidden layer is a single function that has multiple input and multiple output?
+19:40:45	  Anon. Tech:	oh, I think they mean hidden layer 1 can be represented as h1 = f(x1, … xn; w1) and the activation would be z1 = activation_func(h1) and so on. Is this acceptable notation or is it preferred to stay purely in a vectorized form?
+19:40:54	  Anon. Morewood:	yeah ehsan I think
+19:42:12	  Anon. Tech:	yes
+19:42:13	  Anon. SpyKid2:	thank you
+19:50:10	  Anon. SpyKid2:	we have infinite classes in the world, can we use some kind of combination between classes? for example can we say horse is 80 percent cat + 20 percent dog?
+19:51:20	  Anon. Phillips:	^ you can look into top modeling and models like LDA
+19:51:25	  Anon. Phillips:	topic*
+19:52:14	  Anon. Tech:	what about using the feature vectors in a manner similar to glove word embeddings? Is that a thing?
+19:58:38	  Anon. Tech:	So this is like cross-entropy loss?
+19:59:09	  Anon. IronWoman:	The equation is the same, so yeah I guess.
+19:59:22	  Anon. Darlington:	it is a special case of cross-entrophy
+19:59:24	  Anon. Atom:	is loss function being differentiable at all time always a necessary condition?
+19:59:37	  Anon. GreenArrow:	cross-entropy is different from KL divergence but can be calculated using KL divergence
+19:59:38	  Anon. Murdoch:	KL divergence is supposed to be the cross entropy
+19:59:49	  Anon. Tech:	oh ok, thanks
+20:01:24	  Anon. GreenArrow:	"is loss function being differentiable at all time always a necessary condition?" If it not differentable, you probably cannot backprop the gradient backward
+20:02:56	  Anon. IronWoman:	-1
+20:03:11	  Anon. IronWoman:	Same, -1
+20:03:13	  Anon. S.Craig:	1
+20:03:14	  Anon. IronWoman:	1
+20:09:20	  Anon. Morewood:	-log(1-y)
+20:10:10	  Anon. S.Craig:	High negative
+20:12:22	  Anon. SpyKid2:	the difference between validation set and test set
+20:13:20	  Anon. SpyKid2:	can we say training set is for training our model and validation set is for training our hyper parameters?
+20:13:40	  Anon. S. Aiken:	Also we use val set for early stopping
+20:14:14	  Anon. GreenArrow:	"can we say training set is for training our model and validation set is for training our hyper parameters?" You can understand in this way
+20:14:24	  Anon. S. Aiken:	We are using softmax before KL div right?
+20:14:36	  Anon. SpyKid2:	can we say training set is for training our model and validation set is for training our hyper parameters?
+20:15:09	  Anon. GreenArrow:	I prefer the word "tuning" rather than "training"
+20:15:14	  Anon. Tech:	val set can be used during training to predict high variance on test set, to tune hyperparameters, or to select the best models
+20:15:30	  Anon. Atom:	so our loss function should always be smooth functions right?
+20:15:43	  Anon. GreenArrow:	"training" hyper parameters sounds weird. You cannot train them, you tune/adjust them
+20:17:32	  Anon. Wanda:	We said the gradient in s the transpose of the derivative. I had previously used the terms gradient and derivative interchangeably. What is the relevance of the transpose?
+20:17:40	  Anon. Wanda:	*is
+20:18:41	  Anon. SpyKid2:	^ by the word "training" I meant:knowing which one we should use
+20:19:20	  Anon. GreenArrow:	yeah, then you can understand in this way
+20:21:50	  Anon. Atom:	what is the difference between cross entropy vs KL divergence?
+20:24:46	  Anon. Schenley:	cross entropy = entropy + KL divergence
+20:27:13	  Anon. Tech:	Thank you professor
+20:27:15	  Anon. Beechwood:	Thank you!
+20:27:15	  Anon. Schenley:	Thank you
+20:27:17	  Anon. Loki:	Thank you prof!
+20:27:20	  Anon. Baum:	Thank you
+20:27:22	  Anon. S.Craig:	Thank you
+20:27:22	  Anon. Firestorm:	Thank you!
+20:27:23	  Anon. Atom:	thank you 😇
