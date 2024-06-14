@@ -1,0 +1,62 @@
+22:44:32	  Anon. Baum:	School of Athenes
+22:44:40	  Anon. Bigelow:	vitcan
+22:44:46	  Anon. Centre:	school of athens
+22:44:50	  Anon. Centre:	by raphael
+22:46:41	  Haoxuan Zhu (TA):	Guys, if you want, you can hold space bar to temporarily unmute yourselves to ask/answer questions
+22:47:03	  Anon. Phillips:	Ring the bell, dog salivates
+22:53:52	  Anon. Bartlett:	100 billion
+22:53:56	  Anon. Bellefield:	80 billion
+22:53:58	  Anon. Murray:	15 billion
+22:53:59	  Anon. Friendship:	1 trillion
+22:54:15	  Anon. Bartlett:	Trillion
+22:56:02	  Anon. Forward:	x86 or ar!m
+22:56:07	  Anon. Phillips:	Von neumann
+22:56:09	  Anon. Murray:	von neuman
+22:56:13	  Anon. Beacon:	von neuman
+22:56:14	  Anon. Ellsworth:	Von Neumann
+22:56:19	  Anon. Fifth:	von neumann
+22:56:25	  Anon. Baum:	Program in memory
+22:59:40	  Nour Ali (TA):	30 seconds left
+23:06:01	  Anon. Bellefonte:	Is inhibitory synapse analogous to bias?
+23:07:45	  Jinhyung David Park (TA):	Not necessarily - don't think there is a direct correlation
+23:08:31	  Anon. Bellefonte:	got it.
+23:15:12	  Anon. Beacon:	the weight always increases
+23:15:16	  Anon. Wightman:	It doesn’t learn when x doesn’t excite y
+23:15:16	  Anon. Hobart:	No way to decrease intensity
+23:17:19	  Nour Ali (TA):	30 seconds left
+23:28:25	  Anon. S. Highland:	the invention of perceptron is attributed to hebb or Rosenblatt?
+23:32:19	  Anon. Smithfield:	and
+23:32:21	  Anon. Liberty:	AND
+23:32:21	  Anon. Wilkins:	and]
+23:32:22	  Anon. Penn:	and
+23:32:22	  Anon. Tech:	and
+23:32:22	  Anon. Northumberland:	and
+23:32:23	  Anon. Myrtle:	and
+23:32:27	  Anon. Bigelow:	and
+23:32:32	  Anon. Darlington:	xor
+23:32:41	  Anon. Beechwood:	not x2
+23:32:44	  Anon. Walnut:	Not x1
+23:32:44	  Anon. Northumberland:	Not x1
+23:32:46	  Anon. Frew:	not x1
+23:32:46	  Anon. Forbes:	Not x1
+23:33:44	  Haoxuan Zhu (TA):	@xyz I think the answer is Rosenblatt. But his model uses (is inspired by) the findings of Hebb
+23:38:26	  Anon. Walnut:	What is MLP?
+23:38:36	  Anon. Morewood:	Multi-layer perceptrons
+23:38:38	  Anon. Wilkins:	In case of overlapping networks, wouldn't treating them as separate and then using OR be computationally redundant?
+23:40:24	  Nour Ali (TA):	30 seconds left
+23:42:42	  Jinhyung David Park (TA):	@abc maybe in some cases it can be more computationally efficient to separate the two parts, but might have to just think about it on a case-by-case basis
+23:43:54	  Anon. Murdoch:	Does more layers of perceptron imply a better model or is there a limit after which the performance doesn’t improve?
+23:44:26	  Anon. N.Craig:	If we want continuous, why don't we just use sigmoid instead of threshold?
+23:46:08	  Jinhyung David Park (TA):	@efg That's a good question! We'll talk about this more in later lectures, and you'll experience it in your homework. Some general intuition may be that yes, more layers can theoretically capture more information, but sometimes that makes optimization harder leading to worse performance (but also sometimes easier leading to better learning and generalization). This is still an ongoing direction of research
+23:47:00	  Anon. Grandview:	@klm My understanding is that sigmoid would only give us between -1 and 1, whereas here we are trying to regress on more general values
+23:47:48	  Anon. Shady:	Could someone explain the answer to the poll again? Thank you!
+23:47:51	  Jinhyung David Park (TA):	@fgh So "continuous" in the previous example wasn't just saying that the output itself is continuous, but rather whether an MLP can model a continuous function (a specific value for each input). The threshold activation there can be thought of as "hard coding" or "memorizing" a specific output for each input, not necessarily having much to do with whether the output of each perceptron is continuous or not
+23:47:58	  Anon. Northumberland:	Can you please post the question in the last poll in chat?
+23:48:20	  Jinhyung David Park (TA):	We'll upload all the polls & answers online after the lecture
+23:48:46	  Jinhyung David Park (TA):	(We'll also upload the chat, I believe)
+23:50:39	  Anon. Ivy:	May I ask that whether students from other sections (section B) could attend the lecture synchronously sometimes instead of watching the video for attendance grade?
+23:50:45	  Anon. Bellefonte:	The answer to last poll is one because the weight is -2. Is it correct?
+23:51:07	  Anon. Bellefonte:	Ignore
+23:51:14	  Anon. S. Aiken:	thank you!
+23:51:18	  Jinhyung David Park (TA):	@asd yes
+23:51:29	  Jinhyung David Park (TA):	The poll is on the piazza lecture 1 discussion thread!
