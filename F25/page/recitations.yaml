@@ -174,22 +174,14 @@ recitations_0:
 
 recitations:
   - title: "Lab 1"
-    date: "Saturday,<br> Jan. 18th"
+    date: "Friday,<br>Aug 29th"
     date_rowspan: 2
     topics:
       - "Your First MLP"
-    materials:
-      - text: "Colab Notebook"
-        url: "https://colab.research.google.com/drive/1Erm7kOLMSQ6gkzzEXQ6TMXjRJ0zjPyQe#scrollTo=d8a41c18"
-    videos:
-      - text: "Lab 1"
-        url: "https://www.youtube.com/watch?v=iX6bEiCOEUc"
-      - text: "HW1 Bootcamp"
-        url: "https://youtu.be/skrUmhPl1hQ?si=G3-FiJ73OnqYofC7"
-      - text: "Derivatives Bootcamp"
-        url: "https://youtu.be/BFFgU3FBJoU?si=RFYOKAV91ARolHvg"
+    materials: []
+    videos: []
     videos_rowspan: 2
-    authors: "Miya Sylvester,<br>Vedant Singh"
+    authors: ""
     authors_rowspan: 1
 
   - title: "HW1 Bootcamp"
@@ -197,152 +189,114 @@ recitations:
     topics:
       - "HW1P1"
       - "HW1P2"
-    materials:
-      - text: "Slides"
-        url: "https://docs.google.com/presentation/d/10iDr60RWUn8-BznIihnOSSNLHjRDd_zHY7RlkT4TW4A/edit?usp=sharing"
+    materials: []
     # videos: Spans from previous row
-    authors: "Shubham Singh, <br>Shubham Kachroo,<br>Shravanth Srinivas,<br>Issah Ahmed,<br>Vishan Oberoi"
+    authors: ""
     authors_rowspan: 1
 
   - title: "Lab 2"
-    date: "Friday,<br> Jan. 24th"
+    date: "Friday,<br> Sep. 5th"
     date_rowspan: 1
     topics:
       - "Debugging in Deep Learning Networks"
-    materials:
-      - text: "Colab Notebook"
-        url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fl79gsjtlsas6t4%2Fe30c0f407ce5388832d436246b81141036d0243b9bd33c618af1bbe1755ca580%2FLab_2_-_Notebook_%28STUDENT_VERSION%29.ipynb"
-      - text: "Data"
-        url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fl79gsjtlsas6t4%2Fcc5c7dd1c06cd0e777e92cbd9b91834a0cde2296eb1b7ae5dee0725237096b5c%2Fdata.zip"
-    videos:
-      - text: "Link"
-        url: "https://youtu.be/IbqcgVRluUo"
+    materials: []
+    videos: []
     videos_rowspan: 1
-    authors: "Kateryna Shapovalenko,<br>Vishan Oberoi"
+    authors: ""
     authors_rowspan: 1
 
   - title: "Lab 3"
-    date: "Friday,<br> Jan. 31st"
+    date: "Friday,<br> Sep. 12th"
     date_rowspan: 1
     topics:
       - "Network Optimizations"
-    materials:
-      - text: "Notebook"
-        url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fllsfmaqyiv937n%2F33ad3f35d1bff59d15bd9ac6c58f92fef9f43cfc3bd74e6776b93376ba67c242%2FSTUDENT_IDL_S25_Lab_3_Network_Optimizations.ipynb"
-    videos:
-      - text: "Link"
-        url: "https://youtu.be/sIbwFRL8Reo"
+    materials: []
+    videos: []
     videos_rowspan: 1
-    authors: "Shubham Kachroo,<br>Tanghang Elvis Tata"
+    authors: ""
     authors_rowspan: 1
 
   - title: "Lab 4"
-    date: "Friday,<br> Feb. 7th"
+    date: "Friday,<br> Sep. 19th"
     date_rowspan: 1
     topics:
       - "Computing Derivatives and Autograd"
-    materials:
-      - text: "Slides"
-        url: "https://cdn-uploads.piazza.com/paste/ljjjuqvroyk192/8c947613aea2b348abf1492c38824004ef7cec5b27f4f2f13eadd530783e1394/Computing_Derivatives___Autograd_Lab_4.pdf"
-      - text: "Notebook P1"
-        url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fl751bkyneri128%2F0eda61a4f2b55d09f5ad64ccd48ad61e3e4871955f55dc25c02d73d1441a7707%2FIDL_S25_Lab_4_Computing_Derivatives___Autograd.ipynb"
-      - text: "Notebook P2"
-        url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fl751bkyneri128%2Fe240179f1a294f84a23e77870873c7c3cf08440e8a6f06a6fad848d106751434%2FIDL-S24-Lab_4_P2_-_Intro_to_IDL_Autograd_Engine.ipynb"
-      - text: "Solutions P1"
-        url: "https://colab.research.google.com/drive/1DfuQHPp2ZjMjLT6BkANtSk3Lpq4aIdeU?usp=sharing"
-    videos:
-      - text: "Link"
-        url: "https://youtu.be/pnjkqSQMHmA"
+    materials: []
+    videos: []
     videos_rowspan: 1
-    authors: "Michael Kireeff,<br>John Liu"
+    authors: ""
     authors_rowspan: 1
 
   - title: "HW2 Bootcamp"
-    date: "Saturday,<br> Feb. 8th"
+    date: "Saturday,<br> Sep. 20th"
     date_rowspan: 1
     topics:
       - "HW2P1"
       - "HW2P2"
-    materials:
-      - text: "HW2P1 Slides"
-        url: "./document/slides/HW2P1_Bootcamp.pdf"
-      - text: "HW2P2 Slides"
-        url: "./document/slides/S25-HW2P2-BOOTCAMP.pdf"
-    videos:
-      - text: "Link"
-        url: "https://youtu.be/95P-FT7GXCw"
+    materials: []
+    videos: []
     videos_rowspan: 1
-    authors: "Sadrishya Agrawal,<br>Michael Kireeff, <br> John Liu, <br> Tanghang Elvis Tata, <br> Christine Muthee"
+    authors: ""
     authors_rowspan: 1
 
   - title: "Lab 5"
-    date: "Friday,<br> Feb. 14th"
+    date: "Friday,<br> Sep. 26th"
     date_rowspan: 1
     topics:
       - "CNN: Basics"
     materials: []
     videos: []
     videos_rowspan: 1
-    authors: "Sadrishya Agrawal,<br>Shravanth Srinivas"
+    authors: ""
     authors_rowspan: 1
 
   - title: "Lab 6"
-    date: "Friday,<br> Feb. 21st"
+    date: "Friday,<br> Oct. 3rd"
     date_rowspan: 1
     topics:
       - "CNN Classification and Verification"
     materials: []
     videos: []
     videos_rowspan: 1
-    authors: "Shravanth Srinivas,<br>Tanghang Elvis Tata"
+    authors: ""
     authors_rowspan: 1
 
   - title: "Lab 7"
-    date: "Friday,<br> Feb. 28th" # Corrected from 28st
+    date: "Friday,<br> Oct. 10th"
     date_rowspan: 1
     topics:
       - "RNN Basics"
     materials: []
     videos: []
     videos_rowspan: 1
-    authors: "Alexander Moker,<br>Michael Kireeff"
+    authors: ""
     authors_rowspan: 1
 
-  - title: "Lab 8 (Pre recorded)"
-    date: "Friday,<br> Mar. 8th"
+  - title: "Lab 8"
+    date: "Friday,<br> Oct. 17th"
     date_rowspan: 1
     topics:
       - "Kaggle Competitions"
-    materials:
-      - text: "Slides"
-        url: "https://docs.google.com/presentation/d/1NVZCo8frgq1MUt7LtzGU_9ScrlwD8DG_/edit?usp=sharing&ouid=110837114422260679754&rtpof=true&sd=true"
-    videos:
-      - text: "Link"
-        url: "https://drive.google.com/file/d/1L9oP1XeB3fE86O1QXSSsWLcosNj7pwmH/view?usp=sharing"
+    materials: []
+    videos: []
     videos_rowspan: 1
-    authors: "Christine Muthee,<br>Shubham Singh"
+    authors: ""
     authors_rowspan: 1
 
   - title: "HW3 Bootcamp"
-    date: "Saturday,<br> Mar. 9th"
+    date: "Saturday,<br> Oct. 18th"
     date_rowspan: 1
     topics:
       - "HW3P1"
       - "HW3P2"
-    materials:
-      - text: "HW3P1 Slides"
-        url: "./document/slides/HW3P1 Bootcamp.pdf"
-      - text: "HW3P2 Slides"
-        url: "./document/slides/HW3P2 Bootcamp Presentation.pdf"
-    videos:
-      - text: "Link"
-        url: "https://www.youtube.com/watch?v=oDe6tfaKNrc"
+    materials: []
+    videos: []
     videos_rowspan: 1
-    authors: "Ishita Gupta,<br> Tanghang Elvis Tata,<br> Shubham Singh, <br> Christine Muthee, <br> Floris Nzabakira, <br> Ahmed Issah"
+    authors: ""
     authors_rowspan: 1
 
   - title: "Lab 9"
-    date: "Friday,<br> Mar. 14th"
+    date: "Friday,<br> Oct. 24th"
     date_rowspan: 1
     topics:
       - "CTC"
@@ -350,107 +304,99 @@ recitations:
     materials: []
     videos: []
     videos_rowspan: 1
-    authors: "Purusottam Samal,<br>Ishita Gupta"
+    authors: ""
     authors_rowspan: 1
 
   - title: "HW5 Bootcamp"
-    date: "Saturday,<br> Mar. 15th"
+    date: "Saturday,<br> Oct. 25th"
     date_rowspan: 1
     topics: []
     materials: []
-    videos:
-      - text: "Link"
-        url: "https://youtu.be/9_Z2H1MT6QE"
+    videos: []
     videos_rowspan: 1
-    authors: "Massa Baali"
+    authors: ""
     authors_rowspan: 1
 
   - title: "Lab 10"
-    date: "Friday,<br> Mar. 21st"
+    date: "Friday,<br> Oct 31st"
     date_rowspan: 1
     topics:
       - "Attention, MT, LAS"
     materials: []
     videos: []
     videos_rowspan: 1
-    authors: "Alexander Moker,<br>Peter Wauyo"
+    authors: ""
     authors_rowspan: 1
 
   - title: "Lab 11"
-    date: "Friday,<br> Mar. 28th"
+    date: "Friday,<br> Nov. 7th"
     date_rowspan: 1
     topics:
       - "Transformers"
     materials: []
-    videos:
-      - text: "Link"
-        url: "https://youtu.be/9bFg6aah3r8"
+    videos: []
     videos_rowspan: 1
-    authors: "Floris Nzabakira,<br>Ahmed Issah"
+    authors: ""
     authors_rowspan: 1
 
   - title: "HW4 Bootcamp"
-    date: "Saturday,<br> Mar. 29th"
+    date: "Saturday,<br> Nov. 8th"
     date_rowspan: 1
     topics:
       - "HW4P1"
       - "HW4P2"
     materials: []
-    videos:
-      - text: "Link"
-        url: "https://youtu.be/bRgLPBMldrU"
+    videos: []
     videos_rowspan: 1
-    authors: "Purusottam Samal,<br>Yuzhou Wang, <br> Vedant Singh, <br> Michael Kireeff, <br> Ishita Gupta"
+    authors: ""
     authors_rowspan: 1
 
   - title: "PSC HW4 Guide"
-    date: "Sunday,<br> April 13th"
+    date: "Sunday,<br> Nov. 9th"
     date_rowspan: 1
     topics:
       - "PSC"
     materials: []
-    videos:
-      - text: "Link"
-        url: "https://youtu.be/mKblwdm7wBU"
+    videos: []
     videos_rowspan: 1
-    authors: "John Liu"
+    authors: ""
     authors_rowspan: 1
 
-  - title: "Lab 12 (Pre recorded)"
-    date: "Friday,<br> Apr. 4th"
+  - title: "Lab 12"
+    date: "Friday,<br> Nov. 14th"
     date_rowspan: 1
     topics:
       - "VAE"
     materials: []
     videos: []
     videos_rowspan: 1
-    authors: "Purusottam Samal,<br>Massa Baali"
+    authors: ""
     authors_rowspan: 1
 
   - title: "Lab 13"
-    date: "Friday,<br> Apr. 11th"
+    date: "Friday,<br> Nov. 21st"
     date_rowspan: 1
     topics:
       - "NF and Stable Diffusion"
     materials: []
     videos: []
     videos_rowspan: 1
-    authors: "Yuzhou Wang,<br>Massa Baali, <br>Shrey Jain"
+    authors: ""
     authors_rowspan: 1
 
   - title: "Lab 14"
-    date: "Friday,<br> Apr. 18th"
+    date: "Friday,<br> Nov. 28th"
     date_rowspan: 1
     topics:
       - "GAN"
     materials: []
     videos: []
     videos_rowspan: 1
-    authors: "Ishita Gupta,<br>Peter Wauyo"
+    authors: ""
     authors_rowspan: 1
 
   - title: "Lab 15"
-    date: "Friday,<br> Apr. 25th"
+    date: "Friday,<br> Dec. 5th"
     date_rowspan: 1
     topics:
       - "Graph Neural Networks"
