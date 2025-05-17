@@ -1,198 +1,122 @@
 # lectures_data.yaml
 lectures:
+  # - number: 0
+  #   date: "Monday,<br> Aug 05"
+  #   topics: # Can be a list of strings or a list of dicts for nested lists
+  #     - "Course Logistics"
+  #     - "Learning Objectives"
+  #     - "Grading"
+  #     - "Deadlines"
+  #   # 'slides_videos' and 'additional_materials' will be lists of link objects
+  #   slides_videos:
+  #     - text: "Youtube"
+  #       url: "https://youtu.be/eMX8WqOdGUs"
+  #   additional_materials:
+  #     - text: "Slides (PDF)"
+  #       url: "./document/slides/Lec-0.Logistics.pdf"
+  #   quiz:
+  #     text: "No Quiz"
+  #     # url: "" # Optional: if there's a link for "No Quiz"
+  #     rowspan: 1 # This quiz entry applies to this row only
   - number: 0
-    date: "Monday,<br> Aug 05"
+    date: "Monday,<br> Aug 04"
     topics: # Can be a list of strings or a list of dicts for nested lists
       - "Course Logistics"
       - "Learning Objectives"
       - "Grading"
       - "Deadlines"
     # 'slides_videos' and 'additional_materials' will be lists of link objects
-    slides_videos:
-      - text: "Youtube"
-        url: "https://youtu.be/eMX8WqOdGUs"
-    additional_materials:
-      - text: "Slides (PDF)"
-        url: "./document/slides/Lec-0.Logistics.pdf"
+    slides_videos: []
+    additional_materials: []
     quiz:
       text: "No Quiz"
       # url: "" # Optional: if there's a link for "No Quiz"
       rowspan: 1 # This quiz entry applies to this row only
 
   - number: 1
-    date: "Monday,<br> Aug 26"
+    date: "Monday,<br> Aug 25"
     topics:
       - "Introduction"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec1-f24.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Introduction+Class/1_0nq94oyt"
-      - text: "Youtube"
-        url: "https://youtu.be/1Nl-gDEmic0"
-    additional_materials:
-      - text: "The New Connectionism (1988)"
-        url: "document/readings/Perceptrons-Epilogue-r.pdf"
-      - text: "On Alan Turing's Anticipation of Connectionism"
-        url: "http://www.alanturing.net/turing_archive/pages/pub/turing3/turing3.pdf"
-      - text: "McCullogh and Pitts paper"
-        url: "https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf"
-      - text: "Rosenblatt: The perceptron"
-        url: "document/readings/Rosenblatt_1959-09865-001.pdf"
-      - text: "Bain: Mind and body"
-        url: "document/readings/Alexander_Bain_Mind_and_Body_009178a0.pdf"
-      - text: "Hebb: The Organization Of Behaviour"
-        url: "https://pure.mpg.de/pubman/item/item_2346268_3/component/file_2346267/Hebb_1949_The_Organization_of_Behavior.pdf"
+    slides_videos: []
+    additional_materials: []
     quiz:
       text: "Quiz 1"
       # url: "https://canvas.cmu.edu/courses/38471/quizzes/115273" # Example if link exists
       rowspan: 2 # This quiz entry spans this row and the next
 
   - number: 2
-    date: "Wednesday,<br> Aug 28"
+    date: "Wednesday,<br> Aug 27"
     topics:
       - "Neural Nets As Universal Approximators"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/Lec02_f24.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%252C+Fall+2024+-+Neural+Networks+What+can+a+network+represent/1_fgw6w880"
-      - text: "Youtube"
-        url: "https://youtu.be/HHQU7bmVDds"
-    additional_materials:
-      - text: "Shannon (1949)"
-        url: "document/readings/Shannon49.pdf"
-      - text: "Boolean Circuits"
-        url: "document/readings/booleancircuits_shannonproof.pdf"
-      - text: "On the Bias-Variance Tradeoff"
-        url: "https://www.bradyneal.com/bias-variance-tradeoff-textbooks-update"
+    slides_videos: []
+    additional_materials: []
     # No 'quiz' field here because the previous lecture's quiz spans this row
 
   - number: 3
-    date: "Wednesday,<br> Sep 04"
+    date: "Wednesday,<br> Sep 03"
     topics:
       - main: "Training Part I" # Using a dict for nested topics
         sub_topics:
           - "The Problem of Learning"
           - "Empirical Risk Minimization"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "document/slides/lec3.learning.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Learning+the+network+-+Part+1/1_ck57xyt2/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/ckecC7XVBFU"
-    additional_materials:
-      - text: "Widrow and Lehr (1992)"
-        url: "document/readings/c1992artificialneural.pdf"
-      - text: "Adaline and Madaline"
-        url: "document/readings/04Adaline.pdf"
+    slides_videos: []
+    additional_materials: []
     quiz:
       text: "Quiz 2"
       rowspan: 2
 
   - number: 4
-    date: "Friday,<br> Sep 06"
+    date: "Friday,<br> Sep 05"
     topics:
       - main: "Training Part II"
         sub_topics:
           - "Gradient Descent"
           - "Training the Network"
           - "Backpropagation"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec4.learning.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Learning+the+network+-+Backprop/1_b6mp439a/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/Tp--z7z9ndM"
-    additional_materials:
-      - text: "Widrow and Lehr (1992)" # Note: Repeated content is fine in YAML
-        url: "document/readings/c1992artificialneural.pdf"
-      - text: "Adaline and Madaline"
-        url: "document/readings/04Adaline.pdf"
-      - text: "Convergence of perceptron algorithm"
-        url: "http://www.cs.columbia.edu/~mcollins/courses/6998-2012/notes/perc.converge.pdf"
-      - text: "Threshold Logic"
-        url: "https://www.tutorialspoint.com/digital_circuits/digital_circuits_threshold_logic.htm"
-      - text: "TC (Complexity)"
-        url: "https://en.wikipedia.org/wiki/TC_(complexity)"
-      - text: "AC (Complexity)"
-        url: "https://en.wikipedia.org/wiki/AC_(complexity)"
+    slides_videos: []
+    additional_materials: []
     # No quiz field
 
   - number: 5
-    date: "Monday,<br> Sep 09"
+    date: "Monday,<br> Sep 08"
     topics:
       - main: "Training Part III"
         sub_topics:
           - "Backpropagation"
           - "Calculus of Backpropagation"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec5.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Learning+the+network+-+Part+3/1_xhcqq435/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/rft-Pxp3dbI"
-    additional_materials:
-      - text: "Werbos (1990)"
-        url: "http://axon.cs.byu.edu/Dan/678/papers/Recurrent/Werbos.pdf"
-      - text: "Rumelhart, Hinton and Williams (1986)"
-        url: "http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf"
+    slides_videos: []
+    additional_materials: []
     quiz:
       text: "Quiz 3"
       rowspan: 2
 
   - number: 6
-    date: "Wednesday,<br> Sep 11"
+    date: "Wednesday,<br> Sep 10"
     topics:
       - main: "Training Part IV"
         sub_topics:
           - "Convergence issues"
           - "Loss Surfaces"
           - "Momentum"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec6.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Optimization-+Part+1/1_76cj4z6u/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/RepRVu4Z-R8"
-    additional_materials:
-      - text: "Backprop fails to separate, where perceptrons succeed, Brady et al. (1989)"
-        url: "https://ieeexplore.ieee.org/document/31314"
-      - text: "Why Momentum Really Works"
-        url: "https://distill.pub/2017/momentum/"
+    slides_videos: []
+    additional_materials: []
     # No quiz field
 
   - number: 7
-    date: "Monday,<br> Sep 16"
+    date: "Monday,<br> Sep 15"
     topics:
       - main: "Training Part V"
         sub_topics:
           - "Optimization"
           - "Batch Size, SGD, Mini-batch, Second-order Methods"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec7.stochastic_gradient.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+LTRaining+Neural+Networks+-+Optimization/1_a8avtyt6/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/jXgPzM6danI"
-    additional_materials:
-      - text: "Momentum, Polyak (1964)"
-        url: "https://www.sciencedirect.com/science/article/abs/pii/0041555364901375"
-      - text: "Nestorov (1983)"
-        url: "http://www.mathnet.ru/php/archive.phtml?wshow=paper&jrnid=dan&paperid=46009&option_lang=eng"
-      - text: "Derivatives and Influences"
-        url: "document/readings/derivatives_and_influences.pdf"
+    slides_videos: []
+    additional_materials: []
     quiz:
       text: "Quiz 4"
       rowspan: 2
 
   - number: 8
-    date: "Wednesday,<br> Sep 18"
+    date: "Wednesday,<br> Sep 17"
     topics:
       - main: "Training Part VI"
         sub_topics:
@@ -200,126 +124,68 @@ lectures:
           - "Choosing a Divergence (Loss) Function"
           - "Batch Normalization"
           - "Dropout"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec8.optimizersandregularizers.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Training+Neural+Networks+-+Normalization%2C+Regularization.mp4/1_r1bxya26/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/r7S4dTHcmOU"
-    additional_materials:
-      - text: "Derivatives and Influence Diagrams"
-        url: "./document/readings/derivatives and influences.pdf"
-      - text: "ADAGRAD, Duchi, Hazan and Singer (2011)"
-        url: "http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf"
-      - text: "Adam: A method for stochastic optimization, Kingma and Ba (2014)"
-        url: "https://arxiv.org/abs/1412.6980"
+    slides_videos: []
+    additional_materials: []
     # No quiz field
 
   - number: 9
-    date: "Monday,<br> Sep 23"
+    date: "Monday,<br> Sep 22"
     topics:
       - "Shift Invariance"
       - "Convolutional Neural Networks (CNNs)"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec9.CNN1.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+LTRaining+Neural+Networks+-Scanning+for+Patterns/1_2o5q6pou/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/2Z8AYJTwwNQ"
+    slides_videos: []
     additional_materials: []
     quiz:
       text: "Quiz 5"
       rowspan: 2
 
   - number: 10
-    date: "Wednesday,<br> Sep 25"
+    date: "Wednesday,<br> Sep 24"
     topics:
       - "Models of Vision and CNNs"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec10.CNN2.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Convolutional+Networks+2/1_rhss9rwg/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/DPrzpP8ajjI"
+    slides_videos: []
     additional_materials: []
     # No quiz field
 
   - number: 11
-    date: "Monday,<br> Sep 30"
+    date: "Monday,<br> Sep 29"
     topics:
       - "Learning in CNNs"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec11.CNN3.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+LTRaining+Neural+Networks+-+Convolutional+Networks+III/1_kvcip5hb/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/QOuPzJ_Asmg"
-    additional_materials:
-      - text: "CNN Explainer"
-        url: "https://poloclub.github.io/cnn-explainer/"
+    slides_videos: []
+    additional_materials: []
     quiz:
       text: "Quiz 6"
       rowspan: 2
 
   - number: 12
-    date: "Wednesday,<br> Oct 02"
-    topics:
-      - "Learning in CNNs"
-      - "Transpose Convolution"
-      - "CNN Stories"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec12.CNN4.pdf"
-      # The MediaServices link is commented out in the HTML, so it's not included here.
-      - text: "Youtube"
-        url: "https://youtu.be/6FXIwK4cVxM"
+    date: "Wednesday,<br> Oct 01"
+    topics: []
+    slides_videos: []
     additional_materials: []
     # No quiz field
 
   - number: 13
-    date: "Monday,<br> Oct 07"
+    date: "Monday,<br> Oct 06"
     topics:
       - "Time Series and Recurrent Networks"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec13.recurrent.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Recurrent+Networks+1/1_bmj4wxew/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/wN3mTK9pyUw"
-    additional_materials:
-      - text: "Fahlman and Lebiere (1990)"
-        url: "https://proceedings.neurips.cc/paper/1989/file/69adc1e107f7f7d035d7baf04342e1ca-Paper.pdf"
-      - text: "How to compute a derivative, extra help for HW3P1 (*.pptx)"
-        url: "./document/readings/How to compute a derivative.pdf"
+    slides_videos: []
+    additional_materials: []
     quiz:
       text: "Quiz 7, Part 1"
       rowspan: 1 # The HTML shows rowspan 1 for this quiz
 
   - number: 14
-    date: "Wednesday,<br> Oct 09"
+    date: "Wednesday,<br> Oct 08"
     topics:
       - "Stability and Memory, LSTMs"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec14.recurrent.pdf"
-      # MediaServices URL commented out in HTML
-      - text: "Youtube"
-        url: "https://youtu.be/XOP7np1s_h0"
-    additional_materials:
-      # "Bidirectional Recurrent Neural Networks" commented out in HTML
-      - text: "LSTM paper, Hochreiter and Schmidhuber (1997)"
-        url: "http://citeseerx.ist.psu.edu/view/summary?doi=10.1.1.13.8854"
+    slides_videos: []
+    additional_materials: []
     quiz:
       text: "Quiz 7, Part 2"
       rowspan: 1
 
   - number: "-"
-    date: "Monday,<br> Oct 14"
+    date: "Monday,<br> Oct 13"
     topics:
       - "No Class - Fall Break"
     slides_videos: []
@@ -329,7 +195,7 @@ lectures:
       rowspan: 2
 
   - number: "-"
-    date: "Wednesday,<br> Oct 16"
+    date: "Wednesday,<br> Oct 15"
     topics:
       - "No Class - Fall Break"
     slides_videos: []
@@ -337,191 +203,119 @@ lectures:
     # No quiz field as it spans from the previous row
 
   - number: 15
-    date: "Monday,<br> Oct 21"
+    date: "Monday,<br> Oct 20"
     topics:
       - "Sequence Prediction"
       - "Alignments and Decoding"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec15.recurrent.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Recurrent+Networks+-+Part+3.mp4/1_jkmsym1z/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/iOLtX-1cDYM"
+    slides_videos: []
     additional_materials: []
     quiz:
       text: "Quiz 9"
       rowspan: 2
 
   - number: 16
-    date: "Wednesday,<br> Oct 23"
+    date: "Wednesday,<br> Oct 22"
     topics:
       - "Sequence Prediction"
       - main: "Connectionist Temporal Classification"
         sub_topics:
           - "Blanks"
           - "Beam Search"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec16.recurrent.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Sequence+ot+Sequence+Models+-+Connectionist+Temporal+Classification/1_hb5r4ytw/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/U8rNZvlkO_E"
+    slides_videos: []
     additional_materials: []
     # No quiz field as it spans from the previous row
 
   - number: 17
-    date: "Monday,<br> Oct 28"
+    date: "Monday,<br> Oct 27"
     topics:
       - "Language Models"
       - "Sequence To Sequence Predictions"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec17.recurrent.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Recurrent+Networks+-+Modelling+Languagu+Sequence+to+Sequence+Models/1_63ynu7m3/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/RLyffTRu9kg"
+    slides_videos: []
     additional_materials: []
     quiz:
       text: "Quiz 10"
       rowspan: 2
 
   - number: 18
-    date: "Wednesday,<br> Oct 30"
+    date: "Wednesday,<br> Oct 29"
     topics:
       - "Sequence To Sequence Models"
       - "Attention"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec18.attention.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Sequence+to+Sequence+Models+-+Attention+Models/1_suiiwr10/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/rfuNalkbuy4"
+    slides_videos: []
     additional_materials: [] # Additional materials commented out in HTML
     # No quiz field as it spans from the previous row
 
   - number: 19
-    date: "Monday,<br> Nov 04"
+    date: "Monday,<br> Nov 03"
     topics:
       - "Transformers and Newer Architectures"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec19.transformer.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Transformer+and+Newer+Architectures/1_anobpa49/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/W3o5s2s6zaQ"
+    slides_videos: []
     additional_materials: []
     quiz:
       text: "Quiz 11"
       rowspan: 2
 
   - number: 20
-    date: "Wednesday,<br> Nov 06"
+    date: "Wednesday,<br> Nov 05"
     topics:
       - "Large Language Models"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec20-LLMs.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Guest+Lecture/1_mxiuu360/351029282"
-      - text: "Youtube"
-        url: "https://www.youtube.com/watch?v=PoAk8-JWQnY"
+    slides_videos: []
     additional_materials: []
     # No quiz field as it spans from the previous row
 
   - number: 21
-    date: "Wednesday,<br> Nov 13"
+    date: "Wednesday,<br> Nov 12"
     topics:
       - "Representation and Autoencoders"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec21.representations.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Neural+Networks+Representations/1_3mjv3njw/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/AqiNKT6QX7s"
+    slides_videos: []
     additional_materials: []
     quiz:
       text: "Quiz 12"
       rowspan: 1
 
   - number: 22
-    date: "Monday,<br> Nov 18"
+    date: "Monday,<br> Nov 17"
     topics:
       - "Variational Auto Encoders"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec22.VAE.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Variational+Auto+Encoders/1_otwq0itv/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/DbFXgBV-Elk"
+    slides_videos: []
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
       text: "Quiz 13"
       rowspan: 2
 
   - number: 23
-    date: "Wednesday,<br> Nov 20"
+    date: "Wednesday,<br> Nov 19"
     topics:
       - "Diffusion"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec24.diffusion.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Diffusion/1_59aclq2s/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/wkzZpwshD4g"
+    slides_videos: []
     additional_materials: []
     # No quiz field as it spans from the previous row
 
   - number: 24
-    date: "Monday,<br> Nov 25"
+    date: "Monday,<br> Nov 24"
     topics:
       - "Generative Adversarial Networks I and II"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec_24_GAN.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Generative+Aversarial+Networks/1_qz5n6xc8/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/mcnbGFFyzg4"
+    slides_videos: []
     additional_materials: []
     quiz:
       text: "Quiz 14"
       rowspan: 1
 
   - number: 25
-    date: "Monday,<br> Dec 02"
+    date: "Monday,<br> Dec 01"
     topics:
       - "Hopfield Networks"
       - "Boltzmann Machines"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/lec26.hopfield,BM.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Hopfield+Nets%2C+Auto+Associators%2C+Boltzmann+machines/1_x6f598vp/351029282"
-      - text: "Youtube"
-        url: "https://www.youtube.com/watch?v=SFgluM04rak"
+    slides_videos: []
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
       text: "Quiz 15"
       rowspan: 2
 
   - number: 26
-    date: "Wednesday,<br> Dec 04"
+    date: "Wednesday,<br> Dec 03"
     topics:
       - "Graph Neural Networks"
-    slides_videos:
-      - text: "Slides (PDF)"
-        url: "./document/slides/Lecture 26 GNN.pdf"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2024+-+Graph+Neural+Networks/1_31fps6hp/351029282"
-      - text: "Youtube"
-        url: "https://youtu.be/ynOllm5uJwM"
+    slides_videos: []
     additional_materials: [] # Additional materials commented out in HTML
     # No quiz field as it spans from the previous row
