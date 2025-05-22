@@ -49,7 +49,7 @@ recitations_0:
             title: "Pytorch"
             materials: []
             videos: []
-            authors: "Miya Sylvester,<br>Shravanth Srinivas"
+            authors: "Ahmed Safwat,<br>Shravanth Srinivas"
           - id: "0.5"
             title: "Tensordot & Einsum"
             materials: []
@@ -175,8 +175,9 @@ recitations_0:
 recitations:
   - title: "Lab 1"
     date: "Friday,<br>Aug 29th"
-    date_rowspan: 2
+    date_rowspan: 1
     topics:
+      - "PSC"
       - "Your First MLP"
     materials: []
     videos: []
@@ -184,8 +185,9 @@ recitations:
     authors: ""
     authors_rowspan: 1
 
-  - title: "HW1 Bootcamp"
-    # date: Spans from previous row
+  - title: "Hackathon 1 + HW1 Bootcamp"
+    date: "Saturday,<br>Aug 30th"
+    date_rowspan: 1
     topics:
       - "HW1P1"
       - "HW1P2"
@@ -194,11 +196,11 @@ recitations:
     authors: ""
     authors_rowspan: 1
 
-  - title: "Lab 2"
-    date: "Friday,<br> Sep. 5th"
+  - title: "Hackathon 2 + Lab 2"
+    date: "Saturday,<br> Sep. 6th"
     date_rowspan: 1
     topics:
-      - "Debugging in Deep Learning Networks"
+      - "Debugging"
     materials: []
     videos: []
     videos_rowspan: 1
@@ -209,10 +211,21 @@ recitations:
     date: "Friday,<br> Sep. 12th"
     date_rowspan: 1
     topics:
-      - "Network Optimizations"
+      - "Ablations"
+      - "Hyperparameter Tuning Methods"
+      - "Normalization"
     materials: []
     videos: []
     videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 3"
+    date: "Saturday,<br> Sep. 13th"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    # videos: Spans from previous row
     authors: ""
     authors_rowspan: 1
 
@@ -227,10 +240,11 @@ recitations:
     authors: ""
     authors_rowspan: 1
 
-  - title: "HW2 Bootcamp"
+  - title: "Hackathon 4 + HW2 Bootcamp"
     date: "Saturday,<br> Sep. 20th"
     date_rowspan: 1
     topics:
+      - "HW 1 Debrief & Deployment"
       - "HW2P1"
       - "HW2P2"
     materials: []
@@ -243,10 +257,19 @@ recitations:
     date: "Friday,<br> Sep. 26th"
     date_rowspan: 1
     topics:
-      - "CNN: Basics"
+      - "CNN: Basics and Backpropagation"
     materials: []
     videos: []
     videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 5"
+    date: "Saturday,<br> Sep. 27th"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    # videos: Spans from previous row
     authors: ""
     authors_rowspan: 1
 
@@ -261,6 +284,15 @@ recitations:
     authors: ""
     authors_rowspan: 1
 
+  - title: "Hackathon 6"
+    date: "Saturday,<br> Oct. 4th"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    # videos: Spans from previous row
+    authors: ""
+    authors_rowspan: 1
+
   - title: "Lab 7"
     date: "Friday,<br> Oct. 10th"
     date_rowspan: 1
@@ -272,23 +304,35 @@ recitations:
     authors: ""
     authors_rowspan: 1
 
-  - title: "Lab 8"
-    date: "Friday,<br> Oct. 17th"
+  - title: "Hackathon 7 + HW3 Bootcamp"
+    date: "Saturday,<br> Oct. 11th"
     date_rowspan: 1
     topics:
-      - "Kaggle Competitions"
+      - "HW3P1"
+      - "HW3P2"
     materials: []
     videos: []
     videos_rowspan: 1
     authors: ""
     authors_rowspan: 1
 
-  - title: "HW3 Bootcamp"
+  - title: "Lab 8 (Pre-Recorded)"
+    date: "Friday,<br> Oct. 17th"
+    date_rowspan: 1
+    topics:
+      - "Kaggle Competitions"
+      - "Pre-Trained Models"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 8"
     date: "Saturday,<br> Oct. 18th"
     date_rowspan: 1
     topics:
-      - "HW3P1"
-      - "HW3P2"
+      - "HW2 Debrief & Deployment"
     materials: []
     videos: []
     videos_rowspan: 1
@@ -307,7 +351,7 @@ recitations:
     authors: ""
     authors_rowspan: 1
 
-  - title: "HW5 Bootcamp"
+  - title: "Hackathon 9"
     date: "Saturday,<br> Oct. 25th"
     date_rowspan: 1
     topics: []
@@ -321,7 +365,17 @@ recitations:
     date: "Friday,<br> Oct 31st"
     date_rowspan: 1
     topics:
-      - "Attention, MT, LAS"
+      - "Attention"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 10"
+    date: "Saturday,<br> Nov. 1st"
+    date_rowspan: 1
+    topics: []
     materials: []
     videos: []
     videos_rowspan: 1
@@ -339,23 +393,13 @@ recitations:
     authors: ""
     authors_rowspan: 1
 
-  - title: "HW4 Bootcamp"
+  - title: "Hackathon 11 + HW4 Bootcamp"
     date: "Saturday,<br> Nov. 8th"
     date_rowspan: 1
     topics:
+      - "HW3 Debrief & Deployment"
       - "HW4P1"
       - "HW4P2"
-    materials: []
-    videos: []
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "PSC HW4 Guide"
-    date: "Sunday,<br> Nov. 9th"
-    date_rowspan: 1
-    topics:
-      - "PSC"
     materials: []
     videos: []
     videos_rowspan: 1
@@ -373,6 +417,16 @@ recitations:
     authors: ""
     authors_rowspan: 1
 
+  - title: "Hackathon 12"
+    date: "Saturday,<br> Nov. 15th"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
   - title: "Lab 13"
     date: "Friday,<br> Nov. 21st"
     date_rowspan: 1
@@ -384,11 +438,31 @@ recitations:
     authors: ""
     authors_rowspan: 1
 
-  - title: "Lab 14"
+  - title: "Hackathon 13"
+    date: "Saturday,<br> Nov. 22nd"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 14 (Pre-Recorded)"
     date: "Friday,<br> Nov. 28th"
     date_rowspan: 1
     topics:
       - "GAN"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 14"
+    date: "Saturday,<br> Nov. 29th"
+    date_rowspan: 1
+    topics: []
     materials: []
     videos: []
     videos_rowspan: 1
@@ -404,4 +478,15 @@ recitations:
     videos: [] # Data cut off in the prompt
     videos_rowspan: 1
     authors: "" # Data cut off in the prompt
+    authors_rowspan: 1
+
+  - title: "Hackathon 15"
+    date: "Saturday,<br> Dec. 6th"
+    date_rowspan: 1
+    topics: 
+      - "HW4 Debrief & Deployment"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
     authors_rowspan: 1
