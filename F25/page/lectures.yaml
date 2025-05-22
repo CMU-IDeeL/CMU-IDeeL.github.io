@@ -131,8 +131,7 @@ lectures:
   - number: 9
     date: "Monday,<br> Sep 22"
     topics:
-      - "Shift Invariance"
-      - "Convolutional Neural Networks (CNNs)"
+      - "Convolutional Neural Networks (CNNs) I"
     slides_videos: []
     additional_materials: []
     quiz:
@@ -142,7 +141,7 @@ lectures:
   - number: 10
     date: "Wednesday,<br> Sep 24"
     topics:
-      - "Models of Vision and CNNs"
+      - "CNNs II"
     slides_videos: []
     additional_materials: []
     # No quiz field
@@ -150,7 +149,7 @@ lectures:
   - number: 11
     date: "Monday,<br> Sep 29"
     topics:
-      - "Learning in CNNs"
+      - "CNNs III"
     slides_videos: []
     additional_materials: []
     quiz:
@@ -159,7 +158,8 @@ lectures:
 
   - number: 12
     date: "Wednesday,<br> Oct 01"
-    topics: []
+    topics: 
+      - "CNNs IV"
     slides_videos: []
     additional_materials: []
     # No quiz field
@@ -167,22 +167,19 @@ lectures:
   - number: 13
     date: "Monday,<br> Oct 06"
     topics:
-      - "Time Series and Recurrent Networks"
+      - "Recurrent Neural Networks (RNNs) I"
     slides_videos: []
     additional_materials: []
     quiz:
-      text: "Quiz 7, Part 1"
-      rowspan: 1 # The HTML shows rowspan 1 for this quiz
+      text: "Quiz 7"
+      rowspan: 2 # The HTML shows rowspan 1 for this quiz
 
   - number: 14
     date: "Wednesday,<br> Oct 08"
     topics:
-      - "Stability and Memory, LSTMs"
+      - "RNNs II"
     slides_videos: []
     additional_materials: []
-    quiz:
-      text: "Quiz 7, Part 2"
-      rowspan: 1
 
   - number: "-"
     date: "Monday,<br> Oct 13"
@@ -191,7 +188,7 @@ lectures:
     slides_videos: []
     additional_materials: []
     quiz:
-      text: "Quiz 8"
+      text: "Makeup quiz 1-7"
       rowspan: 2
 
   - number: "-"
@@ -205,18 +202,17 @@ lectures:
   - number: 15
     date: "Monday,<br> Oct 20"
     topics:
-      - "Sequence Prediction"
-      - "Alignments and Decoding"
+      - "Sequence to Sequence Models"
+      - "Connectionist Temporal Classification (CTC)"
     slides_videos: []
     additional_materials: []
     quiz:
-      text: "Quiz 9"
+      text: "Quiz 8"
       rowspan: 2
 
   - number: 16
     date: "Wednesday,<br> Oct 22"
     topics:
-      - "Sequence Prediction"
       - main: "Connectionist Temporal Classification"
         sub_topics:
           - "Blanks"
@@ -229,18 +225,18 @@ lectures:
     date: "Monday,<br> Oct 27"
     topics:
       - "Language Models"
-      - "Sequence To Sequence Predictions"
+      - "Translation"
     slides_videos: []
     additional_materials: []
     quiz:
-      text: "Quiz 10"
+      text: "Quiz 9"
       rowspan: 2
 
   - number: 18
     date: "Wednesday,<br> Oct 29"
     topics:
-      - "Sequence To Sequence Models"
-      - "Attention"
+      - "Attention Models"
+      - "Transformers"
     slides_videos: []
     additional_materials: [] # Additional materials commented out in HTML
     # No quiz field as it spans from the previous row
@@ -252,7 +248,7 @@ lectures:
     slides_videos: []
     additional_materials: []
     quiz:
-      text: "Quiz 11"
+      text: "Quiz 10"
       rowspan: 2
 
   - number: 20
@@ -264,58 +260,72 @@ lectures:
     # No quiz field as it spans from the previous row
 
   - number: 21
-    date: "Wednesday,<br> Nov 12"
+    date: "Monday,<br> Nov 10"
     topics:
       - "Representation and Autoencoders"
     slides_videos: []
     additional_materials: []
     quiz:
-      text: "Quiz 12"
-      rowspan: 1
+      text: "Quiz 11"
+      rowspan: 2
 
   - number: 22
-    date: "Monday,<br> Nov 17"
+    date: "Wednesday,<br> Nov 12"
     topics:
       - "Variational Auto Encoders"
+    slides_videos: []
+    additional_materials: [] # Additional materials commented out in HTML
+
+  - number: 23
+    date: "Monday,<br> Nov 17"
+    topics:
+      - "Diffusion"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 12"
+      rowspan: 2
+    # No quiz field as it spans from the previous row
+
+  - number: 24
+    date: "Wednesday,<br> Nov 19"
+    topics:
+      - "Generative Adversarial Networks"
+    slides_videos: []
+    additional_materials: []
+
+  - number: 25
+    date: "Monday,<br> Nov 24"
+    topics:
+      - "Graph Neural Networks (GNNs)"
     slides_videos: []
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
       text: "Quiz 13"
       rowspan: 2
 
-  - number: 23
-    date: "Wednesday,<br> Nov 19"
+  - number: "-"
+    date: "Wednesday,<br> Nov 26"
     topics:
-      - "Diffusion"
+      - "No Class - Thanksgiving Break"
     slides_videos: []
     additional_materials: []
     # No quiz field as it spans from the previous row
 
-  - number: 24
-    date: "Monday,<br> Nov 24"
-    topics:
-      - "Generative Adversarial Networks I and II"
-    slides_videos: []
-    additional_materials: []
-    quiz:
-      text: "Quiz 14"
-      rowspan: 1
-
-  - number: 25
+  - number: 26
     date: "Monday,<br> Dec 01"
     topics:
       - "Hopfield Networks"
-      - "Boltzmann Machines"
     slides_videos: []
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
-      text: "Quiz 15"
+      text: "Quiz 14"
       rowspan: 2
 
-  - number: 26
+  - number: 27
     date: "Wednesday,<br> Dec 03"
     topics:
-      - "Graph Neural Networks"
+      - "Boltzmann Machines"
     slides_videos: []
-    additional_materials: [] # Additional materials commented out in HTML
+    additional_materials: []
     # No quiz field as it spans from the previous row
