@@ -1,0 +1,321 @@
+# lectures_data.yaml
+lectures:
+  # - number: 0
+  #   date: "Monday,<br> Aug 05"
+  #   topics: # Can be a list of strings or a list of dicts for nested lists
+  #     - "Course Logistics"
+  #     - "Learning Objectives"
+  #     - "Grading"
+  #     - "Deadlines"
+  #   # 'slides_videos' and 'additional_materials' will be lists of link objects
+  #   slides_videos:
+  #     - text: "Youtube"
+  #       url: "https://youtu.be/eMX8WqOdGUs"
+  #   additional_materials:
+  #     - text: "Slides (PDF)"
+  #       url: "./document/slides/Lec-0.Logistics.pdf"
+  #   quiz:
+  #     text: "No Quiz"
+  #     # url: "" # Optional: if there's a link for "No Quiz"
+  #     rowspan: 1 # This quiz entry applies to this row only
+  - number: 0
+    date: "Monday,<br> Aug 04"
+    topics: # Can be a list of strings or a list of dicts for nested lists
+      - "Course Logistics"
+      - "Learning Objectives"
+      - "Grading"
+      - "Deadlines"
+    # 'slides_videos' and 'additional_materials' will be lists of link objects
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "No Quiz"
+      # url: "" # Optional: if there's a link for "No Quiz"
+      rowspan: 1 # This quiz entry applies to this row only
+
+  - number: 1
+    date: "Monday,<br> Aug 25"
+    topics:
+      - "Introduction"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 1"
+      # url: "https://canvas.cmu.edu/courses/38471/quizzes/115273" # Example if link exists
+      rowspan: 2 # This quiz entry spans this row and the next
+
+  - number: 2
+    date: "Wednesday,<br> Aug 27"
+    topics:
+      - "Neural Nets As Universal Approximators"
+    slides_videos: []
+    additional_materials: []
+    # No 'quiz' field here because the previous lecture's quiz spans this row
+
+  - number: 3
+    date: "Wednesday,<br> Sep 03"
+    topics:
+      - main: "Training Part I" # Using a dict for nested topics
+        sub_topics:
+          - "The Problem of Learning"
+          - "Empirical Risk Minimization"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 2"
+      rowspan: 2
+
+  - number: 4
+    date: "Friday,<br> Sep 05"
+    topics:
+      - main: "Training Part II"
+        sub_topics:
+          - "Gradient Descent"
+          - "Training the Network"
+          - "Backpropagation"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field
+
+  - number: 5
+    date: "Monday,<br> Sep 08"
+    topics:
+      - main: "Training Part III"
+        sub_topics:
+          - "Backpropagation"
+          - "Calculus of Backpropagation"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 3"
+      rowspan: 2
+
+  - number: 6
+    date: "Wednesday,<br> Sep 10"
+    topics:
+      - main: "Training Part IV"
+        sub_topics:
+          - "Convergence issues"
+          - "Loss Surfaces"
+          - "Momentum"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field
+
+  - number: 7
+    date: "Monday,<br> Sep 15"
+    topics:
+      - main: "Training Part V"
+        sub_topics:
+          - "Optimization"
+          - "Batch Size, SGD, Mini-batch, Second-order Methods"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 4"
+      rowspan: 2
+
+  - number: 8
+    date: "Wednesday,<br> Sep 17"
+    topics:
+      - main: "Training Part VI"
+        sub_topics:
+          - "Optimizers and Regularizers"
+          - "Choosing a Divergence (Loss) Function"
+          - "Batch Normalization"
+          - "Dropout"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field
+
+  - number: 9
+    date: "Monday,<br> Sep 22"
+    topics:
+      - "Shift Invariance"
+      - "Convolutional Neural Networks (CNNs)"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 5"
+      rowspan: 2
+
+  - number: 10
+    date: "Wednesday,<br> Sep 24"
+    topics:
+      - "Models of Vision and CNNs"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field
+
+  - number: 11
+    date: "Monday,<br> Sep 29"
+    topics:
+      - "Learning in CNNs"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 6"
+      rowspan: 2
+
+  - number: 12
+    date: "Wednesday,<br> Oct 01"
+    topics: []
+    slides_videos: []
+    additional_materials: []
+    # No quiz field
+
+  - number: 13
+    date: "Monday,<br> Oct 06"
+    topics:
+      - "Time Series and Recurrent Networks"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 7, Part 1"
+      rowspan: 1 # The HTML shows rowspan 1 for this quiz
+
+  - number: 14
+    date: "Wednesday,<br> Oct 08"
+    topics:
+      - "Stability and Memory, LSTMs"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 7, Part 2"
+      rowspan: 1
+
+  - number: "-"
+    date: "Monday,<br> Oct 13"
+    topics:
+      - "No Class - Fall Break"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 8"
+      rowspan: 2
+
+  - number: "-"
+    date: "Wednesday,<br> Oct 15"
+    topics:
+      - "No Class - Fall Break"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field as it spans from the previous row
+
+  - number: 15
+    date: "Monday,<br> Oct 20"
+    topics:
+      - "Sequence Prediction"
+      - "Alignments and Decoding"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 9"
+      rowspan: 2
+
+  - number: 16
+    date: "Wednesday,<br> Oct 22"
+    topics:
+      - "Sequence Prediction"
+      - main: "Connectionist Temporal Classification"
+        sub_topics:
+          - "Blanks"
+          - "Beam Search"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field as it spans from the previous row
+
+  - number: 17
+    date: "Monday,<br> Oct 27"
+    topics:
+      - "Language Models"
+      - "Sequence To Sequence Predictions"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 10"
+      rowspan: 2
+
+  - number: 18
+    date: "Wednesday,<br> Oct 29"
+    topics:
+      - "Sequence To Sequence Models"
+      - "Attention"
+    slides_videos: []
+    additional_materials: [] # Additional materials commented out in HTML
+    # No quiz field as it spans from the previous row
+
+  - number: 19
+    date: "Monday,<br> Nov 03"
+    topics:
+      - "Transformers and Newer Architectures"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 11"
+      rowspan: 2
+
+  - number: 20
+    date: "Wednesday,<br> Nov 05"
+    topics:
+      - "Large Language Models"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field as it spans from the previous row
+
+  - number: 21
+    date: "Wednesday,<br> Nov 12"
+    topics:
+      - "Representation and Autoencoders"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 12"
+      rowspan: 1
+
+  - number: 22
+    date: "Monday,<br> Nov 17"
+    topics:
+      - "Variational Auto Encoders"
+    slides_videos: []
+    additional_materials: [] # Additional materials commented out in HTML
+    quiz:
+      text: "Quiz 13"
+      rowspan: 2
+
+  - number: 23
+    date: "Wednesday,<br> Nov 19"
+    topics:
+      - "Diffusion"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field as it spans from the previous row
+
+  - number: 24
+    date: "Monday,<br> Nov 24"
+    topics:
+      - "Generative Adversarial Networks I and II"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: "Quiz 14"
+      rowspan: 1
+
+  - number: 25
+    date: "Monday,<br> Dec 01"
+    topics:
+      - "Hopfield Networks"
+      - "Boltzmann Machines"
+    slides_videos: []
+    additional_materials: [] # Additional materials commented out in HTML
+    quiz:
+      text: "Quiz 15"
+      rowspan: 2
+
+  - number: 26
+    date: "Wednesday,<br> Dec 03"
+    topics:
+      - "Graph Neural Networks"
+    slides_videos: []
+    additional_materials: [] # Additional materials commented out in HTML
+    # No quiz field as it spans from the previous row
