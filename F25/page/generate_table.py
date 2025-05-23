@@ -23,6 +23,7 @@ def generate_html_table(filename, template_filename, output_filename):
 html_tables = [
     ["recitations.yaml", "recitations_template.html", "recitations.html"],
     ["lectures.yaml", "lectures_table_template.html", "lectures_table.html"],
+    ["assignments.yaml", "assignments_template.html", "assignments_table.html"]
 ]
 
 for filename, template_filename, output_filename in html_tables:

@@ -1,0 +1,81 @@
+# deadlines_data.yaml
+assignment_groups:
+  - release_date: "Wednesday, Aug 27<br>11:59 PM"
+    assignments:
+      - name: "HW1P1"
+        due_date: "Early Deadline: Friday, Sep 5 11:59 PM<br>On-Time Deadline: Friday, Sep 19 11:59 PM"
+        due_date_rowspan: 2 # This due date applies to HW1P1 and HW1P2
+        materials: []
+          # - text: "Autolab"
+          #   url: "https://autolab.andrew.cmu.edu/courses/11485-s25/assessments/HW1P1"
+      - name: "HW1P2"
+        # No release_date here, uses previous rowspan
+        materials: []
+          # - text: "Autolab"
+          #   url: "https://autolab.andrew.cmu.edu/courses/11485-s25/assessments/hw1p2"
+      - name: "HW1P1 Bonus"
+        due_date: "Friday, Dec 5 11:59 PM" # New due date, default rowspan 1
+        due_date_rowspan: 2
+        materials: []
+          # - text: "Autolab"
+          #   url: "https://autolab.andrew.cmu.edu/courses/11485-s25/assessments/hw1p1_bonus"
+      - name: "HW1P1 Autograd"
+        materials: []
+          # - text: "Autolab"
+          #   url: "https://autolab.andrew.cmu.edu/courses/11485-s25/assessments/hw1p1autograd"
+
+  - release_date: "Friday, Sep 19<br>11:59 PM"
+    assignments:
+      - name: "HW2P1"
+        due_date: "Early Deadline: Friday, Oct 3 11:59 PM<br>On-Time Deadline: Saturday, Oct 11 11:59 PM"
+        due_date_rowspan: 2
+        materials: []
+          # - text: "Autolab"
+          #   url: "https://autolab.andrew.cmu.edu/courses/11485-s25/assessments/HW2P1_"
+          # - text: "Piazza"
+          #   url: "https://piazza.com/class/m4cvt38ufqk155/post/383"
+      - name: "HW2P2"
+        materials: []
+          # - text: "Piazza"
+          #   url: "https://piazza.com/class/m4cvt38ufqk155/post/350"
+      - name: "HW2P1 Bonus"
+        due_date: "Friday, Dec 5 11:59 PM" # New due date, default rowspan 1
+        due_date_rowspan: 2
+        materials: []
+          # - text: "Autolab"
+          #   url: "https://autolab.andrew.cmu.edu/courses/11485-s25/assessments/HW2P1" # Note: URL might be different from HW2P1 Bonus above if intended
+      - name: "HW2P1 Autograd"
+        materials: []
+          # - text: "Autolab"
+          #   url: "https://autolab.andrew.cmu.edu/courses/11485-s25/assessments/autogradcnn"
+
+  - release_date: "Saturday, Oct 11<br>11:59 PM"
+    assignments:
+      - name: "HW3P1"
+        due_date: "Early Deadline: Friday, Oct 31 11:59 PM<br>On-Time Deadline: Friday, Nov 7 11:59 PM"
+        due_date_rowspan: 2
+        materials: []
+          # - text: "Piazza"
+          #   url: "https://piazza.com/class/m4cvt38ufqk155/post/718"
+      - name: "HW3P2"
+        materials: []
+          # - text: "Piazza"
+          #   url: "https://piazza.com/class/m4cvt38ufqk155/post/706"
+      - name: "HW3P1 Bonus"
+        due_date: "Friday, Dec 5 11:59 PM" # New due date, default rowspan 1
+        materials: []
+          # - text: "Autolab"
+          #   url: "https://autolab.andrew.cmu.edu/courses/11485-s25/assessments/hw1p1_bonus"
+
+  - release_date: "Friday, Nov 7<br>11:59 PM"
+    assignments:
+      - name: "HW4P1"
+        due_date: "Early Deadline: Friday, Nov 21 11:59 PM<br>On-Time Deadline: Friday, Dec 5 11:59 PM"
+        due_date_rowspan: 2
+        materials: []
+          # - text: "Piazza"
+          #   url: "https://piazza.com/class/m4cvt38ufqk155/post/1036"
+      - name: "HW4P2"
+        materials: []
+          # - text: "Piazza"
+          #   url: "https://piazza.com/class/m4cvt38ufqk155/post/1035"
