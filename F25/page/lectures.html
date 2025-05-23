@@ -47,37 +47,11 @@
             </style>
             <h2 id="homework" name="homework"> Assignments </h2>
                 <div class="table-responsive">
-                    <table id="deadlines" class="table table-bordered" style="vertical-align: middle">
-                        <thead>
-                            <tr>
-                                <th style="text-align: center;">Assignment</th>
-                                <th style="text-align: center;">Release Date (EST)</th>
-                                <th style="text-align: center;">Due Date (EST)</th>
-                                <th style="text-align: center;">Related Materials / Links</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- ASSIGNMENT TABLE -->
-                             <!-- HW1P1 -->
-                             <tr>
-                                <!-- Assignment -->
-                                <td style="vertical-align: middle; text-align: center;">HW1P1</td>
-                                <!-- Release Date -->
-                                <td rowspan=4 style="vertical-align: middle; text-align: center;">TBD</td>
-                                <!-- Due Date -->
-                                <td rowspan=2 style="vertical-align: middle; text-align: center;">
-                                    Early Deadline: TBD<br>On-Time Deadline: TBD
-                                </td>
-                                <!-- Materials -->
-                                <td>
-                                    <p>
-                                        <a href="" target="_blank">Autolab</a>
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div div id="assignments_table"></div>
+                <script>
+                $('#assignments_table').load('page/assignments_table.html');
+                </script>
+            </div>
         </div>
 
         <div id="docs-tools" class="container">
