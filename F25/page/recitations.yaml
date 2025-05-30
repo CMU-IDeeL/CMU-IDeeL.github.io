@@ -1,0 +1,492 @@
+# schedule_data.yaml
+recitations_0:
+  - date: "Monday,<br> Aug 04"
+    groups:
+      - name: "Python Programming + Pytorch"
+        topics:
+          - id: "0.1"
+            title: "Python + OOP Fundamentals"
+            materials: []
+              # - text: "Python Fundamentals"
+              #   url: "https://colab.research.google.com/drive/1rayerPGak04_EUjKgr5j0QAGh5UF9nLO"
+              # - text: "OOP Fundamentals"
+              #   url: "https://colab.research.google.com/drive/1c4CwtF3zX-INs5Q0F7ni7s_PBsVS_Nfc"
+            videos: []
+              # - text: "Python-1"
+              #   url: "https://youtu.be/QNnaTJbBBfo"
+              # - text: "Python-2"
+              #   url: "https://youtu.be/gUqFI01F5-A"
+              # - text: "OOP-1"
+              #   url: "https://youtu.be/ZZDfeXUZcLI"
+              # - text: "OOP-2"
+              #   url: "https://youtu.be/mnAHmHDk1dk"
+            authors: "Ishita Gupta"
+          - id: "0.2"
+            title: "Numpy Fundamentals"
+            materials: []
+              # - text: "Numpy Notebook"
+              #   url: "https://colab.research.google.com/drive/13YtF8PWq7381T2x3ZOryocmGqnO3HCU8"
+              # - text: "Broadcasting Pitfalls & JAX Notebook"
+              #   url: "https://colab.research.google.com/drive/1_unLDgM-S8BAmG3jmjQSCgO0VeYBPijW"
+            videos:
+              # - text: "Numpy-1"
+              #   url: "https://youtu.be/FHkt09pPekc"
+              # - text: "Numpy-2"
+              #   url: "https://youtu.be/wORlQwFOsaA"
+              # - text: "Numpy-3"
+              #   url: "https://youtu.be/tO9XEMDyLI0"
+              # - text: "Numpy-4"
+              #   url: "https://youtu.be/fZq0V81xFMY"
+              # - text: "Broadcasting Pitfalls & Jax"
+              #   url: "https://youtu.be/dKxezBq0zGI"
+            authors: "Sreeharsha Paruchuri,<br> Peter Wauyo"
+          - id: "0.3"
+            title: "Notebooks and Conda Environments"
+            materials: []
+            videos: [] # Example: {text: "Link", url: "http://..."}
+            authors: "Shrey Jain,<br> Ahmed Tahiru Issah"
+          - id: "0.4"
+            title: "Pytorch"
+            materials: []
+            videos: []
+            authors: "Ahmed Safwat,<br>Shravanth Srinivas"
+          - id: "0.5"
+            title: "Tensordot & Einsum"
+            materials: []
+            videos: []
+            authors: "Michael Kireeff,<br>Ahmed Alhassan"
+      - name: "Computational Resources"
+        topics:
+          - id: "0.6"
+            title: "Google Colab"
+            materials: []
+            videos: []
+            authors: "Shubham Kachroo,<br>Sophia Wang"
+          - id: "0.7"
+            title: "Google Cloud Platform"
+            materials: []
+            videos: []
+            authors: "Alexander Moker,<br>Rutvik Joshi"
+          - id: "0.8"
+            title: "AWS"
+            materials: []
+            videos: []
+            authors: "Tanghang Elvis Tata,<br>Rutvik Joshi"
+          - id: "0.9"
+            title: "Kaggle"
+            materials: []
+            videos: []
+            authors: "Tanghang Elvis Tata,<br>Kipngeno Koech"
+          - id: "0.10"
+            title: "PSC"
+            materials: []
+            videos: []
+            authors: "John Liu,<br>Shrey Jain"
+      - name: "Data Handling and Processing"
+        topics:
+          - id: "0.11"
+            title: "Datasets & Dataloaders"
+            materials: []
+            videos: []
+            authors: "Mengchun Zhang,<br>Mona Aman"
+          - id: "0.12"
+            title: "Data Preprocessing"
+            materials: []
+            videos: []
+            authors: "Mengchun Zhang,<br>Mona Aman"
+      - name: "Debugging & Problem Solving"
+        topics:
+          - id: "0.13"
+            title: "Debugging"
+            materials: []
+            videos: []
+            authors: "John Liu,<br>Yuzhou Wang"
+          - id: "0.14"
+            title: "What to Do When Struggling"
+            materials: []
+            videos: []
+            authors: "Aisha Opaluwa"
+      - name: "HWs and Project Workflow Management"
+        topics:
+          - id: "0.15"
+            title: "Workflow of HWs"
+            materials: []
+            videos: []
+            authors: "Ahmed Tahiru Issah,<br>Nishoak Kosaraju"
+          - id: "0.16"
+            title: "Wandb"
+            materials: []
+            videos: []
+            authors: "Michael Kireeff,<br>Aisha Opaluwa"
+          - id: "0.17"
+            title: "GitHub"
+            materials: []
+            videos: []
+            authors: "Shubham Kachroo,<br>Miya Sylvester"
+          - id: "0.18"
+            title: "Flow of the Project"
+            materials: []
+            videos: []
+            authors: "Massa Baali,<br>Kipngeno Koech"
+      - name: "Algorithmic Techniques"
+        topics:
+          - id: "0.19"
+            title: "Losses"
+            materials: []
+            videos: []
+            authors: "Massa Baali,<br>Sreeharsha Paruchuri"
+          - id: "0.20"
+            title: "Block Processing"
+            materials: []
+            videos: []
+            authors: "Alexander Moker,<br>Sophia Wang"
+      - name: "Model Logistics"
+        topics:
+          - id: "0.21"
+            title: "Paper to Code"
+            materials: []
+            videos: []
+            authors: "Massa Baali,<br>Ishita Gupta"
+          - id: "0.22"
+            title: "Pipeline"
+            materials: []
+            videos: []
+            authors: "Peter Wauyo"
+          - id: "0.23"
+            title: "Distributed Training"
+            materials: []
+            videos: []
+            authors: "Yuzhou Wang,<br>Ahmed Alhassan"
+          - id: "0.24"
+            title: "Saving & Loading Model"
+            materials: []
+            videos: []
+            authors: "Mengchun Zhang,<br>Nishoak Kosaraju"
+      - name: "Cheating" # Last example group
+        topics:
+          - id: "0.25" # Example, ensure IDs are unique if needed for other purposes
+            title: ""
+            materials: []
+            videos:
+              - text: "Link"
+                url: "https://youtu.be/WEUeQfv6lpY?si=VIEfvap7jycxOb0R"
+            authors: "Andy Ye,<br> Eman Ansar, <br> Dheeraj Mohandas Pai"
+
+recitations:
+  - title: "Lab 1"
+    date: "Friday,<br>Aug 29th"
+    date_rowspan: 1
+    topics:
+      - "PSC"
+      - "Your First MLP"
+    materials: []
+    videos: []
+    videos_rowspan: 2
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 1 + HW1 Bootcamp"
+    date: "Saturday,<br>Aug 30th"
+    date_rowspan: 1
+    topics:
+      - "HW1P1"
+      - "HW1P2"
+    materials: []
+    # videos: Spans from previous row
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 2 + Lab 2"
+    date: "Saturday,<br> Sep. 6th"
+    date_rowspan: 1
+    topics:
+      - "Debugging"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 3"
+    date: "Friday,<br> Sep. 12th"
+    date_rowspan: 1
+    topics:
+      - "Ablations"
+      - "Hyperparameter Tuning Methods"
+      - "Normalization"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 3"
+    date: "Saturday,<br> Sep. 13th"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    # videos: Spans from previous row
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 4"
+    date: "Friday,<br> Sep. 19th"
+    date_rowspan: 1
+    topics:
+      - "Computing Derivatives and Autograd"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 4 + HW2 Bootcamp"
+    date: "Saturday,<br> Sep. 20th"
+    date_rowspan: 1
+    topics:
+      - "HW 1 Debrief & Deployment"
+      - "HW2P1"
+      - "HW2P2"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 5"
+    date: "Friday,<br> Sep. 26th"
+    date_rowspan: 1
+    topics:
+      - "CNN: Basics and Backpropagation"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 5"
+    date: "Saturday,<br> Sep. 27th"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    # videos: Spans from previous row
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 6"
+    date: "Friday,<br> Oct. 3rd"
+    date_rowspan: 1
+    topics:
+      - "CNN Classification and Verification"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 6"
+    date: "Saturday,<br> Oct. 4th"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    # videos: Spans from previous row
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 7"
+    date: "Friday,<br> Oct. 10th"
+    date_rowspan: 1
+    topics:
+      - "RNN Basics"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 7 + HW3 Bootcamp"
+    date: "Saturday,<br> Oct. 11th"
+    date_rowspan: 1
+    topics:
+      - "HW3P1"
+      - "HW3P2"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 8 (Pre-Recorded)"
+    date: "Friday,<br> Oct. 17th"
+    date_rowspan: 1
+    topics:
+      - "Kaggle Competitions"
+      - "Pre-Trained Models"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 8"
+    date: "Saturday,<br> Oct. 18th"
+    date_rowspan: 1
+    topics:
+      - "HW2 Debrief & Deployment"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 9"
+    date: "Friday,<br> Oct. 24th"
+    date_rowspan: 1
+    topics:
+      - "CTC"
+      - "Beam Search"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 9"
+    date: "Saturday,<br> Oct. 25th"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 10"
+    date: "Friday,<br> Oct 31st"
+    date_rowspan: 1
+    topics:
+      - "Attention"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 10"
+    date: "Saturday,<br> Nov. 1st"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 11"
+    date: "Friday,<br> Nov. 7th"
+    date_rowspan: 1
+    topics:
+      - "Transformers"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 11 + HW4 Bootcamp"
+    date: "Saturday,<br> Nov. 8th"
+    date_rowspan: 1
+    topics:
+      - "HW3 Debrief & Deployment"
+      - "HW4P1"
+      - "HW4P2"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 12"
+    date: "Friday,<br> Nov. 14th"
+    date_rowspan: 1
+    topics:
+      - "VAE"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 12"
+    date: "Saturday,<br> Nov. 15th"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 13"
+    date: "Friday,<br> Nov. 21st"
+    date_rowspan: 1
+    topics:
+      - "NF and Stable Diffusion"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 13"
+    date: "Saturday,<br> Nov. 22nd"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 14 (Pre-Recorded)"
+    date: "Friday,<br> Nov. 28th"
+    date_rowspan: 1
+    topics:
+      - "GAN"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 14"
+    date: "Saturday,<br> Nov. 29th"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 15"
+    date: "Friday,<br> Dec. 5th"
+    date_rowspan: 1
+    topics:
+      - "Graph Neural Networks"
+    materials: [] # Data cut off in the prompt
+    videos: [] # Data cut off in the prompt
+    videos_rowspan: 1
+    authors: "" # Data cut off in the prompt
+    authors_rowspan: 1
+
+  - title: "Hackathon 15"
+    date: "Saturday,<br> Dec. 6th"
+    date_rowspan: 1
+    topics: 
+      - "HW4 Debrief & Deployment"
+    materials: []
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
