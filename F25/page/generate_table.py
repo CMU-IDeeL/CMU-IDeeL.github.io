@@ -21,9 +21,9 @@ def generate_html_table(filename, template_filename, output_filename):
     print(f"HTML table generated successfully as {output_filename}!")
 
 html_tables = [
-    ["recitations.yaml", "recitations_template.html", "recitations.html"],
-    ["lectures.yaml", "lectures_table_template.html", "lectures_table.html"],
-    ["assignments.yaml", "assignments_template.html", "assignments_table.html"]
+    ["tables_data/recitations.yaml", "tables_templates/recitations_template.html", "tables/recitations.html"],
+    ["tables_data/lectures.yaml", "tables_templates/lectures_table_template.html", "tables/lectures_table.html"],
+    ["tables_data/assignments.yaml", "tables_templates/assignments_template.html", "tables/assignments_table.html"]
 ]
 
 for filename, template_filename, output_filename in html_tables:
