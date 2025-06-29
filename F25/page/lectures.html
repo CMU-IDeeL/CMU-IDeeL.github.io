@@ -17,7 +17,10 @@
             <!-- Schedule of Lectures Table -->
             <div id="lectures_table"></div>
             <script>
-            $('#lectures_table').load('./page/tables/lectures_table.html');
+            // $('#lectures_table').load('./page/tables/lectures_table.html');
+            $(document).ready(function() {
+                $('#lectures_table').load('./page/tables/lectures_table.html');
+            });
             </script>
 
             <!-- Recitations Schedule -->
@@ -26,7 +29,10 @@
             <div class="table-responsive">
                 <div id="recitations_table"></div>
                 <script>
-                $('#recitations_table').load('./page/tables/recitations.html');
+                // $('#recitations_table').load('./page/tables/recitations.html');
+                $(document).ready(function() {
+                    $('#recitations_table').load('./page/tables/recitations.html');
+                });
                 </script>
             </div>
 
@@ -49,7 +55,10 @@
                 <div class="table-responsive">
                 <div id="assignments_table"></div>
                 <script>
-                $('#assignments_table').load('./page/tables/assignments_table.html');
+                // $('#assignments_table').load('./page/tables/assignments_table.html');
+                $(document).ready(function() {
+                    $('#assignments_table').load('./page/tables/assignments_table.html');
+                });
                 </script>
             </div>
         </div>
