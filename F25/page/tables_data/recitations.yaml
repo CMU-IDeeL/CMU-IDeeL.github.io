@@ -6,11 +6,11 @@ recitations_0:
         topics:
           - id: "0.1"
             title: "Python + OOP Fundamentals"
-            materials: []
-              # - text: "Python Fundamentals"
-              #   url: "https://colab.research.google.com/drive/1rayerPGak04_EUjKgr5j0QAGh5UF9nLO"
-              # - text: "OOP Fundamentals"
-              #   url: "https://colab.research.google.com/drive/1c4CwtF3zX-INs5Q0F7ni7s_PBsVS_Nfc"
+            materials:
+              - text: "Python Fundamentals"
+                url: "./document/Recitation_0_Series/0.1/Rec_0_1_Part1_Python_Fundamentals.ipynb"
+              - text: "OOP Fundamentals"
+                url: "./document/Recitation_0_Series/0.1/Rec_0_1_Part2_OOP_Fundamentals.ipynb"
             videos:
               - text: "0.1 Python + OOP Fundamentals"
                 url: "https://www.youtube.com/watch?v=lQIKudY18fc"
@@ -20,7 +20,7 @@ recitations_0:
               #   url: "https://youtu.be/ZZDfeXUZcLI"
               # - text: "OOP-2"
               #   url: "https://youtu.be/mnAHmHDk1dk"
-            authors: "Ishita Gupta"
+            authors: "Ishita Gupta,<br> Delphine Nyaboke"
           - id: "0.2"
             title: "Numpy Fundamentals"
             materials: []
@@ -44,12 +44,12 @@ recitations_0:
             title: "Notebooks and Conda Environments"
             materials: []
             videos: [] # Example: {text: "Link", url: "http://..."}
-            authors: "Shrey Jain,<br> Ahmed Tahiru Issah"
+            authors: "Shrey Jain"
           - id: "0.4"
             title: "Pytorch"
             materials: []
             videos: []
-            authors: "Ahmed Safwat,<br>Shravanth Srinivas"
+            authors: "Ahmed Safwat,<br>Nayesha Gandotra"
           - id: "0.5"
             title: "Tensordot & Einsum"
             materials: []
@@ -105,14 +105,14 @@ recitations_0:
             title: "What to Do When Struggling"
             materials: []
             videos: []
-            authors: "Aisha Opaluwa"
+            authors: "Aisha Opaluwa,<br>Nayesha Gandotra"
       - name: "HWs and Project Workflow Management"
         topics:
           - id: "0.15"
             title: "Workflow of HWs"
             materials: []
             videos: []
-            authors: "Ahmed Tahiru Issah,<br>Nishoak Kosaraju"
+            authors: "Carmel Prosper,<br>Nishoak Kosaraju"
           - id: "0.16"
             title: "Wandb"
             materials: []
@@ -151,7 +151,7 @@ recitations_0:
             title: "Pipeline"
             materials: []
             videos: []
-            authors: "Peter Wauyo"
+            authors: "Peter Wauyo,<br>Delphine Nyaboke"
           - id: "0.23"
             title: "Distributed Training"
             materials: []
