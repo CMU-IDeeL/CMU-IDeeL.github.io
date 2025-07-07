@@ -11,9 +11,9 @@ recitations_0:
               #   url: "https://colab.research.google.com/drive/1rayerPGak04_EUjKgr5j0QAGh5UF9nLO"
               # - text: "OOP Fundamentals"
               #   url: "https://colab.research.google.com/drive/1c4CwtF3zX-INs5Q0F7ni7s_PBsVS_Nfc"
-            videos: []
-              # - text: "Python-1"
-              #   url: "https://youtu.be/QNnaTJbBBfo"
+            videos:
+              - text: "0.1 Python + OOP Fundamentals"
+                url: "https://www.youtube.com/watch?v=lQIKudY18fc"
               # - text: "Python-2"
               #   url: "https://youtu.be/gUqFI01F5-A"
               # - text: "OOP-1"
