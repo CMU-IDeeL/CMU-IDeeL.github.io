@@ -15,18 +15,24 @@
                 target="_blank">MediaServices</a>.
 
             <!-- Schedule of Lectures Table -->
-            <div div id="lectures_table"></div>
+            <div id="lectures_table"></div>
             <script>
-            $('#lectures_table').load('page/tables/lectures_table.html');
+            // $('#lectures_table').load('./page/tables/lectures_table.html');
+            $(document).ready(function() {
+                $('#lectures_table').load('./page/tables/lectures_table.html');
+            });
             </script>
 
             <!-- Recitations Schedule -->
             <h2 id="recitations" , name="recitations"> Recitations/Labs and Bootcamps</h2>
             <!-- remove style="display:none" to make the tbl visible-->
             <div class="table-responsive">
-                <div div id="recitations_table"></div>
+                <div id="recitations_table"></div>
                 <script>
-                $('#recitations_table').load('page/tables/recitations.html');
+                // $('#recitations_table').load('./page/tables/recitations.html');
+                $(document).ready(function() {
+                    $('#recitations_table').load('./page/tables/recitations.html');
+                });
                 </script>
             </div>
 
@@ -47,9 +53,12 @@
             </style>
             <h2 id="homework" name="homework"> Assignments </h2>
                 <div class="table-responsive">
-                <div div id="assignments_table"></div>
+                <div id="assignments_table"></div>
                 <script>
-                $('#assignments_table').load('page/tables/assignments_table.html');
+                // $('#assignments_table').load('./page/tables/assignments_table.html');
+                $(document).ready(function() {
+                    $('#assignments_table').load('./page/tables/assignments_table.html');
+                });
                 </script>
             </div>
         </div>
