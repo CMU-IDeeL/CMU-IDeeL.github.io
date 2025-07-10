@@ -14,37 +14,25 @@ recitations_0:
             videos:
               - text: "0.1 Python + OOP Fundamentals"
                 url: "https://www.youtube.com/watch?v=lQIKudY18fc"
-              # - text: "Python-2"
-              #   url: "https://youtu.be/gUqFI01F5-A"
-              # - text: "OOP-1"
-              #   url: "https://youtu.be/ZZDfeXUZcLI"
-              # - text: "OOP-2"
-              #   url: "https://youtu.be/mnAHmHDk1dk"
             authors: "Ishita Gupta,<br> Delphine Nyaboke"
           - id: "0.2"
-            title: "Numpy Fundamentals"
-            materials: []
-              # - text: "Numpy Notebook"
-              #   url: "https://colab.research.google.com/drive/13YtF8PWq7381T2x3ZOryocmGqnO3HCU8"
-              # - text: "Broadcasting Pitfalls & JAX Notebook"
-              #   url: "https://colab.research.google.com/drive/1_unLDgM-S8BAmG3jmjQSCgO0VeYBPijW"
-            videos:
-              # - text: "Numpy-1"
-              #   url: "https://youtu.be/FHkt09pPekc"
-              # - text: "Numpy-2"
-              #   url: "https://youtu.be/wORlQwFOsaA"
-              # - text: "Numpy-3"
-              #   url: "https://youtu.be/tO9XEMDyLI0"
-              # - text: "Numpy-4"
-              #   url: "https://youtu.be/fZq0V81xFMY"
-              # - text: "Broadcasting Pitfalls & Jax"
-              #   url: "https://youtu.be/dKxezBq0zGI"
-            authors: "Sreeharsha Paruchuri,<br> Peter Wauyo"
-          - id: "0.3"
             title: "Notebooks and Conda Environments"
-            materials: []
-            videos: [] # Example: {text: "Link", url: "http://..."}
+            materials: 
+              - text: "Notebooks & Conda Environments"
+                url: "./document/Recitation_0_Series/0.2/Rec0_2_Env_Ipynb_Slides.pdf"
+            videos: 
+              - text: "Notebooks and Conda Environments"
+                url: "https://www.youtube.com/watch?v=WzeO0FFmmgQ"
             authors: "Shrey Jain"
+          - id: "0.3"
+            title: "Numpy Fundamentals"
+            materials: 
+              - text: "Numpy Notebook"
+                url: "./document/Recitation_0_Series/0.3/Rec_0_3_NumPy_Fundamentals_F25.ipynb"
+            videos:
+              - text: "Numpy Fundamentals"
+                url: "https://youtu.be/pAVnXfgRJIA"
+            authors: "Sreeharsha Paruchuri,<br> Peter Wauyo"
           - id: "0.4"
             title: "Pytorch"
             materials: []
