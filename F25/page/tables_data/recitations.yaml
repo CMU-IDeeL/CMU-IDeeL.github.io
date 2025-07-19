@@ -35,40 +35,76 @@ recitations_0:
             authors: "Sreeharsha Paruchuri,<br> Peter Wauyo"
           - id: "0.4"
             title: "Pytorch"
-            materials: []
-            videos: []
+            materials: 
+              - text: "Pytorch Notebook"
+                url: "./document/Recitation_0_Series/0.4/0_4_PyTorch.ipynb"
+              - text: "Pytorch Slides"
+                url: "./document/Recitation_0_Series/0.4/0_4 PyTorch.pdf"
+            videos: 
+              - text: "Pytorch"
+                url: "https://www.youtube.com/watch?v=F81E7v7xF60"
             authors: "Ahmed Safwat,<br>Nayesha Gandotra"
           - id: "0.5"
             title: "Tensordot & Einsum"
-            materials: []
-            videos: []
+            materials: 
+              - text: "Tensordot & Einsum Notebook"
+                url: "./document/Recitation_0_Series/0.5/0_5_Tensordot_&_Einsum.ipynb"
+            videos: 
+              - text: "Tensordot & Einsum"
+                url: "https://www.youtube.com/watch?v=uOXd5-uunP0"
             authors: "Michael Kireeff,<br>Ahmed Alhassan"
       - name: "Computational Resources"
         topics:
           - id: "0.6"
             title: "Google Colab"
-            materials: []
-            videos: []
+            materials: 
+              - text: "Google Colab Notebook"
+                url: "./document/Recitation_0_Series/0.6/0_6_Google_Colab.ipynb"
+            videos: 
+              - text: "Google Colab"
+                url: "https://youtu.be/N9QHfIuNQ7Q"
             authors: "Shubham Kachroo,<br>Sophia Wang"
           - id: "0.7"
             title: "Google Cloud Platform"
-            materials: []
-            videos: []
+            materials: 
+              - text: "Google Cloud Platform Notebook"
+                url: "./document/Recitation_0_Series/0.7/0_7_Google_Cloud_Platform_VM_Setup.ipynb"
+              - text: "Google Cloud Platform Slides"
+                url: "./document/Recitation_0_Series/0.7/11-785 GCP.pdf"
+            videos: 
+              - text: "Google Cloud Platform"
+                url: "https://youtu.be/w5oMLMObau0"
             authors: "Alexander Moker,<br>Rutvik Joshi"
           - id: "0.8"
             title: "AWS"
-            materials: []
-            videos: []
+            materials: 
+              - text: "AWS Notebook"
+                url: "./document/Recitation_0_Series/0.8/0_8_AWS.ipynb"
+              - text: "AWS Slides"
+                url: "./document/Recitation_0_Series/0.8/11-785_0.8 AWS setup.pdf"
+            videos: 
+              - text: "AWS"
+                url: "https://youtu.be/MIw4VrwY-fM"
             authors: "Tanghang Elvis Tata,<br>Rutvik Joshi"
           - id: "0.9"
             title: "Kaggle"
-            materials: []
-            videos: []
+            materials: 
+              - text: "Kaggle Notebook"
+                url: "./document/Recitation_0_Series/0.9/0_9_Kaggle.ipynb"
+              - text: "Kaggle Slides"
+                url: "./document/Recitation_0_Series/0.9/kaggle 101 - 11-785.pptx"
+            videos: 
+              - text: "Kaggle"
+                url: "https://youtu.be/AD5S9_GMxQ8"
             authors: "Tanghang Elvis Tata,<br>Kipngeno Koech"
           - id: "0.10"
             title: "PSC"
-            materials: []
-            videos: []
+            materials: 
+              - text: "PSC Slides"
+                url: "./document/Recitation_0_Series/0.10/F2025_Rec0_PSC_Slides.pptx"
+            videos: 
+              - text: "PSC"
+                url: "https://www.youtube.com/watch?v=MyERRQH8Gg0"
             authors: "John Liu,<br>Shrey Jain"
       - name: "Data Handling and Processing"
         topics:
