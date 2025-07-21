@@ -37,7 +37,7 @@ recitations_0:
             title: "Pytorch"
             materials: 
               - text: "Pytorch Notebook"
-                url: "./document/Recitation_0_Series/0.4/0_4_PyTorch.ipynb"
+                url: "./document/Recitation_0_Series/0.4/0_4_Pytorch.ipynb"
               - text: "Pytorch Slides"
                 url: "./document/Recitation_0_Series/0.4/0_4 PyTorch.pdf"
             videos: 
