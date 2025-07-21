@@ -110,8 +110,14 @@ recitations_0:
         topics:
           - id: "0.11"
             title: "Datasets & Dataloaders"
-            materials: []
-            videos: []
+            materials: 
+              - text: "Part 1"
+                url: "./document/Recitation_0_Series/0.11/0_11_Datasets_Part_1.ipynb"
+              - text: "Part 2"
+                url: "./document/Recitation_0_Series/0.11/0_11_Datasets_Part_1.ipynb"
+            videos: 
+              - text: "Datasets & Dataloaders"
+                url: "https://youtu.be/fp7Uodac3uE"
             authors: "Mengchun Zhang,<br>Mona Aman"
           - id: "0.12"
             title: "Data Preprocessing"
