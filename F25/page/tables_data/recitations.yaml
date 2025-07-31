@@ -13,7 +13,7 @@ recitations_0:
                 url: "./document/Recitation_0_Series/0.1/Rec_0_1_Part2_OOP_Fundamentals.ipynb"
             videos:
               - text: "0.1 Python + OOP Fundamentals"
-                url: "https://www.youtube.com/watch?v=lQIKudY18fc"
+                url: "https://youtu.be/n16-2COBAaI"
             authors: "Ishita Gupta,<br> Delphine Nyaboke"
           - id: "0.2"
             title: "Notebooks and Conda Environments"
