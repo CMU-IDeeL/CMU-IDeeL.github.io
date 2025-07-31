@@ -13,7 +13,7 @@ recitations_0:
                 url: "./document/Recitation_0_Series/0.1/Rec_0_1_Part2_OOP_Fundamentals.ipynb"
             videos:
               - text: "0.1 Python + OOP Fundamentals"
-                url: "https://www.youtube.com/watch?v=lQIKudY18fc"
+                url: "https://youtu.be/n16-2COBAaI"
             authors: "Ishita Gupta,<br> Delphine Nyaboke"
           - id: "0.2"
             title: "Notebooks and Conda Environments"
@@ -109,54 +109,91 @@ recitations_0:
       - name: "Data Handling and Processing"
         topics:
           - id: "0.11"
-            title: "Datasets & Dataloaders"
+            title: "Datasets"
             materials: 
               - text: "Part 1"
                 url: "./document/Recitation_0_Series/0.11/0_11_Datasets_Part_1.ipynb"
               - text: "Part 2"
                 url: "./document/Recitation_0_Series/0.11/0_11_Datasets_Part_1.ipynb"
             videos: 
-              - text: "Datasets & Dataloaders"
+              - text: "Datasets"
                 url: "https://youtu.be/fp7Uodac3uE"
             authors: "Mengchun Zhang,<br>Mona Aman"
           - id: "0.12"
+            title: "Data Loaders"
+            materials:
+              - text: "Dataloaders"
+                url: "./document/Recitation_0_Series/0.12/0_12_Dataloaders.ipynb"
+            videos: 
+              - text: "Data Loaders"
+                url: "https://www.youtube.com/watch?v=Ejp_fU7Q0dc"
+            authors: "Mengchun Zhang,<br>Mona Aman"
+          - id: "0.13"
             title: "Data Preprocessing"
-            materials: []
-            videos: []
+            materials: 
+              - text: "Data Preprocessing Part 1"
+                url: "./document/Recitation_0_Series/0.13/0_13_Data_Preprocessing_Part_1.ipynb"
+              - text: "Data Preprocessing Part 2"
+                url: "./document/Recitation_0_Series/0.13/0_13_Data_Preprocessing_Part_2.ipynb"
+              - text: "Data Preprocessing Slides"
+                url: "./document/Recitation_0_Series/0.13/Data Preprocessing.pptx.pdf"
+            videos: 
+              - text: "Data Preprocessing"
+                url: "https://www.youtube.com/watch?v=-GdZyvAzch8"
             authors: "Mengchun Zhang,<br>Mona Aman"
       - name: "Debugging & Problem Solving"
         topics:
-          - id: "0.13"
-            title: "Debugging"
-            materials: []
-            videos: []
-            authors: "John Liu,<br>Yuzhou Wang"
           - id: "0.14"
+            title: "Debugging"
+            materials: 
+              - text: "Debugging"
+                url: "./document/Recitation_0_Series/0.14/PdbExample.py"
+            videos: 
+              - text: "Debugging"
+                url: "https://www.youtube.com/watch?v=P4qXKN8XzZ0"
+            authors: "John Liu,<br>Yuzhou Wang"
+          - id: "0.15"
             title: "What to Do When Struggling"
-            materials: []
-            videos: []
+            materials: 
+              - text: "What to Do When Struggling"
+                url: "./document/Recitation_0_Series/0.15/FA25 IDL REc 0.15.pdf"
+            videos: 
+              - text: "What to Do When Struggling"
+                url: "https://www.youtube.com/watch?v=DCBnes1tr5Q"
             authors: "Aisha Opaluwa,<br>Nayesha Gandotra"
       - name: "HWs and Project Workflow Management"
         topics:
-          - id: "0.15"
-            title: "Workflow of HWs"
-            materials: []
-            videos: []
-            authors: "Carmel Prosper,<br>Nishoak Kosaraju"
           - id: "0.16"
-            title: "Wandb"
-            materials: []
-            videos: []
-            authors: "Michael Kireeff,<br>Aisha Opaluwa"
+            title: "Workflow of HWs"
+            materials: 
+              - text: "Workflow of HWs"
+                url: "./document/Recitation_0_Series/0.16/0_16_Workflow_of_HWs.ipynb"
+            videos: 
+              - text: "Workflow of HWs"
+                url: "https://www.youtube.com/watch?v=SUYJ8gUZIzA"
+            authors: "Carmel Prosper,<br>Nishoak Kosaraju"
           - id: "0.17"
+          #   title: "Wandb"
+          #   materials: []
+          #   videos: []
+          #   authors: "Michael Kireeff,<br>Aisha Opaluwa"
+          # - id: "0.18"
             title: "GitHub"
-            materials: []
-            videos: []
+            materials: 
+              - text: "GitHub"
+                url: "./document/Recitation_0_Series/0.17/IDL_F25_Recitation_0.17_GitHub.pptx.pdf"
+            videos: 
+              - text: "GitHub"
+                url: "https://www.youtube.com/watch?v=X2j46IyODEw"
             authors: "Shubham Kachroo,<br>Miya Sylvester"
           - id: "0.18"
             title: "Flow of the Project"
-            materials: []
-            videos: []
+            materials: 
+              - text: "Flow of the project"
+                url: "./document/Recitation_0_Series/0.18/RECITATION 0.18_ flow of the project.pdf"
+            videos: 
+              - text: "Flow of the Project"
+                url: "https://www.youtube.com/watch?v=TJWKganEqCQ"
             authors: "Massa Baali,<br>Kipngeno Koech"
       - name: "Algorithmic Techniques"
         topics:
