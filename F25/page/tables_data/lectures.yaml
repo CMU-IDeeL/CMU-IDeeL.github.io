@@ -26,7 +26,11 @@ lectures:
       - "Grading"
       - "Deadlines"
     # 'slides_videos' and 'additional_materials' will be lists of link objects
-    slides_videos: []
+    slides_videos:
+      - text: "Youtube"
+        url: "https://www.youtube.com/watch?v=w8h_AWHTcK4"
+      - text: "Slides"
+        url: "./document/slides/Lec-0.Logistics.pptx.pdf"
     additional_materials: []
     quiz:
       text: "No Quiz"

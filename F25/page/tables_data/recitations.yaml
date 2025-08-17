@@ -198,40 +198,79 @@ recitations_0:
       - name: "Algorithmic Techniques"
         topics:
           - id: "0.19"
-            title: "Losses"
-            materials: []
-            videos: []
+            title: "Losses Part 1"
+            materials: 
+              - text: "Notebook"
+                url: "./document/Recitation_0_Series/0.19/0_19_Losses_Part_1.ipynb"
+              - text: "Slides"
+                url: "./document/Recitation_0_Series/0.19/F25_Rec0_Losses.pdf"
+            videos: 
+              - text: "Losses Part 1"
+                url: "https://www.youtube.com/watch?v=CFwuBufTVPE&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=19"
             authors: "Massa Baali,<br>Sreeharsha Paruchuri"
           - id: "0.20"
+            title: "Losses Part 2"
+            materials: 
+              - text: "Slides"
+                url: "./document/Recitation_0_Series/0.20/Loss Functions 2.0.pdf"
+            videos: 
+              - text: "Losses Part 2"
+                url: "https://www.youtube.com/watch?v=yTQSvcuRHro&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=20"
+            authors: "Massa Baali,<br>Sreeharsha Paruchuri"
+          - id: "0.21"
             title: "Block Processing"
-            materials: []
-            videos: []
+            materials: 
+              - text: "Notebook"
+                url: "./document/Recitation_0_Series/0.21/0_21_Block_Processing.ipynb"
+              - text: "Slides"
+                url: "./document/Recitation_0_Series/0.21/1512.03385v1.pdf"
+            videos: 
+              - text: "Block Processing"
+                url: "https://www.youtube.com/watch?v=fCZlE1ZmJH0&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=21"
             authors: "Alexander Moker,<br>Sophia Wang"
       - name: "Model Logistics"
         topics:
-          - id: "0.21"
-            title: "Paper to Code"
-            materials: []
-            videos: []
-            authors: "Massa Baali,<br>Ishita Gupta"
           - id: "0.22"
             title: "Pipeline"
-            materials: []
-            videos: []
+            materials: 
+              - text: "Slides"
+                url: "./document/Recitation_0_Series/0.22/Presentation - Deep Learning Pipelines.pdf"
+            videos: 
+              - text: "Pipeline"
+                url: "https://www.youtube.com/watch?v=gAWGM4UfqZU&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=22"
             authors: "Peter Wauyo,<br>Delphine Nyaboke"
           - id: "0.23"
             title: "Distributed Training"
-            materials: []
-            videos: []
+            materials: 
+              - text: "Notebook"
+                url: "./document/Recitation_0_Series/0.23/0_23_Distributed_Training.ipynb"
+            videos: 
+              - text: "Distributed Training"
+                url: "https://www.youtube.com/watch?v=ZEqSgLc0Pws&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=23"
             authors: "Yuzhou Wang,<br>Ahmed Alhassan"
           - id: "0.24"
             title: "Saving & Loading Model"
-            materials: []
-            videos: []
+            materials: 
+              - text: "Notebook"
+                url: "./document/Recitation_0_Series/0.24/0_24_Checkpointing.ipynb"
+              - text: "Slides"
+                url: "./document/Recitation_0_Series/0.24/IDL Recitation 0.24.pptx.pdf"
+            videos: 
+              - text: "Saving & Loading Model"
+                url: "https://www.youtube.com/watch?v=dJM4LchT9R0&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=24"
             authors: "Mengchun Zhang,<br>Nishoak Kosaraju"
+          - id: "0.25"
+            title: "How to read research papers"
+            materials: 
+              - text: "Slides"
+                url: "./document/Recitation_0_Series/0.25/Recitation0.25_How_to_read_a_research_paper.pdf"
+            videos: 
+              - text: "How to read research papers"
+                url: "https://www.youtube.com/watch?v=mwxfmEMAMms&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=25"
+            authors: "Prof. Bhiksha Raj"
       - name: "Cheating" # Last example group
         topics:
-          - id: "0.25" # Example, ensure IDs are unique if needed for other purposes
+          - id: "0.26" # Example, ensure IDs are unique if needed for other purposes
             title: ""
             materials: []
             videos:
