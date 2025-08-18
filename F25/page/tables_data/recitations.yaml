@@ -267,7 +267,7 @@ recitations_0:
             videos: 
               - text: "How to read research papers"
                 url: "https://www.youtube.com/watch?v=mwxfmEMAMms&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=25"
-            authors: "Prof. Bhiksha Raj"
+            authors: "Massa Baali,<br>Ishita Gupta"
       - name: "Cheating" # Last example group
         topics:
           - id: "0.26" # Example, ensure IDs are unique if needed for other purposes
