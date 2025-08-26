@@ -173,11 +173,6 @@ recitations_0:
                 url: "https://www.youtube.com/watch?v=SUYJ8gUZIzA"
             authors: "Carmel Prosper,<br>Nishoak Kosaraju"
           - id: "0.17"
-          #   title: "Wandb"
-          #   materials: []
-          #   videos: []
-          #   authors: "Michael Kireeff,<br>Aisha Opaluwa"
-          # - id: "0.18"
             title: "GitHub"
             materials: 
               - text: "GitHub"
@@ -268,9 +263,20 @@ recitations_0:
               - text: "How to read research papers"
                 url: "https://www.youtube.com/watch?v=mwxfmEMAMms&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=25"
             authors: "Massa Baali,<br>Ishita Gupta"
+          - id: "0.26"
+            title: "Introduction to WandB"
+            materials: 
+              - text: "Slides"
+                url: "./document/Recitation_0_Series/0.26/Recitation 0.26 - WandB Tutorial.pdf"
+              - text: "Notebook"
+                url: "./document/Recitation_0_Series/0.26/0_26_WandB.ipynb"
+            videos: 
+              - text: "Introduction to WandB"
+                url: "https://www.youtube.com/watch?v=FL62gZ6P5Pw&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=26"
+            authors: "Michael Kireeff,<br>Aisha Opaluwa"
       - name: "Cheating" # Last example group
         topics:
-          - id: "0.26" # Example, ensure IDs are unique if needed for other purposes
+          - id: "0.27" # Example, ensure IDs are unique if needed for other purposes
             title: ""
             materials: []
             videos:
