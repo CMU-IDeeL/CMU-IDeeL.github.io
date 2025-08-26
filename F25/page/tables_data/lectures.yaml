@@ -44,6 +44,8 @@ lectures:
     slides_videos: 
       - text: "Slides"
         url: "./document/slides/lec1.intro.pdf"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Neural+Networks+Introduction/1_2gipz79p/385611772"
       - text: "Youtube"
         url: "https://youtu.be/qQtfKayFdfM"
     additional_materials: 
