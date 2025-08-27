@@ -75,8 +75,8 @@ lectures:
         url: "./document/slides/lec2.universal.pdf"
       # - text: "MediaServices"
       #   url: ""
-      # - text: "Youtube"
-      #   url: ""
+      - text: "Youtube"
+        url: "https://youtu.be/gUt3rsT5_-8"
     additional_materials:
       - text: "Size and Depth complexity of Boolean Circuits"
         url: "./document/readings/booleancircuits_shannonproof.pdf"
