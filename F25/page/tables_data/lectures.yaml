@@ -70,8 +70,16 @@ lectures:
     date: "Wednesday,<br> Aug 27"
     topics:
       - "Neural Nets As Universal Approximators"
-    slides_videos: []
-    additional_materials: []
+    slides_videos:
+      - text: "Slides"
+        url: "./document/slides/lec2.universal.pdf"
+      # - text: "MediaServices"
+      #   url: ""
+      # - text: "Youtube"
+      #   url: ""
+    additional_materials:
+      - text: "Size and Depth complexity of Boolean Circuits"
+        url: "./document/readings/booleancircuits_shannonproof.pdf"
     # No 'quiz' field here because the previous lecture's quiz spans this row
 
   - number: 3
