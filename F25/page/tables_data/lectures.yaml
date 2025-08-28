@@ -73,8 +73,8 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./document/slides/lec2.universal.pdf"
-      # - text: "MediaServices"
-      #   url: ""
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Neural+Networks%2C+What+can+a+network+represent/1_ggm3fsoj/385611772"
       - text: "Youtube"
         url: "https://youtu.be/gUt3rsT5_-8"
     additional_materials:
