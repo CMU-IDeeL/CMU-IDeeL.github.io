@@ -291,9 +291,13 @@ recitations:
     topics:
       - "PSC"
       - "Your First MLP"
-    materials: []
-    videos: []
-    videos_rowspan: 2
+    materials:
+      - text: "Lab 1 Notebook"
+        url: "https://drive.google.com/file/d/1Mj9rNkSpjutHJMjiHG-BNBDWm8cewkO3/view?usp=sharing"
+    videos:
+      - text: "Lab 1: PSC and Your First MLP"
+        url: "https://youtu.be/2bkVMagPHnc"
+    videos_rowspan: 1
     authors: ""
     authors_rowspan: 1
 
