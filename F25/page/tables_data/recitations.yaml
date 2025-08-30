@@ -297,7 +297,7 @@ recitations:
     videos:
       - text: "Lab 1: PSC and Your First MLP"
         url: "https://youtu.be/2bkVMagPHnc"
-    videos_rowspan: 2
+    videos_rowspan: 1
     authors: ""
     authors_rowspan: 1
 
