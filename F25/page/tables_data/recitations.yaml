@@ -308,7 +308,9 @@ recitations:
       - "HW1P1"
       - "HW1P2"
     materials: []
-    # videos: Spans from previous row
+    videos:
+    - text: "Youtube Video"
+      url: "https://youtu.be/0H0z8QpwZqw"
     authors: ""
     authors_rowspan: 1
 
