@@ -89,8 +89,14 @@ lectures:
         sub_topics:
           - "The Problem of Learning"
           - "Empirical Risk Minimization"
-    slides_videos: []
-    additional_materials: []
+    slides_videos:
+    - text: "Slides"
+      url: "./document/slides/lec3.learning.pdf"
+    additional_materials:
+    - text: "Artificial Neural Networks of the Perceptron, Madaline, and Backpropagation Family"
+      url: "./document/readings/c1992artificialneural.pdf"
+    - text: "The Perceptron Learning Algorithm and its Convergence"
+      url: "./document/readings/Perceptron_Learning_Algorithm_and_Convergence.pdf"
     quiz:
       text: "Quiz 2"
       rowspan: 2
