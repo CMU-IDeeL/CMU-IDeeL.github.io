@@ -108,8 +108,9 @@ lectures:
         sub_topics:
           - "Gradient Descent"
           - "Training the Network"
-          - "Backpropagation"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./document/slides/lec4.learning.pdf"
     additional_materials: []
     # No quiz field
 
