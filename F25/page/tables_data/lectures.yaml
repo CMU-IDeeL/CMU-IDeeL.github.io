@@ -94,6 +94,8 @@ lectures:
       url: "./document/slides/lec3.learning.pdf"
     - text: "Youtube"
       url: "https://youtu.be/j0as9k7qnck"
+    - text: "MediaServices"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Learning+the+Network+Part+1/1_z4pnybo3/385611772"
     additional_materials:
     - text: "Artificial Neural Networks of the Perceptron, Madaline, and Backpropagation Family"
       url: "./document/readings/c1992artificialneural.pdf"
@@ -115,6 +117,9 @@ lectures:
       url: "./document/slides/lec4.learning.pdf"
     - text: "Youtube"
       url: " https://youtu.be/OJpR7J8MPgA"
+    - text: "MediaServices"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Learning+the+network+-+Backprop/1_rv9az5ej/385611772"
+
     additional_materials: []
     # No quiz field
 
