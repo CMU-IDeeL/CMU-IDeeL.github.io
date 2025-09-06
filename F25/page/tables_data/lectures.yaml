@@ -92,6 +92,8 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./document/slides/lec3.learning.pdf"
+    - text: "Youtube"
+      url: "https://youtu.be/j0as9k7qnck"
     additional_materials:
     - text: "Artificial Neural Networks of the Perceptron, Madaline, and Backpropagation Family"
       url: "./document/readings/c1992artificialneural.pdf"
@@ -111,6 +113,8 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./document/slides/lec4.learning.pdf"
+    - text: "Youtube"
+      url: " https://youtu.be/OJpR7J8MPgA"
     additional_materials: []
     # No quiz field
 
