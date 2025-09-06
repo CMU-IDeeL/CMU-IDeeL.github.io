@@ -292,10 +292,10 @@ recitations:
       - "PSC"
       - "Your First MLP"
     materials:
-      - text: "Lab 1 Notebook"
+      - text: "Notebook"
         url: "https://drive.google.com/file/d/1Mj9rNkSpjutHJMjiHG-BNBDWm8cewkO3/view?usp=sharing"
     videos:
-      - text: "Lab 1: PSC and Your First MLP"
+      - text: "PSC and Your First MLP"
         url: "https://youtu.be/2bkVMagPHnc"
     videos_rowspan: 1
     authors: "Rutvik Joshi,<br> Shravanth Srinivas"
@@ -320,9 +320,9 @@ recitations:
     topics:
       - "Debugging"
     materials:
-    - text: "Lab 2 Notebook"
+    - text: "Notebook"
       url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Flz0h29md6a176d%2F8d733f6356201d117fd55f3991f74383c536946debd616595de57786d7139816%2FLab_2_Student_Notebook.ipynb"
-    - text: "Lab 2 Data"
+    - text: "Data"
       url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Flz0h29md6a176d%2F07a3d9c9edc53a6c24acbc14b07f0d41405c3d36cf89654174cbfb10275d45d1%2Fdata.zip"
     videos: []
     videos_rowspan: 1
