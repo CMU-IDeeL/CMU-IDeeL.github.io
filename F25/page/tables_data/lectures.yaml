@@ -130,7 +130,9 @@ lectures:
         sub_topics:
           - "Backpropagation"
           - "Calculus of Backpropagation"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./document/slides/lec5.BP.pdf"
     additional_materials: []
     quiz:
       text: "Quiz 3"
