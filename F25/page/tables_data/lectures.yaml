@@ -150,7 +150,9 @@ lectures:
           - "Convergence issues"
           - "Loss Surfaces"
           - "Momentum"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./document/slides/lec6_convergence.pdf"
     additional_materials: []
     # No quiz field
 
