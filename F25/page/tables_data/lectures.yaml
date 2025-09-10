@@ -133,6 +133,10 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./document/slides/lec5.BP.pdf"
+    - text: "Youtube"
+      url: "https://youtu.be/7sMRjywYczM?si=h1zz9HM8qAEqiwKp"
+    - text: "MediaServices"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Neural+Networks%2C+Learning+the+Network+Part+3/1_0nqi5emk/385611772"
     additional_materials: []
     quiz:
       text: "Quiz 3"

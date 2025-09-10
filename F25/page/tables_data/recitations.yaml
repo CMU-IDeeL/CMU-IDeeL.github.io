@@ -295,7 +295,7 @@ recitations:
       - text: "Notebook"
         url: "https://drive.google.com/file/d/1Mj9rNkSpjutHJMjiHG-BNBDWm8cewkO3/view?usp=sharing"
     videos:
-      - text: "PSC and Your First MLP"
+      - text: "Youtube Video"
         url: "https://youtu.be/2bkVMagPHnc"
     videos_rowspan: 1
     authors: "Rutvik Joshi,<br> Shravanth Srinivas"
@@ -311,6 +311,8 @@ recitations:
     videos:
     - text: "Youtube Video"
       url: "https://youtu.be/0H0z8QpwZqw"
+    - text: "MediaServices"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Lab+1/1_yd2d6f0v/385611772"
     authors: "Sophia Wang,<br> Shravanth Srinivas,<br> Nishoak Kosaraju"
     authors_rowspan: 1
 
@@ -324,7 +326,11 @@ recitations:
       url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Flz0h29md6a176d%2F8d733f6356201d117fd55f3991f74383c536946debd616595de57786d7139816%2FLab_2_Student_Notebook.ipynb"
     - text: "Data"
       url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Flz0h29md6a176d%2F07a3d9c9edc53a6c24acbc14b07f0d41405c3d36cf89654174cbfb10275d45d1%2Fdata.zip"
-    videos: []
+    videos:
+    - text: "Youtube Video"
+      url: "https://youtu.be/pFIQC5Lk9Eg?si=bmxLiygMBurZ5I53"
+    - text: "MediaServices"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Lab+2/1_mdba1ucm/385611772"
     videos_rowspan: 1
     authors: "Yuzhou Wang,<br> Aisha Opaluwa"
     authors_rowspan: 1
