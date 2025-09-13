@@ -153,6 +153,10 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./document/slides/lec6_convergence.pdf"
+    - text: "Youtube"
+      url: "https://www.youtube.com/watch?v=I3BjsU-QukA"
+    - text: "MediaServices"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Optimization+Part+1/1_omn42up0/385611772"
     additional_materials: []
     # No quiz field
 
