@@ -120,7 +120,19 @@ lectures:
     - text: "MediaServices"
       url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Learning+the+network+-+Backprop/1_rv9az5ej/385611772"
 
-    additional_materials: []
+    additional_materials: 
+    - text: "Widrow and Lehr (1992)"
+      url: "document/readings/c1992artificialneural.pdf"
+    - text: "Adaline and Madaline"
+      url: "document/readings/04Adaline.pdf"
+    - text: "Convergence of perceptron algorithm"
+      url: "http://www.cs.columbia.edu/~mcollins/courses/6998-2012/notes/perc.converge.pdf"
+    - text: "Threshold Logic"
+      url: "https://www.tutorialspoint.com/digital_circuits/digital_circuits_threshold_logic.htm"
+    - text: "TC (Complexity)"
+      url: "https://en.wikipedia.org/wiki/TC_(complexity)"
+    - text: "AC (Complexity)"
+      url: "https://en.wikipedia.org/wiki/AC_(complexity)"
     # No quiz field
 
   - number: 5
@@ -137,7 +149,11 @@ lectures:
       url: "https://youtu.be/7sMRjywYczM?si=h1zz9HM8qAEqiwKp"
     - text: "MediaServices"
       url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Neural+Networks%2C+Learning+the+Network+Part+3/1_0nqi5emk/385611772"
-    additional_materials: []
+    additional_materials: 
+    - text: "Werbos (1990)"
+      url: "http://axon.cs.byu.edu/Dan/678/papers/Recurrent/Werbos.pdf"
+    - text: "Rumelhart, Hinton and Williams (1986)"
+      url: "http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf"
     quiz:
       text: "Quiz 3"
       rowspan: 2
@@ -157,7 +173,11 @@ lectures:
       url: "https://www.youtube.com/watch?v=I3BjsU-QukA"
     - text: "MediaServices"
       url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Optimization+Part+1/1_omn42up0/385611772"
-    additional_materials: []
+    additional_materials: 
+    - text: "Backpropagation Fails to Separate, Where Perceptrons Succeed, Brady et al. (1989)"
+      url: "document/readings/Backprop_fails_to_separate_where_perceptrons_succeed.pdf"
+    - text: "Why Momentum Really Works"
+      url: "https://distill.pub/2017/momentum/"
     # No quiz field
 
   - number: 7
@@ -170,7 +190,13 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./document/slides/lec7.stochastic_gradient.pdf"
-    additional_materials: []
+    additional_materials: 
+    - text: "Momentum and Polyak (1964)"
+      url: "https://www.sciencedirect.com/science/article/abs/pii/0041555364901375"
+    - text: "Nesterov (1983)"
+      url: "http://www.mathnet.ru/php/archive.phtml?wshow=paper&amp;jrnid=dan&amp;paperid=46009&amp;option_lang=eng"
+    - text: "Derivatives and Influences"
+      url: "document/readings/derivatives_and_influences.pdf"
     quiz:
       text: "Quiz 4"
       rowspan: 2
@@ -185,7 +211,13 @@ lectures:
           - "Batch Normalization"
           - "Dropout"
     slides_videos: []
-    additional_materials: []
+    additional_materials: 
+    - text: "Derivatives and Influence Diagrams"
+      url: "./document/readings/derivatives and influences.pdf"
+    - text: "ADAGRAD, Duchi, Hazan and Singer (2011)"
+      url: "http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf"
+    - text: "Adam: A method for stochastic optimization, Kingma and Ba (2014)"
+      url: "https://arxiv.org/abs/1412.6980"
     # No quiz field
 
   - number: 9
