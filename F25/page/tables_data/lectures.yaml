@@ -210,7 +210,9 @@ lectures:
           - "Choosing a Divergence (Loss) Function"
           - "Batch Normalization"
           - "Dropout"
-    slides_videos: []
+    slides_videos: 
+    - text: "Slides"
+      url: "./document/slides/lec8.optimizersandregularizers.pdf"
     additional_materials: 
     - text: "Derivatives and Influence Diagrams"
       url: "./document/readings/derivatives and influences.pdf"
