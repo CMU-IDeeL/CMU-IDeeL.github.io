@@ -102,9 +102,15 @@ recitations_0:
             materials: 
               - text: "PSC Slides"
                 url: "./document/Recitation_0_Series/0.10/F2025_Rec0_PSC_Slides.pptx"
+              - text: "PSC User Guide"
+                url: "https://docs.google.com/document/d/19ltrwRXfMzpbRPQsmXlVTpqab6NegfSD9Fj4MoLu5DA/view?tab=t.0"
+              - text: "PSC Notebook"
+                url: "./document/Recitation_0_Series/0.10/PSC-demo.ipynb"
             videos: 
               - text: "PSC"
                 url: "https://www.youtube.com/watch?v=MyERRQH8Gg0"
+              - text: "PSC User Guide"
+                url: "https://www.youtube.com/watch?v=owtawrI-_lQ"
             authors: "John Liu,<br>Shrey Jain"
       - name: "Data Handling and Processing"
         topics:
