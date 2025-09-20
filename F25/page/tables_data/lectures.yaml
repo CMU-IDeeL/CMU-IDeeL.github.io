@@ -219,6 +219,8 @@ lectures:
       url: "./document/slides/lec8.optimizersandregularizers.pdf"
     - text: "MediaServices"
       url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Training+Neural+Networks+-+Normailization%2C+Regularization+etc./1_znilms89/385611772"
+    - text: "Youtube"
+      url: "https://youtu.be/2RdQ7kiJgIo"
     additional_materials: 
     - text: "Derivatives and Influence Diagrams"
       url: "./document/readings/derivatives and influences.pdf"
