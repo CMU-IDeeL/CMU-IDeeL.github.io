@@ -303,6 +303,8 @@ recitations:
     videos:
       - text: "Youtube Video"
         url: "https://youtu.be/2bkVMagPHnc"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Lab+1/1_yd2d6f0v/385611772"
     videos_rowspan: 1
     authors: "Rutvik Joshi,<br> Shravanth Srinivas"
     authors_rowspan: 1
@@ -355,7 +357,7 @@ recitations:
         url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Flz0h29md6a176d%2F12db65ad3e8018b029e6b6805531ae613d9b926334d1748a6ca148cab4117600%2Fimage_data.zip"
     videos: []
     videos_rowspan: 1
-    authors: ""
+    authors: "Aisha Opaluwa,<br> Yuanyi Gao"
     authors_rowspan: 1
 
   - title: "Hackathon 3"
@@ -372,10 +374,14 @@ recitations:
     date_rowspan: 1
     topics:
       - "Computing Derivatives and Autograd"
-    materials: []
-    videos: []
+    materials: 
+      - text: "Slides"
+        url: "https://drive.google.com/file/d/1pesvA54bsELwcN8rF_zIEMhfMjrF5jaV/view?usp=sharing"
+    videos: 
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Lab+4/1_vcyldqrp/385611772"
     videos_rowspan: 1
-    authors: ""
+    authors: "Mengchun Zhang,<br> Haojia (Judy) Sun"
     authors_rowspan: 1
 
   - title: "Hackathon 4 + HW2 Bootcamp"
