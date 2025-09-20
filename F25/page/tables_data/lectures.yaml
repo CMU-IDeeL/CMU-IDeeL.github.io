@@ -190,6 +190,10 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./document/slides/lec7.stochastic_gradient.pdf"
+    - text: "MediaServices"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Optimization+Part+2/1_tx47rnib/385611772"
+    - text: "Youtube"
+      url: "https://youtu.be/AFCVkRghE8M" 
     additional_materials: 
     - text: "Momentum and Polyak (1964)"
       url: "https://www.sciencedirect.com/science/article/abs/pii/0041555364901375"
@@ -213,6 +217,8 @@ lectures:
     slides_videos: 
     - text: "Slides"
       url: "./document/slides/lec8.optimizersandregularizers.pdf"
+    - text: "MediaServices"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Training+Neural+Networks+-+Normailization%2C+Regularization+etc./1_znilms89/385611772"
     additional_materials: 
     - text: "Derivatives and Influence Diagrams"
       url: "./document/readings/derivatives and influences.pdf"
