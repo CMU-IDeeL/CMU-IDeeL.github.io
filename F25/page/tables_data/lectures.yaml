@@ -234,7 +234,13 @@ lectures:
     date: "Monday,<br> Sep 22"
     topics:
       - "Convolutional Neural Networks (CNNs) I"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./document/slides/lec9.CNNs.pdf"
+      # - text: "MediaServices"
+      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Convolutional+Neural+Networks+Part+1/1_5y3x3m8o/385611772"
+      # - text: "Youtube"
+        # url: "https://youtu.be/0rX6d4kq4pA"
     additional_materials: []
     quiz:
       text: "Quiz 5"
