@@ -392,9 +392,11 @@ recitations:
       - "HW2P1"
       - "HW2P2"
     materials: []
-    videos: []
+    videos: 
+      - text: "Youtube"
+        url: "https://youtu.be/wmp6skIlI24"
     videos_rowspan: 1
-    authors: ""
+    authors: "Kipngeno Koech,<br> Mengchun Zhang,<br> Yuzhou Wang,<br> Haojia (Judy) Sun,<br> Chaeeun Lee"
     authors_rowspan: 1
 
   - title: "Lab 5"
