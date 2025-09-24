@@ -250,7 +250,9 @@ lectures:
     date: "Wednesday,<br> Sep 24"
     topics:
       - "CNNs II"
-    slides_videos: []
+    slides_videos: 
+      - text: "Slides"
+        url: "./document/slides/lec10.CNN2.pdf"
     additional_materials: []
     # No quiz field
 
