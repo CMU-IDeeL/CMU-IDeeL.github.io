@@ -21,38 +21,40 @@ assignment_groups:
         due_date: "Friday, Dec 5 11:59 PM" # New due date, default rowspan 1
         due_date_rowspan: 2
         materials:
-          - text: "Autolab Bonus"
+          - text: "Autolab"
             url: "https://autolab.andrew.cmu.edu/courses/11485-f25/assessments/HW1P1-Bonus"
       - name: "HW1P1 Autograd"
         materials:
-          - text: "Autolab Autograd"
+          - text: "Autolab"
             url: "https://autolab.andrew.cmu.edu/courses/11485-f25/assessments/HW1-Autograd"
           - text: "Piazza"
             url: "https://piazza.com/class/mactgz6sk8x44v/post/113"
   - release_date: "Friday, Sep 19<br>11:59 PM"
     assignments:
       - name: "HW2P1"
-        due_date: "Early Deadline: Friday, Oct 3 11:59 PM<br>On-Time Deadline: Saturday, Oct 11 11:59 PM"
+        due_date: "Early Deadline: Friday, Oct 3 11:59 PM<br>On-Time Deadline: Saturday, Oct 10 11:59 PM"
         due_date_rowspan: 2
-        materials: []
-          # - text: "Autolab"
-          #   url: "https://autolab.andrew.cmu.edu/courses/11485-s25/assessments/HW2P1_"
-          # - text: "Piazza"
-          #   url: "https://piazza.com/class/m4cvt38ufqk155/post/383"
+        materials:
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-f25/assessments/HW2P1_F25"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mactgz6sk8x44v/post/604"
       - name: "HW2P2"
-        materials: []
-          # - text: "Piazza"
-          #   url: "https://piazza.com/class/m4cvt38ufqk155/post/350"
+        materials:
+          - text: "Checkpoint Submission Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-f25/assessments/hw2p2checkpoint"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mactgz6sk8x44v/post/602"
       - name: "HW2P1 Bonus"
         due_date: "Friday, Dec 5 11:59 PM" # New due date, default rowspan 1
         due_date_rowspan: 2
-        materials: []
-          # - text: "Autolab"
-          #   url: "https://autolab.andrew.cmu.edu/courses/11485-s25/assessments/HW2P1" # Note: URL might be different from HW2P1 Bonus above if intended
+        materials:
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-f25/assessments/HW2P1-Bonus"
       - name: "HW2P1 Autograd"
-        materials: []
-          # - text: "Autolab"
-          #   url: "https://autolab.andrew.cmu.edu/courses/11485-s25/assessments/autogradcnn"
+        materials: 
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-f25/assessments/HW2-Autograd"
 
   - release_date: "Saturday, Oct 11<br>11:59 PM"
     assignments:
