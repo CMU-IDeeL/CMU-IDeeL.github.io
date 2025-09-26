@@ -253,6 +253,10 @@ lectures:
     slides_videos: 
       - text: "Slides"
         url: "./document/slides/lec10.CNN2.pdf"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Deep+Neural+Networks+-+Pooling%2C+Padding/1_ww8y3m3o/385611772"
+      - text: "Youtube"
+        url: "https://youtu.be/oNu0KCzjc9I"
     additional_materials: []
     # No quiz field
 
