@@ -380,6 +380,8 @@ recitations:
     videos: 
       - text: "MediaServices"
         url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Lab+4/1_vcyldqrp/385611772"
+      - text: "Youtube"
+        url: "https://youtu.be/wmp6skIlI24"
     videos_rowspan: 1
     authors: "Mengchun Zhang,<br> Haojia (Judy) Sun"
     authors_rowspan: 1
@@ -404,10 +406,16 @@ recitations:
     date_rowspan: 1
     topics:
       - "CNN: Basics and Backpropagation"
-    materials: []
-    videos: []
+    materials: 
+      - text: "Slides"
+        url: "https://docs.google.com/presentation/d/1-sCEMxjYupmHLecGIi-qzIfF-vUx-uUQ/edit?usp=sharing&ouid=115282367731373359774&rtpof=true&sd=true"
+      - text: "Notebook"
+        url: "https://drive.google.com/file/d/1vKez-No8_ZRc4H8tnpr_gEfnRQiDyhOB/view?usp=sharing"
+    videos: 
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Lab+5/1_4u6jay6o/385611772"
     videos_rowspan: 1
-    authors: ""
+    authors: "Sophia Wang, <br>Shravanth Srinivas, <br>Ahmed Alhassan, <br>Sreeharsha Paruchuri"
     authors_rowspan: 1
 
   - title: "Hackathon 5"
