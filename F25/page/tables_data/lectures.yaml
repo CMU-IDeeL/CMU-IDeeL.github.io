@@ -264,8 +264,12 @@ lectures:
     date: "Monday,<br> Sep 29"
     topics:
       - "CNNs III"
-    slides_videos: []
-    additional_materials: []
+    slides_videos: 
+      - text: "Slides"
+        url: "./document/slides/lec11.CNN3.pdf"
+    additional_materials: 
+    - text: "CNN Explainer"
+      url: "https://poloclub.github.io/cnn-explainer/"
     quiz:
       text: "Quiz 6"
       rowspan: 2
