@@ -240,7 +240,7 @@ lectures:
       - text: "MediaServices"
         url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Deep+Neural+Networks+-+Scanning+for+Patterns/1_jyx7ogfg/385611772"
       - text: "Youtube"
-        url: "https://www.youtube.com/watch?v=qt5r69AIIKE"
+        url: "https://youtu.be/vFCeU6IhxDQ"
     additional_materials: []
     quiz:
       text: "Quiz 5"
@@ -267,6 +267,8 @@ lectures:
     slides_videos: 
       - text: "Slides"
         url: "./document/slides/lec11.CNN3.pdf"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Convolutional+Networks+III.mp4/1_yxe2w7m1/385611772"
     additional_materials: 
     - text: "CNN Explainer"
       url: "https://poloclub.github.io/cnn-explainer/"
