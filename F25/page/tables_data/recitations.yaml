@@ -439,7 +439,7 @@ recitations:
       - text: "MediaServices"
         url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Lab+6+Face+Classifciation+and+Verification/1_a7ares75/385611772"
     videos_rowspan: 1
-    authors: ""
+    authors: "Sophia Wang,<br>Maxime Manzi"
     authors_rowspan: 1
 
   - title: "Hackathon 6"
