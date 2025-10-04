@@ -256,7 +256,7 @@ lectures:
       - text: "MediaServices"
         url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Deep+Neural+Networks+-+Pooling%2C+Padding/1_ww8y3m3o/385611772"
       - text: "Youtube"
-        url: "https://youtu.be/oNu0KCzjc9I"
+        url: "https://youtu.be/TR_ovddIwCU"
     additional_materials: []
     # No quiz field
 
@@ -269,6 +269,8 @@ lectures:
         url: "./document/slides/lec11.CNN3.pdf"
       - text: "MediaServices"
         url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Convolutional+Networks+III.mp4/1_yxe2w7m1/385611772"
+      - text: "Youtube"
+        url: "https://youtu.be/bPzYScY3CHM"
     additional_materials: 
     - text: "CNN Explainer"
       url: "https://poloclub.github.io/cnn-explainer/"
@@ -283,6 +285,8 @@ lectures:
     slides_videos: 
       - text: "Slides"
         url: "./document/slides/lec12.CNN4.pdf"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Convolutional+Networks+IV/1_nhgam9ti/385611772"
     additional_materials: []
     # No quiz field
 
