@@ -294,8 +294,14 @@ lectures:
     date: "Monday,<br> Oct 06"
     topics:
       - "Recurrent Neural Networks (RNNs) I"
-    slides_videos: []
-    additional_materials: []
+    slides_videos: 
+      - text: "Slides"
+        url: "./document/slides/lec13.recurrent.pdf"
+    additional_materials: 
+    - text: "Fahlman and Lebiere (1990)"
+      url: "https://proceedings.neurips.cc/paper/1989/file/69adc1e107f7f7d035d7baf04342e1ca-Paper.pdf"
+    - text: "How to compute a derivative"
+      url: "./document/readings/How to compute a derivative.pdf"
     quiz:
       text: "Quiz 7"
       rowspan: 2 # The HTML shows rowspan 1 for this quiz

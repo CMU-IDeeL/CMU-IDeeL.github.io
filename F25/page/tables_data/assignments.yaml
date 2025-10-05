@@ -41,8 +41,10 @@ assignment_groups:
             url: "https://piazza.com/class/mactgz6sk8x44v/post/604"
       - name: "HW2P2"
         materials:
-          - text: "Checkpoint Submission Autolab"
-            url: "https://autolab.andrew.cmu.edu/courses/11485-f25/assessments/hw2p2checkpoint"
+          # - text: "Checkpoint Submission Autolab"
+          #   url: "https://autolab.andrew.cmu.edu/courses/11485-f25/assessments/hw2p2checkpoint"
+          - text: "Final Submission Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-f25/assessments/hw2p2final"
           - text: "Piazza"
             url: "https://piazza.com/class/mactgz6sk8x44v/post/602"
       - name: "HW2P1 Bonus"
