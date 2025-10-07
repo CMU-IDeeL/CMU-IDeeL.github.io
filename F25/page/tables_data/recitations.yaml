@@ -451,6 +451,22 @@ recitations:
     authors: ""
     authors_rowspan: 1
 
+  - title: "Guided Project Bootcamp"
+    date: "Saturday,<br> Oct. 4th"
+    date_rowspan: 1
+    topics:
+      - "Project Overview"
+      - "Project Ideas"
+      - "Project Workflow"
+    materials:
+      - text: "Zoom Recording"
+        url: "https://cmu.zoom.us/rec/share/pwXXiHzZRT5Wl6IftUmrGDM6IuCjH0x1x0_E1oTQ65PZgew95fmJpPNLKaYRZOpu.Nwqm9MLzok7OWhaT"
+      - text: "Passcode: QF4@U6gb"
+        url: ""
+    # videos: Spans from previous row
+    authors: ""
+    authors_rowspan: 1
+
   - title: "Lab 7"
     date: "Friday,<br> Oct. 10th"
     date_rowspan: 1
