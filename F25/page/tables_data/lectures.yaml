@@ -310,7 +310,9 @@ lectures:
     date: "Wednesday,<br> Oct 08"
     topics:
       - "RNNs II"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./document/slides/lec14.recurrent.pdf"
     additional_materials: []
 
   - number: "-"
