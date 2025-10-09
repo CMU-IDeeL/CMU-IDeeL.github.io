@@ -319,6 +319,8 @@ lectures:
     slides_videos: 
       - text: "Slides"
         url: "./document/slides/lec14.recurrent.pdf"
+      - text: "Youtube"
+        url: "https://www.youtube.com/watch?v=djst-4ZEuhs&list=PLp-0K3kfddPylfHM6O3cBkRGdSW3m6n1C&index=15"
     additional_materials: []
 
   - number: "-"
