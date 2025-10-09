@@ -321,6 +321,8 @@ lectures:
         url: "./document/slides/lec14.recurrent.pdf"
       - text: "Youtube"
         url: "https://www.youtube.com/watch?v=djst-4ZEuhs&list=PLp-0K3kfddPylfHM6O3cBkRGdSW3m6n1C&index=15"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning_Spring+2025_Recurrent+Networks_Stability+Analysis+and+LSTMs/1_ufid7y9z/365819512"
     additional_materials: []
 
   - number: "-"
