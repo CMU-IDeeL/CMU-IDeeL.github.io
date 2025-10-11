@@ -472,8 +472,16 @@ recitations:
     date_rowspan: 1
     topics:
       - "RNN Basics"
-    materials: []
-    videos: []
+    materials:
+      - text: "Notebook"
+        url: "https://colab.research.google.com/drive/16-JxRbmFDhO467mJYYKBewPyeR0sHm_R?usp=sharing"
+      - text: "Slides"
+        url: "https://docs.google.com/presentation/d/1QUX3FR3S_iB2eLqdx_IoUItiafH5ZRCp/edit?usp=sharing&ouid=103937116218746416453&rtpof=true&sd=true"
+    videos:
+      - text: "Youtube Video"
+        url: "https://youtu.be/HxPRmCjw1rs?si=G0PohO_slqC9VWzG"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Lab+7+-+RNN+Basics/1_fah9t7m3/385611772"
     videos_rowspan: 1
     authors: ""
     authors_rowspan: 1
