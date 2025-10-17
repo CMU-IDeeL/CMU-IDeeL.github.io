@@ -504,10 +504,14 @@ recitations:
     topics:
       - "Kaggle Competitions"
       - "Pre-Trained Models"
-    materials: []
-    videos: []
+    materials: 
+      - text: "Slides"
+        url: "https://docs.google.com/presentation/d/1b1CbJZkVcn5FSTgyIzYDHIYRG296DUVA/edit?usp=sharing&ouid=115282367731373359774&rtpof=true&sd=true"
+    videos: 
+      - text: "Youtube"
+        url: "https://youtu.be/aaQ6Tld-iGg?si=2eZf8MgE6kqgLS5q"
     videos_rowspan: 1
-    authors: ""
+    authors: "Chaeeun Lee,<br> Nayesha Gandotra"
     authors_rowspan: 1
 
   - title: "Hackathon 8"
