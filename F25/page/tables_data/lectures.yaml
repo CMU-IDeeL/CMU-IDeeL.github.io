@@ -351,6 +351,10 @@ lectures:
     slides_videos: 
       - text: "Slides"
         url: "./document/slides/lec15.recurrent.pdf"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Recurrent+Netowrks+-+Part+3/1_azo8cvwv/385611772"
+      - text: "Youtube"
+        url: "https://youtu.be/j78_efCyMxU"
     additional_materials: []
     quiz:
       text: "Quiz 8"
