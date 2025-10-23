@@ -370,6 +370,10 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./document/slides/lec16.recurrent.pdf"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Sequence+to+Sequence+Models+-+Conectionist+Temporal+Classification/1_x7uy3uqa/385611772"
+      - text: "Youtube"
+        url: " https://youtu.be/1KRcs8XYUWo"
     additional_materials: []
     # No quiz field as it spans from the previous row
 
