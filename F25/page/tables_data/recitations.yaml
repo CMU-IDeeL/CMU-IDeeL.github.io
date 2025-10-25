@@ -529,10 +529,17 @@ recitations:
     date: "Friday,<br> Oct. 24th"
     date_rowspan: 1
     topics:
-      - "CTC"
-      - "Beam Search"
-    materials: []
-    videos: []
+      - "Connectionist Temporal Classification"
+    materials:
+      - text: "Notebook"
+        url: "https://colab.research.google.com/drive/1gmClFCHjchxBxcj5K1EahMR-a5CVhoR6?usp=sharing"
+      - text: "Slides"
+        url: "https://docs.google.com/presentation/d/1o9AKzBLVn_1qZ1NS9MBCKPYmiH8ZwIeovuX0tHGbyYk/edit?usp=sharing"
+    videos:
+      - text: "Youtube Video"
+        url: "https://www.youtube.com/watch?v=WmKtHj8mGmE"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Lab+9/1_xct58az8/385611772"
     videos_rowspan: 1
     authors: ""
     authors_rowspan: 1
