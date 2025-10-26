@@ -382,7 +382,13 @@ lectures:
     topics:
       - "Language Models"
       - "Translation"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./document/slides/lec17.recurrent.pdf"
+      # - text: "MediaServices"
+      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Transformers+Part+1/1_aa5h3m3o/385611772"
+      # - text: "Youtube"
+      #   url: "https://youtu.be/h7YkG8b0g0I"
     additional_materials: []
     quiz:
       text: "Quiz 9"
