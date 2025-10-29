@@ -399,7 +399,9 @@ lectures:
     topics:
       - "Attention Models"
       - "Transformers"
-    slides_videos: []
+    slides_videos: 
+      - text: "Slides"
+        url: "./document/slides/lec18.attention.pdf"
     additional_materials: [] # Additional materials commented out in HTML
     # No quiz field as it spans from the previous row
 
