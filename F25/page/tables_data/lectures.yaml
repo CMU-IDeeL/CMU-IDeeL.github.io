@@ -385,8 +385,8 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./document/slides/lec17.recurrent.pdf"
-      # - text: "MediaServices"
-      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Transformers+Part+1/1_aa5h3m3o/385611772"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Recurrnet+Networks+-+Modelling+Language/1_2653df3v/385611772"
       - text: "Youtube"
         url: "https://youtu.be/RMBXmlot6Jo"
     additional_materials: []
