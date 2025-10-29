@@ -387,8 +387,8 @@ lectures:
         url: "./document/slides/lec17.recurrent.pdf"
       # - text: "MediaServices"
       #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Transformers+Part+1/1_aa5h3m3o/385611772"
-      # - text: "Youtube"
-      #   url: "https://youtu.be/h7YkG8b0g0I"
+      - text: "Youtube"
+        url: "https://youtu.be/RMBXmlot6Jo"
     additional_materials: []
     quiz:
       text: "Quiz 9"
@@ -402,6 +402,8 @@ lectures:
     slides_videos: 
       - text: "Slides"
         url: "./document/slides/lec18.attention.pdf"
+      - text: "Youtube"
+        url: "https://youtu.be/RjI7bGMJZV0"
     additional_materials: [] # Additional materials commented out in HTML
     # No quiz field as it spans from the previous row
 
