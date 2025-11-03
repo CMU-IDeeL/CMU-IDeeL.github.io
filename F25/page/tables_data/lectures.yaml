@@ -411,7 +411,11 @@ lectures:
     date: "Monday,<br> Nov 03"
     topics:
       - "Transformers and Newer Architectures"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./document/slides/lec19_transformer.pdf"
+      # - text: "Youtube"
+      #   url: "https://youtu.be/3f5oz4yXmnw"
     additional_materials: []
     quiz:
       text: "Quiz 10"
