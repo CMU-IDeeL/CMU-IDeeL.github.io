@@ -414,8 +414,8 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./document/slides/lec19_transformer.pdf"
-      # - text: "Youtube"
-      #   url: "https://youtu.be/3f5oz4yXmnw"
+      - text: "Youtube"
+        url: "https://youtu.be/oB6Vbk3-Hao"
     additional_materials: []
     quiz:
       text: "Quiz 10"
@@ -425,7 +425,11 @@ lectures:
     date: "Wednesday,<br> Nov 05"
     topics:
       - "Large Language Models"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./document/slides/okhattab_2025Nov_LLMs_guest_lecture.pdf"
+      # - text: "Youtube"
+      #   url: "https://youtu.be/6b0fVZ0pX1k"
     additional_materials: []
     # No quiz field as it spans from the previous row
 
