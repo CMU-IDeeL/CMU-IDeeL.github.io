@@ -560,7 +560,11 @@ recitations:
     topics:
       - "Attention"
     materials: []
-    videos: []
+    videos:
+    - text: "Youtube Video"
+      url: "https://www.youtube.com/watch?v=KIKYB-MAgRE"
+    - text: "MediaServices"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Lab+10/1_6qq3s1qv/385611772"
     videos_rowspan: 1
     authors: ""
     authors_rowspan: 1
@@ -581,7 +585,11 @@ recitations:
     topics:
       - "Transformers"
     materials: []
-    videos: []
+    videos:
+    - text: "Youtube Video"
+      url: "https://www.youtube.com/watch?v=EwxGcXrP_CI"
+    - text: "MediaServices"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Lab+11/1_sjz9pjbo/385611772"
     videos_rowspan: 1
     authors: ""
     authors_rowspan: 1
@@ -594,7 +602,9 @@ recitations:
       - "HW4P1"
       - "HW4P2"
     materials: []
-    videos: []
+    videos:
+    - text: "Youtube Video"
+      url: "https://www.youtube.com/watch?v=2G8AL9TgcVk"
     videos_rowspan: 1
     authors: ""
     authors_rowspan: 1
