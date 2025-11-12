@@ -457,7 +457,7 @@ lectures:
       - "Variational Auto Encoders"
     slides_videos:
       - text: "Slides"
-        url: "./document/slides/lec22.VAE.pdf"
+        url: "./document/slides/lec22.VAE_updated.pdf"
       # - text: "MediaServices"
       #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Variational+Autoencoders/1_aa5qz1o6/385611772"
       # - text: "Youtube"
