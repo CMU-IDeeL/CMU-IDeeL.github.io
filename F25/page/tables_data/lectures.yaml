@@ -442,10 +442,10 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./document/slides/lec21.representations.pdf"
-      # - text: "MediaServices"
-      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Representation+and+Autoencoders/1_zyd6j3o4/385611772"
-      # - text: "Youtube"
-      #   url: "https://youtu.be/3xqX8lXoD1
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Neural+Networks%2C+Representations/1_h8oiur9n/385611772"
+      - text: "Youtube"
+        url: "https://youtu.be/1EoMZNywIR8"
     additional_materials: []
     quiz:
       text: "Quiz 11"
@@ -458,10 +458,10 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./document/slides/lec22.VAE_updated.pdf"
-      # - text: "MediaServices"
-      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Variational+Autoencoders/1_aa5qz1o6/385611772"
-      # - text: "Youtube"
-      #   url: "https://youtu.be/1r0_8f6bGxA"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Variational+Auto+Encoders/1_hhlbj2h1/385611772"
+      - text: "Youtube"
+        url: "https://youtu.be/2MWWkJVF7bQ"
     additional_materials: [] # Additional materials commented out in HTML
 
   - number: 23
