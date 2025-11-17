@@ -468,7 +468,13 @@ lectures:
     date: "Monday,<br> Nov 17"
     topics:
       - "Diffusion"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./document/slides/Diffusion_F25.pdf"
+      # - text: "MediaServices"
+      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Diffusion+Models/1_wwqv6o3e/385611772"
+      # - text: "Youtube"
+      #   url: "https://youtu.be/Fu4kXoZ0bto"
     additional_materials: []
     quiz:
       text: "Quiz 12"
