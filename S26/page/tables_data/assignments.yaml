@@ -1,0 +1,109 @@
+# deadlines_data.yaml
+assignment_groups:
+  - release_date: ""
+    assignments:
+      - name: "HW1P1"
+        due_date: ""
+        due_date_rowspan: 2 # This due date applies to HW1P1 and HW1P2
+        materials:
+          - text: "Autolab"
+            url: ""
+          - text: "Piazza"
+            url: ""
+      - name: "HW1P2"
+        # No release_date here, uses previous rowspan
+        materials:
+          - text: "Final Submission Autolab"
+            url: ""
+          - text: "Piazza"
+            url: ""
+      - name: "HW1P1 Bonus"
+        due_date: "" # New due date, default rowspan 1
+        due_date_rowspan: 2
+        materials:
+          - text: "Autolab"
+            url: ""
+      - name: "HW1P1 Autograd"
+        materials:
+          - text: "Autolab"
+            url: ""
+          - text: "Piazza"
+            url: ""
+  - release_date: ""
+    assignments:
+      - name: "HW2P1"
+        due_date: ""
+        due_date_rowspan: 2
+        materials:
+          - text: "Autolab"
+            url: ""
+          - text: "Piazza"
+            url: ""
+      - name: "HW2P2"
+        materials:
+          # - text: "Checkpoint Submission Autolab"
+          #   url: "https://autolab.andrew.cmu.edu/courses/11485-f25/assessments/hw2p2checkpoint"
+          - text: "Final Submission Autolab"
+            url: ""
+          - text: "Piazza"
+            url: ""
+      - name: "HW2P1 Bonus"
+        due_date: "" # New due date, default rowspan 1
+        due_date_rowspan: 2
+        materials:
+          - text: "Autolab"
+            url: ""
+      - name: "HW2P1 Autograd"
+        materials: 
+          - text: "Autolab"
+            url: ""
+
+  - release_date: ""
+    assignments:
+      - name: "HW3P1"
+        due_date: ""
+        due_date_rowspan: 2
+        materials: 
+          - text: "Piazza"
+            url: ""
+          - text: "Autolab"
+            url: ""
+      - name: "HW3P2"
+        materials: 
+          - text: "Piazza"
+            url: ""
+          - text: "Checkpoint Submission Autolab"
+            url: ""
+          - text: "Final Submission Autolab"
+            url: ""
+      - name: "HW3P1 Bonus"
+        due_date: "" # New due date, default rowspan 1
+        due_date_rowspan: 2
+        materials:
+          - text: "Piazza"
+            url: ""
+          - text: "Autolab"
+            url: ""
+      - name: "HW3P1 Autograd"
+        materials:
+          - text: "Autolab"
+            url: ""
+
+  - release_date: ""
+    assignments:
+      - name: "HW4P1"
+        due_date: ""
+        due_date_rowspan: 2
+        materials: 
+          - text: "Piazza"
+            url: ""
+          - text: "Autolab"
+            url: ""
+      - name: "HW4P2"
+        materials: 
+          - text: "Piazza"
+            url: ""
+          - text: "Checkpoint Submission Autolab"
+            url: ""
+          - text: "Final Submission Autolab"
+            url: ""
