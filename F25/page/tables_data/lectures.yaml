@@ -471,8 +471,8 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./document/slides/Diffusion_F25.pdf"
-      # - text: "MediaServices"
-      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Diffusion+Models/1_wwqv6o3e/385611772"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Diffusion/1_wxg6q6b6/385611772"
       - text: "Youtube"
         url: "https://youtu.be/mN3c7_E524w"
     additional_materials: []
@@ -488,10 +488,10 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./document/slides/lec_24_GAN.pdf"
-      # - text: "MediaServices"
-      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Generative+Adversarial+Networks/1_zz1g6o6o/385611772"
-      # - text: "Youtube"
-      #   url: "https://youtu.be/6wS6R7ZJkXI"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Generative+Aversarial+Networks/1_x9fkzov4/385611772"
+      - text: "Youtube"
+        url: "https://youtu.be/6wS6R7ZJkXI"
     additional_materials: []
 
   - number: 25
