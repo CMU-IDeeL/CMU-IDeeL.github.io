@@ -485,7 +485,13 @@ lectures:
     date: "Wednesday,<br> Nov 19"
     topics:
       - "Generative Adversarial Networks"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./document/slides/lec_24_GAN.pdf"
+      # - text: "MediaServices"
+      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Generative+Adversarial+Networks/1_zz1g6o6o/385611772"
+      # - text: "Youtube"
+      #   url: "https://youtu.be/6wS6R7ZJkXI"
     additional_materials: []
 
   - number: 25
