@@ -1,23 +1,5 @@
 # lectures_data.yaml
 lectures:
-  # - number: 0
-  #   date: "Monday,<br> Aug 05"
-  #   topics: # Can be a list of strings or a list of dicts for nested lists
-  #     - "Course Logistics"
-  #     - "Learning Objectives"
-  #     - "Grading"
-  #     - "Deadlines"
-  #   # 'slides_videos' and 'additional_materials' will be lists of link objects
-  #   slides_videos:
-  #     - text: "Youtube"
-  #       url: "https://youtu.be/eMX8WqOdGUs"
-  #   additional_materials:
-  #     - text: "Slides (PDF)"
-  #       url: "./document/slides/Lec-0.Logistics.pdf"
-  #   quiz:
-  #     text: "No Quiz"
-  #     # url: "" # Optional: if there's a link for "No Quiz"
-  #     rowspan: 1 # This quiz entry applies to this row only
   - number: 0
     date: "Monday,<br> Aug 04"
     topics: # Can be a list of strings or a list of dicts for nested lists
@@ -62,9 +44,10 @@ lectures:
       - text: "Hebb: The Organization Of Behaviour"
         url: "https://pure.mpg.de/pubman/item/item_2346268_3/component/file_2346267/Hebb_1949_The_Organization_of_Behavior.pdf"
     quiz:
-      text: "Quiz 1"
+      text: "Quiz 1" # this line does not go below rowspan unlike the assignments.yaml file (also notice there is no "-" before text and rowspan for quiz)
       # url: "https://canvas.cmu.edu/courses/38471/quizzes/115273" # Example if link exists
       rowspan: 2 # This quiz entry spans this row and the next
+      
 
   - number: 2
     date: "Wednesday,<br> Aug 27"
