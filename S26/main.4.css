@@ -82,12 +82,18 @@ code {
     padding-left: 2px;
     padding-right: 2px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .version-icon:visited {
     color: white;
+    text-decoration: none;
 }
 .version-icon:hover {
+    color: white;
+    text-decoration: none;
+}
+.version-icon:active {
     color: white;
     text-decoration: none;
 }
