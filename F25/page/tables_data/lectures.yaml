@@ -497,7 +497,8 @@ lectures:
   - number: 25
     date: "Monday,<br> Nov 24"
     topics:
-      - "Graph Neural Networks (GNNs)"
+      - "Representation Learning"
+      # - "Graph Neural Networks (GNNs)"
     slides_videos: []
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
