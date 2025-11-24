@@ -499,7 +499,13 @@ lectures:
     topics:
       - "Representation Learning"
       # - "Graph Neural Networks (GNNs)"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./document/slides/Representation Learning.pptx.pdf"
+      # - text: "MediaServices"
+      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Representation+Learning/1_zz1e6o6o/385611772"
+      # - text: "Youtube"
+      #   url: "https://youtu.be/3bXwX1xXo1o"
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
       text: "Quiz 13"
