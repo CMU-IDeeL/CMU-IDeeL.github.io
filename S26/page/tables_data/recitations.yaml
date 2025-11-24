@@ -5,691 +5,318 @@ recitations_0:
       - name: "Python Programming + Pytorch"
         topics:
           - id: "0.1"
-            title: "Python + OOP Fundamentals"
+            title: "Python Fundamentals"
             materials:
-              - text: "Python Fundamentals"
-                url: "./document/Recitation_0_Series/0.1/Rec_0_1_Part1_Python_Fundamentals.ipynb"
-              - text: "OOP Fundamentals"
-                url: "./document/Recitation_0_Series/0.1/Rec_0_1_Part2_OOP_Fundamentals.ipynb"
+              - text: "Notebook"
+                url: ""
             videos:
-              - text: "0.1 Python + OOP Fundamentals"
-                url: "https://youtu.be/n16-2COBAaI"
-            authors: "Ishita Gupta,<br> Delphine Nyaboke"
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
           - id: "0.2"
+            title: "Object Oriented Programming (OOP) Fundamentals"
+            materials:
+              - text: "Notebook"
+                url: ""
+            videos:
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.3"
             title: "Notebooks and Conda Environments"
             materials: 
-              - text: "Notebooks & Conda Environments"
-                url: "./document/Recitation_0_Series/0.2/Rec0_2_Env_Ipynb_Slides.pdf"
+              - text: "Notebook"
+                url: ""
             videos: 
-              - text: "Notebooks and Conda Environments"
-                url: "https://www.youtube.com/watch?v=WzeO0FFmmgQ"
-            authors: "Shrey Jain"
-          - id: "0.3"
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.4"
             title: "Numpy Fundamentals"
             materials: 
-              - text: "Numpy Notebook"
-                url: "./document/Recitation_0_Series/0.3/Rec_0_3_NumPy_Fundamentals_F25.ipynb"
+              - text: "Notebook"
+                url: ""
             videos:
-              - text: "Numpy Fundamentals"
-                url: "https://youtu.be/pAVnXfgRJIA"
-            authors: "Sreeharsha Paruchuri,<br> Peter Wauyo"
-          - id: "0.4"
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.5"
             title: "Pytorch"
             materials: 
-              - text: "Pytorch Notebook"
-                url: "./document/Recitation_0_Series/0.4/0_4_Pytorch.ipynb"
-              - text: "Pytorch Slides"
-                url: "./document/Recitation_0_Series/0.4/0_4 PyTorch.pdf"
+              - text: "Notebook"
+                url: ""
+              - text: "Slides"
+                url: ""
             videos: 
-              - text: "Pytorch"
-                url: "https://www.youtube.com/watch?v=F81E7v7xF60"
-            authors: "Ahmed Safwat,<br>Nayesha Gandotra"
-          - id: "0.5"
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.6"
             title: "Tensordot & Einsum"
             materials: 
-              - text: "Tensordot & Einsum Notebook"
-                url: "./document/Recitation_0_Series/0.5/0_5_Tensordot_&_Einsum.ipynb"
+              - text: "Notebook"
+                url: ""
             videos: 
-              - text: "Tensordot & Einsum"
-                url: "https://www.youtube.com/watch?v=uOXd5-uunP0"
-            authors: "Michael Kireeff,<br>Ahmed Alhassan"
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
       - name: "Computational Resources"
         topics:
-          - id: "0.6"
-            title: "Google Colab"
-            materials: 
-              - text: "Google Colab Notebook"
-                url: "./document/Recitation_0_Series/0.6/0_6_Google_Colab.ipynb"
-            videos: 
-              - text: "Google Colab"
-                url: "https://youtu.be/N9QHfIuNQ7Q"
-            authors: "Shubham Kachroo,<br>Sophia Wang"
           - id: "0.7"
-            title: "Google Cloud Platform"
-            materials: 
-              - text: "Google Cloud Platform Notebook"
-                url: "./document/Recitation_0_Series/0.7/0_7_Google_Cloud_Platform_VM_Setup.ipynb"
-              - text: "Google Cloud Platform Slides"
-                url: "./document/Recitation_0_Series/0.7/11-785 GCP.pdf"
-            videos: 
-              - text: "Google Cloud Platform"
-                url: "https://youtu.be/w5oMLMObau0"
-            authors: "Alexander Moker,<br>Rutvik Joshi"
-          - id: "0.8"
-            title: "AWS"
-            materials: 
-              - text: "AWS Notebook"
-                url: "./document/Recitation_0_Series/0.8/0_8_AWS.ipynb"
-              - text: "AWS Slides"
-                url: "./document/Recitation_0_Series/0.8/11-785_0.8 AWS setup.pdf"
-            videos: 
-              - text: "AWS"
-                url: "https://youtu.be/MIw4VrwY-fM"
-            authors: "Tanghang Elvis Tata,<br>Rutvik Joshi"
-          - id: "0.9"
-            title: "Kaggle"
-            materials: 
-              - text: "Kaggle Notebook"
-                url: "./document/Recitation_0_Series/0.9/0_9_Kaggle.ipynb"
-              - text: "Kaggle Slides"
-                url: "./document/Recitation_0_Series/0.9/kaggle 101 - 11-785.pptx"
-            videos: 
-              - text: "Kaggle"
-                url: "https://youtu.be/AD5S9_GMxQ8"
-            authors: "Tanghang Elvis Tata,<br>Kipngeno Koech"
-          - id: "0.10"
-            title: "PSC"
-            materials: 
-              - text: "PSC Slides"
-                url: "./document/Recitation_0_Series/0.10/F2025_Rec0_PSC_Slides.pptx"
-              - text: "PSC User Guide"
-                url: "https://docs.google.com/document/d/19ltrwRXfMzpbRPQsmXlVTpqab6NegfSD9Fj4MoLu5DA/view?tab=t.0"
-              - text: "PSC Notebook"
-                url: "./document/Recitation_0_Series/0.10/PSC-demo.ipynb"
-            videos: 
-              - text: "PSC"
-                url: "https://www.youtube.com/watch?v=MyERRQH8Gg0"
-              - text: "PSC User Guide"
-                url: "https://www.youtube.com/watch?v=owtawrI-_lQ"
-            authors: "John Liu,<br>Shrey Jain"
-      - name: "Data Handling and Processing"
-        topics:
-          - id: "0.11"
-            title: "Datasets"
-            materials: 
-              - text: "Part 1"
-                url: "./document/Recitation_0_Series/0.11/0_11_Datasets_Part_1.ipynb"
-              - text: "Part 2"
-                url: "./document/Recitation_0_Series/0.11/0_11_Datasets_Part_1.ipynb"
-            videos: 
-              - text: "Datasets"
-                url: "https://youtu.be/fp7Uodac3uE"
-            authors: "Mengchun Zhang,<br>Mona Aman"
-          - id: "0.12"
-            title: "Data Loaders"
-            materials:
-              - text: "Dataloaders"
-                url: "./document/Recitation_0_Series/0.12/0_12_Dataloaders.ipynb"
-            videos: 
-              - text: "Data Loaders"
-                url: "https://www.youtube.com/watch?v=Ejp_fU7Q0dc"
-            authors: "Mengchun Zhang,<br>Mona Aman"
-          - id: "0.13"
-            title: "Data Preprocessing"
-            materials: 
-              - text: "Data Preprocessing Part 1"
-                url: "./document/Recitation_0_Series/0.13/0_13_Data_Preprocessing_Part_1.ipynb"
-              - text: "Data Preprocessing Part 2"
-                url: "./document/Recitation_0_Series/0.13/0_13_Data_Preprocessing_Part_2.ipynb"
-              - text: "Data Preprocessing Slides"
-                url: "./document/Recitation_0_Series/0.13/Data Preprocessing.pptx.pdf"
-            videos: 
-              - text: "Data Preprocessing"
-                url: "https://www.youtube.com/watch?v=-GdZyvAzch8"
-            authors: "Mengchun Zhang,<br>Mona Aman"
-      - name: "Debugging & Problem Solving"
-        topics:
-          - id: "0.14"
-            title: "Debugging"
-            materials: 
-              - text: "Debugging"
-                url: "./document/Recitation_0_Series/0.14/PdbExample.py"
-            videos: 
-              - text: "Debugging"
-                url: "https://www.youtube.com/watch?v=P4qXKN8XzZ0"
-            authors: "John Liu,<br>Yuzhou Wang"
-          - id: "0.15"
-            title: "What to Do When Struggling"
-            materials: 
-              - text: "What to Do When Struggling"
-                url: "./document/Recitation_0_Series/0.15/FA25 IDL REc 0.15.pdf"
-            videos: 
-              - text: "What to Do When Struggling"
-                url: "https://www.youtube.com/watch?v=DCBnes1tr5Q"
-            authors: "Aisha Opaluwa,<br>Nayesha Gandotra"
-      - name: "HWs and Project Workflow Management"
-        topics:
-          - id: "0.16"
-            title: "Workflow of HWs"
-            materials: 
-              - text: "Workflow of HWs"
-                url: "./document/Recitation_0_Series/0.16/0_16_Workflow_of_HWs.ipynb"
-            videos: 
-              - text: "Workflow of HWs"
-                url: "https://www.youtube.com/watch?v=SUYJ8gUZIzA"
-            authors: "Carmel Prosper,<br>Nishoak Kosaraju"
-          - id: "0.17"
             title: "GitHub"
             materials: 
-              - text: "GitHub"
-                url: "./document/Recitation_0_Series/0.17/IDL_F25_Recitation_0.17_GitHub.pptx.pdf"
+              - text: "Notebook"
+                url: ""
             videos: 
-              - text: "GitHub"
-                url: "https://www.youtube.com/watch?v=X2j46IyODEw"
-            authors: "Shubham Kachroo,<br>Miya Sylvester"
-          - id: "0.18"
-            title: "Flow of the Project"
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.8"
+            title: "Google Colab"
             materials: 
-              - text: "Flow of the project"
-                url: "./document/Recitation_0_Series/0.18/RECITATION 0.18_ flow of the project.pdf"
+              - text: "Notebook"
+                url: ""
             videos: 
-              - text: "Flow of the Project"
-                url: "https://www.youtube.com/watch?v=TJWKganEqCQ"
-            authors: "Massa Baali,<br>Kipngeno Koech"
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.9"
+            title: "Google Cloud Platform"
+            materials: 
+              - text: "Notebook"
+                url: ""
+              - text: "Slides"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.10"
+            title: "Amazon Web Services (AWS)"
+            materials: 
+              - text: "Notebook"
+                url: ""
+              - text: "Slides"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.11"
+            title: "Kaggle"
+            materials: 
+              - text: "Notebook"
+                url: ""
+              - text: "Slides"
+                url: "" 
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.12"
+            title: "PSC - I (How to connect)"
+            materials: 
+              - text: "Slides"
+                url: ""
+              - text: "User Guide"
+                url: ""
+              - text: "Notebook"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.13"
+            title: "PSC - II (How to get project resources)"
+            materials: 
+              - text: "Slides"
+                url: ""
+              - text: "User Guide"
+                url: ""
+              - text: "Notebook"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+      - name: "Data Handling and Processing"
+        topics:
+          - id: "0.14"
+            title: "Datasets"
+            materials: 
+              - text: "Part 1 Notebook"
+                url: ""
+              - text: "Part 2 Notebook"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.15"
+            title: "Dataloaders"
+            materials:
+              - text: "Notebook"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.16"
+            title: "Data Preprocessing"
+            materials: 
+              - text: "Part 1Notebook"
+                url: ""
+              - text: "Part 2 Notebook"
+                url: ""
+              - text: "Slides"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+      - name: "Debugging & Problem Solving"
+        topics:
+          - id: "0.17"
+            title: "Weights and Biases (WandB)"
+            materials: 
+              - text: "Notebook"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.18"
+            title: "Debugging"
+            materials: 
+              - text: "Notebook"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.19"
+            title: "What to Do When Struggling"
+            materials: 
+              - text: "Document"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
       - name: "Algorithmic Techniques"
         topics:
-          - id: "0.19"
+          - id: "0.20"
             title: "Losses Part 1"
             materials: 
               - text: "Notebook"
-                url: "./document/Recitation_0_Series/0.19/0_19_Losses_Part_1.ipynb"
+                url: ""
               - text: "Slides"
-                url: "./document/Recitation_0_Series/0.19/F25_Rec0_Losses.pdf"
+                url: ""
             videos: 
-              - text: "Losses Part 1"
-                url: "https://www.youtube.com/watch?v=CFwuBufTVPE&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=19"
-            authors: "Massa Baali,<br>Sreeharsha Paruchuri"
-          - id: "0.20"
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.21"
             title: "Losses Part 2"
             materials: 
               - text: "Slides"
-                url: "./document/Recitation_0_Series/0.20/Loss Functions 2.0.pdf"
+                url: ""
             videos: 
-              - text: "Losses Part 2"
-                url: "https://www.youtube.com/watch?v=yTQSvcuRHro&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=20"
-            authors: "Massa Baali,<br>Sreeharsha Paruchuri"
-          - id: "0.21"
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.22"
             title: "Block Processing"
             materials: 
               - text: "Notebook"
-                url: "./document/Recitation_0_Series/0.21/0_21_Block_Processing.ipynb"
+                url: ""
               - text: "Slides"
-                url: "./document/Recitation_0_Series/0.21/1512.03385v1.pdf"
+                url: ""
             videos: 
-              - text: "Block Processing"
-                url: "https://www.youtube.com/watch?v=fCZlE1ZmJH0&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=21"
-            authors: "Alexander Moker,<br>Sophia Wang"
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
       - name: "Model Logistics"
         topics:
-          - id: "0.22"
+          - id: "0.23"
             title: "Pipeline"
             materials: 
               - text: "Slides"
-                url: "./document/Recitation_0_Series/0.22/Presentation - Deep Learning Pipelines.pdf"
+                url: ""
             videos: 
-              - text: "Pipeline"
-                url: "https://www.youtube.com/watch?v=gAWGM4UfqZU&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=22"
-            authors: "Peter Wauyo,<br>Delphine Nyaboke"
-          - id: "0.23"
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.24"
             title: "Distributed Training"
             materials: 
               - text: "Notebook"
-                url: "./document/Recitation_0_Series/0.23/0_23_Distributed_Training.ipynb"
+                url: ""
             videos: 
-              - text: "Distributed Training"
-                url: "https://www.youtube.com/watch?v=ZEqSgLc0Pws&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=23"
-            authors: "Yuzhou Wang,<br>Ahmed Alhassan"
-          - id: "0.24"
-            title: "Saving & Loading Model"
-            materials: 
-              - text: "Notebook"
-                url: "./document/Recitation_0_Series/0.24/0_24_Checkpointing.ipynb"
-              - text: "Slides"
-                url: "./document/Recitation_0_Series/0.24/IDL Recitation 0.24.pptx.pdf"
-            videos: 
-              - text: "Saving & Loading Model"
-                url: "https://youtu.be/-TCH0DbUEKM?si=sc9yDp1P7OrvMpcE"
-            authors: "Mengchun Zhang,<br>Nishoak Kosaraju"
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
           - id: "0.25"
-            title: "How to read research papers"
+            title: "Saving & Loading Models"
             materials: 
-              - text: "Slides"
-                url: "./document/Recitation_0_Series/0.25/Recitation0.25_How_to_read_a_research_paper.pdf"
-            videos: 
-              - text: "How to read research papers"
-                url: "https://www.youtube.com/watch?v=mwxfmEMAMms&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=25"
-            authors: "Massa Baali,<br>Ishita Gupta"
-          - id: "0.26"
-            title: "Introduction to WandB"
-            materials: 
-              - text: "Slides"
-                url: "./document/Recitation_0_Series/0.26/Recitation 0.26 - WandB Tutorial.pdf"
               - text: "Notebook"
-                url: "./document/Recitation_0_Series/0.26/0_26_WandB.ipynb"
+                url: ""
+              - text: "Slides"
+                url: ""
             videos: 
-              - text: "Introduction to WandB"
-                url: "https://www.youtube.com/watch?v=FL62gZ6P5Pw&list=PLp-0K3kfddPw2D5CeA09lsx_oNy9E-IoB&index=26"
-            authors: "Michael Kireeff,<br>Aisha Opaluwa"
-      - name: "Cheating" # Last example group
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+      - name: "HWs and Project Workflow Management"
         topics:
-          - id: "0.27" # Example, ensure IDs are unique if needed for other purposes
-            title: ""
-            materials: []
-            videos:
-              - text: "Link"
-                url: "https://youtu.be/WEUeQfv6lpY?si=VIEfvap7jycxOb0R"
-            authors: "Andy Ye,<br> Eman Ansar, <br> Dheeraj Mohandas Pai"
+          - id: "0.26"
+            title: "Workflow of HW - Part 1"
+            materials: 
+              - text: "Notebook"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.27"
+            title: "Workflow of HWs - Part 2s"
+            materials: 
+              - text: "Notebook"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
+          - id: "0.28"
+            title: "Workflow of Project"
+            materials: 
+              - text: "Slides"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: ""
+            authors: " TA Name"
 
 recitations:
   - title: "Lab 1"
-    date: "Friday,<br>Aug 29th"
+    date: ""
     date_rowspan: 1
-    topics:
-      - "PSC"
-      - "Your First MLP"
-    materials:
-      - text: "Notebook"
-        url: "https://drive.google.com/file/d/1Mj9rNkSpjutHJMjiHG-BNBDWm8cewkO3/view?usp=sharing"
-    videos:
-      - text: "Youtube Video"
-        url: "https://youtu.be/2bkVMagPHnc"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Lab+1/1_yd2d6f0v/385611772"
-    videos_rowspan: 1
-    authors: "Rutvik Joshi,<br> Shravanth Srinivas"
-    authors_rowspan: 1
-
-  - title: "Hackathon 1 + HW1 Bootcamp"
-    date: "Saturday,<br>Aug 30th"
-    date_rowspan: 1
-    topics:
-      - "HW1P1"
-      - "HW1P2"
+    topics: [] 
     materials: []
-    videos:
-    - text: "Youtube Video"
-      url: "https://youtu.be/0H0z8QpwZqw"
-    - text: "MediaServices"
-      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Lab+1/1_yd2d6f0v/385611772"
-    authors: "Sophia Wang,<br> Shravanth Srinivas,<br> Nishoak Kosaraju"
-    authors_rowspan: 1
-
-  - title: "Hackathon 2 + Lab 2"
-    date: "Saturday,<br> Sep. 6th"
-    date_rowspan: 1
-    topics:
-      - "Debugging"
-    materials:
-    - text: "Notebook"
-      url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Flz0h29md6a176d%2F8d733f6356201d117fd55f3991f74383c536946debd616595de57786d7139816%2FLab_2_Student_Notebook.ipynb"
-    - text: "Data"
-      url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Flz0h29md6a176d%2F07a3d9c9edc53a6c24acbc14b07f0d41405c3d36cf89654174cbfb10275d45d1%2Fdata.zip"
-    videos:
-    - text: "Youtube Video"
-      url: "https://youtu.be/pFIQC5Lk9Eg?si=bmxLiygMBurZ5I53"
-    - text: "MediaServices"
-      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Lab+2/1_mdba1ucm/385611772"
-    videos_rowspan: 1
-    authors: "Yuzhou Wang,<br> Aisha Opaluwa"
-    authors_rowspan: 1
-
-  - title: "Lab 3"
-    date: "Friday,<br> Sep. 12th"
-    date_rowspan: 1
-    topics:
-      - "Ablations"
-      - "Hyperparameter Tuning Methods"
-      - "Normalization"
-    materials:
-      - text: "Notebook"
-        url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Flz0h29md6a176d%2Fe14dd45e0d71facfa1c48fad4b62ace73fc22bf32c44b8667c209150b11616bf%2FSTUDENT_IDL_S25_Lab_3_Network_Optimizations_%282%29.ipynb"
-      - text: "Data"
-        url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Flz0h29md6a176d%2F12db65ad3e8018b029e6b6805531ae613d9b926334d1748a6ca148cab4117600%2Fimage_data.zip"
     videos: []
     videos_rowspan: 1
-    authors: "Aisha Opaluwa,<br> Yuanyi Gao"
+    authors: ""
     authors_rowspan: 1
 
-  - title: "Hackathon 3"
-    date: "Saturday,<br> Sep. 13th"
+  - title: "Hackathon 1 <br> HW1 Bootcamp"
+    date: ""
     date_rowspan: 1
     topics: []
     materials: []
-    # videos: Spans from previous row
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Lab 4"
-    date: "Friday,<br> Sep. 19th"
-    date_rowspan: 1
-    topics:
-      - "Computing Derivatives and Autograd"
-    materials: 
-      - text: "Slides"
-        url: "https://drive.google.com/file/d/1pesvA54bsELwcN8rF_zIEMhfMjrF5jaV/view?usp=sharing"
-    videos: 
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Lab+4/1_vcyldqrp/385611772"
-      - text: "Youtube"
-        url: "https://youtu.be/wmp6skIlI24"
-    videos_rowspan: 1
-    authors: "Mengchun Zhang,<br> Haojia (Judy) Sun"
-    authors_rowspan: 1
-
-  - title: "Hackathon 4 + HW2 Bootcamp"
-    date: "Saturday,<br> Sep. 20th"
-    date_rowspan: 1
-    topics:
-      - "HW 1 Debrief & Deployment"
-      - "HW2P1"
-      - "HW2P2"
-    materials: []
-    videos: 
-      - text: "Youtube"
-        url: "https://youtu.be/wmp6skIlI24"
-    videos_rowspan: 1
-    authors: "Kipngeno Koech,<br> Mengchun Zhang,<br> Yuzhou Wang,<br> Haojia (Judy) Sun,<br> Chaeeun Lee"
-    authors_rowspan: 1
-
-  - title: "Lab 5"
-    date: "Friday,<br> Sep. 26th"
-    date_rowspan: 1
-    topics:
-      - "CNN: Basics and Backpropagation"
-    materials: 
-      - text: "Slides"
-        url: "https://docs.google.com/presentation/d/1-sCEMxjYupmHLecGIi-qzIfF-vUx-uUQ/edit?usp=sharing&ouid=115282367731373359774&rtpof=true&sd=true"
-      - text: "Notebook"
-        url: "https://drive.google.com/file/d/1vKez-No8_ZRc4H8tnpr_gEfnRQiDyhOB/view?usp=sharing"
-    videos: 
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Lab+5/1_4u6jay6o/385611772"
-    videos_rowspan: 1
-    authors: "Sophia Wang, <br>Shravanth Srinivas, <br>Ahmed Alhassan, <br>Sreeharsha Paruchuri"
-    authors_rowspan: 1
-
-  - title: "Hackathon 5"
-    date: "Saturday,<br> Sep. 27th"
-    date_rowspan: 1
-    topics: []
-    materials: []
-    # videos: Spans from previous row
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Lab 6"
-    date: "Friday,<br> Oct. 3rd"
-    date_rowspan: 1
-    topics:
-      - "CNN Classification and Verification"
-    materials: []
-    videos: 
-      - text: "Youtube Video"
-        url: "https://youtu.be/EZRl1tI43MQ"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Lab+6+Face+Classifciation+and+Verification/1_a7ares75/385611772"
-    videos_rowspan: 1
-    authors: "Dhivya Sreedhar,<br>Maxime Manzi"
-    authors_rowspan: 1
-
-  - title: "Hackathon 6"
-    date: "Saturday,<br> Oct. 4th"
-    date_rowspan: 1
-    topics: []
-    materials: []
-    # videos: Spans from previous row
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Guided Project Bootcamp"
-    date: "Saturday,<br> Oct. 4th"
-    date_rowspan: 1
-    topics:
-      - "Project Overview"
-      - "Project Ideas"
-      - "Project Workflow"
-    materials:
-      - text: "Zoom Recording"
-        url: "https://cmu.zoom.us/rec/share/pwXXiHzZRT5Wl6IftUmrGDM6IuCjH0x1x0_E1oTQ65PZgew95fmJpPNLKaYRZOpu.Nwqm9MLzok7OWhaT"
-      - text: "Passcode: QF4@U6gb"
-        url: ""
-    # videos: Spans from previous row
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Lab 7"
-    date: "Friday,<br> Oct. 10th"
-    date_rowspan: 1
-    topics:
-      - "RNN Basics"
-    materials:
-      - text: "Notebook"
-        url: "https://colab.research.google.com/drive/16-JxRbmFDhO467mJYYKBewPyeR0sHm_R?usp=sharing"
-      - text: "Slides"
-        url: "https://docs.google.com/presentation/d/1QUX3FR3S_iB2eLqdx_IoUItiafH5ZRCp/edit?usp=sharing&ouid=103937116218746416453&rtpof=true&sd=true"
     videos:
-      - text: "Youtube Video"
-        url: "https://youtu.be/HxPRmCjw1rs?si=G0PohO_slqC9VWzG"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Lab+7+-+RNN+Basics/1_fah9t7m3/385611772"
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Hackathon 7 + HW3 Bootcamp"
-    date: "Saturday,<br> Oct. 11th"
-    date_rowspan: 1
-    topics:
-      - "HW3P1"
-      - "HW3P2"
-    materials: []
-    videos: []
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Lab 8 (Pre-Recorded)"
-    date: "Friday,<br> Oct. 17th"
-    date_rowspan: 1
-    topics:
-      - "Kaggle Competitions"
-      - "Pre-Trained Models"
-    materials: 
-      - text: "Slides"
-        url: "https://docs.google.com/presentation/d/1b1CbJZkVcn5FSTgyIzYDHIYRG296DUVA/edit?usp=sharing&ouid=115282367731373359774&rtpof=true&sd=true"
-    videos: 
-      - text: "Youtube"
-        url: "https://youtu.be/aaQ6Tld-iGg?si=2eZf8MgE6kqgLS5q"
-    videos_rowspan: 1
-    authors: "Chaeeun Lee,<br> Nayesha Gandotra"
-    authors_rowspan: 1
-
-  - title: "Hackathon 8"
-    date: "Saturday,<br> Oct. 18th"
-    date_rowspan: 1
-    topics:
-      - "HW2 Debrief & Deployment"
-    materials: []
-    videos: []
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Lab 9"
-    date: "Friday,<br> Oct. 24th"
-    date_rowspan: 1
-    topics:
-      - "Connectionist Temporal Classification"
-    materials:
-      - text: "Notebook"
-        url: "https://colab.research.google.com/drive/1gmClFCHjchxBxcj5K1EahMR-a5CVhoR6?usp=sharing"
-      - text: "Slides"
-        url: "https://docs.google.com/presentation/d/1o9AKzBLVn_1qZ1NS9MBCKPYmiH8ZwIeovuX0tHGbyYk/edit?usp=sharing"
-    videos:
-      - text: "Youtube Video"
-        url: "https://www.youtube.com/watch?v=WmKtHj8mGmE"
-      - text: "MediaServices"
-        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Lab+9/1_xct58az8/385611772"
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Hackathon 9"
-    date: "Saturday,<br> Oct. 25th"
-    date_rowspan: 1
-    topics: []
-    materials: []
-    videos: []
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Lab 10"
-    date: "Friday,<br> Oct 31st"
-    date_rowspan: 1
-    topics:
-      - "Attention"
-    materials: []
-    videos:
-    - text: "Youtube Video"
-      url: "https://www.youtube.com/watch?v=KIKYB-MAgRE"
-    - text: "MediaServices"
-      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-+Lab+10/1_6qq3s1qv/385611772"
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Hackathon 10"
-    date: "Saturday,<br> Nov. 1st"
-    date_rowspan: 1
-    topics: []
-    materials: []
-    videos: []
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Lab 11"
-    date: "Friday,<br> Nov. 7th"
-    date_rowspan: 1
-    topics:
-      - "Transformers"
-    materials: []
-    videos:
-    - text: "Youtube Video"
-      url: "https://www.youtube.com/watch?v=EwxGcXrP_CI"
-    - text: "MediaServices"
-      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Lab+11/1_sjz9pjbo/385611772"
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Hackathon 11 + HW4 Bootcamp"
-    date: "Saturday,<br> Nov. 8th"
-    date_rowspan: 1
-    topics:
-      - "HW3 Debrief & Deployment"
-      - "HW4P1"
-      - "HW4P2"
-    materials: []
-    videos:
-    - text: "Youtube Video"
-      url: "https://www.youtube.com/watch?v=2G8AL9TgcVk"
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Lab 12"
-    date: "Friday,<br> Nov. 14th"
-    date_rowspan: 1
-    topics:
-      - "VAE"
-    materials: []
-    videos: []
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Hackathon 12"
-    date: "Saturday,<br> Nov. 15th"
-    date_rowspan: 1
-    topics: []
-    materials: []
-    videos: []
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Lab 13"
-    date: "Friday,<br> Nov. 21st"
-    date_rowspan: 1
-    topics:
-      - "NF and Stable Diffusion"
-    materials: []
-    videos: []
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Hackathon 13"
-    date: "Saturday,<br> Nov. 22nd"
-    date_rowspan: 1
-    topics: []
-    materials: []
-    videos: []
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Lab 14 (Pre-Recorded)"
-    date: "Friday,<br> Nov. 28th"
-    date_rowspan: 1
-    topics:
-      - "GAN"
-    materials: []
-    videos: []
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Hackathon 14"
-    date: "Saturday,<br> Nov. 29th"
-    date_rowspan: 1
-    topics: []
-    materials: []
-    videos: []
-    videos_rowspan: 1
-    authors: ""
-    authors_rowspan: 1
-
-  - title: "Lab 15"
-    date: "Friday,<br> Dec. 5th"
-    date_rowspan: 1
-    topics:
-      - "Graph Neural Networks"
-    materials: [] # Data cut off in the prompt
-    videos: [] # Data cut off in the prompt
-    videos_rowspan: 1
-    authors: "" # Data cut off in the prompt
-    authors_rowspan: 1
-
-  - title: "Hackathon 15"
-    date: "Saturday,<br> Dec. 6th"
-    date_rowspan: 1
-    topics: 
-      - "HW4 Debrief & Deployment"
-    materials: []
-    videos: []
-    videos_rowspan: 1
+    - text: ""
+      url: ""
+    - text: ""
+      url: ""
     authors: ""
     authors_rowspan: 1
