@@ -635,8 +635,14 @@ recitations:
     date_rowspan: 1
     topics:
       - "NF and Stable Diffusion"
-    materials: []
-    videos: []
+    materials:
+      - text: "Notebook"
+        # url: "https://colab.research.google.com/drive/1pXoJYJ1jv3b0k1F6Yk9Z2Y5b3F6Yz3L4?usp=sharing"
+    videos:
+      - text: "Youtube Video"
+        # url: "https://www.youtube.com/watch?v=Y6ljFaKRTrI"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Lab+13/1_1taooi95/385611772"
     videos_rowspan: 1
     authors: ""
     authors_rowspan: 1

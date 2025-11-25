@@ -491,7 +491,7 @@ lectures:
       - text: "MediaServices"
         url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Generative+Aversarial+Networks/1_x9fkzov4/385611772"
       - text: "Youtube"
-        url: "https://youtu.be/6wS6R7ZJkXI"
+        url: " https://youtu.be/wrwYoiqyn68"
     additional_materials: []
 
   - number: 25
@@ -502,10 +502,10 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./document/slides/Representation Learning.pptx.pdf"
-      # - text: "MediaServices"
-      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Representation+Learning/1_zz1e6o6o/385611772"
-      # - text: "Youtube"
-      #   url: "https://youtu.be/3bXwX1xXo1o"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-A+Unifying+Framework+for+Reprsentation+Learning/1_aja8iwon/385611772"
+      - text: "Youtube"
+        url: "https://youtu.be/B7hu_r3TgP0"
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
       text: "Quiz 13"
