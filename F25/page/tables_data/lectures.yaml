@@ -520,8 +520,8 @@ lectures:
         url: "./document/slides/Graph-Neural-Networks.pptx.pdf"
       # - text: "MediaServices"
       #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Graph+Neural+Networks/1_zz1t3r4o/385611772"
-      # - text: "Youtube"
-      #   url: "https://youtu.be/3xHkZbY9m3o"
+      - text: "Youtube"
+        url: " https://youtu.be/JVeCYzQAO-E"
     additional_materials: []
     # No quiz field as it spans from the previous row
 
