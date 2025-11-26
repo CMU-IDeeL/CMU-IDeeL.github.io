@@ -525,7 +525,7 @@ lectures:
     additional_materials: []
     # No quiz field as it spans from the previous row
 
-  - number: 26
+  - number: 27
     date: "Monday,<br> Dec 01"
     topics:
       - "Hopfield Networks"
@@ -535,7 +535,7 @@ lectures:
       text: "Quiz 14"
       rowspan: 2
 
-  - number: 27
+  - number: 28
     date: "Wednesday,<br> Dec 03"
     topics:
       - "Boltzmann Machines"
