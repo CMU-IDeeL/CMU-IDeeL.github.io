@@ -529,7 +529,13 @@ lectures:
     date: "Monday,<br> Dec 01"
     topics:
       - "Hopfield Networks"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./document/slides/lecture_25_Hopfield_F25.pdf"
+      # - text: "MediaServices"
+      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Hopfield+Networks/1_wwk1j3yo/385611772"
+      # - text: "Youtube"
+      #   url: "https://youtu.be/6k0YhXoX1eI"
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
       text: "Quiz 14"
