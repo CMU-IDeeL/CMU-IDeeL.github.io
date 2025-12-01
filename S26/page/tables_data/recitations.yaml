@@ -12,7 +12,7 @@ recitations_0:
             videos:
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: " Bradley Warren"
           - id: "0.2"
             title: "Object Oriented Programming (OOP) Fundamentals"
             materials:
@@ -21,27 +21,27 @@ recitations_0:
             videos:
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: " Ron Sarma"
           - id: "0.3"
-            title: "Notebooks and Conda Environments"
+            title: "Numpy Fundamentals"
             materials: 
               - text: "Notebook"
                 url: ""
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Miya Sylvester"
           - id: "0.4"
-            title: "Numpy Fundamentals"
+            title: "Pytorch"
             materials: 
               - text: "Notebook"
                 url: ""
             videos:
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Manigandan Ramadasan"
           - id: "0.5"
-            title: "Pytorch"
+            title: "Notebooks and Conda Environments"
             materials: 
               - text: "Notebook"
                 url: ""
@@ -50,7 +50,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Yabsera Yemanberhan"
           - id: "0.6"
             title: "Tensordot & Einsum"
             materials: 
@@ -59,7 +59,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Felix Hirwa Nshuti"
       - name: "Computational Resources"
         topics:
           - id: "0.7"
@@ -70,7 +70,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Malihah Rahaman <br> Khushee"
           - id: "0.8"
             title: "Google Colab"
             materials: 
@@ -79,7 +79,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Olivier Kwizera"
           - id: "0.9"
             title: "Google Cloud Platform"
             materials: 
@@ -90,7 +90,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Yabsera Yemanberhan"
           - id: "0.10"
             title: "Amazon Web Services (AWS)"
             materials: 
@@ -101,7 +101,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Anurag Aryal"
           - id: "0.11"
             title: "Kaggle"
             materials: 
@@ -112,7 +112,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Delphine Nyaboke"
           - id: "0.12"
             title: "PSC - I (How to connect)"
             materials: 
@@ -125,7 +125,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "En Zheng"
           - id: "0.13"
             title: "PSC - II (How to get project resources)"
             materials: 
@@ -138,7 +138,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "En Zheng"
       - name: "Data Handling and Processing"
         topics:
           - id: "0.14"
@@ -151,7 +151,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Mugur Preda"
           - id: "0.15"
             title: "Dataloaders"
             materials:
@@ -160,7 +160,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Yixiong Fang"
           - id: "0.16"
             title: "Data Preprocessing"
             materials: 
@@ -173,7 +173,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Bradley Warren"
       - name: "Debugging & Problem Solving"
         topics:
           - id: "0.17"
@@ -184,7 +184,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Akshara Kanna"
           - id: "0.18"
             title: "Debugging"
             materials: 
@@ -193,7 +193,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Puru Samal"
           - id: "0.19"
             title: "What to Do When Struggling"
             materials: 
@@ -202,7 +202,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Akshara Kanna"
       - name: "Algorithmic Techniques"
         topics:
           - id: "0.20"
@@ -215,7 +215,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Mengchun Zhang"
           - id: "0.21"
             title: "Losses Part 2"
             materials: 
@@ -224,7 +224,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: " Madhavi Gulavani"
           - id: "0.22"
             title: "Block Processing"
             materials: 
@@ -235,7 +235,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Pengyu Chang"
       - name: "Model Logistics"
         topics:
           - id: "0.23"
@@ -246,7 +246,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Yixiong Fang"
           - id: "0.24"
             title: "Distributed Training"
             materials: 
@@ -255,7 +255,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Felix Hirwa Nshuti"
           - id: "0.25"
             title: "Saving & Loading Models"
             materials: 
@@ -266,7 +266,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Floride Tuyisenge"
       - name: "HWs and Project Workflow Management"
         topics:
           - id: "0.26"
@@ -277,7 +277,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Euijin Hong"
           - id: "0.27"
             title: "Workflow of HWs - Part 2s"
             materials: 
@@ -286,7 +286,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Pengyu Chang"
           - id: "0.28"
             title: "Workflow of Project"
             materials: 
@@ -295,7 +295,7 @@ recitations_0:
             videos: 
               - text: "Video"
                 url: ""
-            authors: " TA Name"
+            authors: "Ahmed Issah"
 
 recitations:
   - title: "Lab 1"
