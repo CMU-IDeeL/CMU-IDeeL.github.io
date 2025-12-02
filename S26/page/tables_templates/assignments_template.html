@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="table-responsive">
+        <table id="deadlines" class="table table-bordered" style="vertical-align: middle">
+            <thead>
+                <tr>
+                    <th style="text-align: center;">Assignment</th>
+                    <th style="text-align: center;">Release Date (EST)</th>
+                    <th style="text-align: center;">Due Date (EST)</th>
+                    <th style="text-align: center;">Related Materials / Links</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for group in data.assignment_groups %}
+                {% for assignment in group.assignments %}
+                <tr>
+                    <td style="vertical-align: middle; text-align: center;">{{ assignment.name }}</td>
+                    {% if loop.first %} {# loop refers to the inner assignments loop #}
+                    <td style="vertical-align: middle; text-align: center;" rowspan="{{ group.assignments | length }}">{{ group.release_date | safe }}</td>
+                    {% endif %}
+
+                    {% if assignment.due_date %}
+                    <td style="vertical-align: middle; text-align: center;" rowspan="{{ assignment.due_date_rowspan | default(1) }}">{{ assignment.due_date | safe }}</td>
+                    {% endif %}
+                    <td>
+                        <p> {# Keeping
+                        <p> tag as in original if needed, otherwise can remove #}
+                            {% for item in assignment.materials %}
+                            <a href="{{ item.url }}" target="_blank">{{ item.text }}</a>{% if not loop.last %}<br>{%
+                            endif %}
+                            {% endfor %}
+                        </p>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </div>
+</body>
+
+</html>
