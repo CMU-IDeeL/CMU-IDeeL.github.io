@@ -534,8 +534,8 @@ lectures:
         url: "./document/slides/lecture_25_Hopfield_F25.pdf"
       # - text: "MediaServices"
       #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Hopfield+Networks/1_wwk1j3yo/385611772"
-      # - text: "Youtube"
-      #   url: "https://youtu.be/6k0YhXoX1eI"
+      - text: "Youtube"
+        url: "https://www.youtube.com/watch?v=V4coYgcdIuE"
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
       text: "Quiz 14"
@@ -545,6 +545,12 @@ lectures:
     date: "Wednesday,<br> Dec 03"
     topics:
       - "Boltzmann Machines"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./document/slides/lecture_26_BM_F25.pdf"
+      # - text: "MediaServices"
+      #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Boltzmann+Machines/1_iuuoz7o3/385611772"
+      # - text: "Youtube"
+      #   url: "https://www.youtube.com/watch?v=1vX0pXWWx1M"
     additional_materials: []
     # No quiz field as it spans from the previous row
