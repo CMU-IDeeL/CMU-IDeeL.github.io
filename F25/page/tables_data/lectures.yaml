@@ -550,7 +550,7 @@ lectures:
         url: "./document/slides/lecture_26_BM_F25.pdf"
       # - text: "MediaServices"
       #   url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning%2C+Fall+2025+-Boltzmann+Machines/1_iuuoz7o3/385611772"
-      # - text: "Youtube"
-      #   url: "https://www.youtube.com/watch?v=1vX0pXWWx1M"
+      - text: "Youtube"
+        url: "https://youtu.be/WkLKBkozoII"
     additional_materials: []
     # No quiz field as it spans from the previous row
