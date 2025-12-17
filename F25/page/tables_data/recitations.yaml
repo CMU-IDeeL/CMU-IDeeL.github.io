@@ -663,7 +663,11 @@ recitations:
     topics:
       - "GAN"
     materials: []
-    videos: []
+    videos:
+      - text: "Youtube Video"
+        url: "https://www.youtube.com/watch?v=Mynuf_KFusc&pp=ygURY211IGRlZXAgbGVhcm5pbmc%3D"
+      - text: "MediaServices"
+        url: " https://mediaservices.cmu.edu/channel/Introduction%2Bto%2BDeep%2BLearning_Fall%2B2025/385611772"
     videos_rowspan: 1
     authors: ""
     authors_rowspan: 1
