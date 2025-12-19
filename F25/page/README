@@ -1,5 +1,15 @@
 In this folder "page" there is 3 main html files general_logistics.html, lectures.html, syllabus.html
 
+**Important: Do not work directly on the master branch.**
+
+Before making any changes, please create and checkout a new branch:
+
+```sh
+git checkout -b your-feature-branch
+```
+
+Replace `your-feature-branch` with a descriptive name for your work. Always submit changes via a pull request to master.
+
 general_logistics includes:
 
 TA list
