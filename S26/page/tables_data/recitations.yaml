@@ -1,6 +1,6 @@
 # schedule_data.yaml
 recitations_0:
-  - date: "Monday,<br> Aug 04"
+  - date: ""
     groups:
       - name: "Python Programming + Pytorch"
         topics:
@@ -144,12 +144,14 @@ recitations_0:
           - id: "0.14"
             title: "Datasets"
             materials: 
-              - text: "Part 1 Notebook"
+              - text: "Notebook P1"
                 url: ""
-              - text: "Part 2 Notebook"
+              - text: "Notebook P2"
                 url: ""
             videos: 
-              - text: "Video"
+              - text: "Video P1"
+                url: ""
+              - text: "Video P2"
                 url: ""
             authors: "Mugur Preda"
           - id: "0.15"
@@ -164,9 +166,9 @@ recitations_0:
           - id: "0.16"
             title: "Data Preprocessing"
             materials: 
-              - text: "Part 1Notebook"
+              - text: "Notebook P1"
                 url: ""
-              - text: "Part 2 Notebook"
+              - text: "Notebook P2"
                 url: ""
               - text: "Slides"
                 url: ""
