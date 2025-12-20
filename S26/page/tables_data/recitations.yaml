@@ -8,7 +8,7 @@ recitations_0:
             title: "Python Fundamentals"
             materials:
               - text: "Notebook"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.01/Python_basics_with_numpy.ipynb"
             videos:
               - text: "Video"
                 url: ""
@@ -17,7 +17,7 @@ recitations_0:
             title: "Object Oriented Programming (OOP) Fundamentals"
             materials:
               - text: "Notebook"
-                url: ""
+                url: "https://colab.research.google.com/drive/1maqI9V-XHQewR1mjllJq-oYPsb9-hi6E"
             videos:
               - text: "Video"
                 url: ""
@@ -26,7 +26,7 @@ recitations_0:
             title: "Numpy Fundamentals"
             materials: 
               - text: "Notebook"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.03/Rec_0_3_NumPy_Fundamentals_S26.ipynb"
             videos: 
               - text: "Video"
                 url: ""
@@ -35,7 +35,7 @@ recitations_0:
             title: "Pytorch"
             materials: 
               - text: "Notebook"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.04/Recitation_0_4_PyTorch.ipynb"
             videos:
               - text: "Video"
                 url: ""
@@ -44,7 +44,7 @@ recitations_0:
             title: "Notebooks and Conda Environments"
             materials: 
               - text: "Notebook"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.05/notebook_example.ipynb"
               - text: "Slides"
                 url: ""
             videos: 
@@ -55,7 +55,7 @@ recitations_0:
             title: "Tensordot & Einsum"
             materials: 
               - text: "Notebook"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.ipynb"
             videos: 
               - text: "Video"
                 url: ""
@@ -66,7 +66,7 @@ recitations_0:
             title: "GitHub"
             materials: 
               - text: "Notebook"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.07/Git_Github_CheatSheet.ipynb"
             videos: 
               - text: "Video"
                 url: ""
@@ -75,7 +75,7 @@ recitations_0:
             title: "Google Colab"
             materials: 
               - text: "Notebook"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.08/Google_colab_recitation_0_8.ipynb"
             videos: 
               - text: "Video"
                 url: ""
@@ -84,7 +84,7 @@ recitations_0:
             title: "Google Cloud Platform"
             materials: 
               - text: "Notebook"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_VM_Setup.ipynb"
               - text: "Slides"
                 url: ""
             videos: 
