@@ -16,7 +16,7 @@ lectures:
       rowspan: 1 # This quiz entry applies to this row only
 
   - number: 1
-    date: ""
+    date: "Monday <br> Jan 12"
     topics:
       - "Introduction"
     slides_videos: []
@@ -28,7 +28,7 @@ lectures:
       
 
   - number: 2
-    date: ""
+    date: "Wednesday <br> Jan 14"
     topics:
       - "Neural Nets As Universal Approximators"
     slides_videos: []
@@ -36,7 +36,7 @@ lectures:
     # No 'quiz' field here because the previous lecture's quiz spans this row
 
   - number: 3
-    date: ""
+    date: "Wednesday <br> Jan 21"
     topics:
       - main: "Training Part I"
         sub_topics:
@@ -49,7 +49,7 @@ lectures:
       rowspan: 2
 
   - number: 4
-    date: ""
+    date: "Friday <br> Jan 23"
     topics:
       - main: "Training Part II"
         sub_topics:
@@ -60,7 +60,7 @@ lectures:
     # No quiz field
 
   - number: 5
-    date: ""
+    date: "Monday <br> Jan 26"
     topics:
       - main: "Training Part III"
         sub_topics:
@@ -73,7 +73,7 @@ lectures:
       rowspan: 2
 
   - number: 6
-    date: ""
+    date: "Wednesday <br> Jan 28"
     topics:
       - main: "Training Part IV"
         sub_topics:
@@ -85,7 +85,7 @@ lectures:
     # No quiz field
 
   - number: 7
-    date: ""
+    date: "Monday <br> Feb 2"
     topics:
       - main: "Training Part V"
         sub_topics:
@@ -98,7 +98,7 @@ lectures:
       rowspan: 2
 
   - number: 8
-    date: ""
+    date: "Wednesday <br> Feb 4"
     topics:
       - main: "Training Part VI"
         sub_topics:
@@ -111,7 +111,7 @@ lectures:
     # No quiz field
 
   - number: 9
-    date: ""
+    date: "Monday <br> Feb 9"
     topics:
       - "Convolutional Neural Networks (CNNs) I"
     slides_videos: []
@@ -121,7 +121,7 @@ lectures:
       rowspan: 2
 
   - number: 10
-    date: ""
+    date: "Wednesday <br> Feb 11"
     topics:
       - "CNNs II"
     slides_videos: []
@@ -129,7 +129,7 @@ lectures:
     # No quiz field
 
   - number: 11
-    date: ""
+    date: "Monday <br> Feb 16"
     topics:
       - "CNNs III"
     slides_videos: []
@@ -139,7 +139,7 @@ lectures:
       rowspan: 2
 
   - number: 12
-    date: ""
+    date: "Wednesday <br> Feb 18"
     topics:
       - "CNNs IV"
     slides_videos: []
@@ -147,7 +147,7 @@ lectures:
     # No quiz field
 
   - number: 13
-    date: ""
+    date: "Monday <br> Feb 23"
     topics:
       - "Recurrent Neural Networks (RNNs) I"
     slides_videos: []
@@ -157,14 +157,14 @@ lectures:
       rowspan: 2 # The HTML shows rowspan 1 for this quiz
 
   - number: 14
-    date: ""
+    date: "Wednesday <br> Feb 25"
     topics:
       - "RNNs II"
     slides_videos: []
     additional_materials: []
 
   - number: 15
-    date: ""
+    date: "Monday <br> Mar 9"
     topics:
       - "Sequence to Sequence Models"
       - "Connectionist Temporal Classification (CTC)"
@@ -175,7 +175,7 @@ lectures:
       rowspan: 2
 
   - number: 16
-    date: ""
+    date: "Wednesday <br> Mar 11"
     topics:
       - main: "Connectionist Temporal Classification"
         sub_topics:
@@ -186,7 +186,7 @@ lectures:
     # No quiz field as it spans from the previous row
 
   - number: 17
-    date: ""
+    date: "Monday <br> Mar 16"
     topics:
       - "Language Models"
       - "Translation"
@@ -197,7 +197,7 @@ lectures:
       rowspan: 2
 
   - number: 18
-    date: ""
+    date: "Wednesday <br> Mar 18"
     topics:
       - "Attention Models"
       - "Transformers"
@@ -206,7 +206,7 @@ lectures:
     # No quiz field as it spans from the previous row
 
   - number: 19
-    date: ""
+    date: "Monday <br> Mar 23"
     topics:
       - "Transformers and Newer Architectures"
     slides_videos: []
@@ -216,7 +216,7 @@ lectures:
       rowspan: 2
 
   - number: 20
-    date: ""
+    date: "Wednesday <br> Mar 25"
     topics:
       - "Large Language Models"
     slides_videos: []
@@ -224,7 +224,7 @@ lectures:
     # No quiz field as it spans from the previous row
 
   - number: 21
-    date: ""
+    date: "Monday <br> Mar 30"
     topics:
       - "Representation and Autoencoders"
     slides_videos: []
@@ -234,14 +234,14 @@ lectures:
       rowspan: 2
 
   - number: 22
-    date: ""
+    date: "Wednesday <br> Apr 1"
     topics:
       - "Variational Auto Encoders"
     slides_videos: []
     additional_materials: []
 
   - number: 23
-    date: ""
+    date: "Monday <br> Apr 6"
     topics:
       - "Diffusion"
     slides_videos: []
@@ -252,14 +252,14 @@ lectures:
     # No quiz field as it spans from the previous row
 
   - number: 24
-    date: ""
+    date: "Wednesday <br> Apr 8"
     topics:
       - "Generative Adversarial Networks"
     slides_videos: []
     additional_materials: []
 
   - number: 25
-    date: ""
+    date: "Monday <br> Apr 13"
     topics:
       - "Graph Neural Networks (GNNs)"
     slides_videos: []
@@ -268,16 +268,16 @@ lectures:
       text: ""
       rowspan: 2
 
-  - number: "-"
-    date: ""
+  - number: 26
+    date: "Wednesday <br> Apr 15"
     topics:
-      - "No Class - Thanksgiving Break"
+      - "Guest Lecture / Buffer"
     slides_videos: []
     additional_materials: []
     # No quiz field as it spans from the previous row
 
-  - number: 26
-    date: ""
+  - number: 27
+    date: "Monday <br> Apr 20"
     topics:
       - "Hopfield Networks"
     slides_videos: []
@@ -286,8 +286,8 @@ lectures:
       text: ""
       rowspan: 2
 
-  - number: 27
-    date: ""
+  - number: 28
+    date: "Wednesday <br> Apr 22"
     topics:
       - "Boltzmann Machines"
     slides_videos: []
