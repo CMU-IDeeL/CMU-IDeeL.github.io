@@ -46,7 +46,7 @@ recitations_0:
               - text: "Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.05/notebook_example.ipynb"
               - text: "Slides"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.05/S2026_Rec0_Env_Ipynb_Slides.pptx"
             videos: 
               - text: "Video"
                 url: ""
@@ -56,6 +56,8 @@ recitations_0:
             materials: 
               - text: "Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.ipynb"
+              - text: "Notes"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.pdf"
             videos: 
               - text: "Video"
                 url: ""
@@ -67,6 +69,8 @@ recitations_0:
             materials: 
               - text: "Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.07/Git_Github_CheatSheet.ipynb"
+              - text: "Slides"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.07/Recitation%200.7%20Git_Github.pptx"
             videos: 
               - text: "Video"
                 url: ""
@@ -86,7 +90,7 @@ recitations_0:
               - text: "Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_VM_Setup.ipynb"
               - text: "Slides"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_Slides.pdf"
             videos: 
               - text: "Video"
                 url: ""
@@ -167,13 +171,15 @@ recitations_0:
             title: "Data Preprocessing"
             materials: 
               - text: "Notebook P1"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.16/0_16_Data_Preprocessing_Part_1.ipynb"
               - text: "Notebook P2"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.16/0_16_Data_Preprocessing_Part_2.ipynb"
               - text: "Slides"
                 url: ""
             videos: 
-              - text: "Video"
+              - text: "Video P1"
+                url: ""
+              - text: "Video P2"
                 url: ""
             authors: "Bradley Warren"
       - name: "Debugging & Problem Solving"
@@ -182,7 +188,9 @@ recitations_0:
             title: "Weights and Biases (WandB)"
             materials: 
               - text: "Notebook"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.17/0.17_WandB.ipynb"
+              - text: "Slides"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.17/Intro%20to%20Wandb.pdf"
             videos: 
               - text: "Video"
                 url: ""

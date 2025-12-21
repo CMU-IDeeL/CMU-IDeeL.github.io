@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>11-785 Deep Learning</title>
-        <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/vnd.microsoft.icon">
 
         <!-- display nicely on phones -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" </meta>
@@ -23,13 +23,13 @@
         <!-- vue -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
         <!-- custom code -->
-        <script src="script.js"></script>
+        <script src="./script.js"></script>
         <!--Chat Bot-->
-        <link rel="stylesheet" type="text/css" href="chatbot.css">
+        <link rel="stylesheet" type="text/css" href="./css/chatbot.css">
 
 
         <!-- bust caches by incrementing version of main -->
-        <link href="main.4.css" rel="stylesheet" type="text/css">
+        <link href="./css/main.4.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
@@ -57,11 +57,11 @@
                     Assignments
                 </span>
                 <span class="header-item" onclick="toSection('#docs-tools')">
-                    Docs &amp; Tools
+                    Docs 
                 </span>
-                <span class="header-item" onclick="window.location='./resources.html'">
-                    Previous Iterations
-                </span>
+                <!-- <span class="header-item" onclick="window.location='./hw_writeups.html'">
+                    HW Write-ups
+                </span> -->
             </span>
 
             <span class="version-menu">
@@ -102,11 +102,11 @@
                 Assignments
             </div>
             <div class="m-header-item" onclick="mobileToSection('#docs-tools')">
-                Docs &amp; Tools
+                Docs
             </div>
-            <div class="m-header-item" onclick="window.location='./resources.html'">
-                Previous Iterations
-            </div>
+            <!-- <div class="m-header-item" onclick="window.location='./hw_writeups.html'">
+                HW Write-ups
+            </div> -->
             <div class="m-version-menu">
                 <!-- changed icon to F24 and link to previous semesters -->
                 <span class="current-icon">S26</span>
@@ -137,28 +137,19 @@
 
         </div>
 
-        <!--Chat Bot-->
-        <div class="popup" id="chatBox" ;>
-            <iframe width="300px" height="430px"
-                src="https://console.dialogflow.com/api-client/demo/embedded/680fbdfc-8c63-42a3-9b7b-5a50809a5ac4"></iframe>
-        </div>
-        <button class="mybutton" onclick="showChat()"><i class="fa fa-comments" aria-hidden="true"></i><br></button>
-
         <!-- GENERAL LOGISTICS -->
         <div id="general_logistics"></div>
         <script>
-        // $('#general_logistics').load('./page/general_logistics.html');
         $(document).ready(function() {
-            $('#general_logistics').load('./page/general_logistics.html');
+            $('#general_logistics').load('./pages/general_logistics.html');
         });
         </script>
 
         <!-- Syllabus Information -->
         <div id="syllabus"></div>
         <script>
-        // $('#syllabus').load('./page/syllabus.html');
         $(document).ready(function() {
-            $('#syllabus').load('./page/syllabus.html');
+            $('#syllabus').load('./pages/syllabus.html');
         });
         </script>
 
@@ -173,9 +164,8 @@
         <!-- SCHEDULE OF LECTURES -->
         <div id="lectures"></div>
         <script>
-        // $('#lectures').load('./page/lectures.html');
         $(document).ready(function() {
-            $('#lectures').load('./page/lectures.html');
+            $('#lectures').load('./pages/lectures.html');
         });
         </script>
     </body>
