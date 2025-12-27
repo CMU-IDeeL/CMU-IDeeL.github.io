@@ -1,0 +1,40 @@
+name: S26 Automatic Slide Upload
+on:
+  schedule:
+    - cron: "0 11 * * 1,3"
+  workflow_dispatch:
+
+permissions:
+  contents: write 
+
+jobs:
+  slide-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo content
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      
+      - name: Install python dependecies
+        run: pip install Jinja2 PyYAML ruamel.yaml pytz
+
+      - name: Run scripts
+        working-directory: S26
+        run: |
+          python pages/tables_data/upload_slides.py
+          python pages/tables_data/generate_table.py
+        
+      - name: Commit S26 changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add S26/pages/tables_data/lectures.yaml S26/pages/tables/lectures_table.html S26/pages/tables/recitations.html S26/pages/tables/assignments_table.html
+          git commit -m "GitHub Action: Slide Upload"
+          git push
