@@ -8,7 +8,7 @@ recitations_0:
             title: "Python Fundamentals"
             materials:
               - text: "Notebook"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.01/Python_basics_with_numpy.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.01/Python_basics_with_numpy.ipynb"
             videos:
               - text: "Video"
                 url: ""
@@ -26,7 +26,7 @@ recitations_0:
             title: "Numpy Fundamentals"
             materials: 
               - text: "Notebook"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.03/Rec_0_3_NumPy_Fundamentals_S26.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.03/Rec_0_3_NumPy_Fundamentals_S26.ipynb"
             videos: 
               - text: "Video"
                 url: ""
@@ -35,7 +35,7 @@ recitations_0:
             title: "Pytorch"
             materials: 
               - text: "Notebook"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.04/Recitation_0_4_PyTorch.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.04/Recitation_0_4_PyTorch.ipynb"
             videos:
               - text: "Video"
                 url: ""
@@ -44,9 +44,9 @@ recitations_0:
             title: "Notebooks and Conda Environments"
             materials: 
               - text: "Notebook"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.05/notebook_example.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.05/notebook_example.ipynb"
               - text: "Slides"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.05/S2026_Rec0_Env_Ipynb_Slides.pptx"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.05/S2026_Rec0_Env_Ipynb_Slides.pptx"
             videos: 
               - text: "Video"
                 url: ""
@@ -55,9 +55,9 @@ recitations_0:
             title: "Tensordot & Einsum"
             materials: 
               - text: "Notebook"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.ipynb"
               - text: "Notes"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.pdf"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.pdf"
             videos: 
               - text: "Video"
                 url: ""
@@ -68,9 +68,9 @@ recitations_0:
             title: "GitHub"
             materials: 
               - text: "Notebook"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.07/Git_Github_CheatSheet.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.07/Git_Github_CheatSheet.ipynb"
               - text: "Slides"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.07/Recitation%200.7%20Git_Github.pptx"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.07/Recitation%200.7%20Git_Github.pptx"
             videos: 
               - text: "Video"
                 url: ""
@@ -79,7 +79,7 @@ recitations_0:
             title: "Google Colab"
             materials: 
               - text: "Notebook"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.08/Google_colab_recitation_0_8.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.08/Google_colab_recitation_0_8.ipynb"
             videos: 
               - text: "Video"
                 url: ""
@@ -88,9 +88,9 @@ recitations_0:
             title: "Google Cloud Platform"
             materials: 
               - text: "Notebook"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_VM_Setup.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_VM_Setup.ipynb"
               - text: "Slides"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_Slides.pdf"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_Slides.pdf"
             videos: 
               - text: "Video"
                 url: ""
@@ -171,9 +171,9 @@ recitations_0:
             title: "Data Preprocessing"
             materials: 
               - text: "Notebook P1"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.16/0_16_Data_Preprocessing_Part_1.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.16/0_16_Data_Preprocessing_Part_1.ipynb"
               - text: "Notebook P2"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.16/0_16_Data_Preprocessing_Part_2.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.16/0_16_Data_Preprocessing_Part_2.ipynb"
               - text: "Slides"
                 url: ""
             videos: 
@@ -190,7 +190,7 @@ recitations_0:
               - text: "Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.17/0.17_WandB.ipynb"
               - text: "Slides"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.17/Intro%20to%20Wandb.pdf"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.17/Intro%20to%20Wandb.pdf"
             videos: 
               - text: "Video"
                 url: ""
