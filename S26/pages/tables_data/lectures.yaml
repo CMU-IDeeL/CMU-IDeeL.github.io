@@ -20,7 +20,19 @@ lectures:
     topics:
       - "Introduction"
     slides_videos: []
-    additional_materials: []
+    additional_materials: 
+      - text: "The New Connectionism (1988)"
+        url: "document/readings/Perceptrons-Epilogue-r.pdf"
+      - text: "On Alan Turing's Anticipation of Connectionism"
+        url: "http://www.alanturing.net/turing_archive/pages/pub/turing3/turing3.pdf"
+      - text: "McCullogh and Pitts paper"
+        url: "https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf"
+      - text: "Rosenblatt: The perceptron"
+        url: "document/readings/Rosenblatt_1959-09865-001.pdf"
+      - text: "Bain: Mind and body"
+        url: "document/readings/Alexander_Bain_Mind_and_Body_009178a0.pdf"
+      - text: "Hebb: The Organization Of Behaviour"
+        url: "https://pure.mpg.de/pubman/item/item_2346268_3/component/file_2346267/Hebb_1949_The_Organization_of_Behavior.pdf"
     quiz:
       text: "" # this line does not go below rowspan unlike the assignments.yaml file (also notice there is no "-" before text and rowspan for quiz)
       # url: "https://canvas.cmu.edu/courses/38471/quizzes/115273" # Example if link exists
@@ -32,7 +44,9 @@ lectures:
     topics:
       - "Neural Nets As Universal Approximators"
     slides_videos: []
-    additional_materials: []
+    additional_materials:
+      - text: "Size and Depth complexity of Boolean Circuits"
+        url: "./document/readings/booleancircuits_shannonproof.pdf"
     # No 'quiz' field here because the previous lecture's quiz spans this row
 
   - number: 3
@@ -43,7 +57,11 @@ lectures:
           - "The Problem of Learning"
           - "Empirical Risk Minimization"
     slides_videos: []
-    additional_materials: []
+    additional_materials:
+    - text: "Artificial Neural Networks of the Perceptron, Madaline, and Backpropagation Family"
+      url: "./document/readings/c1992artificialneural.pdf"
+    - text: "The Perceptron Learning Algorithm and its Convergence"
+      url: "./document/readings/Perceptron_Learning_Algorithm_and_Convergence.pdf"
     quiz:
       text: ""
       rowspan: 2
@@ -56,7 +74,19 @@ lectures:
           - "Gradient Descent"
           - "Training the Network"
     slides_videos: []
-    additional_materials: []
+    additional_materials: 
+    - text: "Widrow and Lehr (1992)"
+      url: "document/readings/c1992artificialneural.pdf"
+    - text: "Adaline and Madaline"
+      url: "document/readings/04Adaline.pdf"
+    - text: "Convergence of perceptron algorithm"
+      url: "http://www.cs.columbia.edu/~mcollins/courses/6998-2012/notes/perc.converge.pdf"
+    - text: "Threshold Logic"
+      url: "https://www.tutorialspoint.com/digital_circuits/digital_circuits_threshold_logic.htm"
+    - text: "TC (Complexity)"
+      url: "https://en.wikipedia.org/wiki/TC_(complexity)"
+    - text: "AC (Complexity)"
+      url: "https://en.wikipedia.org/wiki/AC_(complexity)"
     # No quiz field
 
   - number: 5
@@ -67,7 +97,11 @@ lectures:
           - "Backpropagation"
           - "Calculus of Backpropagation"
     slides_videos: []
-    additional_materials: []
+    additional_materials: 
+    - text: "Werbos (1990)"
+      url: "http://axon.cs.byu.edu/Dan/678/papers/Recurrent/Werbos.pdf"
+    - text: "Rumelhart, Hinton and Williams (1986)"
+      url: "http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf"
     quiz:
       text: ""
       rowspan: 2
@@ -81,7 +115,11 @@ lectures:
           - "Loss Surfaces"
           - "Momentum"
     slides_videos: []
-    additional_materials: []
+    additional_materials: 
+    - text: "Backpropagation Fails to Separate, Where Perceptrons Succeed, Brady et al. (1989)"
+      url: "document/readings/Backprop_fails_to_separate_where_perceptrons_succeed.pdf"
+    - text: "Why Momentum Really Works"
+      url: "https://distill.pub/2017/momentum/"
     # No quiz field
 
   - number: 7
@@ -92,7 +130,13 @@ lectures:
           - "Optimization"
           - "Batch Size, SGD, Mini-batch, Second-order Methods"
     slides_videos: []
-    additional_materials: []
+    additional_materials: 
+    - text: "Momentum and Polyak (1964)"
+      url: "https://www.sciencedirect.com/science/article/abs/pii/0041555364901375"
+    - text: "Nesterov (1983)"
+      url: "http://www.mathnet.ru/php/archive.phtml?wshow=paper&amp;jrnid=dan&amp;paperid=46009&amp;option_lang=eng"
+    - text: "Derivatives and Influences"
+      url: "document/readings/derivatives_and_influences.pdf"
     quiz:
       text: ""
       rowspan: 2
@@ -107,7 +151,13 @@ lectures:
           - "Batch Normalization"
           - "Dropout"
     slides_videos: []
-    additional_materials: []
+    additional_materials: 
+    - text: "Derivatives and Influence Diagrams"
+      url: "./document/readings/derivatives and influences.pdf"
+    - text: "ADAGRAD, Duchi, Hazan and Singer (2011)"
+      url: "http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf"
+    - text: "Adam: A method for stochastic optimization, Kingma and Ba (2014)"
+      url: "https://arxiv.org/abs/1412.6980"
     # No quiz field
 
   - number: 9
@@ -133,7 +183,9 @@ lectures:
     topics:
       - "CNNs III"
     slides_videos: []
-    additional_materials: []
+    additional_materials: 
+    - text: "CNN Explainer"
+      url: "https://poloclub.github.io/cnn-explainer/"
     quiz:
       text: ""
       rowspan: 2
@@ -151,7 +203,11 @@ lectures:
     topics:
       - "Recurrent Neural Networks (RNNs) I"
     slides_videos: []
-    additional_materials: []
+    additional_materials: 
+    - text: "Fahlman and Lebiere (1990)"
+      url: "https://proceedings.neurips.cc/paper/1989/file/69adc1e107f7f7d035d7baf04342e1ca-Paper.pdf"
+    - text: "How to compute a derivative"
+      url: "./document/readings/How to compute a derivative.pdf"
     quiz:
       text: ""
       rowspan: 2 # The HTML shows rowspan 1 for this quiz
