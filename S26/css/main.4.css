@@ -63,6 +63,11 @@ code {
     background-color: #A54B4B;
 }
 
+.header-item.active {
+    background-color: #b96765;
+    border-radius: 3px;
+}
+
 .version-menu {
     display: inline-block;
     float: right;
@@ -130,6 +135,9 @@ code {
     }
     .m-header-item:hover {
         background-color: #A54B4B;
+    }
+    .m-header-item.active {
+        background-color: #b96765;
     }
 
     .menu-exit {
