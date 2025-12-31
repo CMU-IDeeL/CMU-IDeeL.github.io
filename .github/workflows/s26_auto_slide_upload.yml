@@ -36,5 +36,10 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add S26/pages/tables_data/lectures.yaml S26/pages/tables/lectures_table.html S26/pages/tables/recitations.html S26/pages/tables/assignments_table.html
-          git commit -m "GitHub Action: Slide Upload"
-          git push
+          if git diff --cached --quiet; then
+            echo "[INFO] No staged changes, nothing to commit"
+          else
+            echo "[INFO] Changes detected, committing and pushing"
+            git commit -m "GitHub Action: Slide Upload"
+            git push
+          fi

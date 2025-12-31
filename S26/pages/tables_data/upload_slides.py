@@ -36,6 +36,7 @@ def find_slide_by_lecture_number(lecture_num):
             continue
         base = os.path.splitext(name)[0]
         if pattern.search(base):
+            print(f"[INFO] Found lecture slides (based on lecture number): {name}")
             return name  
     return None
 
@@ -52,6 +53,7 @@ def find_slide_by_commit_time(start_timestamp):
         if file_commit_time >= start_timestamp and file_commit_time > recent:
             recent = file_commit_time
             best_match = name
+    print(f"[INFO] Found lecture slides (based on commit time): {best_match}")
     return best_match
 
 
@@ -63,10 +65,17 @@ def upload():
     yaml.preserve_quotes = True
     yaml.indent(mapping=4, sequence=4, offset=2)
 
+    if not os.path.isfile(LECTURES_YAML):
+        print(f"[ERROR] lectures.yaml not found at the path: {LECTURES_YAML}")
+        return
+    if not os.path.isdir(SLIDES_DIR):
+        print(f"[ERROR] Slides directory not found at the path: {SLIDES_DIR}")
+        return
+    
     timezone = ZoneInfo("America/New_York")
     now = datetime.now(timezone)
     today = now.date()
-    today = date(2026, 1, 12)
+    today = date(2026, 1, 12) # for testing
 
     with open(LECTURES_YAML, "r") as f:
         data = yaml.load(f)
@@ -82,18 +91,22 @@ def upload():
             target = lec
             lec_num = lec.get("number")
             break
+    
     if target is None or lec_num is None:
-        print("Could not find today's lecture in YAML :(")
+        print("[ERROR] Could not find today's lecture in YAML :(")
         return
+    print(f"[INFO] Lecture Number: {lec_num}")
+    print(f"[INFO] Parsed lecture date: {lec_date}")
     
     slide_placeholder = target.get("slides_videos")
     for item in slide_placeholder:
         if item.get("text") == "Slides" and item.get("url"):
-            print("Slides already linked")
+            print("[WARN] Slides already linked in the website")
             return
 
     pdf_name = find_slide_by_lecture_number(lec_num)
     if not pdf_name: # Fallback: if the lecture slide is not found based on lecture number, we take the most recently committed file to GitHub in slides folder
+        print(f"[WARN] Not able to find lecture slide based on lecture number; Trying to find based on commit time")
         if today.weekday() == 0: # for Monday lecture, check from Thursday 
             start_day = today - timedelta(days=4)
         elif today.weekday() == 2: # for Wednesday lecture, check from Tuesday 
@@ -101,14 +114,18 @@ def upload():
         start_timestamp = datetime.combine(start_day, time(0, 0), timezone).timestamp()
         pdf_name = find_slide_by_commit_time(start_timestamp)
     if not pdf_name:
-        print(f"No slides found for the lecture dated {today} with lecture number: {lec_num}")
+        print(f"[WARN] Not able to find lecture slide based on commit time")
+        print(f"[ERROR] No slides found for the lecture dated {today} with lecture number: {lec_num}")
         return
     pdf_path = os.path.join(SLIDES_DIR, pdf_name)
+    print(f"[INFO] Absolute lecture slide path: {pdf_path}")
     rel_pdf_path = os.path.relpath(pdf_path, start=ROOT_DIR).replace("\\", "/")
+    print(f"[INFO] Relative lecture slide path: {rel_pdf_path}")
     target["slides_videos"].insert(0, {"text": "Slides", "url": rel_pdf_path})
 
     with open(LECTURES_YAML, "w") as f:
         yaml.dump(data, f)
-    print(f"Added slides path for the lecture dated {today} with lecture number: {lec_num} as {rel_pdf_path}")
+    print(f"[INFO] Added slides path for the lecture dated {today} with lecture number: {lec_num} as {rel_pdf_path}")
 
-upload()
+if __name__ == "__main__":
+    upload()
