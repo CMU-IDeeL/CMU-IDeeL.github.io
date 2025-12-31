@@ -75,7 +75,7 @@ def upload():
     timezone = ZoneInfo("America/New_York")
     now = datetime.now(timezone)
     today = now.date()
-    today = date(2026, 1, 12) # for testing
+    # today = date(2026, 1, 12) # for testing
 
     with open(LECTURES_YAML, "r") as f:
         data = yaml.load(f)
