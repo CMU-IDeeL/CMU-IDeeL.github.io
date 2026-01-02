@@ -11,7 +11,7 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.01/Python_basics_with_numpy.ipynb"
             videos:
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/LxbiGktyNlk?si=xohXkkMQikG8_laH"
             authors: " Bradley Warren"
           - id: "0.2"
             title: "Object Oriented Programming (OOP) Fundamentals"
@@ -20,7 +20,7 @@ recitations_0:
                 url: "https://colab.research.google.com/drive/1maqI9V-XHQewR1mjllJq-oYPsb9-hi6E"
             videos:
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/eZl2XPexRcY?si=BIZVfdxlPDr5BcAx"
             authors: " Ron Sarma"
           - id: "0.3"
             title: "Numpy Fundamentals"
@@ -29,7 +29,7 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.03/Rec_0_3_NumPy_Fundamentals_S26.ipynb"
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/4MwcHkV0BN4?si=cAkGAkwWgjZoykE_"
             authors: "Miya Sylvester"
           - id: "0.4"
             title: "Pytorch"
@@ -38,7 +38,7 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.04/Recitation_0_4_PyTorch.ipynb"
             videos:
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/JodKOum4YrM?si=dA8gRiedAsZu9YkY"
             authors: "Manigandan Ramadasan"
           - id: "0.5"
             title: "Notebooks and Conda Environments"
@@ -49,7 +49,7 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.05/S2026_Rec0_Env_Ipynb_Slides.pptx"
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/IV88elV38qk?si=vwL2n-uWTKSShJuG"
             authors: "Yabsera Yemanberhan"
           - id: "0.6"
             title: "Tensordot & Einsum"
@@ -60,7 +60,7 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.pdf"
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/ZArvnLcYwWM?si=lbWw2OtKKI2uEHjX"
             authors: "Felix Hirwa Nshuti"
       - name: "Computational Resources"
         topics:
@@ -72,7 +72,7 @@ recitations_0:
               - text: "Slides"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.07/Recitation%200.7%20Git_Github.pptx"
             videos: 
-              - text: "Video"
+              - text: "Coming Soon!"
                 url: ""
             authors: "Malihah Rahaman <br> Khushee"
           - id: "0.8"
@@ -82,7 +82,7 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.08/Google_colab_recitation_0_8.ipynb"
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/CH4G-IodPMo?si=AnrtQyT9x-NDv_16"
             authors: "Olivier Kwizera"
           - id: "0.9"
             title: "Google Cloud Platform"
@@ -93,7 +93,7 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_Slides.pdf"
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/kBB2Q-9W3DY?si=J9KEaZiuAc-YCnnp"
             authors: "Yabsera Yemanberhan"
           - id: "0.10"
             title: "Amazon Web Services (AWS)"
@@ -104,7 +104,7 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/0aLGh2GojX4?si=IJsPczvR32rT5jNl"
             authors: "Anurag Aryal"
           - id: "0.11"
             title: "Kaggle"
@@ -115,7 +115,7 @@ recitations_0:
                 url: "" 
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/Fwbktrtw-PM?si=Xlr64H7lIwnGlQCc"
             authors: "Delphine Nyaboke"
           - id: "0.12"
             title: "PSC - I (How to connect)"
@@ -128,7 +128,7 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/ZBnwDnvsW2o?si=8bRblSpOAveEU8tk"
             authors: "En Zheng"
           - id: "0.13"
             title: "PSC - II (How to get project resources)"
@@ -141,7 +141,7 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/g8MxlZPLqTw?si=Rq0zyvEEUstnIfoM"
             authors: "En Zheng"
       - name: "Data Handling and Processing"
         topics:
@@ -153,10 +153,8 @@ recitations_0:
               - text: "Notebook P2"
                 url: ""
             videos: 
-              - text: "Video P1"
-                url: ""
-              - text: "Video P2"
-                url: ""
+              - text: "Video"
+                url: "https://youtu.be/wg7D_YRbsEg?si=iMmtNPAwl02ujW9h"
             authors: "Mugur Preda"
           - id: "0.15"
             title: "Dataloaders"
@@ -165,7 +163,7 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/vfV1XYyN92s?si=I4dxBYgqdfyCe3td"
             authors: "Yixiong Fang"
           - id: "0.16"
             title: "Data Preprocessing"
@@ -178,9 +176,11 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video P1"
-                url: ""
+                url: "https://youtu.be/JJwzrEeHg_0?si=BiGorn5C6HpviXQz"
               - text: "Video P2"
-                url: ""
+                url: "https://youtu.be/vz_6DfVvrqM?si=V-ehKsZHMlsvH3pG"
+              - text: "Video P3"
+                url: "https://youtu.be/gJ_4r4edZV8?si=DEz_0qXTOBhmSGb7"
             authors: "Bradley Warren"
       - name: "Debugging & Problem Solving"
         topics:
@@ -193,7 +193,7 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.17/Intro%20to%20Wandb.pdf"
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/-HziF0qn8-w?si=Pu-j16m8PgXvfwUq"
             authors: "Akshara Kanna"
           - id: "0.18"
             title: "Debugging"
@@ -202,7 +202,7 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/ukbTKEboqGc?si=6vxiFm8BLVRZtp0P"
             authors: "Puru Samal"
           - id: "0.19"
             title: "What to Do When Struggling"
@@ -210,9 +210,9 @@ recitations_0:
               - text: "Document"
                 url: ""
             videos: 
-              - text: "Video"
+              - text: "Coming Soon!"
                 url: ""
-            authors: "Akshara Kanna"
+            authors: "Miya Sylvester"
       - name: "Algorithmic Techniques"
         topics:
           - id: "0.20"
@@ -223,7 +223,7 @@ recitations_0:
               - text: "Slides"
                 url: ""
             videos: 
-              - text: "Video"
+              - text: "Coming Soon!"
                 url: ""
             authors: "Mengchun Zhang"
           - id: "0.21"
@@ -233,7 +233,7 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/RCo1QhIZduI?si=lZrdUmaAg4dln5bP"
             authors: " Madhavi Gulavani"
           - id: "0.22"
             title: "Block Processing"
@@ -244,7 +244,7 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/89tXQLFRpfs?si=a8Kv1HN_mm2cjqGD"
             authors: "Pengyu Chang"
       - name: "Model Logistics"
         topics:
@@ -255,7 +255,7 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/TGEBH6H3om4?si=XHmZ6snlZFZ-NXnc"
             authors: "Yixiong Fang"
           - id: "0.24"
             title: "Distributed Training"
@@ -264,7 +264,7 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/U34Ce_5UCHw?si=v0xBKS0wg-qQ_P3s"
             authors: "Felix Hirwa Nshuti"
           - id: "0.25"
             title: "Saving & Loading Models"
@@ -275,7 +275,7 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/LgSIsXCBZsc?si=w9iA2-g4EIkpKD1L"
             authors: "Floride Tuyisenge"
       - name: "HWs and Project Workflow Management"
         topics:
@@ -286,7 +286,7 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/RkYj-K7ec1c?si=F5-TA2Hsa3vms7gx"
             authors: "Euijin Hong"
           - id: "0.27"
             title: "Workflow of HWs - Part 2s"
@@ -295,7 +295,7 @@ recitations_0:
                 url: ""
             videos: 
               - text: "Video"
-                url: ""
+                url: "https://youtu.be/K8R8xQQf2Ro?si=LtWZAOGF2iOY6WrU"
             authors: "Pengyu Chang"
           - id: "0.28"
             title: "Workflow of Project"
@@ -303,7 +303,7 @@ recitations_0:
               - text: "Slides"
                 url: ""
             videos: 
-              - text: "Video"
+              - text: "Coming Soon!"
                 url: ""
             authors: "Ahmed Issah"
 
