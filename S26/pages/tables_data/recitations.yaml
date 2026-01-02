@@ -98,9 +98,9 @@ recitations_0:
           - id: "0.10"
             title: "Amazon Web Services (AWS)"
             materials: 
-              - text: "Notebook"
+              - text: ""
                 url: ""
-              - text: "Slides"
+              - text: ""
                 url: ""
             videos: 
               - text: "Video"
@@ -109,9 +109,9 @@ recitations_0:
           - id: "0.11"
             title: "Kaggle"
             materials: 
-              - text: "Notebook"
+              - text: ""
                 url: ""
-              - text: "Slides"
+              - text: ""
                 url: "" 
             videos: 
               - text: "Video"
@@ -121,9 +121,9 @@ recitations_0:
             title: "PSC - I (How to connect)"
             materials: 
               - text: "Slides"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.12/S2026_Rec0_PSC_connection.pptx"
               - text: "User Guide"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.12/PSC%20Usage%20Guide%202026spring.docx"
               - text: "Notebook"
                 url: ""
             videos: 
@@ -134,9 +134,7 @@ recitations_0:
             title: "PSC - II (How to get project resources)"
             materials: 
               - text: "Slides"
-                url: ""
-              - text: "User Guide"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.12/S2026_Rec0_PSC_connection.pptx"
               - text: "Notebook"
                 url: ""
             videos: 
@@ -148,9 +146,7 @@ recitations_0:
           - id: "0.14"
             title: "Datasets"
             materials: 
-              - text: "Notebook P1"
-                url: ""
-              - text: "Notebook P2"
+              - text: "Notebook"
                 url: ""
             videos: 
               - text: "Video"
@@ -160,7 +156,7 @@ recitations_0:
             title: "Dataloaders"
             materials:
               - text: "Notebook"
-                url: ""
+                url: "https://colab.research.google.com/github/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F25/document/Recitation_0_Series/0.12/0_12_Dataloaders.ipynb"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/vfV1XYyN92s?si=I4dxBYgqdfyCe3td"
