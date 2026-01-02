@@ -215,9 +215,9 @@ recitations_0:
             title: "Losses Part 1"
             materials: 
               - text: "Notebook"
-                url: ""
+                url: "https://colab.research.google.com/github/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F25/document/Recitation_0_Series/0.12/0_12_Dataloaders.ipynb"
               - text: "Slides"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.20/S26_Rec0.20_Losses_Part1.pptx.pdf"
             videos: 
               - text: "Coming Soon!"
                 url: ""
@@ -226,7 +226,7 @@ recitations_0:
             title: "Losses Part 2"
             materials: 
               - text: "Slides"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.21/Loss%20Functions%202.0-FINAL.pdf"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/RCo1QhIZduI?si=lZrdUmaAg4dln5bP"
@@ -235,7 +235,7 @@ recitations_0:
             title: "Block Processing"
             materials: 
               - text: "Notebook"
-                url: ""
+                url: "https://colab.research.google.com/github/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F25/document/Recitation_0_Series/0.21/0_21_Block_Processing.ipynb"
               - text: "Slides"
                 url: ""
             videos: 
@@ -257,7 +257,7 @@ recitations_0:
             title: "Distributed Training"
             materials: 
               - text: "Notebook"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.24/0_24_Distributed_Training.ipynb"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/U34Ce_5UCHw?si=v0xBKS0wg-qQ_P3s"
@@ -266,9 +266,9 @@ recitations_0:
             title: "Saving & Loading Models"
             materials: 
               - text: "Notebook"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.25/rec0_25_Saving_%26_Loading_Model.ipynb"
               - text: "Slides"
-                url: ""
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.25/Saving%20and%20Loading%20Model.pptm"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/LgSIsXCBZsc?si=w9iA2-g4EIkpKD1L"
@@ -278,8 +278,8 @@ recitations_0:
           - id: "0.26"
             title: "Workflow of HW - Part 1"
             materials: 
-              - text: "Notebook"
-                url: ""
+              - text: "Slides"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.26/Recitation%200.26_Workflows%20of%20HW%20part%201s.pdf"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/RkYj-K7ec1c?si=F5-TA2Hsa3vms7gx"
@@ -287,8 +287,8 @@ recitations_0:
           - id: "0.27"
             title: "Workflow of HWs - Part 2s"
             materials: 
-              - text: "Notebook"
-                url: ""
+              - text: "Slides"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.27/0.27%20Workflow%20of%20HWP2s.pptx"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/K8R8xQQf2Ro?si=LtWZAOGF2iOY6WrU"
