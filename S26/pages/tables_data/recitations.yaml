@@ -184,7 +184,7 @@ recitations_0:
             title: "Weights and Biases (WandB)"
             materials: 
               - text: "Notebook"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/document/Recitation_0_Series/0.17/0.17_WandB.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.17/WandB.ipynb"
               - text: "Slides"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.17/Intro%20to%20Wandb.pdf"
             videos: 
@@ -215,7 +215,7 @@ recitations_0:
             title: "Losses Part 1"
             materials: 
               - text: "Notebook"
-                url: "https://colab.research.google.com/github/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F25/document/Recitation_0_Series/0.12/0_12_Dataloaders.ipynb"
+                url: "https://colab.research.google.com/github/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F25/document/Recitation_0_Series/0.19/0_19_Losses_Part_1.ipynb"
               - text: "Slides"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.20/S26_Rec0.20_Losses_Part1.pptx.pdf"
             videos: 
