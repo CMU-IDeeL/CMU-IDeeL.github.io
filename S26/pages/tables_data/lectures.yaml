@@ -8,7 +8,9 @@ lectures:
       - "Grading"
       - "Deadlines"
     # 'slides_videos' and 'additional_materials' will be lists of link objects
-    slides_videos: []
+    slides_videos: 
+      - text: "Youtube"
+        url: "https://youtu.be/43ochbxaOTE"
     additional_materials: []
     quiz:
       text: ""
