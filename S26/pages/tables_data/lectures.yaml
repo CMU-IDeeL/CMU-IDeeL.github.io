@@ -11,6 +11,8 @@ lectures:
     slides_videos: 
       - text: "Youtube"
         url: "https://youtu.be/43ochbxaOTE"
+      - text: "Slides"
+        url: "./documents/slides/S26_Lec-0.Logistics.pdf"
     additional_materials: []
     quiz:
       text: ""
