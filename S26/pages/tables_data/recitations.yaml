@@ -74,9 +74,9 @@ recitations_0:
               - text: "Slides"
                 url: "documents/Recitation_0_Series/0.07/Recitation%200.7%20Git_Github.pptx"
             videos: 
-              - text: "Coming Soon!"
-                url: ""
-            authors: "Malihah Rahaman <br> Khushee"
+              - text: "Video"
+                url: "https://youtu.be/oNQ2YeWf86I?si=uwrUw4Zb11dzGq18"
+            authors: "Malihah Rahaman, <br> Khushee"
           - id: "0.8"
             title: "Google Colab"
             materials: 
@@ -212,8 +212,8 @@ recitations_0:
               - text: "Slides"
                 url: "documents/Recitation_0_Series/0.19/S26_Rec-0.19_Struggling.pptx.pdf"
             videos: 
-              - text: "Coming Soon!"
-                url: ""
+              - text: "Video"
+                url: "https://youtu.be/d3xuVuzonEc?si=QA3QqfSvFPgfggbv"
             authors: "Miya Sylvester"
       - name: "Algorithmic Techniques"
         topics:
