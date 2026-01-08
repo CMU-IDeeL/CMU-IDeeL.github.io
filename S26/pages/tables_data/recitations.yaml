@@ -225,8 +225,8 @@ recitations_0:
               - text: "Slides"
                 url: "documents/Recitation_0_Series/0.20/S26_Rec0.20_Losses_Part1.pptx.pdf"
             videos: 
-              - text: "Coming Soon!"
-                url: ""
+              - text: "Video"
+                url: "https://youtu.be/HzIgt-rSdg0"
             authors: "Mengchun Zhang"
           - id: "0.21"
             title: "Losses Part 2"
@@ -303,8 +303,8 @@ recitations_0:
               - text: "Coming Soon!"
                 url: ""
             videos: 
-              - text: "Coming Soon!"
-                url: ""
+              - text: "Video"
+                url: "https://youtu.be/pkW_y2OV6gU"
             authors: "Ahmed Issah"
           - id: "0.29"
             title: "How to Read Research Papers"
