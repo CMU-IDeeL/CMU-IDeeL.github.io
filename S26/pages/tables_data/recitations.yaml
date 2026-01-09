@@ -300,8 +300,8 @@ recitations_0:
           - id: "0.28"
             title: "Workflow of Project"
             materials: 
-              - text: "Coming Soon!"
-                url: ""
+              - text: "Slides"
+                url: "https://drive.google.com/file/d/1KVZmwN9wNxWiUq0BZ_Cfx6k7Q0-77Bvu/edit"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/pkW_y2OV6gU"
