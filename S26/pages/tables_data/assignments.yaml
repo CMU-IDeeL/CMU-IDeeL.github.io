@@ -1,10 +1,10 @@
 # deadlines_data.yaml
 assignment_groups:
-  - release_date: ""
+  - release_date: "Wednesday, Jan 14"
     assignments:
       - name: "HW1P1"
         due_date_rowspan: 2 # This due date applies to HW1P1 and HW1P2
-        due_date: "Early Deadline: TBD<br>On-Time Deadline: TBD" # this line was above rowspan in the previous version. this created misaligned columns after you run generate_table.py
+        due_date: "Early Deadline: Friday, Jan 23 11:59 PM<br>On-Time Deadline: Friday, Feb 6 11:59 PM" # this line was above rowspan in the previous version. this created misaligned columns after you run generate_table.py
         materials: []
           # - text: "Autolab"
           #   url: " "
@@ -21,7 +21,7 @@ assignment_groups:
           #   url: " "
       - name: "HW1P1 Bonus"
         due_date_rowspan: 2
-        due_date: " "
+        due_date: "Friday, Apr 24 11:59 PM"
         materials: []
           # - text: "Autolab"
           #   url: " "
@@ -33,11 +33,11 @@ assignment_groups:
           #   url: " "
           # - text: "Piazza"
           #   url: " "
-  - release_date: ""
+  - release_date: "Friday, Feb 6"
     assignments:
       - name: "HW2P1"
         due_date_rowspan: 2
-        due_date: "Early Deadline: TBD<br>On-Time Deadline: TBD"
+        due_date: "Early Deadline: Friday, Feb 20 11:59 PM<br>On-Time Deadline: Friday, Feb 27 11:59 PM"
         materials: []
           # - text: "Autolab"
           #   url: " "
@@ -53,7 +53,7 @@ assignment_groups:
           #   url: " "
       - name: "HW2P1 Bonus"
         due_date_rowspan: 2
-        due_date: " "
+        due_date: "Friday, Apr 24 11:59 PM"
         materials: []
           # - text: "Autolab"
           #   url: " "
@@ -66,11 +66,11 @@ assignment_groups:
           # - text: "Piazza"
           #   url: ""
 
-  - release_date: ""
+  - release_date: "Friday, Feb 27"
     assignments:
       - name: "HW3P1"
         due_date_rowspan: 2
-        due_date: "Early Deadline: TBD<br>On-Time Deadline: TBD"
+        due_date: "Early Deadline: Friday, Mar 20 11:59 PM<br>On-Time Deadline: Friday, Mar 27 11:59 PM"
         materials: []
           # - text: "Piazza"
           #   url: ""
@@ -86,7 +86,7 @@ assignment_groups:
           #   url: " "
       - name: "HW3P1 Bonus"
         due_date_rowspan: 2
-        due_date: " "
+        due_date: "Friday, Apr 24 11:59 PM"
         materials: []
           # - text: "Autolab"
           #   url: " "
@@ -99,11 +99,11 @@ assignment_groups:
           # - text: "Piazza"
           #   url: " "
 
-  - release_date: ""
+  - release_date: "Friday, Mar 27"
     assignments:
       - name: "HW4P1"
         due_date_rowspan: 2
-        due_date: "Early Deadline: TBD<br>On-Time Deadline: TBD"
+        due_date: "Early Deadline: Friday, Apr 10 11:59 PM<br>On-Time Deadline: Friday, Apr 24 11:59 PM"
         materials: []
           # - text: "Autolab"
           #   url: " "
