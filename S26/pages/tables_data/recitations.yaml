@@ -1,6 +1,6 @@
 # schedule_data.yaml
 recitations_0:
-  - date: ""
+  - date: "Monday,<br> Jan 5"
     groups:
       - name: "Python Programming + PyTorch"
         topics:
@@ -12,16 +12,16 @@ recitations_0:
             videos:
               - text: "Video"
                 url: "https://youtu.be/LxbiGktyNlk?si=xohXkkMQikG8_laH"
-            authors: " Bradley Warren"
+            authors: "Bradley Warren"
           - id: "0.2"
             title: "Object Oriented Programming (OOP) Fundamentals"
             materials:
               - text: "Notebook"
-                url: "https://colab.research.google.com/drive/1maqI9V-XHQewR1mjllJq-oYPsb9-hi6E"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.02/OOP_Fundamentals.ipynb"
             videos:
               - text: "Video"
                 url: "https://youtu.be/eZl2XPexRcY?si=BIZVfdxlPDr5BcAx"
-            authors: " Ron Sarma"
+            authors: "Ron Sarma"
           - id: "0.3"
             title: "NumPy Fundamentals"
             materials: 
@@ -37,7 +37,7 @@ recitations_0:
               - text: "Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.04/Recitation_0_4_PyTorch.ipynb"
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.04/Recitation 0.4 - PyTorch.pdf"
+                url: "./documents/Recitation_0_Series/0.04/Recitation 0.4 - PyTorch.pdf"
             videos:
               - text: "Video"
                 url: "https://youtu.be/JodKOum4YrM?si=dA8gRiedAsZu9YkY"
@@ -48,7 +48,7 @@ recitations_0:
               - text: "Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.05/notebook_example.ipynb"
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.05/S2026_Rec0_Env_Ipynb_Slides.pptx"
+                url: "./documents/Recitation_0_Series/0.05/S2026_Rec0_Env_Ipynb_Slides.pptx"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/IV88elV38qk?si=vwL2n-uWTKSShJuG"
@@ -59,7 +59,7 @@ recitations_0:
               - text: "Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.ipynb"
               - text: "Notes"
-                url: "documents/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.pdf"
+                url: "./documents/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.pdf"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/ZArvnLcYwWM?si=lbWw2OtKKI2uEHjX"
@@ -72,7 +72,7 @@ recitations_0:
               - text: "Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.07/Git_Github_CheatSheet.ipynb"
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.07/Recitation%200.7%20Git_Github.pptx"
+                url: "./documents/Recitation_0_Series/0.07/Recitation%200.7%20Git_Github.pptx"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/oNQ2YeWf86I?si=uwrUw4Zb11dzGq18"
@@ -92,7 +92,7 @@ recitations_0:
               - text: "Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_VM_Setup.ipynb"
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_Slides.pdf"
+                url: "./documents/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_Slides.pdf"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/kBB2Q-9W3DY?si=J9KEaZiuAc-YCnnp"
@@ -123,9 +123,9 @@ recitations_0:
             title: "PSC - I (How to connect)"
             materials: 
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.12/S2026_Rec0_PSC_connection.pptx"
+                url: "./documents/Recitation_0_Series/0.12/S2026_Rec0_PSC_connection.pptx"
               - text: "User Guide"
-                url: "documents/Recitation_0_Series/0.12/PSC%20Usage%20Guide%202026spring.docx"
+                url: "./documents/Recitation_0_Series/0.12/PSC%20Usage%20Guide%202026spring.docx"
               - text: "Notebook"
                 url: ""
             videos: 
@@ -136,7 +136,7 @@ recitations_0:
             title: "PSC - II (How to get project resources)"
             materials: 
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.13/S2026_Rec0_PSC_project.pptx"
+                url: "./documents/Recitation_0_Series/0.13/S2026_Rec0_PSC_project.pptx"
               - text: "Notebook"
                 url: ""
             videos: 
@@ -149,11 +149,11 @@ recitations_0:
             title: "Datasets"
             materials: 
               - text: "Notebook P1"
-                url: "documents/Recitation_0_Series/0.14/0_11_Datasets_Part_1.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.14/0_11_Datasets_Part_1.ipynb"
               - text: "Notebook P2"
-                url: "documents/Recitation_0_Series/0.14/0_11_Datasets_Part_2.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.14/0_11_Datasets_Part_2.ipynb"
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.14/IDL Recitation - Datasets.pptx.pdf"
+                url: "./documents/Recitation_0_Series/0.14/IDL Recitation - Datasets.pptx.pdf"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/wg7D_YRbsEg?si=iMmtNPAwl02ujW9h"
@@ -162,7 +162,7 @@ recitations_0:
             title: "Dataloaders"
             materials:
               - text: "Notebook"
-                url: "https://colab.research.google.com/github/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F25/document/Recitation_0_Series/0.12/0_12_Dataloaders.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.15/Dataloaders.ipynb"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/vfV1XYyN92s?si=I4dxBYgqdfyCe3td"
@@ -175,7 +175,7 @@ recitations_0:
               - text: "Notebook P2"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.16/0_16_Data_Preprocessing_Part_2.ipynb"
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.16/Data Preprocessing Spring 26.pptx"
+                url: "./documents/Recitation_0_Series/0.16/Data Preprocessing Spring 26.pptx"
             videos: 
               - text: "Video P1"
                 url: "https://youtu.be/JJwzrEeHg_0?si=BiGorn5C6HpviXQz"
@@ -190,9 +190,9 @@ recitations_0:
             title: "Weights and Biases (WandB)"
             materials: 
               - text: "Notebook"
-                url: "documents/Recitation_0_Series/0.17/0.17_WandB.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.17/0.17_WandB.ipynb"
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.17/Intro to Wandb.pdf"
+                url: "./documents/Recitation_0_Series/0.17/Intro to Wandb.pdf"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/-HziF0qn8-w?si=Pu-j16m8PgXvfwUq"
@@ -210,7 +210,7 @@ recitations_0:
             title: "What to Do When Struggling"
             materials: 
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.19/S26_Rec-0.19_Struggling.pptx.pdf"
+                url: "./documents/Recitation_0_Series/0.19/S26_Rec-0.19_Struggling.pptx.pdf"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/d3xuVuzonEc?si=QA3QqfSvFPgfggbv"
@@ -221,18 +221,18 @@ recitations_0:
             title: "Losses Part 1"
             materials: 
               - text: "Notebook"
-                url: "documents/Recitation_0_Series/0.20/0_20_Losses_Part_1.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.20/0_20_Losses_Part_1.ipynb"
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.20/S26_Rec0.20_Losses_Part1.pptx.pdf"
+                url: "./documents/Recitation_0_Series/0.20/S26_Rec0.20_Losses_Part1.pptx.pdf"
             videos: 
-              - text: "Coming Soon!"
-                url: ""
+              - text: "Video"
+                url: "https://youtu.be/HzIgt-rSdg0"
             authors: "Mengchun Zhang"
           - id: "0.21"
             title: "Losses Part 2"
             materials: 
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.21/Loss%20Functions%202.0-FINAL.pdf"
+                url: "./documents/Recitation_0_Series/0.21/Loss%20Functions%202.0-FINAL.pdf"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/RCo1QhIZduI?si=lZrdUmaAg4dln5bP"
@@ -241,7 +241,7 @@ recitations_0:
             title: "Block Processing"
             materials: 
               - text: "Notebook"
-                url: "documents/Recitation_0_Series/0.22/0_22_Block_Processing.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.22/0_22_Block_Processing.ipynb"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/89tXQLFRpfs?si=a8Kv1HN_mm2cjqGD"
@@ -261,7 +261,7 @@ recitations_0:
             title: "Distributed Training"
             materials: 
               - text: "Notebook"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.24/0_24_Distributed_Training.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.24/0_24_Distributed_Training.ipynb"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/U34Ce_5UCHw?si=v0xBKS0wg-qQ_P3s"
@@ -270,9 +270,9 @@ recitations_0:
             title: "Saving & Loading Models"
             materials: 
               - text: "Notebook"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/S26/S26/documents/Recitation_0_Series/0.25/rec0_25_Saving_%26_Loading_Model.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.25/rec0_25_Saving_%26_Loading_Model.ipynb"
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.25/Saving%20and%20Loading%20Model.pptm"
+                url: "./documents/Recitation_0_Series/0.25/Saving%20and%20Loading%20Model.pptm"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/LgSIsXCBZsc?si=w9iA2-g4EIkpKD1L"
@@ -283,7 +283,7 @@ recitations_0:
             title: "Workflow of HWs - Part 1s"
             materials: 
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.26/Recitation%200.26_Workflows%20of%20HW%20part%201s.pdf"
+                url: "./documents/Recitation_0_Series/0.26/Recitation%200.26_Workflows%20of%20HW%20part%201s.pdf"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/RkYj-K7ec1c?si=F5-TA2Hsa3vms7gx"
@@ -292,7 +292,7 @@ recitations_0:
             title: "Workflow of HWs - Part 2s"
             materials: 
               - text: "Slides"
-                url: "documents/Recitation_0_Series/0.27/0.27%20Workflow%20of%20HWP2s.pptx"
+                url: "./documents/Recitation_0_Series/0.27/0.27%20Workflow%20of%20HWP2s.pptx"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/K8R8xQQf2Ro?si=LtWZAOGF2iOY6WrU"
@@ -300,11 +300,11 @@ recitations_0:
           - id: "0.28"
             title: "Workflow of Project"
             materials: 
-              - text: "Coming Soon!"
-                url: ""
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.28/Flow-of-the-Project.pdf"
             videos: 
-              - text: "Coming Soon!"
-                url: ""
+              - text: "Video"
+                url: "https://youtu.be/pkW_y2OV6gU"
             authors: "Ahmed Issah"
           - id: "0.29"
             title: "How to Read Research Papers"
@@ -318,20 +318,22 @@ recitations_0:
 
 recitations:
   - title: "Lab 1"
-    date: ""
+    date: "Saturday,<br> Jan 17"
     date_rowspan: 1
     topics: [] 
     materials: []
+    materials_rowspan: 1
     videos: []
     videos_rowspan: 1
     authors: ""
     authors_rowspan: 1
 
   - title: "Hackathon 1 <br> HW1 Bootcamp"
-    date: ""
+    date: "Saturday,<br> Jan 17"
     date_rowspan: 1
     topics: []
     materials: []
+    materials_rowspan: 1
     videos:
     - text: ""
       url: ""

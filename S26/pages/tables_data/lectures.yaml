@@ -9,10 +9,11 @@ lectures:
       - "Deadlines"
     # 'slides_videos' and 'additional_materials' will be lists of link objects
     slides_videos: 
-      - text: "Youtube"
-        url: "https://youtu.be/43ochbxaOTE"
       - text: "Slides"
         url: "./documents/slides/S26_Lec-0.Logistics.pdf"
+      - text: "YouTube"
+        url: "https://youtu.be/43ochbxaOTE"
+
     additional_materials: []
     quiz:
       text: ""
@@ -26,6 +27,8 @@ lectures:
     slides_videos: 
       - text: "Slides"
         url: "./documents/slides/lec1.intro.pdf"
+      - text: YouTube
+        url: "https://youtu.be/dHFl0pUVDUY"
     additional_materials: 
       - text: "The New Connectionism (1988)"
         url: "documents/readings/Perceptrons-Epilogue-r.pdf"
