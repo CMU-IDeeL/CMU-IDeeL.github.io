@@ -23,7 +23,9 @@ lectures:
     date: "Monday <br> Jan 12"
     topics:
       - "Introduction"
-    slides_videos: []
+    slides_videos: 
+      - text: "Slides"
+        url: "./documents/slides/lec1.intro.pdf"
     additional_materials: 
       - text: "The New Connectionism (1988)"
         url: "documents/readings/Perceptrons-Epilogue-r.pdf"
