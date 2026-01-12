@@ -29,6 +29,8 @@ lectures:
         url: "./documents/slides/lec1.intro.pdf"
       - text: YouTube
         url: "https://youtu.be/dHFl0pUVDUY"
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Neural+Networks+Introduction/1_wdcur6b2/397642153"
     additional_materials: 
       - text: "The New Connectionism (1988)"
         url: "documents/readings/Perceptrons-Epilogue-r.pdf"
@@ -59,7 +61,7 @@ lectures:
     # No 'quiz' field here because the previous lecture's quiz spans this row
 
   - number: 3
-    date: "Wednesday <br> Jan 21"
+    date: "Friday <br> Jan 16"
     topics:
       - main: "Training Part I"
         sub_topics:
@@ -76,7 +78,7 @@ lectures:
       rowspan: 2
 
   - number: 4
-    date: "Friday <br> Jan 23"
+    date: "Wednesday <br> Jan 21"
     topics:
       - main: "Training Part II"
         sub_topics:
