@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+    <div id="lectures" class="container">
+        <div class="row">
+            <h2>Schedule of Lectures</h2>
+            You can watch the recorded lectures on <b><a
+                href="https://mediaservices.cmu.edu/channel/Introduction+to+Deep+Learning_Spring+2026/397642153"
+                target="_blank">MediaServices</a></b>.
+
+            <!-- Schedule of Lectures Table -->
+            <div id="lectures_table"></div>
+            <script>
+            // $('#lectures_table').load('./page/tables/lectures_table.html');
+            $(document).ready(function() {
+                $('#lectures_table').load('./pages/tables/lectures_table.html');
+            });
+            </script>
+
+            <!-- Recitations Schedule -->
+            <h2 id="recitations" , name="recitations"> Recitations/Labs & Bootcamps</h2>
+            <!-- remove style="display:none" to make the tbl visible-->
+            <div class="table-responsive">
+                <div id="recitations_table"></div>
+                <script>
+                // $('#recitations_table').load('./page/tables/recitations.html');
+                $(document).ready(function() {
+                    $('#recitations_table').load('./pages/tables/recitations.html');
+                });
+                </script>
+            </div>
+
+
+
+            <style>
+                #deadlines td {
+                    vertical-align: middle;
+                    text-align: center;
+                }
+
+                #deadlines {}
+
+                #deadlines .due {
+                    background-color: #e0e0e0;
+                    border-bottom: solid 1px #999;
+                }
+            </style>
+            <h2 id="homework" name="homework"> Assignments </h2>
+                <div class="table-responsive">
+                <div id="assignments_table"></div>
+                <script>
+                // $('#assignments_table').load('./page/tables/assignments_table.html');
+                $(document).ready(function() {
+                    $('#assignments_table').load('./pages/tables/assignments_table.html');
+                });
+                </script>
+            </div>
+        </div>
+
+        <div id="docs-tools" class="container">
+            <div class="row">
+                <h2>Documentation and Tools</h2>
+                <h3>Textbooks</h3>
+                <p>This is a selection of optional textbooks you may find useful</p>
+
+                <div class="textbook">
+                    <div class="textbook-img-container"><img src="./images/dive.png" alt="Deep Learning"></div>
+                    <div class="textbook-info">
+                        <span class="textbook-info-item">
+                            <a href="http://d2l.ai" target="_blank"><b>
+                                    Dive Into Deep Learning
+                                </b></a>
+                        </span>
+                        <span class="textbook-info-item">By Aston Zhang, Zachary C. Lipton, Mu Li, and Alexander J.
+                            Smola</span>
+                        <span class="textbook-info-item"><i>PDF, 2020</i></span>
+                    </div>
+                </div>
+                <div class="textbook">
+                    <div class="textbook-img-container"><img src="./images/Goodfellow.jpg" alt="Deep Learning"></div>
+                    <div class="textbook-info">
+                        <span class="textbook-info-item">
+                            <a href="https://www.deeplearningbook.org/" target="_blank"><b>
+                                    Deep Learning
+                                </b></a>
+                        </span>
+                        <span class="textbook-info-item">By Ian Goodfellow, Yoshua Bengio, Aaron Courville</span>
+                        <span class="textbook-info-item"><i>Online book, 2017</i></span>
+                    </div>
+                </div>
+                <div class="textbook">
+                    <div class="textbook-img-container"><img src="./images/Nielsen.jpg"
+                            alt="Neural Networks and Deep Learning"></div>
+                    <div class="textbook-info">
+                        <span class="textbook-info-item">
+                            <a href="http://neuralnetworksanddeeplearning.com/" target="_blank"><b>
+                                    Neural Networks and Deep Learning
+                                </b></a>
+                        </span>
+                        <span class="textbook-info-item">By Michael Nielsen</span>
+                        <span class="textbook-info-item"><i>Online book, 2016</i></span>
+                    </div>
+                </div>
+                <div class="textbook">
+                    <div class="textbook-img-container"><img src="./images/Lewis.jpg"
+                            alt="Deep Learning Step by Step with Python"></div>
+                    <div class="textbook-info">
+                        <span class="textbook-info-item">
+                            <a href="https://www.amazon.com/Deep-Learning-Step-Python-Introduction/dp/1535410264"
+                                target="_blank"><b>
+                                    Deep Learning Step by Step with Python: A Very Gentle Introduction to Deep
+                                    Neural Networks for Practical Data Science
+                                </b></a>
+                        </span>
+                        <span class="textbook-info-item">By N. D. Lewis</span>
+                        <span class="textbook-info-item"><i></i></span>
+                    </div>
+                </div>
+
+                <div class="textbook">
+                    <div class="textbook-img-container"><img src="./images/Rumelhart1.jpg"
+                            alt="Parallel Distributed Processing"></div>
+                    <div class="textbook-info">
+                        <span class="textbook-info-item">
+                            <a href="https://mitpress.mit.edu/books/parallel-distributed-processing-volume-1"
+                                target="_blank"><b>
+                                    Parallel Distributed Processing, Volume 1
+                                </b></a>
+                        </span>
+                        <span class="textbook-info-item">By Rumelhart and McClelland</span>
+                    </div>
+                </div>
+
+                <div class="textbook">
+                    <div class="textbook-img-container"><img src="./images/Rumelhart2.jpg"
+                            alt="Parallel Distributed Processing"></div>
+                    <div class="textbook-info">
+                        <span class="textbook-info-item"><a
+                                href="https://mitpress.mit.edu/books/parallel-distributed-processing-volume-2"
+                                target="_blank"><b>
+                                    Parallel Distributed Processing, Volume 2
+                                </b></a>
+                        </span>
+                        <span class="textbook-info-item">By Rumelhart and McClelland</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" container">
+            <div class="row">
+            </div>
+        </div>
+        <div
+            style="font-size: .7em; width: 100%; height: 20px; background: #A80000; position: absolute; left: 0; text-align: center; color: white; padding-top: 5px">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+# lectures_data.yaml
+lectures:
+  - number: 0
+    date: "Monday <br> Jan 5"
+    topics:
+      - "Course Logistics"
+      - "Learning Objectives"
+      - "Grading"
+      - "Deadlines"
+    # 'slides_videos' and 'additional_materials' will be lists of link objects
+    slides_videos: 
+      - text: "Slides"
+        url: "./documents/slides/S26_Lec-0.Logistics.pdf"
+      - text: "YouTube"
+        url: "https://youtu.be/43ochbxaOTE"
+
+    additional_materials: []
+    quiz:
+      text: ""
+      # url: "" # Optional: if there's a link for "No Quiz"
+      rowspan: 1 # This quiz entry applies to this row only
+
+  - number: 1
+    date: "Monday <br> Jan 12"
+    topics:
+      - "Introduction"
+    slides_videos: 
+      - text: "Slides"
+        url: "./documents/slides/lec1.intro.pdf"
+      - text: YouTube
+        url: "https://youtu.be/dHFl0pUVDUY"
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Neural+Networks+Introduction/1_wdcur6b2/397642153"
+    additional_materials: 
+      - text: "The New Connectionism (1988)"
+        url: "documents/readings/Perceptrons-Epilogue-r.pdf"
+      - text: "On Alan Turing's Anticipation of Connectionism"
+        url: "http://www.alanturing.net/turing_archive/pages/pub/turing3/turing3.pdf"
+      - text: "McCullogh and Pitts paper"
+        url: "https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf"
+      - text: "Rosenblatt: The perceptron"
+        url: "documents/readings/Rosenblatt_1959-09865-001.pdf"
+      - text: "Bain: Mind and body"
+        url: "documents/readings/Alexander_Bain_Mind_and_Body_009178a0.pdf"
+      - text: "Hebb: The Organization Of Behaviour"
+        url: "https://pure.mpg.de/pubman/item/item_2346268_3/component/file_2346267/Hebb_1949_The_Organization_of_Behavior.pdf"
+    quiz:
+      text: "" # this line does not go below rowspan unlike the assignments.yaml file (also notice there is no "-" before text and rowspan for quiz)
+      # url: "https://canvas.cmu.edu/courses/38471/quizzes/115273" # Example if link exists
+      rowspan: 2 # This quiz entry spans this row and the next
+      
+
+  - number: 2
+    date: "Wednesday <br> Jan 14"
+    topics:
+      - "Neural Nets As Universal Approximators"
+    slides_videos: []
+    additional_materials:
+      - text: "Size and Depth complexity of Boolean Circuits"
+        url: "./documents/readings/booleancircuits_shannonproof.pdf"
+    # No 'quiz' field here because the previous lecture's quiz spans this row
+
+  - number: 3
+    date: "Friday <br> Jan 16"
+    topics:
+      - main: "Training Part I"
+        sub_topics:
+          - "The Problem of Learning"
+          - "Empirical Risk Minimization"
+    slides_videos: []
+    additional_materials:
+    - text: "Artificial Neural Networks of the Perceptron, Madaline, and Backpropagation Family"
+      url: "./documents/readings/c1992artificialneural.pdf"
+    - text: "The Perceptron Learning Algorithm and its Convergence"
+      url: "./documents/readings/Perceptron_Learning_Algorithm_and_Convergence.pdf"
+    quiz:
+      text: ""
+      rowspan: 2
+
+  - number: 4
+    date: "Wednesday <br> Jan 21"
+    topics:
+      - main: "Training Part II"
+        sub_topics:
+          - "Gradient Descent"
+          - "Training the Network"
+    slides_videos: []
+    additional_materials: 
+    - text: "Widrow and Lehr (1992)"
+      url: "documents/readings/c1992artificialneural.pdf"
+    - text: "Adaline and Madaline"
+      url: "documents/readings/04Adaline.pdf"
+    - text: "Convergence of perceptron algorithm"
+      url: "http://www.cs.columbia.edu/~mcollins/courses/6998-2012/notes/perc.converge.pdf"
+    - text: "Threshold Logic"
+      url: "https://www.tutorialspoint.com/digital_circuits/digital_circuits_threshold_logic.htm"
+    - text: "TC (Complexity)"
+      url: "https://en.wikipedia.org/wiki/TC_(complexity)"
+    - text: "AC (Complexity)"
+      url: "https://en.wikipedia.org/wiki/AC_(complexity)"
+    # No quiz field
+
+  - number: 5
+    date: "Monday <br> Jan 26"
+    topics:
+      - main: "Training Part III"
+        sub_topics:
+          - "Backpropagation"
+          - "Calculus of Backpropagation"
+    slides_videos: []
+    additional_materials: 
+    - text: "Werbos (1990)"
+      url: "https://ieeexplore.ieee.org/document/58337"
+    - text: "Rumelhart, Hinton and Williams (1986)"
+      url: "http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf"
+    quiz:
+      text: ""
+      rowspan: 2
+
+  - number: 6
+    date: "Wednesday <br> Jan 28"
+    topics:
+      - main: "Training Part IV"
+        sub_topics:
+          - "Convergence issues"
+          - "Loss Surfaces"
+          - "Momentum"
+    slides_videos: []
+    additional_materials: 
+    - text: "Backpropagation Fails to Separate, Where Perceptrons Succeed, Brady et al. (1989)"
+      url: "https://ieeexplore.ieee.org/document/31314"
+    - text: "Why Momentum Really Works"
+      url: "https://distill.pub/2017/momentum/"
+    # No quiz field
+
+  - number: 7
+    date: "Monday <br> Feb 2"
+    topics:
+      - main: "Training Part V"
+        sub_topics:
+          - "Optimization"
+          - "Batch Size, SGD, Mini-batch, Second-order Methods"
+    slides_videos: []
+    additional_materials: 
+    - text: "Momentum and Polyak (1964)"
+      url: "https://www.sciencedirect.com/science/article/abs/pii/0041555364901375"
+    - text: "Nesterov (1983)"
+      url: "http://www.mathnet.ru/php/archive.phtml?wshow=paper&amp;jrnid=dan&amp;paperid=46009&amp;option_lang=eng"
+    - text: "Derivatives and Influences"
+      url: "documents/readings/derivatives_and_influences.pdf"
+    quiz:
+      text: ""
+      rowspan: 2
+
+  - number: 8
+    date: "Wednesday <br> Feb 4"
+    topics:
+      - main: "Training Part VI"
+        sub_topics:
+          - "Optimizers and Regularizers"
+          - "Choosing a Divergence (Loss) Function"
+          - "Batch Normalization"
+          - "Dropout"
+    slides_videos: []
+    additional_materials: 
+    - text: "Derivatives and Influence Diagrams"
+      url: "./documents/readings/derivatives and influences.pdf"
+    - text: "ADAGRAD, Duchi, Hazan and Singer (2011)"
+      url: "http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf"
+    - text: "Adam: A method for stochastic optimization, Kingma and Ba (2014)"
+      url: "https://arxiv.org/abs/1412.6980"
+    # No quiz field
+
+  - number: 9
+    date: "Monday <br> Feb 9"
+    topics:
+      - "Convolutional Neural Networks (CNNs) I"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: ""
+      rowspan: 2
+
+  - number: 10
+    date: "Wednesday <br> Feb 11"
+    topics:
+      - "CNNs II"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field
+
+  - number: 11
+    date: "Monday <br> Feb 16"
+    topics:
+      - "CNNs III"
+    slides_videos: []
+    additional_materials: 
+    - text: "CNN Explainer"
+      url: "https://poloclub.github.io/cnn-explainer/"
+    quiz:
+      text: ""
+      rowspan: 2
+
+  - number: 12
+    date: "Wednesday <br> Feb 18"
+    topics:
+      - "CNNs IV"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field
+
+  - number: 13
+    date: "Monday <br> Feb 23"
+    topics:
+      - "Recurrent Neural Networks (RNNs) I"
+    slides_videos: []
+    additional_materials: 
+    - text: "Fahlman and Lebiere (1990)"
+      url: "https://proceedings.neurips.cc/paper/1989/file/69adc1e107f7f7d035d7baf04342e1ca-Paper.pdf"
+    - text: "How to compute a derivative"
+      url: "./documents/readings/How to compute a derivative.pdf"
+    quiz:
+      text: ""
+      rowspan: 2 # The HTML shows rowspan 1 for this quiz
+
+  - number: 14
+    date: "Wednesday <br> Feb 25"
+    topics:
+      - "RNNs II"
+    slides_videos: []
+    additional_materials: []
+
+  - number: 15
+    date: "Monday <br> Mar 9"
+    topics:
+      - "Sequence to Sequence Models"
+      - "Connectionist Temporal Classification (CTC)"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: ""
+      rowspan: 2
+
+  - number: 16
+    date: "Wednesday <br> Mar 11"
+    topics:
+      - main: "Connectionist Temporal Classification"
+        sub_topics:
+          - "Blanks"
+          - "Beam Search"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field as it spans from the previous row
+
+  - number: 17
+    date: "Monday <br> Mar 16"
+    topics:
+      - "Language Models"
+      - "Translation"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: ""
+      rowspan: 2
+
+  - number: 18
+    date: "Wednesday <br> Mar 18"
+    topics:
+      - "Attention Models"
+      - "Transformers"
+    slides_videos: []
+    additional_materials: [] # Additional materials commented out in HTML
+    # No quiz field as it spans from the previous row
+
+  - number: 19
+    date: "Monday <br> Mar 23"
+    topics:
+      - "Transformers and Newer Architectures"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: ""
+      rowspan: 2
+
+  - number: 20
+    date: "Wednesday <br> Mar 25"
+    topics:
+      - "Large Language Models"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field as it spans from the previous row
+
+  - number: 21
+    date: "Monday <br> Mar 30"
+    topics:
+      - "Representation and Autoencoders"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: ""
+      rowspan: 2
+
+  - number: 22
+    date: "Wednesday <br> Apr 1"
+    topics:
+      - "Variational Auto Encoders"
+    slides_videos: []
+    additional_materials: []
+
+  - number: 23
+    date: "Monday <br> Apr 6"
+    topics:
+      - "Diffusion"
+    slides_videos: []
+    additional_materials: []
+    quiz:
+      text: ""
+      rowspan: 2
+    # No quiz field as it spans from the previous row
+
+  - number: 24
+    date: "Wednesday <br> Apr 8"
+    topics:
+      - "Generative Adversarial Networks"
+    slides_videos: []
+    additional_materials: []
+
+  - number: 25
+    date: "Monday <br> Apr 13"
+    topics:
+      - "Graph Neural Networks (GNNs)"
+    slides_videos: []
+    additional_materials: [] # Additional materials commented out in HTML
+    quiz:
+      text: ""
+      rowspan: 2
+
+  - number: 26
+    date: "Wednesday <br> Apr 15"
+    topics:
+      - "Guest Lecture / Buffer"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field as it spans from the previous row
+
+  - number: 27
+    date: "Monday <br> Apr 20"
+    topics:
+      - "Hopfield Networks"
+    slides_videos: []
+    additional_materials: [] # Additional materials commented out in HTML
+    quiz:
+      text: ""
+      rowspan: 2
+
+  - number: 28
+    date: "Wednesday <br> Apr 22"
+    topics:
+      - "Boltzmann Machines"
+    slides_videos: []
+    additional_materials: []
+    # No quiz field as it spans from the previous row

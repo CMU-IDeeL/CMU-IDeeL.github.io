@@ -1,0 +1,343 @@
+# schedule_data.yaml
+recitations_0:
+  - date: "Monday,<br> Jan 5"
+    groups:
+      - name: "Python Programming + PyTorch"
+        topics:
+          - id: "0.1"
+            title: "Python Fundamentals"
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.01/Python_basics_with_numpy.ipynb"
+            videos:
+              - text: "Video"
+                url: "https://youtu.be/LxbiGktyNlk?si=xohXkkMQikG8_laH"
+            authors: "Bradley Warren"
+          - id: "0.2"
+            title: "Object Oriented Programming (OOP) Fundamentals"
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.02/OOP_Fundamentals.ipynb"
+            videos:
+              - text: "Video"
+                url: "https://youtu.be/eZl2XPexRcY?si=BIZVfdxlPDr5BcAx"
+            authors: "Ron Sarma"
+          - id: "0.3"
+            title: "NumPy Fundamentals"
+            materials: 
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.03/Rec_0_3_NumPy_Fundamentals_S26.ipynb"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/4MwcHkV0BN4?si=cAkGAkwWgjZoykE_"
+            authors: "Miya Sylvester"
+          - id: "0.4"
+            title: "PyTorch"
+            materials: 
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.04/Recitation_0_4_PyTorch.ipynb"
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.04/Recitation 0.4 - PyTorch.pdf"
+            videos:
+              - text: "Video"
+                url: "https://youtu.be/JodKOum4YrM?si=dA8gRiedAsZu9YkY"
+            authors: "Manigandan Ramadasan"
+          - id: "0.5"
+            title: "Notebooks and Conda Environments"
+            materials: 
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.05/notebook_example.ipynb"
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.05/S2026_Rec0_Env_Ipynb_Slides.pptx"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/IV88elV38qk?si=vwL2n-uWTKSShJuG"
+            authors: "Yabsera Yemanberhan"
+          - id: "0.6"
+            title: "Tensordot & Einsum"
+            materials: 
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.ipynb"
+              - text: "Notes"
+                url: "./documents/Recitation_0_Series/0.06/0_6_Tensordot_%26_Einsum.pdf"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/ZArvnLcYwWM?si=lbWw2OtKKI2uEHjX"
+            authors: "Felix Hirwa Nshuti"
+      - name: "Computational Resources"
+        topics:
+          - id: "0.7"
+            title: "GitHub"
+            materials: 
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.07/Git_Github_CheatSheet.ipynb"
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.07/Recitation%200.7%20Git_Github.pptx"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/oNQ2YeWf86I?si=uwrUw4Zb11dzGq18"
+            authors: "Malihah Rahaman, <br> Khushee"
+          - id: "0.8"
+            title: "Google Colab"
+            materials: 
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.08/Google_colab_recitation_0_8.ipynb"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/CH4G-IodPMo?si=AnrtQyT9x-NDv_16"
+            authors: "Olivier Kwizera"
+          - id: "0.9"
+            title: "Google Cloud Platform"
+            materials: 
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_VM_Setup.ipynb"
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.09/0_9_Google_Cloud_Platform_Slides.pdf"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/kBB2Q-9W3DY?si=J9KEaZiuAc-YCnnp"
+            authors: "Yabsera Yemanberhan"
+          - id: "0.10"
+            title: "Amazon Web Services (AWS)"
+            materials: 
+              - text: ""
+                url: ""
+              - text: ""
+                url: ""
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/0aLGh2GojX4?si=IJsPczvR32rT5jNl"
+            authors: "Anurag Aryal"
+          - id: "0.11"
+            title: "Kaggle"
+            materials: 
+              - text: ""
+                url: ""
+              - text: ""
+                url: "" 
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/Fwbktrtw-PM?si=Xlr64H7lIwnGlQCc"
+            authors: "Delphine Nyaboke"
+          - id: "0.12"
+            title: "PSC - I (How to connect)"
+            materials: 
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.12/S2026_Rec0_PSC_connection.pptx"
+              - text: "User Guide"
+                url: "./documents/Recitation_0_Series/0.12/PSC%20Usage%20Guide%202026spring.docx"
+              - text: "Notebook"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/ZBnwDnvsW2o?si=8bRblSpOAveEU8tk"
+            authors: "En Zheng"
+          - id: "0.13"
+            title: "PSC - II (How to get project resources)"
+            materials: 
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.13/S2026_Rec0_PSC_project.pptx"
+              - text: "Notebook"
+                url: ""
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/g8MxlZPLqTw?si=Rq0zyvEEUstnIfoM"
+            authors: "En Zheng"
+      - name: "Data Handling and Processing"
+        topics:
+          - id: "0.14"
+            title: "Datasets"
+            materials: 
+              - text: "Notebook P1"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.14/0_11_Datasets_Part_1.ipynb"
+              - text: "Notebook P2"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.14/0_11_Datasets_Part_2.ipynb"
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.14/IDL Recitation - Datasets.pptx.pdf"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/wg7D_YRbsEg?si=iMmtNPAwl02ujW9h"
+            authors: "Mugur Preda"
+          - id: "0.15"
+            title: "Dataloaders"
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.15/Dataloaders.ipynb"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/vfV1XYyN92s?si=I4dxBYgqdfyCe3td"
+            authors: "Yixiong Fang"
+          - id: "0.16"
+            title: "Data Preprocessing"
+            materials: 
+              - text: "Notebook P1"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.16/0_16_Data_Preprocessing_Part_1.ipynb"
+              - text: "Notebook P2"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.16/0_16_Data_Preprocessing_Part_2.ipynb"
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.16/Data Preprocessing Spring 26.pptx"
+            videos: 
+              - text: "Video P1"
+                url: "https://youtu.be/JJwzrEeHg_0?si=BiGorn5C6HpviXQz"
+              - text: "Video P2"
+                url: "https://youtu.be/vz_6DfVvrqM?si=V-ehKsZHMlsvH3pG"
+              - text: "Video P3"
+                url: "https://youtu.be/gJ_4r4edZV8?si=DEz_0qXTOBhmSGb7"
+            authors: "Bradley Warren"
+      - name: "Debugging & Problem Solving"
+        topics:
+          - id: "0.17"
+            title: "Weights and Biases (WandB)"
+            materials: 
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.17/0.17_WandB.ipynb"
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.17/Intro to Wandb.pdf"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/-HziF0qn8-w?si=Pu-j16m8PgXvfwUq"
+            authors: "Akshara Kanna"
+          - id: "0.18"
+            title: "Debugging"
+            materials: 
+              - text: ""
+                url: ""
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/ukbTKEboqGc?si=6vxiFm8BLVRZtp0P"
+            authors: "Puru Samal"
+          - id: "0.19"
+            title: "What to Do When Struggling"
+            materials: 
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.19/S26_Rec-0.19_Struggling.pptx.pdf"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/d3xuVuzonEc?si=QA3QqfSvFPgfggbv"
+            authors: "Miya Sylvester"
+      - name: "Algorithmic Techniques"
+        topics:
+          - id: "0.20"
+            title: "Losses Part 1"
+            materials: 
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.20/0_20_Losses_Part_1.ipynb"
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.20/S26_Rec0.20_Losses_Part1.pptx.pdf"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/HzIgt-rSdg0"
+            authors: "Mengchun Zhang"
+          - id: "0.21"
+            title: "Losses Part 2"
+            materials: 
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.21/Loss%20Functions%202.0-FINAL.pdf"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/RCo1QhIZduI?si=lZrdUmaAg4dln5bP"
+            authors: " Madhavi Gulavani"
+          - id: "0.22"
+            title: "Block Processing"
+            materials: 
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.22/0_22_Block_Processing.ipynb"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/89tXQLFRpfs?si=a8Kv1HN_mm2cjqGD"
+            authors: "Pengyu Chang"
+      - name: "Model Logistics"
+        topics:
+          - id: "0.23"
+            title: "Pipeline"
+            materials: 
+              - text: ""
+                url: ""
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/TGEBH6H3om4?si=XHmZ6snlZFZ-NXnc"
+            authors: "Yixiong Fang"
+          - id: "0.24"
+            title: "Distributed Training"
+            materials: 
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.24/0_24_Distributed_Training.ipynb"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/U34Ce_5UCHw?si=v0xBKS0wg-qQ_P3s"
+            authors: "Felix Hirwa Nshuti"
+          - id: "0.25"
+            title: "Saving & Loading Models"
+            materials: 
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.25/rec0_25_Saving_%26_Loading_Model.ipynb"
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.25/Saving%20and%20Loading%20Model.pptm"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/LgSIsXCBZsc?si=w9iA2-g4EIkpKD1L"
+            authors: "Floride Tuyisenge"
+      - name: "HWs and Project Workflow Management"
+        topics:
+          - id: "0.26"
+            title: "Workflow of HWs - Part 1s"
+            materials: 
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.26/Recitation%200.26_Workflows%20of%20HW%20part%201s.pdf"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/RkYj-K7ec1c?si=F5-TA2Hsa3vms7gx"
+            authors: "Euijin Hong"
+          - id: "0.27"
+            title: "Workflow of HWs - Part 2s"
+            materials: 
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.27/0.27%20Workflow%20of%20HWP2s.pptx"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/K8R8xQQf2Ro?si=LtWZAOGF2iOY6WrU"
+            authors: "Pengyu Chang"
+          - id: "0.28"
+            title: "Workflow of Project"
+            materials: 
+              - text: "Slides"
+                url: "./documents/Recitation_0_Series/0.28/Flow-of-the-Project.pdf"
+            videos: 
+              - text: "Video"
+                url: "https://youtu.be/pkW_y2OV6gU"
+            authors: "Ahmed Issah"
+          - id: "0.29"
+            title: "How to Read Research Papers"
+            materials: 
+              - text: "Coming Soon!"
+                url: ""
+            videos: 
+              - text: "Coming Soon!"
+                url: ""
+            authors: "Bhiksha Raj"
+
+recitations:
+  - title: "Lab 1"
+    date: "Saturday,<br> Jan 17"
+    date_rowspan: 1
+    topics: [] 
+    materials: []
+    materials_rowspan: 1
+    videos: []
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 1 <br> HW1 Bootcamp"
+    date: "Saturday,<br> Jan 17"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    materials_rowspan: 1
+    videos:
+    - text: ""
+      url: ""
+    - text: ""
+      url: ""
+    authors: ""
+    authors_rowspan: 1
