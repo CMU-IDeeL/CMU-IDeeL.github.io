@@ -149,11 +149,13 @@ recitations_0:
             title: "Datasets"
             materials: 
               - text: "Notebook P1"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.14/0_11_Datasets_Part_1.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.14/0_14_Datasets_Part_1.ipynb"
               - text: "Notebook P2"
-                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.14/0_11_Datasets_Part_2.ipynb"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.14/0_14_Datasets_Part_2.ipynb"
               - text: "Slides"
                 url: "./documents/Recitation_0_Series/0.14/IDL Recitation - Datasets.pptx.pdf"
+              - text: "Dataset"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/S26/documents/Recitation_0_Series/0.14/Recitation_0.14_data.zip"
             videos: 
               - text: "Video"
                 url: "https://youtu.be/wg7D_YRbsEg?si=iMmtNPAwl02ujW9h"
