@@ -57,6 +57,8 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./documents/slides/lec2.universal.pdf"
+      - text: "YouTube"
+        url: "https://youtu.be/dUukTSXi20c"
     additional_materials:
       - text: "Size and Depth complexity of Boolean Circuits"
         url: "./documents/readings/booleancircuits_shannonproof.pdf"
