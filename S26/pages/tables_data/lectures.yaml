@@ -54,10 +54,14 @@ lectures:
     date: "Wednesday <br> Jan 14"
     topics:
       - "Neural Nets As Universal Approximators"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./documents/slides/lec2.universal.pdf"
     additional_materials:
       - text: "Size and Depth complexity of Boolean Circuits"
         url: "./documents/readings/booleancircuits_shannonproof.pdf"
+      - text: "The Synthesis of Two-Terminal Switching Circuits"
+        url: "./documents/readings/Shannon49.pdf"
     # No 'quiz' field here because the previous lecture's quiz spans this row
 
   - number: 3
