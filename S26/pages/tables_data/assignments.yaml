@@ -5,34 +5,34 @@ assignment_groups:
       - name: "HW1P1"
         due_date_rowspan: 2 # This due date applies to HW1P1 and HW1P2
         due_date: "Early Deadline: Friday, Jan 23 11:59 PM<br>On-Time Deadline: Friday, Feb 6 11:59 PM" # this line was above rowspan in the previous version. this created misaligned columns after you run generate_table.py
-        materials: []
-          # - text: "Autolab"
-          #   url: " "
-          # - text: "Piazza"
-          #   url: " "
+        materials:
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/HW1P1"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/21"
       - name: "HW1P2"
         # No release_date here, uses previous rowspan
-        materials: []
-          # - text: "Checkpoint Submission Autolab"
-          #   url: " "
-          # - text: "Final Submission Autolab"
-          #   url: " "
-          # - text: "Piazza"
-          #   url: " "
+        materials:
+          - text: "Checkpoint Submission Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/hw1p2checkpoint"
+          - text: "Final Submission Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/hw1p2final"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/13"
       - name: "HW1P1 Bonus"
         due_date_rowspan: 2
         due_date: "Friday, Apr 24 11:59 PM"
-        materials: []
-          # - text: "Autolab"
-          #   url: " "
-          # - text: "Piazza"
-          #   url: " "
+        materials:
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/HW1P1-Bonus"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/18"
       - name: "HW1P1 Autograd"
-        materials: []
-          # - text: "Autolab"
-          #   url: " "
-          # - text: "Piazza"
-          #   url: " "
+        materials:
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/HW1-Autograd"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/18"
   - release_date: "Friday, Feb 6"
     assignments:
       - name: "HW2P1"
