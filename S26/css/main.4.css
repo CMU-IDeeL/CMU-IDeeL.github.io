@@ -21,12 +21,17 @@ code {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #A80000;
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
 }
 
 .menu-wrapper {
@@ -41,6 +46,11 @@ code {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
 }
 
 .header-item {
@@ -48,55 +58,60 @@ code {
     color: white;
     text-align: center;
     cursor: pointer;
-    padding: 5px;
-    width: 10%;
+    padding: 10px 14px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    height: 100%;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    border-radius: 4px;
+    -webkit-transition: background-color 0.15s ease;
+    -o-transition: background-color 0.15s ease;
+    transition: background-color 0.15s ease;
+    font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 .header-item:hover {
-    background-color: #A54B4B;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .header-item.active {
-    background-color: #b96765;
-    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
 }
 
 .version-menu {
-    display: inline-block;
-    float: right;
-	height: 100%;
-	padding: 5px;
-    padding-left: 20px;
-	text-align: right;
-    -webkit-box-flex: 4;
-        -ms-flex-positive: 4;
-            flex-grow: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    text-align: right;
 }
 
 
 .version-icon {
-    color: white;
-    border-radius: 3px;
-    padding-left: 2px;
-    padding-right: 2px;
+    color: rgba(255, 255, 255, 0.85);
+    border-radius: 4px;
+    padding: 6px 10px;
     cursor: pointer;
     text-decoration: none;
+    font-weight: 400;
+    -webkit-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    transition: all 0.15s ease;
 }
 
 .version-icon:visited {
-    color: white;
+    color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
 }
 .version-icon:hover {
     color: white;
     text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 .version-icon:active {
     color: white;
@@ -105,11 +120,11 @@ code {
 
 .current-icon {
     cursor: auto;
-    background-color: #b96765;
-    border-radius: 3px;
-    padding-left: 2px;
-    padding-right: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 6px 10px;
     color: white;
+    font-weight: 600;
 }
 
 .mobile-header {
