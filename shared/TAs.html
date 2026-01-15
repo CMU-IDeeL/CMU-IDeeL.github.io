@@ -1,470 +1,817 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <LINK href="./TAs.css" rel="stylesheet" type="text/css">
-        <title>11-785 Teaching Assistants</title>
-    </head>
-    <h1> Hall of Fame</h1>
+<head>
+    <meta charset="UTF-8">
+    <title>11-785 Teaching Assistants - Hall of Fame</title>
+    <link rel="shortcut icon" href="../S26/images/favicon.ico" type="image/vnd.microsoft.icon">
 
-    <p> 11-785/485 Intro to DL is a very demanding course. As much as it places demands on the students, it places far
-        greater demands on the teaching assistants, who work very hard, often pulling long weekend hours, just to ensure
-        that the students get the most out of the course. They hold endless office hours, answer (on average) over 30
-        piazza questions <i>a day</i>, conduct recitations, help design quizzes, design and monitor homeworks, provide
-        endless and tireless help to ensure students are able to complete them, mentor projects, read and grade dozens
-        of project proposals, midterm reports and final reports, conduct final project evaluations, and finally help
-        with the grading and assessments.</p>
+    <!-- display nicely on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap 3 -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+        crossorigin="anonymous">
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic' rel='stylesheet'
+        type='text/css'>
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/fc8bcf2df2.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-    <p>The course has been very successful, and is currently being followed by many universities around the US and the
-        world. The success is entirely attributable to my TAs, without whose tremendous work nothing would happen. They
-        are the real heroes of this effort.</p>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.5em;
+            font-weight: 300;
+        }
 
-    <p> I cannot thank them enough for everything they did and continue to do, but I <i>can</i> acknowledge them by
-        name, for everyone who ever visits this page to see.
+        b {
+            font-weight: 400;
+        }
 
-    <p> Below is a list of the TAs who have worked on the course over the various semesters.</p>
-    <p>Thank you all.</p>
+        .header {
+            position: fixed;
+            flex-direction: row;
+            display: flex;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #A80000;
+            font-size: 1.5em;
+            color: white;
+            z-index: 100;
+        }
 
-    <h3>Fall 2016</h3>
-    <ul>
-        <li>Haohan Wang (haohanw@andrew.cmu.edu)</li>
-        <li> Haoqi Fan (haoqif@andrew.cmu.edu)</li>
-    </ul>
+        .menu-wrapper {
+            float: left;
+            flex-grow: 4;
+            display: flex;
+            flex-direction: row;
+        }
 
-    <h3>Spring 2017</h3>
-    <ul>
-        <li> Muhammad Ahmed Shah (mshah1@andrew.cmu.edu)</li>
-    </ul>
+        .header-item {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            padding: 5px 15px;
+            text-decoration: none;
+        }
 
-    <h3>Fall 2017</h3>
-    <ul>
-        <li> Daniel Schwartz (drschar@andrew.cmu.edu)</li>
-        <li> Alexander Litzenberger (alitzenb@andrew.cmu.edu)</li>
-    </ul>
+        .header-item:hover {
+            background-color: #A54B4B;
+            color: white;
+            text-decoration: none;
+        }
 
-    <h3>Spring 2018</h3>
-    <ul>
-        <li> Benjamin Striner (bstriner@andrew.cmu.edu)</li>
-        <li> Jerry Ding (dalud@andrew.cmu.edu)</li>
-        <li> Rajat Kulshreshta (rkulshre@andrew.cmu.edu)</li>
-        <li> Thomas Manzini (tmanzini@andrew.cmu.edu)</li>
-        <li> Ryan Brigeden (rbrigden@andrew.cmu.edu)</li>
-        <li> Mounira Tlili for Doha (mst@andrew.cmu.edu)</li>
-        <li> Aggrey Muhebwa for Kigali (amuhebwa@andrew.cmu.edu)</li>
-    </ul>
+        .version-menu {
+            display: inline-block;
+            float: right;
+            height: 100%;
+            padding: 5px;
+            padding-left: 20px;
+            text-align: right;
+            flex-grow: 4;
+        }
 
-    <h3>Fall 2018</h3>
-    <ul>
-        <li> Ryan Brigden (rbrigden@andrew.cmu.edu) </li>
-        <li> Raphael Franck Olivier (rolivier@andrew.cmu.edu) </li>
-        <li> Sai Nihar Tadichetty (ntadiche@andrew.cmu.edu) </li>
-        <li> Shubham Tripathi (shubhamt@andrew.cmu.edu) </li>
-        <li> Soham Ghosh (sohamg@andrew.cmu.edu) </li>
-        <li> Madhura Das (madhurad@andrew.cmu.edu) </li>
-        <li> Ipsita Prakash (iprakash@andrew.cmu.edu) </li>
-        <li> Dhruv Shah (ddshah@andrew.cmu.edu) </li>
-        <li> Shaden Shaar (sshaar@andrew.cmu.edu) </li>
-        <li> David Zhang (davidz1@andrew.cmu.edu) </li>
-        <li> Zeqiang Huang (zqeiangh@andrew.cmu.edu)</li>
-        <li> Anushree Prasanna Kumar (apkumar@andrew.cmu.edu) </li>
-        <li> Muhammad Ahmad Shah (mshah1@andrew)</li>
-        <li> Omar Khattab for Doha (okhattab@cmu.edu) </li>
-        <li> Nebiyou Yismaw for Kigali (nyismaw@andrew.cmu.edu) </li>
-    </ul>
+        .version-icon {
+            color: white;
+            border-radius: 3px;
+            padding-left: 2px;
+            padding-right: 2px;
+            cursor: pointer;
+            text-decoration: none;
+        }
 
-    <h3>Spring 2019</h3>
-    <ul>
-        <li> Alex Litzenberger : alitzenb@andrew </li>
-        <li> Chia-wei Chang (for SV): chiaweic@andrew
-        <li> Cody Smith (for SV): codys@andrew </li>
-        <li> David Bick : dbick@andrew </li>
-        <li> Hengrui Liu (for SV): hengrui2@andrew </li>
-        <li> Hira Dhamyal : hyd@andrew </li>
-        <li> Jakob Cassiman (for SV): jcassima@andrew </li>
-        <li> Josh Movenzadeh : jmoavenz@andrew </li>
-        <li> Kai Hu : kaihu@andrew </li>
-        <li> Mir Mohammed Daanish Ali Khan : malikhan@andrew </li>
-        <li> Muhammad Ahmad Shah : mshah1@andrew</li>
-        <li> Oluawefmi Azeez (for Kigali): oazeez@andrew </li>
-        <li> Raphael Olivier : rolivier@andrew </li>
-        <li> Sarveshwaran Dhanasekar : sarveshd@andrew </li>
-        <li> Shaden Shaar (for Doha): sshaar@andrew </li>
-        <li> Simral Chaudhary : simralc@andrew </li>
-        <li> William Hu : haoqih@andrew </li>
-    </ul>
+        .version-icon:visited,
+        .version-icon:hover,
+        .version-icon:active {
+            color: white;
+            text-decoration: none;
+        }
 
-    <h3>Fall 2019</h3>
-    <ul>
-        <li><b>Aishwarya Reganti</b>: areganti@andrew.cmu.edu</li>
-        <li><b>Amit Chahar</b>: achahar@andrew.cmu.edu</li>
-        <li><b>Ethan Xuanyue Yang</b>: xuanyuey@andrew.cmu.edu</li>
-        <li><b>Hanna Moazam</b>: hmoazam@andrew.cmu.edu</li>
-        <li><b>Hariharan Muralidharan</b>: hmuralid@andrew.cmu.edu</li>
-        <li><b>Kangrui Ruan (Darren)</b>: kangruir@andrew.cmu.edu</li>
-        <li><b>Liwei Cai</b>: liweicai@andrew.cmu.edu</li>
-        <li><b>Pallavi Sharma</b>: psharma2@andrew.cmu.edu</li>
-        <li><b>Parth Shah</b>: pvshah@andrew.cmu.edu</li>
-        <li><b>Wendy Ebanks</b>: wvelasqu@andrew.cmu.edu</li>
-        <li><b>(Kigali) Aime Musangamfura</b>: amusanga@andrew.cmu.edu</li>
-        <li><b>(Kigali) Natnael Daba</b>: ndaba@andrew.cmu.edu</li>
-        <li><b>(Silicon Valley) Bonan Jin</b>: bonanj@andrew.cmu.edu</li>
-        <li><b>(Silicon Valley) Joseph Konan</b>: jkonan@andrew.cmu.edu</li>
-    </ul>
-    <p>
-        <a href="https://photos.google.com/share/AF1QipN8npC2pFF7LIV9XBpRAl_hFM1UrEJEEMnGTd7Pp4h8HAnhj_Z9ucrEWLkJv6A_Zg?key=RDl0UUptUWFKUVcyaTBkVk9NcTRwZ25aWFdJQXh3">Pix
-            with hoodies</a><br>(In hoodie picture, from left, back row: Joseph, Nat, Parth, Ethan, Hari, Kangrui, Amit, Bonan, Liwei. Front row: Wendy, Hanna, Aishwarya, Pallavi).
-    </p><br>
+        .current-icon {
+            cursor: auto;
+            background-color: #b96765;
+            border-radius: 3px;
+            padding-left: 2px;
+            padding-right: 2px;
+            color: white;
+        }
 
-    <h3>Spring 2020</h3>
-    <ul>
-        <li>Advait Gadhikar: agadhika@andrew.cmu.edu
-        <li>Amala Sanjay Deshmukh: asdeshmu@andrew.cmu.edu
-        <li>Bhuvan Agrawal: bhuvana@andrew.cmu.edu
-        <li>Christopher George: cmgeorge@andrew.cmu.edu
-        <li>David Park: jinhyun1@andrew.cmu.edu
-        <li>Hao Liang: hliang2@andrew.cmu.edu
-        <li>Jianfeng (Ken) Xia: jianfenx@andrew.cmu.edu
-        <li>Rohit Prakash Barnwal: rohitprb@andrew.cmu.edu
-        <li>Soumya Vadlamannati: soumyav@andrew.cmu.edu
-        <li>Vedant Sanil: vsanil@andrew.cmu.edu
-        <li>Yang Xia: yangxia2@andrew.cmu.edu
-        <li>Yash Belhe: ybelhequ@andrew.cmu.edu
-        <li>Yuying Zhu: yuyingz@andrew.cmu.edu
-        <li>Zhefan Xu: zhefanx@andrew.cmu.edu
-        <li>(Kigali) Abrham Gebreselasie: agebrese@andrew.cmu.edu
-        <li>(Kigali) Natnael Daba: ndaba@andrew.cmu.edu
-        <li>(Silicon Valley) Arpit Gupta: arpitgup@andrew.cmu.edu
-        <li>(Silicon Valley) Joseph Konan: jkonan@andrew.cmu.edu
-        <li>(Silicon Valley) Leo Chenghui Li: chenghui@andrew.cmu.edu
-    </ul>
-    <img src="./images/S20TAs.png" style="max-width: 500px">
-    <p
-        style="font-size: 16;">From left to right, then top to bottom: Amala, Bhiksha, Advait, David, Bhuvan, Soumya, Hao, Zhefan, Yash, Yuying,
-        Ken, Yang, Rohit, Natnael, Joseph, Leo, Leo, Abrham, Christopher, Vedant.
-    </p>
+        .mobile-header {
+            display: none;
+        }
 
-    <h3>Fall 2020</h3>
-    <ul>
-        <li>Aiswarya Vinod Kumar: avinodku@andrew.cmu.edu</li>
-        <li>Akshat Gupta: akshatgu@andrew.cmu.edu</li>
-        <li>Antioch Sanders: asanders@andrew.cmu.edu</li>
-        <li>Anxiang Zhang: anxiangz@andrew.cmu.edu</li>
-        <li>Bharat Gaind: bgaind@andrew.cmu.edu</li>
-        <li>David Park: jinhyun1@andrew.cmu.edu</li>
-        <li>Faris Alotibi: alotibifo@gmail.com</li>
-        <li>Jacob Lee: jcob@cmu.edu</li>
-        <li>Jiachen Lian: jlian2@andrew.cmu.edu</li>
-        <li>Kushal Saharan: ksaharan@andrew.cmu.edu</li>
-        <li>Mansi Anand: mansia@andrew.cmu.edu</li>
-        <li>Miao Wang: miaow@andrew.cmu.edu</li>
-        <li>Nicole Miya Sylvester: nsylvest@andrew.cmu.edu</li>
-        <li>Reshmi Ghosh: reshmig@andrew.cmu.edu</li>
-        <li>Sean Pereira: sapereir@andrew.cmu.edu</li>
-        <li>Tony Qin: tcq@andrew.cmu.edu</li>
-        <li>(Kigali) Abrham Gebresellasie: agebrese@andrew.cmu.edu</li>
-        <li>(Kigali) Samuel Ishimwe: samuelmbaraga@gmail.com</li>
-        <li>(Silicon Valley) Jingwei Zhang: jzhang5@andrew.cmu.edu</li>
-        <li>(Silicon Valley) Joseph Konan: jkonan@andrew.cmu.edu</li>
-        <li>(Silicon Valley) Yizhuo Zhang: yizhuoz@andrew.cmu.edu</li>
-    </ul>
-    <img src="./images/F20TAs.png" style="max-width: 500px">
-    <p
-        style="font-size: 16;"> From left to right, then top to bottom: Mansi, Faris, Tony, Reshmi, Bharat, Bhiksha, Jacob, Akshat, Miya, David, Abraham, Aishwarya
-    </p><br>
+        @media (max-width: 800px) {
+            .header {
+                display: none;
+            }
 
-    <h3>Spring 2021</h3>
-    <ul>
-        <li>Akshat Gupta</li>
-        <li>Anurag Katakkar</li>
-        <li>Alex Kwark</li>
-        <li>David Park</li>
-        <li>Hao Chen</li>
-        <li>Joseph Konan</li>
-        <li>Kinori Rosnow</li>
-        <li>Owen Wang</li>
-        <li>Sai Prahladh</li>
-        <li>Shayeree Sarkar</li>
-        <li>Shentong Mo</li>
-        <li>Vaidehi Joshi</li>
-        <li>(China/India) Haoxuan Zhu</li>
-        <li>(China/India) Yi Shen</li>
-        <li>(Doha) Nour Ali</li>
-        <li>(India) Shriti Priya</li>
-        <li>(Kigali) Charles Yusuf</li>
-        <li>(Kigali) Tanya Akumu</li>
-    </ul>
+            .mobile-header {
+                display: block;
+                position: fixed;
+                text-align: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                font-size: 24px;
+                background-color: #A80000;
+                z-index: 100;
+                padding: 10px;
+            }
 
-    <h3>Fall 2021</h3>
-    <ul>
-        <li> Chaoran Zhang </li>
-        <li> Dijing Zhang</li>
-        <li> Diksha Agarwal</li>
-        <li> Fan Zhou</li>
-        <li> Hao Chen</li>
-        <li> Hyungon (Clay) Yoo</li>
-        <li> Jinhyung Park</li>
-        <li> Joseph Konan</li>
-        <li> Manish Mishra</li>
-        <li> Mehar Goli</li>
-        <li> Ojas Bhargave</li>
-        <li> Omisa Jinsi</li>
-        <li> Urvil Kenia</li>
-        <li> Xiang Li</li>
-        <li> Yuxin (Abbey) Pei</li>
-        <li> Zhe Chen</li>
-        <li> Zilin Si</li>
-        <li> (Kigali) Rukayat Sadiq</li>
-        <li> (Kigali) Sheila Mbadi</li>
-    </ul>
+            .mobile-header a {
+                color: white;
+                text-decoration: none;
+            }
 
-    <h3>Spring 2022</h3>
-    <ul>
-        <li>Adebayo Oshingbesan: oaadebay@andrew.cmu.edu</li>
-        <li>Amelia (Zhiyi) Kuang: zkuang@andrew.cmu.edu</li>
-        <li>Ameya Mahabaleshwarkar: amahabal@andrew.cmu.edu</li>
-        <li>Aparajith Srinivasan: aparajis@andrew.cmu.edu</li>
-        <li>Bradley Warren: bwarren2@andrew.cmu.edu</li>
-        <li>Chaoran ZHANG: chaoranz@andrew.cmu.edu</li>
-        <li>Diksha agarwal: dikshaa@andrew.cmu.edu</li>
-        <li>Fuyu Tang: fuyut@andrew.cmu.edu</li>
-        <li>Jeff Moore: jmoore3@andrew.cmu.edu</li>
-        <li>Jinhyung (David) Park: jinhyun1@andrew.cmu.edu</li>
-        <li>Joseph Konan: jkonan@cs.cmu.edu</li>
-        <li>Lavanya Gupta: lagupta@andrew.cmu.edu</li>
-        <li>Manasi Purohit: mpurohit@andrew.cmu.edu</li>
-        <li>Roshan Ram: rram@andrew.cmu.edu</li>
-        <li>Rucha Khopkar: rkhopkar@andrew.cmu.edu</li>
-        <li>Rukayat Sadiq: rsadiq@andrew.cmu.edu</li>
-        <li>Shreyas Piplani: spiplani@andrew.cmu.edu</li>
-        <li>Soumya Empran: sempran@andrew.mu.edu</li>
-        <li>Urvil Kenia: ukenia@andrew.cmu.edu</li>
-        <li>Zhe Chen: zhechen2@andrew.cmu.edu</li>
-        <li>(Qatar) John (EuiSuh) Jeong: ejeong@andrew.cmu.edu</li>
-        <li>(SV) Ruoyu Hua: ruoyuhua@andrew.cmu.edu</li>
-        <li>(SV) Wenwen Ouyang: wenweno@andrew.cmu.edu</li>
-        <li>(Kigali) Germann Atakpa: gatakpa@andrew.cmu.edu</li>
-        <li>(Kigali) Iffanice Houndayi: ibh@andrew.cmu.edu</li>
-    </ul>
+            .mobile-header a:hover {
+                text-decoration: underline;
+            }
+        }
 
-    <h3>Fall 2022</h3>
-    <img src="./images/f22_tas.png" style="max-width:500px" alt="TAs for the Fall Semester of 2022">
-    <p style="font-size: 16;"> Fig: TAs with Professor Bhiksha on their last TA Debrief of the semester.</p>
-    <ul>
-        <li><b>Abuzar Khan</b>: abuzark@andrew.cmu.edu</li>
-        <li><b>Aditya Singh</b>: adityas5@andrew.cmu.edu</li>
-        <li><b>Ameya Mahabaleshwarkar</b>: amahabal@andrew.cmu.edu</li>
-        <li><b>Aparajith Srinivasan</b>: aparajis@andrew.cmu.edu</li>
-        <li><b>Fuyu Tang</b>: fuyut@andrew.cmu.edu</li>
-        <li><b>George Saito</b>: takatoms@andrew.cmu.edu</li>
-        <li><b>Joseph Konan</b>: jkonan@andrew.cmu.edu</li>
-        <li><b>Karanveer Singh</b>: karanves@andrew.cmu.edu</li>
-        <li><b>Pranav Karnani</b>: pkarnani@andrew.cmu.edu</li>
-        <li><b>Samiran Gode</b>: sgode@andrew.cmu.edu</li>
-        <li><b>Samruddhi Pai</b>: sdpai@andrew.cmu.edu</li>
-        <li><b>Shreyas Piplani</b>: spiplani@andrew.cmu.edu</li>
-        <li><b>Soumya</b>: sempran@andrew.cmu.edu</li>
-        <li><b>Swathi Jadav</b>: sjadav@andrew.cmu.edu</li>
-        <li><b>Talha Faiz</b>: mfaiz@andrew.cmu.edu</li>
-        <li><b>Vishhvak Srinivasan</b>: vishhvas@andrew.cmu.edu</li>
-        <li><b>Yashash Gaurav</b>: ygaurav@andrew.cmu.edu</li>
-        <li><b>Yue Jian</b>: yuejian@andrew.cmu.edu</li>
-        <li><b>Zishen Wen</b>: zishenw@andrew.cmu.edu</li>
-        <li><b>(SV) Oscar Joris Denys</b>: odenys@andrew.cmu.edu</li>
-        <li><b>(SV) Ruoyu Hua</b>: ruoyuhua@andrew.cmu.edu</li>
-        <li><b>(SV) Spatika Ganesh</b>: spatikag@andrew.cmu.edu</li>
-        <li><b>(Kigali) Cedric Manouan</b>: cmanouan@andrew.cmu.edu</li>
-        <li><b>(Kigali) Moayad Elamin</b>: melamin@andrew.cmu.edu</li>
-    </ul>
+        .container {
+            max-width: 1200px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
 
-    <h3>Spring 2023</h3>
-    <ul>
-        <li><b>Abuzar Khan</b>: abuzark@andrew.cmu.edu</li>
-        <li><b>Aparajith Srinivasan</b>: aparajis@andrew.cmu.edu</li>
-        <li><b>Arjun Chauhan</b>: arjunc@andrew.cmu.edu</li>
-        <li><b>Cedric Manouan</b>: cmanoun@andrew.cmu.edu</li>
-        <li><b>Eshani Agrawal</b>: eshania@andrew.cmu.edu</li>
-        <li><b>Harshith Kumar</b>: harunkum@andrew.cmu.edu</li>
-        <li><b>Joseph Konan</b>: jkonans@andrew.cmu.edu</li>
-        <li><b>Liangze "Josh" Li</b>: liangzel@andrew.cmu.edu</li>
-        <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
-        <li><b>Prakruthi Pradeep</b>: prakruth@andrew.cmu.edu</li>
-        <li><b>Qin Wang</b>: qinw@andrew.cmu.edu</li>
-        <li><b>Sarthak Bisht</b>: sbisht@andrew.cmu.edu</li>
-        <li><b>Shikhar Agnihotri</b>: sagnihot@andrew.cmu.edu</li>
-        <li><b>Swathi Jadav</b>: sjadav@andrew.cmu.edu</li>
-        <li><b>Varun Jain</b>: vjain2@andrew.cmu.edu</li>
-        <li><b>Vedant Bhasin</b>: vedantb@andrew.cmu.edu</li>
-        <li><b>Vishhvak Srinivasan</b>: vishhvas@andrew.cmu.edu</li>
-        <li><b>Yooni Choi</b>: jungyoon@andrew.cmu.edu</li>
-        <li><b>(SV) Ruimeng Chang</b>: ruimengc@andrew.cmu.edu</li>
-        <li><b>(Kigali) Yonas Chanie</b>: ychanie@andrew.cmu.edu</li>
-        <li><b>(Kigali) Paul Ewuzie</b>: pewuzie@andrew.cmu.edu</li>
-    </ul>
+        .titlebar {
+            padding-top: 80px;
+            padding-bottom: 40px;
+            overflow: auto;
+            white-space: normal;
+        }
 
-    <h3>Fall 2023</h3>
-    <ul>
-        <!-- listing all TA names and contact info for F23 -->
-        <li><b>Denis Musinguzi</b>: dmusingu@andrew.cmu.edu</li>
-        <li><b>Dheeraj Pai</b>: dmohanda@andrew.cmu.edu</li>
-        <li><b>Harini Subramanyan</b>: harinisu@andrew.cmu.edu</li>
-        <li><b>Harshit Mehrotra</b>: hmehrotr@andrew.cmu.edu</li>
-        <li><b>Harshith Arun Kumar</b>: harunkum@andrew.cmu.edu</li>
-        <li><b>Jean De Dieu Nyandwi</b>: jeandedi@andrew.cmu.edu</li>
-        <li><b>Jeel Shah</b>: jdshah@andrew.cmu.edu</li>
-        <li><b>Kelsey J. Harvey</b>: kelseyjh@andrew.cmu.edu</li>
-        <li><b>Liangze "Josh" Li</b>: liangzel@andrew.cmu.edu</li>
-        <li><b>Meng Zhou</b>: mengzhou@andrew.cmu.edu</li>
-        <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
-        <li><b>Pavitra Kadiyala</b>: pkadiyal@andrew.cmu.edu</li>
-        <li><b>Qin Wang</b>: qinw@andrew.cmu.edu</li>
-        <li><b>R Raghav</b>: rraghavr@andrew.cmu.edu</li>
-        <li><b>Rucha Manoj Kulkarni</b>: rmkulkar@andrew.cmu.edu</li>
-        <li><b>Sarthak Bisht</b>: sbisht@andrew.cmu.edu</li>
-        <li><b>Shikhar Agnihotri</b>: sagnihot@andrew.cmu.edu</li>
-        <li><b>Sumesh Kalambettu Suresh</b>: skalambe@andrew.cmu.edu</li>
-        <li><b>Jiaye "Tony" Zou</b>: jiayez@andrew.cmu.edu</li>
-        <li><b>Vish</b>: vishhvas@andrew.cmu.edu</li>
-        <li><b>Yohannes Haile</b>: yohanneh@andrew.cmu.edu</li>
-        <li><b>Muhammed Danso</b>: mdanso@andrew.cmu.edu</li>
-        <li><b>Schadrack Niyibizi</b>: sniyibiz@andrew.cmu.edu</li>
-        <li><b>Emmanuel Ndayisaba</b>: enn@andrew.cmu.edu</li>
-    </ul>
+        #title {
+            font-size: 2.5em;
+            color: #A80000;
+            font-weight: bold;
+            text-align: center;
+        }
 
-    <h3>Spring 2024</h3>
-    <ul>
-        <!-- listing all TA names and contact info for S24 -->
-        <li><b>Harini Subramanyan</b>: harinisu@andrew.cmu.edu</li>
-        <li><b>Sarthak Bisht</b>: sbisht@andrew.cmu.edu</li>
-        <li><b>Rucha Kulkarni</b>: rmkulkar@andrew.cmu.edu</li>
-        <li><b>Vishhvak Srinivasan</b>: vishhvas@andrew.cmu.edu</li>
-        <li><b>Harshith Kumar</b>: harunkum@andrew.cmu.edu</li>
-        <li><b>Pavitra Kadiyala</b>: pkadiyal@andrew.cmu.edu</li>
-        <li><b>Yu-Cheng "Samuel" Lin</b>: ylin6@andrew.cmu.edu</li>
-        <li><b>Jeel Shah</b>: jdshah@andrew.cmu.edu</li>
-        <li><b>Quentin Auster</b>: qja@andrew.cmu.edu</li>
-        <li><b>Ishan Mamadapur</b>: imamadap@andrew.cmu.edu</li>
-        <li><b>Chetan Chilkunda</b>: cchilkun@andrew.cmu.edu</li>
-        <li><b>Kateryna Shapovalenko</b>: kshapova@andrew.cmu.edu</li>
-        <li><b>Syed Hannan</b>: shannan@andrew.cmu.edu</li>
-        <li><b>Shreya Kale</b>: shreyaak@andrew.cmu.edu</li>
-        <li><b>Heena Chandak</b>: hchandak@andrew.cmu.edu</li>
-        <li><b>Harshit Mehrotra</b>: hmehrotr@andrew.cmu.edu</li>
-        <li><b>Aarya Makwana</b>: amakwana@andrew.cmu.edu</li>
-        <li><b>Liangze "Josh" Li</b>: liangzel@andrew.cmu.edu</li>
-        <li><b>Alexander Moker</b>: amoker@andrew.cmu.edu</li>
-        <li><b>Gabrial Ashungafac</b>: gzenchaa@andrew.cmu.edu</li>
-        <li><b>Denis Musinguzic</b>: dmusingu@andrew.cmu.edu</li>
-        <li><b>Dareen Alharthi</b>: dalharth@andrew.cmu.edu</li>
-        <li><b>Yuzhou Wang</b>: yuzhouwa@andrew.cmu.edu</li>
-        <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
-        <li><b>R Raghav</b>: rraghavr@andrew.cmu.edu</li>
-    </ul>
+        .subtitle {
+            font-size: 1.2em;
+            text-align: center;
+            color: #666;
+        }
 
-    <h3>Fall 2024</h3>
-    <ul>
-        <!-- listing all TA names and contact info for F24 -->
-        <li><b>Kateryna Shapovalenko</b>: kshapova@andrew.cmu.edu</li>
-        <li><b>Aarya Makwana</b>: amakwana@andrew.cmu.edu</li>
-        <li><b>Harshith Kumar</b>: harunkum@andrew.cmu.edu</li>
-        <li><b>Syed Hannan</b>: shannan@andrew.cmu.edu</li>
-        <li><b>Alexander Moker</b>: amoker@andrew.cmu.edu</li>
-        <li><b>Yuzhou Wang</b>: yuzhouwa@andrew.cmu.edu</li>
-        <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
-        <li><b>Dareen al Harthi</b>: dalharth@andrew.cmu.edu</li>
-        <li><b>Angela Chen</b>: angelac3@andrew.cmu.edu</li>
-        <li><b>Eman Ansar</b>: eansar@andrew.cmu.edu</li>
-        <li><b>Zhiheng(Andy) Ye</b>: zhihengy@andrew.cmu.edu</li>
-        <li><b>Yichen Xin</b>: yichenx2@andrew.cmu.edu</li>
-        <li><b>Purusottam Samal</b>: psamal@andrew.cmu.edu</li>
-        <li><b>NIYIBIGIRA Geredi</b>: ngeredi@andrew.cmu.edu</li>
-        <li><b>ChooWon Sir</b>: csir@andrew.cmu.edu</li>
-        <li><b>Khushali Daga</b>: kdaga@andrew.cmu.edu</li>
-        <li><b>Leo Xu</b>: guanyix@andrew.cmu.edu</li>
-        <li><b>Nebiyou Hailemariam</b>: nhailema@andrew.cmu.edu</li>
-        <li><b>Ketan Chaudhary</b>: ketanc@andrew.cmu.edu</li>
-        <li><b>Hao Chen</b>: haoc3@andrew.cmu.edu</li>
-        <li><b>Vish Srinivasan</b>: vishhvas@andrew.cmu.edu</li>
-        <li><b>Gabrial Zencha</b>: gzenchaa@andrew.cmu.edu</li>
-        <li><b>Emmanuel Ndayisaba</b>: ndayem72@gmail.com</li>
-        <li><b>Carmel Prosper SAGBO</b>: csagbo@andrew.cmu.edu</li>
-        <li><b>Alex Gichamba</b>: angicham@andrew.cmu.edu</li>
-        <li><b>Romerik Lokossou</b>: rlokosso@andrew.cmu.edu</li>
-        <li><b>Shravanth Srinivas</b>: shravans@andrew.cmu.edu</li>
-    </ul>
+        h2 {
+            color: #b05145;
+            margin-top: 40px;
+        }
 
-    <h3>Spring 2025</h3>
-    <ul>
-        <!-- listing all TA names and contact info for S25 -->
-        <li><b>Kateryna Shapovalenko</b>: kshapova@andrew.cmu.edu</li>
-        <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
-        <li><b>Alexander Moker</b>: amoker@andrew.cmu.edu</li>
-        <li><b>Purusottam Samal</b>: psamal@andrew.cmu.edu</li>
-        <li><b>Shravanth Srinivas</b>: shravans@andrew.cmu.edu</li>
-        <li><b>Yuzhou Wang</b>: yuzhouwa@andrew.cmu.edu</li>
-        <li><b>Massa Baali</b>: mbaali@andrew.cmu.edu</li>
-        <li><b>Vedant Singh</b>: vhsingh@andrew.cmu.edu</li>
-        <li><b>Sadrishya Agrawal</b>: sadrisha@andrew.cmu.edu</li>
-        <li><b>Michael Kireeff</b>: mkireeff@andrew.cmu.edu </li>
-        <li><b>Vishan Oberoi</b>: voberoi@andrew.cmu.edu</li>
-        <li><b>Ishita Gupta</b>: ishitag@andrew.cmu.edu</li>
-        <li><b>Shubham Kachroo</b>: skachroo@andrew.cmu.edu</li>
-        <li><b>Shrey Jain</b>: shreyj@andrew.cmu.edu</li>
-        <li><b>Floris Nzabakira</b>: fnzabaki@andrew.cmu.edu</li>
-        <li><b>Christine Muthee</b>: cmuthee@andrew.cmu.edu</li>
-        <li><b>Ahmed Issah</b>: aissah@andrew.cmu.edu</li>
-        <li><b>Shubham Singh</b>: shubham4@andrew.cmu.edu</li>
-        <li><b>Tanghang Elvis Tata</b>: etanghan@andrew.cmu.edu</li>
-        <li><b>John Liu</b>: johnliu@andrew.cmu.edu</li>
-        <li><b>Damilare Olatunji</b>: dolatunj@andrew.cmu.edu</li>
-        <li><b>Brian Ebiyau</b>: bebiyau@andrew.cmu.edu</li>
-        <li><b>Peter Wauyo</b>: pwauyo@andrew.cmu.edu</li>
-        <li><b>Eman Ansar</b>: eansar@andrew.cmu.edu</li>
-    </ul>
+        h3 {
+            color: #bf766d;
+            font-weight: 300;
+            margin-top: 30px;
+        }
 
-    <h3>Fall 2025</h3>
-    <h4>Advisory TAs</h4>
-    <ul>
-        <!-- listing all Advisory TA names and contact info for F25 -->
-        <li><b>Kateryna Shapovalenko</b>: kshapova@andrew.cmu.edu</li>
-        <li><b>Alexander Moker</b>: amoker@andrew.cmu.edu</li>
-        <li><b>Shrey Jain</b>: shreyj@andrew.cmu.edu</li>
-        <li><b>John Liu</b>: johnliu@andrew.cmu.edu</li>
-        <li><b>Nishoak Kosaraju</b>: nkosaraj@andrew.cmu.edu</li>
-    </ul>
-    <h4>TAs</h4>
-    <ul>
-        <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
-        <li><b>Rutvik Joshi</b>: rutvikj@andrew.cmu.edu</li>
-        <li><b>Shravanth Srinivas</b>: shravans@andrew.cmu.edu</li>
-        <li><b>Yuzhou Wang</b>: yuzhouwa@andrew.cmu.edu</li>
-        <li><b>Massa Baali</b>: mbaali@andrew.cmu.edu</li>
-        <li><b>Mengchun Zhang</b>: mengchuz@andrew.cmu.edu</li>
-        <li><b>Michael Kireeff</b>: mkireeff@andrew.cmu.edu </li>
-        <li><b>Sophia Wang</b>: sophiaw3@andrew.cmu.edu</li>
-        <li><b>Ishita Gupta</b>: ishitag@andrew.cmu.edu</li>
-        <li><b>Sreeharsha Paruchuri</b>: sparuchu@andrew.cmu.edu</li>
-        <li><b>Aisha Opaluwa</b>: aopaluwa@andrew.cmu.edu</li>
-        <li><b>Ahmed Alhassan</b>: aalhassa@andrew.cmu.edu</li>
-        <li><b>Kipngeno Koech</b>: bkoech@andrew.cmu.edu</li>
-        <li><b>Nayesha Gandotra</b>: nayeshag@andrew.cmu.edu</li>
-        <li><b>Haojia Sun</b>: haojias@andrew.cmu.edu</li>
-        <li><b>Yuanyi Gao</b>: yuanyig@andrew.cmu.edu</li>
-        <li><b>Euijin Hong</b>: ehong@andrew.cmu.edu</li>
-        <li><b>Dhivya Sreedhar</b>: dsreedha@andrew.cmu.edu</li>
-        <li><b>Chaeeun Lee</b>: chaeeunl@andrew.cmu.edu</li>
-    </ul>
-    <h4>Support TAs</h4>
-    <ul>
-        <!-- listing all Support TA names and contact info for F25 -->
-        <li><b>Shubham Kachroo</b>: skachroo@andrew.cmu.edu</li>
-        <li><b>Ahmed Issah</b>: aissah@andrew.cmu.edu</li>
-        <li><b>Tanghang Elvis Tata</b>: etanghan@andrew.cmu.edu</li>
-        <li><b>Mona Aman</b>: amona@andrew.cmu.edu</li>
-        <li><b>Peter Wauyo</b>: pwauyo@andrew.cmu.edu</li>
-        <li><b>Ahmed Safwat Abouhashem</b>: a.s.a@pitt.edu</li>
-        <li><b>delphine nyaboke</b>: delphinenyaboke@gmail.com</li>
-        <li><b>Carmel Sagbo</b>: csagbo@andrew.cmu.edu</li>
-        <li><b>Bradley Warren</b>: bwarren2@andrew.cmu.edu</li>
-        <li><b>Maxime Manzi</b>: mmanzi@andrew.cmu.edu</li>
-    </ul>
-    
+        h4 {
+            color: #A80000;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+
+        a,
+        a:hover {
+            color: #b05145;
+        }
+
+        .intro-text {
+            background-color: #f9f9f9;
+            border-left: 4px solid #A80000;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .intro-text p {
+            margin-bottom: 15px;
+        }
+
+        .intro-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .semester-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 8px;
+        }
+
+        .semester-section ul {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            column-gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .semester-section ul {
+                columns: 1;
+                -webkit-columns: 1;
+                -moz-columns: 1;
+            }
+        }
+
+        .semester-section li {
+            break-inside: avoid;
+            page-break-inside: avoid;
+            margin-bottom: 5px;
+        }
+
+        .ta-photo {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-caption {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 8px 16px;
+            background-color: #A80000;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            background-color: #8a0000;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <span class="menu-wrapper">
+            <a class="header-item" href="../S26/index.html">
+                <i class="fas fa-arrow-left"></i> Back to Course
+            </a>
+        </span>
+        <span class="version-menu">
+            <span class="current-icon">S26</span>
+            <a class="version-icon" href="../F25/index.html">F25</a>
+            <a class="version-icon" href="../S25/index.html">S25</a>
+        </span>
+    </div>
+
+    <div class="mobile-header">
+        <a href="../S26/index.html"><i class="fas fa-arrow-left"></i> Back to Course</a>
+    </div>
+
+    <div class="container titlebar">
+        <div id="title">
+            Hall of Fame
+        </div>
+        <div class="subtitle">11-785 Introduction to Deep Learning - Teaching Assistants</div>
+    </div>
+
+    <div class="container">
+        <div class="intro-text">
+            <p>11-785/685/485 Intro to DL is a very demanding course. As much as it places demands on the students, it
+                places far greater demands on the teaching assistants, who work very hard, often pulling long weekend
+                hours, just to ensure that the students get the most out of the course. They hold endless office hours,
+                answer (on average) over 30 Piazza questions <i>a day</i>, conduct recitations, help design quizzes,
+                design and monitor homeworks, provide endless and tireless help to ensure students are able to complete
+                them, mentor projects, read and grade dozens of project proposals, midterm reports and final reports,
+                conduct final project evaluations, and finally help with the grading and assessments.</p>
+
+            <p>The course has been very successful, and is currently being followed by many universities around the US
+                and the world. The success is entirely attributable to my TAs, without whose tremendous work nothing
+                would happen. They are the real heroes of this effort.</p>
+
+            <p>I cannot thank them enough for everything they did and continue to do, but I can acknowledge them
+                by name, for everyone who ever visits this page to see.</p>
+
+            <p>Below is a list of the TAs who have worked on the course over the various semesters.</p>
+
+            <p><b>Thank you all.</b></p>
+        </div>
+
+        <!-- Fall 2025 -->
+        <div class="semester-section">
+            <h3>Fall 2025</h3>
+            <h4>Advisory TAs</h4>
+            <ul>
+                <li><b>Kateryna Shapovalenko</b>: kshapova@andrew.cmu.edu</li>
+                <li><b>Alexander Moker</b>: amoker@andrew.cmu.edu</li>
+                <li><b>Shrey Jain</b>: shreyj@andrew.cmu.edu</li>
+                <li><b>John Liu</b>: johnliu@andrew.cmu.edu</li>
+                <li><b>Nishoak Kosaraju</b>: nkosaraj@andrew.cmu.edu</li>
+            </ul>
+            <h4>TAs</h4>
+            <ul>
+                <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
+                <li><b>Rutvik Joshi</b>: rutvikj@andrew.cmu.edu</li>
+                <li><b>Shravanth Srinivas</b>: shravans@andrew.cmu.edu</li>
+                <li><b>Yuzhou Wang</b>: yuzhouwa@andrew.cmu.edu</li>
+                <li><b>Massa Baali</b>: mbaali@andrew.cmu.edu</li>
+                <li><b>Mengchun Zhang</b>: mengchuz@andrew.cmu.edu</li>
+                <li><b>Michael Kireeff</b>: mkireeff@andrew.cmu.edu</li>
+                <li><b>Sophia Wang</b>: sophiaw3@andrew.cmu.edu</li>
+                <li><b>Ishita Gupta</b>: ishitag@andrew.cmu.edu</li>
+                <li><b>Sreeharsha Paruchuri</b>: sparuchu@andrew.cmu.edu</li>
+                <li><b>Aisha Opaluwa</b>: aopaluwa@andrew.cmu.edu</li>
+                <li><b>Ahmed Alhassan</b>: aalhassa@andrew.cmu.edu</li>
+                <li><b>Kipngeno Koech</b>: bkoech@andrew.cmu.edu</li>
+                <li><b>Nayesha Gandotra</b>: nayeshag@andrew.cmu.edu</li>
+                <li><b>Haojia Sun</b>: haojias@andrew.cmu.edu</li>
+                <li><b>Yuanyi Gao</b>: yuanyig@andrew.cmu.edu</li>
+                <li><b>Euijin Hong</b>: ehong@andrew.cmu.edu</li>
+                <li><b>Dhivya Sreedhar</b>: dsreedha@andrew.cmu.edu</li>
+                <li><b>Chaeeun Lee</b>: chaeeunl@andrew.cmu.edu</li>
+            </ul>
+            <h4>Support TAs</h4>
+            <ul>
+                <li><b>Shubham Kachroo</b>: skachroo@andrew.cmu.edu</li>
+                <li><b>Ahmed Issah</b>: aissah@andrew.cmu.edu</li>
+                <li><b>Tanghang Elvis Tata</b>: etanghan@andrew.cmu.edu</li>
+                <li><b>Mona Aman</b>: amona@andrew.cmu.edu</li>
+                <li><b>Peter Wauyo</b>: pwauyo@andrew.cmu.edu</li>
+                <li><b>Ahmed Safwat Abouhashem</b>: a.s.a@pitt.edu</li>
+                <li><b>delphine nyaboke</b>: delphinenyaboke@gmail.com</li>
+                <li><b>Carmel Sagbo</b>: csagbo@andrew.cmu.edu</li>
+                <li><b>Bradley Warren</b>: bwarren2@andrew.cmu.edu</li>
+                <li><b>Maxime Manzi</b>: mmanzi@andrew.cmu.edu</li>
+            </ul>
+        </div>
+
+        <!-- Spring 2025 -->
+        <div class="semester-section">
+            <h3>Spring 2025</h3>
+            <ul>
+                <li><b>Kateryna Shapovalenko</b>: kshapova@andrew.cmu.edu</li>
+                <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
+                <li><b>Alexander Moker</b>: amoker@andrew.cmu.edu</li>
+                <li><b>Purusottam Samal</b>: psamal@andrew.cmu.edu</li>
+                <li><b>Shravanth Srinivas</b>: shravans@andrew.cmu.edu</li>
+                <li><b>Yuzhou Wang</b>: yuzhouwa@andrew.cmu.edu</li>
+                <li><b>Massa Baali</b>: mbaali@andrew.cmu.edu</li>
+                <li><b>Vedant Singh</b>: vhsingh@andrew.cmu.edu</li>
+                <li><b>Sadrishya Agrawal</b>: sadrisha@andrew.cmu.edu</li>
+                <li><b>Michael Kireeff</b>: mkireeff@andrew.cmu.edu</li>
+                <li><b>Vishan Oberoi</b>: voberoi@andrew.cmu.edu</li>
+                <li><b>Ishita Gupta</b>: ishitag@andrew.cmu.edu</li>
+                <li><b>Shubham Kachroo</b>: skachroo@andrew.cmu.edu</li>
+                <li><b>Shrey Jain</b>: shreyj@andrew.cmu.edu</li>
+                <li><b>Floris Nzabakira</b>: fnzabaki@andrew.cmu.edu</li>
+                <li><b>Christine Muthee</b>: cmuthee@andrew.cmu.edu</li>
+                <li><b>Ahmed Issah</b>: aissah@andrew.cmu.edu</li>
+                <li><b>Shubham Singh</b>: shubham4@andrew.cmu.edu</li>
+                <li><b>Tanghang Elvis Tata</b>: etanghan@andrew.cmu.edu</li>
+                <li><b>John Liu</b>: johnliu@andrew.cmu.edu</li>
+                <li><b>Damilare Olatunji</b>: dolatunj@andrew.cmu.edu</li>
+                <li><b>Brian Ebiyau</b>: bebiyau@andrew.cmu.edu</li>
+                <li><b>Peter Wauyo</b>: pwauyo@andrew.cmu.edu</li>
+                <li><b>Eman Ansar</b>: eansar@andrew.cmu.edu</li>
+            </ul>
+        </div>
+
+        <!-- Fall 2024 -->
+        <div class="semester-section">
+            <h3>Fall 2024</h3>
+            <ul>
+                <li><b>Kateryna Shapovalenko</b>: kshapova@andrew.cmu.edu</li>
+                <li><b>Aarya Makwana</b>: amakwana@andrew.cmu.edu</li>
+                <li><b>Harshith Kumar</b>: harunkum@andrew.cmu.edu</li>
+                <li><b>Syed Hannan</b>: shannan@andrew.cmu.edu</li>
+                <li><b>Alexander Moker</b>: amoker@andrew.cmu.edu</li>
+                <li><b>Yuzhou Wang</b>: yuzhouwa@andrew.cmu.edu</li>
+                <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
+                <li><b>Dareen al Harthi</b>: dalharth@andrew.cmu.edu</li>
+                <li><b>Angela Chen</b>: angelac3@andrew.cmu.edu</li>
+                <li><b>Eman Ansar</b>: eansar@andrew.cmu.edu</li>
+                <li><b>Zhiheng(Andy) Ye</b>: zhihengy@andrew.cmu.edu</li>
+                <li><b>Yichen Xin</b>: yichenx2@andrew.cmu.edu</li>
+                <li><b>Purusottam Samal</b>: psamal@andrew.cmu.edu</li>
+                <li><b>NIYIBIGIRA Geredi</b>: ngeredi@andrew.cmu.edu</li>
+                <li><b>ChooWon Sir</b>: csir@andrew.cmu.edu</li>
+                <li><b>Khushali Daga</b>: kdaga@andrew.cmu.edu</li>
+                <li><b>Leo Xu</b>: guanyix@andrew.cmu.edu</li>
+                <li><b>Nebiyou Hailemariam</b>: nhailema@andrew.cmu.edu</li>
+                <li><b>Ketan Chaudhary</b>: ketanc@andrew.cmu.edu</li>
+                <li><b>Hao Chen</b>: haoc3@andrew.cmu.edu</li>
+                <li><b>Vish Srinivasan</b>: vishhvas@andrew.cmu.edu</li>
+                <li><b>Gabrial Zencha</b>: gzenchaa@andrew.cmu.edu</li>
+                <li><b>Emmanuel Ndayisaba</b>: ndayem72@gmail.com</li>
+                <li><b>Carmel Prosper SAGBO</b>: csagbo@andrew.cmu.edu</li>
+                <li><b>Alex Gichamba</b>: angicham@andrew.cmu.edu</li>
+                <li><b>Romerik Lokossou</b>: rlokosso@andrew.cmu.edu</li>
+                <li><b>Shravanth Srinivas</b>: shravans@andrew.cmu.edu</li>
+            </ul>
+        </div>
+
+        <!-- Spring 2024 -->
+        <div class="semester-section">
+            <h3>Spring 2024</h3>
+            <ul>
+                <li><b>Harini Subramanyan</b>: harinisu@andrew.cmu.edu</li>
+                <li><b>Sarthak Bisht</b>: sbisht@andrew.cmu.edu</li>
+                <li><b>Rucha Kulkarni</b>: rmkulkar@andrew.cmu.edu</li>
+                <li><b>Vishhvak Srinivasan</b>: vishhvas@andrew.cmu.edu</li>
+                <li><b>Harshith Kumar</b>: harunkum@andrew.cmu.edu</li>
+                <li><b>Pavitra Kadiyala</b>: pkadiyal@andrew.cmu.edu</li>
+                <li><b>Yu-Cheng "Samuel" Lin</b>: ylin6@andrew.cmu.edu</li>
+                <li><b>Jeel Shah</b>: jdshah@andrew.cmu.edu</li>
+                <li><b>Quentin Auster</b>: qja@andrew.cmu.edu</li>
+                <li><b>Ishan Mamadapur</b>: imamadap@andrew.cmu.edu</li>
+                <li><b>Chetan Chilkunda</b>: cchilkun@andrew.cmu.edu</li>
+                <li><b>Kateryna Shapovalenko</b>: kshapova@andrew.cmu.edu</li>
+                <li><b>Syed Hannan</b>: shannan@andrew.cmu.edu</li>
+                <li><b>Shreya Kale</b>: shreyaak@andrew.cmu.edu</li>
+                <li><b>Heena Chandak</b>: hchandak@andrew.cmu.edu</li>
+                <li><b>Harshit Mehrotra</b>: hmehrotr@andrew.cmu.edu</li>
+                <li><b>Aarya Makwana</b>: amakwana@andrew.cmu.edu</li>
+                <li><b>Liangze "Josh" Li</b>: liangzel@andrew.cmu.edu</li>
+                <li><b>Alexander Moker</b>: amoker@andrew.cmu.edu</li>
+                <li><b>Gabrial Ashungafac</b>: gzenchaa@andrew.cmu.edu</li>
+                <li><b>Denis Musinguzic</b>: dmusingu@andrew.cmu.edu</li>
+                <li><b>Dareen Alharthi</b>: dalharth@andrew.cmu.edu</li>
+                <li><b>Yuzhou Wang</b>: yuzhouwa@andrew.cmu.edu</li>
+                <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
+                <li><b>R Raghav</b>: rraghavr@andrew.cmu.edu</li>
+            </ul>
+        </div>
+
+        <!-- Fall 2023 -->
+        <div class="semester-section">
+            <h3>Fall 2023</h3>
+            <ul>
+                <li><b>Denis Musinguzi</b>: dmusingu@andrew.cmu.edu</li>
+                <li><b>Dheeraj Pai</b>: dmohanda@andrew.cmu.edu</li>
+                <li><b>Harini Subramanyan</b>: harinisu@andrew.cmu.edu</li>
+                <li><b>Harshit Mehrotra</b>: hmehrotr@andrew.cmu.edu</li>
+                <li><b>Harshith Arun Kumar</b>: harunkum@andrew.cmu.edu</li>
+                <li><b>Jean De Dieu Nyandwi</b>: jeandedi@andrew.cmu.edu</li>
+                <li><b>Jeel Shah</b>: jdshah@andrew.cmu.edu</li>
+                <li><b>Kelsey J. Harvey</b>: kelseyjh@andrew.cmu.edu</li>
+                <li><b>Liangze "Josh" Li</b>: liangzel@andrew.cmu.edu</li>
+                <li><b>Meng Zhou</b>: mengzhou@andrew.cmu.edu</li>
+                <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
+                <li><b>Pavitra Kadiyala</b>: pkadiyal@andrew.cmu.edu</li>
+                <li><b>Qin Wang</b>: qinw@andrew.cmu.edu</li>
+                <li><b>R Raghav</b>: rraghavr@andrew.cmu.edu</li>
+                <li><b>Rucha Manoj Kulkarni</b>: rmkulkar@andrew.cmu.edu</li>
+                <li><b>Sarthak Bisht</b>: sbisht@andrew.cmu.edu</li>
+                <li><b>Shikhar Agnihotri</b>: sagnihot@andrew.cmu.edu</li>
+                <li><b>Sumesh Kalambettu Suresh</b>: skalambe@andrew.cmu.edu</li>
+                <li><b>Jiaye "Tony" Zou</b>: jiayez@andrew.cmu.edu</li>
+                <li><b>Vish</b>: vishhvas@andrew.cmu.edu</li>
+                <li><b>Yohannes Haile</b>: yohanneh@andrew.cmu.edu</li>
+                <li><b>Muhammed Danso</b>: mdanso@andrew.cmu.edu</li>
+                <li><b>Schadrack Niyibizi</b>: sniyibiz@andrew.cmu.edu</li>
+                <li><b>Emmanuel Ndayisaba</b>: enn@andrew.cmu.edu</li>
+            </ul>
+        </div>
+
+        <!-- Spring 2023 -->
+        <div class="semester-section">
+            <h3>Spring 2023</h3>
+            <ul>
+                <li><b>Abuzar Khan</b>: abuzark@andrew.cmu.edu</li>
+                <li><b>Aparajith Srinivasan</b>: aparajis@andrew.cmu.edu</li>
+                <li><b>Arjun Chauhan</b>: arjunc@andrew.cmu.edu</li>
+                <li><b>Cedric Manouan</b>: cmanoun@andrew.cmu.edu</li>
+                <li><b>Eshani Agrawal</b>: eshania@andrew.cmu.edu</li>
+                <li><b>Harshith Kumar</b>: harunkum@andrew.cmu.edu</li>
+                <li><b>Joseph Konan</b>: jkonans@andrew.cmu.edu</li>
+                <li><b>Liangze "Josh" Li</b>: liangzel@andrew.cmu.edu</li>
+                <li><b>Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
+                <li><b>Prakruthi Pradeep</b>: prakruth@andrew.cmu.edu</li>
+                <li><b>Qin Wang</b>: qinw@andrew.cmu.edu</li>
+                <li><b>Sarthak Bisht</b>: sbisht@andrew.cmu.edu</li>
+                <li><b>Shikhar Agnihotri</b>: sagnihot@andrew.cmu.edu</li>
+                <li><b>Swathi Jadav</b>: sjadav@andrew.cmu.edu</li>
+                <li><b>Varun Jain</b>: vjain2@andrew.cmu.edu</li>
+                <li><b>Vedant Bhasin</b>: vedantb@andrew.cmu.edu</li>
+                <li><b>Vishhvak Srinivasan</b>: vishhvas@andrew.cmu.edu</li>
+                <li><b>Yooni Choi</b>: jungyoon@andrew.cmu.edu</li>
+                <li><b>(SV) Ruimeng Chang</b>: ruimengc@andrew.cmu.edu</li>
+                <li><b>(Kigali) Yonas Chanie</b>: ychanie@andrew.cmu.edu</li>
+                <li><b>(Kigali) Paul Ewuzie</b>: pewuzie@andrew.cmu.edu</li>
+            </ul>
+        </div>
+
+        <!-- Fall 2022 -->
+        <div class="semester-section">
+            <h3>Fall 2022</h3>
+            <img src="./images/f22_tas.png" class="ta-photo" style="max-width: 500px"
+                alt="TAs for the Fall Semester of 2022">
+            <p class="photo-caption">TAs with Professor Bhiksha on their last TA Debrief of the semester.</p>
+            <ul>
+                <li><b>Abuzar Khan</b>: abuzark@andrew.cmu.edu</li>
+                <li><b>Aditya Singh</b>: adityas5@andrew.cmu.edu</li>
+                <li><b>Ameya Mahabaleshwarkar</b>: amahabal@andrew.cmu.edu</li>
+                <li><b>Aparajith Srinivasan</b>: aparajis@andrew.cmu.edu</li>
+                <li><b>Fuyu Tang</b>: fuyut@andrew.cmu.edu</li>
+                <li><b>George Saito</b>: takatoms@andrew.cmu.edu</li>
+                <li><b>Joseph Konan</b>: jkonan@andrew.cmu.edu</li>
+                <li><b>Karanveer Singh</b>: karanves@andrew.cmu.edu</li>
+                <li><b>Pranav Karnani</b>: pkarnani@andrew.cmu.edu</li>
+                <li><b>Samiran Gode</b>: sgode@andrew.cmu.edu</li>
+                <li><b>Samruddhi Pai</b>: sdpai@andrew.cmu.edu</li>
+                <li><b>Shreyas Piplani</b>: spiplani@andrew.cmu.edu</li>
+                <li><b>Soumya</b>: sempran@andrew.cmu.edu</li>
+                <li><b>Swathi Jadav</b>: sjadav@andrew.cmu.edu</li>
+                <li><b>Talha Faiz</b>: mfaiz@andrew.cmu.edu</li>
+                <li><b>Vishhvak Srinivasan</b>: vishhvas@andrew.cmu.edu</li>
+                <li><b>Yashash Gaurav</b>: ygaurav@andrew.cmu.edu</li>
+                <li><b>Yue Jian</b>: yuejian@andrew.cmu.edu</li>
+                <li><b>Zishen Wen</b>: zishenw@andrew.cmu.edu</li>
+                <li><b>(SV) Oscar Joris Denys</b>: odenys@andrew.cmu.edu</li>
+                <li><b>(SV) Ruoyu Hua</b>: ruoyuhua@andrew.cmu.edu</li>
+                <li><b>(SV) Spatika Ganesh</b>: spatikag@andrew.cmu.edu</li>
+                <li><b>(Kigali) Cedric Manouan</b>: cmanouan@andrew.cmu.edu</li>
+                <li><b>(Kigali) Moayad Elamin</b>: melamin@andrew.cmu.edu</li>
+            </ul>
+        </div>
+
+        <!-- Spring 2022 -->
+        <div class="semester-section">
+            <h3>Spring 2022</h3>
+            <ul>
+                <li><b>Adebayo Oshingbesan</b>: oaadebay@andrew.cmu.edu</li>
+                <li><b>Amelia (Zhiyi) Kuang</b>: zkuang@andrew.cmu.edu</li>
+                <li><b>Ameya Mahabaleshwarkar</b>: amahabal@andrew.cmu.edu</li>
+                <li><b>Aparajith Srinivasan</b>: aparajis@andrew.cmu.edu</li>
+                <li><b>Bradley Warren</b>: bwarren2@andrew.cmu.edu</li>
+                <li><b>Chaoran ZHANG</b>: chaoranz@andrew.cmu.edu</li>
+                <li><b>Diksha agarwal</b>: dikshaa@andrew.cmu.edu</li>
+                <li><b>Fuyu Tang</b>: fuyut@andrew.cmu.edu</li>
+                <li><b>Jeff Moore</b>: jmoore3@andrew.cmu.edu</li>
+                <li><b>Jinhyung (David) Park</b>: jinhyun1@andrew.cmu.edu</li>
+                <li><b>Joseph Konan</b>: jkonan@cs.cmu.edu</li>
+                <li><b>Lavanya Gupta</b>: lagupta@andrew.cmu.edu</li>
+                <li><b>Manasi Purohit</b>: mpurohit@andrew.cmu.edu</li>
+                <li><b>Roshan Ram</b>: rram@andrew.cmu.edu</li>
+                <li><b>Rucha Khopkar</b>: rkhopkar@andrew.cmu.edu</li>
+                <li><b>Rukayat Sadiq</b>: rsadiq@andrew.cmu.edu</li>
+                <li><b>Shreyas Piplani</b>: spiplani@andrew.cmu.edu</li>
+                <li><b>Soumya Empran</b>: sempran@andrew.mu.edu</li>
+                <li><b>Urvil Kenia</b>: ukenia@andrew.cmu.edu</li>
+                <li><b>Zhe Chen</b>: zhechen2@andrew.cmu.edu</li>
+                <li><b>(Qatar) John (EuiSuh) Jeong</b>: ejeong@andrew.cmu.edu</li>
+                <li><b>(SV) Ruoyu Hua</b>: ruoyuhua@andrew.cmu.edu</li>
+                <li><b>(SV) Wenwen Ouyang</b>: wenweno@andrew.cmu.edu</li>
+                <li><b>(Kigali) Germann Atakpa</b>: gatakpa@andrew.cmu.edu</li>
+                <li><b>(Kigali) Iffanice Houndayi</b>: ibh@andrew.cmu.edu</li>
+            </ul>
+        </div>
+
+        <!-- Fall 2021 -->
+        <div class="semester-section">
+            <h3>Fall 2021</h3>
+            <ul>
+                <li>Chaoran Zhang</li>
+                <li>Dijing Zhang</li>
+                <li>Diksha Agarwal</li>
+                <li>Fan Zhou</li>
+                <li>Hao Chen</li>
+                <li>Hyungon (Clay) Yoo</li>
+                <li>Jinhyung Park</li>
+                <li>Joseph Konan</li>
+                <li>Manish Mishra</li>
+                <li>Mehar Goli</li>
+                <li>Ojas Bhargave</li>
+                <li>Omisa Jinsi</li>
+                <li>Urvil Kenia</li>
+                <li>Xiang Li</li>
+                <li>Yuxin (Abbey) Pei</li>
+                <li>Zhe Chen</li>
+                <li>Zilin Si</li>
+                <li>(Kigali) Rukayat Sadiq</li>
+                <li>(Kigali) Sheila Mbadi</li>
+            </ul>
+        </div>
+
+        <!-- Spring 2021 -->
+        <div class="semester-section">
+            <h3>Spring 2021</h3>
+            <ul>
+                <li>Akshat Gupta</li>
+                <li>Anurag Katakkar</li>
+                <li>Alex Kwark</li>
+                <li>David Park</li>
+                <li>Hao Chen</li>
+                <li>Joseph Konan</li>
+                <li>Kinori Rosnow</li>
+                <li>Owen Wang</li>
+                <li>Sai Prahladh</li>
+                <li>Shayeree Sarkar</li>
+                <li>Shentong Mo</li>
+                <li>Vaidehi Joshi</li>
+                <li>(China/India) Haoxuan Zhu</li>
+                <li>(China/India) Yi Shen</li>
+                <li>(Doha) Nour Ali</li>
+                <li>(India) Shriti Priya</li>
+                <li>(Kigali) Charles Yusuf</li>
+                <li>(Kigali) Tanya Akumu</li>
+            </ul>
+        </div>
+
+        <!-- Fall 2020 -->
+        <div class="semester-section">
+            <h3>Fall 2020</h3>
+            <img src="./images/F20TAs.png" class="ta-photo" style="max-width: 500px" alt="TAs for Fall 2020">
+            <p class="photo-caption">From left to right, then top to bottom: Mansi, Faris, Tony, Reshmi, Bharat,
+                Bhiksha, Jacob, Akshat, Miya, David, Abraham, Aishwarya</p>
+            <ul>
+                <li><b>Aiswarya Vinod Kumar</b>: avinodku@andrew.cmu.edu</li>
+                <li><b>Akshat Gupta</b>: akshatgu@andrew.cmu.edu</li>
+                <li><b>Antioch Sanders</b>: asanders@andrew.cmu.edu</li>
+                <li><b>Anxiang Zhang</b>: anxiangz@andrew.cmu.edu</li>
+                <li><b>Bharat Gaind</b>: bgaind@andrew.cmu.edu</li>
+                <li><b>David Park</b>: jinhyun1@andrew.cmu.edu</li>
+                <li><b>Faris Alotibi</b>: alotibifo@gmail.com</li>
+                <li><b>Jacob Lee</b>: jcob@cmu.edu</li>
+                <li><b>Jiachen Lian</b>: jlian2@andrew.cmu.edu</li>
+                <li><b>Kushal Saharan</b>: ksaharan@andrew.cmu.edu</li>
+                <li><b>Mansi Anand</b>: mansia@andrew.cmu.edu</li>
+                <li><b>Miao Wang</b>: miaow@andrew.cmu.edu</li>
+                <li><b>Nicole Miya Sylvester</b>: nsylvest@andrew.cmu.edu</li>
+                <li><b>Reshmi Ghosh</b>: reshmig@andrew.cmu.edu</li>
+                <li><b>Sean Pereira</b>: sapereir@andrew.cmu.edu</li>
+                <li><b>Tony Qin</b>: tcq@andrew.cmu.edu</li>
+                <li><b>(Kigali) Abrham Gebresellasie</b>: agebrese@andrew.cmu.edu</li>
+                <li><b>(Kigali) Samuel Ishimwe</b>: samuelmbaraga@gmail.com</li>
+                <li><b>(Silicon Valley) Jingwei Zhang</b>: jzhang5@andrew.cmu.edu</li>
+                <li><b>(Silicon Valley) Joseph Konan</b>: jkonan@andrew.cmu.edu</li>
+                <li><b>(Silicon Valley) Yizhuo Zhang</b>: yizhuoz@andrew.cmu.edu</li>
+            </ul>
+        </div>
+
+        <!-- Spring 2020 -->
+        <div class="semester-section">
+            <h3>Spring 2020</h3>
+            <img src="./images/S20TAs.png" class="ta-photo" style="max-width: 500px" alt="TAs for Spring 2020">
+            <p class="photo-caption">From left to right, then top to bottom: Amala, Bhiksha, Advait, David, Bhuvan,
+                Soumya, Hao, Zhefan, Yash, Yuying, Ken, Yang, Rohit, Natnael, Joseph, Leo, Leo, Abrham, Christopher,
+                Vedant.</p>
+            <ul>
+                <li>Advait Gadhikar: agadhika@andrew.cmu.edu</li>
+                <li>Amala Sanjay Deshmukh: asdeshmu@andrew.cmu.edu</li>
+                <li>Bhuvan Agrawal: bhuvana@andrew.cmu.edu</li>
+                <li>Christopher George: cmgeorge@andrew.cmu.edu</li>
+                <li>David Park: jinhyun1@andrew.cmu.edu</li>
+                <li>Hao Liang: hliang2@andrew.cmu.edu</li>
+                <li>Jianfeng (Ken) Xia: jianfenx@andrew.cmu.edu</li>
+                <li>Rohit Prakash Barnwal: rohitprb@andrew.cmu.edu</li>
+                <li>Soumya Vadlamannati: soumyav@andrew.cmu.edu</li>
+                <li>Vedant Sanil: vsanil@andrew.cmu.edu</li>
+                <li>Yang Xia: yangxia2@andrew.cmu.edu</li>
+                <li>Yash Belhe: ybelhequ@andrew.cmu.edu</li>
+                <li>Yuying Zhu: yuyingz@andrew.cmu.edu</li>
+                <li>Zhefan Xu: zhefanx@andrew.cmu.edu</li>
+                <li>(Kigali) Abrham Gebreselasie: agebrese@andrew.cmu.edu</li>
+                <li>(Kigali) Natnael Daba: ndaba@andrew.cmu.edu</li>
+                <li>(Silicon Valley) Arpit Gupta: arpitgup@andrew.cmu.edu</li>
+                <li>(Silicon Valley) Joseph Konan: jkonan@andrew.cmu.edu</li>
+                <li>(Silicon Valley) Leo Chenghui Li: chenghui@andrew.cmu.edu</li>
+            </ul>
+        </div>
+
+        <!-- Fall 2019 -->
+        <div class="semester-section">
+            <h3>Fall 2019</h3>
+            <ul>
+                <li><b>Aishwarya Reganti</b>: areganti@andrew.cmu.edu</li>
+                <li><b>Amit Chahar</b>: achahar@andrew.cmu.edu</li>
+                <li><b>Ethan Xuanyue Yang</b>: xuanyuey@andrew.cmu.edu</li>
+                <li><b>Hanna Moazam</b>: hmoazam@andrew.cmu.edu</li>
+                <li><b>Hariharan Muralidharan</b>: hmuralid@andrew.cmu.edu</li>
+                <li><b>Kangrui Ruan (Darren)</b>: kangruir@andrew.cmu.edu</li>
+                <li><b>Liwei Cai</b>: liweicai@andrew.cmu.edu</li>
+                <li><b>Pallavi Sharma</b>: psharma2@andrew.cmu.edu</li>
+                <li><b>Parth Shah</b>: pvshah@andrew.cmu.edu</li>
+                <li><b>Wendy Ebanks</b>: wvelasqu@andrew.cmu.edu</li>
+                <li><b>(Kigali) Aime Musangamfura</b>: amusanga@andrew.cmu.edu</li>
+                <li><b>(Kigali) Natnael Daba</b>: ndaba@andrew.cmu.edu</li>
+                <li><b>(Silicon Valley) Bonan Jin</b>: bonanj@andrew.cmu.edu</li>
+                <li><b>(Silicon Valley) Joseph Konan</b>: jkonan@andrew.cmu.edu</li>
+            </ul>
+            <p>
+                <a href="https://photos.google.com/share/AF1QipN8npC2pFF7LIV9XBpRAl_hFM1UrEJEEMnGTd7Pp4h8HAnhj_Z9ucrEWLkJv6A_Zg?key=RDl0UUptUWFKUVcyaTBkVk9NcTRwZ25aWFdJQXh3">Pix
+                    with hoodies</a><br>
+                <span class="photo-caption">(In hoodie picture, from left, back row: Joseph, Nat, Parth, Ethan, Hari,
+                    Kangrui, Amit, Bonan, Liwei. Front row: Wendy, Hanna, Aishwarya, Pallavi).</span>
+            </p>
+        </div>
+
+        <!-- Spring 2019 -->
+        <div class="semester-section">
+            <h3>Spring 2019</h3>
+            <ul>
+                <li>Alex Litzenberger: alitzenb@andrew</li>
+                <li>Chia-wei Chang (for SV): chiaweic@andrew</li>
+                <li>Cody Smith (for SV): codys@andrew</li>
+                <li>David Bick: dbick@andrew</li>
+                <li>Hengrui Liu (for SV): hengrui2@andrew</li>
+                <li>Hira Dhamyal: hyd@andrew</li>
+                <li>Jakob Cassiman (for SV): jcassima@andrew</li>
+                <li>Josh Movenzadeh: jmoavenz@andrew</li>
+                <li>Kai Hu: kaihu@andrew</li>
+                <li>Mir Mohammed Daanish Ali Khan: malikhan@andrew</li>
+                <li>Muhammad Ahmad Shah: mshah1@andrew</li>
+                <li>Oluawefmi Azeez (for Kigali): oazeez@andrew</li>
+                <li>Raphael Olivier: rolivier@andrew</li>
+                <li>Sarveshwaran Dhanasekar: sarveshd@andrew</li>
+                <li>Shaden Shaar (for Doha): sshaar@andrew</li>
+                <li>Simral Chaudhary: simralc@andrew</li>
+                <li>William Hu: haoqih@andrew</li>
+            </ul>
+        </div>
+
+        <!-- Fall 2018 -->
+        <div class="semester-section">
+            <h3>Fall 2018</h3>
+            <ul>
+                <li>Ryan Brigden (rbrigden@andrew.cmu.edu)</li>
+                <li>Raphael Franck Olivier (rolivier@andrew.cmu.edu)</li>
+                <li>Sai Nihar Tadichetty (ntadiche@andrew.cmu.edu)</li>
+                <li>Shubham Tripathi (shubhamt@andrew.cmu.edu)</li>
+                <li>Soham Ghosh (sohamg@andrew.cmu.edu)</li>
+                <li>Madhura Das (madhurad@andrew.cmu.edu)</li>
+                <li>Ipsita Prakash (iprakash@andrew.cmu.edu)</li>
+                <li>Dhruv Shah (ddshah@andrew.cmu.edu)</li>
+                <li>Shaden Shaar (sshaar@andrew.cmu.edu)</li>
+                <li>David Zhang (davidz1@andrew.cmu.edu)</li>
+                <li>Zeqiang Huang (zqeiangh@andrew.cmu.edu)</li>
+                <li>Anushree Prasanna Kumar (apkumar@andrew.cmu.edu)</li>
+                <li>Muhammad Ahmad Shah (mshah1@andrew)</li>
+                <li>Omar Khattab for Doha (okhattab@cmu.edu)</li>
+                <li>Nebiyou Yismaw for Kigali (nyismaw@andrew.cmu.edu)</li>
+            </ul>
+        </div>
+
+        <!-- Spring 2018 -->
+        <div class="semester-section">
+            <h3>Spring 2018</h3>
+            <ul>
+                <li>Benjamin Striner (bstriner@andrew.cmu.edu)</li>
+                <li>Jerry Ding (dalud@andrew.cmu.edu)</li>
+                <li>Rajat Kulshreshta (rkulshre@andrew.cmu.edu)</li>
+                <li>Thomas Manzini (tmanzini@andrew.cmu.edu)</li>
+                <li>Ryan Brigeden (rbrigden@andrew.cmu.edu)</li>
+                <li>Mounira Tlili for Doha (mst@andrew.cmu.edu)</li>
+                <li>Aggrey Muhebwa for Kigali (amuhebwa@andrew.cmu.edu)</li>
+            </ul>
+        </div>
+
+        <!-- Fall 2017 -->
+        <div class="semester-section">
+            <h3>Fall 2017</h3>
+            <ul>
+                <li>Daniel Schwartz (drschar@andrew.cmu.edu)</li>
+                <li>Alexander Litzenberger (alitzenb@andrew.cmu.edu)</li>
+            </ul>
+        </div>
+
+        <!-- Spring 2017 -->
+        <div class="semester-section">
+            <h3>Spring 2017</h3>
+            <ul>
+                <li>Muhammad Ahmed Shah (mshah1@andrew.cmu.edu)</li>
+            </ul>
+        </div>
+
+        <!-- Fall 2016 -->
+        <div class="semester-section">
+            <h3>Fall 2016</h3>
+            <ul>
+                <li>Haohan Wang (haohanw@andrew.cmu.edu)</li>
+                <li>Haoqi Fan (haoqif@andrew.cmu.edu)</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>11-785 Introduction to Deep Learning | Carnegie Mellon University</p>
+        </footer>
+    </div>
+</body>
+
 </html>
