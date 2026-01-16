@@ -73,7 +73,9 @@ lectures:
         sub_topics:
           - "The Problem of Learning"
           - "Empirical Risk Minimization"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./documents/slides/lec3.learning.pdf"
     additional_materials:
     - text: "Artificial Neural Networks of the Perceptron, Madaline, and Backpropagation Family"
       url: "./documents/readings/c1992artificialneural.pdf"
