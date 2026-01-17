@@ -35,12 +35,12 @@
                     </td>
                     {% endif %}
                     <td style="vertical-align: middle; text-align: left;">{{ topic.title }}</td>
-                    <td style="vertical-align: middle; text-align: center;">
+                    <td style="vertical-align: middle; text-align: left;">
                         {% for item in topic.materials %}
                             <a href="{{ item.url }}" target="_blank">{{ item.text }}</a>{% if not loop.last %}<br>{% endif %}
                         {% endfor %}
                     </td>
-                    <td style="vertical-align: middle; text-align: center;">
+                    <td style="vertical-align: middle; text-align: left;">
                         {% if topic.videos %}
                         <p>
                             {% for video in topic.videos %}
@@ -68,7 +68,7 @@
         <tr>
             {# Title Column #}
             {# This column displays the title (e.g., "Lab 1", "HW1 Bootcamp") for the current row entry #}
-            <td style="vertical-align: middle; text-align: center;">{{ entry.title }}</td>
+            <td style="vertical-align: middle; text-align: left;">{{ entry.title }}</td>
 
             {# Date Column #}
             {# This column might span multiple rows as indicated by 'date_rowspan' in the YAML #}
@@ -79,7 +79,7 @@
                 {% set current_date_rowspan = entry.date_rowspan | default(1) %}
                 {# Render the table cell with the calculated rowspan #}
                 {% if entry.date %}
-                <td rowspan="{{ current_date_rowspan }}" style="vertical-align: middle; text-align: center;">
+                <td rowspan="{{ current_date_rowspan }}" style="vertical-align: middle; text-align: left;">
                     {{ entry.date | safe }} {# Use safe filter for <br> tags in the date #}
                 </td>
                 {% endif %}
@@ -120,7 +120,7 @@
                 {# Get the rowspan value for the current entry, defaulting to 1 if not set #}
                 {% set current_materials_rowspan = entry.materials_rowspan | default(1) %}
                 {# Render the table cell with the calculated rowspan #}
-                <td rowspan="{{ current_materials_rowspan }}" style="vertical-align: middle; text-align: center;">
+                <td rowspan="{{ current_materials_rowspan }}" style="vertical-align: middle; text-align: left;">
                     {# Check if 'materials' is a list before iterating #}
                     {% if entry.materials is iterable and entry.materials is not string %}
                         {% for item in entry.materials %}
@@ -148,7 +148,7 @@
                  {# Get the rowspan value for the current entry, defaulting to 1 if not set #}
                  {% set current_videos_rowspan = entry.videos_rowspan | default(1) %}
                 {# Render the table cell with the calculated rowspan #}
-                <td rowspan="{{ current_videos_rowspan }}" style="vertical-align: middle; text-align: center;">
+                <td rowspan="{{ current_videos_rowspan }}" style="vertical-align: middle; text-align: left;">
                      {# Check if 'videos' is a list before iterating #}
                      {% if entry.videos is iterable and entry.videos is not string %}
                         {% for video in entry.videos %}
@@ -174,7 +174,7 @@
                 {# Get the rowspan value for the current entry, defaulting to 1 if not set #}
                 {% set current_authors_rowspan = entry.authors_rowspan | default(1) %}
                 {# Render the table cell with the calculated rowspan #}
-                <td rowspan="{{ current_authors_rowspan }}" style="vertical-align: middle; text-align: center;">
+                <td rowspan="{{ current_authors_rowspan }}" style="vertical-align: middle; text-align: left;">
                     {{ entry.authors | safe }} {# Display authors string, using safe filter for <br> tags #}
                 </td>
                 {# Set the remaining span count for subsequent rows covered by this rowspan #}
