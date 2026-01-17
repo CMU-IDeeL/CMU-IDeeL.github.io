@@ -16,7 +16,7 @@ lectures:
 
     additional_materials: []
     quiz:
-      text: ""
+      text: "No Quiz"
       # url: "" # Optional: if there's a link for "No Quiz"
       rowspan: 1 # This quiz entry applies to this row only
 
@@ -45,7 +45,7 @@ lectures:
       - text: "Hebb: The Organization Of Behaviour"
         url: "https://pure.mpg.de/pubman/item/item_2346268_3/component/file_2346267/Hebb_1949_The_Organization_of_Behavior.pdf"
     quiz:
-      text: "" # this line does not go below rowspan unlike the assignments.yaml file (also notice there is no "-" before text and rowspan for quiz)
+      text: "Quiz 1" # this line does not go below rowspan unlike the assignments.yaml file (also notice there is no "-" before text and rowspan for quiz)
       # url: "https://canvas.cmu.edu/courses/38471/quizzes/115273" # Example if link exists
       rowspan: 2 # This quiz entry spans this row and the next
       
@@ -78,6 +78,10 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./documents/slides/lec3.learning.pdf"
+      - text: "YouTube"
+        url: "https://youtu.be/sxkS0TLDArM"
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Neural+Networks+-+Learning+the+Network%2C+Part+1/1_583rhrbu/397642153"
     additional_materials:
     - text: "Artificial Neural Networks of the Perceptron, Madaline, and Backpropagation Family"
       url: "./documents/readings/c1992artificialneural.pdf"

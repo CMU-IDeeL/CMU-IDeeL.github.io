@@ -322,15 +322,17 @@ recitations:
   - title: "Lab 1"
     date: "Saturday,<br> Jan 17"
     date_rowspan: 1
-    topics: [] 
-    materials: []
+    topics: "Your First MLP" 
+    materials:
+      - text: "Notebook"
+        url: "./documents/labs/lab_1/S26_Lab1_Your_First_MLP.ipynb"
     materials_rowspan: 1
     videos: []
     videos_rowspan: 1
-    authors: ""
+    authors: "Akshara Kanna, <br>Felix Hirwa Nshuti"
     authors_rowspan: 1
 
-  - title: "Hackathon 1 <br> HW1 Bootcamp"
+  - title: "Hackathon 1 +<br> HW1 Bootcamp"
     date: "Saturday,<br> Jan 17"
     date_rowspan: 1
     topics: []
