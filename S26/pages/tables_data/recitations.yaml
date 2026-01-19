@@ -327,7 +327,9 @@ recitations:
       - text: "Notebook"
         url: "./documents/labs/lab_1/S26_Lab1_Your_First_MLP.ipynb"
     materials_rowspan: 1
-    videos: []
+    videos: 
+      - text: "YouTube"
+        url : "https://youtu.be/Lo4TuItUPv8"
     videos_rowspan: 1
     authors: "Akshara Kanna, <br>Felix Hirwa Nshuti"
     authors_rowspan: 1
@@ -335,15 +337,15 @@ recitations:
   - title: "Hackathon 1 +<br> HW1 Bootcamp"
     date: "Saturday,<br> Jan 17"
     date_rowspan: 1
-    topics: []
+    topics: ["HW1P1", "HW1P2"]
     materials:
-      - text: "Slides"
-        url: "./documents/bootcamps/Bootcamp_HW1.pdf"
+      - text: "Slides P1"
+        url: "./documents/bootcamps/hw1/Bootcamp_HW1.pdf"
+      - text: "Slides P2"
+        url: "./documents/bootcamps/hw1/S26_Bootcamp_HW1P2.pptx.pdf"
     materials_rowspan: 1
     videos:
-    - text: ""
-      url: ""
-    - text: ""
-      url: ""
+    - text: "YouTube"
+      url: "https://youtu.be/DBuCm2yO-nw"
     authors: ""
     authors_rowspan: 1
