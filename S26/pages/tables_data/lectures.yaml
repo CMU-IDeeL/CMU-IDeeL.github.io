@@ -98,7 +98,9 @@ lectures:
         sub_topics:
           - "Gradient Descent"
           - "Training the Network"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./documents/slides/lec4.learning.pdf"
     additional_materials: 
     - text: "Widrow and Lehr (1992)"
       url: "documents/readings/c1992artificialneural.pdf"
