@@ -88,7 +88,7 @@ lectures:
     - text: "The Perceptron Learning Algorithm and its Convergence"
       url: "./documents/readings/Perceptron_Learning_Algorithm_and_Convergence.pdf"
     quiz:
-      text: ""
+      text: "Quiz 2"
       rowspan: 2
 
   - number: 4
@@ -101,6 +101,10 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./documents/slides/lec4.learning.pdf"
+      - text: "YouTube"
+        url: "https://youtu.be/WOtAtLGZRIg"
+      # - text: "MediaService"
+      #   url: ""
     additional_materials: 
     - text: "Widrow and Lehr (1992)"
       url: "documents/readings/c1992artificialneural.pdf"

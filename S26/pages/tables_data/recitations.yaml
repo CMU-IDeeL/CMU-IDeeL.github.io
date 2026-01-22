@@ -330,6 +330,8 @@ recitations:
     videos: 
       - text: "YouTube"
         url : "https://youtu.be/Lo4TuItUPv8"
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab+1/1_aojmzvt4/397642153"
     videos_rowspan: 1
     authors: "Akshara Kanna, <br>Felix Hirwa Nshuti"
     authors_rowspan: 1
@@ -347,5 +349,7 @@ recitations:
     videos:
     - text: "YouTube"
       url: "https://youtu.be/DBuCm2yO-nw"
+    - text: "MediaService"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+HW1P1+Bootcamp/1_ljbifejs/397642153"
     authors: "Akshara Kanna, <br>Anurag Aryal, <br>Ron Sarma, <br>En Zheng, <br>Mugur Preda"
     authors_rowspan: 1
