@@ -130,8 +130,8 @@ lectures:
     slides_videos: 
       - text: "Slides"
         url: "./documents/slides/lec5.BP.pdf"
-      # - text: "YouTube"
-      #   url: ""
+      - text: "YouTube"
+        url: "https://youtu.be/Pk2J64MbOuw"
       # - text: "MediaService"
       #   url: ""
     additional_materials: 
