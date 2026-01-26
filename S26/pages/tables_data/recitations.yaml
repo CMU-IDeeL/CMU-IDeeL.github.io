@@ -353,3 +353,32 @@ recitations:
       url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+HW1P1+Bootcamp/1_ljbifejs/397642153"
     authors: "Akshara Kanna, <br>Anurag Aryal, <br>Ron Sarma, <br>En Zheng, <br>Mugur Preda"
     authors_rowspan: 1
+
+  - title: "Lab 2"
+    date: "Friday,<br> Jan 23"
+    date_rowspan: 1
+    topics: "Debugging" 
+    materials:
+      - text: "Notebook"
+        url: "./documents/labs/lab_2/S26_Lab_2_Student_Notebook.ipynb"
+      - text: "Dataset"
+        url: "./documents/labs/lab_2/data.zip"
+    materials_rowspan: 1
+    videos: 
+      - text: "YouTube"
+        url : "https://youtu.be/5UWYS1ePizk"
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: "Thomas  Seleshi, <br>Praneeth Chaitanya Jonnavithula"
+    authors_rowspan: 1
+
+  - title: "Hackathon 2"
+    date: "Saturday,<br> Jan 24"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    materials_rowspan: 1
+    videos: [""]
+    authors: "Akshara Kanna, <br>Anurag Aryal, <br>Ron Sarma, <br>Thomas Seleshi, <br>Sid"
+    authors_rowspan: 1
