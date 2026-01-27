@@ -151,7 +151,13 @@ lectures:
           - "Convergence issues"
           - "Loss Surfaces"
           - "Momentum"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./documents/slides/lec6_convergence.pdf"
+      # - text: "YouTube"
+      #   url: ""
+      # - text: "MediaService"
+      #   url: ""
     additional_materials: 
     - text: "Backpropagation Fails to Separate, Where Perceptrons Succeed, Brady et al. (1989)"
       url: "https://ieeexplore.ieee.org/document/31314"
