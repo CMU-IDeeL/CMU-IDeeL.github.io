@@ -367,8 +367,8 @@ recitations:
     videos: 
       - text: "YouTube"
         url : "https://youtu.be/5UWYS1ePizk"
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab+2/1_bf3uib7c/397642153"
     videos_rowspan: 1
     authors: "Thomas  Seleshi, <br>Praneeth Chaitanya Jonnavithula"
     authors_rowspan: 1
@@ -381,4 +381,33 @@ recitations:
     materials_rowspan: 1
     videos: [""]
     authors: "Akshara Kanna, <br>Anurag Aryal, <br>Ron Sarma, <br>Thomas Seleshi, <br>Sid"
+    authors_rowspan: 1
+
+  - title: "Lab 3"
+    date: "Friday,<br> Jan 30"
+    date_rowspan: 1
+    topics: "Ablations, Hyperparameter Tuning Methods, Normalizations" 
+    materials: []
+      # - text: "Notebook"
+      #   url: ""
+      # - text: "Dataset"
+      #   url: ""
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: "Manigandan Ramadasan, <br>Madhavi Gulavani"
+    authors_rowspan: 1
+
+  - title: "Hackathon 3"
+    date: "Saturday,<br> Jan 31"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    materials_rowspan: 1
+    videos: [""]
+    authors: "Euijin Hong, <br>Anurag Aryal, <br>Pengyu Chang"
     authors_rowspan: 1

@@ -132,15 +132,15 @@ lectures:
         url: "./documents/slides/lec5.BP.pdf"
       - text: "YouTube"
         url: "https://youtu.be/Pk2J64MbOuw"
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Neural+Networks+-+Learning+the+Network+Part+3/1_88pnhv89/397642153"
     additional_materials: 
     - text: "Werbos (1990)"
       url: "https://ieeexplore.ieee.org/document/58337"
     - text: "Rumelhart, Hinton and Williams (1986)"
       url: "http://www.cs.toronto.edu/~hinton/absps/naturebp.pdf"
     quiz:
-      text: ""
+      text: "Quiz 3"
       rowspan: 2
 
   - number: 6
@@ -154,10 +154,10 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./documents/slides/lec6_convergence.pdf"
-      # - text: "YouTube"
-      #   url: ""
-      # - text: "MediaService"
-      #   url: ""
+      - text: "YouTube"
+        url: "https://youtu.be/zSD0r-qrUOg"
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Optimization+Part+1/1_9f5f635y/397642153"
     additional_materials: 
     - text: "Backpropagation Fails to Separate, Where Perceptrons Succeed, Brady et al. (1989)"
       url: "https://ieeexplore.ieee.org/document/31314"
@@ -181,7 +181,7 @@ lectures:
     - text: "Derivatives and Influences"
       url: "documents/readings/derivatives_and_influences.pdf"
     quiz:
-      text: ""
+      text: "Quiz 4"
       rowspan: 2
 
   - number: 8
@@ -210,7 +210,7 @@ lectures:
     slides_videos: []
     additional_materials: []
     quiz:
-      text: ""
+      text: "Quiz 5"
       rowspan: 2
 
   - number: 10
@@ -230,7 +230,7 @@ lectures:
     - text: "CNN Explainer"
       url: "https://poloclub.github.io/cnn-explainer/"
     quiz:
-      text: ""
+      text: "Quiz 6"
       rowspan: 2
 
   - number: 12
@@ -252,7 +252,7 @@ lectures:
     - text: "How to compute a derivative"
       url: "./documents/readings/How to compute a derivative.pdf"
     quiz:
-      text: ""
+      text: "Quiz 7"
       rowspan: 2 # The HTML shows rowspan 1 for this quiz
 
   - number: 14
