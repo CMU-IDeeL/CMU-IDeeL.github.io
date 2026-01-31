@@ -387,15 +387,15 @@ recitations:
     date: "Friday,<br> Jan 30"
     date_rowspan: 1
     topics: "Ablations, Hyperparameter Tuning Methods, Normalizations" 
-    materials: []
-      # - text: "Notebook"
-      #   url: ""
-      # - text: "Dataset"
-      #   url: ""
+    materials:
+      - text: "Notebook"
+        url: "https://colab.research.google.com/drive/1M9HnzB_xj-aAyoY2mNXsAVsScaUvYI-e?usp=sharing"
+      - text: "Dataset"
+        url: "https://drive.google.com/uc?id=1pms9NiNlQhqzightGFHJ-LqN_RxhgWJk"
     materials_rowspan: 1
-    videos: []
-      # - text: "YouTube"
-      #   url : ""
+    videos:
+      - text: "YouTube"
+        url : "https://youtu.be/OtMVc_2od1s"
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
