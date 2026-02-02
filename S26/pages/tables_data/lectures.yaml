@@ -175,8 +175,8 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./documents/slides/lec7.stochastic_gradient.pdf"
-      # - text: "YouTube"
-      #   url: ""
+      - text: "YouTube"
+        url: "https://youtu.be/55EiuST418c"
       # - text: "MediaService"
       #   url: ""
     additional_materials: 
