@@ -202,8 +202,8 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./documents/slides/lec8.optimizersandregularizers.pdf"
-      # - text: "YouTube"
-      #   url: ""
+      - text: "YouTube"
+        url: "https://youtu.be/4bxoPcAk1t0"
       # - text: "MediaService"
       #   url: ""
     additional_materials: 
