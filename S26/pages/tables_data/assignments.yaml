@@ -4,7 +4,7 @@ assignment_groups:
     assignments:
       - name: "HW1P1"
         due_date_rowspan: 2 # This due date applies to HW1P1 and HW1P2
-        due_date: "Early Deadline: Friday, Jan 23 11:59 PM<br>On-Time Deadline: Friday, Feb 6 11:59 PM" # this line was above rowspan in the previous version. this created misaligned columns after you run generate_table.py
+        due_date: "Early Deadline: Friday, Jan 23 11:59 PM<br>Final Deadline: Friday, Feb 6 11:59 PM" # this line was above rowspan in the previous version. this created misaligned columns after you run generate_table.py
         materials:
           - text: "Autolab"
             url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/HW1P1"
@@ -37,40 +37,38 @@ assignment_groups:
     assignments:
       - name: "HW2P1"
         due_date_rowspan: 2
-        due_date: "Early Deadline: Friday, Feb 20 11:59 PM<br>On-Time Deadline: Friday, Feb 27 11:59 PM"
-        materials: []
-          # - text: "Autolab"
-          #   url: " "
-          # - text: "Piazza"
-          #   url: " "
+        due_date: "Early Deadline: Friday, Feb 20 11:59 PM<br>Final Deadline: Friday, Feb 27 11:59 PM"
+        materials:
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/hw2p1-test"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/273"
       - name: "HW2P2"
-        materials: []
-          # - text: "Checkpoint Submission Autolab"
-          #   url: " "
-          # - text: "Final Submission Autolab"
-          #   url: " "
-          # - text: "Piazza"
-          #   url: " "
+        materials:
+          - text: "Final Submission Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/TEST-HW2P2-Code-Submission"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/247"
       - name: "HW2P1 Bonus"
         due_date_rowspan: 2
         due_date: "Friday, Apr 24 11:59 PM"
-        materials: []
-          # - text: "Autolab"
-          #   url: " "
-          # - text: "Piazza"
-          #   url: " "
+        materials:
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/HW2P1-Bonus"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/256"
       - name: "HW2P1 Autograd"
-        materials: []
-          # - text: "Autolab"
-          #   url: ""
-          # - text: "Piazza"
-          #   url: ""
+        materials:
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/HW2-Autograd"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/256"
 
   - release_date: "Friday, Feb 27"
     assignments:
       - name: "HW3P1"
         due_date_rowspan: 2
-        due_date: "Early Deadline: Friday, Mar 20 11:59 PM<br>On-Time Deadline: Friday, Mar 27 11:59 PM"
+        due_date: "Early Deadline: Friday, Mar 20 11:59 PM<br>Final Deadline: Friday, Mar 27 11:59 PM"
         materials: []
           # - text: "Piazza"
           #   url: ""
@@ -103,7 +101,7 @@ assignment_groups:
     assignments:
       - name: "HW4P1"
         due_date_rowspan: 2
-        due_date: "Early Deadline: Friday, Apr 10 11:59 PM<br>On-Time Deadline: Friday, Apr 24 11:59 PM"
+        due_date: "Early Deadline: Friday, Apr 10 11:59 PM<br>Final Deadline: Friday, Apr 24 11:59 PM"
         materials: []
           # - text: "Autolab"
           #   url: " "
