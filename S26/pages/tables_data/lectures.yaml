@@ -177,8 +177,8 @@ lectures:
         url: "./documents/slides/lec7.stochastic_gradient.pdf"
       - text: "YouTube"
         url: "https://youtu.be/55EiuST418c"
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Optimization/1_uka3m8dl/397642153"
     additional_materials: 
     - text: "Momentum and Polyak (1964)"
       url: "https://www.sciencedirect.com/science/article/abs/pii/0041555364901375"
@@ -204,8 +204,8 @@ lectures:
         url: "./documents/slides/lec8.optimizersandregularizers.pdf"
       - text: "YouTube"
         url: "https://youtu.be/4bxoPcAk1t0"
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Training+Neural+Networks+-+Normalization%2C+Regularization%2C+etc./1_b683sk2t/397642153"
     additional_materials: 
     - text: "Derivatives and Influence Diagrams"
       url: "./documents/readings/derivatives and influences.pdf"

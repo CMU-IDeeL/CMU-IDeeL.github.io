@@ -396,8 +396,8 @@ recitations:
     videos:
       - text: "YouTube"
         url : "https://youtu.be/OtMVc_2od1s"
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab+3/1_sldnhszv/397642153"
     videos_rowspan: 1
     authors: "Manigandan Ramadasan, <br>Madhavi Gulavani"
     authors_rowspan: 1
@@ -410,4 +410,386 @@ recitations:
     materials_rowspan: 1
     videos: [""]
     authors: "Euijin Hong, <br>Anurag Aryal, <br>Pengyu Chang"
+    authors_rowspan: 1
+
+  - title: "Lab 4"
+    date: "Friday,<br> Feb 6"
+    date_rowspan: 1
+    topics: "Computing Derivatives and Autograd" 
+    materials:
+      - text: "Slides"
+        url: "./documents/labs/lab_4/IDL_Lab4_Computing_Derivatives_Autograd_20250918.pptx"
+      - text: "Notebook"
+        url: "./documents/labs/lab_4/IDL_S26_Lab_4_Computing_Derivatives_&_Autograd(Students).ipynb"
+    materials_rowspan: 1
+    videos:
+      # - text: "YouTube"
+      #   url : ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab+4/1_s3pmqt5n/397642153"
+    videos_rowspan: 1
+    authors: "Anurag Aryal, <br>Malihah Rahaman, <br>Khushee"
+    authors_rowspan: 1
+
+  - title: "Hackathon 4 +<br> HW2 Bootcamp"
+    date: "Saturday,<br> Feb 7"
+    date_rowspan: 1
+    topics: ["HW2P1", "HW2P2"]
+    materials: []
+    materials_rowspan: 1
+    videos: [""]
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    authors: "Mengchun Zhang, <br>Akshara, <br>En Zheng, <br>Madhavi Gulavani, <br>Puru Samal, <br>Praneeth, <br>Thomas Seleshi, <br>Yabsera Yemanberhan "
+    authors_rowspan: 1
+
+  - title: "Lab 5"
+    date: "Friday,<br> Feb 13"
+    date_rowspan: 1
+    topics: "CNN: Basics and Backprop" 
+    materials: []
+      # - text: "Slides"
+      #   url: "./documents/labs/..."
+      # - text: "Notebook"
+      #   url: "./documents/labs/..."
+      # - text: "Data"
+      #   url: "./documents/labs/..."
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 5"
+    date: "Saturday,<br> Feb 14"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    materials_rowspan: 1
+    videos: [""]
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 6"
+    date: "Friday,<br> Feb 20"
+    date_rowspan: 1
+    topics: "CNN: Classification and Verification" 
+    materials: []
+      # - text: "Slides"
+      #   url: "./documents/labs/..."
+      # - text: "Notebook"
+      #   url: "./documents/labs/..."
+      # - text: "Data"
+      #   url: "./documents/labs/..."
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 6"
+    date: "Saturday,<br> Feb 21"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    materials_rowspan: 1
+    videos: [""]
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 7"
+    date: "Friday,<br> Feb 27"
+    date_rowspan: 1
+    topics: "RNN Basics" 
+    materials: []
+      # - text: "Slides"
+      #   url: "./documents/labs/..."
+      # - text: "Notebook"
+      #   url: "./documents/labs/..."
+      # - text: "Data"
+      #   url: "./documents/labs/..."
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 7 +<br> HW3 Bootcamp"
+    date: "Saturday,<br> Feb 28"
+    date_rowspan: 1
+    topics: ["HW3P1", "HW3P2"]
+    materials: []
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 8"
+    date: "Friday,<br> Mar 6"
+    date_rowspan: 1
+    topics: "Kaggle Workshop and Pre-trained models " 
+    materials: []
+      # - text: "Slides"
+      #   url: "./documents/labs/..."
+      # - text: "Notebook"
+      #   url: "./documents/labs/..."
+      # - text: "Data"
+      #   url: "./documents/labs/..."
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 8"
+    date: "Saturday,<br> Mar 7"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    materials_rowspan: 1
+    videos: [""]
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 9"
+    date: "Friday,<br> Mar 13"
+    date_rowspan: 1
+    topics: "CTC and Beam Search" 
+    materials: []
+      # - text: "Slides"
+      #   url: "./documents/labs/..."
+      # - text: "Notebook"
+      #   url: "./documents/labs/..."
+      # - text: "Data"
+      #   url: "./documents/labs/..."
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 9"
+    date: "Saturday,<br> Mar 14"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    materials_rowspan: 1
+    videos: [""]
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 10"
+    date: "Friday,<br> Mar 20"
+    date_rowspan: 1
+    topics: "Attention, MT, LAS" 
+    materials: []
+      # - text: "Slides"
+      #   url: "./documents/labs/..."
+      # - text: "Notebook"
+      #   url: "./documents/labs/..."
+      # - text: "Data"
+      #   url: "./documents/labs/..."
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 10"
+    date: "Saturday,<br> Mar 21"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    materials_rowspan: 1
+    videos: [""]
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 11"
+    date: "Friday,<br> Mar 27"
+    date_rowspan: 1
+    topics: "Transformers" 
+    materials: []
+      # - text: "Slides"
+      #   url: "./documents/labs/..."
+      # - text: "Notebook"
+      #   url: "./documents/labs/..."
+      # - text: "Data"
+      #   url: "./documents/labs/..."
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 11 <br>+ HW4 Bootcamp"
+    date: "Saturday,<br> Mar 28"
+    date_rowspan: 1
+    topics: ["HW4P1", "HW4P2"]
+    materials: []
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 12"
+    date: "Friday,<br> Apr 3"
+    date_rowspan: 1
+    topics: "VAE" 
+    materials: []
+      # - text: "Slides"
+      #   url: "./documents/labs/..."
+      # - text: "Notebook"
+      #   url: "./documents/labs/..."
+      # - text: "Data"
+      #   url: "./documents/labs/..."
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 12"
+    date: "Saturday,<br> Apr 4"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    materials_rowspan: 1
+    videos: [""]
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 13"
+    date: "Friday,<br> Apr 10"
+    date_rowspan: 1
+    topics: "NF and Stable Diffusion" 
+    materials: []
+      # - text: "Slides"
+      #   url: "./documents/labs/..."
+      # - text: "Notebook"
+      #   url: "./documents/labs/..."
+      # - text: "Data"
+      #   url: "./documents/labs/..."
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 13"
+    date: "Saturday,<br> Apr 11"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    materials_rowspan: 1
+    videos: [""]
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 14"
+    date: "Friday,<br> Apr 17"
+    date_rowspan: 1
+    topics: "GAN" 
+    materials: []
+      # - text: "Slides"
+      #   url: "./documents/labs/..."
+      # - text: "Notebook"
+      #   url: "./documents/labs/..."
+      # - text: "Data"
+      #   url: "./documents/labs/..."
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 14"
+    date: "Saturday,<br> Apr 18"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    materials_rowspan: 1
+    videos: [""]
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Lab 15"
+    date: "Friday,<br> Apr 24"
+    date_rowspan: 1
+    topics: "Graph Neural Networks" 
+    materials: []
+      # - text: "Slides"
+      #   url: "./documents/labs/..."
+      # - text: "Notebook"
+      #   url: "./documents/labs/..."
+      # - text: "Data"
+      #   url: "./documents/labs/..."
+    materials_rowspan: 1
+    videos: []
+      # - text: "YouTube"
+      #   url : ""
+      # - text: "MediaService"
+      #   url: ""
+    videos_rowspan: 1
+    authors: ""
+    authors_rowspan: 1
+
+  - title: "Hackathon 15"
+    date: "Saturday,<br> Apr 25"
+    date_rowspan: 1
+    topics: []
+    materials: []
+    materials_rowspan: 1
+    videos: [""]
+    authors: ""
     authors_rowspan: 1
