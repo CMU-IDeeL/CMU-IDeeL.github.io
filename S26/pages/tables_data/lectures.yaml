@@ -219,7 +219,9 @@ lectures:
     date: "Monday <br> Feb 9"
     topics:
       - "Convolutional Neural Networks (CNNs) I"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./documents/slides/lec9.CNN1.pdf"
     additional_materials: []
     quiz:
       text: "Quiz 5"
