@@ -423,8 +423,8 @@ recitations:
         url: "./documents/labs/lab_4/IDL_S26_Lab_4_Computing_Derivatives_&_Autograd(Students).ipynb"
     materials_rowspan: 1
     videos:
-      # - text: "YouTube"
-      #   url : ""
+      - text: "YouTube"
+        url : "https://youtu.be/OKz6iuta6u4"
       - text: "MediaService"
         url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab+4/1_s3pmqt5n/397642153"
     videos_rowspan: 1
@@ -437,9 +437,9 @@ recitations:
     topics: ["HW2P1", "HW2P2"]
     materials: []
     materials_rowspan: 1
-    videos: [""]
-      # - text: "YouTube"
-      #   url : ""
+    videos:
+      - text: "YouTube"
+        url : "https://youtu.be/l_uMjxkPJY0"
       # - text: "MediaService"
       #   url: ""
     authors: "Mengchun Zhang, <br>Akshara, <br>En Zheng, <br>Madhavi Gulavani, <br>Puru Samal, <br>Praneeth, <br>Thomas Seleshi, <br>Yabsera Yemanberhan "

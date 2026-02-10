@@ -222,6 +222,10 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./documents/slides/lec9.CNN1.pdf"
+      - text: "YouTube"
+        url: "https://youtu.be/wbRSnLAWZ4M"
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Neural+Networks+What+can+a+network+represent/1_0p0mfpvi/397642153"
     additional_materials: []
     quiz:
       text: "Quiz 5"
