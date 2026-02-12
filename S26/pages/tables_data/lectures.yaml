@@ -238,6 +238,10 @@ lectures:
     slides_videos:
      - text: "Slides"
        url: "./documents/slides/lec10.CNN2.pdf"
+     - text: "YouTube"
+       url: "https://youtu.be/2GygAeagXBg"
+    #  - text: "MediaService"
+    #    url: " "
     additional_materials: []
     # No quiz field
 
