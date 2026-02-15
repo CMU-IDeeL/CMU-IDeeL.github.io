@@ -240,8 +240,8 @@ lectures:
        url: "./documents/slides/lec10.CNN2.pdf"
      - text: "YouTube"
        url: "https://youtu.be/2GygAeagXBg"
-    #  - text: "MediaService"
-    #    url: " "
+     - text: "MediaService"
+       url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Convultional+Networks+II/1_oq7rxruq/397642153"
     additional_materials: []
     # No quiz field
 

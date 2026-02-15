@@ -440,8 +440,8 @@ recitations:
     videos:
       - text: "YouTube"
         url : "https://youtu.be/l_uMjxkPJY0"
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+HW2+Bootcamp/1_s4f6l42r/397642153"
     authors: "Mengchun Zhang, <br>Akshara, <br>En Zheng, <br>Madhavi Gulavani, <br>Puru Samal, <br>Praneeth, <br>Thomas Seleshi, <br>Yabsera Yemanberhan "
     authors_rowspan: 1
 
@@ -449,21 +449,17 @@ recitations:
     date: "Friday,<br> Feb 13"
     date_rowspan: 1
     topics: "CNN: Basics and Backprop" 
-    materials: []
-      # - text: "Slides"
-      #   url: "./documents/labs/..."
-      # - text: "Notebook"
-      #   url: "./documents/labs/..."
-      # - text: "Data"
-      #   url: "./documents/labs/..."
+    materials:
+      - text: "Notebook"
+        url: "./documents/labs/lab_5/CNN_Basics_Student_Notebook.ipynb"
     materials_rowspan: 1
-    videos: []
-      # - text: "YouTube"
-      #   url : ""
-      # - text: "MediaService"
-      #   url: ""
+    videos:
+      - text: "YouTube"
+        url : "https://youtu.be/ND7yM2VnttM"
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab+5/1_ewvqr2v6/397642153"
     videos_rowspan: 1
-    authors: ""
+    authors: "Floride Tuyisenge, <br>Yixiong Fang"
     authors_rowspan: 1
 
   - title: "Hackathon 5"
@@ -473,7 +469,7 @@ recitations:
     materials: []
     materials_rowspan: 1
     videos: [""]
-    authors: ""
+    authors: "Euijin Hong, <br>En Zheng, <br>Madhavi Gulavani, <br> Sid, <br>Thomas Seleshi, <br>Yabsera Yemanberhan"
     authors_rowspan: 1
 
   - title: "Lab 6"
@@ -497,10 +493,10 @@ recitations:
     authors: ""
     authors_rowspan: 1
 
-  - title: "Hackathon 6"
+  - title: "Hackathon 6 +<br>Group Project Bootcamp"
     date: "Saturday,<br> Feb 21"
     date_rowspan: 1
-    topics: []
+    topics: ["Group Project"]
     materials: []
     materials_rowspan: 1
     videos: [""]
