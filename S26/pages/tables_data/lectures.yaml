@@ -249,7 +249,9 @@ lectures:
     date: "Monday <br> Feb 16"
     topics:
       - "CNNs III"
-    slides_videos: []
+    slides_videos:
+     - text: "Slides"
+       url: "./documents/slides/lec11.CNN3.pdf"
     additional_materials: 
     - text: "CNN Explainer"
       url: "https://poloclub.github.io/cnn-explainer/"
