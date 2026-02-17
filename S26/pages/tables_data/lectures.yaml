@@ -252,6 +252,10 @@ lectures:
     slides_videos:
      - text: "Slides"
        url: "./documents/slides/lec11.CNN3.pdf"
+     - text: "YouTube"
+       url: "https://youtu.be/V7OpTmQcj9c"
+    #  - text: "MediaService"
+    #    url: " "
     additional_materials: 
     - text: "CNN Explainer"
       url: "https://poloclub.github.io/cnn-explainer/"
