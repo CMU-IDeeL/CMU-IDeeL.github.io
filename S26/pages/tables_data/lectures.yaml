@@ -254,8 +254,8 @@ lectures:
        url: "./documents/slides/lec11.CNN3.pdf"
      - text: "YouTube"
        url: "https://youtu.be/V7OpTmQcj9c"
-    #  - text: "MediaService"
-    #    url: " "
+     - text: "MediaService"
+       url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Convolutional+Networks+III/1_g0don272/397642153"
     additional_materials: 
     - text: "CNN Explainer"
       url: "https://poloclub.github.io/cnn-explainer/"
@@ -267,7 +267,9 @@ lectures:
     date: "Wednesday <br> Feb 18"
     topics:
       - "CNNs IV"
-    slides_videos: []
+    slides_videos:
+     - text: "Slides"
+       url: "./documents/slides/lec12.CNN4.pdf"
     additional_materials: []
     # No quiz field
 

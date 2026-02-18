@@ -493,10 +493,10 @@ recitations:
     authors: ""
     authors_rowspan: 1
 
-  - title: "Hackathon 6 +<br>Group Project Bootcamp"
+  - title: "Hackathon 6 +<br>Guided Project Bootcamp"
     date: "Saturday,<br> Feb 21"
     date_rowspan: 1
-    topics: ["Group Project"]
+    topics: ["Guided Project"]
     materials: []
     materials_rowspan: 1
     videos: [""]
