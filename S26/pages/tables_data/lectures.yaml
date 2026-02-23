@@ -270,6 +270,8 @@ lectures:
     slides_videos:
      - text: "Slides"
        url: "./documents/slides/lec12.CNN4.pdf"
+     - text: "YouTube"
+       url: "https://youtu.be/lGrHOgSyJJs"
     additional_materials: []
     # No quiz field
 
@@ -277,7 +279,9 @@ lectures:
     date: "Monday <br> Feb 23"
     topics:
       - "Recurrent Neural Networks (RNNs) I"
-    slides_videos: []
+    slides_videos:
+     - text: "Slides"
+       url: "./documents/slides/lec13.recurrent.pdf"
     additional_materials: 
     - text: "Fahlman and Lebiere (1990)"
       url: "https://proceedings.neurips.cc/paper/1989/file/69adc1e107f7f7d035d7baf04342e1ca-Paper.pdf"
