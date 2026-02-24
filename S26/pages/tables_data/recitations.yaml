@@ -476,31 +476,35 @@ recitations:
     date: "Friday,<br> Feb 20"
     date_rowspan: 1
     topics: "CNN: Classification and Verification" 
-    materials: []
-      # - text: "Slides"
-      #   url: "./documents/labs/..."
-      # - text: "Notebook"
-      #   url: "./documents/labs/..."
-      # - text: "Data"
-      #   url: "./documents/labs/..."
+    materials:
+      - text: "Notebook"
+        url: "./documents/labs/lab_6/S26_CNN_lab06.ipynb"
     materials_rowspan: 1
-    videos: []
-      # - text: "YouTube"
-      #   url : ""
-      # - text: "MediaService"
-      #   url: ""
+    videos:
+      - text: "YouTube"
+        url : "https://youtu.be/2i_ecR9HoSc"
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+CNN+Classification+and+Verification/1_we5vcvx5/397642153"
     videos_rowspan: 1
-    authors: ""
+    authors: "Pengyu Chang, <br>Thomas  Seleshi"
     authors_rowspan: 1
 
   - title: "Hackathon 6 +<br>Guided Project Bootcamp"
     date: "Saturday,<br> Feb 21"
     date_rowspan: 1
     topics: ["Guided Project"]
-    materials: []
+    materials: 
+      - text: "Project 1"
+        url: "./documents/bootcamps/guided_project/Diffusion_presentation_S26.pptx.pdf"
+      - text: "Project 2"
+        url: "./documents/bootcamps/guided_project/EEG_Presentation.pptx.pdf"
     materials_rowspan: 1
-    videos: [""]
-    authors: ""
+    videos:
+      - text: "YouTube"
+        url : "https://youtu.be/kmCU56iUIdA"
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Bootcamp+guided+Project+-+Latent+Denoising+Diffusion+Probablistic+Models/1_eb1do2rs/397642153"
+    authors: "Nayesha Gandotra, <br>Yixiong Fang, <br>Kangping"
     authors_rowspan: 1
 
   - title: "Lab 7"

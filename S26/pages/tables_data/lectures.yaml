@@ -272,6 +272,8 @@ lectures:
        url: "./documents/slides/lec12.CNN4.pdf"
      - text: "YouTube"
        url: "https://youtu.be/lGrHOgSyJJs"
+     - text: "MediaService"
+       url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Convolutional+Networks+IV/1_q4pn1tu5/397642153"
     additional_materials: []
     # No quiz field
 
@@ -282,11 +284,13 @@ lectures:
     slides_videos:
      - text: "Slides"
        url: "./documents/slides/lec13.recurrent.pdf"
+     - text: "YouTube"
+       url: "https://youtu.be/fHoqs_Q9-J4"
+     - text: "MediaService"
+       url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Recurrent+Networks+1/1_4t0yr3wv/397642153"
     additional_materials: 
     - text: "Fahlman and Lebiere (1990)"
       url: "https://proceedings.neurips.cc/paper/1989/file/69adc1e107f7f7d035d7baf04342e1ca-Paper.pdf"
-    - text: "How to compute a derivative"
-      url: "./documents/readings/How to compute a derivative.pdf"
     quiz:
       text: "Quiz 7"
       rowspan: 2 # The HTML shows rowspan 1 for this quiz
@@ -295,9 +299,12 @@ lectures:
     date: "Wednesday <br> Feb 25"
     topics:
       - "RNNs II"
-    slides_videos: []
-    additional_materials: []
-
+    slides_videos:
+    - text: "Slides"
+      url: "./documents/slides/lec14.recurrent.pdf"
+    additional_materials:
+    - text: "How to compute a derivative"
+      url: "../shared/readings/How to compute a derivative.pdf"
   - number: 15
     date: "Monday <br> Mar 9"
     topics:
