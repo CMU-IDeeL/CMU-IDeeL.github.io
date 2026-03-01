@@ -517,9 +517,9 @@ recitations:
       - text: "Notebook"
         url: "./documents/labs/lab_7/S26_StudentNotebook_RNN_Lab_7.ipynb"
     materials_rowspan: 1
-    videos: []
-      # - text: "YouTube"
-      #   url : ""
+    videos:
+      - text: "YouTube"
+        url : "https://youtu.be/PtGjtSj9WBA"
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
@@ -536,9 +536,9 @@ recitations:
       - text: "Slides P2"
         url: "./documents/bootcamps/hw3/S26_HW3P2_Bootcamp.pdf"
     materials_rowspan: 1
-    videos: []
-      # - text: "YouTube"
-      #   url : ""
+    videos:
+      - text: "YouTube"
+        url : "https://youtu.be/p5qrOKHwuW0"
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
