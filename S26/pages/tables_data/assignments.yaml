@@ -45,7 +45,7 @@ assignment_groups:
             url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/273"
       - name: "HW2P2"
         materials:
-          - text: "Final Submission Autolab"
+          - text: "Autolab"
             url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/TEST-HW2P2-Code-Submission"
           - text: "Piazza"
             url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/247"
@@ -69,33 +69,31 @@ assignment_groups:
       - name: "HW3P1"
         due_date_rowspan: 2
         due_date: "Early Deadline: Friday, Mar 20 11:59 PM<br>Final Deadline: Friday, Mar 27 11:59 PM"
-        materials: []
-          # - text: "Piazza"
-          #   url: ""
-          # - text: "Autolab"
-          #   url: ""
+        materials:
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/HW3P1"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/484"
       - name: "HW3P2"
-        materials: []
-          # - text: "Checkpoint Submission Autolab"
-          #   url: " "
-          # - text: "Final Submission Autolab"
-          #   url: " "
-          # - text: "Piazza"
-          #   url: " "
+        materials:
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/hw3p2codesubmission"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/516"
       - name: "HW3P1 Bonus"
         due_date_rowspan: 2
         due_date: "Friday, Apr 24 11:59 PM"
-        materials: []
-          # - text: "Autolab"
-          #   url: " "
-          # - text: "Piazza"
-          #   url: " "
+        materials:
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/HW3P1-Bonus"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/513"
       - name: "HW3P1 Autograd"
-        materials: []
-          # - text: "Autolab"
-          #   url: " "
-          # - text: "Piazza"
-          #   url: " "
+        materials:
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/HW3-Autograd"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/513"
 
   - release_date: "Friday, Mar 27"
     assignments:

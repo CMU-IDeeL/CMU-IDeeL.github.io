@@ -308,15 +308,15 @@ recitations_0:
               - text: "Video"
                 url: "https://youtu.be/pkW_y2OV6gU"
             authors: "Ahmed Issah"
-          - id: "0.29"
-            title: "How to Read Research Papers"
-            materials: 
-              - text: "Coming Soon!"
-                url: ""
-            videos: 
-              - text: "Coming Soon!"
-                url: ""
-            authors: "Bhiksha Raj"
+          # - id: "0.29"
+          #   title: "How to Read Research Papers"
+          #   materials: 
+          #     - text: "Coming Soon!"
+          #       url: ""
+          #   videos: 
+          #     - text: "Coming Soon!"
+          #       url: ""
+          #   authors: "Bhiksha Raj"
 
 recitations:
   - title: "Lab 1"
@@ -435,7 +435,9 @@ recitations:
     date: "Saturday,<br> Feb 7"
     date_rowspan: 1
     topics: ["HW2P1", "HW2P2"]
-    materials: []
+    materials:
+      - text: "Slides P2"
+        url: "./documents/bootcamps/hw2/s26-HW2P2-BOOTCAMP.pdf"
     materials_rowspan: 1
     videos:
       - text: "YouTube"
@@ -465,7 +467,7 @@ recitations:
   - title: "Hackathon 5"
     date: "Saturday,<br> Feb 14"
     date_rowspan: 1
-    topics: []
+    topics: ["HW 1 Debrief & Deployment"]
     materials: []
     materials_rowspan: 1
     videos: [""]
@@ -495,29 +497,25 @@ recitations:
     topics: ["Guided Project"]
     materials: 
       - text: "Project 1"
-        url: "./documents/bootcamps/guided_project/Diffusion_presentation_S26.pptx.pdf"
-      - text: "Project 2"
         url: "./documents/bootcamps/guided_project/EEG_Presentation.pptx.pdf"
+      - text: "Project 2"
+        url: "./documents/bootcamps/guided_project/Diffusion_presentation_S26.pptx.pdf"
     materials_rowspan: 1
     videos:
       - text: "YouTube"
         url : "https://youtu.be/kmCU56iUIdA"
       - text: "MediaService"
         url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Bootcamp+guided+Project+-+Latent+Denoising+Diffusion+Probablistic+Models/1_eb1do2rs/397642153"
-    authors: "Nayesha Gandotra, <br>Yixiong Fang, <br>Kangping"
+    authors: "Nayesha Gandotra, <br>Yixiong Fang, <br>Kangping, <br>Mugur Preda"
     authors_rowspan: 1
 
   - title: "Lab 7"
     date: "Friday,<br> Feb 27"
     date_rowspan: 1
     topics: "RNN Basics" 
-    materials: []
-      # - text: "Slides"
-      #   url: "./documents/labs/..."
-      # - text: "Notebook"
-      #   url: "./documents/labs/..."
-      # - text: "Data"
-      #   url: "./documents/labs/..."
+    materials:
+      - text: "Notebook"
+        url: "./documents/labs/lab_7/S26_StudentNotebook_RNN_Lab_7.ipynb"
     materials_rowspan: 1
     videos: []
       # - text: "YouTube"
@@ -525,21 +523,26 @@ recitations:
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
-    authors: ""
+    authors: "Ron Sarma, <br>Mugur Preda"
     authors_rowspan: 1
 
   - title: "Hackathon 7 +<br> HW3 Bootcamp"
     date: "Saturday,<br> Feb 28"
     date_rowspan: 1
     topics: ["HW3P1", "HW3P2"]
-    materials: []
+    materials:
+      - text: "Slides P1"
+        url: "./documents/bootcamps/hw3/S26_HW3P1_Bootcamp.pdf"
+      - text: "Slides P2"
+        url: "./documents/bootcamps/hw3/S26_HW3P2_Bootcamp.pdf"
     materials_rowspan: 1
     videos: []
       # - text: "YouTube"
       #   url : ""
       # - text: "MediaService"
       #   url: ""
-    authors: ""
+    videos_rowspan: 1
+    authors: "Manigandan Ramadasan, <br>Ron Sarma, <br>Felix Hirwa Nshuti, <br>Sid, <br>Floride Tuyisenge, <br>Yabsera Yemanberhan, <br>Praneeth"
     authors_rowspan: 1
 
   - title: "Lab 8"
@@ -566,7 +569,7 @@ recitations:
   - title: "Hackathon 8"
     date: "Saturday,<br> Mar 7"
     date_rowspan: 1
-    topics: []
+    topics: ["HW 2 Debrief & Deployment"]
     materials: []
     materials_rowspan: 1
     videos: [""]
@@ -694,7 +697,7 @@ recitations:
   - title: "Hackathon 12"
     date: "Saturday,<br> Apr 4"
     date_rowspan: 1
-    topics: []
+    topics: ["HW 3 Debrief & Deployment"]
     materials: []
     materials_rowspan: 1
     videos: [""]
@@ -787,7 +790,7 @@ recitations:
   - title: "Hackathon 15"
     date: "Saturday,<br> Apr 25"
     date_rowspan: 1
-    topics: []
+    topics: ["HW 4 Debrief & Deployment"]
     materials: []
     materials_rowspan: 1
     videos: [""]
