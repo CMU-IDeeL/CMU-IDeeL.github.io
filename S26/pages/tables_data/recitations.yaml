@@ -549,31 +549,27 @@ recitations:
     date: "Friday,<br> Mar 6"
     date_rowspan: 1
     topics: "Kaggle Workshop and Pre-trained models " 
-    materials: []
-      # - text: "Slides"
-      #   url: "./documents/labs/..."
-      # - text: "Notebook"
-      #   url: "./documents/labs/..."
-      # - text: "Data"
-      #   url: "./documents/labs/..."
+    materials:
+      - text: "Notebook"
+        url: "./documents/labs/lab_8/Lab8_Notebook.ipynb"
     materials_rowspan: 1
-    videos: []
-      # - text: "YouTube"
-      #   url : ""
+    videos: 
+      - text: "YouTube"
+        url : "https://youtu.be/Hao43kDaorI"
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
-    authors: ""
+    authors: "Pengyu Chang, <br>Olivier Kwizera"
     authors_rowspan: 1
 
   - title: "Hackathon 8"
     date: "Saturday,<br> Mar 7"
     date_rowspan: 1
-    topics: ["HW 2 Debrief & Deployment"]
+    topics: []
     materials: []
     materials_rowspan: 1
     videos: [""]
-    authors: ""
+    authors: "Manigandan Ramadasan, <br>Floride Tuyisenge, <br>Yabsera Yemanberhan"
     authors_rowspan: 1
 
   - title: "Lab 9"
@@ -589,10 +585,6 @@ recitations:
       #   url: "./documents/labs/..."
     materials_rowspan: 1
     videos: []
-      # - text: "YouTube"
-      #   url : ""
-      # - text: "MediaService"
-      #   url: ""
     videos_rowspan: 1
     authors: ""
     authors_rowspan: 1
@@ -600,7 +592,7 @@ recitations:
   - title: "Hackathon 9"
     date: "Saturday,<br> Mar 14"
     date_rowspan: 1
-    topics: []
+    topics: ["HW 2 Debrief & Deployment"]
     materials: []
     materials_rowspan: 1
     videos: [""]
