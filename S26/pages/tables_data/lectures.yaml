@@ -317,8 +317,8 @@ lectures:
     slides_videos:
       - text: "Slides"
         url: "./documents/slides/lec15.recurrent.pdf"
-      # - text: "YouTube"
-      #   url: " "
+      - text: "YouTube"
+        url: "https://youtu.be/rG6qEfoGB7U"
       # - text: "MediaService"
       #   url: " "
     additional_materials: []
