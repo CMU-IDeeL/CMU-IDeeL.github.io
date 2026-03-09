@@ -314,7 +314,13 @@ lectures:
     topics:
       - "Sequence to Sequence Models"
       - "Connectionist Temporal Classification (CTC)"
-    slides_videos: []
+    slides_videos:
+      - text: "Slides"
+        url: "./documents/slides/lec15.recurrent.pdf"
+      # - text: "YouTube"
+      #   url: " "
+      # - text: "MediaService"
+      #   url: " "
     additional_materials: []
     quiz:
       text: ""
