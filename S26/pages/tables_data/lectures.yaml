@@ -333,7 +333,13 @@ lectures:
         sub_topics:
           - "Blanks"
           - "Beam Search"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./documents/slides/lec16.recurrent.pdf"
+    # - text: "YouTube"
+    #   url: " "
+    # - text: "MediaService"
+    #   url: " "
     additional_materials: []
     # No quiz field as it spans from the previous row
 
