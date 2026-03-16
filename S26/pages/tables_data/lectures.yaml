@@ -348,7 +348,13 @@ lectures:
     topics:
       - "Language Models"
       - "Translation"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./documents/slides/lec17.recurrent.pdf"
+    # - text: "YouTube"
+    #   url: " "
+    # - text: "MediaService"
+    #   url: " "
     additional_materials: []
     quiz:
       text: ""
