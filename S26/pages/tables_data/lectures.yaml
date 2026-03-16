@@ -319,8 +319,8 @@ lectures:
         url: "./documents/slides/lec15.recurrent.pdf"
       - text: "YouTube"
         url: "https://youtu.be/rG6qEfoGB7U"
-      # - text: "MediaService"
-      #   url: " "
+      - text: "MediaService"
+        url: "http://mediaservices.cmu.edu/media/1_7w5jaec6"
     additional_materials: []
     quiz:
       text: ""
