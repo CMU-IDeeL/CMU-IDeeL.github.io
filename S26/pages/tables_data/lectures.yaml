@@ -353,8 +353,8 @@ lectures:
       url: "./documents/slides/lec17.recurrent.pdf"
     # - text: "YouTube"
     #   url: " "
-    # - text: "MediaService"
-    #   url: " "
+    - text: "MediaService"
+      url: "https://mediaservices.cmu.edu/media/1_wqics1zl/"
     additional_materials: []
     quiz:
       text: ""
@@ -370,8 +370,8 @@ lectures:
       url: "./documents/slides/lec18.attention.pdf"
     # - text: "YouTube"
     #   url: " "
-    # - text: "MediaService"
-    #   url: " "
+    - text: "MediaService"
+      url: "https://mediaservices.cmu.edu/media/1_ovag0x6b/"
     additional_materials: [] # Additional materials commented out in HTML
     # No quiz field as it spans from the previous row
 
