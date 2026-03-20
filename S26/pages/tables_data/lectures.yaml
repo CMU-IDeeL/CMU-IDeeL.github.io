@@ -351,8 +351,8 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./documents/slides/lec17.recurrent.pdf"
-    # - text: "YouTube"
-    #   url: " "
+    - text: "YouTube"
+      url: "https://youtu.be/runV7SlN5Zg"
     - text: "MediaService"
       url: "https://mediaservices.cmu.edu/media/1_wqics1zl/"
     additional_materials: []
@@ -368,8 +368,8 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./documents/slides/lec18.attention.pdf"
-    # - text: "YouTube"
-    #   url: " "
+    - text: "YouTube"
+      url: "https://youtu.be/jL8AnyntOEQ"
     - text: "MediaService"
       url: "https://mediaservices.cmu.edu/media/1_ovag0x6b/"
     additional_materials: [] # Additional materials commented out in HTML
