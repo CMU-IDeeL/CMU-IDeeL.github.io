@@ -323,7 +323,7 @@ lectures:
         url: "http://mediaservices.cmu.edu/media/1_7w5jaec6"
     additional_materials: []
     quiz:
-      text: ""
+      text: "Quiz 8"
       rowspan: 2
 
   - number: 16
@@ -357,7 +357,7 @@ lectures:
       url: "https://mediaservices.cmu.edu/media/1_wqics1zl/"
     additional_materials: []
     quiz:
-      text: ""
+      text: "Quiz 9"
       rowspan: 2
 
   - number: 18
@@ -379,10 +379,12 @@ lectures:
     date: "Monday <br> Mar 23"
     topics:
       - "Transformers and Newer Architectures"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./documents/slides/L19-Transformer.pdf"
     additional_materials: []
     quiz:
-      text: ""
+      text: "Quiz 10"
       rowspan: 2
 
   - number: 20
@@ -400,7 +402,7 @@ lectures:
     slides_videos: []
     additional_materials: []
     quiz:
-      text: ""
+      text: "Quiz 11"
       rowspan: 2
 
   - number: 22
@@ -417,7 +419,7 @@ lectures:
     slides_videos: []
     additional_materials: []
     quiz:
-      text: ""
+      text: "Quiz 12"
       rowspan: 2
     # No quiz field as it spans from the previous row
 
@@ -435,7 +437,7 @@ lectures:
     slides_videos: []
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
-      text: ""
+      text: "Quiz 13"
       rowspan: 2
 
   - number: 26
@@ -453,7 +455,7 @@ lectures:
     slides_videos: []
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
-      text: ""
+      text: "Quiz 14"
       rowspan: 2
 
   - number: 28
