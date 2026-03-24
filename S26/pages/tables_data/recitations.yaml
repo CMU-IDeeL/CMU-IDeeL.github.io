@@ -611,9 +611,9 @@ recitations:
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
-    videos: []
-      # - text: "YouTube"
-      #   url : ""
+    videos:
+      - text: "YouTube"
+        url : "https://youtu.be/D-6wFYsk3Rs"
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1

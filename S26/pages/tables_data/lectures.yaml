@@ -382,6 +382,10 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./documents/slides/L19-Transformer.pdf"
+    - text: "YouTube"
+      url: "https://youtu.be/DHoC3rISvcU"
+    # - text: "MediaService"
+    #   url: " "
     additional_materials: []
     quiz:
       text: "Quiz 10"
