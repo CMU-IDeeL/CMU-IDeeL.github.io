@@ -395,7 +395,13 @@ lectures:
     date: "Wednesday <br> Mar 25"
     topics:
       - "Large Language Models"
-    slides_videos: []
+    slides_videos:
+    # - text: "Slides"
+    #   url: " "
+    - text: "YouTube"
+      url: "https://youtu.be/z9IZlzs8hAM"
+    # - text: "MediaService"
+    #   url: " ""
     additional_materials: []
     # No quiz field as it spans from the previous row
 

@@ -584,9 +584,11 @@ recitations:
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
-    videos: []
+    videos:
+      - text: "YouTube"
+        url: "https://youtu.be/DydSVuaphoI"
     videos_rowspan: 1
-    authors: ""
+    authors: "Kangping Liu, <br> Madhavi Gulavani"
     authors_rowspan: 1
 
   - title: "Hackathon 9"
@@ -595,8 +597,8 @@ recitations:
     topics: ["HW 2 Debrief & Deployment"]
     materials: []
     materials_rowspan: 1
-    videos: [""]
-    authors: ""
+    videos: []
+    authors: "Akshara Kanna, <br> En Zheng, <br> Floride Tuyisenge, <br> Felix Hirwa Nshuti"
     authors_rowspan: 1
 
   - title: "Lab 10"
@@ -617,7 +619,7 @@ recitations:
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
-    authors: ""
+    authors: "Yabsera Yemanberhan"
     authors_rowspan: 1
 
   - title: "Hackathon 10"
@@ -627,7 +629,7 @@ recitations:
     materials: []
     materials_rowspan: 1
     videos: [""]
-    authors: ""
+    authors: "Thomas Seleshi, <br> Kangping Liu, <br> Madhavi Gulavani"
     authors_rowspan: 1
 
   - title: "Lab 11"
@@ -648,7 +650,7 @@ recitations:
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
-    authors: ""
+    authors: "Euijin Hong, <br> Madhavi Gulavani"
     authors_rowspan: 1
 
   - title: "Hackathon 11 <br>+ HW4 Bootcamp"
@@ -662,7 +664,7 @@ recitations:
       #   url : ""
       # - text: "MediaService"
       #   url: ""
-    authors: ""
+    authors: "Mengchun Zhang, <br>Euijin Hong, <br>Manigandan Ramadasan, <br>Pengyu Chang, <br>Yixiong Fang, <br>Mugur Preda, <br>Praneeth, <br>Sid, <br>Olivier Kwizera"
     authors_rowspan: 1
 
   - title: "Lab 12"
@@ -683,7 +685,7 @@ recitations:
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
-    authors: ""
+    authors: "Bradley Warren, <br>Felix Hirwa Nshuti"
     authors_rowspan: 1
 
   - title: "Hackathon 12"
@@ -693,7 +695,7 @@ recitations:
     materials: []
     materials_rowspan: 1
     videos: [""]
-    authors: ""
+    authors: "Madhavi Gulavani, <br> Manigandan Ramadasan, <br>Nayesha Gandotra, "
     authors_rowspan: 1
 
   - title: "Lab 13"
@@ -714,7 +716,7 @@ recitations:
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
-    authors: ""
+    authors: "Anurag Aryal"
     authors_rowspan: 1
 
   - title: "Hackathon 13"
@@ -724,7 +726,7 @@ recitations:
     materials: []
     materials_rowspan: 1
     videos: [""]
-    authors: ""
+    authors: "Nayesha Gandotra, <br>En Zheng, <br> Floride Tuyisenge, <br> Felix Hirwa Nshuti"
     authors_rowspan: 1
 
   - title: "Lab 14"
@@ -745,7 +747,7 @@ recitations:
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
-    authors: ""
+    authors: "En Zheng"
     authors_rowspan: 1
 
   - title: "Hackathon 14"
@@ -776,7 +778,7 @@ recitations:
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
-    authors: ""
+    authors: "Kangping Liu, <br> Sid"
     authors_rowspan: 1
 
   - title: "Hackathon 15"
