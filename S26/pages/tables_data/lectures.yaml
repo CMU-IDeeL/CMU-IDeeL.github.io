@@ -384,8 +384,8 @@ lectures:
       url: "./documents/slides/L19-Transformer.pdf"
     - text: "YouTube"
       url: "https://youtu.be/DHoC3rISvcU"
-    # - text: "MediaService"
-    #   url: " "
+    - text: "MediaService"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-Transformer+and+Newer+Architectures/1_4av3s6gu/397642153"
     additional_materials: []
     quiz:
       text: "Quiz 10"
@@ -400,8 +400,8 @@ lectures:
     #   url: " "
     - text: "YouTube"
       url: "https://youtu.be/z9IZlzs8hAM"
-    # - text: "MediaService"
-    #   url: " ""
+    - text: "MediaService"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-Gues+Lecture%2C+Large+Language+Models/1_4mpb80xv/397642153"
     additional_materials: []
     # No quiz field as it spans from the previous row
 

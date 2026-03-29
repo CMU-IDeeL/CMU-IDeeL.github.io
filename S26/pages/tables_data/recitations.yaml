@@ -520,8 +520,8 @@ recitations:
     videos:
       - text: "YouTube"
         url : "https://youtu.be/PtGjtSj9WBA"
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab+7/1_6ka3t91f/397642153"
     videos_rowspan: 1
     authors: "Ron Sarma, <br>Mugur Preda"
     authors_rowspan: 1
@@ -539,8 +539,8 @@ recitations:
     videos:
       - text: "YouTube"
         url : "https://youtu.be/p5qrOKHwuW0"
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+HW3P1+Bootcamp/1_7xufxy8b/397642153"
     videos_rowspan: 1
     authors: "Manigandan Ramadasan, <br>Ron Sarma, <br>Felix Hirwa Nshuti, <br>Sid, <br>Floride Tuyisenge, <br>Yabsera Yemanberhan, <br>Praneeth"
     authors_rowspan: 1
@@ -556,8 +556,8 @@ recitations:
     videos: 
       - text: "YouTube"
         url : "https://youtu.be/Hao43kDaorI"
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab_8_Kaggleworkshop_and_pretrainedmodels/1_czp8tlui/397642153"
     videos_rowspan: 1
     authors: "Pengyu Chang, <br>Olivier Kwizera"
     authors_rowspan: 1
@@ -576,17 +576,19 @@ recitations:
     date: "Friday,<br> Mar 13"
     date_rowspan: 1
     topics: "CTC and Beam Search" 
-    materials: []
-      # - text: "Slides"
-      #   url: "./documents/labs/..."
-      # - text: "Notebook"
-      #   url: "./documents/labs/..."
+    materials:
+      - text: "Slides"
+        url: "./documents/labs/lab_9/S26 Lab 9 CTC loss, Beam search.pdf"
+      - text: "Notebook"
+        url: "./documents/labs/lab_9/S26 lab9_student_notebook.ipynb"
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
     videos:
       - text: "YouTube"
         url: "https://youtu.be/DydSVuaphoI"
+      - text: " MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab+9/1_bl74d0yu/397642153"
     videos_rowspan: 1
     authors: "Kangping Liu, <br> Madhavi Gulavani"
     authors_rowspan: 1
@@ -597,7 +599,7 @@ recitations:
     topics: ["HW 2 Debrief & Deployment"]
     materials: []
     materials_rowspan: 1
-    videos: []
+    videos: [""]
     authors: "Akshara Kanna, <br> En Zheng, <br> Floride Tuyisenge, <br> Felix Hirwa Nshuti"
     authors_rowspan: 1
 
@@ -605,19 +607,19 @@ recitations:
     date: "Friday,<br> Mar 20"
     date_rowspan: 1
     topics: "Attention, MT, LAS" 
-    materials: []
+    materials:
       # - text: "Slides"
       #   url: "./documents/labs/..."
-      # - text: "Notebook"
-      #   url: "./documents/labs/..."
+      - text: "Notebook"
+        url: "./documents/labs/lab_10/Student_Copy_Lab_10.ipynb"
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
     videos:
       - text: "YouTube"
         url : "https://youtu.be/D-6wFYsk3Rs"
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-Lab+10/1_c6jsiqqm/397642153"
     videos_rowspan: 1
     authors: "Yabsera Yemanberhan"
     authors_rowspan: 1
@@ -644,11 +646,11 @@ recitations:
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
-    videos: []
+    videos:
       # - text: "YouTube"
       #   url : ""
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-Lab+11/1_dwtxlrai/397642153"
     videos_rowspan: 1
     authors: "Euijin Hong, <br> Madhavi Gulavani"
     authors_rowspan: 1
@@ -657,9 +659,11 @@ recitations:
     date: "Saturday,<br> Mar 28"
     date_rowspan: 1
     topics: ["HW4P1", "HW4P2"]
-    materials: []
+    materials:
+      - text: "Slides"
+        url: "./documents/bootcamps/hw4/HW4_P1_Bootcamp.pdf"
     materials_rowspan: 1
-    videos: []
+    videos: [""]
       # - text: "YouTube"
       #   url : ""
       # - text: "MediaService"

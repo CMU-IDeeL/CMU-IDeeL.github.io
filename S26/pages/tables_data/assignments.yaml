@@ -100,16 +100,14 @@ assignment_groups:
       - name: "HW4P1"
         due_date_rowspan: 2
         due_date: "Early Deadline: Friday, Apr 10 11:59 PM<br>Final Deadline: Friday, Apr 24 11:59 PM"
-        materials: []
-          # - text: "Autolab"
-          #   url: " "
-          # - text: "Piazza"
-          #   url: " "
+        materials: 
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/HW4P1"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/676"
       - name: "HW4P2"
-        materials: []
-          # - text: "Checkpoint Submission Autolab"
-          #   url: " "
-          # - text: "Final Submission Autolab"
-          #   url: " "
-          # - text: "Piazza"
-          #   url: " "
+        materials: 
+          - text: "Autolab"
+            url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/TEST-HW4P2-Code-Submission"
+          - text: "Piazza"
+            url: "https://piazza.com/class/mjnqcfnm4ci4v1/post/671"
