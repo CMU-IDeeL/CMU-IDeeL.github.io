@@ -409,7 +409,9 @@ lectures:
     date: "Monday <br> Mar 30"
     topics:
       - "Representation and Autoencoders"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./documents/slides/lec21.representations.pdf"
     additional_materials: []
     quiz:
       text: "Quiz 11"
