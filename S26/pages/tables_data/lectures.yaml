@@ -396,8 +396,8 @@ lectures:
     topics:
       - "Large Language Models"
     slides_videos:
-    # - text: "Slides"
-    #   url: " "
+    - text: "Slides"
+      url: "./documents/slides/lec20.llm.pdf"
     - text: "YouTube"
       url: "https://youtu.be/z9IZlzs8hAM"
     - text: "MediaService"
