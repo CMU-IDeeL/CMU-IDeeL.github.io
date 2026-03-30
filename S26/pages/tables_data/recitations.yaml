@@ -647,8 +647,8 @@ recitations:
       #   url: "./documents/labs/..."
     materials_rowspan: 1
     videos:
-      # - text: "YouTube"
-      #   url : ""
+      - text: "YouTube"
+        url : "https://youtu.be/PrMj5roH7VM"
       - text: "MediaService"
         url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-Lab+11/1_dwtxlrai/397642153"
     videos_rowspan: 1
@@ -663,9 +663,9 @@ recitations:
       - text: "Slides"
         url: "./documents/bootcamps/hw4/HW4_P1_Bootcamp.pdf"
     materials_rowspan: 1
-    videos: [""]
-      # - text: "YouTube"
-      #   url : ""
+    videos:
+      - text: "YouTube"
+        url : "https://youtu.be/VGHF9BVq7vc"
       # - text: "MediaService"
       #   url: ""
     authors: "Mengchun Zhang, <br>Euijin Hong, <br>Manigandan Ramadasan, <br>Pengyu Chang, <br>Yixiong Fang, <br>Mugur Preda, <br>Praneeth, <br>Sid, <br>Olivier Kwizera"
