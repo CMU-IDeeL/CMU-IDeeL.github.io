@@ -412,6 +412,10 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./documents/slides/lec21.representations.pdf"
+    - text: "YouTube"
+      url: "https://youtu.be/mc_OF_arFyk"
+    # - text: "MediaService"
+    #   url: " "
     additional_materials: []
     quiz:
       text: "Quiz 11"
