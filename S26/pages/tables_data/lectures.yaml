@@ -421,7 +421,13 @@ lectures:
     date: "Wednesday <br> Apr 1"
     topics:
       - "Variational Auto Encoders"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./documents/slides/lec22.VAE.pdf"
+    # - text: "YouTube"
+    #   url: " "
+    # - text: "MediaService"
+    #   url: " "
     additional_materials: []
 
   - number: 23
