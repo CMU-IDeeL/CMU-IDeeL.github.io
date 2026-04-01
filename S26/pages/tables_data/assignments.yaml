@@ -99,7 +99,7 @@ assignment_groups:
     assignments:
       - name: "HW4P1"
         due_date_rowspan: 2
-        due_date: "Early Deadline: Friday, Apr 10 11:59 PM<br>Final Deadline: Friday, Apr 24 11:59 PM"
+        due_date: "Early Deadline: Friday, Apr 13 11:59 PM<br>Final Deadline: Friday, Apr 24 11:59 PM"
         materials: 
           - text: "Autolab"
             url: "https://autolab.andrew.cmu.edu/courses/11485-s26/assessments/HW4P1"
