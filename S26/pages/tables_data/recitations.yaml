@@ -681,7 +681,7 @@ recitations:
       - text: "Slides"
         url: "./documents/labs/lab_12/IDL_Recitation_AE_and_VAE_2026.pdf"
       - text: "Notebook"
-        url: "./documents/labs/lab_12/S26lab12_VAE.ipynb"
+        url: "./documents/labs/lab_12/Lab12_AEs&VAEs.ipynb"
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
