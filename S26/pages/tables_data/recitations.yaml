@@ -674,10 +674,10 @@ recitations:
   - title: "Lab 12"
     date: "Friday,<br> Apr 3"
     date_rowspan: 1
-    topics: "VAE" 
-    materials: []
-      # - text: "Slides"
-      #   url: "./documents/labs/..."
+    topics: "Variational Autoencoders" 
+    materials:
+      - text: "Slides"
+        url: "./documents/labs/lab_12/IDL_Recitation_AE_and_VAE_2026.pdf"
       # - text: "Notebook"
       #   url: "./documents/labs/..."
       # - text: "Data"
