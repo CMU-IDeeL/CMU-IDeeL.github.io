@@ -611,7 +611,7 @@ recitations:
       # - text: "Slides"
       #   url: "./documents/labs/..."
       - text: "Notebook"
-        url: "./documents/labs/lab_10/Student_Copy_Lab_10.ipynb"
+        url: "./documents/labs/lab_10/Student_Notebook_Lab_10.ipynb"
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
@@ -638,11 +638,13 @@ recitations:
     date: "Friday,<br> Mar 27"
     date_rowspan: 1
     topics: "Transformers" 
-    materials: []
+    materials:
       # - text: "Slides"
       #   url: "./documents/labs/..."
-      # - text: "Notebook"
-      #   url: "./documents/labs/..."
+      - text: "Student_Notebook"
+        url: "./documents/labs/lab_11/Lab_11_Transformers_S26_Student_Version.ipynb"
+      - text: "Solved_Notebook"
+        url: "./documents/labs/lab_11/Lab_11_Transformers_S26_Solved_Version.ipynb"  
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
@@ -678,8 +680,8 @@ recitations:
     materials:
       - text: "Slides"
         url: "./documents/labs/lab_12/IDL_Recitation_AE_and_VAE_2026.pdf"
-      # - text: "Notebook"
-      #   url: "./documents/labs/..."
+      - text: "Notebook"
+        url: "./documents/labs/lab_12/S26lab12_VAE.ipynb"
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
