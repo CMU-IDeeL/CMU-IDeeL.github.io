@@ -428,8 +428,8 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./documents/slides/lec22.VAE.pdf"
-    # - text: "YouTube"
-    #   url: " "
+    - text: "YouTube"
+      url: "https://youtu.be/cTDK0usGwRc"
     # - text: "MediaService"
     #   url: " "
     additional_materials: []
