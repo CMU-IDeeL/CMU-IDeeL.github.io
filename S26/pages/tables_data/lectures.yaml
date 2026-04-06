@@ -440,7 +440,7 @@ lectures:
       - "Diffusion"
     slides_videos:
     - text: "Slides"
-      url: "./documents/slides/Diffusion_S26_MB.pdf"
+      url: "./documents/slides/Diffusion_S26_MB_V2.pdf"
     additional_materials: []
     quiz:
       text: "Quiz 12"
