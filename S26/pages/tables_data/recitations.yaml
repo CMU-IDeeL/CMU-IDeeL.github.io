@@ -641,10 +641,8 @@ recitations:
     materials:
       # - text: "Slides"
       #   url: "./documents/labs/..."
-      - text: "Student_Notebook"
+      - text: "Notebook"
         url: "./documents/labs/lab_11/Lab_11_Transformers_S26_Student_Version.ipynb"
-      - text: "Solved_Notebook"
-        url: "./documents/labs/lab_11/Lab_11_Transformers_S26_Solved_Version.ipynb"  
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
@@ -668,8 +666,8 @@ recitations:
     videos:
       - text: "YouTube"
         url : "https://youtu.be/VGHF9BVq7vc"
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-3_28_Bootcamp/1_3gi2bm4x/397642153"
     authors: "Mengchun Zhang, <br>Euijin Hong, <br>Manigandan Ramadasan, <br>Pengyu Chang, <br>Yixiong Fang, <br>Mugur Preda, <br>Praneeth, <br>Sid, <br>Olivier Kwizera"
     authors_rowspan: 1
 
@@ -685,11 +683,11 @@ recitations:
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
-    videos: []
+    videos:
       # - text: "YouTube"
       #   url : ""
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab+12/1_biljqmjc/397642153"
     videos_rowspan: 1
     authors: "Bradley Warren, <br>Felix Hirwa Nshuti"
     authors_rowspan: 1

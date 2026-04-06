@@ -414,8 +414,8 @@ lectures:
       url: "./documents/slides/lec21.representations.pdf"
     - text: "YouTube"
       url: "https://youtu.be/mc_OF_arFyk"
-    # - text: "MediaService"
-    #   url: " "
+    - text: "MediaService"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+Neural+Networks+Representation/1_foah33wh/397642153"
     additional_materials: []
     quiz:
       text: "Quiz 11"
@@ -430,15 +430,17 @@ lectures:
       url: "./documents/slides/lec22.VAE.pdf"
     - text: "YouTube"
       url: "https://youtu.be/cTDK0usGwRc"
-    # - text: "MediaService"
-    #   url: " "
+    - text: "MediaService"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-Variation+Auto+Encoders/1_ekwkcjxi/397642153"
     additional_materials: []
 
   - number: 23
     date: "Monday <br> Apr 6"
     topics:
       - "Diffusion"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./documents/slides/Diffusion_S26_MB.pdf"
     additional_materials: []
     quiz:
       text: "Quiz 12"
