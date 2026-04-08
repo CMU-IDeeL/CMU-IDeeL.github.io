@@ -451,7 +451,9 @@ lectures:
     date: "Wednesday <br> Apr 8"
     topics:
       - "Generative Adversarial Networks"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./documents/slides/lec_24_GAN.pdf"
     additional_materials: []
 
   - number: 25
