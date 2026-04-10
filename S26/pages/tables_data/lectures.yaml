@@ -457,7 +457,7 @@ lectures:
       - "Generative Adversarial Networks"
     slides_videos:
     - text: "Slides"
-      url: "./documents/slides/lec_24_GAN.pdf"
+      url: "./documents/slides/lec24_GAN.pdf"
     - text: "YouTube"
       url: "https://youtu.be/m_WOl6xzNWY"
     - text: "MediaService"
