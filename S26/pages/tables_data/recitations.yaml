@@ -684,8 +684,8 @@ recitations:
       #   url: "./documents/labs/..."
     materials_rowspan: 1
     videos:
-      # - text: "YouTube"
-      #   url : ""
+      - text: "YouTube"
+        url : "https://youtu.be/zYEcC3yFe-o"
       - text: "MediaService"
         url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab+12/1_biljqmjc/397642153"
     videos_rowspan: 1
@@ -699,34 +699,36 @@ recitations:
     materials: []
     materials_rowspan: 1
     videos: [""]
-    authors: "Madhavi Gulavani, <br> Manigandan Ramadasan, <br>Nayesha Gandotra, "
+    authors: "Madhavi Gulavani, <br>Manigandan Ramadasan, <br>Nayesha Gandotra, "
     authors_rowspan: 1
 
   - title: "Lab 13"
     date: "Friday,<br> Apr 10"
     date_rowspan: 1
     topics: "NF and Stable Diffusion" 
-    materials: []
-      # - text: "Slides"
-      #   url: "./documents/labs/..."
-      # - text: "Notebook"
-      #   url: "./documents/labs/..."
-      # - text: "Data"
-      #   url: "./documents/labs/..."
+    materials: 
+      - text: "Slides"
+        url: "./documents/labs/lab_13/Normalizing Flows.pdf"
+      - text: "Notebook 1"
+        url: "./documents/labs/lab_13/Diffusion_lab13_S26.ipynb"
+      - text: "Notebook 2"
+        url: "./documents/labs/lab_13/Stable_diffusion S26.ipynb"
+      - text: "Notebook 3"
+        url: "./documents/labs/lab_13/Student_NF_S26.ipynb"
     materials_rowspan: 1
-    videos: []
-      # - text: "YouTube"
-      #   url : ""
+    videos: 
+      - text: "YouTube"
+        url : "https://youtu.be/zZlmC5hM_tw"
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
-    authors: "Anurag Aryal"
+    authors: "Anurag Aryal, <br>Nayesha Gandotra"
     authors_rowspan: 1
 
   - title: "Hackathon 13"
     date: "Saturday,<br> Apr 11"
     date_rowspan: 1
-    topics: []
+    topics: Canceled due to Spring Carnival
     materials: []
     materials_rowspan: 1
     videos: [""]

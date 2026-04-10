@@ -441,6 +441,10 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./documents/slides/Diffusion_S26_MB_V2.pdf"
+    - text: "YouTube"
+      url: "https://youtu.be/_gugiAREmSQ"
+    - text: "MediaService"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-Diffusion/1_va3gceb2/397642153"
     additional_materials: []
     quiz:
       text: "Quiz 12"
@@ -454,6 +458,10 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./documents/slides/lec_24_GAN.pdf"
+    - text: "YouTube"
+      url: "https://youtu.be/m_WOl6xzNWY"
+    - text: "MediaService"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+Generative+Aversarial+Networks/1_0bng1q1y/397642153"
     additional_materials: []
 
   - number: 25
