@@ -753,7 +753,7 @@ recitations:
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
-    authors: "En Zheng"
+    authors: "En Zheng, <br>Miya Sylvester"
     authors_rowspan: 1
 
   - title: "Hackathon 14"
@@ -763,7 +763,7 @@ recitations:
     materials: []
     materials_rowspan: 1
     videos: [""]
-    authors: ""
+    authors: "Nayesha Gandotra, <br>Manigandan Ramadasan"
     authors_rowspan: 1
 
   - title: "Lab 15"
@@ -794,5 +794,5 @@ recitations:
     materials: []
     materials_rowspan: 1
     videos: [""]
-    authors: ""
+    authors: "Nayesha Gandotra"
     authors_rowspan: 1

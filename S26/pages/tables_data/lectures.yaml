@@ -468,7 +468,9 @@ lectures:
     date: "Monday <br> Apr 13"
     topics:
       - "Graph Neural Networks (GNNs)"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./documents/slides/Lec25 - Graph Neural Networks.pdf"
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
       text: "Quiz 13"
