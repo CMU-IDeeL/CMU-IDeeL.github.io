@@ -471,6 +471,10 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./documents/slides/Lec25 - Graph Neural Networks.pdf"
+    - text: "YouTube"
+      url: "https://youtu.be/Q3eRRKpsgpw"
+    # - text: "MediaService"
+    #   url: " "
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
       text: "Quiz 13"
