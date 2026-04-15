@@ -473,8 +473,8 @@ lectures:
       url: "./documents/slides/Lec25 - Graph Neural Networks.pdf"
     - text: "YouTube"
       url: "https://youtu.be/Q3eRRKpsgpw"
-    # - text: "MediaService"
-    #   url: " "
+    - text: "MediaService"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Graph+Neural+Networks/1_ghng9zei/397642153"
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
       text: "Quiz 13"
@@ -483,8 +483,10 @@ lectures:
   - number: 26
     date: "Wednesday <br> Apr 15"
     topics:
-      - "Guest Lecture / Buffer"
-    slides_videos: []
+      - "Reinforcement Learning"
+    slides_videos:
+    - text: "Slides"
+      url: "./documents/slides/Reinforcement_Learning_S26.pdf"
     additional_materials: []
     # No quiz field as it spans from the previous row
 

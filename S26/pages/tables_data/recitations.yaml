@@ -719,8 +719,8 @@ recitations:
     videos: 
       - text: "YouTube"
         url : "https://youtu.be/zZlmC5hM_tw"
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-Lab+13/1_cohv2wyp/397642153"
     videos_rowspan: 1
     authors: "Anurag Aryal, <br>Nayesha Gandotra"
     authors_rowspan: 1
