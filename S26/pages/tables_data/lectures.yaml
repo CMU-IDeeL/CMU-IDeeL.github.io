@@ -487,6 +487,10 @@ lectures:
     slides_videos:
     - text: "Slides"
       url: "./documents/slides/Reinforcement_Learning_S26.pdf"
+    - text: "YouTube"
+      url: "https://youtu.be/NTd9W1rqIYk"
+    # - text: "MediaService"
+    #   url: " "
     additional_materials: []
     # No quiz field as it spans from the previous row
 
