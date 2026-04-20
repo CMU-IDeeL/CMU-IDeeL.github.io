@@ -498,7 +498,13 @@ lectures:
     date: "Monday <br> Apr 20"
     topics:
       - "Hopfield Networks"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./documents/slides/lecture_25_Hopfield_S26.pdf"
+    # - text: "YouTube"
+    #   url: " "
+    # - text: "MediaService"
+    #   url: " "
     additional_materials: [] # Additional materials commented out in HTML
     quiz:
       text: "Quiz 14"
