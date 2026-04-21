@@ -739,19 +739,17 @@ recitations:
     date: "Friday,<br> Apr 17"
     date_rowspan: 1
     topics: "GAN" 
-    materials: []
-      # - text: "Slides"
-      #   url: "./documents/labs/..."
-      # - text: "Notebook"
-      #   url: "./documents/labs/..."
-      # - text: "Data"
-      #   url: "./documents/labs/..."
+    materials: 
+      - text: "Slides"
+        url: "./documents/labs/lab_14/S26_lab14_GANs_StudentNotebook.ipynb"
+      - text: "Notebook"
+        url: "./documents/labs/lab_14/GAN Lab 14.pdf"
     materials_rowspan: 1
-    videos: []
+    videos: 
       # - text: "YouTube"
       #   url : ""
-      # - text: "MediaService"
-      #   url: ""
+      - text: "MediaService"
+        url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab+14/1_19keerzp/397642153"
     videos_rowspan: 1
     authors: "En Zheng, <br>Miya Sylvester"
     authors_rowspan: 1
