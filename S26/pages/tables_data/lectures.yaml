@@ -514,6 +514,8 @@ lectures:
     date: "Wednesday <br> Apr 22"
     topics:
       - "Boltzmann Machines"
-    slides_videos: []
+    slides_videos:
+    - text: "Slides"
+      url: "./documents/slides/lecture_26_BM_S26.pdf"
     additional_materials: []
     # No quiz field as it spans from the previous row
