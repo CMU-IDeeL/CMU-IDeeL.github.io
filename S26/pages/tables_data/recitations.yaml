@@ -746,8 +746,8 @@ recitations:
         url: "./documents/labs/lab_14/GAN Lab 14.pdf"
     materials_rowspan: 1
     videos: 
-      # - text: "YouTube"
-      #   url : ""
+      - text: "YouTube"
+        url : "https://youtu.be/OMKVfa6pndM"
       - text: "MediaService"
         url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Lab+14/1_19keerzp/397642153"
     videos_rowspan: 1
@@ -776,9 +776,9 @@ recitations:
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
-    videos: []
-      # - text: "YouTube"
-      #   url : ""
+    videos:
+      - text: "YouTube"
+        url : "https://youtu.be/mJKCnkD9FEM"
       # - text: "MediaService"
       #   url: ""
     videos_rowspan: 1
