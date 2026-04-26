@@ -519,7 +519,7 @@ lectures:
       url: "./documents/slides/lecture_26_BM_S26.pdf"
     - text: "YouTube"
       url: "https://youtu.be/bpj2m2jl5iU"
-    # - text: "MediaService"
-    #   url: " "
+    - text: "MediaService"
+      url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Spring+2026+-+Hopfield+Nets%2C+Auto+Associators/1_t8b3b0pz/397642153"
     additional_materials: []
     # No quiz field as it spans from the previous row

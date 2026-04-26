@@ -768,11 +768,11 @@ recitations:
     date: "Friday,<br> Apr 24"
     date_rowspan: 1
     topics: "Graph Neural Networks" 
-    materials: []
+    materials:
       # - text: "Slides"
       #   url: "./documents/labs/..."
-      # - text: "Notebook"
-      #   url: "./documents/labs/..."
+      - text: "Notebook"
+        url: "./documents/labs/lab_15/GNN_Recitation_student.ipynb"
       # - text: "Data"
       #   url: "./documents/labs/..."
     materials_rowspan: 1
