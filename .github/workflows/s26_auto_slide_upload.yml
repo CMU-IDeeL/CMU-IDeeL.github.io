@@ -28,8 +28,10 @@ jobs:
       - name: Run scripts
         working-directory: S26
         run: |
+          python pages/tables_data/validate_tables_data.py
           python pages/tables_data/upload_slides.py
           python pages/tables_data/generate_table.py
+          python pages/tables_data/preflight_f26.py --skip-external
         
       - name: Commit S26 changes
         run: |

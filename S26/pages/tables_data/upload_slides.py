@@ -1,131 +1,225 @@
+import argparse
 import os
 import re
-import subprocess
-from ruamel.yaml import YAML
-from datetime import datetime, date, timedelta, time
+from datetime import date, datetime
+from typing import Dict, List, Optional, Tuple
 from zoneinfo import ZoneInfo
 
-# Get the directory where this script is located
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__)) 
-ROOT_DIR   = os.path.abspath(os.path.join(SCRIPT_DIR, os.pardir, os.pardir)) # S26/
-LECTURES_YAML = os.path.join(SCRIPT_DIR, "lectures.yaml") # .../S26/pages/lectures.yaml
-SLIDES_DIR    = os.path.join(ROOT_DIR, "documents", "slides") # .../S26/documents/slides/
+from ruamel.yaml import YAML
 
-def parse_lecture_date(date_str, year = 2026):
-    # this function parses the lecture date and returns date and month of the lecture
-    # this function assumes that the date argument has string in format "[weekday] <br> [month] [day]". Example: "Monday <br> Feb 9"
-    # [month] can be in full form or abbreviated form: Feb or February
-    # [date] has to be a number (specifically integer)
-    parts = date_str.split("<br>")
-    month_day = parts[1].strip().split()
-    month_str, day = month_day[0].strip(), int(month_day[1].strip())
-    try:
-        month = datetime.strptime(month_str, "%b").month
-    except ValueError:
-        month = datetime.strptime(month_str, "%B").month
-    return date(year, month, day)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, os.pardir, os.pardir))
+LECTURES_YAML = os.path.join(SCRIPT_DIR, "lectures.yaml")
+SLIDES_DIR = os.path.join(ROOT_DIR, "documents", "slides")
+
+STATUS_FOUND = "FOUND"
+STATUS_MISSING = "MISSING"
+STATUS_AMBIGUOUS = "AMBIGUOUS"
+STATUS_SKIPPED = "SKIPPED"
 
 
-def find_slide_by_lecture_number(lecture_num):
-    # this function gets the path where the lecture slide is stored using the lecture number
-    # this function assumes that the lecture number is part of file name (parsed through regex )
-    n = int(lecture_num)
-    pattern = re.compile(rf"(?<![A-Za-z0-9])lec(?:ture)?[\s._-]*0*{n}(?!\d)", re.I)
-    for name in os.listdir(SLIDES_DIR):
-        if not name.lower().endswith(".pdf"):
-            continue
-        base = os.path.splitext(name)[0]
-        if pattern.search(base):
-            print(f"[INFO] Found lecture slides (based on lecture number): {name}")
-            return name  
+def _yaml() -> YAML:
+    y = YAML()
+    y.preserve_quotes = True
+    y.indent(mapping=4, sequence=4, offset=2)
+    return y
+
+
+def parse_lecture_date(date_str: str, year: int = 2026) -> Optional[date]:
+    """Parse either legacy format ('Monday <br> Feb 9') or ISO format ('2026-02-09')."""
+    if not date_str:
+        return None
+    date_str = str(date_str).strip()
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", date_str):
+        return datetime.strptime(date_str, "%Y-%m-%d").date()
+    if "<br>" in date_str:
+        parts = date_str.split("<br>")
+        if len(parts) < 2:
+            return None
+        month_day = parts[1].strip().replace(",", "").split()
+        if len(month_day) < 2:
+            return None
+        month_str, day_token = month_day[0].strip(), month_day[1].strip()
+        day = int(re.sub(r"[^0-9]", "", day_token))
+        try:
+            month = datetime.strptime(month_str, "%b").month
+        except ValueError:
+            month = datetime.strptime(month_str, "%B").month
+        return date(year, month, day)
     return None
 
 
-def find_slide_by_commit_time(start_timestamp):
-    best_match = None
-    recent = -1
-    for name in os.listdir(SLIDES_DIR):
+def generate_manifest(slides_dir: str) -> Dict[int, List[str]]:
+    """Create deterministic mapping of lecture numbers to slide files."""
+    manifest: Dict[int, List[str]] = {}
+    pattern = re.compile(r"(?<![A-Za-z0-9])lec(?:ture)?[\s._-]*0*(\d+)(?!\d)", re.I)
+    for name in sorted(os.listdir(slides_dir)):
         if not name.lower().endswith(".pdf"):
             continue
-        full_path = os.path.join(SLIDES_DIR, name)
-        out = subprocess.check_output(["git", "log", "-1", "--format=%ct", "--", full_path], cwd=ROOT_DIR, text=True).strip()  
-        file_commit_time = int(out) 
-        if file_commit_time >= start_timestamp and file_commit_time > recent:
-            recent = file_commit_time
-            best_match = name
-    print(f"[INFO] Found lecture slides (based on commit time): {best_match}")
-    return best_match
+        base = os.path.splitext(name)[0]
+        m = pattern.search(base)
+        if not m:
+            continue
+        num = int(m.group(1))
+        manifest.setdefault(num, []).append(name)
+    return manifest
 
 
-def upload():
-    # this function assumes that it will be invoked only on Monday's and Wednesday's
-    # this function assume each lecture enty in lectures.yaml has slides_videos entry (either empty [] or filled with something)
+def _rank_candidate(name: str, lecture_date: Optional[str]) -> int:
+    """Lower score is better."""
+    score = 100
+    lowered = name.lower()
+    if "v2" in lowered or "draft" in lowered:
+        score += 20
+    if lecture_date:
+        compact = lecture_date.replace("-", "")
+        if lecture_date in name or compact in name:
+            score -= 30
+    if lowered.startswith("lec") or lowered.startswith("lecture"):
+        score -= 5
+    return score
 
-    yaml = YAML()
-    yaml.preserve_quotes = True
-    yaml.indent(mapping=4, sequence=4, offset=2)
 
-    if not os.path.isfile(LECTURES_YAML):
-        print(f"[ERROR] lectures.yaml not found at the path: {LECTURES_YAML}")
-        return
-    if not os.path.isdir(SLIDES_DIR):
-        print(f"[ERROR] Slides directory not found at the path: {SLIDES_DIR}")
-        return
-    
-    timezone = ZoneInfo("America/New_York")
-    now = datetime.now(timezone)
-    today = now.date()
-    # today = date(2026, 1, 12) # for testing
+def find_matching_slide(
+    lecture_number: int, lecture_date: str, slides_dir: str
+) -> Tuple[str, Optional[str], List[str]]:
+    """Return status, selected relative path or None, and candidate filenames."""
+    manifest = generate_manifest(slides_dir)
+    candidates = manifest.get(int(lecture_number), [])
+    if not candidates:
+        return STATUS_MISSING, None, []
+    if len(candidates) == 1:
+        return STATUS_FOUND, candidates[0], candidates
+    ranked = sorted(candidates, key=lambda c: (_rank_candidate(c, lecture_date), c.lower()))
+    best = ranked[0]
+    # If tie at top rank, keep explicit ambiguity to avoid accidental wrong attachment.
+    if len(ranked) > 1 and _rank_candidate(ranked[0], lecture_date) == _rank_candidate(
+        ranked[1], lecture_date
+    ):
+        return STATUS_AMBIGUOUS, None, candidates
+    return STATUS_FOUND, best, candidates
 
-    with open(LECTURES_YAML, "r") as f:
-        data = yaml.load(f)
+
+def _has_existing_slides_link(lecture: dict) -> bool:
+    for item in lecture.get("slides_videos", []):
+        if item.get("text") == "Slides" and item.get("url"):
+            return True
+    return False
+
+
+def _insert_or_replace_slides_link(lecture: dict, url: str) -> None:
+    slides_videos = lecture.get("slides_videos", [])
+    for item in slides_videos:
+        if item.get("text") == "Slides":
+            item["url"] = url
+            lecture["slides_videos"] = slides_videos
+            return
+    slides_videos.insert(0, {"text": "Slides", "url": url})
+    lecture["slides_videos"] = slides_videos
+
+
+def update_yaml_links(
+    lectures_yaml: str,
+    manifest: dict,
+    dry_run: bool = False,
+    update_all: bool = False,
+    year: int = 2026,
+) -> dict:
+    """Update slide links in YAML; return status counts."""
+    y = _yaml()
+    with open(lectures_yaml, "r", encoding="utf-8") as f:
+        data = y.load(f)
     lectures = data.get("lectures", [])
 
-    target = None
-    lec_num = None
-    for lec in lectures:
-        if lec.get("number", "") == 0: # skipping lecture 0 as it doesnt have tedious slide upload task
+    timezone = ZoneInfo("America/New_York")
+    today = datetime.now(timezone).date()
+
+    counts = {STATUS_FOUND: 0, STATUS_MISSING: 0, STATUS_AMBIGUOUS: 0, STATUS_SKIPPED: 0}
+    changed = False
+
+    for lecture in lectures:
+        lec_num = lecture.get("number")
+        if lec_num in (None, "", 0):
+            counts[STATUS_SKIPPED] += 1
             continue
-        lec_date = parse_lecture_date(lec.get("date", ""))
-        if lec_date == today:
-            target = lec
-            lec_num = lec.get("number")
-            break
-    
-    if target is None or lec_num is None:
-        print("[ERROR] Could not find today's lecture in YAML :(")
-        return
-    print(f"[INFO] Lecture Number: {lec_num}")
-    print(f"[INFO] Parsed lecture date: {lec_date}")
-    
-    slide_placeholder = target.get("slides_videos")
-    for item in slide_placeholder:
-        if item.get("text") == "Slides" and item.get("url"):
-            print("[WARN] Slides already linked in the website")
-            return
+        lec_date_obj = parse_lecture_date(lecture.get("date", ""), year=year)
+        if lec_date_obj is None:
+            print(f"[WARN] Could not parse date for lecture {lec_num}; skipping")
+            counts[STATUS_SKIPPED] += 1
+            continue
+        if not update_all and lec_date_obj != today:
+            continue
+        if _has_existing_slides_link(lecture):
+            print(f"[INFO] Lecture {lec_num}: slide link already present, skipping")
+            counts[STATUS_SKIPPED] += 1
+            continue
 
-    pdf_name = find_slide_by_lecture_number(lec_num)
-    if not pdf_name: # Fallback: if the lecture slide is not found based on lecture number, we take the most recently committed file to GitHub in slides folder
-        print(f"[WARN] Not able to find lecture slide based on lecture number; Trying to find based on commit time")
-        if today.weekday() == 0: # for Monday lecture, check from Thursday 
-            start_day = today - timedelta(days=4)
-        elif today.weekday() == 2: # for Wednesday lecture, check from Tuesday 
-            start_day = today - timedelta(days=1)
-        start_timestamp = datetime.combine(start_day, time(0, 0), timezone).timestamp()
-        pdf_name = find_slide_by_commit_time(start_timestamp)
-    if not pdf_name:
-        print(f"[WARN] Not able to find lecture slide based on commit time")
-        print(f"[ERROR] No slides found for the lecture dated {today} with lecture number: {lec_num}")
-        return
-    pdf_path = os.path.join(SLIDES_DIR, pdf_name)
-    print(f"[INFO] Absolute lecture slide path: {pdf_path}")
-    rel_pdf_path = os.path.relpath(pdf_path, start=ROOT_DIR).replace("\\", "/")
-    print(f"[INFO] Relative lecture slide path: {rel_pdf_path}")
-    target["slides_videos"].insert(0, {"text": "Slides", "url": rel_pdf_path})
+        status, selected, candidates = find_matching_slide(
+            int(lec_num), lec_date_obj.isoformat(), SLIDES_DIR
+        )
+        if status == STATUS_FOUND and selected:
+            rel_path = os.path.relpath(os.path.join(SLIDES_DIR, selected), ROOT_DIR).replace("\\", "/")
+            print(f"[FOUND] Lecture {lec_num}: {rel_path}")
+            _insert_or_replace_slides_link(lecture, rel_path)
+            counts[STATUS_FOUND] += 1
+            changed = True
+        elif status == STATUS_AMBIGUOUS:
+            print(f"[AMBIGUOUS] Lecture {lec_num}: candidates={candidates}")
+            counts[STATUS_AMBIGUOUS] += 1
+        else:
+            print(f"[MISSING] Lecture {lec_num}: no matching slide found")
+            counts[STATUS_MISSING] += 1
 
-    with open(LECTURES_YAML, "w") as f:
-        yaml.dump(data, f)
-    print(f"[INFO] Added slides path for the lecture dated {today} with lecture number: {lec_num} as {rel_pdf_path}")
+    if changed and not dry_run:
+        with open(lectures_yaml, "w", encoding="utf-8") as f:
+            y.dump(data, f)
+        print("[INFO] lectures.yaml updated")
+    elif changed and dry_run:
+        print("[INFO] Dry-run enabled: no files were modified")
+
+    return counts
+
+
+def upload(dry_run: bool = False, update_all: bool = False, year: int = 2026) -> int:
+    if not os.path.isfile(LECTURES_YAML):
+        print(f"[ERROR] lectures.yaml not found at: {LECTURES_YAML}")
+        return 1
+    if not os.path.isdir(SLIDES_DIR):
+        print(f"[ERROR] slides directory not found at: {SLIDES_DIR}")
+        return 1
+
+    manifest = generate_manifest(SLIDES_DIR)
+    counts = update_yaml_links(
+        lectures_yaml=LECTURES_YAML,
+        manifest=manifest,
+        dry_run=dry_run,
+        update_all=update_all,
+        year=year,
+    )
+
+    print("========================================")
+    for key in (STATUS_FOUND, STATUS_MISSING, STATUS_AMBIGUOUS, STATUS_SKIPPED):
+        print(f"{key}: {counts[key]}")
+    print("========================================")
+
+    # Fail closed on ambiguity in automated runs.
+    if counts[STATUS_AMBIGUOUS] > 0:
+        return 2
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Upload lecture slides into lectures.yaml")
+    parser.add_argument("--dry-run", action="store_true", help="Do not write changes to lectures.yaml")
+    parser.add_argument(
+        "--update-all",
+        action="store_true",
+        help="Process all lectures missing slide links (default: only today's lecture)",
+    )
+    parser.add_argument("--year", type=int, default=2026, help="Default year for legacy date parsing")
+    args = parser.parse_args()
+    return upload(dry_run=args.dry_run, update_all=args.update_all, year=args.year)
+
 
 if __name__ == "__main__":
-    upload()
+    raise SystemExit(main())
