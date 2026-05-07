@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Lecture</th>
+                    <th>Date</th>
+                    <th>Topics</th>
+                    <th>Slides, Videos</th>
+                    <th>Additional Materials</th>
+                    <th>Quiz</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for lecture in data.lectures %}
+                <tr>
+                    <td>{{ lecture.number }}</td>
+                    <td>{{ lecture.date | safe }}</td> {# safe filter for <br> #}
+                    <td>
+                        <ul>
+                            {% for topic_item in lecture.topics %}
+                            {% if topic_item is string %}
+                            <li>{{ topic_item }}</li>
+                            {% else %} {# Assumes it's a dict with 'main' and 'sub_topics' #}
+                            <li>{{ topic_item.main }}
+                                {% if topic_item.sub_topics %}
+                                <ul>
+                                    {% for sub_topic in topic_item.sub_topics %}
+                                    <li>{{ sub_topic }}</li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </td>
+                    <td>
+                        {% for item in lecture.slides_videos %}
+                        <a href="{{ item.url }}" target="_blank">{{ item.text }}</a>{% if not loop.last %}<br>{% endif
+                        %}
+                        {% endfor %}
+                    </td>
+                    <td>
+                        {% for item in lecture.additional_materials %}
+                        <a href="{{ item.url }}" target="_blank">{{ item.text | replace('\n', '<br>') | safe }}</a>{% if
+                        not loop.last %}<br>{% endif %}
+                        {% endfor %}
+                    </td>
+                    {% if lecture.quiz %} {# Only render this cell if quiz data exists for this lecture #}
+                    <td rowspan="{{ lecture.quiz.rowspan | default(1) }}"
+                        style="vertical-align: middle; text-align: center;">
+                        {% if lecture.quiz.url %}
+                        <a href="{{ lecture.quiz.url }}" target="_blank">{{ lecture.quiz.text }}</a>
+                        {% else %}
+                        {{ lecture.quiz.text }}
+                        {% endif %}
+                    </td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
