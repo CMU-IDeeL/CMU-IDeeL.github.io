@@ -100,6 +100,26 @@ def approve(upload_id):
     print(f"approved: {upload_id} -> {dst.name} ({reason})")
 
 
+def auto_approve_eligible():
+    rows = load_records()
+    approved = 0
+    skipped = 0
+    for r in rows:
+        if r.get("status") != "pending_approval":
+            skipped += 1
+            continue
+        if not eligible(r):
+            skipped += 1
+            continue
+        upload_id = r.get("upload_id")
+        if not upload_id:
+            skipped += 1
+            continue
+        approve(upload_id)
+        approved += 1
+    print(f"auto_approve_summary approved={approved} skipped={skipped}")
+
+
 def reject(upload_id, reason):
     rows = load_records()
     found = None
@@ -134,6 +154,7 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--list", action="store_true")
     p.add_argument("--approve")
+    p.add_argument("--auto-approve-eligible", action="store_true")
     p.add_argument("--reject")
     p.add_argument("--reason", default="manual_reject")
     args = p.parse_args()
@@ -142,6 +163,8 @@ if __name__ == "__main__":
         list_pending()
     elif args.approve:
         approve(args.approve)
+    elif args.auto_approve_eligible:
+        auto_approve_eligible()
     elif args.reject:
         reject(args.reject, args.reason)
     else:

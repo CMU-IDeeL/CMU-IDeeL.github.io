@@ -3,7 +3,7 @@ import os
 import pathlib
 import re
 import subprocess
-from datetime import datetime
+from datetime import date, datetime
 from typing import Optional
 
 import discord
@@ -67,19 +67,92 @@ def expected_name_for_lecture(lecture_num: int) -> Optional[str]:
     return None
 
 
+def parse_yaml_date(date_str: str, year: int = 2026) -> Optional[date]:
+    if "<br>" not in date_str:
+        return None
+    part = date_str.split("<br>", 1)[1].strip()
+    bits = part.split()
+    if len(bits) < 2:
+        return None
+    month_str, day_str = bits[0], bits[1]
+    try:
+        day_num = int(day_str)
+    except ValueError:
+        return None
+    try:
+        month_num = datetime.strptime(month_str, "%b").month
+    except ValueError:
+        try:
+            month_num = datetime.strptime(month_str, "%B").month
+        except ValueError:
+            return None
+    return date(year, month_num, day_num)
+
+
+def infer_lecture_from_schedule() -> tuple[Optional[int], Optional[str], str]:
+    yaml_abs = REPO_PATH / LECTURES_YAML
+    if not yaml_abs.exists():
+        return None, None, "no_yaml"
+    yaml = YAML(typ="safe")
+    data = yaml.load(yaml_abs.read_text(encoding="utf-8")) or {}
+    lectures = data.get("lectures", [])
+    today = datetime.now().date()
+
+    def has_slides(lec: dict) -> bool:
+        for entry in lec.get("slides_videos", []):
+            if entry.get("text") == "Slides" and str(entry.get("url", "")).strip():
+                return True
+        return False
+
+    # Prefer lectures dated <= today that have no slide link yet.
+    candidates = []
+    for lec in lectures:
+        num = lec.get("number")
+        if num is None:
+            continue
+        d = parse_yaml_date(str(lec.get("date", "")))
+        if d is None:
+            continue
+        if d <= today and not has_slides(lec):
+            candidates.append((d, int(num)))
+
+    if candidates:
+        candidates.sort(key=lambda x: x[0], reverse=True)
+        num = candidates[0][1]
+        return num, expected_name_for_lecture(num), "inferred_latest_unfilled"
+
+    # If all lectures already have slides (template copied), fallback to latest past lecture.
+    fallback = []
+    for lec in lectures:
+        num = lec.get("number")
+        if num is None:
+            continue
+        d = parse_yaml_date(str(lec.get("date", "")))
+        if d is None:
+            continue
+        if d <= today:
+            fallback.append((d, int(num)))
+    if fallback:
+        fallback.sort(key=lambda x: x[0], reverse=True)
+        num = fallback[0][1]
+        return num, expected_name_for_lecture(num), "inferred_latest_dated"
+
+    return None, None, "no_candidate"
+
+
 def classify(filename: str):
     lower = filename.lower()
     ext = pathlib.Path(lower).suffix
     if ext not in ALLOWED_EXT:
-        return False, "unsupported_extension", None, None
+        return "reject", "unsupported_extension", None, None
     if any(k in lower for k in BAD_KEYWORDS):
-        return False, "blocked_keyword", None, None
+        return "reject", "blocked_keyword", None, None
     m = LECTURE_RE.search(lower)
     if not m:
-        return False, "missing_lecture_number", None, None
+        return "manual", "missing_lecture_number", None, None
     lecture_num = int(m.group(1))
     canonical = expected_name_for_lecture(lecture_num)
-    return True, "ok", lecture_num, canonical
+    return "ok", "ok", lecture_num, canonical
 
 
 intents = discord.Intents.default()
@@ -108,7 +181,7 @@ async def on_message(message: discord.Message):
 
     saved = 0
     for a in message.attachments:
-        ok, reason, lecture_num, canonical_name = classify(a.filename)
+        kind, reason, lecture_num, canonical_name = classify(a.filename)
         upload_id = datetime.utcnow().strftime("%Y%m%d%H%M%S%f")
         safe_name = re.sub(r"[^A-Za-z0-9._-]", "_", a.filename)
         out_name = f"{upload_id}_{safe_name}"
@@ -117,7 +190,22 @@ async def on_message(message: discord.Message):
 
         status = "rejected"
         final_reason = reason
-        if ok:
+        should_save = False
+        if kind in {"ok", "manual"}:
+            should_save = True
+            status = "pending_approval" if kind == "ok" else "needs_manual_review"
+            final_reason = "ok" if kind == "ok" else reason
+        if kind == "manual" and reason == "missing_lecture_number":
+            inferred_num, inferred_name, inferred_reason = infer_lecture_from_schedule()
+            if inferred_num is not None:
+                lecture_num = inferred_num
+                canonical_name = inferred_name
+                status = "pending_approval"
+                final_reason = inferred_reason
+            else:
+                status = "needs_manual_review"
+                final_reason = inferred_reason
+        if kind == "ok":
             status = "pending_approval"
             if message.channel.id != PRIMARY_LECTURES_CHANNEL_ID:
                 status = "needs_manual_review"
@@ -132,7 +220,7 @@ async def on_message(message: discord.Message):
                 status = "needs_manual_review"
                 final_reason = "missing_f26_token"
 
-        if ok:
+        if should_save:
             await a.save(abs_path)
             saved += 1
 
@@ -142,7 +230,7 @@ async def on_message(message: discord.Message):
             "reason": final_reason,
             "lecture_number": lecture_num,
             "original_name": a.filename,
-            "saved_path": str(rel_path).replace("\\", "/") if ok else "",
+            "saved_path": str(rel_path).replace("\\", "/") if should_save else "",
             "canonical_name": canonical_name or "",
             "channel_id": message.channel.id,
             "message_id": message.id,
