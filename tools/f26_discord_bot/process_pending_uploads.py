@@ -87,7 +87,7 @@ def approve(upload_id):
         print("source file missing")
         return
 
-    clean = found.get("canonical_name", "").strip() or re.sub(r"^[0-9]+_", "", src.name)
+    clean = found.get("canonical_name", "").strip() or found.get("original_name", "").strip() or re.sub(r"^[A-Za-z0-9]+_", "", src.name)
     dst = SLIDES_DIR / clean
     src.replace(dst)
 
