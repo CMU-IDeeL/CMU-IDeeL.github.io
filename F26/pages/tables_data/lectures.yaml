@@ -159,6 +159,24 @@ lectures:
   quiz:
     text: ''
     rowspan: 1
+- number: '-'
+  date: ''
+  topics:
+  - No Class - Fall Break
+  slides_videos: []
+  additional_materials: []
+  quiz:
+    text: ''
+    rowspan: 1
+- number: '-'
+  date: ''
+  topics:
+  - No Class - Fall Break
+  slides_videos: []
+  additional_materials: []
+  quiz:
+    text: ''
+    rowspan: 1
 - number: 15
   date: ''
   topics:
@@ -258,7 +276,7 @@ lectures:
 - number: 25
   date: ''
   topics:
-  - Graph Neural Networks (GNNs)
+  - Representation Learning
   slides_videos: []
   additional_materials: []
   quiz:
@@ -267,7 +285,7 @@ lectures:
 - number: 26
   date: ''
   topics:
-  - Reinforcement Learning
+  - Graph Neural Networks (GNNs)
   slides_videos: []
   additional_materials: []
   quiz:
