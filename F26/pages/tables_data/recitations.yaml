@@ -1,3 +1,178 @@
 # schedule_data.yaml
-recitations_0: []
+recitations_0:
+  - date: "TBA"
+    groups:
+      - name: "Python Programming + PyTorch"
+        topics:
+          - id: "0.1"
+            title: "Python"
+            materials: []
+            videos: []
+            authors: "Dhiksha"
+          - id: "0.2"
+            title: "OOP Fundamentals"
+            materials: []
+            videos: []
+            authors: "Hrishikesh"
+          - id: "0.3"
+            title: "NumPy Fundamentals"
+            materials: []
+            videos: []
+            authors: "Uwimana"
+          - id: "0.4"
+            title: "PyTorch"
+            materials: []
+            videos: []
+            authors: "Sneha & Shrirang"
+          - id: "0.5"
+            title: "Notebooks and Conda Environments"
+            materials: []
+            videos: []
+            authors: "Nayesha"
+          - id: "0.6"
+            title: "Tensordot & Einsum"
+            materials: []
+            videos: []
+            authors: "George"
+          - id: ""
+            title: "Differentiation / Calculus"
+            materials: []
+            videos: []
+            authors: "Bruno"
+          - id: ""
+            title: "JAX"
+            materials: []
+            videos: []
+            authors: "Brad & Hrishikesh"
+      - name: "Computational Resources"
+        topics:
+          - id: "0.7"
+            title: "GitHub"
+            materials: []
+            videos: []
+            authors: "Varun"
+          - id: "0.8"
+            title: "Google Colab"
+            materials: []
+            videos: []
+            authors: "Kangping"
+          - id: "0.9"
+            title: "Google Cloud Platform"
+            materials: []
+            videos: []
+            authors: "Anurag"
+
+          - id: "0.11"
+            title: "Kaggle"
+            materials: []
+            videos: []
+            authors: "Joshua"
+          - id: "0.12"
+            title: "PSC Part I (How to connect)"
+            materials: []
+            videos: []
+            authors: "Pengyu, Mengchun, Sneha"
+          - id: "0.13"
+            title: "PSC Part II (Get compute for projects)"
+            materials: []
+            videos: []
+            authors: "Yixiong"
+          - id: ""
+            title: "Intro to Linux"
+            materials: []
+            videos: []
+            authors: "Kangping, Aryan"
+      - name: "Data Handling and Processing"
+        topics:
+          - id: "0.14"
+            title: "Datasets"
+            materials: []
+            videos: []
+            authors: "Felix"
+          - id: "0.15"
+            title: "Dataloaders"
+            materials: []
+            videos: []
+            authors: "Hrishikesh & Shrirang"
+          - id: "0.16"
+            title: "Data Preprocessing"
+            materials: []
+            videos: []
+            authors: "Aryan"
+      - name: "Debugging and Problem-Solving"
+        topics:
+          - id: "0.17"
+            title: "Wandb"
+            materials: []
+            videos: []
+            authors: "Ron"
+          - id: "0.18"
+            title: "Debugging your Model"
+            materials: []
+            videos: []
+            authors: "Felix"
+          - id: "0.19"
+            title: "What to Do When Struggling"
+            materials: []
+            videos: []
+            authors: "Nayesha"
+      - name: "Algorithmic Techniques"
+        topics:
+          - id: "0.20"
+            title: "Losses Part 1"
+            materials: []
+            videos: []
+            authors: "Yara & Mengchun"
+          - id: "0.21"
+            title: "Losses Part 2"
+            materials: []
+            videos: []
+            authors: "Yara & Mengchun"
+          - id: "0.22"
+            title: "Block Processing"
+            materials: []
+            videos: []
+            authors: "Akshara"
+      - name: "Model Logistics"
+        topics:
+          - id: "0.23"
+            title: "Pipeline"
+            materials: []
+            videos: []
+            authors: "Devansh"
+          - id: "0.24"
+            title: "Distributed Training"
+            materials: []
+            videos: []
+            authors: "Anurag"
+          - id: "0.25"
+            title: "Saving and Loading Model"
+            materials: []
+            videos: []
+            authors: "Hunter"
+      - name: "HWs and Project Workflow Management"
+        topics:
+          - id: "0.26"
+            title: "Workflow of HW Part 1"
+            materials: []
+            videos: []
+            authors: "Akshara"
+          - id: "0.27"
+            title: "Workflow of HW Part 2"
+            materials: []
+            videos: []
+            authors: "Devansh"
+          - id: "0.28"
+            title: "Flow of the Project"
+            materials: []
+            videos: []
+            authors: "Hunter & Uwimana"
+          - id: "0.29"
+            title: "How to Read/Write a Report"
+            materials: []
+            videos: []
+            authors: "Prof. Bhiksha"
+
 recitations: []
+
+
