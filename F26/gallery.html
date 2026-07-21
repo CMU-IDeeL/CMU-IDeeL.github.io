@@ -160,22 +160,22 @@
         .topic-pill-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 20px;
+            gap: 5px;
+            margin-bottom: 10px;
         }
         .category-pill {
             display: inline-block;
-            padding: 8px 16px;
+            padding: 4px 10px;
             background-color: #f5f5f5;
             color: #444;
-            border-radius: 20px;
-            font-size: 0.9em;
+            border-radius: 16px;
+            font-size: 0.82em;
             cursor: pointer;
             border: 1px solid #e0e0e0;
             transition: all 0.2s ease;
             user-select: none;
-            margin-right: 5px;
-            margin-bottom: 8px;
+            margin-right: 3px;
+            margin-bottom: 4px;
             font-weight: 500;
         }
         .category-pill:hover {
@@ -195,21 +195,35 @@
             border: 1px solid #eef0f2;
             border-radius: 8px;
             overflow: hidden;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
             transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
             position: relative;
             display: flex;
             flex-direction: column;
-            height: 480px; /* fixed height for beautiful grid alignment */
+        }
+        @media (min-width: 992px) {
+            .topic-card {
+                height: 330px; /* compact height for grid alignment on desktop */
+            }
+        }
+        @media (max-width: 991px) {
+            .topic-card {
+                height: auto;
+                min-height: auto;
+            }
+            .topic-desc {
+                height: auto !important;
+                -webkit-line-clamp: unset !important;
+            }
         }
         .topic-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.08);
             border-color: #d8dee4;
         }
         .topic-image {
-            height: 120px;
+            height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -217,7 +231,7 @@
             border-bottom: 1px solid #f0f0f0;
         }
         .topic-icon {
-            font-size: 42px;
+            font-size: 24px;
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
             transition: transform 0.3s ease;
         }
@@ -226,20 +240,20 @@
         }
         .topic-star {
             position: absolute;
-            top: 15px;
-            right: 15px;
+            top: 8px;
+            right: 8px;
             background: rgba(255, 255, 255, 0.9);
             border: none;
             border-radius: 50%;
-            width: 36px;
-            height: 36px;
+            width: 28px;
+            height: 28px;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             color: #ccc;
-            font-size: 1.1em;
+            font-size: 0.85em;
             transition: all 0.2s ease;
             z-index: 2;
         }
@@ -252,28 +266,28 @@
             background: #fff;
         }
         .topic-body {
-            padding: 20px;
+            padding: 12px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
-            height: calc(100% - 120px);
+            height: calc(100% - 60px);
         }
         .topic-cat-badge {
-            font-size: 0.75em;
+            font-size: 0.7em;
             text-transform: uppercase;
             font-weight: bold;
-            letter-spacing: 0.05em;
-            margin-bottom: 8px;
+            letter-spacing: 0.04em;
+            margin-bottom: 3px;
             display: inline-block;
         }
         .topic-title {
-            font-size: 1.2em;
+            font-size: 0.95em;
             font-weight: 700;
             color: #222;
             margin-top: 0;
-            margin-bottom: 10px;
-            line-height: 1.4;
-            height: 50px;
+            margin-bottom: 4px;
+            line-height: 1.3;
+            height: 36px;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
@@ -281,36 +295,39 @@
             -webkit-box-orient: vertical;
         }
         .topic-mentors {
-            font-size: 0.85em;
+            font-size: 0.8em;
             color: #666;
-            margin-bottom: 12px;
+            margin-bottom: 4px;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .topic-desc {
-            font-size: 0.9em;
+            font-size: 0.82em;
             color: #555;
-            line-height: 1.5;
-            margin-bottom: 15px;
-            height: 85px;
+            line-height: 1.35;
+            margin-bottom: 6px;
+            height: 44px;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 4;
+            -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
         }
         .topic-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 5px;
-            margin-bottom: 15px;
-            height: 26px;
+            gap: 4px;
+            margin-bottom: 6px;
+            height: 22px;
             overflow: hidden;
         }
         .topic-tag {
-            font-size: 0.75em;
-            padding: 2px 8px;
+            font-size: 0.7em;
+            padding: 1px 6px;
             background-color: #f0f2f5;
             color: #475569;
             border-radius: 4px;
@@ -318,19 +335,19 @@
         }
         .topic-links {
             border-top: 1px solid #f0f0f0;
-            padding-top: 15px;
+            padding-top: 6px;
             margin-top: auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         .topic-link-item {
-            font-size: 0.85em;
+            font-size: 0.78em;
             color: #555;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 4px;
+            gap: 3px;
             font-weight: 500;
         }
         .topic-link-item:hover {
@@ -338,23 +355,23 @@
             text-decoration: underline;
         }
         .topic-actions {
-            margin-top: 15px;
+            margin-top: 6px;
             display: flex;
-            gap: 10px;
+            gap: 6px;
         }
         .btn-topic-apply {
             flex-grow: 1;
             background-color: #A80000;
             color: white;
             border: none;
-            padding: 8px 12px;
+            padding: 5px 10px;
             border-radius: 4px;
             font-weight: 600;
-            font-size: 0.9em;
+            font-size: 0.8em;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 6px;
+            gap: 4px;
             transition: all 0.2s ease;
         }
         .btn-topic-apply:hover, .btn-topic-apply:focus {
@@ -366,10 +383,10 @@
             background-color: #f5f5f5;
             border: 1px solid #e0e0e0;
             color: #444;
-            padding: 8px 12px;
+            padding: 5px 10px;
             border-radius: 4px;
             font-weight: 500;
-            font-size: 0.9em;
+            font-size: 0.8em;
             transition: all 0.2s ease;
         }
         .btn-topic-select:hover {
@@ -443,10 +460,12 @@
             align-items: center;
             gap: 15px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            flex-wrap: wrap;
         }
         .selection-tray-item-info {
             display: flex;
             flex-direction: column;
+            flex: 1 1 280px;
         }
         .selection-tray-item-title {
             font-weight: 600;
@@ -461,8 +480,11 @@
             display: flex;
             gap: 8px;
             align-items: center;
+            flex-wrap: wrap;
+            flex: 1 1 auto;
+            justify-content: flex-end;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 991px) {
             .selection-tray-item {
                 flex-direction: column;
                 align-items: stretch;
@@ -518,8 +540,8 @@
 
         <span class="version-menu">
             <span class="current-icon">F26</span>
-            <a class="version-icon" href="../S26/index.html">S26</a>
             <a class="version-icon" href="../F25/index.html">F25</a>
+            <a class="version-icon" href="../F24/index.html">F24</a>
         </span>
     </div>
 
@@ -535,11 +557,11 @@
         <div class="m-header-item" onclick="mobileToSection('#title')">
             About
         </div>
-        <div class="m-header-item" onclick="mobileToSection('#oh')">
-            OH
-        </div>
         <div class="m-header-item" onclick="mobileToSection('#events')">
             Events
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#oh')">
+            OH
         </div>
         <div class="m-header-item" onclick="mobileToSection('#syllabus')">
             Syllabus
@@ -561,8 +583,8 @@
         </div>
         <div class="m-version-menu">
             <span class="current-icon">F26</span>
-            <a class="version-icon" href="../S26/index.html">S26</a>
             <a class="version-icon" href="../F25/index.html">F25</a>
+            <a class="version-icon" href="../F24/index.html">F24</a>
         </div>
     </div>
 
@@ -570,7 +592,7 @@
     <div class="container titlebar">
         <div class="row">
             <div class="title-col vcenter" style="color:#A80000;font-weight:bold;text-align:center;width:100%">
-                <div id="title">
+                <div id="gallery-title">
                     <b>11-785 & 11-685</b> Deep Learning
                 </div>
                 <div class="subtitle">Course Projects Gallery & Applications</div>
@@ -645,21 +667,21 @@
                 </p>
                 
                 <!-- Search and Filtering controls -->
-                <div style="background-color: #fcfcfc; border: 1px solid #eef0f2; padding: 20px; border-radius: 6px; margin-bottom: 30px;">
+                <div style="background-color: #fcfcfc; border: 1px solid #eef0f2; padding: 12px 15px; border-radius: 6px; margin-bottom: 18px;">
                     <div class="row">
                         <!-- Search Bar -->
-                        <div class="col-md-5 col-xs-12" style="margin-bottom: 15px;">
-                            <label style="font-weight: 600; color: #444; margin-bottom: 8px;"><i class="fas fa-search"></i> Search Projects</label>
+                        <div class="col-md-5 col-xs-12" style="margin-bottom: 10px;">
+                            <label style="font-weight: 600; color: #444; margin-bottom: 4px; font-size: 0.9em;"><i class="fas fa-search"></i> Search Projects</label>
                             <div class="input-group">
                                 <span class="input-group-addon" style="background-color: #fff; border-right: none;"><i class="fas fa-search" style="color: #888;"></i></span>
-                                <input type="text" v-model="searchQuery" class="form-control" placeholder="Search by title, mentor, tags..." style="border-left: none; box-shadow: none;">
+                                <input type="text" v-model="searchQuery" class="form-control input-sm" placeholder="Search by title, mentor, tags..." style="border-left: none; box-shadow: none;">
                             </div>
                         </div>
                         
                         <!-- Filter Pills -->
                         <div class="col-md-7 col-xs-12">
-                            <label style="font-weight: 600; color: #444; margin-bottom: 8px;"><i class="fas fa-filter"></i> Filter by Category</label>
-                            <div class="topic-pill-container">
+                            <label style="font-weight: 600; color: #444; margin-bottom: 4px; font-size: 0.9em;"><i class="fas fa-filter"></i> Filter by Category</label>
+                            <div class="topic-pill-container" style="margin-bottom: 0;">
                                 <span class="category-pill" 
                                       :class="{ active: activeCategory === 'All' }"
                                       @click="setCategory('All')">All</span>
@@ -678,7 +700,7 @@
                         <i class="fas fa-star" style="color: #FFD700;"></i> Selected Project Drafts ({{ selectedProjects.length }})
                     </h3>
                     <p style="font-size: 0.95em; color: #555; line-height: 1.5; margin-bottom: 15px;">
-                        You have prioritized the following topics. To finalize your application, you must fill out the official Google Form <strong>for each project</strong> you want to pursue. Click the <strong>Copy Title & Apply</strong> button next to a project below; it will copy the exact title to your clipboard and open the application form in a new tab.
+                        You have prioritized the following topics. Once you have built your draft list, click the <strong>Apply for Selected Projects</strong> button at the bottom of the list. It will copy your selected project titles to your clipboard and open the official application form in a new tab so you can easily paste them!
                     </p>
                     
                     <div class="selection-tray-list">
@@ -694,17 +716,20 @@
                                 <button class="btn btn-sm btn-default" @click="toggleSelect(proj)" title="Remove from list" style="color: #A80000; border-color: #ebd0cc;">
                                     <i class="fas fa-trash-alt"></i> Remove
                                 </button>
-                                <button class="btn btn-sm btn-cmu" @click="copyAndApply(proj)" style="background-color: #A80000; color: white;">
-                                    <i class="fas fa-external-link-alt"></i> Copy Title & Apply <i class="fab fa-google" style="margin-left: 3px;"></i>
-                                </button>
                             </div>
                         </div>
+                    </div>
+
+                    <div style="margin-top: 20px; text-align: center;">
+                        <button class="btn btn-cmu btn-lg" @click="applyAllSelected" style="background-color: #A80000; color: white; padding: 12px 35px; font-size: 1.1em; border-radius: 4px; box-shadow: 0 4px 15px rgba(168,0,0,0.2); font-weight: bold; transition: all 0.2s ease; border: none;">
+                            <i class="fab fa-google" style="margin-right: 8px;"></i> Apply for Selected Projects ({{ selectedProjects.length }}) <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 5px;"></i>
+                        </button>
                     </div>
                 </div>
 
                 <!-- TOPICS GRID -->
                 <div class="row">
-                    <div class="col-md-6" v-for="project in filteredProjects" :key="project.id">
+                    <div class="col-lg-4 col-md-6 col-sm-6" v-for="project in filteredProjects" :key="project.id">
                         <div class="topic-card">
                             <!-- Star Selection Button in Card corner -->
                             <button class="topic-star" :class="{ selected: isSelected(project) }" @click="toggleSelect(project)" :title="isSelected(project) ? 'Deselect project' : 'Select project'">
@@ -751,13 +776,10 @@
                                     <span v-else class="topic-link-item" style="color: #aaa; cursor: not-allowed;"><i class="fab fa-github"></i> Code</span>
                                 </div>
                                 
-                                <div class="topic-actions">
-                                    <button class="btn btn-topic-select" :class="{ selected: isSelected(project) }" @click="toggleSelect(project)">
-                                        <i class="fas fa-star" style="margin-right: 4px;"></i>
-                                        {{ isSelected(project) ? 'Selected' : 'Select Topic' }}
-                                    </button>
-                                    <button class="btn btn-topic-apply" @click="copyAndApply(project)">
-                                        Copy Title & Apply <i class="fas fa-arrow-right"></i>
+                                <div class="topic-actions" style="justify-content: center; margin-top: 15px;">
+                                    <button class="btn btn-topic-select" :class="{ selected: isSelected(project) }" @click="toggleSelect(project)" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                                        <i class="fas fa-star" :style="{ color: isSelected(project) ? '#F57F17' : '#888' }"></i>
+                                        {{ isSelected(project) ? 'Selected' : 'Select Project' }}
                                     </button>
                                 </div>
                             </div>
@@ -799,9 +821,9 @@
                     </p>
 
                     <div class="text-center" style="margin: 35px 0;">
-                        <a href="https://forms.gle/dcMheTGXz4zF6Hem6" target="_blank" class="btn btn-cmu btn-lg" style="padding: 15px 45px; font-size: 1.2em; border-radius: 4px; box-shadow: 0 4px 15px rgba(168,0,0,0.2); transition: all 0.2s ease;">
-                            <i class="fab fa-google" style="margin-right: 8px;"></i> Go to Official Google Form <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 5px;"></i>
-                        </a>
+                        <button @click="applyAllSelected" class="btn btn-cmu btn-lg" style="padding: 15px 45px; font-size: 1.2em; border-radius: 4px; box-shadow: 0 4px 15px rgba(168,0,0,0.2); transition: all 0.2s ease; border: none; font-weight: bold; background-color: #A80000; color: white;">
+                            <i class="fab fa-google" style="margin-right: 8px;"></i> {{ selectedProjects.length > 0 ? 'Apply with Selected Projects (' + selectedProjects.length + ')' : 'Go to Official Google Form' }} <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 5px;"></i>
+                        </button>
                     </div>
 
                     <div style="background-color: #fcfcfc; border: 1px solid #eee; padding: 20px; border-radius: 6px; margin-top: 25px;">
@@ -831,7 +853,7 @@
         <!-- SECTION 3: LEGACY SECTION / PAST SEMESTER GALLERIES -->
         <div class="row" id="legacy">
             <div class="col-xs-12">
-                <h2 class="section-header-red"><i class="fas fa-history"></i> Legacy Project Galleries (Hall of Fame)</h2>
+                <h2 class="section-header-red"><i class="fas fa-history"></i> Legacy Projects</h2>
                 <p style="margin-bottom: 25px; line-height: 1.6;">
                     Explore a curated list of exceptionally successful, high-impact student projects from previous semesters of 11-785. 
                     These serve as benchmark representations of expected scope, quality, and scientific rigor.
@@ -938,7 +960,7 @@
                 projects: [
                     {
                         id: 1,
-                        title: 'Real-time Multi-Speaker TTS with Zero-Shot Voice Cloning',
+                        title: 'Real-time Multi-Speaker TTS',
                         category: 'Speech & Audio',
                         mentors: 'Pranava, Prof. Bhiksha Raj',
                         description: 'Develop an end-to-end Text-to-Speech system based on VITS or YourTTS. The model should clone any speaker\'s voice using only a 3-second reference audio snippet and synthesize highly natural speech in real time.',
@@ -948,10 +970,10 @@
                         tags: ['PyTorch', 'TTS', 'GANs', 'Audio'],
                         icon: 'fas fa-volume-up',
                         color: '#E05A47'
-                    },
+					},
                     {
                         id: 2,
-                        title: 'Self-Supervised Monocular Depth Estimation in Driving Scenes',
+                        title: 'Self-Supervised Monocular Depth Estimation',
                         category: 'Computer Vision',
                         mentors: 'Aryan Singh, Prof. Rita Singh',
                         description: 'Train a deep network (MonoDepth2) to predict accurate pixel-wise depth maps from a single camera frame without ground-truth depth data, using geometric wrap constraints on video sequences.',
@@ -964,7 +986,7 @@
                     },
                     {
                         id: 3,
-                        title: 'Low-Resource Neural Machine Translation via Lexicon Induction',
+                        title: 'Low-Resource Neural Translation',
                         category: 'Natural Language Processing',
                         mentors: 'Dr. Shinji Watanabe, Shuo Yi',
                         description: 'Build and optimize sequence-to-sequence translation models for low-resource languages by aligning word embedding spaces from independent monolingual corpora and applying back-translation.',
@@ -977,7 +999,7 @@
                     },
                     {
                         id: 4,
-                        title: 'Fine-Tuning LLaMA-3 with Reinforcement Learning from AI Feedback (RLAIF)',
+                        title: 'Fine-Tuning LLaMA-3 via RLAIF',
                         category: 'Generative AI / LLMs',
                         mentors: 'Ananya, Prof. Bhiksha Raj',
                         description: 'Explore state-of-the-art alignment for large models. Implement Direct Preference Optimization (DPO) and PPO training on a LLaMA base model utilizing preference feedback synthesized automatically by stronger judge models.',
@@ -990,7 +1012,7 @@
                     },
                     {
                         id: 5,
-                        title: 'Safe Reinforcement Learning for Legged Robotics in Cluttered Terrain',
+                        title: 'Safe RL for Legged Robotics',
                         category: 'Reinforcement Learning',
                         mentors: 'Soumitra, Prof. Rita Singh',
                         description: 'Train quadruped and legged robotic agents in physics simulations (MuJoCo) using safety-constrained policy gradient algorithms (e.g., PPO-Lagrangian) to complete dynamic navigation runs.',
@@ -1003,7 +1025,7 @@
                     },
                     {
                         id: 6,
-                        title: 'Multi-Modal Fusion for Early Cancer Detection from CT Scans & Reports',
+                        title: 'Multi-Modal Early Cancer Detection',
                         category: 'Healthcare & Science',
                         mentors: 'Dr. Bhiksha Raj, Neha Gupta',
                         description: 'Build a multi-modal deep learning pipeline combining 3D convolutional models (to process patient scans) with medical transformer networks (e.g., BioBERT for written clinical radiology notes) to predict diagnostic outcomes.',
@@ -1082,6 +1104,39 @@
                     }
                     
                     // Open Google Form in a new tab after 1.2s delay to let the toast be seen
+                    setTimeout(function() {
+                        window.open("https://forms.gle/dcMheTGXz4zF6Hem6", "_blank");
+                    }, 1200);
+                },
+                applyAllSelected: function() {
+                    var self = this;
+                    if (this.selectedProjects.length === 0) {
+                        this.showToast("Opening official Google Form...", true);
+                        setTimeout(function() {
+                            window.open("https://forms.gle/dcMheTGXz4zF6Hem6", "_blank");
+                        }, 500);
+                        return;
+                    }
+                    
+                    // Join selected project titles with semicolon
+                    var titles = this.selectedProjects.map(function(p) { return p.title; }).join("; ");
+                    
+                    try {
+                        var dummy = document.createElement("textarea");
+                        dummy.style.position = 'fixed';
+                        dummy.style.opacity = '0';
+                        document.body.appendChild(dummy);
+                        dummy.value = titles;
+                        dummy.select();
+                        document.execCommand("copy");
+                        document.body.removeChild(dummy);
+                        
+                        this.showToast("Copied drafted projects to clipboard! Opening Google Form...", true);
+                    } catch (err) {
+                        console.error("Could not copy text: ", err);
+                        this.showToast("Opening application form...", true);
+                    }
+                    
                     setTimeout(function() {
                         window.open("https://forms.gle/dcMheTGXz4zF6Hem6", "_blank");
                     }, 1200);
