@@ -4,64 +4,58 @@ recitations_0:
     groups:
       - name: "Python Programming + PyTorch"
         topics:
-          - id: "0.1"
-            title: "Python"
+          - id: "0.01"
+            title: "Python Programming"
             materials: []
             videos: []
             authors: "Dhiksha"
-          - id: "0.2"
+          - id: "0.02"
             title: "OOP Fundamentals"
             materials: []
             videos: []
             authors: "Hrishikesh"
-          - id: "0.3"
+          - id: "0.03"
             title: "NumPy Fundamentals"
             materials: []
             videos: []
             authors: "Uwimana"
-          - id: "0.4"
+          - id: "0.04"
             title: "PyTorch"
             materials: []
             videos: []
             authors: "Sneha & Shrirang"
-          - id: "0.5"
+          - id: "0.05"
             title: "Notebooks and Conda Environments"
             materials: []
             videos: []
             authors: "Nayesha"
-          - id: "0.6"
+          - id: "0.06"
             title: "Tensordot & Einsum"
             materials: []
             videos: []
             authors: "George"
-          - id: ""
+          - id: "0.07"
             title: "Differentiation / Calculus"
             materials: []
             videos: []
             authors: "Bruno"
-          - id: ""
-            title: "JAX"
-            materials: []
-            videos: []
-            authors: "Brad & Hrishikesh"
       - name: "Computational Resources"
         topics:
-          - id: "0.7"
+          - id: "0.08"
             title: "GitHub"
             materials: []
             videos: []
             authors: "Varun"
-          - id: "0.8"
+          - id: "0.09"
             title: "Google Colab"
             materials: []
             videos: []
-            authors: "Kangping"
-          - id: "0.9"
+            authors: "Ayush"
+          - id: "0.10"
             title: "Google Cloud Platform"
             materials: []
             videos: []
             authors: "Anurag"
-
           - id: "0.11"
             title: "Kaggle"
             materials: []
@@ -77,53 +71,53 @@ recitations_0:
             materials: []
             videos: []
             authors: "Yixiong"
-          - id: ""
+          - id: "0.14"
             title: "Intro to Linux"
             materials: []
             videos: []
             authors: "Kangping, Aryan"
       - name: "Data Handling and Processing"
         topics:
-          - id: "0.14"
+          - id: "0.15"
             title: "Datasets"
             materials: []
             videos: []
             authors: "Felix"
-          - id: "0.15"
+          - id: "0.16"
             title: "Dataloaders"
             materials: []
             videos: []
             authors: "Hrishikesh & Shrirang"
-          - id: "0.16"
+          - id: "0.17"
             title: "Data Preprocessing"
             materials: []
             videos: []
             authors: "Aryan"
       - name: "Debugging and Problem-Solving"
         topics:
-          - id: "0.17"
+          - id: "0.18"
             title: "Wandb"
             materials: []
             videos: []
             authors: "Ron"
-          - id: "0.18"
+          - id: "0.19"
             title: "Debugging your Model"
             materials: []
             videos: []
             authors: "Felix"
-          - id: "0.19"
+          - id: "0.20"
             title: "What to Do When Struggling"
             materials: []
             videos: []
             authors: "Nayesha"
       - name: "Algorithmic Techniques"
         topics:
-          - id: "0.20"
+          - id: "0.21"
             title: "Losses Part 1"
             materials: []
             videos: []
             authors: "Yara & Mengchun"
-          - id: "0.21"
+          - id: ""
             title: "Losses Part 2"
             materials: []
             videos: []
@@ -146,7 +140,7 @@ recitations_0:
             videos: []
             authors: "Anurag"
           - id: "0.25"
-            title: "Saving and Loading Model"
+            title: "Saving & Loading Model"
             materials: []
             videos: []
             authors: "Hunter"
@@ -157,22 +151,52 @@ recitations_0:
             materials: []
             videos: []
             authors: "Akshara"
-          - id: "0.27"
+          - id: ""
             title: "Workflow of HW Part 2"
             materials: []
             videos: []
             authors: "Devansh"
-          - id: "0.28"
+          - id: "0.27"
             title: "Flow of the Project"
             materials: []
             videos: []
             authors: "Hunter & Uwimana"
-          - id: "0.29"
+          - id: "0.28"
             title: "How to Read/Write a Report"
             materials: []
             videos: []
             authors: "Prof. Bhiksha"
+      - name: "Week of JAX"
+        status: TBA
+        topics:
+          - id: "jax-01"
+            title: "Intro to JAX"
+            materials: []
+            videos: []
+            authors: "Brad & Hrishikesh"
+
+          - id: "jax-02"
+            title: "Topic relevant to HW1"
+            materials: []
+            videos: []
+            authors: "TBD"
+
+          - id: "jax-03"
+            title: "Topic relevant to HW2"
+            materials: []
+            videos: []
+            authors: "TBD"
+
+          - id: "jax-04"
+            title: "Topic relevant to HW3"
+            materials: []
+            videos: []
+            authors: "TBD"
+
+          - id: "jax-05"
+            title: "Topic relevant to HW4"
+            materials: []
+            videos: []
+            authors: "TBD"
 
 recitations: []
-
-
