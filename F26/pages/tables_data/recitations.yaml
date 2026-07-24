@@ -11,7 +11,9 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.1/Rec_0_1_Python_Fundamentals.ipynb"
               - text: "Quick Check Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.1/Rec_0_1_Python_Quick_Check.ipynb"
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=9N42Wp8KwdI"
             authors: "Dhiksha"
           - id: "0.02"
             title: "OOP Fundamentals"
@@ -20,14 +22,18 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.2/Rec_0_2_Object_Oriented_Fundamentals.ipynb"
               - text: "Quick Check Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.2/Rec_0_2_OOP_QuickCheck.ipynb"
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=tssrNsW_YJQ"
             authors: "Hrishikesh"
           - id: "0.03"
             title: "NumPy Fundamentals"
             materials:
               - text: "Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.3/Rec_0_3_Numpy_Fundamentals_F26.ipynb"
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=8zbEBJae0KM"
             authors: "Uwimana"
           - id: "0.04"
             title: "PyTorch"
@@ -36,7 +42,9 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.4/Recitation_0_4_PyTorch_Final.ipynb"
               - text: "Slides (.pptx)"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/raw/master/F26/documents/recitation_0/0.4/F26_Recitation%200.4.pptx"
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=iEgR2AM-Iyc"
             authors: "Sneha & Shrirang"
           - id: "0.05"
             title: "Notebooks and Conda Environments"
@@ -45,7 +53,9 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.5/F26_rec0.05notebook_example.ipynb"
               - text: "Slides (.pptx)"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/raw/master/F26/documents/recitation_0/0.5/F26_Rec0_Env_Ipynb_Slides.pptx"
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=TfVX0KcviR4"
             authors: "Nayesha"
           - id: "0.06"
             title: "Tensordot & Einsum"
@@ -54,7 +64,9 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.6/einsum_tensordot.ipynb"
               - text: "Slides (.pptx)"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/raw/master/F26/documents/recitation_0/0.6/Tensordot%20Einsum%20Reci%200.06.pptx"
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=qF6CY0obCwI"
             authors: "George"
           - id: "0.07"
             title: "Differentiation / Calculus"
@@ -63,24 +75,34 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.7_part1/Part%20i,%20scalar%20function.pdf"
               - text: "Part II (Multivariate PDF)"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.7_part2/Part%20ii%20multivariate.pdf"
-            videos: []
+            videos:
+              - text: "Part 1 Video"
+                url: "https://www.youtube.com/watch?v=cBF_Qi4qFGw"
+              - text: "Part 2 Video"
+                url: "https://www.youtube.com/watch?v=kgvGN8PzC5Q"
             authors: "Bruno"
       - name: "Computational Resources"
         topics:
           - id: "0.08"
             title: "GitHub"
             materials: []
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=8li7wnZKrDY"
             authors: "Varun"
           - id: "0.09"
             title: "Google Colab"
             materials: []
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=ct19eJN9VZQ"
             authors: "Ayush"
           - id: "0.10"
             title: "Google Cloud Platform"
             materials: []
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=zuk7X5TgwmU"
             authors: "Anurag"
           - id: "0.11"
             title: "Kaggle"

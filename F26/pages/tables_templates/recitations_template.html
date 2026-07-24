@@ -47,6 +47,8 @@
                                 <a href="{{ video.url }}" target="_blank">{{ video.text }}</a>{% if not loop.last %},<br>{% endif %}
                             {% endfor %}
                         </p>
+                        {% else %}
+                        <span style="color: #888; font-style: italic;">Coming Soon</span>
                         {% endif %}
                     </td>
                     <td style="vertical-align: middle; text-align: left;">{{ topic.authors | safe }}</td>
