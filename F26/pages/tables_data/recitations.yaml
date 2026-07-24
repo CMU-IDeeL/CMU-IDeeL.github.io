@@ -6,37 +6,63 @@ recitations_0:
         topics:
           - id: "0.01"
             title: "Python Programming"
-            materials: []
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.1/Rec_0_1_Python_Fundamentals.ipynb"
+              - text: "Quick Check Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.1/Rec_0_1_Python_Quick_Check.ipynb"
             videos: []
             authors: "Dhiksha"
           - id: "0.02"
             title: "OOP Fundamentals"
-            materials: []
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.2/Rec_0_2_Object_Oriented_Fundamentals.ipynb"
+              - text: "Quick Check Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.2/Rec_0_2_OOP_QuickCheck.ipynb"
             videos: []
             authors: "Hrishikesh"
           - id: "0.03"
             title: "NumPy Fundamentals"
-            materials: []
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.3/Rec_0_3_Numpy_Fundamentals_F26.ipynb"
             videos: []
             authors: "Uwimana"
           - id: "0.04"
             title: "PyTorch"
-            materials: []
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.4/Recitation_0_4_PyTorch_Final.ipynb"
+              - text: "Slides (.pptx)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/raw/master/F26/documents/recitation_0/0.4/F26_Recitation%200.4.pptx"
             videos: []
             authors: "Sneha & Shrirang"
           - id: "0.05"
             title: "Notebooks and Conda Environments"
-            materials: []
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.5/F26_rec0.05notebook_example.ipynb"
+              - text: "Slides (.pptx)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/raw/master/F26/documents/recitation_0/0.5/F26_Rec0_Env_Ipynb_Slides.pptx"
             videos: []
             authors: "Nayesha"
           - id: "0.06"
             title: "Tensordot & Einsum"
-            materials: []
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.6/einsum_tensordot.ipynb"
+              - text: "Slides (.pptx)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/raw/master/F26/documents/recitation_0/0.6/Tensordot%20Einsum%20Reci%200.06.pptx"
             videos: []
             authors: "George"
           - id: "0.07"
             title: "Differentiation / Calculus"
-            materials: []
+            materials:
+              - text: "Part I (Scalar Function PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.7_part1/Part%20i,%20scalar%20function.pdf"
+              - text: "Part II (Multivariate PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.7_part2/Part%20ii%20multivariate.pdf"
             videos: []
             authors: "Bruno"
       - name: "Computational Resources"
