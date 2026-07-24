@@ -4,132 +4,209 @@ recitations_0:
     groups:
       - name: "Python Programming + PyTorch"
         topics:
-          - id: "0.1"
-            title: "Python"
-            materials: []
-            videos: []
+          - id: "0.01"
+            title: "Python Programming"
+            date: "July 13"
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.1/%5BNotebook%5D%20Rec-0.01_Python_Fundamentals.ipynb"
+              - text: "Quick Check Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.1/%5BNotebook%5D%20Rec-0.01_Python_QuickCheck.ipynb"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=9N42Wp8KwdI"
             authors: "Dhiksha"
-          - id: "0.2"
+          - id: "0.02"
             title: "OOP Fundamentals"
-            materials: []
-            videos: []
+            date: "July 14"
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.2/%5BNotebook%5D%20Rec-0.02_OOP_Fundamentals.ipynb"
+              - text: "Quick Check Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.2/%5BNotebook%5D%20Rec-0.02_OOP_QuickCheck.ipynb"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=tssrNsW_YJQ"
             authors: "Hrishikesh"
-          - id: "0.3"
+          - id: "0.03"
             title: "NumPy Fundamentals"
-            materials: []
-            videos: []
+            date: "July 15"
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.3/%5BNotebook%5D%20Rec-0.03_NumPy_Fundamentals.ipynb"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=8zbEBJae0KM"
             authors: "Uwimana"
-          - id: "0.4"
+          - id: "0.04"
             title: "PyTorch"
-            materials: []
-            videos: []
+            date: "July 16"
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.4/%5BNotebook%5D%20Rec-0.04_PyTorch.ipynb"
+              - text: "Slides (.pptx)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/raw/master/F26/documents/recitation_0/0.4/%5BSlides%5D%20Rec-0.04_PyTorch.pptx"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=iEgR2AM-Iyc"
             authors: "Sneha & Shrirang"
-          - id: "0.5"
+          - id: "0.05"
             title: "Notebooks and Conda Environments"
-            materials: []
-            videos: []
+            date: "July 17"
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.5/%5BNotebook%5D%20Rec-0.05_Notebooks_Conda.ipynb"
+              - text: "Slides (.pptx)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/raw/master/F26/documents/recitation_0/0.5/%5BSlides%5D%20Rec-0.05_Notebooks_Conda.pptx"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=TfVX0KcviR4"
             authors: "Nayesha"
-          - id: "0.6"
+          - id: "0.06"
             title: "Tensordot & Einsum"
-            materials: []
-            videos: []
+            date: "July 20"
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.6/%5BNotebook%5D%20Rec-0.06_Tensordot_Einsum.ipynb"
+              - text: "Slides (.pptx)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/raw/master/F26/documents/recitation_0/0.6/%5BSlides%5D%20Rec-0.06_Tensordot_Einsum.pptx"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=qF6CY0obCwI"
             authors: "George"
-          - id: ""
+          - id: "0.07"
             title: "Differentiation / Calculus"
-            materials: []
-            videos: []
+            date: "July 21"
+            materials:
+              - text: "Part I (Scalar Function PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.7/%5BPDF%5D%20Rec-0.07_Differentiation_Calculus_Part1_ScalarFunction.pdf"
+              - text: "Part II (Multivariate PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.7/%5BPDF%5D%20Rec-0.07_Differentiation_Calculus_Part2_Multivariate.pdf"
+            videos:
+              - text: "Part 1 Video"
+                url: "https://www.youtube.com/watch?v=cBF_Qi4qFGw"
+              - text: "Part 2 Video"
+                url: "https://www.youtube.com/watch?v=kgvGN8PzC5Q"
             authors: "Bruno"
-          - id: ""
-            title: "JAX"
-            materials: []
-            videos: []
-            authors: "Brad & Hrishikesh"
       - name: "Computational Resources"
         topics:
-          - id: "0.7"
+          - id: "0.08"
             title: "GitHub"
-            materials: []
-            videos: []
+            date: "July 22"
+            materials:
+              - text: "Slides (PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.8/%5BPDF%5D%20Rec-0.08_Git_GitHub_Fundamentals.pdf"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=8li7wnZKrDY"
             authors: "Varun"
-          - id: "0.8"
+          - id: "0.09"
             title: "Google Colab"
-            materials: []
-            videos: []
-            authors: "Kangping"
-          - id: "0.9"
+            date: "July 23"
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.9/%5BNotebook%5D%20Rec-0.09_Google_Colab_Fall2026.ipynb"
+              - text: "Student Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.9/%5BNotebook%5D%20Rec-0.09_Google_Colab_Fall2026_Student.ipynb"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=ct19eJN9VZQ"
+            authors: "Ayush"
+          - id: "0.10"
             title: "Google Cloud Platform"
-            materials: []
-            videos: []
+            date: "July 24"
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.10/%5BNotebook%5D%20Rec-0.10_GCP_VM_Setup.ipynb"
+              - text: "Slides (.pptx)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/raw/master/F26/documents/recitation_0/0.10/%5BSlides%5D%20Rec-0.10_GCP.pptx"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=zuk7X5TgwmU"
             authors: "Anurag"
-
           - id: "0.11"
             title: "Kaggle"
-            materials: []
+            date: "July 27"
+            materials:
+              - text: "Document (.docx)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/raw/master/F26/documents/recitation_0/0.11/%5BDoc%5D%20Rec-0.11_Kaggle_Script.docx"
             videos: []
             authors: "Joshua"
           - id: "0.12"
             title: "PSC Part I (How to connect)"
+            date: "July 28"
             materials: []
             videos: []
             authors: "Pengyu, Mengchun, Sneha"
           - id: "0.13"
             title: "PSC Part II (Get compute for projects)"
+            date: "July 29"
             materials: []
             videos: []
             authors: "Yixiong"
-          - id: ""
+          - id: "0.14"
             title: "Intro to Linux"
+            date: "July 30"
             materials: []
             videos: []
             authors: "Kangping, Aryan"
       - name: "Data Handling and Processing"
         topics:
-          - id: "0.14"
+          - id: "0.15"
             title: "Datasets"
+            date: "July 31"
             materials: []
             videos: []
             authors: "Felix"
-          - id: "0.15"
+          - id: "0.16"
             title: "Dataloaders"
+            date: "August 3"
             materials: []
             videos: []
             authors: "Hrishikesh & Shrirang"
-          - id: "0.16"
+          - id: "0.17"
             title: "Data Preprocessing"
+            date: "August 4"
             materials: []
             videos: []
             authors: "Aryan"
       - name: "Debugging and Problem-Solving"
         topics:
-          - id: "0.17"
+          - id: "0.18"
             title: "Wandb"
+            date: "August 5"
             materials: []
             videos: []
             authors: "Ron"
-          - id: "0.18"
+          - id: "0.19"
             title: "Debugging your Model"
+            date: "August 6"
             materials: []
             videos: []
             authors: "Felix"
-          - id: "0.19"
+          - id: "0.20"
             title: "What to Do When Struggling"
+            date: "August 7"
             materials: []
             videos: []
             authors: "Nayesha"
       - name: "Algorithmic Techniques"
         topics:
-          - id: "0.20"
+          - id: "0.21"
             title: "Losses Part 1"
+            date: "August 10"
             materials: []
             videos: []
             authors: "Yara & Mengchun"
-          - id: "0.21"
+          - id: ""
             title: "Losses Part 2"
+            date: "August 11"
             materials: []
             videos: []
             authors: "Yara & Mengchun"
           - id: "0.22"
             title: "Block Processing"
+            date: "August 12"
             materials: []
             videos: []
             authors: "Akshara"
@@ -137,16 +214,19 @@ recitations_0:
         topics:
           - id: "0.23"
             title: "Pipeline"
+            date: "August 13"
             materials: []
             videos: []
             authors: "Devansh"
           - id: "0.24"
             title: "Distributed Training"
+            date: "August 14"
             materials: []
             videos: []
             authors: "Anurag"
           - id: "0.25"
-            title: "Saving and Loading Model"
+            title: "Saving & Loading Model"
+            date: "August 17"
             materials: []
             videos: []
             authors: "Hunter"
@@ -154,25 +234,64 @@ recitations_0:
         topics:
           - id: "0.26"
             title: "Workflow of HW Part 1"
+            date: "August 18"
             materials: []
             videos: []
             authors: "Akshara"
-          - id: "0.27"
+          - id: ""
             title: "Workflow of HW Part 2"
+            date: "August 19"
             materials: []
             videos: []
             authors: "Devansh"
-          - id: "0.28"
+          - id: "0.27"
             title: "Flow of the Project"
+            date: "August 20"
             materials: []
             videos: []
             authors: "Hunter & Uwimana"
-          - id: "0.29"
+          - id: "0.28"
             title: "How to Read/Write a Report"
+            date: "August 21"
             materials: []
             videos: []
             authors: "Prof. Bhiksha"
+      - name: "Week of JAX"
+        status: TBA
+        topics:
+          - id: "jax-01"
+            title: "Intro to JAX"
+            date: "August 24"
+            materials: []
+            videos: []
+            authors: "Brad & Hrishikesh"
+
+          - id: "jax-02"
+            title: "Topic relevant to HW1"
+            date: "August 25"
+            materials: []
+            videos: []
+            authors: "TBD"
+
+          - id: "jax-03"
+            title: "Topic relevant to HW2"
+            date: "August 26"
+            materials: []
+            videos: []
+            authors: "TBD"
+
+          - id: "jax-04"
+            title: "Topic relevant to HW3"
+            date: "August 27"
+            materials: []
+            videos: []
+            authors: "TBD"
+
+          - id: "jax-05"
+            title: "Topic relevant to HW4"
+            date: "August 28"
+            materials: []
+            videos: []
+            authors: "TBD"
 
 recitations: []
-
-
