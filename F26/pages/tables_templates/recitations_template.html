@@ -24,11 +24,9 @@
         {% for topic in group.topics %} 
                 <tr>
                     <td style="vertical-align: middle; text-align: left;">{{ topic.id }}</td>
-                    {% if group_first and loop.first %}
-                    <td rowspan="{{ total_topics_for_date }}" style="vertical-align: middle; text-align: left;">
-                        {{ recitation_day.date | safe }}
+                    <td style="vertical-align: middle; text-align: left;">
+                        {% if topic.date %}{{ topic.date | safe }}{% elif group_first and loop.first %}{{ recitation_day.date | safe }}{% endif %}
                     </td>
-                    {% endif %}
                     {% if loop.first %}
                     <td rowspan="{{ group.topics | length }}" style="vertical-align: middle; text-align: left;">
                         {{ group.name }}
@@ -47,6 +45,8 @@
                                 <a href="{{ video.url }}" target="_blank">{{ video.text }}</a>{% if not loop.last %},<br>{% endif %}
                             {% endfor %}
                         </p>
+                        {% else %}
+                        <span style="color: #888; font-style: italic;">Coming Soon</span>
                         {% endif %}
                     </td>
                     <td style="vertical-align: middle; text-align: left;">{{ topic.authors | safe }}</td>
