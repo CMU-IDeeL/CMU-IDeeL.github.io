@@ -176,7 +176,7 @@ code {
     }
     .mobile-menu.vis {
         visibility: visible;
-        z-index: 1;
+        z-index: 1050;
         left: calc(100% - 400px);
     }
 
@@ -204,6 +204,7 @@ code {
     }
     .menu-backdrop.vis {
         visibility: visible;
+        z-index: 1040;
         background-color: rgba(0, 0, 0, 0.5);
     }
 
@@ -213,22 +214,34 @@ code {
     .mobile-header {
         display: block;
         position: fixed;
-        text-align: center;
         top: 0;
         left: 0;
         width: 100%;
-        font-size: 30px;
-        background-color: #B55B5B;
+        height: 50px;
         background-color: #A80000;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
     #menu-button {
         cursor: pointer;
         float: right;
-        padding-left: 15px;
-        padding-right: 15px;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
         background-color: #AF4F4F;
         color: white;
-        font-size: 40px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        transition: background-color 0.15s ease;
+    }
+    #menu-button:hover {
+        background-color: #900000;
+    }
+    .titlebar {
+        padding-top: 70px;
     }
 }
 
@@ -345,7 +358,7 @@ a, a:hover {
 
 .title-col {
     text-align: center;
-    display: inline;
+    display: block;
 }
 
 #title {

@@ -16,6 +16,23 @@ const estimatedHeaderHeight = 60;
 const sectionIds = ['#title', '#events', '#oh', '#syllabus', '#lectures', '#recitations', '#homework', '#docs-tools'];
 
 function setActiveNavItem(target) {
+    // If we are on gallery.html, always keep Project Gallery active
+    if (window.location.pathname.indexOf('gallery.html') !== -1) {
+        $('.header-item').removeClass('active');
+        $('.m-header-item').removeClass('active');
+        $('.header-item').each(function() {
+            if ($(this).attr('onclick') && $(this).attr('onclick').includes('gallery.html')) {
+                $(this).addClass('active');
+            }
+        });
+        $('.m-header-item').each(function() {
+            if ($(this).attr('onclick') && $(this).attr('onclick').includes('gallery.html')) {
+                $(this).addClass('active');
+            }
+        });
+        return;
+    }
+
     // Remove active class from all nav items
     $('.header-item').removeClass('active');
     $('.m-header-item').removeClass('active');
@@ -38,6 +55,11 @@ function toSection(target) {
     
     // If element doesn't exist yet (dynamically loaded content), wait for it
     if ($target.length === 0) {
+        // If we are on gallery.html, redirect to index.html with the target hash
+        if (window.location.pathname.indexOf('gallery.html') !== -1) {
+            window.location.href = './index.html' + target;
+            return;
+        }
         var attempts = 0;
         var maxAttempts = 20; // Wait up to 2 seconds (20 * 100ms)
         var waitForElement = setInterval(function() {
@@ -74,29 +96,40 @@ function showChat() {
 
 // Scroll spy: highlight nav item based on scroll position
 $(document).ready(function() {
-    $(window).on('scroll', function() {
-        var scrollPos = $(window).scrollTop() + estimatedHeaderHeight + 50; // offset for better UX
-        var currentSection = null;
-        
-        // Find the current section based on scroll position
-        for (var i = sectionIds.length - 1; i >= 0; i--) {
-            var section = $(sectionIds[i]);
-            if (section.length && section.offset().top <= scrollPos) {
-                currentSection = sectionIds[i];
-                break;
+    // Only run scroll spy on the main page (not gallery.html)
+    if (window.location.pathname.indexOf('gallery.html') === -1) {
+        $(window).on('scroll', function() {
+            var scrollPos = $(window).scrollTop() + estimatedHeaderHeight + 50; // offset for better UX
+            var currentSection = null;
+            
+            // Find the current section based on scroll position
+            for (var i = sectionIds.length - 1; i >= 0; i--) {
+                var section = $(sectionIds[i]);
+                if (section.length && section.offset().top <= scrollPos) {
+                    currentSection = sectionIds[i];
+                    break;
+                }
             }
-        }
+            
+            // Default to first section if at top
+            if (!currentSection && scrollPos < 200) {
+                currentSection = '#title';
+            }
+            
+            if (currentSection) {
+                setActiveNavItem(currentSection);
+            }
+        });
         
-        // Default to first section if at top
-        if (!currentSection && scrollPos < 200) {
-            currentSection = '#title';
-        }
-        
-        if (currentSection) {
-            setActiveNavItem(currentSection);
-        }
-    });
+        // Set initial active state
+        setActiveNavItem('#title');
+    } else {
+        // We are on gallery.html
+        setActiveNavItem('gallery.html');
+    }
     
-    // Set initial active state
-    setActiveNavItem('#title');
+    // Check if hash is present and scroll to it on load
+    if (window.location.hash) {
+        toSection(window.location.hash);
+    }
 });

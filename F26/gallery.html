@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project Gallery | 11-785 Deep Learning</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/vnd.microsoft.icon">
+
+    <!-- display nicely on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap 3 -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+        crossorigin="anonymous">
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic' rel='stylesheet'
+        type='text/css'>
+    <!-- font awesome icons (for mobile menu) -->
+    <script src="https://kit.fontawesome.com/fc8bcf2df2.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- vue 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <!-- custom code -->
+    <script src="./script.js"></script>
+    <!-- Chat Bot -->
+    <link rel="stylesheet" type="text/css" href="./css/chatbot.css">
+
+    <!-- bust caches by incrementing version of main -->
+    <link href="./css/main.4.css" rel="stylesheet" type="text/css">
+
+    <style>
+        /* Extra visual enhancements matching the red/charcoal theme */
+        .project-card {
+            background: #fff;
+            border-left: 4px solid #A80000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+        .section-header-red {
+            border-bottom: 2px solid #A80000;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            color: #A80000;
+            font-weight: 400;
+        }
+        .desc-card {
+            background: #fdfdfd;
+            border: 1px solid #eef0f2;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            min-height: 280px;
+        }
+        .desc-card h4 {
+            color: #b05145;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .desc-card ul {
+            padding-left: 20px;
+        }
+        .desc-card ul li {
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+        .btn-cmu {
+            background-color: #A80000;
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+        .btn-cmu:hover, .btn-cmu:focus {
+            background-color: #800000;
+            color: white;
+            text-decoration: none;
+        }
+        .badge-cmu {
+            background-color: #b05145;
+            color: white;
+            font-weight: 400;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 0.85em;
+        }
+        .form-control:focus {
+            border-color: #b05145;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(176,81,69,.6);
+        }
+        .panel-admin {
+            border-color: #bf766d;
+            background-color: #fff8f7;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #bf766d;
+            margin-top: 30px;
+        }
+        .admin-toggle-btn {
+            background-color: #777;
+            color: white;
+            border: none;
+            font-size: 0.85em;
+            padding: 5px 12px;
+            border-radius: 4px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .admin-toggle-btn:hover {
+            background-color: #555;
+        }
+        .legacy-grid-card {
+            background: #fff;
+            border: 1px solid #eef0f2;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 25px;
+            transition: box-shadow 0.2s ease;
+        }
+        .legacy-grid-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+        }
+        .legacy-grid-card h4 {
+            color: #b05145;
+            margin-top: 0;
+            font-weight: 600;
+        }
+        .legacy-links a {
+            margin-right: 15px;
+            font-weight: 600;
+            font-size: 0.9em;
+            color: #A80000;
+            text-decoration: none;
+        }
+        .legacy-links a:hover {
+            text-decoration: underline;
+        }
+        .google-form-banner {
+            background-color: #f0f7ff;
+            border-left: 4px solid #337ab7;
+            color: #2b5d8c;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+        
+        /* Dynamic Project Topics styles */
+        .topic-pill-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .category-pill {
+            display: inline-block;
+            padding: 4px 10px;
+            background-color: #f5f5f5;
+            color: #444;
+            border-radius: 16px;
+            font-size: 0.82em;
+            cursor: pointer;
+            border: 1px solid #e0e0e0;
+            transition: all 0.2s ease;
+            user-select: none;
+            margin-right: 3px;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+        .category-pill:hover {
+            background-color: #eee;
+            border-color: #ccc;
+            text-decoration: none;
+            color: #444;
+        }
+        .category-pill.active {
+            background-color: #A80000;
+            color: white;
+            border-color: #A80000;
+            box-shadow: 0 2px 8px rgba(168,0,0,0.2);
+        }
+        .topic-card {
+            background: #fff;
+            border: 1px solid #eef0f2;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        @media (min-width: 992px) {
+            .topic-card {
+                height: 310px; /* compact height for grid alignment on desktop */
+            }
+        }
+        @media (max-width: 991px) {
+            .topic-card {
+                height: auto;
+                min-height: auto;
+            }
+            .topic-desc {
+                height: auto !important;
+                -webkit-line-clamp: unset !important;
+            }
+        }
+        .topic-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+            border-color: #d8dee4;
+        }
+        .topic-image {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .topic-icon {
+            font-size: 24px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+            transition: transform 0.3s ease;
+        }
+        .topic-card:hover .topic-icon {
+            transform: scale(1.1);
+        }
+        .topic-star {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            color: #ccc;
+            font-size: 0.85em;
+            transition: all 0.2s ease;
+            z-index: 2;
+        }
+        .topic-star:hover {
+            transform: scale(1.1);
+            color: #FFD700;
+        }
+        .topic-star.selected {
+            color: #FFD700;
+            background: #fff;
+        }
+        .topic-body {
+            padding: 12px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            height: calc(100% - 60px);
+        }
+        .topic-cat-badge {
+            font-size: 0.7em;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.04em;
+            margin-bottom: 3px;
+            display: inline-block;
+        }
+        .topic-title {
+            font-size: 0.95em;
+            font-weight: 700;
+            color: #222;
+            margin-top: 0;
+            margin-bottom: 4px;
+            line-height: 1.3;
+            height: 36px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .topic-desc {
+            font-size: 0.82em;
+            color: #555;
+            line-height: 1.35;
+            margin-bottom: 6px;
+            height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+        .topic-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 6px;
+            height: 22px;
+            overflow: hidden;
+        }
+        .topic-tag {
+            font-size: 0.7em;
+            padding: 1px 6px;
+            background-color: #f0f2f5;
+            color: #475569;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .topic-links {
+            border-top: 1px solid #f0f0f0;
+            padding-top: 6px;
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .topic-link-item {
+            font-size: 0.78em;
+            color: #555;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            font-weight: 500;
+        }
+        .topic-link-item:hover {
+            color: #A80000;
+            text-decoration: underline;
+        }
+        .topic-actions {
+            margin-top: 6px;
+            display: flex;
+            gap: 6px;
+        }
+        .btn-topic-apply {
+            flex-grow: 1;
+            background-color: #A80000;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.8em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            transition: all 0.2s ease;
+        }
+        .btn-topic-apply:hover, .btn-topic-apply:focus {
+            background-color: #800000;
+            color: white;
+            text-decoration: none;
+        }
+        .btn-topic-select {
+            background-color: #f5f5f5;
+            border: 1px solid #e0e0e0;
+            color: #444;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.8em;
+            transition: all 0.2s ease;
+        }
+        .btn-topic-select:hover {
+            background-color: #e0e0e0;
+        }
+        .btn-topic-select.selected {
+            background-color: #FFFDE7;
+            border-color: #FBC02D;
+            color: #F57F17;
+        }
+        
+        /* Toast Notification */
+        .toast-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 10000;
+            pointer-events: none;
+        }
+        .cmu-toast {
+            background: #2e3033;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 6px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+            font-size: 0.95em;
+            border-left: 4px solid #A80000;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .cmu-toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Selection tray style */
+        .selection-tray-card {
+            background: #fff9f9;
+            border: 1px dashed #bf766d;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(168,0,0,0.02);
+        }
+        .selection-tray-title {
+            color: #A80000;
+            margin-top: 0;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .selection-tray-list {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .selection-tray-item {
+            background: white;
+            border: 1px solid #ebd0cc;
+            padding: 12px 15px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            flex-wrap: wrap;
+        }
+        .selection-tray-item-info {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 280px;
+        }
+        .selection-tray-item-title {
+            font-weight: 600;
+            font-size: 0.95em;
+            color: #222;
+        }
+        .selection-tray-item-mentor {
+            font-size: 0.8em;
+            color: #666;
+        }
+        .selection-tray-actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+            flex: 1 1 auto;
+            justify-content: flex-end;
+        }
+        @media (max-width: 991px) {
+            .selection-tray-item {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+            .selection-tray-actions {
+                width: 100%;
+                justify-content: flex-start;
+            }
+            .selection-tray-actions .btn {
+                flex: 1;
+                text-align: center;
+            }
+            .selection-tray-title {
+                font-size: 1.25em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER BAR -->
+    <div class="header">
+        <span class="menu-wrapper">
+            <span class="header-item" onclick="toSection('#title')">
+                About
+            </span>
+            <span class="header-item" onclick="toSection('#events')">
+                Events
+            </span>
+            <span class="header-item" onclick="toSection('#oh')">
+                OH
+            </span>
+            <span class="header-item" onclick="toSection('#syllabus')">
+                Syllabus
+            </span>
+            <span class="header-item" onclick="toSection('#lectures')">
+                Lectures
+            </span>
+            <span class="header-item" onclick="toSection('#recitations')">
+                Recitations & Bootcamps
+            </span>
+            <span class="header-item" onclick="toSection('#homework')">
+                Assignments
+            </span>
+            <span class="header-item" onclick="toSection('#docs-tools')">
+                Docs
+            </span>
+            <span class="header-item active" onclick="window.location='./gallery.html'">
+                Project Gallery
+            </span>
+        </span>
+
+        <span class="version-menu">
+            <span class="current-icon">F26</span>
+            <a class="version-icon" href="../F25/index.html">F25</a>
+            <a class="version-icon" href="../F24/index.html">F24</a>
+        </span>
+    </div>
+
+    <!-- MOBILE NAVIGATION -->
+    <div class="mobile-header">
+        <span id="menu-button" onclick="showMenu()">Menu</span>
+    </div>
+    <div class="menu-backdrop" onclick="hideMenu()"></div>
+    <div class="mobile-menu">
+        <div class="menu-exit m-header-item" onclick="hideMenu()">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#title')">
+            About
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#events')">
+            Events
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#oh')">
+            OH
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#syllabus')">
+            Syllabus
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#lectures')">
+            Lectures
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#recitations')">
+            Recitations & Bootcamps
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#homework')">
+            Assignments
+        </div>
+        <div class="m-header-item" onclick="mobileToSection('#docs-tools')">
+            Docs
+        </div>
+        <div class="m-header-item active" onclick="window.location='./gallery.html'">
+            Project Gallery
+        </div>
+        <div class="m-version-menu">
+            <span class="current-icon">F26</span>
+            <a class="version-icon" href="../F25/index.html">F25</a>
+            <a class="version-icon" href="../F24/index.html">F24</a>
+        </div>
+    </div>
+
+    <!-- TITLE BAR / HERO -->
+    <div class="container titlebar">
+        <div class="row">
+            <div class="title-col vcenter" style="color:#A80000;font-weight:bold;text-align:center;width:100%">
+                <div id="gallery-title">
+                    <b>11-785 & 11-685</b> Deep Learning
+                </div>
+                <div class="subtitle">Course Projects Gallery & Applications</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN APP WRAPPER -->
+    <div id="app" class="container">
+        
+        <!-- SECTION 1: COURSE PROJECT DESCRIPTIONS -->
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="section-header-red"><i class="fas fa-info-circle"></i> Project Types & Guidelines</h2>
+                <p style="margin-bottom: 25px; line-height: 1.6;">
+                    Graduate versions of the Deep Learning course include a substantial hands-on project element. 
+                    Depending on the course code you are registered for, your project requirements and format vary:
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <!-- 11-785 Column -->
+            <div class="col-md-6">
+                <div class="desc-card">
+                    <h4>11-785: Open Course Project</h4>
+                    <p style="font-size: 0.95em; line-height: 1.5; color: #555;">
+                        A fully student-defined open research project. Students form teams of up to 4 to design, 
+                        implement, and benchmark an original deep learning system or perform a thorough, state-of-the-art reproduction study.
+                    </p>
+                    <ul>
+                        <li><b>Core Deliverables:</b> Midterm Report (20%), Video Presentation (35%), Piazza Discussion & Q&A Response (5%), and Final Scientific Report (40%).</li>
+                        <li><b>Schedules:</b> Aligned with industry research. Requires weekly self-guided checkpoints and peer reviews.</li>
+                        <li><b>Topics:</b> Highly open-ended, covering Vision, Speech, NLP, RL, Generative AI, or Medical AI.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 11-685 Column -->
+            <div class="col-md-6">
+                <div class="desc-card">
+                    <h4>11-685: Guided Project Version</h4>
+                    <p style="font-size: 0.95em; line-height: 1.5; color: #555;">
+                        A highly mentored, structured project pathway. Ideal for students seeking closer guidance 
+                        on constructing end-to-end deep learning pipelines.
+                    </p>
+                    <ul>
+                        <li><b>Structure:</b> TAs release pre-configured guided projects with milestone benchmarks and technical constraints.</li>
+                        <li><b>Mentorship:</b> Includes closer, dedicated review sessions and tailored computing support.</li>
+                        <li><b>Flexibility:</b> 11-685 students may explicitly choose to pivot and complete an open 11-785 style project instead, if proposed early.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="alert alert-info" style="border-left: 5px solid #b05145; background-color: #fff9f9; color: #333; font-size: 0.95em;">
+                    <strong>Important compute support:</strong> All project teams will receive computational credits (AWS/GCP/PSC Part II) 
+                    to support model training. Guidelines for requesting compute resources will be published over Piazza.
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 1.5: POTENTIAL PROJECT INITIATIVES GALLERY -->
+        <div class="row" id="topics">
+            <div class="col-xs-12">
+                <h2 class="section-header-red"><i class="fas fa-cubes"></i> Potential Project Initiatives</h2>
+                <p style="margin-bottom: 25px; line-height: 1.6;">
+                    Looking for a course project idea? Here are several potential project initiatives for deep learning research.
+                    Browse the initiatives below, select your favorites to draft your application list, and then submit your application using our Google Form.
+                </p>
+                
+                <!-- Search and Filtering controls -->
+                <div style="background-color: #fcfcfc; border: 1px solid #eef0f2; padding: 12px 15px; border-radius: 6px; margin-bottom: 18px;">
+                    <div class="row">
+                        <!-- Search Bar -->
+                        <div class="col-md-5 col-xs-12" style="margin-bottom: 10px;">
+                            <label style="font-weight: 600; color: #444; margin-bottom: 4px; font-size: 0.9em;"><i class="fas fa-search"></i> Search Projects</label>
+                            <div class="input-group">
+                                <span class="input-group-addon" style="background-color: #fff; border-right: none;"><i class="fas fa-search" style="color: #888;"></i></span>
+                                <input type="text" v-model="searchQuery" class="form-control input-sm" placeholder="Search by title, tags..." style="border-left: none; box-shadow: none;">
+                            </div>
+                        </div>
+                        
+                        <!-- Filter Pills -->
+                        <div class="col-md-7 col-xs-12">
+                            <label style="font-weight: 600; color: #444; margin-bottom: 4px; font-size: 0.9em;"><i class="fas fa-filter"></i> Filter by Category</label>
+                            <div class="topic-pill-container" style="margin-bottom: 0;">
+                                <span class="category-pill" 
+                                      :class="{ active: activeCategory === 'All' }"
+                                      @click="setCategory('All')">All</span>
+                                <span class="category-pill" 
+                                      v-for="cat in categories" 
+                                      :class="{ active: activeCategory === cat }"
+                                      @click="setCategory(cat)">{{ cat }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SELECTION TRAY (Visible only when topics are selected) -->
+                <div v-if="selectedProjects.length > 0" class="selection-tray-card">
+                    <h3 class="selection-tray-title">
+                        <i class="fas fa-star" style="color: #FFD700;"></i> Selected Project Drafts ({{ selectedProjects.length }})
+                    </h3>
+                    <p style="font-size: 0.95em; color: #555; line-height: 1.5; margin-bottom: 15px;">
+                        You have prioritized the following topics. Once you have built your draft list, click the <strong>Apply for Selected Projects</strong> button at the bottom of the list. It will copy your selected project titles to your clipboard and open the official application form in a new tab so you can easily paste them!
+                    </p>
+                    
+                    <div class="selection-tray-list">
+                        <div v-for="proj in selectedProjects" :key="proj.id" class="selection-tray-item">
+                            <div class="selection-tray-item-info">
+                                <span class="selection-tray-item-title">{{ proj.title }}</span>
+                                <span class="selection-tray-item-mentor">
+                                    <span class="label" :style="{ backgroundColor: proj.color }" style="font-size: 0.75em; padding: 2px 6px; color: white;">{{ proj.category }}</span>
+                                </span>
+                            </div>
+                            <div class="selection-tray-actions">
+                                <button class="btn btn-sm btn-default" @click="toggleSelect(proj)" title="Remove from list" style="color: #A80000; border-color: #ebd0cc;">
+                                    <i class="fas fa-trash-alt"></i> Remove
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px; text-align: center;">
+                        <button class="btn btn-cmu btn-lg" @click="applyAllSelected" style="background-color: #A80000; color: white; padding: 12px 35px; font-size: 1.1em; border-radius: 4px; box-shadow: 0 4px 15px rgba(168,0,0,0.2); font-weight: bold; transition: all 0.2s ease; border: none;">
+                            <i class="fab fa-google" style="margin-right: 8px;"></i> Apply for Selected Projects ({{ selectedProjects.length }}) <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 5px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- TOPICS GRID -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6" v-for="project in filteredProjects" :key="project.id">
+                        <div class="topic-card">
+                            <!-- Star Selection Button in Card corner -->
+                            <button class="topic-star" :class="{ selected: isSelected(project) }" @click="toggleSelect(project)" :title="isSelected(project) ? 'Deselect project' : 'Select project'">
+                                <i class="fas fa-star"></i>
+                            </button>
+                            
+                            <!-- Custom Image/Gradient Header with Icon -->
+                            <div class="topic-image" :style="{ background: 'linear-gradient(135deg, ' + project.color + '0f, ' + project.color + '22)' }">
+                                <i :class="project.icon + ' topic-icon'" :style="{ color: project.color }"></i>
+                            </div>
+                            
+                            <!-- Card Body -->
+                            <div class="topic-body">
+                                <div>
+                                    <span class="topic-cat-badge" :style="{ color: project.color }">{{ project.category }}</span>
+                                </div>
+                                <h3 class="topic-title" :title="project.title">{{ project.title }}</h3>
+                                
+                                <p class="topic-desc" :title="project.description">{{ project.description }}</p>
+                                
+                                <div class="topic-tags">
+                                    <span class="topic-tag" v-for="tag in project.tags" :key="tag">{{ tag }}</span>
+                                </div>
+                                
+                                <div class="topic-links">
+                                    <a v-if="project.paper" :href="project.paper" target="_blank" class="topic-link-item">
+                                        <i class="fas fa-file-alt"></i> Paper
+                                    </a>
+                                    <span v-else class="topic-link-item" style="color: #aaa; cursor: not-allowed;"><i class="fas fa-file-alt"></i> Paper</span>
+                                    
+                                    <a v-if="project.dataset" :href="project.dataset" target="_blank" class="topic-link-item">
+                                        <i class="fas fa-database"></i> Dataset
+                                    </a>
+                                    <span v-else class="topic-link-item" style="color: #aaa; cursor: not-allowed;"><i class="fas fa-database"></i> Dataset</span>
+                                    
+                                    <a v-if="project.code" :href="project.code" target="_blank" class="topic-link-item">
+                                        <i class="fab fa-github"></i> Starter Code
+                                    </a>
+                                    <span v-else class="topic-link-item" style="color: #aaa; cursor: not-allowed;"><i class="fab fa-github"></i> Code</span>
+                                </div>
+                                
+                                <div class="topic-actions" style="justify-content: center; margin-top: 15px;">
+                                    <button class="btn btn-topic-select" :class="{ selected: isSelected(project) }" @click="toggleSelect(project)" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                                        <i class="fas fa-star" :style="{ color: isSelected(project) ? '#F57F17' : '#888' }"></i>
+                                        {{ isSelected(project) ? 'Selected' : 'Select Project' }}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Empty State -->
+                    <div class="col-xs-12 text-center" v-if="filteredProjects.length === 0" style="padding: 40px; background: #fafafa; border: 1px dashed #ccc; border-radius: 8px; margin-bottom: 30px;">
+                        <i class="fas fa-search" style="font-size: 3em; color: #ccc; margin-bottom: 15px;"></i>
+                        <h4 style="color: #666; font-weight: 600;">No projects match your criteria</h4>
+                        <p style="color: #888;">Try clearing your search or selecting a different category filter.</p>
+                        <button class="btn btn-default" style="margin-top: 10px;" @click="resetFilters">Reset Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sticky Toast notification container -->
+        <div class="toast-container">
+            <div id="cmuToast" class="cmu-toast">
+                <i class="fas fa-check-circle" style="color: #4CAF50; font-size: 1.2em;"></i>
+                <span id="toastMessage">Copied project title! Opening Google Form...</span>
+            </div>
+        </div>
+
+
+        <!-- SECTION 2: APPLICATION FORM & INSTRUCTIONS -->
+        <div class="row" id="apply">
+            <div class="col-xs-12">
+                <h2 class="section-header-red"><i class="fas fa-paper-plane"></i> Project Applications</h2>
+                
+                <div class="project-card" style="border-left: 4px solid #A80000; padding: 30px; background-color: #fff;">
+                    <h3 style="color: #A80000; margin-top: 0; margin-bottom: 15px; font-weight: bold;">
+                        <i class="fab fa-google"></i> Submit Project Application
+                    </h3>
+                    <p style="font-size: 1.05em; line-height: 1.6; color: #333; margin-bottom: 20px;">
+                        All student groups and individual applicants for <strong>11-785</strong> and <strong>11-685</strong> must register their project application, team members, and preferred project categories. 
+                        Submissions are handled exclusively through our official Google Forms portal.
+                    </p>
+
+                    <div class="text-center" style="margin: 35px 0;">
+                        <button @click="applyAllSelected" class="btn btn-cmu btn-lg" style="padding: 15px 45px; font-size: 1.2em; border-radius: 4px; box-shadow: 0 4px 15px rgba(168,0,0,0.2); transition: all 0.2s ease; border: none; font-weight: bold; background-color: #A80000; color: white;">
+                            <i class="fab fa-google" style="margin-right: 8px;"></i> {{ selectedProjects.length > 0 ? 'Apply with Selected Projects (' + selectedProjects.length + ')' : 'Go to Official Google Form' }} <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 5px;"></i>
+                        </button>
+                    </div>
+
+                    <div style="background-color: #fcfcfc; border: 1px solid #eee; padding: 20px; border-radius: 6px; margin-top: 25px;">
+                        <h4 style="color: #b05145; font-weight: bold; margin-top: 0; margin-bottom: 15px;"><i class="fas fa-clipboard-list"></i> What You Need for Application:</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul style="padding-left: 20px; margin-bottom: 0; line-height: 1.7;">
+                                    <li><b>Student Details:</b> Full names and Andrew IDs of all team members (up to 4 per team).</li>
+                                    <li><b>Registered Course:</b> Specify whether you are registered in 11-785 (Open) or 11-685 (Guided).</li>
+                                    <li><b>Core Technical Area:</b> Select your project's main focus (Speech & Audio, Vision, NLP, Generative AI, RL, or Custom).</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul style="padding-left: 20px; margin-bottom: 0; line-height: 1.7;">
+                                    <li><b>Project Application Statement:</b> A comprehensive paragraph detailing your target model, datasets, and scientific objectives.</li>
+                                    <li><b>Supporting Links:</b> Relevant GitHub repositories, pre-existing research references, or personal portfolios.</li>
+                                    <li><b>Compute Requests:</b> Details if requesting additional AWS, GCP, or PSC credits.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SECTION 3: LEGACY SECTION / PAST SEMESTER GALLERIES -->
+        <div class="row" id="legacy">
+            <div class="col-xs-12">
+                <h2 class="section-header-red"><i class="fas fa-history"></i> Legacy Projects</h2>
+                <p style="margin-bottom: 25px; line-height: 1.6;">
+                    Explore a curated list of exceptionally successful, high-impact student projects from previous semesters of 11-785. 
+                    These serve as benchmark representations of expected scope, quality, and scientific rigor.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Legacy Card 1 -->
+            <div class="col-md-6 col-sm-12">
+                <div class="legacy-grid-card">
+                    <span class="pull-right badge-cmu" style="background-color: #888;">Fall 2020</span>
+                    <h4>AI Limerick Generator & Published Anthology</h4>
+                    <p style="font-size: 0.95em; line-height: 1.5; color: #555; margin-bottom: 15px;">
+                        A team designed an elegant recurrent neural network (LSTM) and fine-tuned GPT architecture to generate 
+                        syntactically pristine, rhyming, and metered English Limericks. They published an anthology book compiled completely of their model's poems.
+                    </p>
+                    <div class="legacy-links">
+                        <a href="https://drive.google.com/file/d/1BORroctAKMLcZmmnmxDZjQwPFYDA8yJ2/view" target="_blank">
+                            <i class="fas fa-file-pdf"></i> Project Report
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=b16xOLpG_p0" target="_blank">
+                            <i class="fab fa-youtube"></i> Video Pitch
+                        </a>
+                        <a href="https://www.amazon.com/dp/B08TV36KF7" target="_blank">
+                            <i class="fab fa-amazon"></i> Published Book
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legacy Card 2 -->
+            <div class="col-md-6 col-sm-12">
+                <div class="legacy-grid-card">
+                    <span class="pull-right badge-cmu" style="background-color: #888;">Fall 2021</span>
+                    <h4>End-to-End Neural Accent Translation</h4>
+                    <p style="font-size: 0.95em; line-height: 1.5; color: #555; margin-bottom: 15px;">
+                        Constructed a sequence-to-sequence model utilizing customized multi-head attention blocks and Mel-spectrogram vocoders 
+                        to translate non-native accented speech into General American accent while completely preserving the speaker's original timbre.
+                    </p>
+                    <div class="legacy-links">
+                        <a href="#" class="disabled" style="color: #aaa; pointer-events: none;"><i class="fas fa-file-pdf"></i> Report Locked</a>
+                        <a href="#" class="disabled" style="color: #aaa; pointer-events: none;"><i class="fab fa-youtube"></i> Video Offline</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Legacy Card 3 -->
+            <div class="col-md-6 col-sm-12">
+                <div class="legacy-grid-card">
+                    <span class="pull-right badge-cmu" style="background-color: #888;">Spring 2022</span>
+                    <h4>Multi-Modal Video Deepfake Detection</h4>
+                    <p style="font-size: 0.95em; line-height: 1.5; color: #555; margin-bottom: 15px;">
+                        This project combined state-of-the-art vision models (EfficientNet-B7) and audio features (Wav2Vec 2.0) 
+                        to locate subtle inconsistencies between facial movements and spoken phonemes, detecting synthetic video deepfakes with 98.4% accuracy.
+                    </p>
+                    <div class="legacy-links">
+                        <a href="#" class="disabled" style="color: #aaa; pointer-events: none;"><i class="fas fa-file-pdf"></i> Report Archive</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legacy Card 4 -->
+            <div class="col-md-6 col-sm-12">
+                <div class="legacy-grid-card">
+                    <span class="pull-right badge-cmu" style="background-color: #888;">Fall 2023</span>
+                    <h4>Autonomous Drone Navigation in GPS-denied Environments</h4>
+                    <p style="font-size: 0.95em; line-height: 1.5; color: #555; margin-bottom: 15px;">
+                        Integrated custom optical flow convolutional blocks and proximal policy optimization (PPO) reinforcement learning agent 
+                        to navigate quadcopters through unseen cluttered corridors entirely from mono-camera inputs without external GPS.
+                    </p>
+                    <div class="legacy-links">
+                        <a href="#" class="disabled" style="color: #aaa; pointer-events: none;"><i class="fas fa-file-pdf"></i> Report Archive</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- FOOTER -->
+    <footer style="background-color: #A80000; color: white; padding: 15px; text-align: center; margin-top: 50px; margin-bottom: 0;">
+        <p style="margin: 0;">11-785 & 11-685 Introduction to Deep Learning | <span style="white-space: nowrap;">Carnegie Mellon University</span></p>
+    </footer>
+
+    <!-- Vue Application Initialization Script -->
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                searchQuery: '',
+                activeCategory: 'All',
+                categories: [
+                    'Speech & Audio',
+                    'Computer Vision',
+                    'Natural Language Processing',
+                    'Generative AI / LLMs',
+                    'Reinforcement Learning',
+                    'Healthcare & Science'
+                ],
+                selectedProjectIds: [],
+                projects: [
+                    {
+                        id: 1,
+                        title: 'Real-time Multi-Speaker TTS',
+                        category: 'Speech & Audio',
+                        mentors: 'Pranava, Prof. Bhiksha Raj',
+                        description: 'Develop an end-to-end Text-to-Speech system based on VITS or YourTTS. The model should clone any speaker\'s voice using only a 3-second reference audio snippet and synthesize highly natural speech in real time.',
+                        paper: 'https://arxiv.org/abs/2106.06103',
+                        dataset: 'https://www.openslr.org/12',
+                        code: 'https://github.com/coqui-ai/TTS',
+                        tags: ['PyTorch', 'TTS', 'GANs', 'Audio'],
+                        icon: 'fas fa-volume-up',
+                        color: '#E05A47'
+					},
+                    {
+                        id: 2,
+                        title: 'Self-Supervised Monocular Depth Estimation',
+                        category: 'Computer Vision',
+                        mentors: 'Aryan Singh, Prof. Rita Singh',
+                        description: 'Train a deep network (MonoDepth2) to predict accurate pixel-wise depth maps from a single camera frame without ground-truth depth data, using geometric wrap constraints on video sequences.',
+                        paper: 'https://arxiv.org/abs/1806.01260',
+                        dataset: 'http://www.cvlibs.net/datasets/kitti/',
+                        code: 'https://github.com/nianticlabs/monodepth2',
+                        tags: ['PyTorch', 'CNNs', 'Self-Supervised', 'Vision'],
+                        icon: 'fas fa-eye',
+                        color: '#2E7D32'
+                    },
+                    {
+                        id: 3,
+                        title: 'Low-Resource Neural Translation',
+                        category: 'Natural Language Processing',
+                        mentors: 'Dr. Shinji Watanabe, Shuo Yi',
+                        description: 'Build and optimize sequence-to-sequence translation models for low-resource languages by aligning word embedding spaces from independent monolingual corpora and applying back-translation.',
+                        paper: 'https://arxiv.org/abs/1710.04087',
+                        dataset: 'https://opus.nlpl.eu/',
+                        code: 'https://huggingface/',
+                        tags: ['Transformers', 'HuggingFace', 'Translation', 'NLP'],
+                        icon: 'fas fa-language',
+                        color: '#1565C0'
+                    },
+                    {
+                        id: 4,
+                        title: 'Fine-Tuning LLaMA-3 via RLAIF',
+                        category: 'Generative AI / LLMs',
+                        mentors: 'Ananya, Prof. Bhiksha Raj',
+                        description: 'Explore state-of-the-art alignment for large models. Implement Direct Preference Optimization (DPO) and PPO training on a LLaMA base model utilizing preference feedback synthesized automatically by stronger judge models.',
+                        paper: 'https://arxiv.org/abs/2309.00267',
+                        dataset: 'https://huggingface.co/datasets/openbmb/UltraFeedback',
+                        code: 'https://github.com/huggingface/trl',
+                        tags: ['LLMs', 'RLHF', 'DPO', 'Alignment'],
+                        icon: 'fas fa-brain',
+                        color: '#6A1B9A'
+                    },
+                    {
+                        id: 5,
+                        title: 'Safe RL for Legged Robotics',
+                        category: 'Reinforcement Learning',
+                        mentors: 'Soumitra, Prof. Rita Singh',
+                        description: 'Train quadruped and legged robotic agents in physics simulations (MuJoCo) using safety-constrained policy gradient algorithms (e.g., PPO-Lagrangian) to complete dynamic navigation runs.',
+                        paper: 'https://arxiv.org/abs/2103.14321',
+                        dataset: 'https://mujoco.org/',
+                        code: 'https://github.com/DLR-RM/stable-baselines3',
+                        tags: ['MuJoCo', 'PPO', 'Robotics', 'Safe-RL'],
+                        icon: 'fas fa-robot',
+                        color: '#EF6C00'
+                    },
+                    {
+                        id: 6,
+                        title: 'Multi-Modal Early Cancer Detection',
+                        category: 'Healthcare & Science',
+                        mentors: 'Dr. Bhiksha Raj, Neha Gupta',
+                        description: 'Build a multi-modal deep learning pipeline combining 3D convolutional models (to process patient scans) with medical transformer networks (e.g., BioBERT for written clinical radiology notes) to predict diagnostic outcomes.',
+                        paper: 'https://arxiv.org/abs/2010.01185',
+                        dataset: 'https://mimic.mit.edu/',
+                        code: 'https://github.com/Project-MONAI/MONAI',
+                        tags: ['3D ResNet', 'BioBERT', 'Multimodal', 'Healthcare'],
+                        icon: 'fas fa-heartbeat',
+                        color: '#C62828'
+                    }
+                ]
+            },
+            computed: {
+                selectedProjects: function() {
+                    var self = this;
+                    return this.projects.filter(function(p) {
+                        return self.selectedProjectIds.indexOf(p.id) !== -1;
+                    });
+                },
+                filteredProjects: function() {
+                    var self = this;
+                    return this.projects.filter(function(p) {
+                        // Category filter
+                        if (self.activeCategory !== 'All' && p.category !== self.activeCategory) {
+                            return false;
+                        }
+                        // Search query filter
+                        if (self.searchQuery.trim() !== '') {
+                            var query = self.searchQuery.toLowerCase();
+                            var titleMatch = p.title.toLowerCase().indexOf(query) !== -1;
+                            var mentorMatch = p.mentors.toLowerCase().indexOf(query) !== -1;
+                            var descMatch = p.description.toLowerCase().indexOf(query) !== -1;
+                            var tagMatch = p.tags.some(function(t) {
+                                return t.toLowerCase().indexOf(query) !== -1;
+                            });
+                            return titleMatch || mentorMatch || descMatch || tagMatch;
+                        }
+                        return true;
+                    });
+                }
+            },
+            methods: {
+                setCategory: function(cat) {
+                    this.activeCategory = cat;
+                },
+                isSelected: function(proj) {
+                    return this.selectedProjectIds.indexOf(proj.id) !== -1;
+                },
+                toggleSelect: function(proj) {
+                    var idx = this.selectedProjectIds.indexOf(proj.id);
+                    if (idx === -1) {
+                        this.selectedProjectIds.push(proj.id);
+                        this.showToast("Added '" + proj.title + "' to your selection drafts!");
+                    } else {
+                        this.selectedProjectIds.splice(idx, 1);
+                        this.showToast("Removed '" + proj.title + "' from selection drafts.");
+                    }
+                },
+                copyAndApply: function(proj) {
+                    var self = this;
+                    // Attempt to copy title to clipboard
+                    try {
+                        var dummy = document.createElement("textarea");
+                        dummy.style.position = 'fixed';
+                        dummy.style.opacity = '0';
+                        document.body.appendChild(dummy);
+                        dummy.value = proj.title;
+                        dummy.select();
+                        document.execCommand("copy");
+                        document.body.removeChild(dummy);
+                        
+                        this.showToast("Copied '" + proj.title + "'! Opening application form...", true);
+                    } catch (err) {
+                        console.error("Could not copy text: ", err);
+                        this.showToast("Opening application form...", true);
+                    }
+                    
+                    // Open Google Form in a new tab after 1.2s delay to let the toast be seen
+                    setTimeout(function() {
+                        window.open("https://forms.gle/dcMheTGXz4zF6Hem6", "_blank");
+                    }, 1200);
+                },
+                applyAllSelected: function() {
+                    var self = this;
+                    if (this.selectedProjects.length === 0) {
+                        this.showToast("Opening official Google Form...", true);
+                        setTimeout(function() {
+                            window.open("https://forms.gle/dcMheTGXz4zF6Hem6", "_blank");
+                        }, 500);
+                        return;
+                    }
+                    
+                    // Join selected project titles with semicolon
+                    var titles = this.selectedProjects.map(function(p) { return p.title; }).join("; ");
+                    
+                    try {
+                        var dummy = document.createElement("textarea");
+                        dummy.style.position = 'fixed';
+                        dummy.style.opacity = '0';
+                        document.body.appendChild(dummy);
+                        dummy.value = titles;
+                        dummy.select();
+                        document.execCommand("copy");
+                        document.body.removeChild(dummy);
+                        
+                        this.showToast("Copied drafted projects to clipboard! Opening Google Form...", true);
+                    } catch (err) {
+                        console.error("Could not copy text: ", err);
+                        this.showToast("Opening application form...", true);
+                    }
+                    
+                    setTimeout(function() {
+                        window.open("https://forms.gle/dcMheTGXz4zF6Hem6", "_blank");
+                    }, 1200);
+                },
+                showToast: function(message, isGreen) {
+                    var toast = document.getElementById("cmuToast");
+                    var textSpan = document.getElementById("toastMessage");
+                    if (toast && textSpan) {
+                        textSpan.innerText = message;
+                        if (isGreen) {
+                            toast.style.borderLeft = "4px solid #4CAF50";
+                        } else {
+                            toast.style.borderLeft = "4px solid #A80000";
+                        }
+                        toast.classList.add("show");
+                        setTimeout(function() {
+                            toast.classList.remove("show");
+                        }, 3000);
+                    }
+                },
+                resetFilters: function() {
+                    this.searchQuery = '';
+                    this.activeCategory = 'All';
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
