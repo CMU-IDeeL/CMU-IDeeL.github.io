@@ -204,7 +204,7 @@
         }
         @media (min-width: 992px) {
             .topic-card {
-                height: 330px; /* compact height for grid alignment on desktop */
+                height: 310px; /* compact height for grid alignment on desktop */
             }
         }
         @media (max-width: 991px) {
@@ -294,27 +294,16 @@
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
         }
-        .topic-mentors {
-            font-size: 0.8em;
-            color: #666;
-            margin-bottom: 4px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
         .topic-desc {
             font-size: 0.82em;
             color: #555;
             line-height: 1.35;
             margin-bottom: 6px;
-            height: 44px;
+            height: 60px;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
         }
         .topic-tags {
@@ -657,13 +646,13 @@
             </div>
         </div>
 
-        <!-- SECTION 1.5: PROPOSED PROJECT TOPICS GALLERY -->
+        <!-- SECTION 1.5: POTENTIAL PROJECT INITIATIVES GALLERY -->
         <div class="row" id="topics">
             <div class="col-xs-12">
-                <h2 class="section-header-red"><i class="fas fa-cubes"></i> F26 Proposed Project Topics</h2>
+                <h2 class="section-header-red"><i class="fas fa-cubes"></i> Potential Project Initiatives</h2>
                 <p style="margin-bottom: 25px; line-height: 1.6;">
-                    Looking for a course project idea? TAs and professors have proposed several high-impact deep learning research topics.
-                    Browse the topics below, select your favorites to draft your application list, and then submit your application for each project using our Google Form.
+                    Looking for a course project idea? Here are several potential project initiatives for deep learning research.
+                    Browse the initiatives below, select your favorites to draft your application list, and then submit your application using our Google Form.
                 </p>
                 
                 <!-- Search and Filtering controls -->
@@ -674,7 +663,7 @@
                             <label style="font-weight: 600; color: #444; margin-bottom: 4px; font-size: 0.9em;"><i class="fas fa-search"></i> Search Projects</label>
                             <div class="input-group">
                                 <span class="input-group-addon" style="background-color: #fff; border-right: none;"><i class="fas fa-search" style="color: #888;"></i></span>
-                                <input type="text" v-model="searchQuery" class="form-control input-sm" placeholder="Search by title, mentor, tags..." style="border-left: none; box-shadow: none;">
+                                <input type="text" v-model="searchQuery" class="form-control input-sm" placeholder="Search by title, tags..." style="border-left: none; box-shadow: none;">
                             </div>
                         </div>
                         
@@ -708,8 +697,7 @@
                             <div class="selection-tray-item-info">
                                 <span class="selection-tray-item-title">{{ proj.title }}</span>
                                 <span class="selection-tray-item-mentor">
-                                    <span class="label" :style="{ backgroundColor: proj.color }" style="font-size: 0.75em; padding: 2px 6px; margin-right: 5px; color: white;">{{ proj.category }}</span>
-                                    <span style="margin-left: 5px;">Mentors: {{ proj.mentors }}</span>
+                                    <span class="label" :style="{ backgroundColor: proj.color }" style="font-size: 0.75em; padding: 2px 6px; color: white;">{{ proj.category }}</span>
                                 </span>
                             </div>
                             <div class="selection-tray-actions">
@@ -747,11 +735,6 @@
                                     <span class="topic-cat-badge" :style="{ color: project.color }">{{ project.category }}</span>
                                 </div>
                                 <h3 class="topic-title" :title="project.title">{{ project.title }}</h3>
-                                
-                                <div class="topic-mentors">
-                                    <i class="fas fa-user-friends" style="color: #888;"></i>
-                                    <span><strong>Mentors:</strong> {{ project.mentors }}</span>
-                                </div>
                                 
                                 <p class="topic-desc" :title="project.description">{{ project.description }}</p>
                                 
