@@ -130,33 +130,61 @@ recitations_0:
             materials:
               - text: "Document (.docx)"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/raw/master/F26/documents/recitation_0/0.11/%5BDoc%5D%20Rec-0.11_Kaggle_Script.docx"
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=LJdlPXNVWD4"
             authors: "Joshua"
           - id: "0.12"
             title: "PSC Part I (How to connect)"
             date: "July 28"
-            materials: []
-            videos: []
+            materials:
+              - text: "Slides (PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.12/%5BSlides%5D%20Rec-0.12_PSC_Connection.pptx.pdf"
+              - text: "Usage Guide (PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.12/%5BDoc%5D%20Rec-0.12_PSC%20Usage%20Guide.docx.pdf"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=WYSCSODOMGM"
             authors: "Pengyu, Mengchun, Sneha"
           - id: "0.13"
             title: "PSC Part II (Get compute for projects)"
             date: "July 29"
-            materials: []
-            videos: []
+            materials:
+              - text: "Slides (PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.13/%5BSlides%5D%20Rec-0.13_Get_Compute.pptx.pdf"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=J4H4bvCLiPw"
             authors: "Yixiong"
           - id: "0.14"
             title: "Intro to Linux"
             date: "July 30"
-            materials: []
-            videos: []
+            materials:
+              - text: "Slides (PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.14/%5BSlides%5D%20Rec-0.14_Linux.pdf"
+              - text: "Bash Script"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.14/%5BBash_Script%5D%20Rec-0.14_Linux.sh"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=qhRtIlFPwv8"
             authors: "Kangping, Aryan"
       - name: "Data Handling and Processing"
         topics:
           - id: "0.15"
             title: "Datasets"
             date: "July 31"
-            materials: []
-            videos: []
+            materials:
+              - text: "Slides (PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.15/%5BSlides%5D%20Rec-0.15_Datasets.pdf"
+              - text: "Part 1 Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.15/%5BNotebook%5D%20Rec-0.15_Datasets_Part1.ipynb"
+              - text: "Part 2 Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.15/%5BNotebook%5D%20Rec-0.15_Datasets_Part2.ipynb"
+              - text: "Part 3 Optimization Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.15/%5BNotebook%5D%20Rec-0.15_Datasets_Part3_Optimization.ipynb"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=pK9ZNxcun-A"
             authors: "Felix"
           - id: "0.16"
             title: "Dataloaders"
@@ -167,7 +195,9 @@ recitations_0:
           - id: "0.17"
             title: "Data Preprocessing"
             date: "August 4"
-            materials: []
+            materials:
+              - text: "Slides (PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.17/%5BSlides%5D%20Rec-0.17_Data_Preprocessing.pdf"
             videos: []
             authors: "Aryan"
       - name: "Debugging and Problem-Solving"
@@ -175,19 +205,27 @@ recitations_0:
           - id: "0.18"
             title: "Wandb"
             date: "August 5"
-            materials: []
+            materials:
+              - text: "Slides (PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.18/%5BSlides%5D%20Rec-0.18_WandB.pdf"
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.18/%5BNotebook%5D%20Rec-0.18_WandB.ipynb"
             videos: []
             authors: "Ron"
           - id: "0.19"
             title: "Debugging your Model"
             date: "August 6"
-            materials: []
+            materials:
+              - text: "Slides (PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.19/%5BSlides%5D%20Rec-0.19_Debugging.pdf"
             videos: []
             authors: "Felix"
           - id: "0.20"
             title: "What to Do When Struggling"
             date: "August 7"
-            materials: []
+            materials:
+              - text: "Slides (PDF)"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.20/%5BSlides%5D%20Rec-0.20_When_Struggling.pdf"
             videos: []
             authors: "Nayesha"
       - name: "Algorithmic Techniques"
