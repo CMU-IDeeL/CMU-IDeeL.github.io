@@ -123,6 +123,39 @@
         .legacy-links a:hover {
             text-decoration: underline;
         }
+        .project-nav {
+            background: #A80000;
+            color: white;
+            padding: 12px 0;
+            margin-bottom: 20px;
+        }
+        .project-nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .project-nav a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .project-nav a:hover,
+        .project-nav a:focus {
+            color: white;
+            text-decoration: underline;
+        }
+        .project-nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        @media (max-width: 767px) {
+            .project-nav .container {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
 
         /* Dynamic Project Topics styles */
         .topic-pill-container {
@@ -172,7 +205,7 @@
         }
         @media (min-width: 992px) {
             .topic-card {
-                height: 310px; /* compact height for grid alignment on desktop */
+                height: 400px;
             }
         }
         @media (max-width: 991px) {
@@ -263,16 +296,13 @@
             -webkit-box-orient: vertical;
         }
         .topic-desc {
-            font-size: 0.82em;
+            font-size: 0.88em;
             color: #555;
-            line-height: 1.35;
+            line-height: 1.45;
             margin-bottom: 6px;
-            height: 60px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
+            max-height: 105px;
+            overflow-y: auto;
+            padding-right: 4px;
         }
         .topic-tags {
             display: flex;
@@ -443,13 +473,23 @@
 </head>
 
 <body>
+    <nav class="project-nav" aria-label="Project page navigation">
+        <div class="container">
+            <a href="./index.html"><i class="fas fa-arrow-left"></i> Back to Course Page</a>
+            <div class="project-nav-links">
+                <a href="#topics">Projects</a>
+                <a href="#apply">Application</a>
+                <a href="#legacy">Past Projects</a>
+            </div>
+        </div>
+    </nav>
     <div class="container titlebar">
         <div class="row">
             <div class="title-col vcenter" style="color:#A80000;font-weight:bold;text-align:center;width:100%">
                 <div id="title" style="font-size:2em">
                     <b>11-785</b> Introduction to Deep Learning
                 </div>
-                <h2>Projects page</h2>
+                <h2>Projects Page</h2>
             </div>
         </div>
     </div>
@@ -467,6 +507,7 @@
                 <h2 class="section-header-red"><i class="fas fa-info-circle"></i> Project Types & Guidelines</h2>
                 <p style="margin-bottom: 25px; line-height: 1.6;">
                     Graduate versions of the Deep Learning course include a substantial hands-on project element.
+                    In 11-785, you are welcome to propose your own project; the suggested initiatives below are optional starting points.
                     Depending on the course code you are registered for, your project requirements and format vary:
                 </p>
             </div>
@@ -478,7 +519,7 @@
                 <div class="desc-card">
                     <h4>11-785: Open Course Project</h4>
                     <p style="font-size: 0.95em; line-height: 1.5; color: #555;">
-                        A fully student-defined open research project. Students form teams of up to 4 to design,
+                        A fully student-defined open research project. You may choose your own topic and form teams of up to 4 to design,
                         implement, and benchmark an original deep learning system or perform a thorough, state-of-the-art reproduction study.
                     </p>
                     <ul>
@@ -509,7 +550,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="alert alert-info" style="border-left: 5px solid #b05145; background-color: #fff9f9; color: #333; font-size: 0.95em;">
-                    <strong>Important compute support:</strong> All project teams will receive computational credits (AWS/GCP/PSC Part II)
+                    <strong>Important compute support:</strong> All project teams will receive computational credits (AWS/GCP/PSC)
                     to support model training. Guidelines for requesting compute resources will be published over Piazza.
                 </div>
             </div>
@@ -520,8 +561,8 @@
             <div class="col-xs-12">
                 <h2 class="section-header-red"><i class="fas fa-cubes"></i> Potential Project Initiatives</h2>
                 <p style="margin-bottom: 25px; line-height: 1.6;">
-                    Looking for a course project idea? Here are several potential project initiatives for deep learning research.
-                    Browse the initiatives below, select your favorites to draft your application list, and then submit your application using our Google Form.
+                    Looking for a course project idea? These optional initiatives are starting points for deep learning research.
+                    You can also propose a project of your own. Browse the initiatives below if helpful, then use the application form to register your chosen project.
                 </p>
 
                 <!-- Search and Filtering controls -->
@@ -667,13 +708,13 @@
                         <i class="fab fa-google"></i> Submit Project Application
                     </h3>
                     <p style="font-size: 1.05em; line-height: 1.6; color: #333; margin-bottom: 20px;">
-                        All student groups and individual applicants for <strong>11-785</strong> and <strong>11-685</strong> must register their project application, team members, and preferred project categories.
-                        Submissions are handled exclusively through our official Google Forms portal.
+                        Use this form to register your project, team members, and project category for <strong>11-785</strong> or <strong>11-685</strong>.
+                        For 11-785, your project can be a student-proposed idea or one of the optional initiatives listed above.
                     </p>
 
                     <div class="text-center" style="margin: 35px 0;">
                         <button @click="applyAllSelected" class="btn btn-cmu btn-lg" style="padding: 15px 45px; font-size: 1.2em; border-radius: 4px; box-shadow: 0 4px 15px rgba(168,0,0,0.2); transition: all 0.2s ease; border: none; font-weight: bold; background-color: #A80000; color: white;">
-                            <i class="fab fa-google" style="margin-right: 8px;"></i> {{ selectedProjects.length > 0 ? 'Apply with Selected Projects (' + selectedProjects.length + ')' : 'Go to Official Google Form' }} <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 5px;"></i>
+                            <i class="fab fa-google" style="margin-right: 8px;"></i> {{ selectedProjects.length > 0 ? 'Apply with Selected Projects (' + selectedProjects.length + ')' : 'Go to Application Form' }} <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 5px;"></i>
                         </button>
                     </div>
 
@@ -712,73 +753,55 @@
         </div>
 
         <div class="row">
-            <!-- Legacy Card 1 -->
+            <div class="col-md-6 col-sm-12">
+                <div class="legacy-grid-card">
+                    <span class="pull-right badge-cmu" style="background-color: #888;">Spring 2020</span>
+                    <h4>Spring 2020 Project Archive</h4>
+                    <p>Browse the archived top 25 projects and their submitted reports.</p>
+                    <div class="legacy-links">
+                        <a href="./projects/S20/gallery.html" target="_blank"><i class="fas fa-file-pdf"></i> Project Reports</a>
+                        <a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPyyQzmID534-R1CnGJs0Ls-" target="_blank"><i class="fab fa-youtube"></i> Project Videos</a>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-6 col-sm-12">
                 <div class="legacy-grid-card">
                     <span class="pull-right badge-cmu" style="background-color: #888;">Fall 2020</span>
-                    <h4>AI Limerick Generator & Published Anthology</h4>
-                    <p style="font-size: 0.95em; line-height: 1.5; color: #555; margin-bottom: 15px;">
-                        A team designed an elegant recurrent neural network (LSTM) and fine-tuned GPT architecture to generate
-                        syntactically pristine, rhyming, and metered English Limericks. They published an anthology book compiled completely of their model's poems.
-                    </p>
+                    <h4>Fall 2020 Project Archive</h4>
+                    <p>Browse the complete Fall 2020 collection of projects and reports.</p>
                     <div class="legacy-links">
-                        <a href="https://drive.google.com/file/d/1BORroctAKMLcZmmnmxDZjQwPFYDA8yJ2/view" target="_blank">
-                            <i class="fas fa-file-pdf"></i> Project Report
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=b16xOLpG_p0" target="_blank">
-                            <i class="fab fa-youtube"></i> Video Pitch
-                        </a>
-                        <a href="https://www.amazon.com/dp/B08TV36KF7" target="_blank">
-                            <i class="fab fa-amazon"></i> Published Book
-                        </a>
+                        <a href="./projects/F20/gallery.html" target="_blank"><i class="fas fa-file-pdf"></i> Project Reports</a>
+                        <a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPzcVQIc7eh0kOaOLhtWksJo" target="_blank"><i class="fab fa-youtube"></i> Project Videos</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Legacy Card 2 -->
             <div class="col-md-6 col-sm-12">
                 <div class="legacy-grid-card">
-                    <span class="pull-right badge-cmu" style="background-color: #888;">Fall 2021</span>
-                    <h4>End-to-End Neural Accent Translation</h4>
-                    <p style="font-size: 0.95em; line-height: 1.5; color: #555; margin-bottom: 15px;">
-                        Constructed a sequence-to-sequence model utilizing customized multi-head attention blocks and Mel-spectrogram vocoders
-                        to translate non-native accented speech into General American accent while completely preserving the speaker's original timbre.
-                    </p>
+                    <span class="pull-right badge-cmu" style="background-color: #888;">Spring 2024</span>
+                    <h4>Spring 2024 Project Archive</h4>
+                    <p>Browse all Spring 2024 project submissions and reports.</p>
                     <div class="legacy-links">
-                        <a href="#" class="disabled" style="color: #aaa; pointer-events: none;"><i class="fas fa-file-pdf"></i> Report Locked</a>
-                        <a href="#" class="disabled" style="color: #aaa; pointer-events: none;"><i class="fab fa-youtube"></i> Video Offline</a>
+                        <a href="./projects/S24/gallery.html" target="_blank"><i class="fas fa-file-pdf"></i> Project Reports</a>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
-            <!-- Legacy Card 3 -->
             <div class="col-md-6 col-sm-12">
                 <div class="legacy-grid-card">
-                    <span class="pull-right badge-cmu" style="background-color: #888;">Spring 2022</span>
-                    <h4>Multi-Modal Video Deepfake Detection</h4>
-                    <p style="font-size: 0.95em; line-height: 1.5; color: #555; margin-bottom: 15px;">
-                        This project combined state-of-the-art vision models (EfficientNet-B7) and audio features (Wav2Vec 2.0)
-                        to locate subtle inconsistencies between facial movements and spoken phonemes, detecting synthetic video deepfakes with 98.4% accuracy.
-                    </p>
+                    <span class="pull-right badge-cmu" style="background-color: #888;">Fall 2024</span>
+                    <h4>Fall 2024 Project Archive</h4>
+                    <p>Browse all Fall 2024 project submissions and reports.</p>
                     <div class="legacy-links">
-                        <a href="#" class="disabled" style="color: #aaa; pointer-events: none;"><i class="fas fa-file-pdf"></i> Report Archive</a>
+                        <a href="./projects/F24/gallery.html" target="_blank"><i class="fas fa-file-pdf"></i> Project Reports</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Legacy Card 4 -->
             <div class="col-md-6 col-sm-12">
                 <div class="legacy-grid-card">
-                    <span class="pull-right badge-cmu" style="background-color: #888;">Fall 2023</span>
-                    <h4>Autonomous Drone Navigation in GPS-denied Environments</h4>
-                    <p style="font-size: 0.95em; line-height: 1.5; color: #555; margin-bottom: 15px;">
-                        Integrated custom optical flow convolutional blocks and proximal policy optimization (PPO) reinforcement learning agent
-                        to navigate quadcopters through unseen cluttered corridors entirely from mono-camera inputs without external GPS.
-                    </p>
+                    <span class="pull-right badge-cmu" style="background-color: #888;">Spring 2025</span>
+                    <h4>Spring 2025 Project Archive</h4>
+                    <p>Browse all Spring 2025 project submissions and reports.</p>
                     <div class="legacy-links">
-                        <a href="#" class="disabled" style="color: #aaa; pointer-events: none;"><i class="fas fa-file-pdf"></i> Report Archive</a>
+                        <a href="./projects/S25/gallery.html" target="_blank"><i class="fas fa-file-pdf"></i> Project Reports</a>
                     </div>
                 </div>
             </div>
@@ -796,75 +819,8 @@
                 <li><b>Available:</b> <span class="avail">Yes!</span></li>
                 <li><b>Contact:</b> <span class="contact">Akshat</span></li>
             </ul>
-        <div>
-    </template>
-
-    <!-- =========================================================
-         ORIGINAL PROJECT PAGE CONTENT (unchanged, kept in full)
-         ========================================================= -->
-    <div class="container">
-        <h4>Here is a list of project resources.</h4>
-        <br>
-
-        <h3>Spring 2025</h3>
-        <ul>
-            <li>
-                <a href="./projects/S25/gallery.html">All Projects Gallery</a>
-            </li>
-            <!-- <li>
-                <a href="ADD LINK HERE">Playlist of All Projects</a>
-            </li> -->
-        </ul>
-        <h3>Fall 2024</h3>
-        <ul>
-            <li>
-                <a href="./projects/F24/gallery.html">All Projects Gallery</a>
-            </li>
-            <!-- <li>
-                <a href="ADD LINK HERE">Playlist of All Projects</a>
-            </li> -->
-        </ul>
-        <h3>Spring 2024</h3>
-        <ul>
-            <li>
-                <a href="./projects/S24/gallery.html">All Projects Gallery</a>
-            </li>
-            <!-- <li>
-                <a href="ADD LINK HERE">Playlist of All Projects</a>
-            </li> -->
-        </ul>
-
-
-        <h3>Fall 2020</h3>
-        <ul>
-            <li>
-                <a href="./projects/F20/gallery.html">All Projects Gallery</a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPzcVQIc7eh0kOaOLhtWksJo">Playlist of All Projects</a>
-            </li>
-        </ul>
-
-        <h3>Spring 2020</h3>
-        <ul>
-            <li>
-                <a href="./projects/S20/gallery.html">Top 25 Gallery</a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/playlist?list=PLp-0K3kfddPyyQzmID534-R1CnGJs0Ls-">Playlist of All Projects</a>
-            </li>
-        </ul>
-
-        <h3>TA/PhD/Mentor Ideas</h3>
-        <div id="ideas" style="margin-bottom: 60px;">
-            Loading...
         </div>
-
-        <script src="projects.js"></script>
-        <script src="load_squares.js"></script>
-        <script src="load_suggestions.js"></script>
-    </div>
-    <!-- ============== END ORIGINAL PROJECT PAGE CONTENT ============== -->
+    </template>
 
     <footer style="background-color: #A80000; color: white; padding: 15px; text-align: center; margin-top: 50px; margin-bottom: 0;">
         <p style="margin: 0;">11-785 Introduction to Deep Learning | <span style="white-space: nowrap;">Carnegie Mellon University</span></p>
@@ -1016,7 +972,7 @@
                 applyAllSelected: function() {
                     var self = this;
                     if (this.selectedProjects.length === 0) {
-                        this.showToast("Opening official Google Form...", true);
+                        this.showToast("Opening application form...", true);
                         setTimeout(function() {
                             window.open("https://forms.gle/dcMheTGXz4zF6Hem6", "_blank");
                         }, 500);
