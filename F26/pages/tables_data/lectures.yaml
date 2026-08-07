@@ -13,7 +13,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 1
-  date: ''
+  date: 'August 24'
   topics:
   - Introduction
   slides_videos: []
@@ -22,7 +22,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 2
-  date: ''
+  date: 'August 26'
   topics:
   - Neural Nets As Universal Approximators
   slides_videos: []
@@ -31,7 +31,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 3
-  date: ''
+  date: 'August 31'
   topics:
   - main: Training Part I
     sub_topics:
@@ -43,7 +43,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 4
-  date: ''
+  date: 'September 2'
   topics:
   - main: Training Part II
     sub_topics:
@@ -55,7 +55,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 5
-  date: ''
+  date: 'September 9'
   topics:
   - main: Training Part III
     sub_topics:
@@ -67,7 +67,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 6
-  date: ''
+  date: 'September 11'
   topics:
   - main: Training Part IV
     sub_topics:
@@ -80,7 +80,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 7
-  date: ''
+  date: 'September 14'
   topics:
   - main: Training Part V
     sub_topics:
@@ -92,7 +92,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 8
-  date: ''
+  date: 'September 16'
   topics:
   - main: Training Part VI
     sub_topics:
@@ -106,7 +106,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 9
-  date: ''
+  date: 'September 21'
   topics:
   - Convolutional Neural Networks (CNNs) I
   slides_videos: []
@@ -115,7 +115,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 10
-  date: ''
+  date: 'September 23'
   topics:
   - CNNs II
   slides_videos: []
@@ -124,7 +124,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 11
-  date: ''
+  date: 'September 28'
   topics:
   - CNNs III
   slides_videos: []
@@ -133,7 +133,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 12
-  date: ''
+  date: 'September 30'
   topics:
   - CNNs IV
   slides_videos: []
@@ -142,7 +142,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 13
-  date: ''
+  date: 'October 5'
   topics:
   - Recurrent Neural Networks (RNNs) I
   slides_videos: []
@@ -151,7 +151,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 14
-  date: ''
+  date: 'October 7'
   topics:
   - RNNs II
   slides_videos: []
@@ -160,7 +160,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: '-'
-  date: ''
+  date: 'October 12'
   topics:
   - No Class - Fall Break
   slides_videos: []
@@ -169,7 +169,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: '-'
-  date: ''
+  date: 'October 14'
   topics:
   - No Class - Fall Break
   slides_videos: []
@@ -178,7 +178,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 15
-  date: ''
+  date: 'October 19'
   topics:
   - Sequence to Sequence Models
   - Connectionist Temporal Classification (CTC)
@@ -188,7 +188,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 16
-  date: ''
+  date: 'October 21'
   topics:
   - main: Connectionist Temporal Classification
     sub_topics:
@@ -200,7 +200,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 17
-  date: ''
+  date: 'October 26'
   topics:
   - Language Models
   - Translation
@@ -210,7 +210,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 18
-  date: ''
+  date: 'October 28'
   topics:
   - Attention Models
   - Transformers
@@ -220,7 +220,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 19
-  date: ''
+  date: 'November 2'
   topics:
   - Transformers and Newer Architectures
   slides_videos: []
@@ -229,7 +229,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 20
-  date: ''
+  date: 'November 4'
   topics:
   - Large Language Models
   slides_videos: []
@@ -238,7 +238,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 21
-  date: ''
+  date: 'November 9'
   topics:
   - Representation and Autoencoders
   slides_videos: []
@@ -247,7 +247,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 22
-  date: ''
+  date: 'November 11'
   topics:
   - Variational Auto Encoders
   slides_videos: []
@@ -256,7 +256,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 23
-  date: ''
+  date: 'November 16'
   topics:
   - Diffusion
   slides_videos: []
@@ -265,7 +265,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 24
-  date: ''
+  date: 'November 18'
   topics:
   - Generative Adversarial Networks
   slides_videos: []
@@ -274,7 +274,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 25
-  date: ''
+  date: 'November 23'
   topics:
   - Representation Learning
   slides_videos: []
@@ -283,7 +283,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 26
-  date: ''
+  date: 'November 25'
   topics:
   - Graph Neural Networks (GNNs)
   slides_videos: []
@@ -292,7 +292,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 27
-  date: ''
+  date: 'November 30'
   topics:
   - Hopfield Networks
   slides_videos: []
@@ -301,7 +301,7 @@ lectures:
     text: ''
     rowspan: 1
 - number: 28
-  date: ''
+  date: 'December 2'
   topics:
   - Boltzmann Machines
   slides_videos: []
