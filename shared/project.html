@@ -478,7 +478,7 @@
 <body>
     <nav class="project-nav" aria-label="Project page navigation">
         <div class="container">
-            <a href="../F26/index.html"><i class="fas fa-arrow-left"></i> Back to Course Page</a>
+            <a href="../F26/index.html" onclick="if (document.referrer && new URL(document.referrer).origin === window.location.origin) { window.history.back(); return false; }"><i class="fas fa-arrow-left"></i> Back to Course Page</a>
             <div class="project-nav-links">
                 <a href="#topics">Projects</a>
                 <a href="#apply">Application</a>

@@ -54,7 +54,6 @@
                 {% endfor %} 
             {% endfor %} 
         {% endfor %} 
-        </tbody>
         {# Initialize variables to track rowspan remaining for columns that can span multiple rows #}
     {# These variables keep track of how many rows the cell from a previous row is still spanning #}
     {% set date_span_remaining = 0 %}
@@ -191,6 +190,7 @@
         </tr>
     {% endfor %}
 
+        </tbody>
     </table>
 </body>
 </html>
