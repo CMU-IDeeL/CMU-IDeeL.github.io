@@ -136,6 +136,8 @@
                 {# Decrement the remaining span count and do NOT render a <td> for the materials column in this row #}
                 {% set materials_span_remaining = materials_span_remaining - 1 %}
             {% endif %}
+            {% else %}
+            <td style="vertical-align: middle; text-align: left;"></td>
             {% endif %}
 
             {# Videos Column #}
@@ -164,6 +166,8 @@
                 {# Decrement the remaining span count and do NOT render a <td> for the videos column in this row #}
                 {% set videos_span_remaining = videos_span_remaining - 1 %}
             {% endif %}
+            {% else %}
+            <td style="vertical-align: middle; text-align: left;"></td>
             {% endif %}
 
             {# Authors Column #}
