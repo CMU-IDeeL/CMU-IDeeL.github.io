@@ -332,4 +332,178 @@ recitations_0:
             videos: []
             authors: "TBD"
 
-recitations: []
+recitations:
+  - title: "Lab 1"
+    date: "Friday,<br> Aug 28"
+    topics: "PSC + Your First MLP Code"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 1 + HW1 Bootcamp"
+    date: "Saturday,<br> Aug 29"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Lab 2"
+    date: "Friday,<br> Sep 4"
+    topics: "Debugging"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 2"
+    date: "Saturday,<br> Sep 5"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Lab 3 + Hackathon 3"
+    date: "Saturday,<br> Sep 12"
+    topics: "Ablations, Hyperparameter Tuning Methods, Normalizations"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Lab 4"
+    date: "Friday,<br> Sep 18"
+    topics: "Computing Derivatives and Autograd"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 4 + HW2 Bootcamp + Guided Project Bootcamp"
+    date: "Saturday,<br> Sep 19"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Lab 5"
+    date: "Friday,<br> Sep 25"
+    topics: "CNN Basics and Backprop"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 5"
+    date: "Saturday,<br> Sep 26"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Lab 6"
+    date: "Friday,<br> Oct 2"
+    topics: "CNN Classification and Verification"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 6"
+    date: "Saturday,<br> Oct 3"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Lab 7"
+    date: "Friday,<br> Oct 9"
+    topics: "RNN Basics"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 7 + HW3 Bootcamp"
+    date: "Saturday,<br> Oct 10"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Pre-recorded Lab 8"
+    date: "Friday,<br> Oct 16"
+    topics: "Kaggle Workshop + Pre-trained Models"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 8"
+    date: "Saturday,<br> Oct 17"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Lab 9"
+    date: "Friday,<br> Oct 23"
+    topics: "CTC, Beam Search"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 9"
+    date: "Saturday,<br> Oct 24"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Lab 10"
+    date: "Friday,<br> Oct 30"
+    topics: "Attention"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 10"
+    date: "Saturday,<br> Oct 31"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Lab 11"
+    date: "Friday,<br> Nov 6"
+    topics: "Transformers"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 11 + HW4 Bootcamp"
+    date: "Saturday,<br> Nov 7"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Lab 12"
+    date: "Friday,<br> Nov 13"
+    topics: "VAE"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 12"
+    date: "Saturday,<br> Nov 14"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Pre-recorded Lab 13"
+    date: "Friday,<br> Nov 20"
+    topics: "NF & Stable Diffusion"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 13"
+    date: "Saturday,<br> Nov 21"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Lab 14"
+    date: "Friday,<br> Nov 27"
+    topics: "GAN"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 14"
+    date: "Saturday,<br> Nov 28"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Lab 15"
+    date: "Friday,<br> Dec 4"
+    topics: "Graph Neural Networks"
+    materials: []
+    videos: []
+    authors: ""
+  - title: "Hackathon 15"
+    date: "Saturday,<br> Dec 5"
+    topics: []
+    materials: []
+    videos: []
+    authors: ""

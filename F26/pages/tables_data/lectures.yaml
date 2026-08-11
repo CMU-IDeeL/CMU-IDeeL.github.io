@@ -258,7 +258,7 @@ lectures:
 - number: 23
   date: 'November 16'
   topics:
-  - Diffusion
+  - Normalizing Flows and Diffusion
   slides_videos: []
   additional_materials: []
   quiz:
@@ -276,7 +276,7 @@ lectures:
 - number: 25
   date: 'November 23'
   topics:
-  - Representation Learning
+  - Graph Neural Networks
   slides_videos: []
   additional_materials: []
   quiz:
@@ -285,7 +285,7 @@ lectures:
 - number: 26
   date: 'November 25'
   topics:
-  - Graph Neural Networks (GNNs)
+  - Hopfield Networks
   slides_videos: []
   additional_materials: []
   quiz:
@@ -294,7 +294,7 @@ lectures:
 - number: 27
   date: 'November 30'
   topics:
-  - Hopfield Networks
+  - Boltzmann Machines
   slides_videos: []
   additional_materials: []
   quiz:
@@ -303,7 +303,7 @@ lectures:
 - number: 28
   date: 'December 2'
   topics:
-  - Boltzmann Machines
+  - Homework 1-4 Debrief and Deployment
   slides_videos: []
   additional_materials: []
   quiz:
