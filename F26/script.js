@@ -133,18 +133,33 @@ $(document).ready(function() {
         toSection(window.location.hash);
     }
 
-    // Keep "Supported by Google" above the red footer when it enters view
+    // Keep "Supported by Google" in the bottom-right corner.
+    // Lift it only when the red footer actually overlaps that corner.
     var $supportedBy = $('.supported-by');
     var $footer = $('footer');
     if ($supportedBy.length && $footer.length) {
         function positionSupportedBy() {
-            var footerTop = $footer.offset().top;
-            var viewportBottom = $(window).scrollTop() + $(window).height();
-            var overlap = viewportBottom - footerTop;
-            var bottom = overlap > 0 ? overlap + 20 : 20;
-            $supportedBy.css('bottom', bottom + 'px');
+            var footerOffset = $footer.offset();
+            if (!footerOffset) {
+                return;
+            }
+            var winHeight = $(window).height();
+            var scrollTop = $(window).scrollTop();
+            var docHeight = $(document).height();
+            var footerTop = footerOffset.top;
+
+            // Sections are loaded asynchronously, so on first paint the footer
+            // sits in the middle of the viewport. Do not lift the badge then.
+            if (docHeight <= winHeight + 100) {
+                $supportedBy.css('bottom', '20px');
+                return;
+            }
+
+            var overlap = scrollTop + winHeight - footerTop;
+            $supportedBy.css('bottom', (overlap > 0 ? overlap + 20 : 20) + 'px');
         }
-        $(window).on('scroll resize', positionSupportedBy);
+        $(window).on('scroll resize load', positionSupportedBy);
+        $(document).on('ajaxStop', positionSupportedBy);
         positionSupportedBy();
     }
 });
