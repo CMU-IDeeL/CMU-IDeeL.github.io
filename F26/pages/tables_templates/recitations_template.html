@@ -54,7 +54,6 @@
                 {% endfor %} 
             {% endfor %} 
         {% endfor %} 
-        </tbody>
         {# Initialize variables to track rowspan remaining for columns that can span multiple rows #}
     {# These variables keep track of how many rows the cell from a previous row is still spanning #}
     {% set date_span_remaining = 0 %}
@@ -136,6 +135,8 @@
                 {# Decrement the remaining span count and do NOT render a <td> for the materials column in this row #}
                 {% set materials_span_remaining = materials_span_remaining - 1 %}
             {% endif %}
+            {% else %}
+            <td style="vertical-align: middle; text-align: left;"></td>
             {% endif %}
 
             {# Videos Column #}
@@ -164,6 +165,8 @@
                 {# Decrement the remaining span count and do NOT render a <td> for the videos column in this row #}
                 {% set videos_span_remaining = videos_span_remaining - 1 %}
             {% endif %}
+            {% else %}
+            <td style="vertical-align: middle; text-align: left;"></td>
             {% endif %}
 
             {# Authors Column #}
@@ -187,6 +190,7 @@
         </tr>
     {% endfor %}
 
+        </tbody>
     </table>
 </body>
 </html>

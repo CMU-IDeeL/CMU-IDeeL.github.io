@@ -1,2 +1,22 @@
 # deadlines_data.yaml
-assignment_groups: []
+assignment_groups:
+  - release_date: "Wednesday, Aug 26"
+    assignments:
+      - name: "HW 1"
+        due_date: "Early Submission: Friday, Sep 4<br>Final Deadline: Friday, Sep 18"
+        materials: []
+  - release_date: "Friday, Sep 18"
+    assignments:
+      - name: "HW 2"
+        due_date: "Early Submission: Friday, Oct 2<br>Final Deadline: Friday, Oct 9"
+        materials: []
+  - release_date: "Friday, Oct 9"
+    assignments:
+      - name: "HW 3"
+        due_date: "Early Submission: Friday, Oct 30<br>Final Deadline: Friday, Nov 6"
+        materials: []
+  - release_date: "Friday, Nov 6"
+    assignments:
+      - name: "HW 4"
+        due_date: "Early Submission: Friday, Nov 20<br>Final Deadline: Friday, Dec 4"
+        materials: []

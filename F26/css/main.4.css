@@ -306,10 +306,37 @@ code {
     }
 }
 
+.supported-by {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+    pointer-events: none;
+}
+
+.supported-by-logo {
+    height: 28px;
+    width: auto;
+    display: block;
+}
+
 footer {
-    margin-top: 60px;
-    margin-bottom: 30px;
+    background-color: #A80000;
+    color: white;
+    padding: 15px;
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }
 
 h2 {

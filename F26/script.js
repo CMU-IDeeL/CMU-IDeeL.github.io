@@ -132,4 +132,19 @@ $(document).ready(function() {
     if (window.location.hash) {
         toSection(window.location.hash);
     }
+
+    // Keep "Supported by Google" above the red footer when it enters view
+    var $supportedBy = $('.supported-by');
+    var $footer = $('footer');
+    if ($supportedBy.length && $footer.length) {
+        function positionSupportedBy() {
+            var footerTop = $footer.offset().top;
+            var viewportBottom = $(window).scrollTop() + $(window).height();
+            var overlap = viewportBottom - footerTop;
+            var bottom = overlap > 0 ? overlap + 20 : 20;
+            $supportedBy.css('bottom', bottom + 'px');
+        }
+        $(window).on('scroll resize', positionSupportedBy);
+        positionSupportedBy();
+    }
 });

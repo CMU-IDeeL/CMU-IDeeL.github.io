@@ -88,3 +88,397 @@ body, html {
 .authors {
 }
 
+/* ============================================================
+   Project page (project.html)
+   Scoped so gallery pages that also load this file are unaffected.
+   ============================================================ */
+
+html:has(body.project-page),
+body.project-page {
+    background-color: #fff;
+}
+
+body.project-page {
+    font-size: 1.5em;
+}
+
+/* Extra visual enhancements matching the red/charcoal theme (merged in from gallery.html) */
+.project-card {
+    background: #fff;
+    border-left: 4px solid #A80000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+.section-header-red {
+    border-bottom: 2px solid #A80000;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: #A80000;
+    font-weight: 400;
+}
+.desc-card {
+    background: #fdfdfd;
+    border: 1px solid #eef0f2;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    min-height: 280px;
+}
+.desc-card h4 {
+    color: #b05145;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.desc-card ul {
+    padding-left: 20px;
+}
+.desc-card ul li {
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+.btn-cmu {
+    background-color: #A80000;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+.btn-cmu:hover, .btn-cmu:focus {
+    background-color: #800000;
+    color: white;
+    text-decoration: none;
+}
+.badge-cmu {
+    background-color: #b05145;
+    color: white;
+    font-weight: 400;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.85em;
+}
+.form-control:focus {
+    border-color: #b05145;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(176,81,69,.6);
+}
+.legacy-grid-card {
+    background: #fff;
+    border: 1px solid #eef0f2;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    transition: box-shadow 0.2s ease;
+}
+.legacy-grid-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+.legacy-grid-card h4 {
+    color: #b05145;
+    margin-top: 0;
+    font-weight: 600;
+}
+.legacy-links a {
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #A80000;
+    text-decoration: none;
+}
+.legacy-links a:hover {
+    text-decoration: underline;
+}
+.project-nav {
+    background: #A80000;
+    color: white;
+    padding: 6px 0;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.project-nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+.project-nav a {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    line-height: 1.2;
+    padding: 10px 14px;
+    border-radius: 4px;
+}
+.project-nav a:hover,
+.project-nav a:focus {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.project-nav-back i {
+    margin-right: 0.4em;
+}
+.project-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+@media (max-width: 767px) {
+    .project-nav-inner {
+        flex-wrap: wrap;
+    }
+    .project-nav-links {
+        margin-left: auto;
+    }
+}
+
+/* Dynamic Project Topics styles */
+.topic-card {
+    background: #fff;
+    border: 1px solid #eef0f2;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 992px) {
+    .topic-card {
+        height: 400px;
+    }
+}
+@media (max-width: 991px) {
+    .topic-card {
+        height: auto;
+        min-height: auto;
+    }
+    .topic-desc {
+        height: auto !important;
+        -webkit-line-clamp: unset !important;
+    }
+}
+.topic-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    border-color: #d8dee4;
+}
+.topic-image {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+}
+.topic-icon {
+    font-size: 24px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    transition: transform 0.3s ease;
+}
+.topic-card:hover .topic-icon {
+    transform: scale(1.1);
+}
+.topic-star {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #ccc;
+    font-size: 0.85em;
+    transition: all 0.2s ease;
+    z-index: 2;
+}
+.topic-star:hover {
+    transform: scale(1.1);
+    color: #FFD700;
+}
+.topic-star.selected {
+    color: #FFD700;
+    background: #fff;
+}
+.topic-body {
+    padding: 12px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 60px);
+}
+.topic-cat-badge {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    margin-bottom: 3px;
+    display: inline-block;
+}
+.topic-title {
+    font-size: 0.95em;
+    font-weight: 700;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 4px;
+    line-height: 1.3;
+    height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.topic-desc {
+    font-size: 0.88em;
+    color: #555;
+    line-height: 1.45;
+    margin-bottom: 6px;
+    max-height: 105px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+.topic-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 6px;
+    height: 22px;
+    overflow: hidden;
+}
+.topic-tag {
+    font-size: 0.7em;
+    padding: 1px 6px;
+    background-color: #f0f2f5;
+    color: #475569;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.topic-links {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 6px;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topic-link-item {
+    font-size: 0.78em;
+    color: #555;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-weight: 500;
+}
+.topic-link-item:hover {
+    color: #A80000;
+    text-decoration: underline;
+}
+.topic-actions {
+    margin-top: 6px;
+    display: flex;
+    gap: 6px;
+}
+.btn-topic-select {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    color: #444;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.8em;
+    transition: all 0.2s ease;
+}
+.btn-topic-select:hover {
+    background-color: #e0e0e0;
+}
+.btn-topic-select.selected {
+    background-color: #FFFDE7;
+    border-color: #FBC02D;
+    color: #F57F17;
+}
+
+/* Toast Notification */
+.toast-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 10000;
+    pointer-events: none;
+}
+.cmu-toast {
+    background: #2e3033;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 0.95em;
+    border-left: 4px solid #A80000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.cmu-toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body.project-page .supported-by {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+    pointer-events: none;
+}
+
+body.project-page .supported-by-logo {
+    height: 28px;
+    width: auto;
+    display: block;
+}
+
+body.project-page footer {
+    background-color: #A80000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+body.project-page footer p {
+    margin: 0;
+}
+
