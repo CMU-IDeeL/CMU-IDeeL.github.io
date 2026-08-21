@@ -189,8 +189,12 @@ recitations_0:
           - id: "0.16"
             title: "Dataloaders"
             date: "August 3"
-            materials: []
-            videos: []
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.16/0_16_DataLoaders_modified.ipynb"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=j4nPE5RSR28"
             authors: "Hrishikesh & Shrirang"
           - id: "0.17"
             title: "Data Preprocessing"
@@ -198,7 +202,9 @@ recitations_0:
             materials:
               - text: "Slides (PDF)"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.17/%5BSlides%5D%20Rec-0.17_Data_Preprocessing.pdf"
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=0oYyMOpS-dM"
             authors: "Aryan"
       - name: "Debugging and Problem-Solving"
         topics:
@@ -210,7 +216,9 @@ recitations_0:
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.18/%5BSlides%5D%20Rec-0.18_WandB.pdf"
               - text: "Notebook"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.18/%5BNotebook%5D%20Rec-0.18_WandB.ipynb"
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=RRTkoyplYok"
             authors: "Ron"
           - id: "0.19"
             title: "Debugging your Model"
@@ -218,7 +226,9 @@ recitations_0:
             materials:
               - text: "Slides (PDF)"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.19/%5BSlides%5D%20Rec-0.19_Debugging.pdf"
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=6DdaZJjuJbI"
             authors: "Felix"
           - id: "0.20"
             title: "What to Do When Struggling"
@@ -226,15 +236,21 @@ recitations_0:
             materials:
               - text: "Slides (PDF)"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.20/%5BSlides%5D%20Rec-0.20_When_Struggling.pdf"
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=M2HrAGk0X90"
             authors: "Nayesha"
       - name: "Algorithmic Techniques"
         topics:
           - id: "0.21"
             title: "Losses Part 1"
             date: "August 10"
-            materials: []
-            videos: []
+            materials:
+              - text: "Part 1 Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.21/Rec0.21_Part1.ipynb"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=FQbIWjikrPI"
             authors: "Yara & Mengchun"
           - id: ""
             title: "Losses Part 2"
@@ -245,8 +261,12 @@ recitations_0:
           - id: "0.22"
             title: "Block Processing"
             date: "August 12"
-            materials: []
-            videos: []
+            materials:
+              - text: "Notebook"
+                url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.22/Block_Processing.ipynb"
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=RAl_uFBfdOU"
             authors: "Akshara"
       - name: "Model Logistics"
         topics:
@@ -254,19 +274,25 @@ recitations_0:
             title: "Pipeline"
             date: "August 13"
             materials: []
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=-AidIpazgSE"
             authors: "Devansh"
           - id: "0.24"
             title: "Distributed Training"
             date: "August 14"
             materials: []
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=nw6nto2wZj4"
             authors: "Anurag"
           - id: "0.25"
             title: "Saving & Loading Model"
             date: "August 17"
             materials: []
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=ui1AdDgPEn0"
             authors: "Hunter"
       - name: "HWs and Project Workflow Management"
         topics:
