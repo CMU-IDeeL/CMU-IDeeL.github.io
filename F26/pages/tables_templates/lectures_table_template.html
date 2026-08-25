@@ -39,13 +39,13 @@
                     </td>
                     <td>
                         {% for item in lecture.slides_videos %}
-                        <a href="{{ item.url }}" target="_blank">{{ item.text }}</a>{% if not loop.last %}<br>{% endif
+                        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.text }}</a>{% if not loop.last %}<br>{% endif
                         %}
                         {% endfor %}
                     </td>
                     <td>
                         {% for item in lecture.additional_materials %}
-                        <a href="{{ item.url }}" target="_blank">{{ item.text | replace('\n', '<br>') | safe }}</a>{% if
+                        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.text | replace('\n', '<br>') | safe }}</a>{% if
                         not loop.last %}<br>{% endif %}
                         {% endfor %}
                     </td>
@@ -53,7 +53,7 @@
                     <td rowspan="{{ lecture.quiz.rowspan | default(1) }}"
                         style="vertical-align: middle; text-align: center;">
                         {% if lecture.quiz.url %}
-                        <a href="{{ lecture.quiz.url }}" target="_blank">{{ lecture.quiz.text }}</a>
+                        <a href="{{ lecture.quiz.url }}" target="_blank" rel="noopener noreferrer">{{ lecture.quiz.text }}</a>
                         {% else %}
                         {{ lecture.quiz.text }}
                         {% endif %}
