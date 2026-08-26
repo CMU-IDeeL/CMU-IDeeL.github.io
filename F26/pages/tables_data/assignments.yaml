@@ -1,6 +1,6 @@
 # deadlines_data.yaml
 assignment_groups:
-  - release_date: "Wednesday, Aug 26"
+  - release_date: "Friday, Aug 28"
     assignments:
       - name: "HW 1"
         due_date: "Early Submission: Friday, Sep 4<br>Final Deadline: Friday, Sep 18"
