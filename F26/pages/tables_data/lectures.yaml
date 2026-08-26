@@ -35,7 +35,9 @@ lectures:
   date: 'August 26'
   topics:
   - Neural Nets As Universal Approximators
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec2.universal.pdf"
   additional_materials: []
   quiz:
     text: ''
