@@ -38,7 +38,11 @@ lectures:
   slides_videos:
   - text: "Slides"
     url: "./documents/slides/lec2.universal.pdf"
-  additional_materials: []
+  additional_materials:
+  - text: "IIT CS6840: Size and Depth Complexity of Boolean Circuits"
+    url: "./documents/readings/booleancircuits_shannonproof.pdf"
+  - text: "The Synthesis of Two-Terminal Switching Circuits"
+    url: "./documents/readings/Shannon49.pdf"
   quiz:
     text: ''
     rowspan: 1
