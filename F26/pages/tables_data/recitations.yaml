@@ -1,6 +1,6 @@
 # schedule_data.yaml
 recitations_0:
-  - date: "TBA"
+  - date: "July 13 - August 28"
     groups:
       - name: "Python Programming + PyTorch"
         topics:
@@ -362,9 +362,11 @@ recitations:
   - title: "Lab 1"
     date: "Friday,<br> Aug 28"
     topics: "PSC + Your First MLP Code"
-    materials: []
+    materials:
+      - text: "Unsolved Notebook"
+        url: "https://colab.research.google.com/drive/1ZNwOweKEgN9Sm6MdZLX_ZKSfJB9GLtXk#scrollTo=aabe0ad5"
     videos: []
-    authors: ""
+    authors: "Brad Warren & Bruno Payang"
   - title: "Hackathon 1 + HW1 Bootcamp"
     date: "Saturday,<br> Aug 29"
     topics: []
