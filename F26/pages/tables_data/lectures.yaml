@@ -25,7 +25,7 @@ lectures:
     url: "./documents/slides/lec1.intro.pdf"
   - text: "YouTube"
     url: "https://www.youtube.com/watch?v=40Ql7hdaJfU"
-  - text: "MediaService"
+  - text: "MediaServices"
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-%20Neural%20Networks%20/1_bxa916zk/415066862"
   additional_materials: []
   quiz:
@@ -38,6 +38,10 @@ lectures:
   slides_videos:
   - text: "Slides"
     url: "./documents/slides/lec2.universal.pdf"
+  - text: "YouTube"
+    url: "https://www.youtube.com/watch?v=ZEpUYyNi9RA"
+  - text: "MediaServices"
+    url: "https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning+-+Fall+2026+-+Neural+Networks%2C+What+a+network+can+represent/1_zsm34x4s/415066862"
   additional_materials:
   - text: "IIT CS6840: Size and Depth Complexity of Boolean Circuits"
     url: "./documents/readings/booleancircuits_shannonproof.pdf"
