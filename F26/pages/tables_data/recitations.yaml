@@ -369,10 +369,12 @@ recitations:
     authors: "Brad Warren & Bruno Payang"
   - title: "Hackathon 1 + HW1 Bootcamp"
     date: "Saturday,<br> Aug 29"
-    topics: []
-    materials: []
+    topics: "HW1 Bootcamps"
+    materials:
+      - text: "HW1P1 Slides"
+        url: "./documents/slides/HW1P1_Bootcamp.pdf"
     videos: []
-    authors: ""
+    authors: "Ron, Dinesh, Yara, <br> Pengyu, Hunter, Bruno, Cedric"
   - title: "Lab 2"
     date: "Friday,<br> Sep 4"
     topics: "Debugging"
