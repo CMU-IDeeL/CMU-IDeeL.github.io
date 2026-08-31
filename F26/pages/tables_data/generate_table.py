@@ -8,25 +8,11 @@ from jinja2 import Environment, FileSystemLoader
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PAGES_DIR = os.path.dirname(SCRIPT_DIR)  # Parent directory (pages/)
 
-def validate_video_order(value):
-    if isinstance(value, dict):
-        videos = value.get('videos')
-        if isinstance(videos, list):
-            labels = [video.get('text') for video in videos if isinstance(video, dict)]
-            if 'YouTube' in labels and 'MediaServices' in labels and labels.index('YouTube') > labels.index('MediaServices'):
-                raise ValueError('YouTube links must appear before MediaServices links')
-        for child in value.values():
-            validate_video_order(child)
-    elif isinstance(value, list):
-        for child in value:
-            validate_video_order(child)
-
 def generate_html_table(filename, template_filename, output_filename):
     # Load data from YAML file
     yaml_path = os.path.join(SCRIPT_DIR, filename)
     with open(yaml_path, 'r') as f:
         data = yaml.safe_load(f)
-    validate_video_order(data)
 
     # Set up Jinja2 environment - use pages/ as base so we can access tables_templates/
     env = Environment(loader=FileSystemLoader(PAGES_DIR))
