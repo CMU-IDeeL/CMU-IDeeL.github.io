@@ -57,7 +57,9 @@ lectures:
     sub_topics:
     - The Problem of Learning
     - Empirical Risk Minimization
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec3.learning.pdf"
   additional_materials: []
   quiz:
     text: ''

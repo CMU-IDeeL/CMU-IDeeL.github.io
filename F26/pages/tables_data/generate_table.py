@@ -1,5 +1,6 @@
 # generate_table.py
 import os
+import re
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
@@ -19,6 +20,9 @@ def generate_html_table(filename, template_filename, output_filename):
 
     # Render the template with data
     html_output = template.render(data=data)
+    for link in re.findall(r'<a\b[^>]*>', html_output, flags=re.IGNORECASE):
+        if re.search(r'\btarget\s*=\s*["\']_blank["\']', link, flags=re.IGNORECASE) and not re.search(r'\brel\s*=\s*["\'][^"\']*\bnoopener\b[^"\']*\bnoreferrer\b[^"\']*["\']', link, flags=re.IGNORECASE):
+            raise ValueError(f'{output_filename} contains a target="_blank" link without rel="noopener noreferrer"')
 
     # Save the output to an HTML file
     output_path = os.path.join(PAGES_DIR, output_filename)

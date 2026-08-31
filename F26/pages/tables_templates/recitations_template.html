@@ -35,14 +35,14 @@
                     <td style="vertical-align: middle; text-align: left;">{{ topic.title }}</td>
                     <td style="vertical-align: middle; text-align: left;">
                         {% for item in topic.materials %}
-                            <a href="{{ item.url }}" target="_blank">{{ item.text }}</a>{% if not loop.last %}<br>{% endif %}
+                            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.text }}</a>{% if not loop.last %}<br>{% endif %}
                         {% endfor %}
                     </td>
                     <td style="vertical-align: middle; text-align: left;">
                         {% if topic.videos %}
                         <p>
                             {% for video in topic.videos %}
-                                <a href="{{ video.url }}" target="_blank">{{ video.text }}</a>{% if not loop.last %},<br>{% endif %}
+                                <a href="{{ video.url }}" target="_blank" rel="noopener noreferrer">{{ video.text }}</a>{% if not loop.last %},<br>{% endif %}
                             {% endfor %}
                         </p>
                         {% else %}
@@ -124,7 +124,7 @@
                     {% if entry.materials is iterable and entry.materials is not string %}
                         {% for item in entry.materials %}
                             {# Render each material as a link #}
-                            <a href="{{ item.url }}" target="_blank">{{ item.text }}</a>{% if not loop.last %}<br>{% endif %}
+                            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.text }}</a>{% if not loop.last %}<br>{% endif %}
                         {% endfor %}
                     {% endif %}
                 </td>
@@ -154,7 +154,7 @@
                      {% if entry.videos is iterable and entry.videos is not string %}
                         {% for video in entry.videos %}
                             {# Render each video link #}
-                            <a href="{{ video.url }}" target="_blank">{{ video.text }}</a>{% if not loop.last %}<br>{% endif %} {# Add a line break after each link except the last #}
+                            <a href="{{ video.url }}" target="_blank" rel="noopener noreferrer">{{ video.text }}</a>{% if not loop.last %}<br>{% endif %} {# Add a line break after each link except the last #}
                         {% endfor %}
                      {% endif %}
                 </td>

@@ -363,9 +363,13 @@ recitations:
     date: "Friday,<br> Aug 28"
     topics: "PSC + Your First MLP Code"
     materials:
-      - text: "Unsolved Notebook"
+      - text: "Notebook"
         url: "https://colab.research.google.com/drive/1ZNwOweKEgN9Sm6MdZLX_ZKSfJB9GLtXk#scrollTo=aabe0ad5"
-    videos: []
+    videos:
+      - text: "YouTube"
+        url: "https://www.youtube.com/watch?v=5juV56HdibU"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning-Fall%202026/1_ptwr3b2o/415066862"
     authors: "Brad Warren & Bruno Payang"
   - title: "Hackathon 1 + HW1 Bootcamp"
     date: "Saturday,<br> Aug 29"
@@ -373,7 +377,9 @@ recitations:
     materials:
       - text: "HW1P1 Slides"
         url: "./documents/slides/HW1P1_Bootcamp.pdf"
-    videos: []
+    videos:
+      - text: "YouTube"
+        url: "https://www.youtube.com/watch?v=C8Er1sGBa7Q"
     authors: "Ron, Dinesh, Yara, <br> Pengyu, Hunter, Bruno, Cedric"
   - title: "Lab 2"
     date: "Friday,<br> Sep 4"
