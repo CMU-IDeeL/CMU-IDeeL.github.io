@@ -168,6 +168,10 @@
                                 </div>
                                 <h3 class="topic-title" :title="project.title">{{ project.title }}</h3>
 
+                                <p class="topic-mentors" v-if="project.mentors" :title="'Mentors: ' + project.mentors">
+                                    <span class="topic-mentors-label">Mentor(s):</span> {{ project.mentors }}
+                                </p>
+
                                 <p class="topic-desc" :title="project.description">{{ project.description }}</p>
 
                                 <div class="topic-tags">
@@ -246,7 +250,7 @@
                     <p style="font-size: 1.05em; line-height: 1.6; color: #333; margin-bottom: 20px;">
                         Use this form to show interest in any project(s) for
                         <strong>11-785</strong> or <strong>11-685</strong>. This is just for book-keeping, and not a
-                        formal selection process.
+                        formal selection process
                     </p>
 
                     <div class="text-center" style="margin: 35px 0;">
@@ -401,10 +405,10 @@
                 projects: [
                     {
                         id: 1,
-                        title: 'Model-Based Reinforcement Learning from Pixels',
+                        title: 'Reinforcement Learning from Pixels',
                         category: 'Reinforcement Learning (11-685)',
                         mentors: 'Kangping Liu',
-                        description: '  This project is on pixel-based reinforcement learning. It focuses on PlaNet and DreamerV1 on DeepMind Control Suite tasks, including latent dynamics models, replay buffers, planning or actor-critic control; including evaluation, checkpointing, and visualization.',
+                        description: '  This project is on model-based reinforcement learning from the pixel space. It focuses on PlaNet and DreamerV1 on DeepMind Control Suite tasks, including latent dynamics models, replay buffers, planning or actor-critic control.',
                         paper: 'Coming Soon',
                         dataset: 'Coming Soon',
                         code: 'Coming Soon',
@@ -455,7 +459,7 @@
                         id: 5,
                         title: 'Hand and Finger Control from Forearm sEMG',
                         category: 'Signal Processing (11-785)',
-                        mentors: ' Nayesha Gandotra and Max Murphy',
+                        mentors: 'Nayesha Gandotra and Max Murphy',
                         description: 'This project asks: can deep learning tell which attempted hand and finger movements are distinguishable from surface EMG signals recorded at the forearm? And, is it controllable in a graded, proportional way? Perhaps in real time? ',
                         paper: 'Coming Soon',
                         dataset: 'Private dataset',
