@@ -28,7 +28,7 @@
                         <p> {# Keeping
                         <p> tag as in original if needed, otherwise can remove #}
                             {% for item in assignment.materials %}
-                            <a href="{{ item.url }}" target="_blank">{{ item.text }}</a>{% if not loop.last %}<br>{%
+                            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.text }}</a>{% if not loop.last %}<br>{%
                             endif %}
                             {% endfor %}
                         </p>
