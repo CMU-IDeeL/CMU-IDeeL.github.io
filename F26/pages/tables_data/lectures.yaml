@@ -71,7 +71,9 @@ lectures:
     sub_topics:
     - Gradient Descent
     - Training the Network
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec4.learning.pdf"
   additional_materials: []
   quiz:
     text: ''
