@@ -147,20 +147,10 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6" v-for="project in projects" :key="project.id">
                         <div class="topic-card">
-                            <!-- Star Selection Button in Card corner -->
-                            <button class="topic-star" :class="{ selected: isSelected(project) }"
-                                @click="toggleSelect(project)"
-                                :title="isSelected(project) ? 'Deselect project' : 'Select project'">
-                                <i class="fas fa-star"></i>
-                            </button>
-
-                            <!-- Custom Gradient Header with Icon -->
                             <div class="topic-image"
                                 :style="{ background: 'linear-gradient(135deg, ' + project.color + '0f, ' + project.color + '22)' }">
                                 <i :class="project.icon + ' topic-icon'" :style="{ color: project.color }"></i>
                             </div>
-
-                            <!-- Card Body -->
                             <div class="topic-body">
                                 <div>
                                     <span class="topic-cat-badge" :style="{ color: project.color }">{{ project.category
@@ -406,9 +396,9 @@
                     {
                         id: 1,
                         title: 'Reinforcement Learning from Pixels',
-                        category: 'Reinforcement Learning (11-685)',
+                        category: 'Reinforcement Learning (11-785)',
                         mentors: 'Kangping Liu',
-                        description: '  This project is on model-based reinforcement learning from the pixel space. It focuses on PlaNet and DreamerV1 on DeepMind Control Suite tasks, including latent dynamics models, replay buffers, planning or actor-critic control.',
+                        description: 'This project is on model-based reinforcement learning from the pixel space. It focuses on PlaNet and DreamerV1 on DeepMind Control Suite tasks, including latent dynamics models, replay buffers, planning or actor-critic control.',
                         paper: 'Coming Soon',
                         dataset: 'Coming Soon',
                         code: 'Coming Soon',
@@ -416,23 +406,23 @@
                         icon: 'fas fa-robot',
                         color: '#E05A47'
                     },
-                    {
-                        id: 2,
-                        title: 'Electoencephalography (EEG) signal processing',
-                        category: 'Healthcare (11-685)',
-                        mentors: 'Ahmed Safwat',
-                        description: 'In this project, you will create 2 distinct deep learning models for EEG - image classification, and work with CLIP to attempt EEG-Caption retrieval. Additionally, you will explore techniques for data augmentation and report the quality and success of these methods.',
-                        paper: 'Coming Soon',
-                        dataset: 'Coming Soon',
-                        code: 'Coming Soon',
-                        tags: ['Diffusion Models', 'EEG', 'Classification'],
-                        icon: 'fas fa-brain',
-                        color: '#2E7D32'
-                    },
+                    // {
+                    //     id: 2,
+                    //     title: 'Electoencephalography (EEG) signal processing',
+                    //     category: 'Healthcare (11-685)',
+                    //     mentors: 'Ahmed Safwat',
+                    //     description: 'In this project, you will create 2 distinct deep learning models for EEG - image classification, and work with CLIP to attempt EEG-Caption retrieval. Additionally, you will explore techniques for data augmentation and report the quality and success of these methods.',
+                    //     paper: 'Coming Soon',
+                    //     dataset: 'Coming Soon',
+                    //     code: 'Coming Soon',
+                    //     tags: ['Diffusion Models', 'EEG', 'Classification'],
+                    //     icon: 'fas fa-brain',
+                    //     color: '#2E7D32'
+                    // },
                     {
                         id: 3,
                         title: 'Machine Learned Interatomic Potentials',
-                        category: 'Science (11-785)',
+                        category: 'AI4Science (11-785)',
                         mentors: 'Ron Sarma',
                         description: 'Build an efficient, accurate and competitive machine learned interatomic potential for molecular systems. There is a significant shift of momemntum in AI4Science, and this project is intended to a step in that direction.',
                         paper: 'https://arxiv.org/abs/2506.23971',
@@ -467,6 +457,19 @@
                         tags: ['EMG', 'Signal Processing'],
                         icon: 'fas fa-brain',
                         color: '#EF6C00'
+                    },
+                    {
+                        id: 6,
+                        title: 'Perforated Learning for Language Modeling',
+                        category: 'Perforation and NLP (11-785)',
+                        mentors: 'Rorry Brenner and the Perforated AI Team',
+                        description: 'Perforated Backpropagation is a new deep learning paradigm enabling ML models to be built with more parameter efficiency and data efficiency. This project focuses on perforating various ML models in NLP.',
+                        paper: 'https://arxiv.org/abs/2501.18018',
+                        dataset: 'N/A',
+                        code: 'https://github.com/PerforatedAI/PerforatedAI',
+                        tags: ['Neuroscience', 'Dendritic Optimization'],
+                        icon: 'fas fa-brain',
+                        color: '#156239'
                     }
                 ]
             },
@@ -553,7 +556,7 @@
     </script>
 
     <div class="supported-by">
-        Supported by
+        <b>Supported by</b>
         <img src="../F26/images/google-logo-transparent.png" alt="Google" class="supported-by-logo">
     </div>
     <footer>

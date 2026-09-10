@@ -316,16 +316,22 @@ body.project-page {
 }
 
 .topic-image {
+    flex-shrink: 0;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    border-bottom: 1px solid #f0f0f0;
+    border: none;
 }
 
 .topic-icon {
     font-size: 24px;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     transition: transform 0.3s ease;
 }
@@ -334,42 +340,12 @@ body.project-page {
     transform: scale(1.1);
 }
 
-.topic-star {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background: rgba(255, 255, 255, 0.9);
-    border: none;
-    border-radius: 50%;
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #ccc;
-    font-size: 0.85em;
-    transition: all 0.2s ease;
-    z-index: 2;
-}
-
-.topic-star:hover {
-    transform: scale(1.1);
-    color: #FFD700;
-}
-
-.topic-star.selected {
-    color: #FFD700;
-    background: #fff;
-}
-
 .topic-body {
     padding: 12px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    height: calc(100% - 60px);
+    min-height: 0;
 }
 
 .topic-cat-badge {
