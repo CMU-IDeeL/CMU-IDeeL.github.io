@@ -401,7 +401,9 @@ recitations:
     date: "Saturday,<br> Sep 12"
     topics: "Ablations, Hyperparameter Tuning Methods, Normalizations"
     materials: []
-    videos: []
+    videos:
+      - text: "YouTube"
+        url: "https://www.youtube.com/watch?v=m5R8_EJjhg8"
     authors: ""
   - title: "Lab 4"
     date: "Friday,<br> Sep 18"
