@@ -96,6 +96,10 @@ lectures:
   slides_videos:
   - text: "Slides"
     url: "./documents/slides/lec5.BP.pdf"
+  - text: "YouTube"
+    url: "https://www.youtube.com/watch?v=RvDbWFv6a5M"
+  - text: "MediaServices"
+    url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-Learning%20the%20Network%2C%20Part%203/1_h4au6374/415066862"
   additional_materials: []
   quiz:
     text: ''
@@ -108,7 +112,9 @@ lectures:
     - Convergence issues
     - Loss Surfaces
     - Momentum
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec6_convergence.pdf"
   additional_materials: []
   quiz:
     text: ''
