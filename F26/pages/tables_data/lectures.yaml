@@ -130,7 +130,9 @@ lectures:
     sub_topics:
     - Optimization
     - Batch Size, SGD, Mini-batch, Second-order Methods
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec7.stochastic_gradient.pdf"
   additional_materials: []
   quiz:
     text: ''
