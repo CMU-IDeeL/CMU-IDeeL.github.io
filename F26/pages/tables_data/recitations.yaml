@@ -300,19 +300,25 @@ recitations_0:
             title: "Workflow of HW Part 1"
             date: "August 18"
             materials: []
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=suXVl-ykGp8"
             authors: "Akshara"
           - id: ""
             title: "Workflow of HW Part 2"
             date: "August 19"
             materials: []
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=ijVjRqUCEiU"
             authors: "Devansh"
           - id: "0.27"
             title: "Flow of the Project"
             date: "August 20"
             materials: []
-            videos: []
+            videos:
+              - text: "Video"
+                url: "https://www.youtube.com/watch?v=8XVWOGMN_2o"
             authors: "Hunter & Uwimana"
           - id: "0.28"
             title: "How to Read/Write a Report"
