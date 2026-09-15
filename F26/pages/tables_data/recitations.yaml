@@ -357,16 +357,18 @@ recitations_0:
             materials: []
             videos: []
             authors: "TBD"
+      - name: ""
+        topics:
+          - id: "hohum-01"
+            title: "Hohum IDL HW Platform"
+            date: "Sep 15"
+            materials: []
+            videos:
+              - text: "YouTube"
+                url: "https://www.youtube.com/watch?v=8-xU0RfsV_A"
+            authors: "Garima & Lucky"
 
 recitations:
-  - title: "Hohum IDL HW Platform"
-    date: "Tuesday,<br> Sep 15"
-    topics: []
-    materials: []
-    videos:
-      - text: "YouTube"
-        url: "https://www.youtube.com/watch?v=8-xU0RfsV_A"
-    authors: "Garima & Lucky"
   - title: "Lab 1"
     date: "Friday,<br> Aug 28"
     topics: "PSC + Your First MLP Code"
