@@ -140,12 +140,12 @@ recitations_0:
             materials:
               - text: "Slides (PDF)"
                 url: "https://github.com/CMU-IDeeL/CMU-IDeeL.github.io/blob/master/F26/documents/recitation_0/0.12/%5BSlides%5D%20Rec-0.12_PSC_Connection.pptx.pdf"
-              - text: "Part 2 Document"
+              - text: "Usage Guide"
                 url: "https://docs.google.com/document/d/1AeeV_RfhQ52zW563dUB7w5nHYChswanr/edit?usp=sharing&ouid=108252146710887258069&rtpof=true&sd=true"
             videos:
-              - text: "Part 1 Video"
+              - text: "Video v1"
                 url: "https://www.youtube.com/watch?v=WYSCSODOMGM"
-              - text: "Part 2 Video"
+              - text: "Video v2"
                 url: "https://www.youtube.com/watch?v=GuUmMK3Qf2c"
             authors: "Pengyu, Mengchun, Sneha"
           - id: "0.13"
