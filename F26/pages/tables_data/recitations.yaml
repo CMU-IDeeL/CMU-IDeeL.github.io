@@ -431,7 +431,7 @@ recitations:
       - text: "YouTube"
         url: "https://www.youtube.com/watch?v=KliaeW0m5-o"
     authors: ""
-  - title: "Hackathon 4 + HW2 Bootcamp + Guided Project Bootcamp"
+  - title: "Hackathon 4 + HW2 Bootcamp"
     date: "Saturday,<br> Sep 19"
     topics: []
     materials: []
@@ -440,8 +440,16 @@ recitations:
         url: "https://www.youtube.com/watch?v=vRbHczAERfE"
       - text: "Bootcamp 2 Slides"
         url: "./documents/slides/HW2P2_Bootcamp.pdf"
+    authors: ""
+  - title: "Guided Project Bootcamp + PSC Bootcamp"
+    date: "Sunday,<br> Sep 20"
+    topics: []
+    materials: []
+    videos:
       - text: "Guided Project Bootcamp"
         url: "https://www.youtube.com/watch?v=NkPjhfFNAjQ"
+      - text: "PSC Bootcamp"
+        url: "https://www.youtube.com/watch?v=50AM3n8EDno"
     authors: ""
   - title: "Lab 5"
     date: "Friday,<br> Sep 25"
