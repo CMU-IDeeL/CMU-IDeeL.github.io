@@ -438,6 +438,8 @@ recitations:
     videos:
       - text: "Bootcamp 2"
         url: "https://www.youtube.com/watch?v=vRbHczAERfE"
+      - text: "Bootcamp 2 Slides"
+        url: "./documents/slides/HW2P2_Bootcamp.pdf"
       - text: "Guided Project Bootcamp"
         url: "https://www.youtube.com/watch?v=NkPjhfFNAjQ"
     authors: ""
