@@ -433,7 +433,11 @@ recitations:
     date: "Saturday,<br> Sep 19"
     topics: []
     materials: []
-    videos: []
+    videos:
+      - text: "Bootcamp 2"
+        url: "https://www.youtube.com/watch?v=vRbHczAERfE"
+      - text: "Guided Project Bootcamp"
+        url: "https://www.youtube.com/watch?v=NkPjhfFNAjQ"
     authors: ""
   - title: "Lab 5"
     date: "Friday,<br> Sep 25"

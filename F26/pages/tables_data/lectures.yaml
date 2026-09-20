@@ -168,8 +168,6 @@ lectures:
   slides_videos:
   - text: "Slides"
     url: "./documents/slides/lec9.CNN1.pdf"
-  - text: "Bootcamp 2"
-    url: "https://www.youtube.com/watch?v=vRbHczAERfE"
   additional_materials: []
   quiz:
     text: ''
@@ -181,8 +179,6 @@ lectures:
   slides_videos:
   - text: "Slides"
     url: "./documents/slides/lec10.CNN2.pdf"
-  - text: "Guided Project Bootcamp"
-    url: "https://www.youtube.com/watch?v=NkPjhfFNAjQ"
   additional_materials: []
   quiz:
     text: ''
