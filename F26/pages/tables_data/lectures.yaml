@@ -165,7 +165,9 @@ lectures:
   date: 'September 21'
   topics:
   - Convolutional Neural Networks (CNNs) I
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec9.CNN1.pdf"
   additional_materials: []
   quiz:
     text: ''
@@ -174,7 +176,9 @@ lectures:
   date: 'September 23'
   topics:
   - CNNs II
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec10.CNN2.pdf"
   additional_materials: []
   quiz:
     text: ''
