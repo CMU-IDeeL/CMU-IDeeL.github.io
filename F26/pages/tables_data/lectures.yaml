@@ -195,7 +195,9 @@ lectures:
   date: 'September 28'
   topics:
   - CNNs III
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec11.CNN3.pdf"
   additional_materials: []
   quiz:
     text: ''
