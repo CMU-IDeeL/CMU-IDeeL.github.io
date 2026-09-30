@@ -206,7 +206,9 @@ lectures:
   date: 'September 30'
   topics:
   - CNNs IV
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec12.CNN4.pdf"
   additional_materials: []
   quiz:
     text: ''
