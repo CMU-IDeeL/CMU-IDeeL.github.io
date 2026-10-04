@@ -225,7 +225,9 @@ lectures:
   date: 'October 5'
   topics:
   - Recurrent Neural Networks (RNNs) I
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec13.recurrent.pdf"
   additional_materials: []
   quiz:
     text: ''
