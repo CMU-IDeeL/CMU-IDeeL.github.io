@@ -240,7 +240,9 @@ lectures:
   date: 'October 7'
   topics:
   - RNNs II
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec14.recurrent.pdf"
   additional_materials: []
   quiz:
     text: ''
