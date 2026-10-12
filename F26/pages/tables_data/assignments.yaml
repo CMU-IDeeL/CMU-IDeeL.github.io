@@ -1,40 +1,100 @@
 # deadlines_data.yaml
 assignment_groups:
-  - release_date: "Friday, Aug 28"
-    assignments:
-      - name: "HW 1"
-        due_date: "Early Submission: Friday, Sep 4<br>Final Deadline: Friday, Sep 18"
-        materials:
-          - text: "HW1P1 Handout"
-            url: "https://canvas.cmu.edu/courses/53621/assignments/1024404"
-          - text: "HW1P1 Gradescope Submission"
-            url: "https://www.gradescope.com/courses/1315509/assignments/8463000/review_grades"
-          - text: "HW1P2 Starter Notebook"
-            url: "https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fmcgd2y2xd3j723%2F692bb633acce2e98a481e04f2e73dc0688a425c4aa477fb0cecc4fbbb5e158c2%2F11785_HW1P2_Student_Notebook_F26.ipynb"
-          - text: "HW1P2 Kaggle Competition Link"
-            url: "https://www.kaggle.com/t/a17f96321e434c2daadd98cadfe559f5"
-          - text: "HW1P2 Gradescope Submission"
-            url: "https://www.gradescope.com/courses/1315509/assignments/8455147/review_grades"
-          - text: "HW1 Bonus Handout"
-            url: "https://canvas.cmu.edu/courses/53621/assignments/1024506"
-          - text: "HW1 Bonus Gradescope Submission"
-            url: "https://www.gradescope.com/courses/1315509/assignments/8457950/submissions"
-          - text: "HW1 Autograd Handout"
-            url: "https://canvas.cmu.edu/courses/53621/assignments/1024562"
-          - text: "HW1 Autograd Gradescope Submission"
-            url: "https://www.gradescope.com/courses/1315509/assignments/8475747/submissions"
-  - release_date: "Friday, Sep 18"
-    assignments:
-      - name: "HW 2"
-        due_date: "Early Submission: Friday, Oct 2<br>Final Deadline: Friday, Oct 9"
-        materials: []
-  - release_date: "Friday, Oct 9"
-    assignments:
-      - name: "HW 3"
-        due_date: "Early Submission: Friday, Oct 30<br>Final Deadline: Friday, Nov 6"
-        materials: []
-  - release_date: "Friday, Nov 6"
-    assignments:
-      - name: "HW 4"
-        due_date: "Early Submission: Friday, Nov 20<br>Final Deadline: Friday, Dec 4"
-        materials: []
+- release_date: Friday, Aug 28
+  assignments:
+  - name: HW 1
+    due_date: 'P1 Early / P2 Checkpoint + Quiz: Friday, Sep 4<br>P1 Final / P2 Kaggle: Friday, Sep 18<br>P2 Code: Sunday, Sep 20<br>P2 Slack Deadline: Friday, Sep 25<br>Bonus + Autograd: Friday, Dec 4<br>All deadlines: 11:59 PM ET; no late days for P1'
+    materials:
+    - text: HW1P1 Handout
+      url: https://canvas.cmu.edu/courses/53621/assignments/1024404
+    - text: HW1P1 Gradescope Submission
+      url: https://www.gradescope.com/courses/1315509/assignments/8463000/review_grades
+    - text: HW1P2 PyTorch Write-up
+      url: https://cdn-uploads.piazza.com/paste/mcgd2y2xd3j723/b29f50111a2af8404cb27761357b030ae74bb50e2dfb24db8d98ab25a8348b5d/hw1.pdf
+    - text: HW1P2 Starter Notebook
+      url: https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fmcgd2y2xd3j723%2F692bb633acce2e98a481e04f2e73dc0688a425c4aa477fb0cecc4fbbb5e158c2%2F11785_HW1P2_Student_Notebook_F26.ipynb
+    - text: HW1P2 JAX Write-up
+      url: https://raw.githubusercontent.com/devanshroyal-7/idl-hw1p2-jax/main/HW1P2-Write-up-JAX.pdf
+    - text: HW1P2 JAX Starter Notebook
+      url: https://drive.google.com/file/d/1wjWcxyvz1EJEazi5AQacy2DGywIGVFXG/view?usp=drive_link
+    - text: HW1P2 Canvas Quiz
+      url: https://canvas.cmu.edu/courses/53621/quizzes/164845
+    - text: HW1P2 Kaggle Competition Link
+      url: https://www.kaggle.com/t/a17f96321e434c2daadd98cadfe559f5
+    - text: HW1P2 Slack Kaggle
+      url: https://www.kaggle.com/t/f2e614a19894456080aa77640592107b
+    - text: HW1P2 Gradescope Submission
+      url: https://www.gradescope.com/courses/1315509/assignments/8455147/review_grades
+    - text: HW1 Bonus Handout
+      url: https://canvas.cmu.edu/courses/53621/assignments/1024506
+    - text: HW1 Bonus Gradescope Submission
+      url: https://www.gradescope.com/courses/1315509/assignments/8457950/submissions
+    - text: HW1 Autograd Handout
+      url: https://canvas.cmu.edu/courses/53621/assignments/1024562
+    - text: HW1 Autograd Gradescope Submission
+      url: https://www.gradescope.com/courses/1315509/assignments/8475747/submissions
+- release_date: Friday, Sep 18
+  assignments:
+  - name: HW 2
+    due_date: 'P1 Early / P2 Checkpoint + Quiz: Friday, Oct 2<br>P1 Final / P2 Kaggle: Friday, Oct 9<br>P2 Code: Sunday, Oct 11 (two days after Kaggle)<br>P2 Slack Deadline: Friday, Oct 23<br>Bonus + Autograd: Friday, Dec 4<br>All deadlines: 11:59 PM ET; no late days for P1'
+    materials:
+    - text: HW2P1 and Bonus / Autograd Materials (Hohum)
+      url: https://hohum.andrew.cmu.edu/
+    - text: HW2P1 Gradescope Submission
+      url: https://www.gradescope.com/courses/1315509/assignments/8624332
+    - text: HW2P2 Canvas Materials
+      url: https://canvas.cmu.edu/courses/53621/assignments/1032363
+    - text: HW2P2 PyTorch Write-up
+      url: https://canvas.cmu.edu/courses/53621/files/14854713?wrap=1
+    - text: HW2P2 PyTorch Starter Notebook
+      url: https://drive.google.com/file/d/1IEeLQbopa2cCCfZCXfKy_1Vb10oqpwdI/view?usp=drive_link
+    - text: HW2P2 JAX Write-up
+      url: https://canvas.cmu.edu/courses/53621/files/14854714?wrap=1
+    - text: HW2P2 JAX Starter Notebook
+      url: https://canvas.cmu.edu/courses/53621/files/14854763?wrap=1
+    - text: HW2P2 Canvas Quiz
+      url: https://canvas.cmu.edu/courses/53621/quizzes/164678/
+    - text: HW2P2 Kaggle Competition Link
+      url: https://www.kaggle.com/t/d025d75eb26d436da206a8e7aaa38235
+    - text: HW2P2 Slack Kaggle
+      url: https://www.kaggle.com/t/4b31dd130b134cd5bf2e8c15f30bc734
+    - text: HW2P2 Gradescope Submission
+      url: https://www.gradescope.com/courses/1315509/assignments/8625196
+    - text: HW2 Bonus Gradescope Submission
+      url: https://www.gradescope.com/courses/1315509/assignments/8651037
+    - text: HW2 Autograd Gradescope Submission
+      url: https://www.gradescope.com/courses/1315509/assignments/8624684
+- release_date: Friday, Oct 9
+  assignments:
+  - name: HW 3
+    due_date: 'P1 Early / P2 Checkpoint Quiz Only: Friday, Oct 30<br>P1 Final / P2 Kaggle: Friday, Nov 6<br>P2 Code: Sunday, Nov 8<br>P2 Slack Deadline: Friday, Nov 13<br>Bonus + Autograd: Friday, Dec 4<br>All deadlines: 11:59 PM ET'
+    materials:
+    - text: HW3P1 and Bonus / Autograd Materials (Hohum)
+      url: https://hohum.andrew.cmu.edu/
+    - text: HW3P1 Gradescope Submission
+      url: https://www.gradescope.com/courses/1315509/assignments/8829553
+    - text: HW3P2 PyTorch Write-up
+      url: https://canvas.cmu.edu/courses/53621/files/14983512?wrap=1
+    - text: HW3P2 PyTorch Starter Notebook
+      url: https://canvas.cmu.edu/courses/53621/files/14983536?wrap=1
+    - text: HW3P2 PyTorch Handout
+      url: https://canvas.cmu.edu/courses/53621/files/14994614?wrap=1
+    - text: HW3P2 JAX Write-up
+      url: https://canvas.cmu.edu/courses/53621/files/14985845?wrap=1
+    - text: HW3P2 JAX Starter Handout
+      url: https://canvas.cmu.edu/courses/53621/files/14994614?wrap=1
+    - text: HW3P2 Canvas Quiz
+      url: https://canvas.cmu.edu/courses/53621/quizzes/164846
+    - text: HW3P2 Kaggle Competition Link
+      url: https://www.kaggle.com/t/6aedc76c79fa415fb477f967ffd7c799
+    - text: HW3P2 Gradescope Submission
+      url: https://www.gradescope.com/courses/1315509/assignments/8827736
+    - text: HW3 Bonus Gradescope Submission
+      url: https://www.gradescope.com/courses/1315509/assignments/8840436
+    - text: HW3 Autograd Gradescope Submission
+      url: https://www.gradescope.com/courses/1315509/assignments/8828327
+- release_date: Friday, Nov 6
+  assignments:
+  - name: HW 4
+    due_date: 'Early Submission: Friday, Nov 20<br>Final Deadline: Friday, Dec 4'
+    materials: []
