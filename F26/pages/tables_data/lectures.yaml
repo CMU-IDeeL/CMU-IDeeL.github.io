@@ -14,7 +14,7 @@ lectures:
     url: "https://www.youtube.com/watch?v=_GMenT2mLnA"
   additional_materials: []
   quiz:
-    text: ''
+    text: 'No Quiz'
     rowspan: 1
 - number: 1
   date: 'August 24'
@@ -29,8 +29,8 @@ lectures:
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-%20Neural%20Networks%20/1_bxa916zk/415066862"
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 1: Aug 28 – Aug 30'
+    rowspan: 2
 - number: 2
   date: 'August 26'
   topics:
@@ -47,9 +47,7 @@ lectures:
     url: "./documents/readings/booleancircuits_shannonproof.pdf"
   - text: "The Synthesis of Two-Terminal Switching Circuits"
     url: "./documents/readings/Shannon49.pdf"
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: 3
   date: 'August 31'
   topics:
@@ -66,8 +64,8 @@ lectures:
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-%20Learning%20the%20Network%2C%20Part%201/1_xed7qk5u/415066862"
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 2: Sep 4 – Sep 6'
+    rowspan: 2
 - number: 4
   date: 'September 2'
   topics:
@@ -83,9 +81,7 @@ lectures:
   - text: "MediaServices"
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-%20Learning%20the%20network%2C%20Backprop/1_r68f6zyd/415066862"
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: 5
   date: 'September 9'
   topics:
@@ -102,8 +98,8 @@ lectures:
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-Learning%20the%20Network%2C%20Part%203/1_h4au6374/415066862"
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 3: Sep 11 – Sep 13'
+    rowspan: 2
 - number: 6
   date: 'September 11'
   topics:
@@ -120,9 +116,7 @@ lectures:
   - text: "MediaServices"
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-Optimzation%20Part%201/1_fy66iorq/415066862"
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: 7
   date: 'September 14'
   topics:
@@ -139,8 +133,8 @@ lectures:
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-Training%20Neural%20Networks%2C%20Optimization/1_tg6bf90z/415066862"
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 4: Sep 18 – Sep 20'
+    rowspan: 2
 - number: 8
   date: 'September 16'
   topics:
@@ -158,9 +152,7 @@ lectures:
   - text: "MediaServices"
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-Training%20Neural%20Networks%2C%20Normalization%2C%20Regularization%2C%20etc./1_ilvnra96/415066862"
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: 9
   date: 'September 21'
   topics:
@@ -174,8 +166,8 @@ lectures:
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-%20Scanning%20Patterns/1_9s3s791b/415066862"
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 5: Sep 25 – Sep 27'
+    rowspan: 2
 - number: 10
   date: 'September 23'
   topics:
@@ -188,9 +180,7 @@ lectures:
   - text: "MediaServices"
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-%20Convultional%20Networks%202/1_1wmd53vm/415066862"
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: 11
   date: 'September 28'
   topics:
@@ -204,8 +194,8 @@ lectures:
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-Convolutional%20Networks%20III/1_lkrc46ub/415066862"
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 6: Oct 2 – Oct 4'
+    rowspan: 2
 - number: 12
   date: 'September 30'
   topics:
@@ -218,9 +208,7 @@ lectures:
   - text: "MediaServices"
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-Convolutional%20Networks%20IIV/1_7xacvlxq/415066862"
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: 13
   date: 'October 5'
   topics:
@@ -234,8 +222,8 @@ lectures:
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-Recurrent%20Networks%201/1_6o53n8ca/415066862"
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 7: Oct 9 – Oct 11'
+    rowspan: 2
 - number: 14
   date: 'October 7'
   topics:
@@ -248,9 +236,7 @@ lectures:
   - text: "MediaServices"
     url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-Recurrent%20Networks%202/1_guk5k32c/415066862"
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: '-'
   date: 'October 12'
   topics:
@@ -258,7 +244,7 @@ lectures:
   slides_videos: []
   additional_materials: []
   quiz:
-    text: ''
+    text: 'No Quiz'
     rowspan: 1
 - number: '-'
   date: 'October 14'
@@ -267,7 +253,7 @@ lectures:
   slides_videos: []
   additional_materials: []
   quiz:
-    text: ''
+    text: 'No Quiz'
     rowspan: 1
 - number: 15
   date: 'October 19'
@@ -277,8 +263,8 @@ lectures:
   slides_videos: []
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 8: Oct 23 – Oct 25'
+    rowspan: 2
 - number: 16
   date: 'October 21'
   topics:
@@ -288,9 +274,7 @@ lectures:
     - Beam Search
   slides_videos: []
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: 17
   date: 'October 26'
   topics:
@@ -299,8 +283,8 @@ lectures:
   slides_videos: []
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 9: Oct 30 – Nov 1'
+    rowspan: 2
 - number: 18
   date: 'October 28'
   topics:
@@ -308,9 +292,7 @@ lectures:
   - Transformers
   slides_videos: []
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: 19
   date: 'November 2'
   topics:
@@ -318,17 +300,15 @@ lectures:
   slides_videos: []
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 10: Nov 6 – Nov 8'
+    rowspan: 2
 - number: 20
   date: 'November 4'
   topics:
   - Large Language Models
   slides_videos: []
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: 21
   date: 'November 9'
   topics:
@@ -336,17 +316,15 @@ lectures:
   slides_videos: []
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 11: Nov 13 – Nov 15'
+    rowspan: 2
 - number: 22
   date: 'November 11'
   topics:
   - Variational Auto Encoders
   slides_videos: []
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: 23
   date: 'November 16'
   topics:
@@ -354,17 +332,15 @@ lectures:
   slides_videos: []
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 12: Nov 20 – Nov 22'
+    rowspan: 2
 - number: 24
   date: 'November 18'
   topics:
   - Generative Adversarial Networks
   slides_videos: []
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: 25
   date: 'November 23'
   topics:
@@ -372,17 +348,15 @@ lectures:
   slides_videos: []
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 13: Nov 27 – Nov 29'
+    rowspan: 2
 - number: 26
   date: 'November 25'
   topics:
   - Hopfield Networks
   slides_videos: []
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
 - number: 27
   date: 'November 30'
   topics:
@@ -390,14 +364,12 @@ lectures:
   slides_videos: []
   additional_materials: []
   quiz:
-    text: ''
-    rowspan: 1
+    text: 'Quiz 14: Dec 4 – Dec 6'
+    rowspan: 2
 - number: 28
   date: 'December 2'
   topics:
   - Homework 1-4 Debrief and Deployment
   slides_videos: []
   additional_materials: []
-  quiz:
-    text: ''
-    rowspan: 1
+  quiz: null
