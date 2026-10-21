@@ -278,7 +278,9 @@ lectures:
     sub_topics:
     - Blanks
     - Beam Search
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec16.recurrent.pdf"
   additional_materials: []
   quiz: null
 - number: 17
