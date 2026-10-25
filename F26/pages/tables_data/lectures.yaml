@@ -288,7 +288,9 @@ lectures:
   topics:
   - Language Models
   - Translation
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec17.recurrent.pdf"
   additional_materials: []
   quiz:
     text: 'Quiz 9: Oct 30 – Nov 1'
