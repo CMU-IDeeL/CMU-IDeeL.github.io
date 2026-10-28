@@ -291,6 +291,10 @@ lectures:
   slides_videos:
   - text: "Slides"
     url: "./documents/slides/lec17.recurrent.pdf"
+  - text: "YouTube"
+    url: "https://youtu.be/74x_yCkOv4o"
+  - text: "MediaServices"
+    url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-Modeling%20Language%20Sequence%20to%20Sequence%20Models/1_0v04m6mz/415066862"
   additional_materials: []
   quiz:
     text: 'Quiz 9: Oct 30 – Nov 1'
@@ -300,7 +304,9 @@ lectures:
   topics:
   - Attention Models
   - Transformers
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec18.attention.pdf"
   additional_materials: []
   quiz: null
 - number: 19
