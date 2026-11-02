@@ -539,7 +539,9 @@ recitations:
     date: "Friday,<br> Oct 30"
     topics: "Attention"
     materials: []
-    videos: []
+    videos:
+      - text: "YouTube"
+        url: "https://youtu.be/9ZxIkUpARj0"
     authors: ""
   - title: "Hackathon 10"
     date: "Saturday,<br> Oct 31"

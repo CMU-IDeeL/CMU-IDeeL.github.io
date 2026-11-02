@@ -317,7 +317,9 @@ lectures:
   date: 'November 2'
   topics:
   - Transformers and Newer Architectures
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec19.transformers.pdf"
   additional_materials: []
   quiz:
     text: 'Quiz 10: Nov 6 – Nov 8'
