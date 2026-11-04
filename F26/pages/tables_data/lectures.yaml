@@ -320,6 +320,10 @@ lectures:
   slides_videos:
   - text: "Slides"
     url: "./documents/slides/lec19.transformers.pdf"
+  - text: "YouTube"
+    url: "https://youtu.be/CqPK9bEjpuA"
+  - text: "MediaServices"
+    url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-Trasnformers/1_pz2mfzh8/415066862"
   additional_materials: []
   quiz:
     text: 'Quiz 10: Nov 6 – Nov 8'
