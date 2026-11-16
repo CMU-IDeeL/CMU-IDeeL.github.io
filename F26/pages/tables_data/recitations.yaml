@@ -565,13 +565,17 @@ recitations:
     date: "Saturday,<br> Nov 7"
     topics: []
     materials: []
-    videos: []
+    videos:
+      - text: "YouTube"
+        url: "https://youtu.be/aJCDdz6-LAQ"
     authors: ""
   - title: "Lab 12"
     date: "Friday,<br> Nov 13"
     topics: "VAE"
     materials: []
-    videos: []
+    videos:
+      - text: "YouTube"
+        url: "https://youtu.be/DL1TDiWqTtg"
     authors: ""
   - title: "Hackathon 12"
     date: "Saturday,<br> Nov 14"

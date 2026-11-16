@@ -375,7 +375,9 @@ lectures:
   date: 'November 16'
   topics:
   - Normalizing Flows and Diffusion
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec23.diffusion.pdf"
   additional_materials: []
   quiz:
     text: 'Quiz 12: Nov 20 – Nov 22'
