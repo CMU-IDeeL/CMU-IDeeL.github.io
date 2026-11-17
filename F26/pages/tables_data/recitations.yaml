@@ -576,6 +576,8 @@ recitations:
     videos:
       - text: "YouTube"
         url: "https://youtu.be/DL1TDiWqTtg"
+      - text: "MediaServices"
+        url: "https://mediaservices.cmu.edu/media/Introduction%20to%20Deep%20Learning%20-%20Fall%202026%20-Lab%2012/1_eybsn8io/415066862"
     authors: ""
   - title: "Hackathon 12"
     date: "Saturday,<br> Nov 14"
