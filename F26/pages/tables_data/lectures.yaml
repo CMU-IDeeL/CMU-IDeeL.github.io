@@ -390,7 +390,9 @@ lectures:
   date: 'November 18'
   topics:
   - Generative Adversarial Networks
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec24.GAN.pdf"
   additional_materials: []
   quiz: null
 - number: 25
