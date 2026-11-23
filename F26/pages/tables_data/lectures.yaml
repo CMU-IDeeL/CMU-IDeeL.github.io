@@ -403,7 +403,9 @@ lectures:
   date: 'November 23'
   topics:
   - Graph Neural Networks
-  slides_videos: []
+  slides_videos:
+  - text: "Slides"
+    url: "./documents/slides/lec25.GNN.pdf"
   additional_materials: []
   quiz:
     text: 'Quiz 13: Nov 27 – Nov 29'
