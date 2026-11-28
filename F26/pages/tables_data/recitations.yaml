@@ -605,7 +605,9 @@ recitations:
     date: "Friday,<br> Nov 27"
     topics: "GAN"
     materials: []
-    videos: []
+    videos:
+      - text: "YouTube"
+        url: "https://youtu.be/VJt_CfkPu-o"
     authors: ""
   - title: "Hackathon 14"
     date: "Saturday,<br> Nov 28"
