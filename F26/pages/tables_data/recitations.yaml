@@ -604,8 +604,14 @@ recitations:
   - title: "Lab 14"
     date: "Friday,<br> Nov 27"
     topics: "GAN"
-    materials: []
-    videos: []
+    materials:
+      - text: "Slides"
+        url: "https://drive.google.com/file/d/1TBuvPnyj1py4g1Ffeq-wf_HMj4dQCebw/view?usp=drive_link"
+      - text: "Notebook"
+        url: "https://colab.research.google.com/drive/1vtIP3vZuGWHPku7zz1lU3qZeKU6CfcDX?usp=drive_link"
+    videos:
+      - text: "YouTube"
+        url: "https://youtu.be/VJt_CfkPu-o"
     authors: ""
   - title: "Hackathon 14"
     date: "Saturday,<br> Nov 28"
